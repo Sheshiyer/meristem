@@ -1,0 +1,175 @@
+{
+  "skill": "competitor-analysis",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-06-07T10:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "competitors": [
+      {
+        "name": "Large innovation consultancies",
+        "type": "direct",
+        "price": "Premium — six- to seven-figure engagements with multi-layer teams and long procurement cycles",
+        "value_proposition": "De-risked innovation for the enterprise through proven process, scale, and institutional credibility.",
+        "target_audience": "Enterprise transformation, R&D, and innovation units inside large organizations with heavy procurement.",
+        "key_features": ["Process frameworks and playbooks", "Enterprise credibility and references", "Large multidisciplinary benches", "Procurement and compliance comfort"],
+        "positioning": {
+          "headline": "Enterprise innovation, de-risked at scale",
+          "category_claimed": "Innovation and transformation consultancy"
+        },
+        "strengths": ["Strong process packaging and repeatable methodology", "Enterprise credibility that clears internal approval", "Comfort with large-organization procurement and risk", "Deep benches across many disciplines"],
+        "weaknesses": ["Weak intimacy — founders rarely touch the senior people they bought", "Slow velocity from layered account management", "Unclear ownership and accountability from concept to handoff", "Coherence diluted as work passes between large teams"],
+        "customer_sentiment": {
+          "praise_points": ["Safe, defensible choice for a board", "Comprehensive frameworks and documentation", "Brand-name credibility"],
+          "complaints": ["Expensive and slow", "Junior staff doing the actual work", "Strategy that never connects to anything shipped"]
+        }
+      },
+      {
+        "name": "Premium product design agencies",
+        "type": "direct",
+        "price": "Premium — high day-rates and polished project fees focused on design deliverables",
+        "value_proposition": "Beautiful, best-in-class product and interface craft with presentation-grade polish.",
+        "target_audience": "Funded startups and brand-led teams that want standout interface design and presentation quality.",
+        "key_features": ["High-craft interface and visual design", "Strong presentation and storytelling", "Design systems and brand expression", "Portfolio of awarded work"],
+        "positioning": {
+          "headline": "World-class product design and craft",
+          "category_claimed": "Premium product / experience design agency"
+        },
+        "strengths": ["Exceptional interface craft and visual polish", "Strong narrative and presentation quality", "Mature design-systems thinking", "Distinct aesthetic reputation"],
+        "weaknesses": ["Weaker engineering ownership — designs handed off, not shipped end to end", "Limited real AI and automation integration", "Thin operational tooling and handoff rigor", "Can be beautiful but slow, with work that breaks at implementation"],
+        "customer_sentiment": {
+          "praise_points": ["Stunning visual output", "Great to show investors", "Strong design taste"],
+          "complaints": ["Designs that engineering couldn't ship as drawn", "Slow timelines", "Hands off and disappears before the system actually runs"]
+        }
+      },
+      {
+        "name": "AI integration consultancies",
+        "type": "direct",
+        "price": "Mid-market to premium — scoped AI implementation and tooling engagements",
+        "value_proposition": "Faster, more efficient operations by integrating current AI tooling into your stack.",
+        "target_audience": "Operators chasing efficiency gains and teams under pressure to 'add AI' quickly.",
+        "key_features": ["Current model and tooling expertise", "Efficiency and automation narratives", "Rapid proof-of-concept demos", "Integration with existing data and APIs"],
+        "positioning": {
+          "headline": "Put AI to work across your business",
+          "category_claimed": "AI integration / implementation consultancy"
+        },
+        "strengths": ["Up-to-date on current tooling and models", "Fast to a working demo", "Clear efficiency and cost narratives", "Comfortable with technical integration"],
+        "weaknesses": ["Weak product experience and user-behavior thinking", "AI bolted on as a demo layer, not built into product logic", "Little attention to founder workflow or narrative", "No durable brand or system memory after the engagement"],
+        "customer_sentiment": {
+          "praise_points": ["Impressive early demos", "Knows the latest tools", "Quick to start"],
+          "complaints": ["Demo that never matured into a real product", "Operationally naive about how teams actually work", "No design or experience depth"]
+        }
+      },
+      {
+        "name": "Specialized engineering vendors",
+        "type": "indirect",
+        "price": "Mid-market — scoped build contracts or staff-augmentation rates",
+        "value_proposition": "Reliable, focused technical execution for a defined build.",
+        "target_audience": "Teams with an already-specified product who need engineering capacity to build it.",
+        "key_features": ["Narrow, deep technical execution", "Defined-scope delivery", "Engineering capacity on demand", "Stack-specific expertise"],
+        "positioning": {
+          "headline": "Engineering that ships your spec",
+          "category_claimed": "Software engineering / development vendor"
+        },
+        "strengths": ["Strong, focused technical execution", "Predictable delivery against a clear spec", "Deep expertise in chosen stacks", "Cost-efficient for well-defined builds"],
+        "weaknesses": ["Weak when requirement, user behavior, interface, and system all must align", "No requirement shaping — builds the spec it's handed, even if flawed", "Little product or design judgment", "Founder still owns coherence across the whole problem"],
+        "customer_sentiment": {
+          "praise_points": ["Got the build done", "Solid engineers", "Did what was asked"],
+          "complaints": ["Built exactly what we specified, including our mistakes", "No push-back on the wrong requirement", "Needed someone else to own the experience"]
+        }
+      },
+      {
+        "name": "Freelancer swarms",
+        "type": "indirect",
+        "price": "Budget to mid-market — assembled per-hour from multiple independent contractors",
+        "value_proposition": "Flexible, low-overhead access to specialists, assembled on demand.",
+        "target_audience": "Cost-sensitive founders piecing together a team without committing to one firm.",
+        "key_features": ["Flexible specialist access", "Low fixed overhead", "Scales up and down quickly", "Wide skill coverage on paper"],
+        "positioning": {
+          "headline": "On-demand specialists, assembled your way",
+          "category_claimed": "Freelance / talent-marketplace network"
+        },
+        "strengths": ["Maximum flexibility and low overhead", "Quick to spin specialists up or down", "Cost control for small budgets", "Broad nominal skill coverage"],
+        "weaknesses": ["Client becomes the integrator and single point of coherence", "Accountability fragments across many independents", "No shared model of the problem", "Quality and continuity vary engagement to engagement"],
+        "customer_sentiment": {
+          "praise_points": ["Affordable and flexible", "Found niche skills fast", "No long contracts"],
+          "complaints": ["I became the project manager and integrator", "Nobody owned the whole thing", "Coherence and quality fell apart across people"]
+        }
+      },
+      {
+        "name": "Integrated boutique product studios",
+        "type": "direct",
+        "note_on_examples": "The true peer category: small, senior full-stack studios that also run strategy, design, and engineering end to end. Referenced by category exemplar (e.g. Thoughtbot, Work&Co, Metalab, Postlight) only to locate the bucket — no claim here is about any single named firm; all traits describe the category pattern.",
+        "price": "Premium — senior project fees for end-to-end strategy, design, and build engagements",
+        "value_proposition": "One senior team that takes a product from strategy through design and engineering, instead of splitting it across vendors.",
+        "target_audience": "Founders, product, and innovation teams who want a single capable studio to design and ship a product end to end.",
+        "key_features": ["Full-stack strategy, design, and engineering under one roof", "Senior, portfolio-backed craft", "Modern product and platform engineering", "Established delivery process and reputation"],
+        "positioning": {
+          "headline": "One studio, from strategy to shipped product",
+          "category_claimed": "Integrated product / digital studio"
+        },
+        "strengths": ["Genuinely end-to-end: strategy, design, and engineering in one team", "Senior craft with a visible portfolio and references", "One contract and one team instead of a vendor stack", "Mature, repeatable delivery process"],
+        "weaknesses": ["Delivery is typically team-led and account-managed, not principal-led, so founder-level judgment is diluted as engagements scale", "Handoff and ownership transfer are usually project-exit admin rather than a named, first-class deliverable", "Predominantly pure-services: little reusable product IP, so each engagement starts near zero", "Requirement framing tends to accept the brief rather than reshape a flawed requirement before build"],
+        "thoughtseed_wedge": "Against this peer Thoughtseed claims three seams, not just 'one team': (1) founder-led judgment — principals frame and build directly, so less is lost than in team-led, account-managed delivery; (2) requirement-to-handoff ownership — a single accountable owner from framing through a named ownership-transfer deliverable, so the system is inheritable rather than handed off at project exit; (3) studio-plus-IP — a studio that compounds reusable internal product IP across engagements, so each build starts from a more mature base instead of pure billable services. The wedge is the SHAPE of the engagement and what the client owns afterward, not merely the headcount being integrated.",
+        "customer_sentiment": {
+          "praise_points": ["One capable team that can both design and build", "Strong portfolio and craft", "Simpler than managing many vendors"],
+          "complaints": ["The senior people who pitched were not the people who built", "Great while engaged, thin handoff when it ended", "We owned little reusable IP and had to re-engage to extend the system"]
+        }
+      }
+    ],
+    "feature_matrix": {
+      "features": [
+        "Requirement framing before build",
+        "User-behavior / adoption design",
+        "End-to-end engineering ownership",
+        "Integrated (not bolted-on) AI and automation",
+        "Handoff as a first-class output (docs, training, control surfaces)",
+        "Single accountable owner of coherence",
+        "Founder-led / low translation loss",
+        "Editorial / distinct visual-verbal territory"
+      ],
+      "comparison": {
+        "our_product": [true, true, true, true, true, true, true, true],
+        "competitors": {
+          "Large innovation consultancies": [true, true, false, false, false, false, false, false],
+          "Premium product design agencies": [false, true, false, false, false, false, false, true],
+          "AI integration consultancies": [false, false, true, true, false, false, false, false],
+          "Specialized engineering vendors": [false, false, true, false, false, false, false, false],
+          "Freelancer swarms": [false, false, false, false, false, false, false, false],
+          "Integrated boutique product studios": [false, true, true, true, false, false, false, true]
+        }
+      },
+      "peer_note": "Integrated boutique product studios are the closest peer: they share end-to-end engineering, integrated AI/automation, user-behavior design, and an editorial territory (four shared trues). The remaining four features — requirement framing that reshapes a flawed brief, handoff as a first-class named deliverable, a single principal-led accountable owner of coherence, and founder-led / low-translation-loss delivery — are where Thoughtseed's wedge sits. The binary matrix deliberately does not manufacture a false gap on the shared capabilities; the differentiation is the qualitative wedge asserted in each entry."
+    },
+    "whitespace": {
+      "unmet_needs": [
+        "One studio that owns narrative framing and technical delivery together, so coherence survives all the way to launch",
+        "AI built into the product's real logic and user experience rather than bolted on as a demo layer",
+        "A premium visual and verbal identity that does not come at the cost of technical seriousness",
+        "Ownership transfer designed in from the start, so the system can be run by the client's team rather than locking them to a vendor"
+      ],
+      "missing_features": [
+        "Handoff and decision systems (documentation, training, control surfaces) delivered as part of the build, not as post-project admin",
+        "Requirement architecture that reshapes a flawed spec before engineering, instead of building it as handed over",
+        "A single accountable owner of coherence across requirement, behavior, product, and delivery"
+      ],
+      "underserved_segments": [
+        "System-carrying founders who need fewer vendors and sharper accountability, not more specialists to coordinate",
+        "Innovation and technical teams who want integrated thinking over performative specialization",
+        "Buyers who are skeptical of buzzwords and pay for competence once trust is earned through evidence of shipping"
+      ]
+    },
+    "differentiation": {
+      "genuine_differences": [
+        "Carries framing, user behavior, product, engineering, and handoff in one founder-led delivery loop, so coherence is never lost between vendors",
+        "Treats handoff as a first-class output — the engagement ends in a system the client can run, extend, and inherit, not a dependency",
+        "Keeps user-behavior and adoption thinking grounded in real engineering, so the experience survives implementation",
+        "Operates as a studio-plus-IP, with reusable product IP and a distinct visual-verbal territory beyond generic agency sameness"
+      ],
+      "ownable_territory": "Editorial precision with operating clarity — the one founder-led studio that turns a single requirement into a coherent system you can own, framed in calm, signal-rich, technically grounded Digital Wilderness language no competitor category can credibly claim.",
+      "unfair_advantage": "Founder-led, cross-disciplinary judgment under one roof: the same senior operators frame the requirement, design for adoption, ship the engineering, and build the handoff — removing the translation loss that every single-slice competitor structurally depends on."
+    },
+    "positioning_statement": "Unlike single-slice vendors — consultancies that package process but never ship, design agencies that hand off before the system runs, AI shops that stop at a demo, engineering vendors that build the spec as handed over, and freelancer swarms that make the founder the integrator — Thoughtseed carries the requirement, the user, the product, the engineering, and the handoff in one founder-led delivery loop, because coherence and ownership cannot be assembled from disconnected parts after the fact. And unlike integrated boutique product studios — the closest peer, which also runs strategy, design, and engineering as one team — the wedge is not merely 'one team' but the shape of the engagement: principal-led founder judgment instead of account-managed delivery, a single owner from requirement through a named ownership-transfer deliverable instead of project-exit handoff, and a studio that compounds reusable product IP instead of selling pure services."
+  }
+}

@@ -1,0 +1,96 @@
+# Brandmint v2 — Vantyx brand configuration
+# Product: multi-tenant platform for view-led real estate. Builders publish immersive
+# 360° tower tours (every floor × every time of day) and self-update the views as the
+# building rises — non-destructively, zero-downtime.
+
+brand:
+  name: "Vantyx"
+  slug: "vantyx"
+  tagline: "Sell the view."
+  category: "technology" # proptech / real-estate SaaS
+  market:
+    b2b: true # sold to developers / builders / sales teams
+    b2c: false
+    enterprise: true
+    smb: true
+
+company:
+  description: |
+    Vantyx is a proptech platform that turns a tower's most valuable asset — its views —
+    into an immersive 360° experience buyers can step into, floor by floor, morning to
+    night. Because the building keeps rising, sales teams update those views themselves,
+    anytime, with zero downtime. It is the living, always-true sales tool for view-led
+    real estate.
+  founding_year: 2026
+  stage: "pre-seed"
+  problem: |
+    In view-led real estate, the view IS the product — buyers pay a premium for what
+    they'll see from the 25th floor. But during the multi-year pre-sales window the view
+    doesn't exist yet, and it changes as the tower rises and the skyline around it builds
+    out. Today developers sell it with flat renders or a one-time 360 shoot that's stale
+    the day the next slab is poured — and updating means a risky developer rebuild that
+    can take the live sales site down.
+  solution: |
+    Vantyx captures the real view from each floor at each time of day and serves it as an
+    immersive, in-browser 360° tour (no app, no plugin). Sales teams re-upload new floor
+    captures through a project-specific admin; the platform processes them non-destructively
+    into a new version and atomically flips the live tour to it — so the view is always true
+    to today, the site never goes dark, and the builder owns the update.
+
+audience:
+  primary:
+    title: "Head of Sales & Marketing, Real-Estate Developer"
+    company_size: "Regional to national developers; 1–50 active projects"
+    industry: "Residential & mixed-use real estate development"
+    pain_points:
+      - "Selling premium views that don't physically exist yet"
+      - "360 shoots go stale as construction rises; updates need a dev rebuild"
+      - "Fear of breaking the live sales site during an update"
+    goals:
+      - "Convert view-led buyers earlier in the pre-sales window"
+      - "Keep the marketing experience current with zero engineering"
+      - "One premium, branded tour per project, self-managed"
+  secondary:
+    title: "Architectural-visualization / digital-marketing agency"
+    company_size: "Boutique to mid-size studios serving developers"
+    pain_points:
+      - "Re-delivering 360 tours every time a project changes"
+      - "No repeatable, white-labelable delivery system"
+
+competitors:
+  direct:
+    - name: "One-off 360 / Matterport shoots"
+      positioning: "High-fidelity capture, one-time deliverable"
+      weakness: "Static — stale as the building changes; no self-serve update loop"
+    - name: "CGI render houses"
+      positioning: "Beautiful but synthetic pre-viz"
+      weakness: "Not the real view; not updatable by the client; expensive per revision"
+  indirect:
+    - name: "In-house dev rebuilds"
+      positioning: "Custom microsites per project"
+      weakness: "Slow, brittle, destructive updates, no repeatability"
+
+personality:
+  traits: ["immersive", "trustworthy", "precise", "effortless", "elevated"]
+  voice:
+    formality: 0.55
+    enthusiasm: 0.55
+    technicality: 0.35
+    warmth: 0.6
+  archetypes:
+    primary: "magician" # teleport buyers into a view that isn't built yet
+    secondary: "sage" # always true to today; clarity and reliability
+
+visual_preferences:
+  color_mood: "cool" # sky, glass, dusk-to-night gradients
+  photography_style: "editorial"
+  illustration_style: "geometric"
+  preferred_colors:
+    - "#0B1220" # deep night-sky
+    - "#6366F1" # twilight indigo
+    - "#F59E0B" # golden-hour accent
+
+execution:
+  depth: "standard"
+  waves: "1-2"
+  non_interactive: true

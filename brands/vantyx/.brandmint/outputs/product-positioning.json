@@ -1,0 +1,31 @@
+{
+  "skill": "product-positioning",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-06-06T00:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "cbbe": {
+      "salience": {
+        "product_category": "Immersive 360° tour platform for view-led real estate",
+        "problem_solved": "Selling — and keeping current — the view buyers actually pay for, throughout multi-year construction",
+        "one_sentence": "Vantyx is the living 360° tour platform that lets buyers step onto any floor at any hour, and lets your team keep every view true as the tower rises."
+      },
+      "performance": ["True-to-life equirectangular views per floor × time of day", "Instant in-browser, no app or plugin", "Self-serve, non-destructive, zero-downtime updates", "Project-specific, branded, multi-tenant"],
+      "imagery": ["Premium and architectural", "Golden-hour to night skylines", "Calm, confident, elevated"],
+      "judgments": ["Reliable enough to be the live sales site", "Honest — shows the real, current view", "Effortless for a non-technical marketing team"],
+      "feelings": ["Aspiration (I can see my future home)", "Trust (this is real, and current)", "Wonder (I'm standing on the 25th floor)"],
+      "resonance": "The default way view-led developers publish and maintain their tours"
+    },
+    "positioning_statement": "For property developers who sell on view and lifestyle, Vantyx is the immersive 360° tour platform that lets buyers step onto any floor at any time of day — and lets your team keep every view true to the rising building, without downtime. Unlike static renders or one-off 360 shoots, Vantyx is a living sales tool you update yourself as the project evolves.",
+    "frame_of_reference": "Not a one-time 360 shoot and not a CGI render — a continuously-maintained, self-serve sales experience.",
+    "points_of_difference": [
+      "Living updates: builders re-upload floor views as construction rises, themselves",
+      "Non-destructive + zero-downtime: the live tour never breaks mid-update",
+      "Always true to today: the real current view, not a years-old capture or a render"
+    ],
+    "points_of_parity": ["High-fidelity 360 immersion", "Mobile + desktop", "Branded per project"],
+    "category_design": "Defines the 'living property tour' — the tour that stays as true as the building it sells."
+  }
+}

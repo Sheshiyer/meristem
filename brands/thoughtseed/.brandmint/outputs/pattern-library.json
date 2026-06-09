@@ -1,0 +1,81 @@
+{
+  "skill": "pattern-library",
+  "cluster": "illustration",
+  "wave": 5,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "art_direction": {
+      "theme": "Digital Wilderness",
+      "summary": "Two seamless, tileable patterns extend the brand as quiet texture rather than focal decoration: a fine geometric systems grid interwoven with organic node-and-branch signal motifs. The dark variant sits on the deep quantum blue-black field in teal and muted gray for behind-content use; the light variant carries the same motif system on warm matte paper in muted teal, slate gray, and soft growth-green. Both are low-contrast and restrained so they read as watermark-scale ground — never large fills of orange or green, never a busy rainbow tile.",
+      "model": "gemini-3-pro-image-preview"
+    },
+    "strategy": {
+      "usage_types": [
+        { "usage": "Hero / section backgrounds", "pattern_type": "geometric-plus-organic signal grid", "scale": "medium", "density": "low" },
+        { "usage": "Section dividers", "pattern_type": "geometric-plus-organic signal grid", "scale": "medium", "density": "medium" },
+        { "usage": "Card / document-cover backgrounds", "pattern_type": "geometric-plus-organic signal grid", "scale": "small-medium", "density": "low" },
+        { "usage": "Closeout collateral & data-viz grounds", "pattern_type": "geometric-plus-organic signal grid", "scale": "variable", "density": "low" }
+      ]
+    },
+    "color_combinations": [
+      { "name": "Signal on dark", "foreground": "#00897B teal + #37474F muted gray", "background": "#0A0E14 / #1A237E deep quantum blue-black", "usage": "Default dark-mode ground behind content" },
+      { "name": "Motif on matte light", "foreground": "muted #00897B teal + #37474F slate gray + #B8E986 soft growth-green", "background": "warm matte-paper light", "usage": "Editorial light surfaces, document covers, print" }
+    ],
+    "assets": [
+      {
+        "id": "pattern-01-dark",
+        "path": "./generated/pattern-01-dark.png",
+        "aspect_ratio": "1:1",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "name": "Signal Grid — Dark",
+        "type": "geometric",
+        "colors": { "foreground": "#00897B teal + #37474F muted gray", "background": "#0A0E14 / #1A237E deep quantum blue-black" },
+        "tile_size": "2K seamless tile",
+        "tiling_verified": true,
+        "description": "Seamless tileable background pattern of fine geometric signal lines interwoven with organic node and branch motifs, in teal and muted gray on a deep quantum blue-black field, subtle and low-contrast for use behind content.",
+        "prompt": "A seamless tileable background pattern of fine geometric signal lines interwoven with organic node and branch motifs, in teal and muted gray on a deep quantum blue-black field, subtle and low-contrast for use behind content.",
+        "usage": ["dark-section-backgrounds", "hero-grounds", "watermark-texture", "data-viz-ground", "dark-document-covers"]
+      },
+      {
+        "id": "pattern-02-light",
+        "path": "./generated/pattern-02-light.png",
+        "aspect_ratio": "1:1",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "name": "Signal Grid — Light",
+        "type": "geometric",
+        "colors": { "foreground": "muted #00897B teal + #37474F slate gray + #B8E986 soft growth-green", "background": "warm matte-paper light" },
+        "tile_size": "2K seamless tile",
+        "tiling_verified": true,
+        "description": "Seamless tileable pattern of the same geometric-plus-organic signal motif system on a warm matte-paper light background, drawn in muted teal, slate gray and soft growth-green line work, restrained and editorial.",
+        "prompt": "A seamless tileable pattern of the same geometric-plus-organic signal motif system on a warm matte-paper light background, drawn in muted teal, slate gray and soft growth-green line work, restrained and editorial.",
+        "usage": ["light-section-backgrounds", "document-covers", "closeout-collateral", "print", "card-backgrounds"]
+      }
+    ],
+    "textures": [],
+    "usage_guidelines": {
+      "opacity": "10-20% behind content so the pattern stays quiet texture, not focal.",
+      "scale": "Works at 50% and 200% of native tile; keep medium scale for dividers, smaller for cards.",
+      "signal_scarcity": "Never large fills of orange or green; signal color stays sparse so it reads as signal.",
+      "pairing": "Dark variant on the cool anchor field; light variant on matte paper. Do not mix orange ignition into the pattern itself."
+    },
+    "quality_gates": {
+      "pattern_types_align_with_personality": "Geometric-meets-organic matches the Digital Wilderness duality.",
+      "brand_colors_only": true,
+      "multiple_scale_options": "50%-200% range documented; dark + light variants.",
+      "color_combinations_defined": true,
+      "seamlessly_tileable": true,
+      "low_contrast_for_background_use": true,
+      "no_baked_text_or_logos": true,
+      "forbidden_visuals_avoided": true,
+      "all_images_generated": true,
+      "prompts_documented": true
+    },
+    "generation_summary": { "total": 2, "generated": 2, "verified_tileable": 2, "model": "gemini-3-pro-image-preview" }
+  }
+}

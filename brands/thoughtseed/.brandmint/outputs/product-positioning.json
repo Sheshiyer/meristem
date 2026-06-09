@@ -1,0 +1,132 @@
+{
+  "skill": "product-positioning",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-06-07T10:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "cbbe": {
+      "salience": {
+        "product_category": "Founder-led systems studio for requirement-to-handoff delivery",
+        "problem_solved": "Important work gets split across strategy, design, engineering, and operations vendors who do not share one model of the problem. Coherence breaks before launch, and ownership breaks after it.",
+        "one_sentence": "Thoughtseed is the founder-led systems studio that studies the requirement, builds the system, and hands it back in a form the client can run."
+      },
+      "performance": {
+        "points_of_difference": [
+          "One integrated studio logic: requirement, user behavior, interface, and engineering stay in one delivery loop instead of being passed between vendors.",
+          "Founder-led judgment: senior operators do the work directly, so less is lost in account-management translation.",
+          "Handoff is part of the system, delivered as a named Ownership Transfer Pack: system documentation, an operating runbook and training, control surfaces, and the decision and requirement log ship with the build so the client can run it without us.",
+          "Studio-plus-IP model: a studio that compounds reusable internal product IP across engagements, so each build starts from a more mature base instead of pure billable services — the structural difference from peer integrated studios."
+        ],
+        "points_of_parity": [
+          "Senior product design and interface craft",
+          "Modern engineering across web, mobile, AI, automation, and connected products",
+          "Project framing, discovery, and scoping",
+          "Professional delivery artifacts and structured decks"
+        ],
+        "core_features": [
+          { "feature": "Requirement Architecture: problem framing, psychology mapping, operating constraints, and decision logic before implementation", "value_level": "high" },
+          { "feature": "Product & Interface Systems: web, mobile, AI, automation, and connected-product execution with user behavior treated as part of the system", "value_level": "high" },
+          { "feature": "Handoff & Decision Systems, delivered as the Ownership Transfer Pack — a named, repeatable deliverable set (system documentation, an operating runbook and training, control surfaces, and the decision and requirement log) that makes delivered work inheritable", "value_level": "high" },
+          { "feature": "System Sprint: short framing or prototype cycle that clarifies the requirement and de-risks the next build decision", "value_level": "medium" },
+          { "feature": "Requirement-to-Handoff Build: scoped delivery from framing through implementation and ownership transfer", "value_level": "high" },
+          { "feature": "Cross-disciplinary team under one operating logic", "value_level": "high" },
+          { "feature": "Studio-plus-IP model: reusable internal product IP that compounds across engagements, so each client build starts from a more mature base instead of pure billable services", "value_level": "high" }
+        ]
+      },
+      "imagery": {
+        "brand_associations": [
+          "A serious architecture practice that also engineers the building, not just the renders",
+          "An editorial studio with the rigor of an engineering firm",
+          "A founder-side operator who has shipped real systems and lived with the ambiguity"
+        ],
+        "usage_locations": [
+          "Inside lean senior teams (founders, innovation teams, technical operators)",
+          "Innovation units that need one coherent partner, not a vendor stack",
+          "Founder and CTO desks where the requirement is too entangled to split"
+        ],
+        "usage_methods": [
+          "Engaged for a System Sprint to frame and de-risk a hard requirement",
+          "Engaged for a Requirement-to-Handoff Build to design, build, and transfer ownership of a system",
+          "Brought in when a problem crosses product, interface, AI, and operating reality at once"
+        ]
+      },
+      "judgments": {
+        "positive_judgments": [
+          "Technically serious; the work ships and runs",
+          "Coherent; one model of the problem carries from framing to handoff",
+          "Honest and specific; claims sit close to evidence",
+          "Restrained; taste without theater"
+        ],
+        "concerns_doubts": [
+          "The studio's range can read as broad or unfocused",
+          "It can sound like a full-service agency",
+          "Psychology language can feel fuzzy or soft",
+          "Premium framing can hide shallow delivery"
+        ],
+        "credibility": "Shipped work across AI, IoT, web, mobile, and creative technology; live client delivery run on a studio-plus-IP model where reusable internal product IP compounds across engagements; service surfaces that already span framing, design, engineering, and handoff; decision artifacts and the Ownership Transfer Pack that prove the loop is real.",
+        "concern_responses": [
+          { "concern": "This sounds broad.", "response": "The breadth is a deliberate studio shape for problems that cross product, interface, and technical delivery. We take fewer engagements and go deeper, rather than staffing every slice." },
+          { "concern": "This sounds like an agency.", "response": "The difference is the delivery loop. Fewer projects, deeper integration, and a real handoff instead of open-ended account farming. We are not an always-on retainer." },
+          { "concern": "Psychology language can feel fuzzy.", "response": "Here it means trust, adoption, founder workflow, and user behavior grounded in engineering reality. We treat behavior as part of the system, then test it against what ships." },
+          { "concern": "Premium language can hide shallow delivery.", "response": "We pair atmosphere with evidence: shipped systems, technical range, concrete project surfaces, and the handoff artifacts a client can actually run." }
+        ]
+      },
+      "feelings": {
+        "desired_feelings": [
+          "Relief that one partner finally holds the whole problem",
+          "Trust earned through specificity and shipped evidence",
+          "Calm confidence that execution will stay coherent",
+          "Ownership: the sense that the delivered system is theirs to run"
+        ],
+        "voice": "The founder-side systems translator. An operator who has built systems and lived with ambiguity, speaking peer to peer with the founder.",
+        "tone": "Clear, calm, technically precise, human, founder-led, editorially restrained."
+      },
+      "resonance": {
+        "why_missed": "Without Thoughtseed, the founder goes back to being the full-time translator between five specialists, watching coherence leak at every handoff and ownership break after launch.",
+        "mission_alignment": "The founder wants to solve an important problem and own the result, not manage vendors. Thoughtseed exists to carry the requirement and hand back a system they can run, extend, and inherit.",
+        "core_values": [
+          "Cross-disciplinary rigor",
+          "Coherence from requirement to handoff",
+          "Founder-led accountability",
+          "Ownership over dependency",
+          "Evidence kept close to the claim"
+        ],
+        "why_choose_us": "One studio carries framing, behavior, product, execution, and handoff inside a single loop with senior judgment, so the founder gets a coherent system they can own instead of a stack of disconnected deliverables."
+      }
+    },
+    "positioning_statement": "For the system-carrying founder who needs to solve a problem too entangled to split across vendors, Thoughtseed is the founder-led systems studio that aligns user psychology, founder operating logic, interface design, engineering delivery, and structured handoff into one coherent system from requirement to handoff. Unlike single-slice agencies and consultancies, Thoughtseed carries the whole loop with senior judgment and hands back a system the client can actually run.",
+    "frame_of_reference": "Not a single-slice design agency, not an enterprise consultancy that packages process, and not an AI integrator chasing tooling. A founder-led systems studio that holds requirement, behavior, product, engineering, and handoff in one delivery loop.",
+    "competitive_frame": "niche-specialist",
+    "points_of_parity": [
+      "Senior product design and interface craft",
+      "Modern engineering across web, mobile, AI, automation, and connected products",
+      "Professional discovery, scoping, and delivery artifacts"
+    ],
+    "points_of_difference": [
+      "One coherent delivery loop: requirement, behavior, interface, and engineering never get handed between disconnected vendors.",
+      "Founder-led judgment with less translation loss than layered account management.",
+      "Handoff treated as part of the system and shipped as a named Ownership Transfer Pack, so the client can run and inherit the work after delivery.",
+      "Studio-plus-IP model: reusable internal product IP compounds across engagements, so the studio is not pure services and each build starts from a more mature base."
+    ],
+    "named_methods": {
+      "ownership_transfer_pack": {
+        "what": "Thoughtseed's named, repeatable handoff standard — the defined deliverable set that closes a Requirement-to-Handoff Build so the client's own team can run and extend the system without the studio.",
+        "components": [
+          "System documentation: architecture, data model, and how the pieces fit",
+          "Operating runbook and training: how to run, monitor, and operate the system day to day",
+          "Control surfaces: the admin and operational interfaces the team uses to drive the system",
+          "Decision and requirement log: the framing decisions and requirement reasoning behind what was built, so the team can extend it coherently"
+        ],
+        "not": "Not a guarantee, SLA, or timed promise. It is a defined artifact standard — what ships at handoff — leaving any timing or acceptance terms to the engagement contract."
+      },
+      "studio_plus_ip_model": {
+        "what": "Thoughtseed operates as a studio-plus-IP, not a pure-services shop: it builds and reuses internal product IP that compounds across engagements.",
+        "why_it_matters": "Each client build can start from a more mature base than a from-scratch services engagement, and the studio's structural difference from peer integrated studios is that it owns and reuses product IP rather than billing only for time.",
+        "guardrail": "Framed as a model only. Specific product names and the IP catalogue are founder-supplied and intentionally not asserted here."
+      }
+    },
+    "category_design": "Defines the founder-led systems studio: the studio that carries a complex requirement all the way to a system the client can own — delivered through a named Ownership Transfer Pack and backed by a studio-plus-IP model — instead of selling a single slice of strategy, design, or engineering."
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "skill": "color-palette",
+  "cluster": "identity",
+  "wave": 3,
+  "timestamp": "2026-06-07T10:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "rationale": {
+      "brand_attributes": [
+        "cross-disciplinary",
+        "founder-led",
+        "precise",
+        "editorial",
+        "grounded"
+      ],
+      "color_psychology": "The system is dark-first and cool-anchored: a deep blue-black carries long-horizon trust and serious depth, a teal signal directs attention and reads as interface energy, a single warm orange marks ignition and launch moments, a cool blue-gray provides scaffolding and quiet metadata, and a soft green confirms positive emergence. The pairing of a disciplined cool base with one warm accent is the chromatic form of the brand duality — architectural precision against cultivated emergence. Color names are internal working labels only and are never surfaced in public copy.",
+      "competitor_differentiation": "Deliberately avoids the generic purple-on-white SaaS gradient (#7C3AED and its family). Where innovation consultancies and AI vendors default to bright purple and high-saturation light UIs, Thoughtseed anchors on a deep indigo-blue near-black with a single restrained warm accent, signalling an editorial, founder-led studio rather than another agency template."
+    },
+    "color_naming_note": "Palette color names (Deep Quantum Blue, Consciousness Teal, Energetic Orange, Mindful Gray, Growth Light) are INTERNAL labels for designers and tooling. They must never appear in public-facing copy, UI strings, or client-visible artifacts. In particular 'Consciousness Teal' references backstage research origins and is forbidden in any frontstage surface.",
+    "palette": {
+      "primary": {
+        "hex": "#1A237E",
+        "rgb": "rgb(26, 35, 126)",
+        "hsl": "hsl(235, 66%, 30%)",
+        "name": "Deep Quantum Blue",
+        "role": "anchor",
+        "usage": "Anchor backgrounds, long-horizon trust, serious depth, primary headings on light surfaces, dark sectional fields, the visual spine of the system.",
+        "variations": {
+          "50": "#EDEDF5",
+          "100": "#D6D7E8",
+          "200": "#ADB0D1",
+          "300": "#8388B9",
+          "400": "#51589D",
+          "500": "#1A237E",
+          "600": "#151D67",
+          "700": "#111753",
+          "800": "#0D123F",
+          "900": "#090C2B"
+        }
+      },
+      "secondary": {
+        "hex": "#37474F",
+        "rgb": "rgb(55, 71, 79)",
+        "hsl": "hsl(200, 18%, 26%)",
+        "name": "Mindful Gray",
+        "role": "scaffolding / secondary text",
+        "usage": "Metadata, borders, dividers, scaffolding, secondary and tertiary text, table rules, system chrome. The quiet structural layer that lets signal colors carry meaning.",
+        "variations": {
+          "50": "#F8F9F9",
+          "100": "#EDEEEF",
+          "200": "#D7DADC",
+          "300": "#B3B9BC",
+          "400": "#879195",
+          "500": "#5B686F",
+          "600": "#37474F",
+          "700": "#1F2730",
+          "800": "#161B22",
+          "900": "#0A0E14"
+        }
+      },
+      "accent": {
+        "primary_signal": {
+          "hex": "#00897B",
+          "rgb": "rgb(0, 137, 123)",
+          "hsl": "hsl(174, 100%, 27%)",
+          "name": "Consciousness Teal",
+          "role": "primary accent / directional signal",
+          "usage": "Primary accent, directional signal, interface energy, links, active states, focus rings, key data emphasis, diagram signal lines. The teal is the brand's working signal color, not the launch trigger.",
+          "variations": {
+            "50": "#EBF6F4",
+            "100": "#D1EAE7",
+            "200": "#A3D5CF",
+            "300": "#75BFB8",
+            "400": "#3DA59B",
+            "500": "#00897B",
+            "600": "#007065",
+            "700": "#005A51",
+            "800": "#00443E",
+            "900": "#002F2A"
+          }
+        },
+        "ignition": {
+          "hex": "#F57C00",
+          "rgb": "rgb(245, 124, 0)",
+          "hsl": "hsl(30, 100%, 48%)",
+          "name": "Energetic Orange",
+          "role": "CTA / ignition",
+          "usage": "Reserved almost entirely for the primary call-to-action, ignition, and launch moments ('Bring the requirement.'). The single warm note in a cool system — its scarcity is what makes it read as ignition. Never use as a background field or for body text.",
+          "variations": {
+            "50": "#FEF5EB",
+            "100": "#FDE7D1",
+            "200": "#FBD0A3",
+            "300": "#FAB875",
+            "400": "#F79B3D",
+            "500": "#F57C00",
+            "600": "#C96600",
+            "700": "#A25200",
+            "800": "#7A3E00",
+            "900": "#532A00"
+          }
+        },
+        "positive_signal": {
+          "hex": "#B8E986",
+          "rgb": "rgb(184, 233, 134)",
+          "hsl": "hsl(90, 69%, 72%)",
+          "name": "Growth Light",
+          "role": "positive signal / emergence",
+          "usage": "Positive signal, emergence, subtle validation, success ticks, progress confirmation, the 'grows wild' organic note. Most effective as a small bright accent on the deep blue or near-black anchor.",
+          "variations": {
+            "50": "#F9FDF5",
+            "100": "#F2FBE9",
+            "200": "#E5F7D3",
+            "300": "#D9F3BE",
+            "400": "#C9EEA3",
+            "500": "#B8E986",
+            "600": "#97BF6E",
+            "700": "#799A58",
+            "800": "#5C7443",
+            "900": "#3F4F2E"
+          }
+        }
+      },
+      "semantic": {
+        "success": "#B8E986",
+        "warning": "#F57C00",
+        "error": "#C0392B",
+        "info": "#00897B",
+        "note": "Semantic states reuse the brand palette wherever it stays legible — Growth Light for success, the ignition orange for warning, teal for info. Error introduces a controlled muted red (#C0392B) because no brand hue should carry destructive meaning; keep it rare and never decorative."
+      },
+      "neutrals": {
+        "900": "#0A0E14",
+        "800": "#161B22",
+        "700": "#1F2730",
+        "600": "#37474F",
+        "500": "#5B686F",
+        "400": "#879195",
+        "300": "#B3B9BC",
+        "200": "#D7DADC",
+        "100": "#EDEEEF",
+        "50": "#F8F9F9",
+        "white": "#FFFFFF",
+        "note": "Cool blue-gray neutral ramp anchored on Mindful Gray (#37474F at 600). Neutral 900 (#0A0E14) is the dark-first canvas ink; it is a cool near-black, not pure #000, to sit naturally beside the deep blue anchor."
+      }
+    },
+    "usage_ratios": {
+      "model": "Disciplined 60 / 25 / 10 / 5 distribution keeps the system editorial rather than loud.",
+      "anchor_and_neutral_dark": "~60% — Deep Quantum Blue and the dark cool neutrals (900/800/700) form the dominant dark-first field.",
+      "neutral_light_and_paper": "~25% — white, Neutral 50/100 and Mindful Gray scaffolding for light editorial surfaces and text.",
+      "teal_signal": "~10% — Consciousness Teal for directional signal, links, active states, and data emphasis.",
+      "ignition_and_growth": "~5% combined — Energetic Orange strictly for the primary CTA/ignition, Growth Light for small positive-signal accents. Scarcity is intentional; if orange or green covers large areas the system loses its signal logic."
+    },
+    "dark_first_guidance": {
+      "default_canvas": "#0A0E14 (Neutral 900) and #1A237E (Deep Quantum Blue) are the default canvases. Light surfaces are the secondary mode, used for long-form editorial reading and print.",
+      "text_on_dark": "Primary text on dark = #FFFFFF or Neutral 50 (#F8F9F9). Secondary/metadata on dark = Neutral 300 (#B3B9BC) which holds 9.41:1 on Neutral 900. Avoid Mindful Gray (#37474F) as text directly on the dark canvas — it is a structural/scaffolding tone there, not a text tone.",
+      "signal_on_dark": "Teal, Growth Light, and Orange all read as bright signal on the dark anchor. Growth Light (13.85:1 on #0A0E14) and Teal are the workhorses; reserve Orange for the single ignition action.",
+      "surfaces_and_elevation": "Build elevation with the neutral dark ramp (900 base, 800 raised, 700 cards/borders) rather than with shadows alone — material and contrast over glossy depth."
+    },
+    "accessibility": {
+      "standard": "WCAG 2.1 — AA target for all text and UI; AAA noted where achieved.",
+      "critical_rules": [
+        "Energetic Orange (#F57C00) CTAs MUST use Deep Quantum Blue (#1A237E) label text (4.90:1, AA), NOT white — white on orange is only 2.70:1 and fails. This is the single most important contrast rule in the system.",
+        "Consciousness Teal (#00897B) with white text is 4.32:1 — passes AA for large text (18px+/14px bold) and UI components, but NOT for normal body text. Use teal-on-white or teal-on-dark for fine text, or restrict white-on-teal to large/bold labels.",
+        "Teal-on-blue (#00897B on #1A237E) is 3.07:1 — large text and UI/graphical elements only, never small body text."
+      ],
+      "contrast_checks": [
+        { "foreground": "#FFFFFF", "background": "#1A237E", "ratio": "13.24:1", "wcag_aa": true, "wcag_aaa": true, "use": "Primary text on the deep-blue anchor — excellent." },
+        { "foreground": "#FFFFFF", "background": "#0A0E14", "ratio": "19.34:1", "wcag_aa": true, "wcag_aaa": true, "use": "Primary text on the dark-first canvas — excellent." },
+        { "foreground": "#B8E986", "background": "#1A237E", "ratio": "9.48:1", "wcag_aa": true, "wcag_aaa": true, "use": "Growth Light positive signal on anchor blue." },
+        { "foreground": "#B8E986", "background": "#0A0E14", "ratio": "13.85:1", "wcag_aa": true, "wcag_aaa": true, "use": "Growth Light signal on dark canvas." },
+        { "foreground": "#B3B9BC", "background": "#0A0E14", "ratio": "9.41:1", "wcag_aa": true, "wcag_aaa": true, "use": "Neutral 300 metadata/secondary text on dark canvas." },
+        { "foreground": "#1A237E", "background": "#FFFFFF", "ratio": "13.24:1", "wcag_aa": true, "wcag_aaa": true, "use": "Deep-blue headings on white editorial surface." },
+        { "foreground": "#37474F", "background": "#FFFFFF", "ratio": "9.65:1", "wcag_aa": true, "wcag_aaa": true, "use": "Mindful Gray body/secondary text on white." },
+        { "foreground": "#FFFFFF", "background": "#37474F", "ratio": "9.65:1", "wcag_aa": true, "wcag_aaa": true, "use": "White text on Mindful Gray surface." },
+        { "foreground": "#1A237E", "background": "#F57C00", "ratio": "4.90:1", "wcag_aa": true, "wcag_aaa": false, "use": "REQUIRED CTA pairing — deep-blue label on Energetic Orange button." },
+        { "foreground": "#1A237E", "background": "#B8E986", "ratio": "9.48:1", "wcag_aa": true, "wcag_aaa": true, "use": "Deep-blue text on a Growth Light chip/badge." },
+        { "foreground": "#37474F", "background": "#B8E986", "ratio": "6.91:1", "wcag_aa": true, "wcag_aaa": false, "use": "Mindful Gray text on Growth Light." },
+        { "foreground": "#FFFFFF", "background": "#00897B", "ratio": "4.32:1", "wcag_aa": false, "wcag_aaa": false, "use": "White on teal — AA Large / UI ONLY (passes 3:1); fails for normal body text." },
+        { "foreground": "#00897B", "background": "#FFFFFF", "ratio": "4.32:1", "wcag_aa": false, "wcag_aaa": false, "use": "Teal on white — AA Large / UI / links with non-color affordance; pair fine teal text with a heavier weight or darken to Teal 600 (#007065) for AA body." },
+        { "foreground": "#00897B", "background": "#1A237E", "ratio": "3.07:1", "wcag_aa": false, "wcag_aaa": false, "use": "Teal on blue — large text & UI components only." },
+        { "foreground": "#FFFFFF", "background": "#F57C00", "ratio": "2.70:1", "wcag_aa": false, "wcag_aaa": false, "use": "FORBIDDEN for text — documented as the trap to avoid; never put white text on orange." }
+      ]
+    },
+    "usage_guidelines": {
+      "primary": {
+        "do": [
+          "Use Deep Quantum Blue as the anchor field and as primary heading color on light surfaces.",
+          "Pair it with white or Neutral 50 text for high-contrast, trustworthy reading.",
+          "Let it dominate the dark-first system alongside the cool dark neutrals."
+        ],
+        "dont": [
+          "Don't use it for long body text on dark canvases (use white/Neutral 50 instead).",
+          "Don't dilute it with purple — never blend toward the avoided SaaS purple family.",
+          "Don't apply gradients from blue to purple/magenta."
+        ]
+      },
+      "secondary": {
+        "do": [
+          "Use Mindful Gray for metadata, borders, dividers, and scaffolding.",
+          "Use it for secondary text on light surfaces (9.65:1 on white).",
+          "Use its neutral ramp for elevation and card surfaces in dark mode."
+        ],
+        "dont": [
+          "Don't use Mindful Gray as primary text directly on the dark canvas — it reads as structure there, not text.",
+          "Don't let scaffolding gray compete with the teal signal for attention."
+        ]
+      },
+      "accent": {
+        "do": [
+          "Reserve Energetic Orange for the single most important action (the CTA / ignition) and always label it with Deep Quantum Blue text.",
+          "Use Consciousness Teal as the working signal color for links, active states, focus, and data emphasis.",
+          "Use Growth Light as a small bright positive-signal accent on dark fields."
+        ],
+        "dont": [
+          "Don't put white text on Energetic Orange (2.70:1 — fails).",
+          "Don't spread orange across large areas or use it as a background — it stops reading as ignition.",
+          "Don't use teal for fine body text on white without darkening to Teal 600 or adding weight."
+        ]
+      }
+    },
+    "avoid_list": {
+      "colors": [
+        "#7C3AED — generic SaaS purple (and the whole bright-purple family); avoid purple-on-white sameness entirely.",
+        "High-saturation magenta/violet gradients.",
+        "Pure #000000 as the dark canvas — use the cool near-black Neutral 900 (#0A0E14) instead so it harmonizes with the deep blue anchor.",
+        "Warm beige/cream paper tones that fight the cool system."
+      ],
+      "patterns": [
+        "Purple-to-blue or purple-to-pink gradients (reads as default startup).",
+        "White text on the orange CTA.",
+        "Large orange or large Growth Light fields (signal colors must stay scarce).",
+        "Rainbow / multi-hue data palettes — keep data viz to teal + Growth Light + neutral ramp, with orange only for the single highlighted series."
+      ]
+    }
+  }
+}

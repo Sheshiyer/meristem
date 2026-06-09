@@ -1,0 +1,125 @@
+{
+  "skill": "prelaunch-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_strategy": {
+      "context": "Sent to founders on the list before Thoughtseed Studio opens a new round of build capacity. Builds the case for one coherent studio and primes them to bring a requirement when capacity opens.",
+      "goals": [
+        "Confirm the signup and set expectations",
+        "Name the fragmentation problem and validate it",
+        "Reveal the studio approach without overclaiming",
+        "Establish credibility with shipped work and the handoff model",
+        "Prime founders to bring a requirement the day capacity opens"
+      ],
+      "timing": "Email 1 immediately after signup; Email 2 day 2; Email 3 day 5; Email 4 day 8; Email 5 the day before capacity opens",
+      "total_emails": 5,
+      "voice_note": "Calm anticipation, not hype. Short declarative sentences. Evidence next to the claim. No countdown theater, no superlatives, no avoided terms."
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Welcome + Promise",
+        "send_timing": "Immediate",
+        "goal": "Confirm signup and set expectations for what is coming",
+        "subject_lines": {
+          "primary": "You're on the list. Here is what we'll send.",
+          "curiosity": "A different way to carry the hard problem",
+          "benefit": "One studio, from requirement to handoff",
+          "urgency": "Capacity opens soon. First, the context."
+        },
+        "preview_text": "No noise. A few notes, then the door opens.",
+        "hook": "You signed up because the usual way of building is not working.",
+        "body": "Thanks for joining the list.\n\nHere is what to expect. Over the next week or so, a few short notes. No noise. Each one makes the case for carrying a complex requirement in one place instead of splitting it across vendors.\n\nThoughtseed is a founder-led systems studio. We turn complex requirements into coherent systems by aligning user behavior, founder operating logic, interface design, and technical delivery. One delivery loop, from requirement to handoff.\n\nWhen we open the next round of build capacity, you will hear it here first. Until then, read on, and start thinking about the requirement you would bring.",
+        "cta": {
+          "text": "See how the delivery loop works",
+          "url_placeholder": "{{delivery_loop_url}}"
+        },
+        "ps": "P.S. We take a limited number of builds at a time. That is deliberate, and it is why the list matters."
+      },
+      {
+        "number": 2,
+        "name": "Problem Agitation",
+        "send_timing": "Day 2",
+        "goal": "Name and validate the fragmentation problem",
+        "subject_lines": {
+          "primary": "You did not start the company to translate",
+          "curiosity": "The seam where coherence leaks",
+          "benefit": "Stop being the integrator between vendors",
+          "urgency": "Before capacity opens, name the real problem"
+        },
+        "preview_text": "Five vendors, no shared model of the problem.",
+        "hook": "Strategy goes to one vendor. Design to another. Engineering to a third. Operations to a fourth.",
+        "body": "Here is the pattern most founders know too well.\n\nImportant work gets split across strategy, design, engineering, and operations vendors who never share one model of the problem. Each one understands a single slice. You become the integrator, holding the whole thing in your head and re-explaining it at every handoff.\n\nCoherence leaks at every seam. The strategy deck drifts from the shipped product. The engineering ignores how people will actually adopt it. And the system that worked on launch day falls apart at ownership transfer, because the team that now owns it was never handed a way to run it.\n\nIf that sounds familiar, it is not a vendor-management problem you can solve with better project management. It is a structural problem. The work was split when it should have been carried whole.",
+        "cta": {
+          "text": "Read how we keep it whole",
+          "url_placeholder": "{{approach_url}}"
+        },
+        "ps": "P.S. The next note is about what carrying it whole actually looks like."
+      },
+      {
+        "number": 3,
+        "name": "Solution Tease",
+        "send_timing": "Day 5",
+        "goal": "Reveal the studio approach without a full pitch",
+        "subject_lines": {
+          "primary": "One team carries the whole requirement",
+          "curiosity": "What a single delivery loop changes",
+          "benefit": "From requirement to handoff, no vendors in between",
+          "urgency": "Capacity is close. Here is the approach."
+        },
+        "preview_text": "The same people frame it, build it, and hand it back.",
+        "hook": "When a problem is too entangled to split, the answer is not a better vendor stack.",
+        "body": "Here is how we hold the work in one motion.\n\nThoughtseed keeps requirement, behavior, interface, and engineering in a single delivery loop. The same senior people who frame the requirement design the system, ship it, and prepare the handoff. Nothing gets passed between teams who never shared the problem, because there are no teams in between.\n\nIt runs in three modules under one operating logic. Requirement Architecture frames the problem and the tradeoffs before anything is built. Product & Interface Systems delivers the web, mobile, AI, automation, or connected-product work, with user behavior treated as part of the system. Handoff & Decision Systems ships the documentation, training, and control surfaces that make the work inheritable.\n\nThe result is one coherent system from requirement to handoff. Build the system, not just the story.",
+        "cta": {
+          "text": "Explore the three modules",
+          "url_placeholder": "{{services_url}}"
+        },
+        "ps": "P.S. There are two ways to engage when capacity opens: a System Sprint, or a full Requirement-to-Handoff Build. More on that soon."
+      },
+      {
+        "number": 4,
+        "name": "Credibility",
+        "send_timing": "Day 8",
+        "goal": "Establish authority with shipped work and the handoff model",
+        "subject_lines": {
+          "primary": "Evidence sits next to the claim",
+          "curiosity": "How to tell premium framing from shallow delivery",
+          "benefit": "Shipped systems, real range, real handoff",
+          "urgency": "One more note before the door opens"
+        },
+        "preview_text": "Shipped across AI, IoT, web, mobile, and creative technology.",
+        "hook": "Premium language can hide shallow delivery. So here is the evidence.",
+        "body": "Before capacity opens, the part that matters: proof.\n\nWe pair atmosphere with evidence. Shipped work across AI, IoT, web, mobile, and creative technology. Live client delivery paired with reusable internal product IP. Service surfaces that already span framing, design, engineering, and handoff. Decision artifacts and handoff documents that prove the loop is real.\n\nThe handoff is the part most studios skip, and the part we treat as the deliverable. A system that works on launch day but breaks at ownership transfer has not been delivered. When we hand back the work, your team inherits documentation written to be read, control surfaces that keep the system legible, and a model of the problem you can carry forward without us.\n\nFounder-led judgment, less lost in translation, and a handoff that holds. That is the whole case.",
+        "cta": {
+          "text": "See shipped work and handoff artifacts",
+          "url_placeholder": "{{proof_url}}"
+        },
+        "ps": "P.S. Next time you hear from us, capacity will be open."
+      },
+      {
+        "number": 5,
+        "name": "Capacity Opens",
+        "send_timing": "Day before capacity opens",
+        "goal": "Prime founders to bring a requirement when the round opens",
+        "subject_lines": {
+          "primary": "Tomorrow: bring the requirement",
+          "curiosity": "The door opens in the morning",
+          "benefit": "A spot to carry your hard problem whole",
+          "urgency": "Limited builds. The list goes first."
+        },
+        "preview_text": "We take a limited number of builds at a time.",
+        "hook": "Tomorrow, the next round of build capacity opens, and the list goes first.",
+        "body": "This is the note you have been waiting for.\n\nTomorrow we open the next round of build capacity at Thoughtseed Studio. We take a limited number of builds at a time, on purpose. Fewer engagements, deeper integration, a real handoff at the end. Because the list went deep on the why, you go first.\n\nWhen the door opens, here is how it works:\n\n- Start with a System Sprint, a short framing or prototype cycle that clarifies the requirement and de-risks the next build decision.\n- Or scope a Requirement-to-Handoff Build, full delivery from framing through implementation and ownership transfer.\n\nEither way, you talk to the operators doing the work, and the requirement you bring stays whole the entire way.\n\nHave the requirement ready. The messy version is fine. Bring it tomorrow.",
+        "cta": {
+          "text": "Bring the requirement.",
+          "url_placeholder": "{{start_url}}"
+        },
+        "ps": "P.S. If the problem is too entangled to split across vendors, it is exactly the kind we are built to carry."
+      }
+    ]
+  }
+}

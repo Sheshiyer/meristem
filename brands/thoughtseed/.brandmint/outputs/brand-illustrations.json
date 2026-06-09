@@ -1,0 +1,77 @@
+{
+  "skill": "brand-illustrations",
+  "cluster": "illustration",
+  "wave": 5,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "art_direction": {
+      "theme": "Digital Wilderness",
+      "summary": "Brand illustrations express the core duality literally: precise geometric node-and-line systems that grow organically into root, branch, and canopy forms — a seed becoming a structured system. Drawn in luminous teal line work on a deep blue-black field with exactly one orange node as the single highlighted element, they read as engineered yet alive. The set stays geometric-meets-organic, moderate complexity, legible not busy, and visualizes Thoughtseed's backstage-translated ideas (growth, the requirement-to-handoff loop) as frontstage-safe abstract motifs with no baked text or named-cycle labels.",
+      "model": "gemini-3-pro-image-preview"
+    },
+    "style_codification": {
+      "line_work": {
+        "weight": "precise, mostly uniform technical line with selective organic variation where growth motifs enter",
+        "style": "luminous geometric line / vector-style, clean edges",
+        "color": "teal (#00897B) signal line as the dominant stroke"
+      },
+      "fill_style": "line-dominant, minimal fill; dark-first field rather than solid color blocks",
+      "color_palette": ["#0A0E14", "#1A237E", "#00897B", "#F57C00", "#B8E986", "#37474F"],
+      "color_rule": "Brand palette only. Teal signal lines on a Deep Quantum Blue / near-black field; Growth Light reserved for emergent notes; at most ONE Energetic Orange highlight per illustration. Never purple, never a rainbow palette.",
+      "detail_level": "moderate — legible structure, not busy",
+      "perspective": "flat / 2D diagrammatic, non-figurative",
+      "motif": "engineered grid/diagram structure overgrown and interwoven with organic signal patterns and cultivated-landscape forms (roots, branches, contour lines)"
+    },
+    "assets": [
+      {
+        "id": "illus-01-systems-organism",
+        "path": "./generated/illus-01-systems-organism.png",
+        "aspect_ratio": "16:9",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "type": "hero",
+        "concept": "A planted idea growing into a coherent system — the Digital Wilderness duality of disciplined engineering and organic emergence, expressed as a seed becoming a structured canopy.",
+        "description": "Brand illustration: a precise geometric node-and-line system diagram that grows organically into fine root and branch forms, like a seed becoming a structured canopy, drawn in luminous teal line work with one orange node on a deep blue-black field, engineered yet alive.",
+        "prompt": "A brand illustration: a precise geometric node-and-line system diagram that grows organically into fine root and branch forms, like a seed becoming a structured canopy, drawn in luminous teal line work with one orange node on a deep blue-black field, engineered yet alive.",
+        "usage": ["homepage-hero-illustration", "about-section", "conceptual-divider", "deck"]
+      },
+      {
+        "id": "illus-02-delivery-loop",
+        "path": "./generated/illus-02-delivery-loop.png",
+        "aspect_ratio": "1:1",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "type": "conceptual",
+        "concept": "The requirement-to-handoff delivery loop as one continuous, coherent cycle — a frontstage-safe abstraction of the internal loop, shown as geometric flow transitioning into organic growth. No named cycle, no labels.",
+        "description": "Brand illustration of a continuous loop: an abstract requirement-to-handoff cycle as a circular geometric flow that subtly transitions into organic growth motifs, with four implied stages marked only by node clusters, in teal on blue-black with a single orange accent.",
+        "prompt": "A brand illustration of a continuous loop: an abstract requirement-to-handoff cycle as a circular geometric flow that subtly transitions into organic growth motifs, with four implied stages marked only by node clusters, in teal on blue-black with a single orange accent.",
+        "usage": ["delivery-loop-section", "process-diagram", "feature-spot", "deck"]
+      }
+    ],
+    "consistency_verified": true,
+    "consistency_checks": {
+      "same_line_weight": true,
+      "brand_colors_only": true,
+      "same_perspective_system": true,
+      "consistent_detail_level": true,
+      "same_brand_personality": true
+    },
+    "quality_gates": {
+      "style_codification_matches_visual_language": true,
+      "brand_colors_only": true,
+      "hero_illustration_defined": "illus-01-systems-organism",
+      "vector_style_output": true,
+      "no_baked_text_or_logos": true,
+      "no_cartoon_iconography": true,
+      "backstage_layer_protected": "No named Krebs cycle / consciousness labels; loop shown as abstract effect only.",
+      "forbidden_visuals_avoided": true,
+      "all_images_generated": true,
+      "prompts_documented": true
+    },
+    "generation_summary": { "total": 2, "generated": 2, "pending": 0, "model": "gemini-3-pro-image-preview" }
+  }
+}

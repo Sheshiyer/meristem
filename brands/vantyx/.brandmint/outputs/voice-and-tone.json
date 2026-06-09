@@ -1,0 +1,37 @@
+{
+  "skill": "voice-and-tone",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-06-06T00:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "voice_character": {
+      "speaking_as": "a brilliant architectural-visualization partner who is also rock-solid infrastructure",
+      "relationship": "the trusted specialist who makes the developer look premium and never lets them down",
+      "language_register": "professional, warm, precise — short declaratives, benefit-first"
+    },
+    "voice_attributes": [
+      { "attribute": "Clear", "means": "Plain language, no proptech jargon", "not": "buzzword soup" },
+      { "attribute": "Confident", "means": "We know views sell; we state it", "not": "hype or hard-sell" },
+      { "attribute": "Elevated", "means": "Premium, like the product it sells", "not": "stuffy or cold" },
+      { "attribute": "Effortless", "means": "Calm, simple, reassuring", "not": "frantic or salesy" },
+      { "attribute": "True", "means": "Specific and honest — real views, real numbers", "not": "vague superlatives" }
+    ],
+    "do": [
+      "Lead with the view and the benefit: 'Step onto the 25th floor at golden hour.'",
+      "Use concrete, sensory specifics (floor, hour, skyline).",
+      "Reassure on reliability plainly: 'It won't go down when you update.'"
+    ],
+    "dont": [
+      "Don't say 'revolutionary', 'AI-powered metaverse', 'synergy', 'game-changing'.",
+      "Don't over-explain the tech; sell the feeling and the control.",
+      "Don't use aggressive sales pressure — confidence, not coercion."
+    ],
+    "tone_by_context": {
+      "marketing_site": "aspirational + confident",
+      "in_product_admin": "calm, clear, reassuring (you can't break it)",
+      "error_states": "honest + steadying ('Your live tour is untouched. This update didn't publish — here's why.')"
+    }
+  }
+}

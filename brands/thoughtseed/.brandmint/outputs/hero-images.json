@@ -1,0 +1,79 @@
+{
+  "skill": "hero-images",
+  "cluster": "photography",
+  "wave": 4,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "art_direction": {
+      "theme": "Digital Wilderness",
+      "summary": "Hero stages render the Digital Wilderness duality at campaign scale: a dark-first, cool-anchored field where architectural precision (concrete, glass, brushed aluminium, structured crops) is held against cultivated, living texture (weathered stone, living moss, oxidized copper). Each frame carries one teal signal network and at most one warm golden-orange ignition point so the signal stays legible. Compositions are editorial-documentary stills with controlled hard shadow, intentional negative space, and architectural crops. The negative space is deliberate so headline copy can be overlaid later in layout — never baked into the image.",
+      "model": "gemini-3-pro-image-preview",
+      "lighting": "A single shaft of cool screen-glow light, controlled architectural shadow, clean high contrast, shallow depth of field; never flat or over-lit.",
+      "color_treatment": "Cool cast anchored to Deep Quantum Blue (#1A237E) shading toward near-black (#0A0E14), with restrained teal (#00897B) signal lines and a single Energetic Orange (#F57C00) ignition accent. Desaturated, not candy-bright.",
+      "composition": "Architectural crops, asymmetric framing, generous intentional negative space sized for downstream headline overlay; strong horizon/vertical lines; one signal moment per frame.",
+      "mood": "Calm, intentional, grounded, signal-rich; founder-led and technically precise, not aspirational-glossy."
+    },
+    "text_overlay_policy": "Hero frames are built with deliberate dark negative space (left or low in frame) for headline/CTA overlay applied in layout. NO text, lettering, words, or logos are baked into any generated image. Approved overlay copy from the brief: headline 'Digital Wilderness'; tagline 'We plant ideas. They grow wild.'; CTA 'Bring the requirement.'",
+    "assets": [
+      {
+        "id": "hero-01-digital-wilderness",
+        "path": "./generated/hero-01-digital-wilderness.png",
+        "aspect_ratio": "16:9",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "description": "Primary landing-page hero. Full-bleed cinematic Digital Wilderness stage: a deep quantum blue-black field shading to near-black, architectural shadow, a single shaft of cool screen-glow light. Foreground tactile material study where matte black paper and a brushed-aluminium panel meet weathered stone and a small patch of living moss; fine teal signal lines and a faint node network trace the surfaces with one warm golden-orange ignition point. Disciplined engineering precision meeting organic emergence.",
+        "prompt": "Editorial brand hero image, \"Digital Wilderness\" art direction for a founder-led engineering systems studio. Full-bleed cinematic stage: deep quantum blue-black background shading toward near-black, architectural shadow, a single shaft of cool screen-glow light. Foreground is a tactile material study where matte black paper and a brushed-aluminum panel meet weathered stone and a small patch of living moss; fine teal signal lines and a faint network of directional nodes trace across the surfaces, with one warm golden-orange ignition point. Disciplined engineering precision meeting organic emergence. Editorial, signal-rich, premium, restrained, with intentional negative space and an architectural crop, shot like an editorial-documentary still, clean high contrast, shallow depth of field. Absolutely no text, no words, no letters, no logos anywhere. No purple gradients, no stock people, no glossy plastic, no sci-fi cliche, no mystical fog.",
+        "text_safe_zones": { "left": true, "center": false, "right": false, "bottom": true },
+        "cta_placement": "bottom-left",
+        "priority": "high",
+        "usage": ["landing-page-hero", "press-kit", "campaign-key-visual"]
+      },
+      {
+        "id": "hero-02-establishing",
+        "path": "./generated/hero-02-establishing.png",
+        "aspect_ratio": "16:9",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "description": "Wide establishing brand stage: an architectural interior corner where a structured concrete-and-glass surface meets a cultivated patch of moss and stone on a matte work surface; a single shaft of cool light falls across it; a faint network of teal nodes drifts through the empty negative space on the left, sized for headline overlay.",
+        "prompt": "A wide establishing brand stage: an architectural interior corner where a structured concrete-and-glass surface meets a cultivated patch of moss and stone on a matte work surface; a single shaft of cool light falls across it; a faint network of teal nodes drifts through the empty negative space on the left.",
+        "text_safe_zones": { "left": true, "center": false, "right": false, "bottom": false },
+        "cta_placement": "left",
+        "priority": "high",
+        "usage": ["secondary-hero", "section-header", "social-cover", "press-kit"]
+      },
+      {
+        "id": "hero-03-mobile",
+        "path": "./generated/hero-03-mobile.png",
+        "aspect_ratio": "9:16",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "description": "Tall vertical brand hero stage for mobile: a shaft of cool light falling onto a rolled matte-paper scroll and a brushed-aluminium edge meeting weathered stone and moss at the base; fine teal signal lines rise upward through deep dark negative space, with one small golden-orange ignition point low in the frame and calm empty space for top-aligned headline overlay.",
+        "prompt": "A tall vertical brand hero stage for mobile: a shaft of cool light falling onto a rolled matte-paper scroll and a brushed-aluminum edge meeting weathered stone and moss at the base, fine teal signal lines rising upward through deep dark negative space, one small golden-orange ignition point low in the frame.",
+        "text_safe_zones": { "top": true, "center": false, "bottom": false },
+        "cta_placement": "top",
+        "priority": "high",
+        "usage": ["mobile-hero", "instagram-story-cover", "vertical-ad"]
+      }
+    ],
+    "requirements": [
+      { "placement": "Landing page hero", "aspect_ratio": "16:9", "purpose": "First impression / primary brand stage", "needs_text_zone": true },
+      { "placement": "Establishing / section header", "aspect_ratio": "16:9", "purpose": "Brand presence, secondary scenes, press use", "needs_text_zone": true },
+      { "placement": "Mobile / vertical hero", "aspect_ratio": "9:16", "purpose": "Mobile-first hero and story-format brand stage", "needs_text_zone": true }
+    ],
+    "quality_gates": {
+      "all_images_generated": true,
+      "prompts_documented": true,
+      "brand_alignment": "Colors and editorial-documentary style match the Digital Wilderness visual language; dark-first cool field with single teal/orange signal.",
+      "technical_quality": "2K resolution, shallow depth of field, clean high contrast.",
+      "text_safe_zones_specified": true,
+      "no_baked_text_or_logos": true,
+      "forbidden_visuals_avoided": true
+    },
+    "generation_summary": { "total_shots": 3, "generated": 3, "pending": 0, "model": "gemini-3-pro-image-preview" }
+  }
+}

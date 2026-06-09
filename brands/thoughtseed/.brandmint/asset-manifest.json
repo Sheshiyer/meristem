@@ -1,0 +1,206 @@
+{
+  "brand": "thoughtseed",
+  "generated_at": "2026-06-08T06:10:00Z",
+  "user_provided_assets": [
+    {
+      "id": "logo-wordmark",
+      "path": "./assets/thoughtseed-horizontal-wordmark-3x.png",
+      "type": "logo",
+      "exists": true,
+      "deterministic": true,
+      "required": true
+    },
+    {
+      "id": "logo-tree-mark",
+      "path": "./assets/thoughtseed-tree-mark-black-3x.png",
+      "type": "logo-icon",
+      "exists": true,
+      "deterministic": true,
+      "required": false
+    },
+    {
+      "id": "logo-reference-01",
+      "path": "./assets/thoughtseed-logo-reference-01.jpg",
+      "type": "reference",
+      "exists": true,
+      "deterministic": true,
+      "required": false
+    },
+    {
+      "id": "logo-reference-02",
+      "path": "./assets/thoughtseed-logo-reference-02.jpg",
+      "type": "reference",
+      "exists": true,
+      "deterministic": true,
+      "required": false
+    }
+  ],
+  "generated_assets": [
+    {
+      "id": "hero-01-digital-wilderness",
+      "path": "./generated/hero-01-digital-wilderness.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "hero-images",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "hero-02-establishing",
+      "path": "./generated/hero-02-establishing.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "hero-images",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "hero-03-mobile",
+      "path": "./generated/hero-03-mobile.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "hero-images",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "icons-01-sheet",
+      "path": "./generated/icons-01-sheet.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 5,
+      "skill": "icon-system",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "illus-01-systems-organism",
+      "path": "./generated/illus-01-systems-organism.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 5,
+      "skill": "brand-illustrations",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "illus-02-delivery-loop",
+      "path": "./generated/illus-02-delivery-loop.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 5,
+      "skill": "brand-illustrations",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "lifestyle-01-worktable",
+      "path": "./generated/lifestyle-01-worktable.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "lifestyle-photography",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "lifestyle-02-studio",
+      "path": "./generated/lifestyle-02-studio.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "lifestyle-photography",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "pattern-01-dark",
+      "path": "./generated/pattern-01-dark.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 5,
+      "skill": "pattern-library",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "pattern-02-light",
+      "path": "./generated/pattern-02-light.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 5,
+      "skill": "pattern-library",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "product-01-system-artifacts",
+      "path": "./generated/product-01-system-artifacts.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "product-photography",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "product-02-screen-surface",
+      "path": "./generated/product-02-screen-surface.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "product-photography",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "social-ig-story",
+      "path": "./generated/social-ig-story.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "social-media-assets",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "social-og",
+      "path": "./generated/social-og.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "social-media-assets",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "social-x-header",
+      "path": "./generated/social-x-header.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 4,
+      "skill": "social-media-assets",
+      "model": "gemini-3-pro-image-preview"
+    },
+    {
+      "id": "visual-language-board",
+      "path": "./generated/visual-language-board.png",
+      "exists": true,
+      "deterministic": false,
+      "source": "generated",
+      "wave": 3,
+      "skill": "visual-language",
+      "model": "gemini-3-pro-image-preview"
+    }
+  ],
+  "validation": {
+    "all_paths_exist": true,
+    "missing_paths": [],
+    "user_count": 4,
+    "generated_count": 16
+  }
+}

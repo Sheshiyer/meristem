@@ -1,0 +1,44 @@
+{
+  "skill": "messaging-framework",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-06-06T00:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "tagline": {
+      "selected": "Sell the view.",
+      "type": "imperative",
+      "alternatives": [
+        "Every floor. Every light.",
+        "The view, always true.",
+        "Step into the skyline.",
+        "Vantage, on demand."
+      ]
+    },
+    "elevator_pitch": "Vantyx turns a tower's best asset — its views — into an immersive experience buyers can step into, floor by floor, morning to night. And because the building keeps rising, your team updates those views yourselves, anytime, with zero downtime. It's the living, always-true sales tool for view-led real estate.",
+    "one_liner": "The living 360° tour platform for view-led real estate.",
+    "pillars": [
+      {
+        "name": "Step into the view",
+        "message": "Buyers explore the real 360° outlook from any floor, at any time of day — instantly, in the browser, no app.",
+        "proof": ["Equirectangular per floor × time", "Drag to pan, zoom, fullscreen", "Loads on any device"]
+      },
+      {
+        "name": "Always true to today",
+        "message": "As the tower rises and the skyline fills in, the view stays current — updated non-destructively, with zero downtime.",
+        "proof": ["Versioned, atomic publish", "Live tour never breaks mid-update", "Instant rollback"]
+      },
+      {
+        "name": "You're in control",
+        "message": "Your marketing team keeps it current — upload, preview, publish. No engineers, no rebuilds, one branded tour per project.",
+        "proof": ["Self-serve admin", "Project-specific + branded", "Multi-tenant platform"]
+      }
+    ],
+    "objection_responses": {
+      "We already did a 360 shoot": "And it was true the day it shipped. Vantyx keeps it true every day after — without re-hiring a crew or rebuilding the site.",
+      "Our team isn't technical": "That's the point — upload a new floor capture, preview, publish. If it needed an engineer, we built it wrong.",
+      "Will an update break our live page?": "No. New views are processed into a new version and only go live once validated — the running tour never goes dark, and you can roll back instantly."
+    }
+  }
+}

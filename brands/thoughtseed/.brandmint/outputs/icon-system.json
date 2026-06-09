@@ -1,0 +1,69 @@
+{
+  "skill": "icon-system",
+  "cluster": "illustration",
+  "wave": 5,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "art_direction": {
+      "theme": "Digital Wilderness",
+      "summary": "The icon system is one cohesive sheet of about twelve minimal geometric line icons sharing a single thin teal stroke and one construction logic on a deep blue-black field. Marks are abstract and engineered — seed-and-growth, a loop, a node network, a layered system, framing/requirement, and handoff — never cartoonish and never lettered. The set reads as a system built by people who think in systems: precise, legible, palette-disciplined. This sheet is the reference set; production icons are cut to a 24x24 grid from this construction.",
+      "model": "gemini-3-pro-image-preview"
+    },
+    "style_definition": {
+      "type": "line",
+      "stroke_weight": "2px standard, 1.5px at small sizes — uniform across the set",
+      "corner_radius": "2px (near-sharp) — precise and engineered, lightly softened",
+      "grid_size": "24x24 base, scaled to 16 / 32 / 48",
+      "padding": "2px (20x20 live area on the 24px grid)",
+      "line_caps": "round",
+      "line_joins": "round",
+      "optical_adjustments": "yes — weight balanced optically across the set",
+      "colors": {
+        "primary": "#00897B",
+        "secondary": "#37474F",
+        "field": "#0A0E14",
+        "active_signal": "#00897B",
+        "rule": "Neutral gray by default; teal for active/signal. Never the ignition orange except on a true primary action; never recolored into gradients."
+      }
+    },
+    "categories": {
+      "ui": ["menu", "close", "search", "settings", "arrow", "check", "share", "user"],
+      "feature": ["requirement-architecture (framing)", "product-and-interface-systems (layered system)", "handoff-and-decision-systems (handoff)", "node-network", "delivery-loop"],
+      "category": ["seed-and-growth", "document/diagram type", "system map"]
+    },
+    "assets": [
+      {
+        "id": "icons-01-sheet",
+        "path": "./generated/icons-01-sheet.png",
+        "aspect_ratio": "1:1",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "type": "icon-sheet",
+        "description": "A cohesive system of about twelve minimal geometric line icons on a tidy grid: abstract marks for seed-and-growth, a loop, a node network, a layered system, framing or requirement, and handoff, all drawn with one consistent thin teal stroke on deep blue-black, precise and engineered, never cartoonish.",
+        "prompt": "A cohesive system of about twelve minimal geometric line icons on a tidy grid: abstract marks for seed-and-growth, a loop, a node network, a layered system, framing or requirement, and handoff, all drawn with one consistent thin teal stroke on deep blue-black, precise and engineered, never cartoonish.",
+        "contains_icon_concepts": ["seed-and-growth", "loop", "node-network", "layered-system", "framing/requirement", "handoff", "and additional system marks to ~12 total"],
+        "usage": ["icon-reference-sheet", "feature-section-icons", "ui-icons", "diagram-legends", "deck"]
+      }
+    ],
+    "export_formats": ["svg", "png"],
+    "export_note": "The generated sheet is a single 1:1 reference grid. Production cuts each mark to its own SVG on the 24x24 grid and exports PNG at 16/24/32/48/64/96; no text is ever baked into any icon.",
+    "size_variants": ["16", "24", "32", "48", "64", "96"],
+    "quality_gates": {
+      "style_definition_matches_visual_language": true,
+      "feature_icons_defined": "requirement architecture, product & interface systems, handoff & decision systems present as abstract marks.",
+      "common_ui_icons_included": true,
+      "consistent_style_across_set": "Single thin teal stroke, one construction logic, one grid.",
+      "legible_at_16px": "Near-sharp 2px construction holds at small sizes; 1.5px variant for 16px.",
+      "colors_limited_to_palette": true,
+      "no_cartoon_iconography": true,
+      "no_baked_text_or_logos": true,
+      "export_formats_specified": true,
+      "all_images_generated": true,
+      "prompts_documented": true
+    },
+    "generation_summary": { "total_icons": 1, "generated": 1, "pending": 0, "icon_concepts_on_sheet": 12, "model": "gemini-3-pro-image-preview" }
+  }
+}

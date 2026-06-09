@@ -1,0 +1,279 @@
+# Brandmint v2 — Sample Brand Configuration
+# Copy this file to your brand directory and customize
+
+# =============================================================================
+# BRAND IDENTITY
+# =============================================================================
+brand:
+  name: "Acme Corp"
+  slug: "acme-corp"
+  tagline: "Building the future, one innovation at a time"
+  
+  # Brand category (affects visual and content choices)
+  category: "technology"  # technology | lifestyle | finance | health | education | retail
+  
+  # Target market
+  market:
+    b2b: true
+    b2c: false
+    enterprise: true
+    smb: false
+
+# =============================================================================
+# COMPANY CONTEXT
+# =============================================================================
+company:
+  description: |
+    Acme Corp is a B2B SaaS company that provides enterprise workflow
+    automation solutions. We help large organizations reduce operational
+    costs by 40% through AI-powered process optimization.
+    
+  founding_year: 2020
+  stage: "growth"  # pre-seed | seed | series-a | series-b | growth | public
+  
+  # What problem does it solve?
+  problem: |
+    Enterprise teams waste 30% of their time on repetitive manual tasks
+    that could be automated. Existing solutions are either too rigid
+    or require extensive technical expertise to configure.
+    
+  # What's the solution?
+  solution: |
+    Our AI-powered platform learns from existing workflows and suggests
+    automations that can be deployed with one click. No code required.
+
+# =============================================================================
+# TARGET AUDIENCE
+# =============================================================================
+audience:
+  primary:
+    title: "Operations Director"
+    company_size: "500-5000 employees"
+    industry: "Manufacturing, Logistics, Healthcare"
+    pain_points:
+      - "Manual processes causing delays"
+      - "Difficulty hiring technical staff"
+      - "Compliance documentation burden"
+    goals:
+      - "Reduce operational costs by 25%"
+      - "Improve process visibility"
+      - "Enable team to focus on strategic work"
+      
+  secondary:
+    title: "CIO / VP of Technology"
+    company_size: "1000+ employees"
+    pain_points:
+      - "Integration complexity"
+      - "Security concerns with new tools"
+      - "ROI justification to board"
+
+# =============================================================================
+# COMPETITORS
+# =============================================================================
+competitors:
+  direct:
+    - name: "Zapier"
+      positioning: "Simple automation for SMBs"
+      weakness: "Not enterprise-ready"
+      
+    - name: "UiPath"
+      positioning: "Enterprise RPA"
+      weakness: "Requires technical expertise"
+      
+  indirect:
+    - name: "Internal IT teams"
+      positioning: "Custom solutions"
+      weakness: "Slow, expensive, hard to maintain"
+
+# =============================================================================
+# BRAND PERSONALITY
+# =============================================================================
+personality:
+  # Pick 3-5 traits
+  traits:
+    - "innovative"
+    - "reliable"
+    - "approachable"
+    - "expert"
+    
+  # Voice characteristics
+  voice:
+    formality: 0.6        # 0 = casual, 1 = formal
+    enthusiasm: 0.7       # 0 = reserved, 1 = energetic
+    technicality: 0.5     # 0 = simple, 1 = technical
+    warmth: 0.6           # 0 = professional distance, 1 = friendly
+    
+  # Brand archetypes (pick 1-2)
+  archetypes:
+    primary: "sage"       # sage | hero | creator | caregiver | explorer | rebel
+    secondary: "magician"
+
+# =============================================================================
+# VISUAL PREFERENCES (Optional — influences Wave 3-5)
+# =============================================================================
+visual_preferences:
+  # Color mood
+  color_mood: "professional-warm"  # bold | minimal | warm | cool | vibrant | muted
+  
+  # Photography style
+  photography_style: "authentic"   # polished | authentic | editorial | lifestyle
+  
+  # Illustration style
+  illustration_style: "line-art"   # flat | 3d | line-art | hand-drawn | geometric
+  
+  # Specific color requests (optional)
+  preferred_colors:
+    - "#2563EB"  # Primary blue
+    - "#10B981"  # Accent green
+    
+  # Colors to avoid
+  avoid_colors:
+    - "#FF0000"  # No aggressive red
+
+# =============================================================================
+# USER-PROVIDED ASSETS (Critical for Wave 7)
+# =============================================================================
+user_provided_assets:
+  # Logo files — REQUIRED
+  logo:
+    primary:
+      path: ./assets/logo-primary.png
+      type: logo
+      required: true
+      
+    dark:
+      path: ./assets/logo-dark.png
+      type: logo
+      required: false
+      
+    icon:
+      path: ./assets/logo-icon.png
+      type: logo-icon
+      required: false
+      
+  # Product screenshots — DETERMINISTIC (not AI-generated)
+  screenshots:
+    - path: ./assets/screenshot-dashboard.png
+      type: screenshot
+      deterministic: true
+      label: "Main Dashboard"
+      
+    - path: ./assets/screenshot-workflow.png
+      type: screenshot
+      deterministic: true
+      label: "Workflow Builder"
+      
+    - path: ./assets/screenshot-analytics.png
+      type: screenshot
+      deterministic: true
+      label: "Analytics View"
+      
+  # Founder/team photos (optional)
+  team:
+    - path: ./assets/founder-headshot.jpg
+      type: headshot
+      deterministic: true
+      name: "Jane Smith, CEO"
+      
+  # Existing brand assets (optional)
+  existing:
+    - path: ./assets/brand-guidelines-v1.pdf
+      type: reference
+      note: "Previous brand guidelines for reference"
+
+# =============================================================================
+# CONTENT REQUIREMENTS
+# =============================================================================
+content:
+  # Landing page sections needed
+  landing_page:
+    sections:
+      - hero
+      - problem
+      - solution
+      - features
+      - testimonials
+      - pricing
+      - cta
+      
+  # Email sequences
+  email:
+    welcome_series: true
+    nurture_series: true
+    onboarding_series: true
+    
+  # Ad platforms
+  ads:
+    platforms:
+      - linkedin
+      - google
+    formats:
+      - text
+      - image
+
+# =============================================================================
+# PUBLISHING CONFIGURATION (Wave 7)
+# =============================================================================
+publishing:
+  # NotebookLM settings
+  notebooklm:
+    enabled: true
+    artifacts:
+      - mind_map
+      - slides
+      - audio_overview
+      - brand_report
+      
+  # Wiki site
+  wiki:
+    enabled: true
+    theme: "glassmorphism"
+    
+  # Deliverables package
+  deliverables:
+    formats:
+      - zip
+      - pdf
+    include_origins: true  # Include ASSET-ORIGINS.md
+
+# =============================================================================
+# SYNTHESIS OPTIONS
+# =============================================================================
+synthesis:
+  # Prose synthesis (requires OPENROUTER_API_KEY)
+  synthesize_prose: true
+  synthesis_model: "anthropic/claude-3.5-haiku"
+  
+  # NVIDIA embedding integration (optional)
+  embedding_integration:
+    enabled: false
+    worker_url: ""  # Set to your design-memory-worker URL
+
+# =============================================================================
+# EXECUTION OPTIONS
+# =============================================================================
+execution:
+  # Depth level
+  depth: "comprehensive"  # quick | standard | comprehensive
+  
+  # Wave selection
+  waves: "1-7"
+  
+  # Cost guard (USD)
+  max_cost: 10.00
+  
+  # Non-interactive mode (for agent execution)
+  non_interactive: true
+
+# =============================================================================
+# VALIDATION
+# =============================================================================
+validation:
+  # Require all user assets before synthesis
+  require_user_assets: true
+  
+  # Warn on missing optional assets
+  warn_missing_optional: true
+  
+  # Fail on hallucinated paths
+  fail_on_hallucination: true

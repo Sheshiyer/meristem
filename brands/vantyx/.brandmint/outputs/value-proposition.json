@@ -1,0 +1,38 @@
+{
+  "skill": "value-proposition",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-06-06T00:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "headline": "Sell the view — before it's built, and keep it true as it rises.",
+    "subhead": "Vantyx turns every floor's real 360° outlook into an immersive experience buyers step into — and your team keeps current, with zero downtime.",
+    "for_whom": "View-led property developers and their sales & marketing teams",
+    "jobs_to_be_done": [
+      "Convert view-led buyers early, before the floor exists",
+      "Keep the marketing experience accurate as construction changes the view",
+      "Update without engineering and without risking the live site"
+    ],
+    "gains": [
+      "A premium, branded, immersive tour per project",
+      "Always-current views — true to today",
+      "Self-serve updates by non-technical staff"
+    ],
+    "pains_removed": [
+      "Stale 360 shoots that need re-hiring a crew",
+      "Destructive rebuilds that can take the live page down",
+      "Dependence on developers for every change"
+    ],
+    "differentiators": [
+      "Living, self-serve updates (not a one-time deliverable)",
+      "Non-destructive + atomic publish (the tour never goes dark)",
+      "The real, current view — every floor × every time of day"
+    ],
+    "proof_points": [
+      "Equirectangular 360° per floor/time, optimized for instant in-browser load",
+      "Versioned R2-backed publishing with instant rollback",
+      "Proven pattern shipped live (Marina One, Bengaluru)"
+    ]
+  }
+}

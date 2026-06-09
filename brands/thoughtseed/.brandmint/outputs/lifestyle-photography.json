@@ -1,0 +1,72 @@
+{
+  "skill": "lifestyle-photography",
+  "cluster": "photography",
+  "wave": 4,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "art_direction": {
+      "theme": "Digital Wilderness",
+      "summary": "Lifestyle frames document the founder-operator's working reality rather than staging people. They show the environment and objects of a systems studio — worktables carrying matte-paper schematics, brushed-metal tools, devices turned to abstract interface glow, and a single cultivated stone-and-moss detail. Editorial-documentary treatment: architectural daylight mixed with screen glow, clean contrast, intentional arrangement. Every scene reads as built by people who think in systems and ship them, with no faces and no stock-startup perfection.",
+      "model": "gemini-3-pro-image-preview",
+      "lighting": "Natural, directional architectural daylight mixed with screen glow; controlled clean shadow for depth; never flat or over-lit.",
+      "color_treatment": "Cool cast anchored to deep blue-black and cool grays; desaturated, with restrained teal signal accents occurring naturally in interfaces and equipment.",
+      "composition": "Low three-quarter and interior establishing crops, asymmetric, structure-forward, intentional negative space.",
+      "mood": "Calm, intentional, grounded, founder-led and technical, not aspirational-glossy."
+    },
+    "subject_direction": {
+      "demographics": "No people / no faces shown. Brand presence is carried by environment, working surfaces, and objects — the founder-operator implied, never posed.",
+      "style": "Editorial-documentary; tactile real materials (matte paper, brushed metal, weathered stone, living moss, screen glow); intentional arrangement over incidental clutter.",
+      "expression": "N/A — environment-and-object storytelling rather than human expression.",
+      "diversity_notes": "By deliberately avoiding figures, the frames sidestep stock-photo casting clichés; representation is handled elsewhere in the brand system, not through staged lifestyle people."
+    },
+    "scenarios": [
+      { "id": "lifestyle-01-worktable", "name": "Founder-operator worktable", "setting": "A founder-operator's worktable seen from a low three-quarter angle", "activity": "System schematics, precise tools, and a device in active working context; a stone-and-moss paperweight grounding the scene", "mood": "Focused, grounded, technically precise", "key_message": "Real systems work happens here — requirement made tangible on the table." },
+      { "id": "lifestyle-02-studio", "name": "Quiet systems studio interior", "setting": "A quiet systems studio: structured shelving and a long worktable", "activity": "Architectural daylight mixed with screen glow over intentional, arranged materials and a single cultivated plant detail", "mood": "Calm, ordered, intentional", "key_message": "A studio built like a system: structured, alive, and deliberate." }
+    ],
+    "assets": [
+      {
+        "id": "lifestyle-01-worktable",
+        "path": "./generated/lifestyle-01-worktable.png",
+        "aspect_ratio": "3:2",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "scenario": "Founder-operator worktable",
+        "angle": "low three-quarter",
+        "crop": "detail / tabletop",
+        "description": "Editorial-documentary still of a founder-operator's worktable from a low three-quarter angle: matte-paper system schematics carrying faint abstract geometric diagrams, a brushed-metal rule and precise tools, a laptop turned away showing only an abstract dark interface glow, and a small stone-and-moss object used as a paperweight. No faces, no people.",
+        "prompt": "An editorial-documentary still of a founder-operator's worktable seen from a low three-quarter angle: matte-paper system schematics carrying faint abstract geometric diagrams, a brushed-metal rule and precise tools, a laptop turned away showing only an abstract dark interface glow, and a small stone-and-moss object used as a paperweight. No faces, no people.",
+        "priority": "high",
+        "usage": ["about-page", "process-section", "case-study", "social"]
+      },
+      {
+        "id": "lifestyle-02-studio",
+        "path": "./generated/lifestyle-02-studio.png",
+        "aspect_ratio": "3:2",
+        "model": "gemini-3-pro-image-preview",
+        "source": "generated",
+        "user_provided": false,
+        "scenario": "Quiet systems studio interior",
+        "angle": "interior establishing",
+        "crop": "wide / environmental",
+        "description": "Editorial-documentary interior of a quiet systems studio: structured shelving and a long worktable, architectural daylight mixed with screen glow, tactile materials and a single cultivated plant detail, everything arranged and intentional rather than incidental. No people.",
+        "prompt": "An editorial-documentary interior of a quiet systems studio: structured shelving and a long worktable, architectural daylight mixed with screen glow, tactile materials and a single cultivated plant detail, everything arranged and intentional rather than incidental. No people.",
+        "priority": "high",
+        "usage": ["about-page", "studio-section", "press-kit", "background"]
+      }
+    ],
+    "quality_gates": {
+      "scenarios_reflect_persona": "Frames reflect the System-Carrying Founder's working reality — systems on the table, ownership of the build — without staged people.",
+      "style_matches_visual_language": true,
+      "aspect_ratios_appropriate": "3:2 editorial format for hero/about/case-study placements.",
+      "no_stock_photo_cliches": true,
+      "no_baked_text_or_logos": true,
+      "forbidden_visuals_avoided": true,
+      "all_images_generated": true,
+      "prompts_documented": true
+    },
+    "generation_summary": { "total_shots": 2, "generated": 2, "pending": 0, "model": "gemini-3-pro-image-preview" }
+  }
+}

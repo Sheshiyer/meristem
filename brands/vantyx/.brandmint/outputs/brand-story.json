@@ -1,0 +1,18 @@
+{
+  "skill": "brand-story",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-06-06T00:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "origin_story": {
+      "the_before": "Developers sell million-dollar views with flat CGI renders and a single 360 shoot that's outdated the day the next slab is poured.",
+      "inciting_incident": "We built a one-off 360 tour for a real tower (Marina One, Bengaluru). It was beautiful — and the moment construction moved, the views were wrong, and 'fixing' them meant a developer rebuild every single time.",
+      "the_struggle": "Keeping the views current was destructive and risky: every update threatened to take the live sales site down, so updates just didn't happen.",
+      "the_breakthrough": "We made updates non-destructive and self-serve — versioned, validated, and flipped atomically with zero downtime — so the view is always true, and the builder owns the change.",
+      "the_resolution": "Vantyx: the living view platform. One branded tour per project, every floor at every hour, kept true to today by the people who sell it."
+    },
+    "narrative_one_paragraph": "Vantyx began with a simple frustration: in view-led real estate, the view is the product — yet developers were selling it with renders and stale 360 shoots that went out of date the moment the building grew. We'd built one such tour ourselves, and watched it drift from reality with no safe way to fix it. So we built the fix: a platform where sales teams re-capture and publish floor views themselves, non-destructively, with the live tour never going dark. Vantyx keeps the view as true as the building it sells."
+  }
+}

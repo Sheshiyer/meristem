@@ -1,0 +1,150 @@
+{
+  "skill": "buyer-persona",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-06-07T10:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "persona_name": "Mira, the System-Carrying Founder",
+    "demographics": {
+      "age": 41,
+      "gender": null,
+      "education": "Master's degree in a technical or design discipline (e.g., computer science, HCI, or product design)",
+      "income": "$220,000 base plus equity; controls a project or innovation budget of $150,000–$600,000 per engagement",
+      "location": "Major innovation hub — urban core of a city like London, Berlin, Singapore, or Bangalore",
+      "occupation": "Founder / CTO / innovation lead / product strategist at a funded startup or scaleup with a lean senior team"
+    },
+    "psychographics": {
+      "identity": "Sees herself as the person who carries the whole system in her head — the only one who currently understands how requirement, user, product, and operations connect — and resents that this makes her the permanent translator between vendors.",
+      "values": ["coherence over performative specialization", "ownership over dependency", "competence and taste with restraint", "evidence of shipping over polished promises", "clarity about tradeoffs"],
+      "lifestyle": "Operates with a small senior team and a long task list; reads founder memos and technical walkthroughs over marketing content; protects focus time; deeply skeptical of buzzwords and pitch theater.",
+      "aspirations": "Solve an important, cross-disciplinary problem well, then hand it to her team to run — so she can step out of the translator role and back into building the company.",
+      "community": "Other founders, CTOs, and innovation leads; technical operators; angel and seed investors; design- and engineering-literate peers who trade case studies and handoff notes."
+    },
+    "challenges": [
+      {
+        "challenge": "Every vendor only understands one slice of the problem, so she becomes the full-time translator stitching strategy, design, and engineering together.",
+        "current_solution": "A roster of single-slice vendors — a strategy shop, a design agency, an engineering firm — coordinated by her.",
+        "why_it_fails": "No vendor shares one model of the problem, so coherence is destroyed in the gaps between them and accountability has no single owner.",
+        "quote": "I'm spending more time translating between five vendors than actually building the company."
+      },
+      {
+        "challenge": "Strategy decks arrive beautiful and then drift completely from the product that actually ships.",
+        "current_solution": "A separate strategy or branding engagement that produces a deck, handed to a different team to build.",
+        "why_it_fails": "Decisions made in the deck never survive implementation, so the shipped product quietly contradicts the strategy it was supposed to express.",
+        "quote": "The strategy looked great on slide 12, but nothing in the product we shipped actually reflects it."
+      },
+      {
+        "challenge": "AI proposals are either technically shallow demos or operationally naive — bolted on, not integrated into the product's real logic.",
+        "current_solution": "An AI integration consultancy pitching current tooling and efficiency narratives.",
+        "why_it_fails": "The work stops at a demo layer and ignores product experience, user behavior, and how the system has to actually run day to day.",
+        "quote": "Everyone's selling me an AI demo. Nobody's shown me how it survives contact with real users and real operations."
+      },
+      {
+        "challenge": "The system works on launch day and then falls apart at ownership transfer.",
+        "current_solution": "A build vendor that ships the product and treats documentation and handoff as a closing footnote.",
+        "why_it_fails": "Without real documentation, training, and control surfaces, her team can't run or extend the system, so she stays dependent on the vendor forever.",
+        "quote": "It launched fine. Two months later my team couldn't change a thing without going back to the vendor."
+      },
+      {
+        "challenge": "Studios that lead with human or psychology language can sound soft, and premium studios can be beautiful but slow.",
+        "current_solution": "Premium design studios with strong taste but weaker engineering ownership and velocity.",
+        "why_it_fails": "She can't tell whether the atmosphere hides shallow delivery, and she can't afford a partner that is elegant but cannot ship on a real timeline.",
+        "quote": "I need depth and a system I can run — not a gorgeous narrative that takes a year and breaks when I touch it."
+      }
+    ],
+    "emotional_drivers": {
+      "positive": [
+        "Relief at finally having one accountable partner who holds the whole problem",
+        "Confidence that what was framed is what will actually ship",
+        "Pride in a coherent, well-crafted system that reflects real taste and rigor",
+        "Ownership and autonomy — her team can run and extend the system without her",
+        "Trust earned through specificity and evidence of shipping rather than promises"
+      ],
+      "negative": [
+        "Frustration and fatigue from being the permanent translator between vendors",
+        "Anxiety that the polished pitch hides shallow or naive delivery",
+        "Regret over money and months lost to work that drifted from reality",
+        "Fear of dependency — being locked to a vendor she can never run the system without",
+        "Embarrassment of championing a partner internally who then ships incoherent, broken-at-handoff work"
+      ]
+    },
+    "cbbe": {
+      "salience": {
+        "product_category": "Founder-led systems studio for requirement-to-handoff delivery",
+        "problem_solved": "Important, cross-disciplinary work gets fractured across disconnected vendors who do not share one model of the problem, which destroys coherence before launch and makes ownership harder after it.",
+        "one_sentence": "Thoughtseed is the one studio that studies the requirement, the user, and the founder's operating reality, then designs, builds, and hands back a coherent system the client can run."
+      },
+      "performance": {
+        "points_of_difference": [
+          "One integrated studio logic across requirement, behavior, product, and delivery — not five vendors to coordinate",
+          "Founder-led judgment with fewer translation layers, instead of account-management mediation",
+          "User-behavior-aware framing that stays grounded in engineering and build reality",
+          "Handoff treated as a first-class output — documentation, training, and control surfaces shipped with the system",
+          "Studio-plus-IP posture with reusable product IP, not pure service-vendor billing"
+        ],
+        "points_of_parity": [
+          "Premium product and interface craft",
+          "Real engineering and AI/automation capability across web, mobile, and connected devices",
+          "Professional discovery, scoping, and project delivery",
+          "A clear engagement and pricing structure for serious budgets"
+        ],
+        "core_features": [
+          "Requirement Architecture: problem framing, behavior mapping, operating constraints, and decision logic before implementation",
+          "Product and Interface Systems: web, mobile, AI, automation, and connected-product execution with user behavior treated as part of the system",
+          "Handoff and Decision Systems: documentation, training, control surfaces, and operational artifacts that make the work inheritable",
+          "Engagement models: System Sprint for fast framing and de-risking, and Requirement-to-Handoff Build for scoped delivery through ownership transfer"
+        ]
+      },
+      "imagery": {
+        "associated_brands": [
+          "IDEO (integrated, research-led problem framing) — but with deeper engineering ownership",
+          "Pentagram (editorial taste and a distinct point of view) — but extended through to shipped technical systems",
+          "Thoughtworks / Palantir Foundry (serious technical delivery) — but founder-close and design-literate, not enterprise-distant"
+        ],
+        "usage_locations": [
+          "Founder and innovation-team strategy sessions where the requirement is first framed",
+          "Live product, AI, and connected-device builds across web and mobile",
+          "Ownership-transfer moments where the running system moves to the client's internal team"
+        ],
+        "usage_methods": [
+          "Engaged as the single accountable partner for a cross-disciplinary problem",
+          "Brought in early for a System Sprint to clarify and de-risk the next build decision",
+          "Retained for a scoped Requirement-to-Handoff Build that ends in a runnable, documented system"
+        ]
+      },
+      "judgments": {
+        "positive": [
+          "Finally, one partner who holds the whole problem instead of one slice",
+          "The language is intelligent without becoming abstract or salesy",
+          "There is real evidence of shipped systems, not just decks",
+          "Handoff and operational clarity are treated as part of the value"
+        ],
+        "concerns": [
+          "This sounds broad — is it a generalist-for-hire rather than a focused studio?",
+          "Is this just another agency with nicer words?",
+          "Will the human and behavior language come at the expense of technical depth?",
+          "Premium studios can be beautiful but slow — can they ship on a real timeline?"
+        ],
+        "credibility": "Established founder-led systems studio (founded 2020) with shipped work across AI and automation, web, mobile, and connected devices; live client delivery plus reusable internal product IP; service surfaces that already span framing, design, engineering, and handoff; and decision artifacts and handoff documents that prove the model in practice."
+      },
+      "feelings": {
+        "desired_feelings": [
+          "Relieved to have handed the whole problem to one accountable partner",
+          "Confident the system will ship coherent and run after delivery",
+          "Respected as a technical, skeptical buyer rather than pitched at",
+          "In control — owning the system rather than depending on a vendor"
+        ],
+        "voice": "The founder-side systems translator — a peer operator who has built and shipped systems and lived with ambiguity, not an account manager or a guru.",
+        "tone": "Clear, calm, technically precise, human, and editorially restrained — ambitious ideas kept grounded, with evidence close to every claim."
+      },
+      "resonance": {
+        "why_missed": "Without Thoughtseed, this founder goes back to being the full-time translator between single-slice vendors, watching coherence leak away between handoffs and carrying a system no one else can run.",
+        "mission_alignment": "Her mission is to solve an important problem and hand a runnable system to her team; Thoughtseed's mission is to deliver exactly that coherent, inheritable system — so the studio's success is measured by her independence, not her dependency.",
+        "core_values": ["coherence", "ownership over dependency", "evidence over theater", "cross-disciplinary rigor", "taste with restraint"],
+        "why_choose_us": "Because no other partner carries framing, user behavior, product, engineering, and handoff in one founder-led loop — so she gets one accountable studio, a system that ships coherent, and a clean transfer to ownership instead of a vendor she can never leave."
+      }
+    }
+  }
+}

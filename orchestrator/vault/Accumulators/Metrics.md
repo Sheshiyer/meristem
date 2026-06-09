@@ -1,0 +1,38 @@
+# Metrics
+
+| Timestamp | Brand | Wave | Skill | Duration | Status | Notes |
+|-----------|-------|------|-------|----------|--------|-------|
+| 2026-06-08 11:46 |  | foundation | brand-foundation | 0s | OK | |
+| 2026-06-08 11:46 |  | foundation | buyer-persona | 0s | OK | |
+| 2026-06-08 11:46 |  | foundation | competitor-analysis | 0s | OK | |
+| 2026-06-08 11:46 |  | foundation | value-proposition | 1s | OK | |
+| 2026-06-08 11:49 |  | foundation | brand-foundation | 1s | OK | |
+| 2026-06-08 11:49 |  | foundation | buyer-persona | 0s | OK | |
+| 2026-06-08 11:49 |  | foundation | competitor-analysis | 0s | OK | |
+| 2026-06-08 11:49 |  | foundation | value-proposition | 0s | OK | |
+| 2026-06-08 11:49 |  | strategy | brand-story | 1s | OK | |
+| 2026-06-08 11:49 |  | strategy | messaging-framework | 0s | OK | |
+| 2026-06-08 11:49 |  | strategy | product-positioning | 0s | OK | |
+| 2026-06-08 11:49 |  | strategy | voice-and-tone | 0s | OK | |
+| 2026-06-08 11:49 |  | identity | color-palette | 1s | OK | |
+| 2026-06-08 11:49 |  | identity | logo-concept | 0s | OK | |
+| 2026-06-08 11:49 |  | identity | typography | 0s | OK | |
+| 2026-06-08 11:49 |  | identity | visual-language | 0s | OK | |
+| 2026-06-08 11:49 |  | photography | hero-images | 0s | OK | |
+| 2026-06-08 11:49 |  | photography | lifestyle-photography | 0s | OK | |
+| 2026-06-08 11:49 |  | photography | product-photography | 0s | OK | |
+| 2026-06-08 11:49 |  | photography | social-media-assets | 0s | OK | |
+| 2026-06-08 11:49 |  | illustration | brand-illustrations | 0s | OK | |
+| 2026-06-08 11:49 |  | illustration | icon-system | 0s | OK | |
+| 2026-06-08 11:49 |  | illustration | pattern-library | 0s | OK | |
+| 2026-06-08 11:49 |  | content | ad-creative-copy | 0s | OK | |
+| 2026-06-08 11:49 |  | content | landing-page-copy | 1s | OK | |
+| 2026-06-08 11:49 |  | content | launch-email-sequence | 0s | OK | |
+| 2026-06-08 11:49 |  | content | prelaunch-email-sequence | 0s | OK | |
+| 2026-06-08 11:49 |  | content | press-release | 0s | OK | |
+| 2026-06-08 11:49 |  | content | product-description | 0s | OK | |
+| 2026-06-08 11:49 |  | content | welcome-email-sequence | 0s | OK | |
+| 2026-06-08 11:49 |  | synthesis | brand-documentation | 1s | OK | |
+| 2026-06-08 11:49 |  | synthesis | deliverables-package | 0s | OK | |
+| 2026-06-08 11:49 |  | synthesis | notebooklm-publishing | 0s | OK | |
+| 2026-06-08 11:49 |  | synthesis | wiki-site-generator | 0s | OK | |

@@ -1,0 +1,177 @@
+# Brandmint v2 — Thoughtseed brand configuration
+# Source corpus: website/thoughtseed-2026/.planning/ (brand-source, brief, logos, generated-assets)
+# Studio: founder-led systems studio, requirement-to-handoff delivery.
+# NOTE: The Krebs Cycle of Creativity / consciousness layer is BACKSTAGE only — never public copy.
+
+brand:
+  name: "Thoughtseed"
+  slug: "thoughtseed"
+  tagline: "We plant ideas. They grow wild."
+  category: "technology" # founder-led systems studio / creative technology
+  market:
+    b2b: true
+    b2c: false
+    enterprise: true   # mid-market & innovation teams, not heavy procurement
+    smb: true          # funded startups to scaleups
+
+company:
+  description: |
+    Thoughtseed is a founder-led systems studio that turns complex requirements into
+    coherent technology systems by aligning user psychology, founder operating logic,
+    interface design, engineering delivery, and structured handoff inside one delivery
+    loop. It carries framing, behavior, product, execution, and ownership transfer
+    together instead of splitting them across disconnected vendors.
+  founding_year: 2020
+  stage: "growth"
+  problem: |
+    Important work gets split across strategy, design, engineering, and operations
+    vendors who do not share one model of the problem. That fragmentation destroys
+    coherence before the work ships and makes ownership harder after delivery. The
+    founder becomes the full-time translator between five specialists.
+  solution: |
+    One studio that studies the requirement, the user, and the founder's operating
+    reality, then designs, builds, and hands back a system the client can run, extend,
+    and inherit. Psychology-aware framing stays grounded in engineering; handoff is a
+    first-class output, not post-project admin.
+
+audience:
+  primary:
+    title: "The System-Carrying Founder (founder / CTO / innovation lead / product strategist)"
+    company_size: "Lean senior teams; funded startups through scaleups"
+    industry: "AI & automation, product, web/mobile, IoT, creative technology"
+    pain_points:
+      - "Too many vendors each understand only one slice of the problem"
+      - "Strategy decks get disconnected from shipped product reality"
+      - "AI proposals are technically shallow or operationally naive"
+      - "The system works on launch day but falls apart at ownership transfer"
+    goals:
+      - "Solve an important problem without becoming the full-time vendor translator"
+      - "One studio that understands requirement, user, and operating reality"
+      - "Receive a system that can be run internally after delivery"
+  secondary:
+    title: "Innovation team / technical operator needing one coherent partner"
+    company_size: "Scaleup to enterprise innovation units"
+    pain_points:
+      - "Orchestrating separate strategy, design, engineering, and handoff vendors"
+      - "Coherence and accountability lost across handoffs"
+
+competitors:
+  direct:
+    - name: "Large innovation consultancies"
+      positioning: "Process packaging, enterprise credibility, procurement comfort"
+      weakness: "Weak on intimacy, velocity, and ownership clarity from concept to handoff"
+    - name: "Premium product design agencies"
+      positioning: "Polish, interface craft, presentation quality"
+      weakness: "Weaker on engineering ownership, AI integration, operational handoff rigor"
+    - name: "AI integration consultancies"
+      positioning: "Current tooling and efficiency narratives"
+      weakness: "Weak on narrative, product experience, founder workflow, durable brand memory"
+  indirect:
+    - name: "Specialized engineering vendors"
+      positioning: "Narrow technical execution"
+      weakness: "Weak when requirement, behavior, interface, and system must align"
+    - name: "Freelancer swarms"
+      positioning: "Flexibility, low overhead"
+      weakness: "Client becomes the integrator; accountability and coherence break down"
+
+personality:
+  traits:
+    - "cross-disciplinary"
+    - "founder-led"
+    - "precise"
+    - "editorial"
+    - "grounded"
+  voice:
+    formality: 0.55      # crafted, not stiff
+    enthusiasm: 0.4      # calm over loud
+    technicality: 0.6    # real systems language, no jargon theater
+    warmth: 0.5          # human, founder-close, not salesy
+  archetypes:
+    primary: "sage"      # clarity, truth, coherence
+    secondary: "creator" # builds systems that can be inherited
+
+visual_preferences:
+  color_mood: "cool"               # deep blue-black anchor, teal signal, warm orange ignition
+  photography_style: "editorial"   # editorial-documentary, tactile materials, prototyping spaces
+  illustration_style: "geometric"  # geometric systems diagrams blended with organic signal patterns
+  preferred_colors:
+    - "#1A237E"  # Deep Quantum Blue — anchor, long-horizon trust
+    - "#00897B"  # Consciousness Teal — primary accent, directional signal
+    - "#F57C00"  # Energetic Orange — CTA, ignition, launch
+    - "#37474F"  # Mindful Gray — metadata, scaffolding, secondary text
+    - "#B8E986"  # Growth Light — positive signal, emergence
+  avoid_colors:
+    - "#7C3AED"  # generic SaaS purple — avoid purple-on-white sameness
+
+user_provided_assets:
+  logo:
+    primary:
+      path: ./assets/thoughtseed-horizontal-wordmark-3x.png
+      type: logo
+      required: true
+    icon:
+      path: ./assets/thoughtseed-tree-mark-black-3x.png
+      type: logo-icon
+      required: false
+  existing:
+    - path: ./assets/thoughtseed-logo-reference-01.jpg
+      type: reference
+      note: "Canonical logo reference (do not regenerate)"
+    - path: ./assets/thoughtseed-logo-reference-02.jpg
+      type: reference
+      note: "Canonical logo reference (do not regenerate)"
+
+content:
+  landing_page:
+    sections:
+      - hero               # Digital Wilderness stage
+      - delivery-loop      # requirement -> handoff motion/state system
+      - work               # project records + service modules
+      - proof              # shipped systems, technical range, handoff artifacts
+      - handoff            # ownership transfer as value
+      - cta                # Bring the requirement.
+  email:
+    welcome_series: true
+    launch_series: true
+    prelaunch_series: true
+  ads:
+    platforms:
+      - linkedin
+      - x
+    formats:
+      - text
+      - image
+
+publishing:
+  notebooklm:
+    enabled: true
+    artifacts:
+      - mind_map
+      - slides
+      - brand_report
+  wiki:
+    enabled: true
+    theme: "editorial"   # matte, signal-rich; NOT glossy/glassmorphism
+  deliverables:
+    formats:
+      - zip
+      - pdf
+    include_origins: true
+
+synthesis:
+  synthesize_prose: true
+  synthesis_model: "anthropic/claude-3.5-haiku"
+  embedding_integration:
+    enabled: false
+    worker_url: ""
+
+execution:
+  depth: "comprehensive"
+  waves: "1-7"
+  max_cost: 25.00
+  non_interactive: true
+
+validation:
+  require_user_assets: true
+  warn_missing_optional: true
+  fail_on_hallucination: true

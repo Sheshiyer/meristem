@@ -1,0 +1,210 @@
+{
+  "skill": "brand-documentation",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-06-08T06:10:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand": "Thoughtseed",
+    "document_separation_rationale": "Per the synthesis core (Lesson 4), a single monolithic brand book serves no audience well. The Thoughtseed package ships as three separated documents, each scoped to one reader and one decision context: Brand Identity for designers and production, Product Positioning for product and sales, and Campaign Guidelines for marketing and content. Internal-only material — the Krebs Cycle of Creativity, requirement-to-handoff loop internals, and the internal color labels — never appears in any document body; only its visible effects do.",
+    "documents": {
+      "brand_identity": {
+        "title": "Thoughtseed — Brand Identity Guidelines",
+        "audience": "Designers, production, and marketing operators producing branded surfaces.",
+        "purpose": "Codify the logo system, color palette, typography, and visual language so every surface reads as one coherent, founder-led editorial system.",
+        "page_count_estimate": 26,
+        "sections_total": 5,
+        "sections_complete": 5,
+        "sections": [
+          {
+            "number": "01",
+            "name": "Brand Overview",
+            "source_skills": ["brand-foundation"],
+            "prose": "Thoughtseed is a founder-led systems studio. Its essence is coherent systems, cultivated: disciplined engineering held against organic emergence. The brand reads as Sage with a Creator's hands — it earns trust through clarity and coherence, then ships and hands back what it frames. Five values govern every surface: clarity over theater, cross-disciplinary rigor, delivery integrity, accountable handoff, and selective focus. Personality is coherent, founder-led, precise, grounded, and intentional. In any identity surface, this means restraint over decoration, evidence over adjectives, and one calm signal over visual noise.",
+            "assets_referenced": []
+          },
+          {
+            "number": "02",
+            "name": "Logo System",
+            "source_skills": ["logo-concept"],
+            "prose": "Thoughtseed uses two canonical marks as a system, not a single locked lockup. The horizontal wordmark is the primary mark for headers, mastheads, decks, and signatures wherever there is horizontal room. The tree mark is the standalone symbol for square and compact contexts — app icons, avatars, favicons, watermarks, embossed cover details. The marks are monochrome by rule: black on light surfaces, reversed to white on the deep-blue or dark canvas. Accent colors are never applied to the mark; they belong to the surrounding system. Clear space for the wordmark equals the cap-height of the T on all sides; for the tree mark, a quarter of its height minimum, half preferred. Minimum sizes: wordmark 120px / 28mm wide, tree mark 24px / 8mm tall (16px favicon floor only when the silhouette still reads). When the wordmark cannot meet its minimum, substitute the tree mark rather than shrinking it. Do not generate, redraw, recolor, skew, or add effects to the marks; any embossed seal or poster artwork in the reference set is art-direction mood only and is never a replacement mark.",
+            "assets_referenced": [
+              { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided", "deterministic": true, "role": "primary mark" },
+              { "id": "logo-tree-mark", "path": "./assets/thoughtseed-tree-mark-black-3x.png", "origin": "user_provided", "deterministic": true, "role": "standalone symbol" },
+              { "id": "logo-reference-01", "path": "./assets/thoughtseed-logo-reference-01.jpg", "origin": "user_provided", "deterministic": true, "role": "mark reference, not a lockup" },
+              { "id": "logo-reference-02", "path": "./assets/thoughtseed-logo-reference-02.jpg", "origin": "user_provided", "deterministic": true, "role": "mark reference, not a lockup" }
+            ]
+          },
+          {
+            "number": "03",
+            "name": "Color Palette",
+            "source_skills": ["color-palette"],
+            "prose": "The system is dark-first and cool-anchored, distributed roughly 60 / 25 / 10 / 5 to stay editorial rather than loud. A deep indigo-blue (#1A237E) and a cool near-black (#0A0E14) form the dominant dark field and carry long-horizon trust. A cool blue-gray (#37474F) supplies scaffolding, metadata, borders, and secondary text. A teal (#00897B) is the working signal for links, active states, focus, and data emphasis, at roughly ten percent. A single warm orange (#F57C00) is reserved almost entirely for the primary call-to-action; its scarcity is what makes it read as ignition. A soft green (#B8E986) marks positive emergence and validation. Accessibility is non-negotiable: orange CTAs MUST carry deep-blue (#1A237E) label text at 4.90:1 — white on orange fails at 2.70:1 and is forbidden. White on teal is large-text and UI only; darken to teal 600 (#007065) or add weight for fine text. The palette deliberately avoids the generic purple-on-white SaaS gradient. Color names are internal working labels for designers and tooling only; they never appear in any client-visible string, UI, or document body.",
+            "assets_referenced": []
+          },
+          {
+            "number": "04",
+            "name": "Typography",
+            "source_skills": ["typography"],
+            "prose": "Type is a three-role system, not a two-font pairing, so the page reads as an editorial publication built by engineers. Tyros Pro is the display face for hero thresholds and ceremonial headings — the Digital Wilderness line, section thresholds, covers — used sparingly, never for body or UI. SubjectivitySerif is the primary reading voice for narrative and case-study copy at 16px / 1.625. Fira Code is the load-bearing data layer: metadata, captions, diagram and section labels, numbering, and eyebrow kickers, so the system always shows its engineering substrate. The scale is a 1.25 ratio on a 16px base. Contrast comes from role separation, not from piling on weights: one display moment per view, body measure of roughly 60–75 characters, the mono used to signal precision in labels and numbers rather than sprinkled through prose. Self-host the licensed display and serif webfonts with font-display: swap and editorial fallbacks; load Fira Code from Google Fonts or self-host. Never reach for a default SaaS stack as a primary face.",
+            "assets_referenced": []
+          },
+          {
+            "number": "05",
+            "name": "Visual Language",
+            "source_skills": ["visual-language"],
+            "prose": "The visual territory is Digital Wilderness: architectural precision held against cultivated texture, structured layouts against alive surfaces, with neither side winning. Five principles govern it — architectural precision against cultivated texture, signal over noise, negative space as structure, material truth over gloss, and show the system. Materials run matte paper, black ink, glass, brushed aluminium, oxidized copper, weathered stone, living moss, screen glow, and architectural shadow. Photography is editorial documentary: natural directional light, architectural crops, intentional negative space, real materials and prototyping spaces over staged people, a cool desaturated cast with at most one restrained signal accent. Illustration is geometric systems diagrams blended with organic signal and cultivated-landscape motifs, in brand colors only. Icons share one single-weight, near-sharp 24px grid construction. Patterns are a quiet systems grid interwoven with contour and root-and-branch motifs. Forbidden across every image: purple-on-white SaaS gradients, stock startup team photos, empty futurism, mystical wellness fog, glossy plastic, cartoon iconography, and any text, lettering, or logos baked into generated imagery.",
+            "assets_referenced": [
+              { "id": "visual-language-board", "path": "./generated/visual-language-board.png", "origin": "generated", "deterministic": false, "role": "moodboard reference, direction not deliverable" },
+              { "id": "icons-01-sheet", "path": "./generated/icons-01-sheet.png", "origin": "generated", "deterministic": false, "role": "icon construction reference" },
+              { "id": "pattern-01-dark", "path": "./generated/pattern-01-dark.png", "origin": "generated", "deterministic": false, "role": "pattern, dark field" },
+              { "id": "pattern-02-light", "path": "./generated/pattern-02-light.png", "origin": "generated", "deterministic": false, "role": "pattern, light field" },
+              { "id": "illus-01-systems-organism", "path": "./generated/illus-01-systems-organism.png", "origin": "generated", "deterministic": false, "role": "illustration style example" },
+              { "id": "illus-02-delivery-loop", "path": "./generated/illus-02-delivery-loop.png", "origin": "generated", "deterministic": false, "role": "illustration style example" }
+            ]
+          }
+        ]
+      },
+      "product_positioning": {
+        "title": "Thoughtseed — Product Positioning",
+        "audience": "Product team and sales operators framing and selling Thoughtseed Studio.",
+        "purpose": "Codify the value proposition, positioning, target buyer, and competitive frame so every conversation lands on coherence, ownership, and evidence.",
+        "page_count_estimate": 14,
+        "sections_total": 4,
+        "sections_complete": 4,
+        "sections": [
+          {
+            "number": "01",
+            "name": "Value Proposition",
+            "source_skills": ["value-proposition"],
+            "prose": "One studio carries the requirement all the way to a system you own. The primary value is a single accountable owner of coherence from requirement to handoff — it ends the founder's exhausting role as the full-time translator between five specialists and stops coherence leaking at every seam. Secondary values follow: ownership over dependency, a system the team can run and extend; user behavior kept grounded in engineering reality so adoption survives launch; and AI and automation built into product logic rather than bolted on as a demo. The pain-to-gain motion is concrete — too many single-slice vendors become one delivery loop; decks disconnected from shipped reality become what-we-framed-is-what-we-ship; launch-day systems that break at handoff become documentation, training, and control surfaces that ship with the build. Table stakes — senior craft, modern engineering, professional discovery — are assumed, not sold.",
+            "assets_referenced": [
+              { "id": "product-01-system-artifacts", "path": "./generated/product-01-system-artifacts.png", "origin": "generated", "deterministic": false, "role": "system-artifacts visual for handoff value" },
+              { "id": "product-02-screen-surface", "path": "./generated/product-02-screen-surface.png", "origin": "generated", "deterministic": false, "role": "product surface visual" }
+            ]
+          },
+          {
+            "number": "02",
+            "name": "Positioning & Category",
+            "source_skills": ["product-positioning"],
+            "prose": "Thoughtseed defines the founder-led systems studio: the studio that carries a complex requirement all the way to a system the client can own, instead of selling a single slice of strategy, design, or engineering. The frame of reference is deliberate — not a single-slice design agency, not an enterprise consultancy that packages process, not an AI integrator chasing tooling. Points of difference: one integrated studio logic where requirement, behavior, interface, and engineering stay in one loop; founder-led judgment with less translation loss than layered account management; and handoff treated as part of the system. Points of parity — senior craft, modern engineering across web, mobile, AI, automation, and connected products, professional discovery — are met, then moved past. The positioning statement: for the system-carrying founder who needs to solve a problem too entangled to split across vendors, Thoughtseed aligns user psychology, founder operating logic, interface design, engineering delivery, and structured handoff into one coherent system from requirement to handoff.",
+            "assets_referenced": []
+          },
+          {
+            "number": "03",
+            "name": "Target Customer",
+            "source_skills": ["buyer-persona"],
+            "prose": "The primary buyer is Mira, the System-Carrying Founder — a founder, CTO, innovation lead, or product strategist running a lean senior team at a funded startup through scaleup, controlling a project budget of roughly $150k–$600k per engagement, based in a major innovation hub. She sees herself as the only person currently holding the whole system in her head and resents being the permanent translator between vendors. She values coherence over performative specialization, ownership over dependency, taste with restraint, and evidence of shipping over polished promises. Her jobs to be done: frame a problem too entangled to split; ship a product real users adopt; add AI without it being a demo that never matures; own and run the system after the engagement; and stop being the integrator. She is skeptical of buzzwords and pitch theater, reads founder memos and technical walkthroughs over marketing content, and pays for competence once trust is earned through specificity.",
+            "assets_referenced": []
+          },
+          {
+            "number": "04",
+            "name": "Competitive Positioning",
+            "source_skills": ["competitor-analysis"],
+            "prose": "Thoughtseed sits against five alternatives, each owning one slice and structurally dependent on translation loss. Large innovation consultancies package process and clear board approval but rarely ship and dilute coherence across big teams. Premium product design agencies produce exceptional craft but hand off before the system runs and carry thin engineering ownership. AI integration consultancies reach a fast demo but bolt AI on rather than building it into product logic. Specialized engineering vendors execute a clean spec but build mistakes as handed over with no requirement shaping. Freelancer swarms offer flexibility but make the founder the integrator. The ownable territory is editorial precision with operating clarity — the one founder-led studio that turns a single requirement into a coherent system you can own, framed in calm, signal-rich, technically grounded language no competitor category can credibly claim. The unfair advantage is structural: the same senior operators frame, design for adoption, ship the engineering, and build the handoff, removing the translation loss every single-slice competitor depends on.",
+            "assets_referenced": []
+          }
+        ]
+      },
+      "campaign_content": {
+        "title": "Thoughtseed — Campaign & Content Guidelines",
+        "audience": "Marketing and content operators producing public-facing campaigns and copy.",
+        "purpose": "Codify voice, messaging, story, and copy patterns so every campaign sounds like the founder-side systems translator and respects layer discipline.",
+        "page_count_estimate": 18,
+        "sections_total": 4,
+        "sections_complete": 4,
+        "sections": [
+          {
+            "number": "01",
+            "name": "Brand Voice",
+            "source_skills": ["voice-and-tone"],
+            "prose": "Write as the founder-side systems translator: an operator who has built systems and lived with ambiguity, speaking peer to peer with the founder, never an account manager. The voice is clear, grounded, and crafted, in short declarative sentences with evidence close to every claim. Use requirement, operating logic, user behavior, founder context, systems, signal, coherence, intentional, crafted, shipped, legible, inherited, handoff, cross-disciplinary, and delivery loop. Describe the downstream effects of how the work is done — clearer requirements, calmer execution, stronger trust and adoption, cleaner ownership transfer — rather than the internal method behind them. Never use any term on the prohibited vocabulary list (see voice-and-tone, language_guidelines.vocabulary_bank.prohibited); the layer discipline is absolute, and any phrasing that reaches for hype, mystical, or generic-agency language must be translated back into visible effects. Do not describe Thoughtseed as an always-on retainer agency; the model is scoped delivery with strong handoff.",
+            "prohibited_vocabulary_ref": "voice-and-tone.data.language_guidelines.vocabulary_bank.prohibited",
+            "assets_referenced": []
+          },
+          {
+            "number": "02",
+            "name": "Messaging Framework",
+            "source_skills": ["messaging-framework"],
+            "prose": "The brand promise is one coherent system from requirement to handoff. The public headline is Digital Wilderness; the tagline is We plant ideas. They grow wild. Four message pillars carry every campaign: One coherent loop — one studio carries the whole requirement, framing to handoff; Founder-led judgment — senior operators do the work, so less is lost in translation; Behavior as part of the system — user psychology grounded in what actually ships; and Handoff you can run — ownership transfer is the output, not the afterthought. Approved phrases for verbatim use: Digital Wilderness; We plant ideas. They grow wild.; Build the system, not just the story.; From requirement to handoff.; One coherent delivery loop.; Cross-disciplinary rigor.; Bring the requirement. Objections have set responses — breadth is a deliberate studio shape, the difference from an agency is the delivery loop, psychology means trust and adoption grounded in engineering, and premium framing is backed by shipped evidence. Until verified client quotes exist, lead with shipped work and handoff artifacts rather than unattributed praise.",
+            "assets_referenced": [
+              { "id": "social-og", "path": "./generated/social-og.png", "origin": "generated", "deterministic": false, "role": "open-graph share card" },
+              { "id": "social-x-header", "path": "./generated/social-x-header.png", "origin": "generated", "deterministic": false, "role": "social profile header" },
+              { "id": "social-ig-story", "path": "./generated/social-ig-story.png", "origin": "generated", "deterministic": false, "role": "story-format social asset" }
+            ]
+          },
+          {
+            "number": "03",
+            "name": "Brand Story",
+            "source_skills": ["brand-story"],
+            "prose": "Thoughtseed was planted in 2020 from one observation that would not go away: the problems worth solving were never single-discipline problems. They lived between a founder's operating logic, the user's behavior, the interface, and the engineering underneath — and the market split them across a consultancy, an agency, an engineering vendor, and whichever AI shop had the newest demo. The founder became the integrator by default, the full-time translator between five specialists who shared no model of the problem, and coherence leaked at every handoff. The answer was a single delivery loop: the same senior operators frame the requirement, design for adoption, ship the engineering, and build the handoff. Nothing is thrown over a wall, because there is no wall. This is Digital Wilderness — disciplined engineering meets organic emergence, structured systems still alive enough to grow once the client owns them. We plant ideas, and they grow wild, because we hand back something legible and inheritable, designed from the first day to be run by the team that keeps it. The enemy is fragmentation; the promised land is a coherent system the founder owns and the team can run. Build the system, not just the story. Bring the requirement.",
+            "assets_referenced": [
+              { "id": "hero-01-digital-wilderness", "path": "./generated/hero-01-digital-wilderness.png", "origin": "generated", "deterministic": false, "role": "primary hero, Digital Wilderness" }
+            ]
+          },
+          {
+            "number": "04",
+            "name": "Copy Guidelines & Campaign Assets",
+            "source_skills": ["landing-page-copy", "product-description", "ad-creative-copy", "press-release", "launch-email-sequence", "prelaunch-email-sequence", "welcome-email-sequence"],
+            "prose": "Headlines stay spare and atmospheric; atmosphere comes from phrasing and image choice, not volume. Body copy is short, declarative, and editorial, with evidence next to the claim. CTAs default to Bring the requirement. and route to /start. The homepage runs as a numbered editorial sequence — Hero (00), Delivery Loop (01), Work (02), Proof (03), Handoff (04), Start (05) — with the four delivery-loop stages Requirement, System, Build, Handoff. Product copy describes Thoughtseed Studio in micro through extended lengths, always landing on one coherent system from requirement to handoff and ownership over dependency. Email sequences (pre-launch, launch, welcome) and ad creative carry the same pillars and approved phrases; the press release stays factual, restrained, and newsworthy. Campaign imagery draws from the validated hero, lifestyle, and social assets below — all generated, none containing baked-in text or logos. Place the wordmark or tree mark as a real asset over imagery; never rely on text rendered inside a generated image.",
+            "assets_referenced": [
+              { "id": "hero-01-digital-wilderness", "path": "./generated/hero-01-digital-wilderness.png", "origin": "generated", "deterministic": false, "role": "homepage hero" },
+              { "id": "hero-02-establishing", "path": "./generated/hero-02-establishing.png", "origin": "generated", "deterministic": false, "role": "establishing / section hero" },
+              { "id": "hero-03-mobile", "path": "./generated/hero-03-mobile.png", "origin": "generated", "deterministic": false, "role": "mobile hero crop" },
+              { "id": "lifestyle-01-worktable", "path": "./generated/lifestyle-01-worktable.png", "origin": "generated", "deterministic": false, "role": "worktable lifestyle, proof/about" },
+              { "id": "lifestyle-02-studio", "path": "./generated/lifestyle-02-studio.png", "origin": "generated", "deterministic": false, "role": "studio lifestyle, about" },
+              { "id": "social-og", "path": "./generated/social-og.png", "origin": "generated", "deterministic": false, "role": "open-graph card" },
+              { "id": "social-x-header", "path": "./generated/social-x-header.png", "origin": "generated", "deterministic": false, "role": "profile header" },
+              { "id": "social-ig-story", "path": "./generated/social-ig-story.png", "origin": "generated", "deterministic": false, "role": "story asset" }
+            ]
+          }
+        ]
+      }
+    },
+    "asset_validation": {
+      "manifest_source": ".brandmint/asset-manifest.json",
+      "total_assets_referenced": 20,
+      "assets_validated": 20,
+      "assets_missing": 0,
+      "assets_with_warnings": 0,
+      "user_provided_count": 4,
+      "generated_count": 16,
+      "deterministic_count": 4,
+      "unique_asset_ids_referenced": [
+        "logo-wordmark", "logo-tree-mark", "logo-reference-01", "logo-reference-02",
+        "visual-language-board", "icons-01-sheet", "pattern-01-dark", "pattern-02-light",
+        "illus-01-systems-organism", "illus-02-delivery-loop", "product-01-system-artifacts",
+        "product-02-screen-surface", "hero-01-digital-wilderness", "hero-02-establishing",
+        "hero-03-mobile", "lifestyle-01-worktable", "lifestyle-02-studio",
+        "social-og", "social-x-header", "social-ig-story"
+      ]
+    },
+    "layer_discipline_check": {
+      "avoided_terms_in_document_bodies": 0,
+      "krebs_or_consciousness_as_public_claim": false,
+      "internal_color_labels_surfaced_in_bodies": false,
+      "note": "Internal color names (Deep Quantum Blue, Consciousness Teal, Energetic Orange, Mindful Gray, Growth Light) are intentionally NOT used in any prose body; only hex values and functional roles appear. Krebs Cycle and consciousness research are referenced only as backstage context in the separation rationale, never as a public category claim."
+    },
+    "outputs": {
+      "intended_formats": ["markdown", "pdf"],
+      "markdown": {
+        "brand_identity": "deliverables/docs/thoughtseed-brand-identity.md",
+        "product_positioning": "deliverables/docs/thoughtseed-product-positioning.md",
+        "campaign_content": "deliverables/docs/thoughtseed-campaign-guidelines.md"
+      },
+      "pdf": {
+        "brand_identity": "deliverables/docs/thoughtseed-brand-identity-guidelines.pdf",
+        "product_positioning": "deliverables/docs/thoughtseed-product-positioning.pdf",
+        "campaign_content": "deliverables/docs/thoughtseed-campaign-guidelines.pdf"
+      }
+    },
+    "validation_report": {
+      "all_assets_exist": true,
+      "all_assets_in_manifest": true,
+      "hallucinated_paths": 0,
+      "documents_separated": true,
+      "warnings": []
+    }
+  }
+}

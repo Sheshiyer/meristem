@@ -1,0 +1,58 @@
+{
+  "skill": "brand-foundation",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-06-06T00:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "name_rationale": "Vantyx is coined from 'vantage point' — the single thing a view-led buyer is paying for. The '-yx' ending makes it ownable, platform-scalable, and premium-tech without being literal. It promises the best seat in the building, on demand.",
+    "mission": {
+      "statement": "Vantyx exists to help developers sell the view — by turning every floor's real, ever-changing outlook into an immersive experience buyers can step into, and keep true as the building rises.",
+      "breakdown": {
+        "action": "turn the view into an immersive, self-updating experience",
+        "audience": "property developers and view-led buyers",
+        "outcome": "buyers can step into the real view from any floor, anytime",
+        "differentiator": "kept true to today, non-destructively, by the builder themselves"
+      }
+    },
+    "vision": {
+      "statement": "A world where no one buys a home sight-unseen — where the view from any floor, at any hour, is one tap away and always true to today.",
+      "time_horizon": "10 years"
+    },
+    "values": [
+      {
+        "name": "The view is the product",
+        "definition": "Buyers pay for what they will see; everything we build serves the fidelity of that view.",
+        "in_practice": "We optimize capture, resolution and load so the 360 feels like standing on the slab — never a gimmick reel."
+      },
+      {
+        "name": "Never go dark",
+        "definition": "A live sales tool must not break, ever — especially mid-update.",
+        "in_practice": "Updates are non-destructive and atomic: the running tour stays up until the new version is validated, then flips instantly (and rolls back instantly)."
+      },
+      {
+        "name": "Builders, not engineers",
+        "definition": "The people keeping views current are marketing teams, not developers.",
+        "in_practice": "If updating a floor needs a manual or a deploy, we failed. Upload, preview, publish — done."
+      },
+      {
+        "name": "Always true to today",
+        "definition": "A two-year-old view is a lie; current is the whole point.",
+        "in_practice": "We make re-capturing and re-publishing a floor effortless, so what buyers see is what's real now."
+      }
+    ],
+    "brand_essence": "Living vantage",
+    "personality": {
+      "archetype": "Magician (primary) / Sage (secondary)",
+      "archetype_rationale": "Magician: we teleport a buyer onto a floor that may not be built yet and let them feel the view. Sage tempers it with truth and reliability — always-current, never-breaks.",
+      "if_a_person": {
+        "age": "35",
+        "occupation": "architectural-visualization lead turned proptech founder",
+        "hobbies": ["aerial photography", "drone flying", "architecture", "golden-hour walks"],
+        "communication_style": "confident, precise, quietly impressive — lets the view do the talking"
+      },
+      "adjectives": ["immersive", "trustworthy", "precise", "effortless", "elevated"]
+    }
+  }
+}

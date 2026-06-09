@@ -1,0 +1,163 @@
+{
+  "skill": "value-proposition",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "buyer_persona_reference": "Mira, the System-Carrying Founder — founder / CTO / innovation lead / product strategist running a lean senior team.",
+    "pain_gain_map": {
+      "pains": {
+        "functional": [
+          "Too many vendors each understand only one slice of the problem, so Mira has to assemble coherence herself.",
+          "AI proposals arrive technically shallow or operationally naive, demos that never mature into product.",
+          "The system works on launch day but falls apart at ownership transfer, leaving the team unable to run it.",
+          "Engineering vendors build the spec as handed over, mistakes included, with no push-back on a flawed requirement."
+        ],
+        "emotional": [
+          "Exhaustion from becoming the full-time translator between five specialists who share no model of the problem.",
+          "Distrust earned from glossy decks that get disconnected from shipped product reality.",
+          "Anxiety that coherence is leaking at every handoff and that nobody owns the whole problem."
+        ],
+        "social": [
+          "Looking like the bottleneck because the project's coherence depends entirely on the founder.",
+          "Carrying the blame when a launched system breaks at handoff and the internal team cannot extend it.",
+          "Being sold buzzwords by partners who notice neither specificity nor evidence of shipping."
+        ]
+      },
+      "gains": {
+        "functional": [
+          "Solve an important problem with one studio that understands requirement, user, and operating reality at once.",
+          "Receive a coherent system that the internal team can run, extend, and inherit after delivery.",
+          "Get the requirement reshaped before the build, not built blindly as handed over."
+        ],
+        "emotional": [
+          "Relief that one partner finally holds the whole problem instead of five disconnected vendors.",
+          "Calm confidence that execution stays coherent from framing to handoff.",
+          "Trust earned through specificity and shipped evidence rather than premium atmosphere."
+        ],
+        "social": [
+          "Stop being the full-time vendor translator and reclaim time for founder work.",
+          "Own the result rather than manage a stack of suppliers.",
+          "Hand the internal team a legible system they can stand behind."
+        ]
+      }
+    },
+    "value_canvas": [
+      {
+        "customer_job": "Frame a problem too entangled to split across vendors.",
+        "pain_point": "Too many vendors each understand only one slice of the problem.",
+        "solution": "Requirement Architecture: problem framing, psychology mapping, operating constraints, and decision logic before implementation.",
+        "gain_created": "One model of the problem carries from framing forward, so coherence is set before any code is written."
+      },
+      {
+        "customer_job": "Ship a product that real users adopt and trust.",
+        "pain_point": "Strategy decks get disconnected from shipped product reality.",
+        "solution": "Product & Interface Systems where user behavior is treated as part of the system and stays grounded in engineering.",
+        "gain_created": "Stronger trust and adoption because the experience survives implementation instead of breaking at the build."
+      },
+      {
+        "customer_job": "Add AI without it being a demo that never matures.",
+        "pain_point": "AI proposals are technically shallow or operationally naive.",
+        "solution": "AI and automation built into the product's real logic and operating reality, not bolted on as a demo layer.",
+        "gain_created": "Capability that runs in production and holds up against how the team actually works."
+      },
+      {
+        "customer_job": "Own and run the system after the engagement ends.",
+        "pain_point": "The system works on launch day but falls apart at ownership transfer.",
+        "solution": "Handoff & Decision Systems: documentation, training, control surfaces, and operational artifacts shipped with the build.",
+        "gain_created": "Cleaner ownership transfer, so the internal team can run, extend, and inherit the system without the studio."
+      },
+      {
+        "customer_job": "Stop being the integrator between specialists.",
+        "pain_point": "The founder becomes the full-time translator between five specialists.",
+        "solution": "One founder-led delivery loop that carries framing, behavior, product, engineering, and handoff together.",
+        "gain_created": "A single accountable owner of coherence, so the founder reclaims time and the project stops depending on her translation."
+      }
+    ],
+    "differentiation": {
+      "against_competitors": [
+        "Unlike large innovation consultancies that package process but never ship, Thoughtseed carries the requirement all the way into a running system.",
+        "Unlike premium product design agencies that hand off polished designs before the system runs, Thoughtseed owns engineering and ships the experience end to end.",
+        "Unlike AI integration consultancies that stop at an impressive demo, Thoughtseed builds AI into the product's real logic and operating reality.",
+        "Unlike specialized engineering vendors that build the spec as handed over, Thoughtseed reshapes a flawed requirement before the build.",
+        "Unlike freelancer swarms that make the founder the integrator, Thoughtseed is one accountable owner of coherence across the whole problem."
+      ],
+      "ownable_territory": "Editorial precision with operating clarity — the one founder-led studio that turns a single requirement into a coherent system the client can own.",
+      "unfair_advantage": "The same senior operators frame the requirement, design for adoption, ship the engineering, and build the handoff, removing the translation loss every single-slice competitor structurally depends on."
+    },
+    "statements": {
+      "classic": "For the system-carrying founder, who is tired of being the full-time translator between vendors who each understand only one slice of the problem, Thoughtseed is the founder-led systems studio that frames the requirement, builds the system, and hands back a system the team can run. Unlike single-slice consultancies, design agencies, AI shops, engineering vendors, and freelancer swarms, we carry framing, behavior, product, engineering, and handoff in one delivery loop with senior judgment.",
+      "one_sentence": "Thoughtseed helps the system-carrying founder turn one entangled requirement into a coherent system the team can run, by carrying framing, behavior, product, engineering, and handoff in a single founder-led delivery loop, unlike single-slice vendors who break coherence at every handoff.",
+      "core": "One coherent system from requirement to handoff, owned by you.",
+      "core_observable_outcome": "After handoff, your own team runs and extends the system without us — fewer vendors, owned delivery. Coherence is the promise; running it yourself is how you verify it.",
+      "headlines": {
+        "primary": "One studio carries the requirement all the way to a system you own.",
+        "subheadline": "Thoughtseed frames the problem, builds the system, and hands it back legible, so your team can run and extend it without us.",
+        "proof_point": "Shipped systems across AI, IoT, web, mobile, and creative technology, each delivered with the handoff artifacts a client can actually run."
+      }
+    },
+    "headline_value_prop": "One studio carries the requirement all the way to a system you own.",
+    "proof_points": [
+      "Shipped systems across AI, IoT, web, mobile, and creative technology, run on a studio-plus-IP model where reusable internal product IP compounds across engagements.",
+      "Service surfaces that already span framing, design, engineering, and handoff under one operating logic.",
+      "Decision artifacts and the Ownership Transfer Pack that let the client's team run the system after delivery.",
+      "Senior operators do the work directly, so less is lost in account-management translation."
+    ],
+    "case_study_scaffold": {
+      "_instructions": "TODO: real data required. These are empty proof slots, not claims. The brand's buyer (Mira) is evidence-driven, so do NOT publish asserted proof points as if they were evidenced. Founders must fill 1-2 of these with real, attributable engagement data before launch. Every value below is a placeholder and must be replaced with verified content or removed. No metric, client name, or outcome here is real.",
+      "required_fields": ["client", "problem", "what_shipped", "outcome", "handoff_artifact"],
+      "cases": [
+        {
+          "client": "TODO: real data required — named client or approved anonymized descriptor",
+          "problem": "TODO: real data required — the entangled requirement the client could not split across vendors",
+          "what_shipped": "TODO: real data required — the system Thoughtseed framed, built, and delivered",
+          "outcome": "TODO: real data required — observable result, with a number only if it is real and verifiable",
+          "handoff_artifact": "TODO: real data required — what shipped in the Ownership Transfer Pack and evidence the client's team now runs it without Thoughtseed"
+        },
+        {
+          "client": "TODO: real data required — second named client or approved anonymized descriptor",
+          "problem": "TODO: real data required",
+          "what_shipped": "TODO: real data required",
+          "outcome": "TODO: real data required",
+          "handoff_artifact": "TODO: real data required"
+        }
+      ]
+    },
+    "differentiators": [
+      "One coherent delivery loop: requirement, behavior, interface, and engineering are never handed between disconnected vendors.",
+      "Founder-led judgment with less translation loss than layered account management.",
+      "Handoff treated as a first-class output and shipped as a named Ownership Transfer Pack, so the client inherits a system instead of a dependency.",
+      "User behavior kept grounded in real engineering, so adoption survives launch.",
+      "Studio-plus-IP model: reusable internal product IP that compounds across engagements, so the studio is not pure services and each build starts from a more mature base — the structural wedge against peer integrated studios, carried in a distinct visual and verbal territory beyond generic agency sameness."
+    ],
+    "value_hierarchy": {
+      "primary": {
+        "value": "One accountable owner of coherence from requirement to handoff.",
+        "why_it_matters": "It ends Mira's exhausting role as the full-time translator between five specialists and stops coherence leaking at every handoff.",
+        "proof": "A single founder-led delivery loop where the same senior operators frame, design, build, and hand off, evidenced by shipped systems and the Ownership Transfer Pack that ships with them.",
+        "falsifiable_outcome": "Coherence is the promise; the buyer-verifiable test is ownership: after handoff your team runs and extends the system without us, and you replace a stack of vendors with one owned delivery. If your team cannot operate it from the Ownership Transfer Pack, the loop did not deliver."
+      },
+      "secondary": [
+        {
+          "value": "Ownership over dependency: a system the team can run, extend, and inherit.",
+          "why_it_matters": "It removes the fear that the system breaks at handoff and locks the team to a vendor."
+        },
+        {
+          "value": "User behavior grounded in engineering reality.",
+          "why_it_matters": "It means adoption and trust hold after launch instead of degrading at implementation."
+        },
+        {
+          "value": "AI and automation built into product logic, not bolted on.",
+          "why_it_matters": "It answers the founder's distrust of shallow demos that never mature into product."
+        }
+      ],
+      "table_stakes": [
+        "Senior product design and interface craft",
+        "Modern engineering across web, mobile, AI, automation, and connected products",
+        "Professional discovery, scoping, and delivery artifacts"
+      ]
+    }
+  }
+}

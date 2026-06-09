@@ -1,0 +1,120 @@
+{
+  "skill": "welcome-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_strategy": {
+      "context": "Sent after a founder brings a requirement and begins an engagement with Thoughtseed Studio, typically a System Sprint or a Requirement-to-Handoff Build.",
+      "goals": [
+        "Confirm the engagement and set a calm, concrete tone",
+        "Introduce the studio and the operators who will do the work",
+        "Explain how the delivery loop runs, stage by stage",
+        "Make the requirement-gathering step easy and clear",
+        "Set expectations for handoff from the very first email"
+      ],
+      "timing": "Email 1 immediately after kickoff is scheduled; Email 2 day 1; Email 3 day 3; Email 4 day 5; Email 5 day 8",
+      "total_emails": 5,
+      "voice_note": "Peer to the founder. Short declarative sentences. No celebration theater, no superlatives, no internal methodology, no avoided terms."
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Kickoff Confirmation",
+        "send_timing": "Immediate",
+        "goal": "Confirm the engagement and state what happens next",
+        "tone": "Grounded, warm, exact",
+        "subject_lines": {
+          "primary": "We have the requirement. Here is what happens next.",
+          "variation_a": "Your build is on the calendar",
+          "variation_b": "From requirement to handoff: where we start"
+        },
+        "preview_text": "One team, one delivery loop, a system you can run.",
+        "body": "Thanks for bringing the requirement to us.\n\nHere is the short version of what you have signed up for. Thoughtseed is a founder-led systems studio. One team carries framing, user behavior, product, engineering, and handoff inside a single delivery loop. The people who frame the requirement are the people who build it, so coherence holds from the first decision to the running system.\n\nWhat happens next:\n\n1. We confirm the kickoff time and who joins from your side.\n2. We open with the requirement: the problem, the people who will use the system, and the way you want to run it.\n3. From there we design, build, and hand it back in a form your team can own.\n\nYou will always talk to the operators doing the work, not an account layer. If anything is unclear before kickoff, reply to this email and ask.",
+        "cta": {
+          "text": "Confirm your kickoff details",
+          "action": "schedule_kickoff"
+        },
+        "ps": "P.S. Handoff is not the last step we think about. It is the first. We will tell you what you inherit before we build it."
+      },
+      {
+        "number": 2,
+        "name": "Who Does The Work",
+        "send_timing": "Day 1",
+        "goal": "Introduce the studio and the founder-led model",
+        "tone": "Personal, founder-close, restrained",
+        "subject_lines": {
+          "primary": "The people who will frame and build your system",
+          "variation_a": "No translators in between",
+          "variation_b": "Why one studio instead of five vendors"
+        },
+        "preview_text": "Senior operators, engaged directly, less lost in translation.",
+        "body": "A quick note on who you are working with, and why the studio is shaped this way.\n\nMost important work gets split across strategy, design, engineering, and operations vendors who never share one model of the problem. The founder ends up as the full-time translator between them. Coherence breaks before launch. Ownership breaks after it.\n\nWe built Thoughtseed so that does not happen. Senior operators do the work directly. The same people frame the requirement, design the interface and the operating logic, ship the engineering, and prepare the handoff. Decisions stay close to the work and to your operating reality, and they get written down as artifacts you can trace.\n\nWe take fewer engagements and go deeper. That is deliberate. It is how the work stays coherent.",
+        "cta": {
+          "text": "Meet the team before kickoff",
+          "action": "view_team"
+        },
+        "ps": "P.S. We are not an always-on retainer. This is scoped delivery with a real handoff at the end."
+      },
+      {
+        "number": 3,
+        "name": "How The Delivery Loop Runs",
+        "send_timing": "Day 3",
+        "goal": "Explain the four stages so the founder knows what to expect",
+        "tone": "Explicit, structured, low-drama",
+        "subject_lines": {
+          "primary": "How the delivery loop works, stage by stage",
+          "variation_a": "Requirement, system, build, handoff",
+          "variation_b": "Where each decision gets made"
+        },
+        "preview_text": "Four stages, one motion, nothing lost between vendors.",
+        "body": "Here is how your engagement runs. Four stages, one continuous loop.\n\n1. Requirement. We study the requirement, the people who will use the system, and the way you want to run it. Constraints and tradeoffs surface before anything is built.\n\n2. System. We design the interface and the operating logic together. User behavior is treated as part of the system, not a layer added later.\n\n3. Build. Senior engineers ship the system. What we framed is what we build, so the work stays legible from the first decision to the running product.\n\n4. Handoff. Documentation, training, and control surfaces ship with the build. You inherit a system you can run, extend, and own without us.\n\nEach stage feeds the next. The same team carries it the whole way.",
+        "cta": {
+          "text": "See the delivery loop in detail",
+          "action": "view_delivery_loop"
+        },
+        "ps": "P.S. If you want to know where a specific decision gets made, ask. The loop is meant to be legible, not mysterious."
+      },
+      {
+        "number": 4,
+        "name": "Bring The Full Requirement",
+        "send_timing": "Day 5",
+        "goal": "Make it easy to share the context the studio needs",
+        "tone": "Practical, direct, collaborative",
+        "subject_lines": {
+          "primary": "What to bring to the requirement session",
+          "variation_a": "The more context, the cleaner the system",
+          "variation_b": "Quick prep before we frame the work"
+        },
+        "preview_text": "Bring the messy version. We are built for entangled problems.",
+        "body": "Before we frame the work, it helps to gather what you already know. You do not need it polished. The messy version is fine. We are built for problems that are too entangled to split.\n\nIf you have them, bring:\n\n- The problem in your own words, including the parts that feel unresolved.\n- Who will use the system, and what would make them trust and adopt it.\n- How you want to run and own the result after delivery.\n- Any constraints: timelines, existing systems, team capacity.\n- What a good outcome looks like to you.\n\nWe will take it from there, surface the real decision pressure, and frame the requirement with you. The clearer the input, the more coherent the system we hand back.",
+        "cta": {
+          "text": "Add your context to the brief",
+          "action": "open_requirement_brief"
+        },
+        "ps": "P.S. Half-formed is welcome. Framing the requirement is part of the work, not a prerequisite for starting."
+      },
+      {
+        "number": 5,
+        "name": "What You Will Inherit",
+        "send_timing": "Day 8",
+        "goal": "Reinforce handoff as the deliverable and open the line for questions",
+        "tone": "Reflective, confident, grounded",
+        "subject_lines": {
+          "primary": "The work will be yours to run",
+          "variation_a": "What ownership transfer looks like here",
+          "variation_b": "A system you can run, extend, and inherit"
+        },
+        "preview_text": "Ownership over dependency, every time.",
+        "body": "One last note as we get going, and it is the one we care about most.\n\nA system that works on launch day but breaks at ownership transfer is not finished. So we treat that transfer as the deliverable, not post-project admin.\n\nWhen we hand back the work, you inherit:\n\n- A running system, not a deck disconnected from shipped reality.\n- Documentation written to be read by the team that will run it.\n- Control surfaces and operational artifacts that keep the system legible.\n- A model of the problem you can carry forward without us.\n\nThat is the whole point of the loop. We frame the requirement, build the system, and hand it back in a form you can actually run. If a question comes up at any stage, reply here. You are talking to the people doing the work.",
+        "cta": {
+          "text": "Ask us anything before kickoff",
+          "action": "reply_to_team"
+        },
+        "ps": "P.S. We plant ideas. They grow wild. The version you inherit should keep growing after we step back."
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "skill": "product-description",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-06-07T10:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "core_info": {
+      "product_name": "Thoughtseed Studio",
+      "category": "Founder-led systems studio",
+      "price": "Scoped per engagement (System Sprint or Requirement-to-Handoff Build)",
+      "key_specs": [
+        "Scope: requirement to handoff, one delivery loop",
+        "Range: web, mobile, AI, automation, connected products",
+        "Team: senior, cross-disciplinary, founder-led",
+        "Engagement models: System Sprint; Requirement-to-Handoff Build",
+        "Output: a running system plus the artifacts to own it"
+      ]
+    },
+    "benefits_hierarchy": {
+      "primary": "One coherent system from requirement to handoff, carried by one team instead of split across disconnected vendors.",
+      "secondary": [
+        "Less translation loss: senior operators do the work directly, so coherence holds from framing to the running product.",
+        "Adoption built in: user behavior is treated as part of the system, not a layer added after the build.",
+        "Real ownership: documentation, training, and control surfaces ship with the build, so you can run it without us."
+      ],
+      "features": [
+        "Requirement Architecture: problem framing, psychology mapping, operating constraints, and decision logic before implementation",
+        "Product & Interface Systems: web, mobile, AI, automation, and connected-product execution",
+        "Handoff & Decision Systems: documentation, training, control surfaces, and operational artifacts"
+      ]
+    },
+    "descriptions": {
+      "micro": {
+        "word_count": 22,
+        "copy": "Thoughtseed Studio is a founder-led systems studio that turns complex requirements into coherent systems you can run. From requirement to handoff."
+      },
+      "short": {
+        "word_count": 64,
+        "copy": "Thoughtseed Studio is a founder-led systems studio. We turn complex requirements into coherent systems by aligning user behavior, founder operating logic, interface design, and technical delivery. One team carries framing, build, and handoff in a single delivery loop, so coherence holds from the first decision to the running product. You inherit a system you can run, extend, and own. Bring the requirement."
+      },
+      "medium": {
+        "word_count": 132,
+        "copy": "Important work gets split across strategy, design, engineering, and operations vendors who do not share one model of the problem. Coherence breaks before launch, and ownership breaks after it. Thoughtseed Studio holds the whole problem in one delivery loop. We study the requirement, the people who will use the system, and the way you want to run it. Then we design the interface, build the engineering, and hand it back. User behavior is treated as part of the system. Documentation, training, and control surfaces ship with the build. The result is one coherent system from requirement to handoff, carried by senior operators with less translation loss, and a handoff you can actually run. Fewer projects, deeper integration, real ownership. Bring the requirement."
+      },
+      "full": {
+        "word_count": 268,
+        "copy": "When a problem is too entangled to split, splitting it makes things worse. You hire a strategy vendor, a design agency, an engineering shop, and someone for handoff, and you become the full-time translator between five teams who never shared one model of the problem. Coherence leaks at every seam. The system works on launch day and falls apart at ownership transfer.\n\nThoughtseed Studio is built for exactly this. It is a founder-led systems studio that carries one requirement all the way to a system you can own. We hold framing, user behavior, product design, engineering delivery, and handoff inside a single loop, with the same senior people from start to finish.\n\nIt works in three modules under one operating logic. Requirement Architecture settles problem framing, psychology mapping, operating constraints, and decision logic before anything is built. Product & Interface Systems delivers web, mobile, AI, automation, and connected-product execution, with user behavior treated as part of the system rather than a layer added later. Handoff & Decision Systems ships the documentation, training, control surfaces, and operational artifacts that make the work inheritable.\n\nYou can start small with a System Sprint, a short cycle that clarifies the requirement and de-risks the next build decision, or scope a Requirement-to-Handoff Build for full delivery through ownership transfer. Either way, you talk to the operators doing the work.\n\nWhat you get is one coherent system from requirement to handoff: technically serious, grounded in adoption, and legible enough to run without us. Fewer projects, deeper integration, and a handoff that holds. Build the system, not just the story. Bring the requirement."
+      },
+      "extended": {
+        "word_count": 438,
+        "copy": "Thoughtseed Studio is the founder-led systems studio for problems that cannot be split across disconnected vendors.\n\nThe core problem is fragmentation. Important work gets passed between strategy, design, engineering, and operations vendors who do not share one model of the problem. Each one understands a single slice. The founder becomes the integrator, holding the whole thing in their head and re-explaining it at every handoff. Coherence breaks before the work ships. Ownership breaks after it, because the system that launched cleanly cannot be run by the people who now own it.\n\nThoughtseed Studio is the alternative. One team carries the requirement from framing to a running system, in a single delivery loop, with senior judgment at every stage. We study the requirement, the people who will use the system, and the way you want to operate it. Then we design, build, and hand it back in a form you can run.\n\nThe work is organized into three modules under one operating logic.\n\nRequirement Architecture comes first: problem framing, psychology mapping, operating constraints, and decision logic, settled before implementation. You see the real problem and the real decision pressure before a single screen or model is built.\n\nProduct & Interface Systems is the build: web, mobile, AI, automation, and connected-product execution. User behavior is treated as part of the system, so adoption logic and build reality stay aligned instead of drifting apart between specialists. What we framed is what we ship.\n\nHandoff & Decision Systems closes the loop: documentation, training, control surfaces, and operational artifacts delivered with the build. Handoff is a first-class output, not post-project admin. The system does not fall apart at ownership transfer.\n\nThere are two ways to engage. A System Sprint is a short, high-leverage framing or prototype cycle that clarifies the requirement and de-risks the next build decision. A Requirement-to-Handoff Build is scoped delivery from framing through implementation and ownership transfer. We take fewer engagements and go deeper. This is not an always-on retainer.\n\nThe evidence sits close to the claim: shipped work across AI, IoT, web, mobile, and creative technology, live client delivery paired with reusable internal product IP, and handoff documents that prove the loop is real.\n\nWhat you get is one coherent system from requirement to handoff. Technically serious. Grounded in how people actually adopt and trust software. Legible enough to run, extend, and inherit without us. Ownership over dependency.\n\nBuild the system, not just the story. Bring the requirement."
+      }
+    },
+    "feature_benefit_map": [
+      {
+        "feature": "Requirement Architecture",
+        "benefit": "You see the real problem and the real tradeoffs before anything is built",
+        "copy_snippet": "We frame the requirement and surface constraints first, so you decide with the real picture in front of you."
+      },
+      {
+        "feature": "Product & Interface Systems",
+        "benefit": "The system gets adopted because behavior was designed in, not bolted on",
+        "copy_snippet": "We treat user behavior as part of the system, so what ships is built to be used, not just launched."
+      },
+      {
+        "feature": "Handoff & Decision Systems",
+        "benefit": "You can run, extend, and own the system after delivery",
+        "copy_snippet": "Documentation, training, and control surfaces ship with the build, so the work is yours to run."
+      },
+      {
+        "feature": "One delivery loop, one senior team",
+        "benefit": "Coherence holds from framing to the running product",
+        "copy_snippet": "The same operators frame, design, build, and hand back, so nothing gets lost between vendors."
+      },
+      {
+        "feature": "System Sprint engagement model",
+        "benefit": "You de-risk the hard decision before committing to a full build",
+        "copy_snippet": "Start with a short framing cycle that clarifies the requirement and de-risks what comes next."
+      }
+    ],
+    "bullet_points": [
+      "Founder-led systems studio: senior operators carry the work directly, with less translation loss.",
+      "One delivery loop from requirement to handoff, instead of five disconnected vendors.",
+      "Requirement Architecture frames the problem and the tradeoffs before anything is built.",
+      "Product & Interface Systems ships web, mobile, AI, automation, and connected products.",
+      "User behavior is treated as part of the system, so the work gets adopted.",
+      "Handoff ships with documentation, training, and control surfaces you can run.",
+      "Two ways to engage: System Sprint, or full Requirement-to-Handoff Build."
+    ],
+    "seo_keywords": [
+      "founder-led systems studio",
+      "requirement to handoff",
+      "product and engineering studio",
+      "AI and automation delivery",
+      "systems design studio",
+      "product handoff and ownership transfer",
+      "cross-disciplinary product studio"
+    ]
+  }
+}

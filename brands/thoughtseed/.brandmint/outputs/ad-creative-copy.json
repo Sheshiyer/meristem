@@ -1,0 +1,180 @@
+{
+  "skill": "ad-creative-copy",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-06-08T06:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "strategy": {
+      "phases": ["pre-launch", "launch", "mid-campaign", "end-campaign"],
+      "platforms": ["linkedin", "x"],
+      "formats": ["text", "image"],
+      "audience": "The System-Carrying Founder: founder, CTO, innovation lead, or product strategist running a lean senior team.",
+      "objective": "Reach founders who are tired of being the translator between disconnected vendors and route them to bring one requirement to one studio.",
+      "voice_note": "Calm over loud. Short declarative lines. Evidence next to the claim. No hype, no superlatives, no internal methodology, no avoided terms.",
+      "primary_cta": "Bring the requirement."
+    },
+    "hooks": {
+      "problem_aware": [
+        "You did not start the company to translate between five vendors.",
+        "Strategy went to one vendor. Design to another. Nobody shares one model of the problem.",
+        "The system worked on launch day. Then ownership transfer broke it.",
+        "When a problem is too entangled to split, splitting it makes things worse."
+      ],
+      "solution_aware": [
+        "One studio carries the whole requirement, from framing to handoff.",
+        "A founder-led systems studio for problems that cannot be split across vendors.",
+        "The people who frame the requirement are the people who ship the system.",
+        "User behavior treated as part of the system, not a layer added after the build."
+      ],
+      "social_proof": [
+        "Shipped systems across AI, IoT, web, mobile, and creative technology.",
+        "Live client delivery paired with reusable product IP.",
+        "Handoff documents that prove the delivery loop is real.",
+        "Fewer engagements, deeper integration, a real handoff at the end."
+      ],
+      "urgency": [
+        "We take a limited number of builds at a time. That is the point.",
+        "Studio capacity for the next quarter is filling.",
+        "Scoped delivery, not an open-ended retainer. Start with the requirement.",
+        "Bring the requirement while there is room on the build calendar."
+      ]
+    },
+    "linkedin_ads": [
+      {
+        "id": "li-pre-01",
+        "name": "Problem Agitation",
+        "phase": "pre-launch",
+        "angle": "problem_aware",
+        "urgency_level": "low",
+        "intro_text": "You did not start the company to translate between vendors. Strategy goes to one. Design to another. Engineering to a third. None of them share one model of the problem, so coherence leaks at every handoff. There is a calmer way to carry the work.",
+        "headline": "One studio, from requirement to handoff",
+        "body": "Thoughtseed is a founder-led systems studio. We study the requirement, build the system, and hand it back in a form you can run.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "li-pre-02",
+        "name": "Curiosity / Studio Shape",
+        "phase": "pre-launch",
+        "angle": "solution_aware",
+        "urgency_level": "low",
+        "intro_text": "Most studios pass your problem between specialists and lose coherence at every seam. We hold it in one motion. The same senior people frame the requirement, design the system, ship it, and hand it back.",
+        "headline": "Build the system, not just the story",
+        "body": "A founder-led systems studio for problems too entangled to split across vendors. One delivery loop. Senior judgment at every stage.",
+        "cta": "See how the loop works"
+      },
+      {
+        "id": "li-launch-01",
+        "name": "Studio Live",
+        "phase": "launch",
+        "angle": "solution_aware",
+        "urgency_level": "medium",
+        "intro_text": "Thoughtseed Studio is open for new requirements. One team carries framing, user behavior, product, engineering, and handoff inside a single delivery loop, so coherence holds from the first decision to the running system.",
+        "headline": "Thoughtseed Studio: one coherent delivery loop",
+        "body": "Start with a System Sprint to frame and de-risk the requirement, or scope a Requirement-to-Handoff Build for full delivery. You talk to the operators doing the work.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "li-mid-01",
+        "name": "Behavior In The System",
+        "phase": "mid-campaign",
+        "angle": "solution_aware",
+        "urgency_level": "medium",
+        "intro_text": "Adoption is an engineering concern, not post-launch polish. We map how people will actually use the system, design for it, then test it against the build. The work holds up in the real operating environment.",
+        "headline": "User behavior, designed into the system",
+        "body": "Web, mobile, AI, automation, and connected products, shipped with adoption logic grounded in build reality. What we framed is what we ship.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "li-mid-02",
+        "name": "Handoff Proof",
+        "phase": "mid-campaign",
+        "angle": "social_proof",
+        "urgency_level": "medium",
+        "intro_text": "A system that works on launch day but breaks at ownership transfer is not finished. We treat that transfer as the deliverable. Documentation, training, and control surfaces ship with the build.",
+        "headline": "Ownership transfer is the output, not the afterthought",
+        "body": "You inherit a system you can run, extend, and own without us. Shipped across AI, IoT, web, mobile, and creative technology.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "li-end-01",
+        "name": "Capacity Close",
+        "phase": "end-campaign",
+        "angle": "urgency",
+        "urgency_level": "high",
+        "intro_text": "We take a limited number of builds at a time, on purpose. Fewer engagements, deeper integration, a real handoff at the end. Studio capacity for the next quarter is filling.",
+        "headline": "Scoped delivery, not an open-ended retainer",
+        "body": "If the problem is too entangled to split across vendors, bring it here while there is room on the build calendar.",
+        "cta": "Bring the requirement."
+      }
+    ],
+    "x_ads": [
+      {
+        "id": "x-pre-01",
+        "name": "Problem Agitation",
+        "phase": "pre-launch",
+        "angle": "problem_aware",
+        "urgency_level": "low",
+        "headline": "You did not start the company to translate between vendors.",
+        "body": "Strategy, design, engineering, ops. Five teams, no shared model of the problem. Coherence leaks at every handoff. One studio can carry the whole thing instead.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "x-pre-02",
+        "name": "Curiosity",
+        "phase": "pre-launch",
+        "angle": "solution_aware",
+        "urgency_level": "low",
+        "headline": "Build the system, not just the story.",
+        "body": "A founder-led systems studio for problems too entangled to split across vendors. Requirement to handoff, one delivery loop.",
+        "cta": "See how the loop works"
+      },
+      {
+        "id": "x-launch-01",
+        "name": "Studio Live",
+        "phase": "launch",
+        "angle": "solution_aware",
+        "urgency_level": "medium",
+        "headline": "Thoughtseed Studio is open for requirements.",
+        "body": "One team carries framing, behavior, product, engineering, and handoff in a single loop. Start with a System Sprint or scope a Requirement-to-Handoff Build.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "x-mid-01",
+        "name": "Behavior In The System",
+        "phase": "mid-campaign",
+        "angle": "solution_aware",
+        "urgency_level": "medium",
+        "headline": "We treat user behavior as part of the system.",
+        "body": "Not a layer added after the build. Web, mobile, AI, automation, connected products, shipped to be used, not just launched.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "x-mid-02",
+        "name": "Handoff Proof",
+        "phase": "mid-campaign",
+        "angle": "social_proof",
+        "urgency_level": "medium",
+        "headline": "Ownership transfer is the deliverable.",
+        "body": "Documentation, training, and control surfaces ship with the build. You inherit a system you can run without us. From requirement to handoff.",
+        "cta": "Bring the requirement."
+      },
+      {
+        "id": "x-end-01",
+        "name": "Capacity Close",
+        "phase": "end-campaign",
+        "angle": "urgency",
+        "urgency_level": "high",
+        "headline": "Fewer projects, deeper integration, real handoff.",
+        "body": "We take a limited number of builds at a time, on purpose. Capacity for next quarter is filling. Bring the entangled problem here.",
+        "cta": "Bring the requirement."
+      }
+    ],
+    "platform_notes": {
+      "linkedin": "Intro text leads with the founder's lived problem, then resolves to the studio shape. Headline stays factual and benefit-led. No superlatives.",
+      "x": "Tighter. One declarative hook, one supporting line, the CTA. Atmosphere from phrasing, never volume.",
+      "image_direction": "Pair copy with editorial-documentary imagery: prototyping spaces, worktables, tactile materials, architectural crops. No text baked into the image, no purple-on-white SaaS gradients, no stock startup team photos."
+    }
+  }
+}

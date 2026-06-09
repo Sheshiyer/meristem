@@ -1,0 +1,63 @@
+{
+  "skill": "brand-foundation",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-06-07T10:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "name_rationale": "Thoughtseed names the studio's core motion: a requirement is planted as a single clear idea and grown into a coherent, living system the client can run. It carries the brand's two truths at once — disciplined cultivation and organic emergence — which surface publicly as the Digital Wilderness territory and the line 'We plant ideas. They grow wild.'",
+    "mission": {
+      "statement": "Thoughtseed exists to help system-carrying founders turn complex requirements into coherent technology systems by carrying framing, user behavior, product, engineering, and handoff inside one delivery loop instead of splitting them across disconnected vendors.",
+      "breakdown": {
+        "action": "turn complex requirements into coherent technology systems",
+        "audience": "system-carrying founders, CTOs, innovation leads, and product strategists with lean senior teams",
+        "outcome": "a coherent system the client can run, extend, and inherit after delivery",
+        "differentiator": "one founder-led delivery loop from requirement to handoff, instead of stitching together five single-slice vendors"
+      }
+    },
+    "vision": {
+      "statement": "A world where important, cross-disciplinary problems are no longer fractured across disconnected vendors — where founders bring one requirement to one studio and receive a coherent system they can own and run.",
+      "time_horizon": "10 years"
+    },
+    "values": [
+      {
+        "name": "Clarity over theater",
+        "definition": "We say what is true and keep evidence next to every claim, removing inflated language before any work begins.",
+        "in_practice": "We frame the requirement and surface constraints and tradeoffs first, so a founder sees the real problem and the real decision pressure before a single screen or model is built."
+      },
+      {
+        "name": "Cross-disciplinary rigor",
+        "definition": "We think across research, user behavior, product, engineering, and communication as one connected problem, not as separate handoffs.",
+        "in_practice": "The same team that frames the requirement designs the interface and ships the engineering, so adoption logic and build reality stay aligned instead of drifting apart between specialists."
+      },
+      {
+        "name": "Delivery integrity",
+        "definition": "Design decisions must survive implementation, and implementation must stay legible to the client.",
+        "in_practice": "We treat a strategy that cannot ship as a failed strategy; what we present in framing is what we hand back as a working system, not a deck disconnected from shipped reality."
+      },
+      {
+        "name": "Accountable handoff",
+        "definition": "Work is not complete until the system can be owned and run by the client without us.",
+        "in_practice": "Documentation, training, and control surfaces are first-class outputs delivered with the build, so the system does not fall apart at ownership transfer."
+      },
+      {
+        "name": "Selective focus",
+        "definition": "We take on fewer, higher-leverage engagements where integrated thinking actually matters.",
+        "in_practice": "We decline generic single-slice work and commit deeply to problems that cross product, interface, and technical delivery, rather than farming open-ended retainers."
+      }
+    ],
+    "brand_essence": "Coherent systems, cultivated",
+    "personality": {
+      "archetype": "Sage (primary) / Creator (secondary)",
+      "archetype_rationale": "Sage leads because the brand earns trust through clarity, truth, and coherence — calm judgment over loud claims. Creator follows because the studio does not just advise; it builds systems engineered to be inherited and run. The pairing keeps ambition grounded in shipped reality.",
+      "if_a_person": {
+        "age": "39",
+        "occupation": "founder-side systems translator — an operator who has built and shipped real systems and lived with ambiguity across research, product, and engineering",
+        "hobbies": ["editorial and longform writing", "architecture and industrial design", "prototyping with hardware and AI", "field photography of built and natural spaces"],
+        "communication_style": "clear, calm, technically precise, and editorially restrained — speaks in short declarative sentences, keeps evidence close to the claim, and lets shipped work carry the weight rather than adjectives"
+      },
+      "adjectives": ["coherent", "founder-led", "precise", "grounded", "intentional"]
+    }
+  }
+}
