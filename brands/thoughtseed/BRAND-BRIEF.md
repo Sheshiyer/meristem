@@ -109,6 +109,7 @@ All paths validated in `.brandmint/asset-manifest.json` (`all_paths_exist: true`
 - **`asset-manifest.json`** — validated, origin-tracked asset inventory
 - **`brand-config.yaml`** — the run configuration
 - **`.brandmint/CANONICAL-BRIEF.md`** — the single brand-truth source used by every spoke
+- **`.brandmint/references/design-references-2026-08.md`** — external design-technique inspiration (Amir Mušić X posts + filtered X bookmarks, added 2026-08-02) for future wave runs
 - **This brief** + (see `brand-documentation.json`) three separated docs: Brand Identity,
   Product Positioning, Campaign Guidelines
 

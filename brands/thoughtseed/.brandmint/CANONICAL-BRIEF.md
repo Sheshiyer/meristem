@@ -126,6 +126,9 @@ product IP, not pure services); a distinct visual/verbal territory beyond agency
   new logos.** The logo-concept spoke CODIFIES usage of the existing marks. Generated emboss/seal/
   poster imagery is art-direction reference, never a replacement mark.
 
+## External design references
+- `.brandmint/references/design-references-2026-08.md` — external design-technique inspiration (Amir Mušić X posts + filtered X bookmarks, compiled 2026-08-02). Read this before writing new identity/photography/illustration prompt content; it maps each technique to a concrete "how this applies to Thoughtseed" adaptation and a skip list of what conflicts with FORBIDDEN VISUALS below. Documentation only — does not override this brief.
+
 ## Output contract (every spoke)
 Valid JSON to `.brandmint/outputs/{spoke}.json`:
 `{ "skill": "<spoke>", "cluster": "<cluster>", "wave": <n>, "timestamp": "<ISO8601>",
