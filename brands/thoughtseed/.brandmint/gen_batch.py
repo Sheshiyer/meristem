@@ -8,7 +8,7 @@ import os, sys, json, time
 from pathlib import Path
 
 NB_SCRIPTS = "/Users/sheshnarayaniyer/.agents/skills/nanobanana/scripts"
-BRAND = Path("/Volumes/madara/2026/twc-vault/01-Projects/thoughtseed/brandmint-v2/brands/thoughtseed")
+BRAND = Path("/Volumes/madara/2026/Projects/thoughtseed/brandmint-v2/brands/thoughtseed")
 OUTDIR = BRAND / "generated"
 LOG = BRAND / ".brandmint" / "image-batch.log"
 RESULTS = BRAND / ".brandmint" / "image-batch-results.json"

@@ -5,7 +5,7 @@ No hallucinated paths: every entry is stat-checked. Wave/skill inferred from fil
 import json
 from pathlib import Path
 
-BRAND = Path("/Volumes/madara/2026/twc-vault/01-Projects/thoughtseed/brandmint-v2/brands/thoughtseed")
+BRAND = Path("/Volumes/madara/2026/Projects/thoughtseed/brandmint-v2/brands/thoughtseed")
 ASSETS = BRAND / "assets"
 GEN = BRAND / "generated"
 

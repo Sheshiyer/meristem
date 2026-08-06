@@ -4915,7 +4915,7 @@ validation:
 ## Output Requirements
 
 Write your output as valid JSON to:
-`/Volumes/madara/2026/twc-vault/01-Projects/thoughtseed/brandmint-v2/brands/thoughtseed/.brandmint/outputs/icon-system.json`
+`/Volumes/madara/2026/Projects/thoughtseed/brandmint-v2/brands/thoughtseed/.brandmint/outputs/icon-system.json`
 
 The output must include:
 - `skill`: "icon-system"

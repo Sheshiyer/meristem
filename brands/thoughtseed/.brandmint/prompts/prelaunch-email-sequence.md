@@ -4962,7 +4962,7 @@ validation:
 ## Output Requirements
 
 Write your output as valid JSON to:
-`/Volumes/madara/2026/twc-vault/01-Projects/thoughtseed/brandmint-v2/brands/thoughtseed/.brandmint/outputs/prelaunch-email-sequence.json`
+`/Volumes/madara/2026/Projects/thoughtseed/brandmint-v2/brands/thoughtseed/.brandmint/outputs/prelaunch-email-sequence.json`
 
 The output must include:
 - `skill`: "prelaunch-email-sequence"

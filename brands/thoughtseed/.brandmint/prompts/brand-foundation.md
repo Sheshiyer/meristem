@@ -4724,7 +4724,7 @@ validation:
 ## Output Requirements
 
 Write your output as valid JSON to:
-`/Volumes/madara/2026/twc-vault/01-Projects/thoughtseed/brandmint-v2/brands/thoughtseed/.brandmint/outputs/brand-foundation.json`
+`/Volumes/madara/2026/Projects/thoughtseed/brandmint-v2/brands/thoughtseed/.brandmint/outputs/brand-foundation.json`
 
 The output must include:
 - `skill`: "brand-foundation"
