@@ -5,7 +5,7 @@
 #
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # shellcheck source=lib/common.sh
@@ -141,6 +141,10 @@ execute_spoke() {
     prompt_file=$(prompt_path "$brand_dir" "$spoke")
     local output_file
     output_file=$(output_path "$brand_dir" "$spoke")
+
+    # A brand may have imported outputs before its first coordinator run.
+    # Ensure prompts have a durable home before shell redirection writes them.
+    mkdir -p "$(dirname "$prompt_file")" "$(dirname "$output_file")"
     
     # Generate prompt from spoke SKILL.md + brand context
     generate_spoke_prompt "$cluster" "$spoke" "$brand_config" "$brand_dir" > "$prompt_file"
@@ -403,4 +407,6 @@ EOF
     log_info "Failed skills: $(state_get "$brand_dir" ".failed_skills | length")"
 }
 
-main "$@"
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    main "$@"
+fi
