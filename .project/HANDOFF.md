@@ -14,7 +14,8 @@
   `origin/main` in an isolated worktree.
 - `execute_spoke` now creates the resolved prompt and output parent
   directories before shell redirection writes either artifact.
-- Verification: `bash -n runner/launch.sh` and `git diff --check` pass.
+- Verification: `bash -n runner/launch.sh`,
+  `bash tests/runner-launch-directories.test.sh`, and `git diff --check` pass.
 - No generated brand outputs, Fitcheck content, bootstrap state, provider
   configuration, or deployment state is included in this change.
 
