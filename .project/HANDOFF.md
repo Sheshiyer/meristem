@@ -8,6 +8,16 @@
 - Registry WorkObject: `program:meristem-brand-system`
 - GitHub: `Sheshiyer/meristem`
 
+### 2026-08-11 runner output-directory hardening checkpoint
+
+- Branch: `codex/runner-output-directory-hardening`, based on current
+  `origin/main` in an isolated worktree.
+- `execute_spoke` now creates the resolved prompt and output parent
+  directories before shell redirection writes either artifact.
+- Verification: `bash -n runner/launch.sh` and `git diff --check` pass.
+- No generated brand outputs, Fitcheck content, bootstrap state, provider
+  configuration, or deployment state is included in this change.
+
 This packet was drafted by the packet-authoring tool from registry and
 repository evidence. It has not been reviewed by a human and is not
 committed.

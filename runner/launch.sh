@@ -141,6 +141,10 @@ execute_spoke() {
     prompt_file=$(prompt_path "$brand_dir" "$spoke")
     local output_file
     output_file=$(output_path "$brand_dir" "$spoke")
+
+    # A brand may have imported outputs before its first coordinator run.
+    # Ensure prompts have a durable home before shell redirection writes them.
+    mkdir -p "$(dirname "$prompt_file")" "$(dirname "$output_file")"
     
     # Generate prompt from spoke SKILL.md + brand context
     generate_spoke_prompt "$cluster" "$spoke" "$brand_config" "$brand_dir" > "$prompt_file"
