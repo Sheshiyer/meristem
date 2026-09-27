@@ -5,7 +5,7 @@
 #
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # shellcheck source=lib/common.sh
@@ -78,78 +78,191 @@ parse_args() {
 # Core Execution
 # -----------------------------------------------------------------------------
 
+record_spoke_failure() {
+    local brand_dir="$1"
+    local spoke="$2"
+    local failure_status="$3"
+
+    if [[ "$failure_status" -eq 0 ]]; then
+        failure_status=1
+    fi
+
+    local state_status
+    if state_record_skill_failure "$brand_dir" "$spoke"; then
+        return "$failure_status"
+    else
+        state_status=$?
+    fi
+    log_error "Unable to record failed spoke '$spoke' in runner state"
+    return "$state_status"
+}
+
+record_wave_failure() {
+    local wave="$1"
+    local brand_dir="$2"
+    local failure_status="$3"
+
+    if [[ "$failure_status" -eq 0 ]]; then
+        failure_status=1
+    fi
+
+    local state_status
+    if state_mark_wave_failed "$brand_dir" "$wave"; then
+        return "$failure_status"
+    else
+        state_status=$?
+    fi
+    log_error "Unable to record failed wave '$wave' in runner state"
+    return "$state_status"
+}
+
 execute_wave() {
     local wave="$1"
     local brand_dir="$2"
     local brand_config="$3"
-    
+    local status
+
+    # A rerun is not complete until every cluster and spoke succeeds again.
+    if state_mark_wave_started "$brand_dir" "$wave"; then
+        :
+    else
+        status=$?
+        log_error "Unable to start wave $wave in runner state"
+        return "$status"
+    fi
+
     # Wave 6 has TWO clusters (content + social-growth)
     # Other waves have one cluster.
     local clusters
-    clusters=$(wave_to_clusters "$wave")
-    
+    if clusters=$(wave_to_clusters "$wave"); then
+        :
+    else
+        status=$?
+        log_error "Unable to resolve clusters for wave $wave"
+        record_wave_failure "$wave" "$brand_dir" "$status"
+        return $?
+    fi
+
+    if [[ -z "$clusters" ]]; then
+        log_error "No clusters configured for wave $wave"
+        record_wave_failure "$wave" "$brand_dir" 1
+        return $?
+    fi
+
     log_info "=== Wave $wave: $clusters ==="
-    
-    # Run all clusters in this wave sequentially
+
+    # Run all clusters in this wave sequentially.
+    local cluster
     for cluster in $clusters; do
         local cluster_dir="$PROJECT_ROOT/clusters/$cluster"
         if [[ ! -d "$cluster_dir" ]]; then
-            log_warn "Cluster directory not found: $cluster_dir"
-            continue
+            log_error "Cluster directory not found: $cluster_dir"
+            record_wave_failure "$wave" "$brand_dir" 1
+            return $?
         fi
-        
+
         # Get list of spokes for this cluster
         local spokes
-        spokes=$(list_spokes "$cluster")
-        
-        if [[ -z "$spokes" ]]; then
-            log_warn "No spokes found for cluster: $cluster"
-            continue
+        if spokes=$(list_spokes "$cluster"); then
+            :
+        else
+            status=$?
+            log_error "Unable to list spokes for cluster: $cluster"
+            record_wave_failure "$wave" "$brand_dir" "$status"
+            return $?
         fi
-        
-        log_info "--- Cluster $cluster ($spokes total spokes) ---"
-        
+
+        if [[ -z "$spokes" ]]; then
+            log_error "No spokes found for cluster: $cluster"
+            record_wave_failure "$wave" "$brand_dir" 1
+            return $?
+        fi
+
+        local -a spoke_list=()
+        local listed_spoke
+        while IFS= read -r listed_spoke; do
+            spoke_list+=("$listed_spoke")
+        done <<< "$spokes"
+
+        if [[ "${#spoke_list[@]}" -eq 0 || -z "${spoke_list[0]}" ]]; then
+            log_error "No usable spokes found for cluster: $cluster"
+            record_wave_failure "$wave" "$brand_dir" 1
+            return $?
+        fi
+
+        log_info "--- Cluster $cluster (${#spoke_list[@]} spokes) ---"
+
         # Tracer-first: run first spoke to validate assumptions
         local tracer
-        tracer=$(echo "$spokes" | head -1)
+        tracer="${spoke_list[0]}"
         log_info "Running tracer: $tracer"
-        
-        if ! execute_spoke "$cluster" "$tracer" "$brand_dir" "$brand_config"; then
+
+        if execute_spoke "$cluster" "$tracer" "$brand_dir" "$brand_config"; then
+            :
+        else
+            status=$?
             log_error "Tracer failed for $cluster. Plan needs revision."
-            vault_log_failure "Tracer failure: $tracer" "Wave $wave, cluster $cluster"
-            return 1
+            if vault_log_failure "Tracer failure: $tracer" "Wave $wave, cluster $cluster"; then
+                :
+            else
+                log_warn "Unable to write tracer failure to vault"
+            fi
+            record_wave_failure "$wave" "$brand_dir" "$status"
+            return $?
         fi
-        
+
         # Execute remaining spokes
-        echo "$spokes" | tail -n +2 | while read -r spoke; do
+        local spoke
+        for spoke in "${spoke_list[@]:1}"; do
             [[ -z "$spoke" ]] && continue
             log_info "Running spoke: $spoke"
-            execute_spoke "$cluster" "$spoke" "$brand_dir" "$brand_config" || {
+            if execute_spoke "$cluster" "$spoke" "$brand_dir" "$brand_config"; then
+                :
+            else
+                status=$?
                 log_error "Spoke failed: $spoke"
-                state_set "$brand_dir" ".failed_skills += [\"$spoke\"]" "[]"
-            }
+                record_wave_failure "$wave" "$brand_dir" "$status"
+                return $?
+            fi
         done
     done
-    
-    # Mark wave complete
-    state_set "$brand_dir" ".completed_waves += [$wave]" "[]"
-    state_set "$brand_dir" ".current_wave" "$wave"
-    
-    log_success "Wave $wave complete"
-}
 
-# Old single-cluster execute_wave replaced by multi-cluster version above (line 81)
-# This block intentionally left empty — the dual-cluster version handles all waves.
+    # Mark wave complete
+    if state_mark_wave_complete "$brand_dir" "$wave"; then
+        :
+    else
+        status=$?
+        log_error "Unable to mark wave $wave complete in runner state"
+        # The complete-state update is atomic, so this best-effort cleanup cannot
+        # leave a partial completion marker behind.
+        if state_mark_wave_failed "$brand_dir" "$wave"; then
+            :
+        else
+            log_error "Unable to record failed wave '$wave' after state write failure"
+        fi
+        return "$status"
+    fi
+
+    log_success "Wave $wave complete"
+    return 0
+}
 
 execute_spoke() {
     local cluster="$1"
     local spoke="$2"
     local brand_dir="$3"
     local brand_config="$4"
-    
+    local status
+
     local start_time
-    start_time=$(date +%s)
-    
+    if start_time=$(date +%s); then
+        :
+    else
+        status=$?
+        log_error "Unable to start timing for spoke: $spoke"
+        return "$status"
+    fi
+
     local prompt_file
     prompt_file=$(prompt_path "$brand_dir" "$spoke")
     local output_file
@@ -157,41 +270,89 @@ execute_spoke() {
 
     # A brand may have imported outputs before its first coordinator run.
     # Ensure prompts have a durable home before shell redirection writes them.
-    mkdir -p "$(dirname "$prompt_file")" "$(dirname "$output_file")"
-    
+    if mkdir -p "$(dirname "$prompt_file")" "$(dirname "$output_file")"; then
+        :
+    else
+        status=$?
+        log_error "Unable to create artifact directories for spoke: $spoke"
+        record_spoke_failure "$brand_dir" "$spoke" "$status"
+        return $?
+    fi
+
     # Generate prompt from spoke SKILL.md + brand context
-    generate_spoke_prompt "$cluster" "$spoke" "$brand_config" "$brand_dir" > "$prompt_file"
-    
+    if generate_spoke_prompt "$cluster" "$spoke" "$brand_config" "$brand_dir" > "$prompt_file"; then
+        :
+    else
+        status=$?
+        log_error "Prompt generation failed for spoke: $spoke"
+        record_spoke_failure "$brand_dir" "$spoke" "$status"
+        return $?
+    fi
+
     log_info "Prompt written: $prompt_file"
     log_info "Waiting for output: $output_file"
-    
+
     # In non-interactive mode, wait for output
     # In interactive mode, agent will execute and save output
-    if ! wait_for_output "$output_file" 600; then
+    if wait_for_output "$output_file" 600; then
+        :
+    else
+        status=$?
         local end_time
-        end_time=$(date +%s)
+        end_time=$(date +%s) || end_time="$start_time"
         local duration=$((end_time - start_time))
-        vault_append_metric "| $(timestamp_local) | $(yaml_get "$brand_config" "name") | $cluster | $spoke | ${duration}s | TIMEOUT | Waiting for output |"
-        return 1
+        if vault_append_metric "| $(timestamp_local) | $(yaml_get "$brand_config" "name") | $cluster | $spoke | ${duration}s | TIMEOUT | Waiting for output |"; then
+            :
+        else
+            log_warn "Unable to write timeout metric for spoke: $spoke"
+        fi
+        record_spoke_failure "$brand_dir" "$spoke" "$status"
+        return $?
     fi
-    
+
+    # An interactive operator can skip submission, but a skipped/missing output
+    # is never a completed spoke even when a wait implementation returns zero.
+    if [[ ! -f "$output_file" ]]; then
+        log_error "Output missing after wait for spoke: $spoke"
+        record_spoke_failure "$brand_dir" "$spoke" 1
+        return $?
+    fi
+
     # Validate output
-    if ! validate_spoke_output "$spoke" "$output_file"; then
+    if validate_spoke_output "$spoke" "$output_file"; then
+        :
+    else
+        status=$?
         local end_time
-        end_time=$(date +%s)
+        end_time=$(date +%s) || end_time="$start_time"
         local duration=$((end_time - start_time))
-        vault_append_metric "| $(timestamp_local) | $(yaml_get "$brand_config" "name") | $cluster | $spoke | ${duration}s | INVALID | Output validation failed |"
-        return 1
+        if vault_append_metric "| $(timestamp_local) | $(yaml_get "$brand_config" "name") | $cluster | $spoke | ${duration}s | INVALID | Output validation failed |"; then
+            :
+        else
+            log_warn "Unable to write invalid-output metric for spoke: $spoke"
+        fi
+        record_spoke_failure "$brand_dir" "$spoke" "$status"
+        return $?
     fi
-    
+
     # Log success
     local end_time
-    end_time=$(date +%s)
+    end_time=$(date +%s) || end_time="$start_time"
     local duration=$((end_time - start_time))
-    vault_append_metric "| $(timestamp_local) | $(yaml_get "$brand_config" "name") | $cluster | $spoke | ${duration}s | OK | |"
-    
-    state_set "$brand_dir" ".completed_skills += [\"$spoke\"]" "[]"
-    
+    if state_record_skill_success "$brand_dir" "$spoke"; then
+        :
+    else
+        status=$?
+        log_error "Unable to record completed spoke '$spoke' in runner state"
+        return "$status"
+    fi
+
+    if vault_append_metric "| $(timestamp_local) | $(yaml_get "$brand_config" "name") | $cluster | $spoke | ${duration}s | OK | |"; then
+        :
+    else
+        log_warn "Unable to write success metric for spoke: $spoke"
+    fi
+
     return 0
 }
 
@@ -221,7 +382,10 @@ EOF
     if [[ -f "$core_file" ]]; then
         echo "## Core Reference"
         echo ""
-        cat "$core_file"
+        if ! cat "$core_file"; then
+            log_error "Unable to read core file: $core_file"
+            return 1
+        fi
         echo ""
     fi
     
@@ -229,17 +393,24 @@ EOF
     if [[ -f "$spoke_file" ]]; then
         echo "## Skill Instructions"
         echo ""
-        cat "$spoke_file"
+        if ! cat "$spoke_file"; then
+            log_error "Unable to read spoke file: $spoke_file"
+            return 1
+        fi
         echo ""
     else
-        log_warn "Spoke file not found: $spoke_file"
+        log_error "Spoke file not found: $spoke_file"
+        return 1
     fi
     
     # Include brand config context
     echo "## Brand Context"
     echo ""
     echo '```yaml'
-    cat "$brand_config"
+    if ! cat "$brand_config"; then
+        log_error "Unable to read brand config: $brand_config"
+        return 1
+    fi
     echo '```'
     echo ""
     
@@ -253,7 +424,10 @@ EOF
             name=$(basename "$output" .json)
             echo "### $name"
             echo '```json'
-            cat "$output"
+            if ! cat "$output"; then
+                log_error "Unable to read upstream output: $output"
+                return 1
+            fi
             echo '```'
             echo ""
         done
@@ -278,31 +452,24 @@ EOF
 validate_spoke_output() {
     local spoke="$1"
     local output_file="$2"
-    
-    # Check file exists and is valid JSON
-    require_file "$output_file" "output file"
-    
+
+    if [[ ! -f "$output_file" ]]; then
+        log_error "Output file missing: $output_file"
+        return 1
+    fi
+
     if ! jq empty "$output_file" 2>/dev/null; then
         log_error "Invalid JSON in output: $output_file"
         return 1
     fi
-    
-    # Check required fields
-    local skill
-    skill=$(json_get "$output_file" ".skill" "")
-    local status
-    status=$(json_get "$output_file" ".status" "")
-    
-    if [[ -z "$skill" ]]; then
-        log_error "Output missing 'skill' field"
+
+    if ! jq -e -s --arg spoke "$spoke" \
+        'length == 1 and (.[0] | type == "object" and .skill == $spoke and .status == "complete")' \
+        "$output_file" &>/dev/null; then
+        log_error "Output must have matching skill '$spoke' and status 'complete'"
         return 1
     fi
-    
-    if [[ -z "$status" ]]; then
-        log_error "Output missing 'status' field"
-        return 1
-    fi
-    
+
     return 0
 }
 
@@ -315,7 +482,7 @@ run_checkpoint() {
     # Run checkpoint script if exists
     local checkpoint_script="$PROJECT_ROOT/orchestrator/checkpoint.sh"
     if [[ -x "$checkpoint_script" ]]; then
-        bash "$checkpoint_script" --brand-dir "$brand_dir" --wave "$wave"
+        bash "$checkpoint_script" --brand-dir "$brand_dir" --wave "$wave" || return $?
     fi
     
     # Basic health check
@@ -395,11 +562,12 @@ main() {
 ## Wave Breakdown
 
 $(for wave in $waves; do
-    cluster=$(wave_to_cluster "$wave")
-    echo "### Wave $wave: $cluster"
-    echo ""
-    list_spokes "$cluster" | sed 's/^/- /'
-    echo ""
+    echo "### Wave $wave"
+    for cluster in $(wave_to_clusters "$wave"); do
+        echo "#### Cluster: $cluster"
+        list_spokes "$cluster" | sed 's/^/- /'
+        echo ""
+    done
 done)
 
 ## Status
@@ -411,13 +579,13 @@ EOF
     
     # Execute waves
     for wave in $waves; do
-        execute_wave "$wave" "$brand_dir" "$CONFIG"
+        execute_wave "$wave" "$brand_dir" "$CONFIG" || return $?
         
         # Checkpoint between waves (except last)
         local last_wave
         last_wave=$(echo "$waves" | tail -1)
         if [[ "$wave" != "$last_wave" ]]; then
-            run_checkpoint "$wave" "$brand_dir"
+            run_checkpoint "$wave" "$brand_dir" || return $?
         fi
     done
     
@@ -428,4 +596,6 @@ EOF
     log_info "Failed skills: $(state_get "$brand_dir" ".failed_skills | length")"
 }
 
-main "$@"
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    main "$@"
+fi
