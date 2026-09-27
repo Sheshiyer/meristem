@@ -225,14 +225,31 @@ WAVE_CLUSTERS=(
     "synthesis"
 )
 
+# Wave 6 splits into two clusters: content (existing) + social-growth (NEW from oracle-aleph)
+# social-growth runs alongside content as part of wave 6.
+declare -A WAVE_6_CLUSTERS=( [6a]="content" [6b]="social-growth" )
+
 wave_to_cluster() {
     local wave="$1"
     require_in_range "$wave" 1 7
     echo "${WAVE_CLUSTERS[$((wave - 1))]}"
 }
 
+# Wave 6 has TWO clusters: content + social-growth
+# Returns space-separated list of clusters for the wave.
+wave_to_clusters() {
+    local wave="$1"
+    case "$wave" in
+        6) echo "content social-growth" ;;
+        *) wave_to_cluster "$wave" ;;
+    esac
+}
+
 cluster_to_wave() {
     local cluster="$1"
+    case "$cluster" in
+        content|social-growth) echo 6; return ;;
+    esac
     local i
     for i in "${!WAVE_CLUSTERS[@]}"; do
         if [[ "${WAVE_CLUSTERS[$i]}" == "$cluster" ]]; then
