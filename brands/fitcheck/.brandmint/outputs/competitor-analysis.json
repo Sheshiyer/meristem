@@ -1,0 +1,149 @@
+{
+  "skill": "competitor-analysis",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-08-10T13:25:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "evidence_scope": "Public Shopify App Store listing review, 2026-08-10. Feature availability and review sentiment are limited to what was publicly observable; no customer-review claims are inferred from zero-review listings.",
+    "competitors": [
+      {
+        "name": "FitCheck | Virtual Try-On by Synthenova",
+        "type": "direct",
+        "price": "Public listing showed US$25 and US$89 plans at time of review; confirm before comparison or publishing.",
+        "value_proposition": "Publicly positioned as a virtual try-on app for fashion brands.",
+        "target_audience": "Shopify fashion and apparel merchants seeking virtual try-on.",
+        "key_features": [
+          "Virtual try-on (public category claim)",
+          "Shopify App Store distribution", 
+          "Plan-based pricing shown publicly"
+        ],
+        "positioning": {
+          "headline": "FitCheck | Virtual Try-On",
+          "category_claimed": "Virtual try-on for fashion brands"
+        },
+        "strengths": [
+          "Earlier public Shopify App Store presence (listing launch date shown as 2025-04-14)",
+          "Directly understandable category name", 
+          "Visible entry and higher plan prices"
+        ],
+        "weaknesses": [
+          "Generic category framing leaves room for a more specific fit-confidence position", 
+          "The overlapping FitCheck name creates a discovery and differentiation burden", 
+          "The listing had zero public reviews at time of review, so independent social proof was not available"
+        ],
+        "customer_sentiment": {
+          "praise_points": ["No public reviews available to substantiate praise points."],
+          "complaints": ["No public reviews available to substantiate complaint points."]
+        }
+      },
+      {
+        "name": "Static product photography plus sizing content",
+        "type": "indirect",
+        "price": "Included in the merchant's existing merchandising workflow; incremental cost varies by brand.",
+        "value_proposition": "Shows garment styling, detail, and fit notes through images, video, size charts, and copy.",
+        "target_audience": "All apparel ecommerce merchants and their shoppers.",
+        "key_features": [
+          "Product imagery", 
+          "Model and detail photography", 
+          "Size charts and fit notes", 
+          "Merchandising control"
+        ],
+        "positioning": {
+          "headline": "The familiar product page",
+          "category_claimed": "Standard fashion ecommerce presentation"
+        },
+        "strengths": [
+          "Universally understood by shoppers", 
+          "Fully controlled by the merchant's brand and creative team", 
+          "No new shopper interaction or integration to learn"
+        ],
+        "weaknesses": [
+          "Does not let an individual shopper visualise the garment on themselves", 
+          "Can leave fit confidence dependent on inference", 
+          "More assets alone may not resolve the personal confidence gap"
+        ],
+        "customer_sentiment": {
+          "praise_points": ["Familiar and predictable shopper experience."],
+          "complaints": ["Fit confidence may remain unresolved when images and size information do not answer a shopper's personal question."]
+        }
+      },
+      {
+        "name": "Custom virtual try-on implementation",
+        "type": "indirect",
+        "price": "Project-dependent; not compared as a published price point.",
+        "value_proposition": "A bespoke try-on or visualisation project built by an internal team or agency.",
+        "target_audience": "Larger or highly resourced fashion retailers with specialised technical capacity.",
+        "key_features": [
+          "Custom integration", 
+          "Potentially bespoke user experience", 
+          "Greater implementation control", 
+          "Ongoing technical ownership"
+        ],
+        "positioning": {
+          "headline": "Built to specification",
+          "category_claimed": "Custom commerce technology project"
+        },
+        "strengths": [
+          "Can be shaped around a retailer's existing stack and design system", 
+          "Can receive dedicated internal attention when resources exist", 
+          "May suit complex enterprise requirements"
+        ],
+        "weaknesses": [
+          "Longer evaluation, procurement, and maintenance path", 
+          "Requires capacity that emerging and mid-market Shopify brands may not have", 
+          "Creates an all-or-nothing project frame before a merchant can learn from a bounded rollout"
+        ],
+        "customer_sentiment": {
+          "praise_points": ["Potential for tailored experience when resources justify it."],
+          "complaints": ["Project scope, implementation effort, and maintenance can delay learning."]
+        }
+      }
+    ],
+    "feature_matrix": {
+      "features": [
+        "Shopify product-page try-on", 
+        "Personal visual confidence interaction", 
+        "Public app-store distribution", 
+        "Guided merchant rollout", 
+        "Evidence-bounded fit-confidence positioning", 
+        "Custom implementation control"
+      ],
+      "comparison": {
+        "our_product": [true, true, true, true, true, false],
+        "competitors": {
+          "FitCheck | Virtual Try-On by Synthenova": [true, true, true, false, false, false],
+          "Static product photography plus sizing content": [false, false, false, false, false, false],
+          "Custom virtual try-on implementation": [true, true, false, false, false, true]
+        }
+      }
+    },
+    "whitespace": {
+      "unmet_needs": [
+        "A merchant-facing try-on story centred on credible fit confidence instead of generic AI novelty", 
+        "A limited, evidence-first rollout path for emerging and mid-market Shopify fashion brands", 
+        "Clear communication of what visual try-on can help a shopper assess and what it cannot prove"
+      ],
+      "missing_features": [
+        "Not asserted as market-wide facts; validate through merchant interviews and product testing before claiming any feature absence.",
+        "A transparent merchant learning framework that records product-page outcomes rather than promising them upfront."
+      ],
+      "underserved_segments": [
+        "Founder-led and operator-led Shopify fashion brands that want differentiated product pages without commissioning a custom platform project", 
+        "Fashion brands that need the try-on interaction to feel editorial and body-respectful, not generic"
+      ]
+    },
+    "differentiation": {
+      "genuine_differences": [
+        "Position the product as AI Fit Confidence for Shopify, not merely virtual try-on.",
+        "Pair the interaction with guided setup and a merchant-specific test plan rather than abstract outcome promises.",
+        "Make transparency about visual-fit limitations a source of trust rather than an afterthought.",
+        "Use an editorial, fashion-aware expression that is distinct from Synthenova's public listing language and visual identity."
+      ],
+      "ownable_territory": "Confident fit: a credible, fashion-aware product-page decision moment for Shopify merchants and shoppers.",
+      "unfair_advantage": "Not a claimed technical moat. The near-term advantage is a disciplined distribution motion—targeted Shopify fashion outreach, guided setup, and a feedback loop that makes merchant-specific proof before scaling."
+    },
+    "positioning_statement": "Unlike generic virtual-try-on listings or a custom commerce project, Fitcheck gives Shopify fashion brands an editorial, evidence-bounded AI fit-confidence experience with a guided path to test it on their own product pages."
+  }
+}

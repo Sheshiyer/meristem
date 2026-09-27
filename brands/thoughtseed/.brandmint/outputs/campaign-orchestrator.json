@@ -1,0 +1,104 @@
+{
+  "skill": "campaign-orchestrator",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "campaign_id": "thoughtseed-digital-wilderness-2026-09",
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Foundation",
+        "skills": [
+          {"skill": "brand-foundation", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/brand-foundation.json"},
+          {"skill": "buyer-persona", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/buyer-persona.json"},
+          {"skill": "competitor-analysis", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/competitor-analysis.json"},
+          {"skill": "value-proposition", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/value-proposition.json"},
+          {"skill": "brand-guidelines", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/brand-guidelines.json"}
+        ]
+      },
+      {
+        "phase": 2,
+        "name": "Strategy",
+        "skills": [
+          {"skill": "brand-story", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/brand-story.json"},
+          {"skill": "messaging-framework", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/messaging-framework.json"},
+          {"skill": "product-positioning", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/product-positioning.json"},
+          {"skill": "voice-and-tone", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/voice-and-tone.json"}
+        ]
+      },
+      {
+        "phase": 3,
+        "name": "Identity + Visual Language",
+        "skills": [
+          {"skill": "color-palette", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/color-palette.json"},
+          {"skill": "typography", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/typography.json"},
+          {"skill": "logo-concept", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/logo-concept.json"},
+          {"skill": "visual-language", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/visual-language.json"}
+        ]
+      },
+      {
+        "phase": 4,
+        "name": "Photography",
+        "skills": [
+          {"skill": "hero-images", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/hero-images.json"},
+          {"skill": "lifestyle-photography", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/lifestyle-photography.json"},
+          {"skill": "product-photography", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/product-photography.json"},
+          {"skill": "social-media-assets", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/social-media-assets.json"}
+        ]
+      },
+      {
+        "phase": 5,
+        "name": "Illustration",
+        "skills": [
+          {"skill": "brand-illustrations", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/brand-illustrations.json"},
+          {"skill": "icon-system", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/icon-system.json"},
+          {"skill": "pattern-library", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/pattern-library.json"}
+        ]
+      },
+      {
+        "phase": 6,
+        "name": "Content + Social Growth",
+        "skills": [
+          {"skill": "landing-page-copy", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/landing-page-copy.json"},
+          {"skill": "welcome-email-sequence", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/welcome-email-sequence.json"},
+          {"skill": "prelaunch-email-sequence", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/prelaunch-email-sequence.json"},
+          {"skill": "launch-email-sequence", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/launch-email-sequence.json"},
+          {"skill": "ad-creative-copy", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/ad-creative-copy.json"},
+          {"skill": "press-release", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/press-release.json"},
+          {"skill": "product-description", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/product-description.json"},
+          {"skill": "social-content-engine", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/social-content-engine.json"},
+          {"skill": "short-form-hook-generator", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/short-form-hook-generator.json"},
+          {"skill": "update-strategy-sequencer", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/update-strategy-sequencer.json"},
+          {"skill": "community-manager-brain", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/community-manager-brain.json"},
+          {"skill": "review-response-strategist", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/review-response-strategist.json"}
+        ]
+      },
+      {
+        "phase": 7,
+        "name": "Synthesis",
+        "skills": [
+          {"skill": "brand-documentation", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/brand-documentation.json"},
+          {"skill": "notebooklm-publishing", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/notebooklm-publishing.json"},
+          {"skill": "wiki-site-generator", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/wiki-site-generator.json"},
+          {"skill": "deliverables-package", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/deliverables-package.json"},
+          {"skill": "visual-content-bridge", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/visual-content-bridge.json"},
+          {"skill": "campaign-orchestrator", "status": "PASS", "output_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/outputs/campaign-orchestrator.json"}
+        ]
+      }
+    ],
+    "validation_gates": [
+      {"gate": "Phase 1: persona has ≥5 challenges, competitor has ≥3 competitors", "requirement": "buyer-persona.json has 5 challenges, competitor-analysis.json has 3 competitors", "status": "PASS"},
+      {"gate": "Phase 2: voice matrix defined, prohibited terms listed", "requirement": "voice-and-tone.json has full voice matrix + prohibited vocabulary", "status": "PASS"},
+      {"gate": "Phase 3: palette + typography + visual-language complete, all paths exist", "requirement": "All 4 outputs exist; asset-manifest.json shows 43 assets", "status": "PASS"},
+      {"gate": "Phase 4: hero/lifestyle/product/social-media assets exist", "requirement": "All 4 outputs exist with verified asset paths", "status": "PASS"},
+      {"gate": "Phase 5: illustrations + icons + patterns complete", "requirement": "All 3 outputs exist", "status": "PASS"},
+      {"gate": "Phase 6: all copy outputs complete, voice-discipline check PASS, social-growth spokes complete", "requirement": "12 outputs (7 content + 5 social-growth) all complete", "status": "PASS"},
+      {"gate": "Phase 7: documentation + notebooklm + wiki + deliverables complete", "requirement": "All 6 outputs exist", "status": "PASS"}
+    ],
+    "missing_outputs": [],
+    "ready_for_launch": true
+  }
+}

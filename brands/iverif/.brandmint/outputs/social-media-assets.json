@@ -1,0 +1,157 @@
+{
+  "skill": "social-media-assets",
+  "cluster": "photography",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 4,
+  "data": {
+    "art_direction": {
+      "summary": "FR-first social surfaces. Primary paid/organic: LinkedIn FR. Secondary credibility: Welcome to the Jungle company presence. Visuals match hero dossier office language; no EN text in image prompts.",
+      "channels_priority": [
+        "linkedin_fr",
+        "welcome_to_the_jungle",
+        "jdn",
+        "les_echos",
+        "company_site"
+      ]
+    },
+    "platforms": [
+      "linkedin",
+      "welcome_to_the_jungle",
+      "x",
+      "youtube",
+      "instagram"
+    ],
+    "profile_strategy": {
+      "approach": "logo-icon on #FAFAF9 or stone field",
+      "background": "#FAFAF9",
+      "prompt": "Centered iverif logo icon only on clean off-white field, generous padding, sharp vector-like edges — use existing logo asset, do not invent. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image."
+    },
+    "cover_strategy": {
+      "approach": "FR dossier desk hero crop with left safe zone for optional later FR layout text",
+      "safe_zones": "LinkedIn: keep focal subject in center-right; left 20% quieter. WTTJ: center-weighted.",
+      "seasonal_updates": false
+    },
+    "assets": [
+      {
+        "platform": "linkedin",
+        "type": "profile",
+        "dimensions": "400x400",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Reuse logo-icon.png on #FAFAF9",
+        "generated_path": "./assets/logo-icon.png"
+      },
+      {
+        "platform": "linkedin",
+        "type": "cover",
+        "dimensions": "1584x396",
+        "aspect_ratio": "4:1",
+        "generation_prompt": "Ultra-wide LinkedIn cover: French ops desk with blank dossiers and soft green LED, subject right-weighted, left quiet for layout. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/social-linkedin-cover.png"
+      },
+      {
+        "platform": "linkedin",
+        "type": "post",
+        "dimensions": "1200x1200",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Square editorial still of open CEE dossier and blurred laptop, stone palette, one green accent. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/social-linkedin-post-square.png"
+      },
+      {
+        "platform": "linkedin",
+        "type": "post",
+        "dimensions": "1200x1500",
+        "aspect_ratio": "4:5",
+        "generation_prompt": "4:5 LinkedIn feed crop of cross-check desk still life, no readable text. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/social-linkedin-post-portrait.png"
+      },
+      {
+        "platform": "welcome_to_the_jungle",
+        "type": "cover",
+        "dimensions": "1920x640",
+        "aspect_ratio": "3:1",
+        "generation_prompt": "Wide company-culture banner: calm French back-office, people at desks with dossiers, professional and humane, no slogans in frame. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/social-wttj-cover.png"
+      },
+      {
+        "platform": "youtube",
+        "type": "cover",
+        "dimensions": "2560x1440",
+        "aspect_ratio": "16:9",
+        "generation_prompt": "YouTube channel art using hero-01 desk scene with extra side padding safe zones. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/social-youtube-cover.png"
+      },
+      {
+        "platform": "x",
+        "type": "header",
+        "dimensions": "1500x500",
+        "aspect_ratio": "3:1",
+        "generation_prompt": "X header: minimal stone desk strip with green accent LED and blank dossier edge. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/social-x-header.png"
+      },
+      {
+        "platform": "instagram",
+        "type": "profile",
+        "dimensions": "320x320",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Reuse logo-icon.png",
+        "generated_path": "./assets/logo-icon.png"
+      }
+    ],
+    "post_templates": [
+      {
+        "name": "Dossier pain carousel cover",
+        "purpose": "LinkedIn FR carousel opener",
+        "elements": [
+          "desk still",
+          "safe zone for FR caption in layout"
+        ],
+        "prompt": "Square desk still, blank folders, green LED. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image."
+      },
+      {
+        "name": "Product soft-UI",
+        "purpose": "Feature teaser without outcome claims",
+        "elements": [
+          "blurred UI",
+          "dossier prop"
+        ],
+        "prompt": "Laptop with unreadable UI blur + dossier. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image."
+      },
+      {
+        "name": "Ops culture",
+        "purpose": "WTTJ / employer-adjacent",
+        "elements": [
+          "team desk",
+          "calm peak season"
+        ],
+        "prompt": "Orderly FR ops floor. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image."
+      },
+      {
+        "name": "Audit trail metaphor",
+        "purpose": "Trust content",
+        "elements": [
+          "timestamp tabs abstract",
+          "green check light"
+        ],
+        "prompt": "Abstract audit tabs still life. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image."
+      }
+    ],
+    "quality_gates": {
+      "linkedin_fr_primary": true,
+      "no_en_text_in_prompts": true,
+      "logo_reused": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total_assets": 8,
+      "generated": 0,
+      "pending": 6,
+      "reused": 2
+    },
+    "channel_plan_refs": [
+      "linkedin_fr",
+      "welcome_to_the_jungle"
+    ]
+  }
+}

@@ -18,6 +18,9 @@ brand:
     b2c: false
     enterprise: true
     smb: false
+    # Optional locale lock (use for regional GTM brands, e.g. iverif FR)
+    region: "US"       # ISO 3166-1 alpha-2 country/region code (e.g. FR, US, DE)
+    language: "en-US"  # BCP 47 language tag (e.g. fr-FR, en-US, de-DE)
 
 # =============================================================================
 # COMPANY CONTEXT

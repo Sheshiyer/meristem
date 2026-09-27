@@ -1,0 +1,63 @@
+{
+  "skill": "notebooklm-publishing",
+  "cluster": "synthesis",
+  "timestamp": "2026-09-11T16:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 7,
+  "data": {
+    "brand": "iverif",
+    "gtm_tag": "FR GTM",
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "defaultLocale": "fr",
+    "manifest_source": ".brandmint/asset-manifest.json",
+    "pipeline": {
+      "stage1_transform": {
+        "description": "Wave 1–6 skill outputs transformed into bilingual prose sources for NotebookLM. Sources are prose, never raw JSON.",
+        "sources_root": "deliverables/notebooklm/sources/",
+        "categories": [
+          "brand-identity",
+          "product-strategy",
+          "voice-messaging",
+          "campaign-content",
+          "evidence"
+        ],
+        "sources_generated": {
+          "fr": [
+            "deliverables/notebooklm/sources/fr/brand-identity.md",
+            "deliverables/notebooklm/sources/fr/product-strategy.md",
+            "deliverables/notebooklm/sources/fr/evidence-boundaries.md"
+          ],
+          "en": [
+            "deliverables/notebooklm/sources/en/brand-identity.md",
+            "deliverables/notebooklm/sources/en/product-strategy.md",
+            "deliverables/notebooklm/sources/en/evidence-boundaries.md"
+          ]
+        }
+      },
+      "stage2_curate": {
+        "artifacts_planned": [
+          "Internal Brand-System Briefing (FR GTM)",
+          "Internal Claims and Evidence Table",
+          "FR Competitive Context Map"
+        ],
+        "priority_order": [
+          "evidence",
+          "brand-identity",
+          "product-strategy",
+          "voice-messaging",
+          "campaign-content"
+        ]
+      },
+      "stage3_assemble": {
+        "notebook_title": "iverif — Brand System · FR GTM · Internal",
+        "publication_authorized": false
+      }
+    },
+    "use_boundary": "Internal derivative research only. Re-check time-sensitive CEE / competitor facts before any public copy. Does not authorize NotebookLM public sharing or deployment.",
+    "inputs_v1_mirror": "brands/iverif/inputs/v1/notebooklm-sources/"
+  }
+}

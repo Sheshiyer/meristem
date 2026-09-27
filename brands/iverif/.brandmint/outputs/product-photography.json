@@ -1,0 +1,122 @@
+{
+  "skill": "product-photography",
+  "cluster": "photography",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 4,
+  "data": {
+    "art_direction": {
+      "summary": "Product = SaaS UI + dossier workflow artifacts. Prefer screenshot-hero.png as deterministic UI source; environmental product shots show laptop/tablet in FR office with UI intentionally soft-blurred so no EN chrome is legible.",
+      "reuse_assets": [
+        "./assets/screenshot-hero.png",
+        "./assets/og-image.png",
+        "./assets/logo-icon.png"
+      ]
+    },
+    "product_description": "iverif AI document validation platform for EU energy subsidy operators — programme-preconfigured checks, cross-document consistency, timestamped audit trails. Primary visual: dossier validation workspace for CEE / Primes Énergie.",
+    "key_features_to_highlight": [
+      "Cross-document field consistency",
+      "Programme-specific rule configuration (CEE, Primes Énergie, and EU programmes)",
+      "Exception queue / issue surfacing",
+      "Timestamped audit trail",
+      "Managed onboarding (not DIY OCR)"
+    ],
+    "shot_types": [
+      {
+        "type": "hero_ui",
+        "purpose": "Primary product proof",
+        "background": "Clean #FAFAF9 or soft office bokeh",
+        "lighting": "Even screen-friendly, no glare"
+      },
+      {
+        "type": "detail_exception",
+        "purpose": "Show validation attention without claiming accuracy %",
+        "background": "Desk still life",
+        "lighting": "Soft side light"
+      },
+      {
+        "type": "device_in_context",
+        "purpose": "Laptop in FR ops desk",
+        "background": "Stone desk, dossier props",
+        "lighting": "Window daylight"
+      },
+      {
+        "type": "icon_mark",
+        "purpose": "Logo icon isolation",
+        "background": "#FAFAF9",
+        "lighting": "Flat studio"
+      }
+    ],
+    "shot_list": [
+      {
+        "id": "PP-01",
+        "type": "hero_ui",
+        "angle": "front square",
+        "background": "#FAFAF9",
+        "feature_focus": "Validation workspace overview",
+        "priority": "high",
+        "generation_prompt": "Do not regenerate UI; use assets/screenshot-hero.png as deterministic hero product frame. Soft shadow on #FAFAF9.",
+        "generated_path": "./assets/screenshot-hero.png",
+        "user_provided": true
+      },
+      {
+        "id": "PP-02",
+        "type": "device_in_context",
+        "angle": "45° laptop",
+        "background": "FR stone desk with blank dossier",
+        "feature_focus": "Product in operator context",
+        "priority": "high",
+        "generation_prompt": "MacBook-class laptop on French ops desk at 45 degrees, screen content heavily blurred abstract panels with one soft green glow (no readable UI text), blank dossier beside keyboard, editorial product photography. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/pp-02-laptop-context.png"
+      },
+      {
+        "id": "PP-03",
+        "type": "detail_exception",
+        "angle": "macro desk",
+        "background": "Paper + tablet",
+        "feature_focus": "Exception / check metaphor",
+        "priority": "medium",
+        "generation_prompt": "Close product still life: tablet edge and blank validation printout with abstract green accent mark, metal clip, shallow DOF, no readable characters. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/pp-03-exception-detail.png"
+      },
+      {
+        "id": "PP-04",
+        "type": "device_in_context",
+        "angle": "tablet hands-free",
+        "background": "Meeting table",
+        "feature_focus": "Audit review posture",
+        "priority": "medium",
+        "generation_prompt": "Tablet flat on meeting table next to closed dossier folder, soft green status light reflection, French office, product advertising still. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/pp-04-tablet-audit.png"
+      },
+      {
+        "id": "PP-05",
+        "type": "icon_mark",
+        "angle": "front",
+        "background": "#FAFAF9",
+        "feature_focus": "Logo icon",
+        "priority": "high",
+        "generation_prompt": "Use existing assets/logo-icon.png; do not invent mark.",
+        "generated_path": "./assets/logo-icon.png",
+        "user_provided": true
+      }
+    ],
+    "quality_gates": {
+      "hero_defined": true,
+      "deterministic_ui_reused": true,
+      "no_en_ui_text_in_generated_prompts": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total_shots": 5,
+      "generated": 0,
+      "pending": 3,
+      "reused_user_assets": 2
+    },
+    "ledger_refs": [
+      "F2",
+      "F3"
+    ]
+  }
+}

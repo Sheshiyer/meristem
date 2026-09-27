@@ -1,0 +1,29 @@
+{
+  "schema": "brandmint.asset-manifest.v1",
+  "brand": "cambium-infinite-game",
+  "generated_at": "2026-09-27T16:30:00Z",
+  "generation_route": "Codex image generation through the logged-in native session; no API-credit provider",
+  "user_provided_assets": [],
+  "generated_assets": [
+    {"id": "hero-continuity-studio-v1", "path": "generated/hero-continuity-studio-v1.png", "exists": true, "width": 1672, "height": 941, "sha256": "16f61e70c88350255189e6e215aa1f604c7d0862d8970ed0e68f28a369f40fb2", "origin": "generated", "proof_label": "conceptual brand visual"},
+    {"id": "hero-viable-field-v1", "path": "generated/hero-viable-field-v1.png", "exists": true, "width": 1672, "height": 941, "sha256": "fe66699426e082c4ee2fbee88db5caf3bdcd736a01cc4c7072ed7bdcf6f9cdc4", "origin": "generated", "proof_label": "conceptual brand visual"},
+    {"id": "icon-system-reference-v1", "path": "generated/icon-system-reference-v1.png", "exists": true, "width": 1254, "height": 1254, "sha256": "bccb5fdebbafd6968fdd4ee6929ea05770d70e64c93cbc4872208928c24a8a86", "origin": "generated", "proof_label": "brand-system reference"},
+    {"id": "illustration-finite-instruments-v1", "path": "generated/illustration-finite-instruments-v1.png", "exists": true, "width": 1254, "height": 1254, "sha256": "24a7ca362a4345630b5ba18c8bcab578a1fbceb780e6d5fb1bb2e7d19263ea81", "origin": "generated", "proof_label": "conceptual illustration"},
+    {"id": "illustration-one-operator-many-gardens-v1", "path": "generated/illustration-one-operator-many-gardens-v1.png", "exists": true, "width": 1536, "height": 1024, "sha256": "0f77e1d361c9f09b8e1ba1a00b95a1669896afd7521ce0544423266be96ce573", "origin": "generated", "proof_label": "conceptual illustration"},
+    {"id": "lifestyle-founder-steward-v1", "path": "generated/lifestyle-founder-steward-v1.png", "exists": true, "width": 1536, "height": 1024, "sha256": "1249e4cef342f02a7c6e1f5bdc8caf762a05180c3692cf6934d033737b808c83", "origin": "generated", "proof_label": "conceptual campaign photography"},
+    {"id": "lifestyle-portfolio-steward-v1", "path": "generated/lifestyle-portfolio-steward-v1.png", "exists": true, "width": 1536, "height": 1024, "sha256": "a517cea6d7d85e9c1c12286379cd97fd493054cd959b09436e4e5b48a9b7d687", "origin": "generated", "proof_label": "conceptual campaign photography"},
+    {"id": "logo-symbol-living-boundary-v1", "path": "generated/logo-symbol-living-boundary-v1.png", "exists": true, "width": 1254, "height": 1254, "sha256": "4da00e45277ac20879895f5b847e52779ea9049cd52f61035906514fb9584325", "origin": "generated", "proof_label": "brand concept"},
+    {"id": "pattern-contour-field-v1", "path": "generated/pattern-contour-field-v1.png", "exists": true, "width": 1254, "height": 1254, "sha256": "61888f6265fb289d15f179625cd230f8838ddbf7bf124c5e9f93719861c8c242", "origin": "generated", "proof_label": "non-repeating source master", "tiling_verified": false},
+    {"id": "product-steward-kit-concept-v1", "path": "generated/product-steward-kit-concept-v1.png", "exists": true, "width": 1536, "height": 1024, "sha256": "4f3321b1fdb95bb17eaaa085fa7dbd8deed86ad83b148eb07d88ecd368175d1d", "origin": "generated", "proof_label": "conceptual visualization; not manufactured-product proof"},
+    {"id": "social-header-viability-path-v1", "path": "generated/social-header-viability-path-v1.png", "exists": true, "width": 2172, "height": 724, "sha256": "ca8587481b66a377d7f8939a9e941ca5cde3986f3b44eceb1710b9db91c3ca9a", "origin": "generated", "proof_label": "conceptual social asset"},
+    {"id": "social-stay-in-game-square-v1", "path": "generated/social-stay-in-game-square-v1.png", "exists": true, "width": 1254, "height": 1254, "sha256": "d070f5882b4143773fe250d2ef1dc3bac90ba7fb32f811f9b0eedc3eb83cf990", "origin": "generated", "proof_label": "conceptual social asset"}
+  ],
+  "validation": {
+    "all_paths_exist": true,
+    "missing_paths": [],
+    "checksums_verified": true,
+    "user_count": 0,
+    "generated_count": 12,
+    "warnings": ["pattern-contour-field-v1 is not verified as a seamless tile"]
+  }
+}

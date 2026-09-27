@@ -1,0 +1,61 @@
+{
+  "skill": "deliverables-package",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-09-27T16:36:00Z",
+  "status": "complete",
+  "version": "2.0.0",
+  "data": {
+    "package_info": {
+      "name": "cambium-product-sourcebook",
+      "path": "deliverables/cambium-product-sourcebook/",
+      "created": "2026-09-27T16:35:00Z",
+      "mode": "manifest-based; canonical source and binary files are referenced without duplication"
+    },
+    "asset_manifest": {
+      "loaded": true,
+      "valid": true,
+      "path": ".brandmint/asset-manifest.json",
+      "user_provided_assets": 0,
+      "generated_assets": 12,
+      "all_paths_verified": true,
+      "all_checksums_verified": true
+    },
+    "contents": {
+      "package_receipt_files": 5,
+      "product_source_documents": 5,
+      "local_process_documents": 3,
+      "generated_images_referenced": 12,
+      "notebooklm_artifact_types_expected": 4,
+      "genesis_contract_groups": 3,
+      "genesis_contract_consumed_skills": 26
+    },
+    "origin_tracking": {
+      "asset_origins_generated": true,
+      "user_provided_clearly_marked": true,
+      "generated_clearly_marked": true,
+      "deterministic_assets_identified": 0,
+      "conceptual_visuals_labeled": true,
+      "process_sources_excluded_from_notebooklm": true
+    },
+    "validation": {
+      "all_paths_exist": true,
+      "all_checksums_valid": true,
+      "hallucinated_paths": 0,
+      "missing_required": 0,
+      "genesis_contract_status": "pass",
+      "warnings": ["The contour-field master is not verified as a seamless tile.", "No public launch or paid distribution is authorized by this package."]
+    },
+    "outputs": {
+      "manifest_path": "deliverables/cambium-product-sourcebook/MANIFEST.json",
+      "readme_path": "deliverables/cambium-product-sourcebook/README.md",
+      "asset_origins_path": "deliverables/cambium-product-sourcebook/ASSET-ORIGINS.md",
+      "genesis_payload_path": "deliverables/cambium-product-sourcebook/genesis-contract.json",
+      "genesis_evidence_path": "deliverables/cambium-product-sourcebook/genesis-contract-evidence.json"
+    },
+    "exports": {
+      "folder": {"path": "deliverables/cambium-product-sourcebook/", "created": true, "verified": true, "self_contained": false},
+      "zip": {"created": false, "reason": "A duplicate archive was not created; the manifest preserves canonical paths and checksums."}
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "skill": "visual-language",
+  "cluster": "identity",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 3,
+  "data": {
+    "evidence_scope": "v1 visual-identity-core, wiki visual-guidelines, brand-config visual_preferences, existing assets F3.",
+    "essence_fr": "Précision réglementaire + signal de validation — esthétique fonctionnelle, sans bruit.",
+    "essence_en": "Regulatory precision + validation signal — functional aesthetic, no visual noise.",
+    "theme": {
+      "name": "Signal in the System",
+      "metaphor": "High-precision instrument panel — every signal clear, every threshold visible, every action traceable",
+      "mood_keywords": [
+        "precision",
+        "clarity",
+        "trust",
+        "technical elegance",
+        "regulatory confidence",
+        "structured",
+        "verifiable"
+      ]
+    },
+    "visual_principles": [
+      "Every element serves a functional purpose — decoration avoided",
+      "Show product/document proof before lifestyle mood",
+      "Make claim limitations legible where outcomes could be inferred",
+      "FR market framing in imagery captions (CEE desk, not generic US startup loft)"
+    ],
+    "photography": {
+      "style": "Documentary precision — real regulatory documents, real desks, real processes",
+      "avoid": "Stock-photo smiling humans, consumer renovation lifestyle, competitor primes creatives",
+      "approved_reuse": "og-image.png and screenshot-hero.png only in this run; no new generation authorized unless founder requests"
+    },
+    "illustration": {
+      "style": "Technical diagrams with Swiss precision — clean lines, minimal color, information-first",
+      "motifs": [
+        "document flow",
+        "validation checkmark",
+        "grid / fiche structure"
+      ],
+      "color_limit": "Signal Green sparingly on Regulatory Stone / Clean White fields"
+    },
+    "environments": [
+      "Modern ops office",
+      "Regulatory desk",
+      "Clean workspace",
+      "Neutral tones with green accent lighting"
+    ],
+    "graphic_elements": {
+      "shapes": "Sharp corners, precise angles, grid-aligned; no rounded corners on data elements",
+      "textures": "Fine-grain stone paper, brushed aluminum, circuit traces — subtle, never dominant",
+      "patterns": "Grid systems, document flow diagrams, validation checkmark motifs"
+    },
+    "composition_bias": {
+      "principles": [
+        "Product and dossier context before brand theatre",
+        "Evidence and readability before novelty",
+        "Bilingual layouts: FR default, EN twin — same visual system"
+      ]
+    },
+    "forbidden_visuals": [
+      "Hype gradients and generic SaaS blue (#2563EB)",
+      "False PNCEE / ministry co-branding",
+      "Consumer primes shopping imagery that confuses category with Hellio/Effy",
+      "Synthetic UI presented as live customer proof without label",
+      "Cluttered social-first collage"
+    ],
+    "craft_references_aspirational": [
+      "Stripe",
+      "Notion",
+      "Vercel",
+      "Linear"
+    ],
+    "craft_references_note": "Aspirational craft only — not partnerships (F4)."
+  }
+}

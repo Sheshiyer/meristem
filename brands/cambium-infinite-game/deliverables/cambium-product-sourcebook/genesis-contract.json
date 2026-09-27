@@ -1,0 +1,532 @@
+{
+  "brand_system": {
+    "brand_id": "cambium-infinite-game",
+    "brand_name": "Cambium",
+    "category": "technology",
+    "audience": "Solo and technical founders running small real businesses, and micro-studios running several brands, who have been burned by throughput-maximizing 'AI runs your company' products",
+    "positioning": "For solo and technical founders whose businesses stop when they stop, Cambium is a viability-governed venture operator that keeps bounded AI agents coherent across time because it protects explicit limits, evolves only on evidence, gates consequence, and records every decision.",
+    "promise": "Cambium helps the venture remain capable of continuing, without hiding consequence from its founder.",
+    "differentiators": [
+      "Optimizes time-in-game (viability margin), not task throughput",
+      "Solvency is a hard bound; revenue is a regulated output",
+      "Fail-closed gate on irreversible and paid moves",
+      "Brand/mission setpoint moves only on real customer evidence",
+      "Replayable decision log with honest claim labels"
+    ],
+    "voice_principles": [
+      "Name the observed state before interpreting it.",
+      "Use active voice and concrete verbs: wakes, checks, proposes, gates, persists, replays.",
+      "Label evidence as Doctrine, Local, Production, Held, or Retired.",
+      "Say what remains unknown or unverified.",
+      "Let botanical language carry continuity, not decoration."
+    ]
+  },
+  "copy_system": {
+    "copy_slots": {
+      "hero_headline": "Your business, still able to play tomorrow.",
+      "hero_subhead": "A viability-governed operator for finite work, human authority, and replayable learning.",
+      "cta_primary": "Map your viability bounds",
+      "cta_secondary": "Map the first bound",
+      "proof_points": {
+        "statistics": [
+          "No Cambium performance statistic is approved yet; use only dated third-party category evidence with a citation.",
+          "No revenue, retention, time-saved, or uptime figure may appear until a production receipt supports it."
+        ],
+        "testimonials": [
+          "No customer testimonial is approved yet; never synthesize or paraphrase one.",
+          "Future testimonials must carry speaker consent, date, role, and an exact source."
+        ],
+        "credentials": [
+          "Current authority is the repository doctrine and acceptance ledger, not an award or certification.",
+          "Use architectural receipts only for what they prove: typed state, gates, and replay contracts."
+        ],
+        "demonstrations": [
+          "Demonstrate one wake from event to viability check, proposal, gate, receipt, and dormancy.",
+          "Demonstrate deterministic replay of the same event log without fabricating a live production outcome."
+        ],
+        "guarantees": [
+          "Guarantee no paid or irreversible move without the configured founder gate; verify before publishing.",
+          "Guarantee provenance labels on claims and assets; do not guarantee business outcomes."
+        ]
+      },
+      "offer_text": "Cambium helps the venture remain capable of continuing, without hiding consequence from its founder."
+    },
+    "tone_notes": {
+      "tone_variations": {
+        "announcement": {
+          "adjustment": "Slightly brighter and more declarative; state what changed, what did not, and where the receipt lives.",
+          "example": "Cambium can now replay one complete wake. The production gate remains held until founder acceptance."
+        },
+        "support": {
+          "adjustment": "Increase warmth, reduce theory, and give one safe next move at a time.",
+          "example": "The run stopped before spending anything. Your inputs are intact; we can resume after the missing approval is recorded."
+        },
+        "education": {
+          "adjustment": "Use a concrete metaphor, then the exact term and its practical implication.",
+          "example": "A viability bound is the fence that keeps the venture able to continue. When the margin narrows, Cambium chooses a move that points back inward."
+        },
+        "crisis": {
+          "adjustment": "Remove metaphor and enthusiasm. Lead with current state, exposure, containment, evidence, and next authority gate.",
+          "example": "Paid execution is stopped. Two receipts are incomplete. No provider or production setting was changed."
+        },
+        "sales": {
+          "adjustment": "Stay diagnostic and specific; show the gap before describing the product.",
+          "example": "Which part of the company stops first when you step away: decisions, delivery, or the ability to notice drift?"
+        }
+      },
+      "voice_prompt_template": "Write as Cambium: patient, rigorous, alive, honest, and grounded. Lead with the human consequence, then name the system fact that supports it. Use active verbs and short sentences. Distinguish doctrine from live evidence. Treat uncertainty as information. Never simulate urgency, invent proof, anthropomorphize the agent fleet, or promise business outcomes."
+    }
+  },
+  "visual_system": {
+    "palette": {
+      "primary": {
+        "hex": "#1F3A2E",
+        "rgb": "31, 58, 46",
+        "hsl": "153, 30%, 17%",
+        "name": "Living Lichen",
+        "usage": "Primary brand field, headlines, navigation, key line work, and the stable outer boundary in diagrams.",
+        "variations": {
+          "50": "#F1F5F2",
+          "100": "#DDE8E1",
+          "200": "#BBD1C2",
+          "300": "#90B29D",
+          "400": "#638C72",
+          "500": "#446D54",
+          "600": "#345743",
+          "700": "#294636",
+          "800": "#1F3A2E",
+          "900": "#172B22"
+        }
+      },
+      "secondary": {
+        "hex": "#B76E3F",
+        "rgb": "183, 110, 63",
+        "hsl": "24, 49%, 48%",
+        "name": "Cambium Copper",
+        "usage": "Human decisions, founder gates, active growth rings, selected states, and small emphasis fields; pair with Ink, never white body text.",
+        "variations": {
+          "50": "#FBF4EF",
+          "100": "#F5E4D8",
+          "200": "#EBC8B0",
+          "300": "#DDA47F",
+          "400": "#CE8058",
+          "500": "#B76E3F",
+          "600": "#985432",
+          "700": "#783F29",
+          "800": "#5E3225",
+          "900": "#4D2A21"
+        }
+      },
+      "accent": {
+        "hex": "#7E9B63",
+        "rgb": "126, 155, 99",
+        "hsl": "91, 22%, 50%",
+        "name": "New Growth",
+        "usage": "Positive viability margin, safe inward trajectories, new evidence, and quiet highlights paired with Ink text."
+      },
+      "semantic": {
+        "success": "#4F7659",
+        "warning": "#C9903D",
+        "error": "#A14F45",
+        "info": "#577682"
+      },
+      "neutrals": {
+        "50": "#F4EFE3",
+        "100": "#ECE4D7",
+        "200": "#DED2BF",
+        "300": "#C9B89E",
+        "400": "#9BA19A",
+        "500": "#788078",
+        "600": "#59635B",
+        "700": "#3B463E",
+        "800": "#263129",
+        "900": "#17201B"
+      }
+    },
+    "typography": {
+      "typefaces": {
+        "primary": {
+          "name": "Newsreader",
+          "foundry": "Production Type",
+          "style": "humanist editorial serif",
+          "weights": [
+            400,
+            500,
+            600
+          ],
+          "use_for": "wordmark exploration, display headlines, doctrine quotations, long-horizon statements, and editorial reports",
+          "source": "Google Fonts / SIL Open Font License",
+          "fallback_stack": "Newsreader, Iowan Old Style, Baskerville, Georgia, serif"
+        },
+        "secondary": {
+          "name": "IBM Plex Sans",
+          "foundry": "IBM",
+          "style": "humanist grotesque sans serif",
+          "weights": [
+            400,
+            500,
+            600
+          ],
+          "use_for": "body text, navigation, labels, evidence, controls, dashboards, and all small operational copy",
+          "source": "Google Fonts / SIL Open Font License",
+          "fallback_stack": "IBM Plex Sans, Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+        }
+      },
+      "type_direction": "Use a humane, high-contrast serif for the cause and the long horizon; use a rigorous humanist sans for state, decisions, evidence, and controls.",
+      "rationale": {
+        "brand_personality": "Cambium is a patient operator with an editorial mind and an instrument-maker's precision.",
+        "type_direction": "Use a humane, high-contrast serif for the cause and the long horizon; use a rigorous humanist sans for state, decisions, evidence, and controls.",
+        "pairing_logic": "Newsreader makes the brand feel lived-in, reflective, and distinct from the geometric sans language of AI tooling. IBM Plex Sans keeps operational surfaces highly legible and introduces technical credibility without turning the product cold."
+      },
+      "hierarchy": {
+        "display": {
+          "font": "Newsreader",
+          "size": "clamp(3.052rem, 7vw, 5.96rem)",
+          "weight": "500",
+          "letter_spacing": "-0.035em",
+          "line_height": "0.94",
+          "color": "#1F3A2E"
+        },
+        "h1": {
+          "font": "Newsreader",
+          "size": "clamp(2.441rem, 5vw, 4.768rem)",
+          "weight": "500",
+          "letter_spacing": "-0.03em",
+          "line_height": "0.98",
+          "color": "#1F3A2E"
+        },
+        "h2": {
+          "font": "Newsreader",
+          "size": "clamp(1.953rem, 3vw, 3.052rem)",
+          "weight": "500",
+          "letter_spacing": "-0.02em",
+          "line_height": "1.05",
+          "color": "#1F3A2E"
+        },
+        "h3": {
+          "font": "IBM Plex Sans",
+          "size": "1.563rem",
+          "weight": "600",
+          "letter_spacing": "-0.015em",
+          "line_height": "1.2",
+          "color": "#17201B"
+        },
+        "h4": {
+          "font": "IBM Plex Sans",
+          "size": "1.25rem",
+          "weight": "600",
+          "letter_spacing": "-0.01em",
+          "line_height": "1.3",
+          "color": "#17201B"
+        },
+        "h5": {
+          "font": "IBM Plex Sans",
+          "size": "1rem",
+          "weight": "600",
+          "letter_spacing": "0",
+          "line_height": "1.4",
+          "color": "#17201B"
+        },
+        "h6": {
+          "font": "IBM Plex Sans",
+          "size": "0.875rem",
+          "weight": "600",
+          "letter_spacing": "0.06em",
+          "line_height": "1.4",
+          "color": "#3B463E",
+          "transform": "uppercase"
+        },
+        "body": {
+          "font": "IBM Plex Sans",
+          "size": "1rem",
+          "weight": "400",
+          "letter_spacing": "0",
+          "line_height": "1.625",
+          "color": "#17201B"
+        },
+        "body_small": {
+          "font": "IBM Plex Sans",
+          "size": "0.875rem",
+          "weight": "400",
+          "letter_spacing": "0",
+          "line_height": "1.5",
+          "color": "#3B463E"
+        },
+        "caption": {
+          "font": "IBM Plex Sans",
+          "size": "0.75rem",
+          "weight": "400",
+          "letter_spacing": "0.015em",
+          "line_height": "1.35",
+          "color": "#59635B"
+        },
+        "label": {
+          "font": "IBM Plex Sans",
+          "size": "0.75rem",
+          "weight": "600",
+          "letter_spacing": "0.08em",
+          "line_height": "1.2",
+          "color": "#3B463E",
+          "transform": "uppercase"
+        }
+      },
+      "type_scale": {
+        "ratio": 1.25,
+        "base_size": 16,
+        "sizes": {
+          "xs": {
+            "size": "0.75rem",
+            "line_height": "1rem"
+          },
+          "sm": {
+            "size": "0.875rem",
+            "line_height": "1.25rem"
+          },
+          "base": {
+            "size": "1rem",
+            "line_height": "1.625rem"
+          },
+          "lg": {
+            "size": "1.25rem",
+            "line_height": "1.75rem"
+          },
+          "xl": {
+            "size": "1.563rem",
+            "line_height": "2rem"
+          },
+          "2xl": {
+            "size": "1.953rem",
+            "line_height": "2.25rem"
+          },
+          "3xl": {
+            "size": "2.441rem",
+            "line_height": "2.625rem"
+          },
+          "4xl": {
+            "size": "3.052rem",
+            "line_height": "3.125rem"
+          },
+          "5xl": {
+            "size": "3.815rem",
+            "line_height": "3.75rem"
+          },
+          "6xl": {
+            "size": "4.768rem",
+            "line_height": "4.5rem"
+          },
+          "7xl": {
+            "size": "5.96rem",
+            "line_height": "5.5rem"
+          }
+        }
+      },
+      "implementation": {
+        "css_variables": ":root { --font-display: 'Newsreader', 'Iowan Old Style', Baskerville, Georgia, serif; --font-sans: 'IBM Plex Sans', Inter, system-ui, sans-serif; --font-mono: 'IBM Plex Mono', ui-monospace, monospace; --type-ratio: 1.25; }",
+        "loading_strategy": "Self-host WOFF2 subsets for latin; preload only Newsreader 500 and IBM Plex Sans 400 used above the fold; load remaining weights asynchronously. Preserve system fallbacks without layout collapse.",
+        "font_display": "swap"
+      }
+    },
+    "imagery_direction": {
+      "photography": {
+        "lighting": "Soft northern-window daylight or overcast natural light; gentle falloff; no neon rim light or glossy tech studio treatment.",
+        "composition": "Editorial wide frames with quiet negative space, one human trace, and tactile foreground detail. Prefer asymmetric balance and layers that suggest time.",
+        "color_treatment": "Warm-muted filmic color, restrained saturation, deep lichen shadows, bone highlights, and occasional copper-brown material accents.",
+        "subject_focus": "The steward's environment, instruments, notebooks, garden/workshop metaphors, and the evidence of a decision; avoid staring founder portraits and screens as the only subject.",
+        "mood": "Calm vigilance, earned relief, continuity, patience, and quiet competence.",
+        "context": "Real small-business workspaces, gardens, workshops, studios, and threshold moments before or after a bounded decision."
+      },
+      "essence": "A living venture made legible: organic continuity held inside calm, evidence-bearing boundaries.",
+      "visual_principles": [
+        {
+          "name": "Growth keeps its rings",
+          "description": "New information is added as a visible layer; it does not erase history. Use nested contours, dated marks, and restrained palimpsest effects."
+        },
+        {
+          "name": "Boundaries are information",
+          "description": "A limit is drawn clearly and calmly. Safe trajectories bend inward; gates appear as deliberate human interventions, not alarms."
+        },
+        {
+          "name": "One consequence at a time",
+          "description": "Every composition has one copper focal point representing the current consequential choice. Everything else supports orientation."
+        },
+        {
+          "name": "Evidence has texture",
+          "description": "Use paper grain, bark fiber, pencil lines, stamped labels, and quiet instrument marks so provenance feels physical and inspectable."
+        },
+        {
+          "name": "Dormancy is not emptiness",
+          "description": "Negative space communicates a system at rest and ready. Avoid filling silence with dashboards, particles, or constant motion."
+        }
+      ]
+    },
+    "logo_usage": {
+      "minimum_size": "24px symbol height; 120px combination-mark width",
+      "clear_space": "One copper-notch width around the symbol; one cap-height around the combination mark.",
+      "color_variations": [
+        "full_color",
+        "lichen_monochrome",
+        "bone_reversed"
+      ],
+      "dont_do": [
+        "Do not close the living layer into a static target or loading spinner.",
+        "Do not add leaf, tree, root, robot, brain, or game-controller imagery.",
+        "Do not use copper for more than the single consequence segment.",
+        "Do not rotate the mark or animate it as endless activity.",
+        "Do not treat a generated raster concept as a production vector master."
+      ]
+    },
+    "composition_motifs": [
+      "Asymmetric editorial fields with generous negative space",
+      "One copper consequence marker per composition",
+      "Organic viable regions paired with precise evidence rails",
+      "Visible layers that retain history instead of erasing it"
+    ],
+    "anti_patterns": [
+      "Neon AI gradients, glassmorphism, and black cyberpunk dashboards",
+      "Friendly robot employees, glowing brains, and particle swarms",
+      "Literal tree logos, decorative leaf repetition, and infinity symbols",
+      "Controllers, trophies, scoreboards, and other finite-game victory clichés",
+      "Generated interface imagery presented as evidence of a live product"
+    ],
+    "asset_manifest": {
+      "schema": "brandmint.asset-manifest.v1",
+      "brand": "cambium-infinite-game",
+      "generated_at": "2026-09-27T16:30:00Z",
+      "generation_route": "Codex image generation through the logged-in native session; no API-credit provider",
+      "user_provided_assets": [],
+      "generated_assets": [
+        {
+          "id": "hero-continuity-studio-v1",
+          "path": "generated/hero-continuity-studio-v1.png",
+          "exists": true,
+          "width": 1672,
+          "height": 941,
+          "sha256": "16f61e70c88350255189e6e215aa1f604c7d0862d8970ed0e68f28a369f40fb2",
+          "origin": "generated",
+          "proof_label": "conceptual brand visual"
+        },
+        {
+          "id": "hero-viable-field-v1",
+          "path": "generated/hero-viable-field-v1.png",
+          "exists": true,
+          "width": 1672,
+          "height": 941,
+          "sha256": "fe66699426e082c4ee2fbee88db5caf3bdcd736a01cc4c7072ed7bdcf6f9cdc4",
+          "origin": "generated",
+          "proof_label": "conceptual brand visual"
+        },
+        {
+          "id": "icon-system-reference-v1",
+          "path": "generated/icon-system-reference-v1.png",
+          "exists": true,
+          "width": 1254,
+          "height": 1254,
+          "sha256": "bccb5fdebbafd6968fdd4ee6929ea05770d70e64c93cbc4872208928c24a8a86",
+          "origin": "generated",
+          "proof_label": "brand-system reference"
+        },
+        {
+          "id": "illustration-finite-instruments-v1",
+          "path": "generated/illustration-finite-instruments-v1.png",
+          "exists": true,
+          "width": 1254,
+          "height": 1254,
+          "sha256": "24a7ca362a4345630b5ba18c8bcab578a1fbceb780e6d5fb1bb2e7d19263ea81",
+          "origin": "generated",
+          "proof_label": "conceptual illustration"
+        },
+        {
+          "id": "illustration-one-operator-many-gardens-v1",
+          "path": "generated/illustration-one-operator-many-gardens-v1.png",
+          "exists": true,
+          "width": 1536,
+          "height": 1024,
+          "sha256": "0f77e1d361c9f09b8e1ba1a00b95a1669896afd7521ce0544423266be96ce573",
+          "origin": "generated",
+          "proof_label": "conceptual illustration"
+        },
+        {
+          "id": "lifestyle-founder-steward-v1",
+          "path": "generated/lifestyle-founder-steward-v1.png",
+          "exists": true,
+          "width": 1536,
+          "height": 1024,
+          "sha256": "1249e4cef342f02a7c6e1f5bdc8caf762a05180c3692cf6934d033737b808c83",
+          "origin": "generated",
+          "proof_label": "conceptual campaign photography"
+        },
+        {
+          "id": "lifestyle-portfolio-steward-v1",
+          "path": "generated/lifestyle-portfolio-steward-v1.png",
+          "exists": true,
+          "width": 1536,
+          "height": 1024,
+          "sha256": "a517cea6d7d85e9c1c12286379cd97fd493054cd959b09436e4e5b48a9b7d687",
+          "origin": "generated",
+          "proof_label": "conceptual campaign photography"
+        },
+        {
+          "id": "logo-symbol-living-boundary-v1",
+          "path": "generated/logo-symbol-living-boundary-v1.png",
+          "exists": true,
+          "width": 1254,
+          "height": 1254,
+          "sha256": "4da00e45277ac20879895f5b847e52779ea9049cd52f61035906514fb9584325",
+          "origin": "generated",
+          "proof_label": "brand concept"
+        },
+        {
+          "id": "pattern-contour-field-v1",
+          "path": "generated/pattern-contour-field-v1.png",
+          "exists": true,
+          "width": 1254,
+          "height": 1254,
+          "sha256": "61888f6265fb289d15f179625cd230f8838ddbf7bf124c5e9f93719861c8c242",
+          "origin": "generated",
+          "proof_label": "non-repeating source master",
+          "tiling_verified": false
+        },
+        {
+          "id": "product-steward-kit-concept-v1",
+          "path": "generated/product-steward-kit-concept-v1.png",
+          "exists": true,
+          "width": 1536,
+          "height": 1024,
+          "sha256": "4f3321b1fdb95bb17eaaa085fa7dbd8deed86ad83b148eb07d88ecd368175d1d",
+          "origin": "generated",
+          "proof_label": "conceptual visualization; not manufactured-product proof"
+        },
+        {
+          "id": "social-header-viability-path-v1",
+          "path": "generated/social-header-viability-path-v1.png",
+          "exists": true,
+          "width": 2172,
+          "height": 724,
+          "sha256": "ca8587481b66a377d7f8939a9e941ca5cde3986f3b44eceb1710b9db91c3ca9a",
+          "origin": "generated",
+          "proof_label": "conceptual social asset"
+        },
+        {
+          "id": "social-stay-in-game-square-v1",
+          "path": "generated/social-stay-in-game-square-v1.png",
+          "exists": true,
+          "width": 1254,
+          "height": 1254,
+          "sha256": "d070f5882b4143773fe250d2ef1dc3bac90ba7fb32f811f9b0eedc3eb83cf990",
+          "origin": "generated",
+          "proof_label": "conceptual social asset"
+        }
+      ],
+      "validation": {
+        "all_paths_exist": true,
+        "missing_paths": [],
+        "checksums_verified": true,
+        "user_count": 0,
+        "generated_count": 12,
+        "warnings": [
+          "pattern-contour-field-v1 is not verified as a seamless tile"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "cbbe": {
+    "salience": {
+      "category": "RegTech SaaS / EU Energy Subsidies",
+      "core_problem": "Avoidable document errors leading to lost subsidy claims",
+      "simple_description": "AI-powered document validation for energy subsidy dossiers"
+    },
+    "performance": {
+      "points_of_parity": [
+        "Compliance with EU energy subsidy regulations",
+        "Document validation and verification"
+      ],
+      "points_of_difference": [
+        "Pre-configured programme rules for EU energy subsidies",
+        "Managed onboarding and expertise"
+      ],
+      "value_logic": "Reduce errors, increase compliance, and optimize subsidy claims with AI-powered document validation"
+    },
+    "imagery": {
+      "associated_brands": [
+        "Stripe",
+        "Notion",
+        "Vercel",
+        "Linear"
+      ],
+      "usage_scenes": [
+        "Regulatory desk",
+        "Document workflow",
+        "Modern office"
+      ],
+      "mode_of_use": "Web platform with API integration, white-label ready"
+    },
+    "judgments": {
+      "positive_beliefs": [
+        "Precise and authoritative",
+        "Technical depth delivered with clarity"
+      ],
+      "objections": [
+        "Cost and complexity of implementation",
+        "Reliability and accuracy of AI-powered validation"
+      ],
+      "credibility_proof": "Case studies and testimonials from existing clients"
+    },
+    "feelings": {
+      "target_emotions": [
+        "Confident control",
+        "Regulatory peace of mind",
+        "Operational pride"
+      ],
+      "voice": "Precise, authoritative, quietly confident",
+      "tone": "Conversion-focused, professional, and clean"
+    },
+    "resonance": {
+      "loyalty_logic": "Exclusive access to pre-configured programme rules and managed onboarding",
+      "mission": "Empowering EU energy subsidy operators with AI-powered document validation",
+      "community_connection": "Partnerships with regulatory bodies and industry associations"
+    }
+  }
+}

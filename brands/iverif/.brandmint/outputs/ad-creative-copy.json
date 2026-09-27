@@ -1,0 +1,445 @@
+{
+  "skill": "ad-creative-copy",
+  "cluster": "content",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "strategy": {
+      "phases": [
+        "pre-launch",
+        "launch",
+        "mid-campaign",
+        "end-campaign"
+      ],
+      "platforms": [
+        "linkedin",
+        "meta"
+      ],
+      "formats": [
+        "single_image",
+        "carousel",
+        "document_ad",
+        "video"
+      ],
+      "primary_channel": "linkedin_fr",
+      "gtm_tag": "FR",
+      "note": "Draft-only; not trafficked. Prefer LinkedIn FR job-title ABM."
+    },
+    "hooks": {
+      "problem_aware": [
+        "Les écarts documentaires se voient trop tard.",
+        "10–20 pièces par dossier CEE — encore à la main ?",
+        "Un rejet après dépôt coûte plus qu’un contrôle avant."
+      ],
+      "solution_aware": [
+        "Validez le dossier avant de le déposer.",
+        "Règles de programme + contrôles inter-documents.",
+        "Logiciel de validation — pas un parcours primes."
+      ],
+      "social_proof": [
+        "Conçu pour le back-office CEE FR.",
+        "Pour délégataires et opérateurs — rôles clairs."
+      ],
+      "urgency": [
+        "Cadrez votre flux CEE avec l’équipe iverif.",
+        "Places démo limitées — échange de cadrage."
+      ]
+    },
+    "pre_campaign_ads": [
+      {
+        "id": "fr-pre-1",
+        "name": "Agitation dossier",
+        "angle": "problem",
+        "headline": "Écarts vus trop tard ?",
+        "body": "Validez pièces et champs CEE avant dépôt — piste d’audit incluse.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "fr-pre-2",
+        "name": "Curiosité règles",
+        "angle": "curiosity",
+        "headline": "Et si les règles suivaient ?",
+        "body": "Configuration programme gérée pour back-office CEE / Primes Énergie.",
+        "cta": "Rejoindre la liste"
+      },
+      {
+        "id": "fr-pre-3",
+        "name": "Différenciation",
+        "angle": "category",
+        "headline": "Pas un parcours primes",
+        "body": "iverif = validation documentaire IA pour opérateurs — pas un distributeur d’aides.",
+        "cta": "Voir le positionnement"
+      }
+    ],
+    "live_campaign_ads": [
+      {
+        "id": "fr-live-1",
+        "name": "Lancement",
+        "phase": "launch",
+        "angle": "announce",
+        "headline": "iverif pour le CEE FR",
+        "body": "Validation avant dépôt pour dossiers d’aides énergie. Demandez une démo.",
+        "cta": "Demander une démo"
+      },
+      {
+        "id": "fr-live-2",
+        "name": "Inter-documents",
+        "phase": "mid-campaign",
+        "angle": "feature",
+        "headline": "Cohérence inter-pièces",
+        "body": "Repérez les incohérences entre documents avant l’envoi du dossier.",
+        "cta": "Voir le produit"
+      },
+      {
+        "id": "fr-live-3",
+        "name": "Audit",
+        "phase": "mid-campaign",
+        "angle": "trust",
+        "headline": "Piste d’audit horodatée",
+        "body": "Gardez une trace des contrôles quand la conformité pose des questions.",
+        "cta": "Planifier un échange"
+      },
+      {
+        "id": "fr-live-4",
+        "name": "Rôles",
+        "phase": "mid-campaign",
+        "angle": "education",
+        "headline": "Obligé ≠ délégataire",
+        "body": "Logiciel de validation — sans confusion de rôle marché.",
+        "cta": "Lire le brief"
+      },
+      {
+        "id": "fr-live-5",
+        "name": "Fin de vague",
+        "phase": "end-campaign",
+        "angle": "urgency",
+        "headline": "Cadrez votre flux",
+        "body": "Échange de cadrage sur vos dossiers CEE réels — sans KPI inventés.",
+        "cta": "Réserver un créneau"
+      }
+    ],
+    "linkedin_ads": {
+      "locale_default": "fr",
+      "variants": [
+        {
+          "id": "fr-live-1",
+          "name": "Lancement",
+          "phase": "launch",
+          "angle": "announce",
+          "headline": "iverif pour le CEE FR",
+          "body": "Validation avant dépôt pour dossiers d’aides énergie. Demandez une démo.",
+          "cta": "Demander une démo"
+        },
+        {
+          "id": "fr-live-2",
+          "name": "Inter-documents",
+          "phase": "mid-campaign",
+          "angle": "feature",
+          "headline": "Cohérence inter-pièces",
+          "body": "Repérez les incohérences entre documents avant l’envoi du dossier.",
+          "cta": "Voir le produit"
+        },
+        {
+          "id": "fr-live-3",
+          "name": "Audit",
+          "phase": "mid-campaign",
+          "angle": "trust",
+          "headline": "Piste d’audit horodatée",
+          "body": "Gardez une trace des contrôles quand la conformité pose des questions.",
+          "cta": "Planifier un échange"
+        },
+        {
+          "id": "en-live-1",
+          "name": "Launch",
+          "phase": "launch",
+          "angle": "announce",
+          "headline": "iverif for FR CEE",
+          "body": "Pre-submission validation for energy subsidy dossiers. Request a demo.",
+          "cta": "Request demo"
+        },
+        {
+          "id": "en-live-2",
+          "name": "Cross-doc",
+          "phase": "mid-campaign",
+          "angle": "feature",
+          "headline": "Cross-document checks",
+          "body": "Surface inconsistencies across supporting documents before you submit.",
+          "cta": "See product"
+        }
+      ]
+    },
+    "locales": {
+      "fr": {
+        "hooks": {
+          "problem_aware": [
+            "Les écarts documentaires se voient trop tard.",
+            "10–20 pièces par dossier CEE — encore à la main ?",
+            "Un rejet après dépôt coûte plus qu’un contrôle avant."
+          ],
+          "solution_aware": [
+            "Validez le dossier avant de le déposer.",
+            "Règles de programme + contrôles inter-documents.",
+            "Logiciel de validation — pas un parcours primes."
+          ],
+          "social_proof": [
+            "Conçu pour le back-office CEE FR.",
+            "Pour délégataires et opérateurs — rôles clairs."
+          ],
+          "urgency": [
+            "Cadrez votre flux CEE avec l’équipe iverif.",
+            "Places démo limitées — échange de cadrage."
+          ]
+        },
+        "pre_campaign_ads": [
+          {
+            "id": "fr-pre-1",
+            "name": "Agitation dossier",
+            "angle": "problem",
+            "headline": "Écarts vus trop tard ?",
+            "body": "Validez pièces et champs CEE avant dépôt — piste d’audit incluse.",
+            "cta": "En savoir plus"
+          },
+          {
+            "id": "fr-pre-2",
+            "name": "Curiosité règles",
+            "angle": "curiosity",
+            "headline": "Et si les règles suivaient ?",
+            "body": "Configuration programme gérée pour back-office CEE / Primes Énergie.",
+            "cta": "Rejoindre la liste"
+          },
+          {
+            "id": "fr-pre-3",
+            "name": "Différenciation",
+            "angle": "category",
+            "headline": "Pas un parcours primes",
+            "body": "iverif = validation documentaire IA pour opérateurs — pas un distributeur d’aides.",
+            "cta": "Voir le positionnement"
+          }
+        ],
+        "live_campaign_ads": [
+          {
+            "id": "fr-live-1",
+            "name": "Lancement",
+            "phase": "launch",
+            "angle": "announce",
+            "headline": "iverif pour le CEE FR",
+            "body": "Validation avant dépôt pour dossiers d’aides énergie. Demandez une démo.",
+            "cta": "Demander une démo"
+          },
+          {
+            "id": "fr-live-2",
+            "name": "Inter-documents",
+            "phase": "mid-campaign",
+            "angle": "feature",
+            "headline": "Cohérence inter-pièces",
+            "body": "Repérez les incohérences entre documents avant l’envoi du dossier.",
+            "cta": "Voir le produit"
+          },
+          {
+            "id": "fr-live-3",
+            "name": "Audit",
+            "phase": "mid-campaign",
+            "angle": "trust",
+            "headline": "Piste d’audit horodatée",
+            "body": "Gardez une trace des contrôles quand la conformité pose des questions.",
+            "cta": "Planifier un échange"
+          },
+          {
+            "id": "fr-live-4",
+            "name": "Rôles",
+            "phase": "mid-campaign",
+            "angle": "education",
+            "headline": "Obligé ≠ délégataire",
+            "body": "Logiciel de validation — sans confusion de rôle marché.",
+            "cta": "Lire le brief"
+          },
+          {
+            "id": "fr-live-5",
+            "name": "Fin de vague",
+            "phase": "end-campaign",
+            "angle": "urgency",
+            "headline": "Cadrez votre flux",
+            "body": "Échange de cadrage sur vos dossiers CEE réels — sans KPI inventés.",
+            "cta": "Réserver un créneau"
+          }
+        ]
+      },
+      "en": {
+        "hooks": {
+          "problem_aware": [
+            "Document gaps show up too late.",
+            "Still cross-checking 10–20 CEE documents by hand?",
+            "Post-submission fixes cost more than pre-checks."
+          ],
+          "solution_aware": [
+            "Validate the dossier before you submit.",
+            "Programme rules plus cross-document checks.",
+            "Validation software — not a primes marketplace."
+          ],
+          "social_proof": [
+            "Built for French CEE back offices.",
+            "For délégataires and operators — roles kept clear."
+          ],
+          "urgency": [
+            "Scope your CEE flow with the iverif team.",
+            "Limited demo slots — discovery conversation."
+          ]
+        },
+        "pre_campaign_ads": [
+          {
+            "id": "en-pre-1",
+            "name": "Dossier agitation",
+            "angle": "problem",
+            "headline": "Gaps found too late?",
+            "body": "Validate CEE fields and documents before submission — audit trail included.",
+            "cta": "Learn more"
+          },
+          {
+            "id": "en-pre-2",
+            "name": "Rules curiosity",
+            "angle": "curiosity",
+            "headline": "What if rules kept up?",
+            "body": "Managed programme configuration for CEE / Primes Énergie back offices.",
+            "cta": "Join the list"
+          },
+          {
+            "id": "en-pre-3",
+            "name": "Differentiation",
+            "angle": "category",
+            "headline": "Not a primes journey",
+            "body": "iverif is AI dossier validation for operators — not an aids distributor.",
+            "cta": "See positioning"
+          }
+        ],
+        "live_campaign_ads": [
+          {
+            "id": "en-live-1",
+            "name": "Launch",
+            "phase": "launch",
+            "angle": "announce",
+            "headline": "iverif for FR CEE",
+            "body": "Pre-submission validation for energy subsidy dossiers. Request a demo.",
+            "cta": "Request demo"
+          },
+          {
+            "id": "en-live-2",
+            "name": "Cross-doc",
+            "phase": "mid-campaign",
+            "angle": "feature",
+            "headline": "Cross-document checks",
+            "body": "Surface inconsistencies across supporting documents before you submit.",
+            "cta": "See product"
+          },
+          {
+            "id": "en-live-3",
+            "name": "Audit",
+            "phase": "mid-campaign",
+            "angle": "trust",
+            "headline": "Timestamped audit trail",
+            "body": "Keep a reviewable trail when compliance asks how checks were done.",
+            "cta": "Book a call"
+          },
+          {
+            "id": "en-live-4",
+            "name": "Roles",
+            "phase": "mid-campaign",
+            "angle": "education",
+            "headline": "Obligé ≠ délégataire",
+            "body": "Validation software — without muddy market-role claims.",
+            "cta": "Read the brief"
+          },
+          {
+            "id": "en-live-5",
+            "name": "Wave end",
+            "phase": "end-campaign",
+            "angle": "urgency",
+            "headline": "Scope your flow",
+            "body": "Discovery on real CEE dossiers — no invented KPIs.",
+            "cta": "Reserve a slot"
+          }
+        ]
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/ad-creative.md",
+      "fr": "wiki/src/content/docs/fr/marketing/ad-creative.md"
+    },
+    "explee_draft": {
+      "mode": "draft_only",
+      "do_not_post": true,
+      "targets": [
+        "landing",
+        "ads",
+        "emails"
+      ],
+      "locales": [
+        "fr",
+        "en"
+      ],
+      "channels_hint": [
+        "linkedin_fr"
+      ],
+      "output_format": {
+        "landing": {
+          "headline": "Arrêtez de perdre des dossiers CEE pour des erreurs évitables.",
+          "subhead": "iverif valide les pièces et champs de vos dossiers d’aides énergie avant dépôt, avec des règles de programme et une piste d’audit horodatée.",
+          "cta": "Demander une démo FR",
+          "body_blocks": [
+            "Chaque dossier CEE croise souvent 10 à 20 pièces avec des règles qui évoluent. Les écarts découverts après dépôt coûtent cher à corriger — et laissent une piste d’audit fragile.",
+            "iverif prépare vos dossiers contre des règles de programme configurées, signale les incohérences inter-documents, et conserve une trace horodatée pour les revues.",
+            "Programmes : CEE, Primes Énergie, Conto Termico, BEG, ECO4, MOVES III."
+          ]
+        },
+        "ads": [
+          {
+            "platform": "linkedin",
+            "locale": "fr",
+            "headline": "Validez avant dépôt",
+            "primary_text": "iverif aide les back-offices CEE à contrôler pièces et champs avant envoi — avec piste d’audit.",
+            "cta": "Demander une démo"
+          },
+          {
+            "platform": "linkedin",
+            "locale": "en",
+            "headline": "Validate before submit",
+            "primary_text": "iverif helps CEE back offices check documents and fields before submission — with an audit trail.",
+            "cta": "Request a demo"
+          },
+          {
+            "platform": "meta",
+            "locale": "fr",
+            "headline": "Dossiers CEE plus propres",
+            "primary_text": "Logiciel de validation documentaire pour opérateurs d’aides énergie. Pas un parcours primes.",
+            "cta": "En savoir plus"
+          }
+        ],
+        "emails": [
+          {
+            "locale": "fr",
+            "subject": "Valider les dossiers CEE avant dépôt",
+            "preview": "Règles de programme + contrôles inter-documents",
+            "body": "Bonjour,\n\niverif est une plateforme de validation documentaire pour opérateurs d’aides énergie. Objectif : signaler les écarts avant dépôt, avec une piste d’audit horodatée.\n\nPas de taux de rejet garanti — juste un cadrage sur votre flux.\n\nCordialement,\nL’équipe iverif",
+            "cta": "Planifier un échange"
+          },
+          {
+            "locale": "en",
+            "subject": "Validate CEE dossiers before submission",
+            "preview": "Programme rules + cross-document checks",
+            "body": "Hello,\n\niverif is document validation software for energy subsidy operators. Goal: surface gaps before submission, with a timestamped audit trail.\n\nNo guaranteed rejection-rate claims — just a scoped conversation on your flow.\n\nBest,\nThe iverif team",
+            "cta": "Book a conversation"
+          }
+        ]
+      },
+      "source_skills": [
+        "landing-page-copy",
+        "ad-creative-copy",
+        "launch-email-sequence"
+      ],
+      "stop_condition": "Do not POST to Explee or any live ad/email API from Meristem spokes."
+    },
+    "guardrail": "No audience size, spend, performance, rejection-rate, or affiliation claims authorized.",
+    "status": "internal drafts; not trafficked"
+  }
+}

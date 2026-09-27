@@ -1,0 +1,186 @@
+{
+  "skill": "voice-and-tone",
+  "cluster": "strategy",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 2,
+  "data": {
+    "evidence_scope": "Personality lock F4 + v1 voice artifacts + brief; FR register designed for LinkedIn FR / press; EN twin for EU desks. No hype.",
+    "voice_attributes": {
+      "tone1": "precise",
+      "tone2": "authoritative",
+      "tone3": "quietly confident",
+      "explicit_ban": "no-hype"
+    },
+    "voice_character": {
+      "speaking_as_fr": "l'experte conformité CEE de confiance — collègue senior, pas vendeur excité",
+      "speaking_as_en": "the trusted CEE compliance expert — senior colleague, not a hype vendor",
+      "relationship": "guide technique pour back-office et conformité",
+      "language_register_fr": "français professionnel B2B soutenu (vouvoiement), terminologie CEE exacte, phrases courtes, voix active",
+      "language_register_en": "clear B2B RegTech English; regulatory terms kept accurate; active voice; no superlatives"
+    },
+    "native_fr_register": {
+      "formality": "Vouvoiement par défaut ; tutoiement interdit en copy commerciale FR.",
+      "preferred_terms": [
+        "dossier",
+        "pièce justificative",
+        "fiche d'opération standardisée",
+        "obligé",
+        "délégataire",
+        "prime énergie",
+        "certificats d'économies d'énergie",
+        "contrôle avant dépôt",
+        "piste d'audit",
+        "back-office",
+        "conformité",
+        "valorisation"
+      ],
+      "avoid_calques": [
+        "game-changer",
+        "révolutionnaire",
+        "seamless",
+        "next-gen",
+        "AI magic",
+        "disruptif",
+        "solution innovante ultime"
+      ],
+      "syntax_notes": [
+        "Préférer « Nous validons les dossiers avant dépôt » à la voix passive floue",
+        "Nommer le programme (CEE / Primes Énergie) tôt dans le hero FR",
+        "Séparer fait ledger / hypothèse / interdit dans toute copy claim-bearing"
+      ],
+      "example_good_fr": "iverif contrôle la cohérence documentaire de vos dossiers CEE avant dépôt et conserve une piste d'audit horodatée.",
+      "example_bad_fr": "iverif révolutionne la compliance énergétique avec une IA magique qui garantit zéro rejet."
+    },
+    "en_twin_register": {
+      "formality": "Professional B2B; mirror FR precision; keep French role nouns (obligé, délégataire) when educating EN readers on FR market.",
+      "preferred_terms": [
+        "pre-submission validation",
+        "programme rules",
+        "cross-document consistency",
+        "audit trail",
+        "CEE",
+        "energy subsidy operators",
+        "managed onboarding"
+      ],
+      "avoid": [
+        "revolutionary",
+        "game-changing",
+        "guaranteed",
+        "instant",
+        "best-in-class",
+        "frictionless"
+      ],
+      "example_good_en": "iverif checks CEE dossier documents against programme rules before submission and keeps a timestamped audit trail.",
+      "example_bad_en": "iverif guarantees 90% fewer errors and go-live in five days."
+    },
+    "voice_prompt_template": "Write as iverif: precise, authoritative, quietly confident, no hype. FR-first when locale=fr. Use correct obligé/délégataire/CEE/fiche terminology. Distinguish fact vs hypothesis. Never claim rejection-rate %, 30-second processing, go-live SLAs, PNCEE endorsement, obligé/délégataire status, competitor euro amounts, or unaudited GDPR/EU-host promises.",
+    "tone_variations": {
+      "product_ui": {
+        "adjustment": "direct, functional",
+        "example_fr": "Validation échouée : date d'attestation expirée.",
+        "example_en": "Validation failed: attestation date expired."
+      },
+      "marketing": {
+        "adjustment": "problem-aware, not fear-mongering",
+        "example_fr": "Les erreurs documentaires se paient après dépôt. Contrôlez avant.",
+        "example_en": "Document errors get expensive after submission. Validate first."
+      },
+      "support": {
+        "adjustment": "empathetic to regulatory pressure",
+        "example_fr": "Nous savons la pression d'une revue CEE. Voici l'étape suivante.",
+        "example_en": "We know CEE review pressure. Here is the next step."
+      },
+      "press": {
+        "adjustment": "factual, Les Échos / JDN ready",
+        "example_fr": "iverif, plateforme de validation documentaire pour opérateurs de subventions énergétiques, annonce…",
+        "example_en": "iverif, a document-validation platform for energy subsidy operators, announced…"
+      },
+      "linkedin_fr": {
+        "adjustment": "short hooks, title-aware",
+        "example_fr": "Responsables Back-Office CEE : une pièce incohérente suffit à bloquer une valorisation."
+      },
+      "crisis": {
+        "adjustment": "direct and accountable",
+        "example_fr": "Nous analysons l'incident et communiquerons l'étape vérifiée.",
+        "example_en": "We are reviewing the issue and will share the verified next step."
+      },
+      "sales": {
+        "adjustment": "confident without hype",
+        "example_fr": "Voyons votre flux dossier et les contrôles pré-dépôt pertinents.",
+        "example_en": "Let's review your dossier flow and the relevant pre-submission checks."
+      }
+    },
+    "language_guidelines": {
+      "use": [
+        "validation avant dépôt",
+        "règles programme",
+        "piste d'audit",
+        "CEE",
+        "Primes Énergie",
+        "délégataire",
+        "obligé",
+        "precise",
+        "audit trail"
+      ],
+      "avoid": [
+        "révolutionnaire",
+        "garanti",
+        "jusqu'à X%",
+        "zéro rejet",
+        "PNCEE partner",
+        "EU-hosted (until audited receipt)",
+        "30 secondes",
+        "<2%"
+      ],
+      "vocabulary_bank": {
+        "preferred": [
+          "précis",
+          "autoritaire",
+          "sobre",
+          "vérifiable",
+          "structuré",
+          "explicable"
+        ],
+        "prohibited": [
+          "magique",
+          "révolutionnaire",
+          "disruptif",
+          "garanti",
+          "frictionless",
+          "game-changing"
+        ]
+      }
+    },
+    "voice_matrix": {
+      "formality": 0.7,
+      "enthusiasm": 0.3,
+      "technicality": 0.75,
+      "warmth": 0.4,
+      "authority": 0.8
+    },
+    "tone_words": [
+      "precise",
+      "authoritative",
+      "quietly confident",
+      "no-hype"
+    ],
+    "empathy_statements_fr": [
+      "Nous comprenons la pression de la conformité CEE.",
+      "Nous savons combien une erreur documentaire peut coûter après dépôt.",
+      "Nous sommes là pour clarifier le contrôle avant soumission."
+    ],
+    "empathy_statements_en": [
+      "We understand the pressure of CEE compliance.",
+      "We know how costly document errors become after submission.",
+      "We are here to clarify pre-submission checks."
+    ],
+    "emotional_targets": [
+      "Confidence",
+      "Trust",
+      "Relief",
+      "Control"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "skill": "voice-and-tone",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-08-10T00:00:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "voice_attributes": {"tone1": "precise", "tone2": "fashion-aware", "tone3": "warm"},
+    "voice_character": {"speaking_as": "a practical product-page guide", "relationship": "a transparent partner to the merchant", "language_register": "clear B2B ecommerce language"},
+    "voice_prompt_template": "Write in a precise, fashion-aware, warm voice. Describe Fitcheck as a product-page confidence layer, distinguish observed facts from hypotheses, and make no promised outcome, certainty, privacy, setup-speed, or customer-volume claim.",
+    "tone_variations": {
+      "announcement": {"adjustment": "clear and measured", "example": "Fitcheck is available for Shopify fashion product pages."},
+      "support": {"adjustment": "patient and concrete", "example": "Here is the next step to review in your storefront."},
+      "education": {"adjustment": "plain and explanatory", "example": "A visual try-on can support a more informed decision; it does not guarantee fit."},
+      "crisis": {"adjustment": "direct and accountable", "example": "We are reviewing the issue and will share the verified next step."},
+      "sales": {"adjustment": "confident without hype", "example": "Explore a guided product-page try-on rollout for your Shopify store."}
+    },
+    "language_guidelines": {
+      "use": ["fit confidence", "more informed", "product page", "guided setup", "merchant-specific learning", "visual try-on"],
+      "avoid": ["guaranteed", "perfect fit", "conversion lift", "return reduction", "instant", "best-in-class", "48-hour launch"],
+      "vocabulary_bank": {"preferred": ["precise", "clear", "considered", "fashion-aware", "guided", "transparent"], "prohibited": ["magic", "flawless", "frictionless", "revolutionary", "guaranteed"]}
+    },
+    "voice_matrix": {"formality": 0.55, "enthusiasm": 0.55, "technicality": 0.35, "warmth": 0.6, "authority": 0.65},
+    "tone_words": ["precise", "fashion-aware", "warm"]
+  }
+}

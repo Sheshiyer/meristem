@@ -1,0 +1,50 @@
+{
+  "skill": "value-proposition", "cluster": "foundation", "wave": 1,
+  "timestamp": "2026-09-27T13:58:00Z", "status": "complete", "version": "1.0.0",
+  "data": {
+    "pain_gain_map": {
+      "pains": {
+        "functional": ["The company stops when Maya stops", "Agents fail silently and misreport completion", "Throughput without traction burns credits", "Brand doc is write-once and drifts"],
+        "emotional": ["Dread of returning to a dead business", "Shame when an agent misrepresents her", "Exhaustion of being the only heartbeat"],
+        "social": ["Looking unreliable to customers", "Build-in-public momentum stalls visibly"]
+      },
+      "gains": {
+        "functional": ["Business keeps advancing while she's away", "Nothing irreversible or paid happens without approval", "A replayable record of every move", "Brand and mission evolve on real evidence"],
+        "emotional": ["Steadiness", "Relief", "Earned trust"],
+        "social": ["A coherent, honest brand customers recognize over years", "Freedom to start a second venture without abandoning the first"]
+      }
+    },
+    "value_canvas": [
+      {"customer_job": "Keep the business alive during travel or burnout", "pain_point": "The company stops when you stop", "solution": "Event-driven wake loop that tends the business between check-ins", "gain_created": "Return to a business that's still alive and on track"},
+      {"customer_job": "Trust automation with customer-facing work", "pain_point": "Agents fail silently", "solution": "Fail-closed gate plus labelled claims; unsure means do less", "gain_created": "Failure is visible and bounded"},
+      {"customer_job": "Grow without wasting money", "pain_point": "Throughput without traction", "solution": "Viability monitor with solvency as a hard floor; revenue treated as a regulated output", "gain_created": "Spend follows real signal, runway protected"},
+      {"customer_job": "Keep the brand true as the product changes", "pain_point": "Write-once brand drift", "solution": "Evidence-gated setpoint moves within a trust region", "gain_created": "A brand that evolves without losing itself"}
+    ],
+    "statements": {
+      "classic": "For solo and technical founders who are tired of being their business's only heartbeat, Cambium is a venture operator that keeps the business alive, on-mission and solvent while they step away. Unlike autonomous 'AI runs your company' tools that chase task throughput, Cambium holds every venture inside its viability bounds, gates every irreversible move, and records every decision so it can be replayed.",
+      "one_sentence": "Cambium is the patient operator above your AI agents that keeps your business in the game — solvent, on-mission and advancing — even when you step away.",
+      "core": "Keep your business in the game: an always-on operator that protects viability first, moves only on real evidence, and shows its work.",
+      "headlines": {
+        "primary": "Your business, still alive tomorrow — even when you step away.",
+        "subheadline": "Cambium is the patient operator above your AI agents: it keeps you solvent and on-mission, asks before anything irreversible, and logs every move.",
+        "proof_point": "Solvency is a hard bound, every paid or irreversible move fails closed, and every decision is replayable."
+      }
+    },
+    "differentiators": [
+      "Optimizes time-in-game (viability margin), not task throughput",
+      "Solvency is a hard bound; revenue is a regulated output",
+      "Fail-closed gate on irreversible and paid moves",
+      "Brand/mission setpoint moves only on real customer evidence",
+      "Replayable decision log with honest claim labels"
+    ],
+    "value_hierarchy": {
+      "primary": {"value": "Living continuity — the business stays in the game", "why_it_matters": "Directly answers 'the company stops when you stop' and the category's silent-failure record", "proof": "Viability monitor + fail-closed gate + replay log"},
+      "secondary": [
+        {"value": "Bounded risk", "why_it_matters": "Burned buyers need to know nothing expensive happens without them"},
+        {"value": "Legible decisions", "why_it_matters": "Trust is earned by showing the work"},
+        {"value": "Coherent evolution", "why_it_matters": "The brand grows with evidence instead of drifting"}
+      ],
+      "table_stakes": ["Agent orchestration across build, market and operate", "Always-on", "Affordable entry (Genesis free)"]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "skill": "social-media-assets",
+  "cluster": "photography",
+  "wave": 4,
+  "timestamp": "2026-09-27T12:50:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "platforms": ["x", "linkedin"],
+    "profile_strategy": {
+      "approach": "Use the Living Boundary symbol without a wordmark; preserve transparent master and test on light and dark UI backgrounds.",
+      "background": "Transparent master; Bone square fallback.",
+      "prompt": "Living Boundary symbol: three imperfect lichen rings with one copper consequence segment, centered, transparent, no text."
+    },
+    "cover_strategy": {
+      "approach": "Use the panoramic viability path as the master source. Keep the copper decision node and bend inside the central safe zone so responsive crops retain meaning.",
+      "safe_zones": "Essential detail stays in the central 55%; X may crop about 60px top and bottom; LinkedIn derivatives must be produced at the current Page target before upload.",
+      "seasonal_updates": false,
+      "spec_sources": [
+        "https://help.x.com/en/managing-your-account/common-issues-when-uploading-profile-photo",
+        "https://www.linkedin.com/help/linkedin/answer/a570368"
+      ]
+    },
+    "assets": [
+      {
+        "platform": "x",
+        "type": "profile",
+        "dimensions": "1254x1254 source; exceeds square profile requirement",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Living Boundary symbol-only flat mark on genuine transparency.",
+        "generated_path": "./generated/logo-symbol-living-boundary-v1.png",
+        "sha256": "4da00e45277ac20879895f5b847e52779ea9049cd52f61035906514fb9584325"
+      },
+      {
+        "platform": "x",
+        "type": "header",
+        "dimensions": "2172x724 source; 3:1 exact ratio; current X recommendation 1500x500",
+        "aspect_ratio": "3:1",
+        "generation_prompt": "Ultra-wide embossed growth-ring field with one lichen path bending through a boundary at a small copper node; central safe zone; no text.",
+        "generated_path": "./generated/social-header-viability-path-v1.png",
+        "sha256": "ca8587481b66a377d7f8939a9e941ca5cde3986f3b44eceb1710b9db91c3ca9a"
+      },
+      {
+        "platform": "x",
+        "type": "post",
+        "dimensions": "1254x1254",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Square handmade-paper composition with three growth-ring contours, one lichen path, and one copper decision node; copy-free master.",
+        "generated_path": "./generated/social-stay-in-game-square-v1.png",
+        "sha256": "d070f5882b4143773fe250d2ef1dc3bac90ba7fb32f811f9b0eedc3eb83cf990"
+      },
+      {
+        "platform": "linkedin",
+        "type": "profile",
+        "dimensions": "1254x1254 source; current Page recommendation 400x400",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Living Boundary symbol-only flat mark on genuine transparency.",
+        "generated_path": "./generated/logo-symbol-living-boundary-v1.png",
+        "sha256": "4da00e45277ac20879895f5b847e52779ea9049cd52f61035906514fb9584325"
+      },
+      {
+        "platform": "linkedin",
+        "type": "cover-master",
+        "dimensions": "2172x724 master source; final Page derivative must use current 4200x700 target before upload",
+        "aspect_ratio": "3:1 master with central safe zone",
+        "generation_prompt": "Ultra-wide embossed growth-ring field with one lichen path bending through a boundary at a small copper node; central safe zone; no text.",
+        "generated_path": "./generated/social-header-viability-path-v1.png",
+        "sha256": "ca8587481b66a377d7f8939a9e941ca5cde3986f3b44eceb1710b9db91c3ca9a"
+      },
+      {
+        "platform": "linkedin",
+        "type": "post",
+        "dimensions": "1254x1254 image-only post master",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Square handmade-paper composition with three growth-ring contours, one lichen path, and one copper decision node; copy-free master.",
+        "generated_path": "./generated/social-stay-in-game-square-v1.png",
+        "sha256": "d070f5882b4143773fe250d2ef1dc3bac90ba7fb32f811f9b0eedc3eb83cf990"
+      }
+    ],
+    "post_templates": [
+      {"name": "One Bound", "purpose": "Explain one viability constraint", "elements": ["square field visual", "short Newsreader headline added outside the generated image", "IBM Plex evidence label", "source link"], "prompt": "Use the copy-free square path visual; overlay one claim only and attach its evidence source in post copy."},
+      {"name": "One Wake", "purpose": "Narrate a single event-to-decision sequence", "elements": ["panoramic path crop", "four-step caption", "state label", "receipt reference"], "prompt": "Use the panoramic path master as a quiet background; never fabricate a live receipt."}
+    ],
+    "generation_summary": {"total_assets": 3, "generated": 3, "pending": 0, "reused_platform_placements": 6, "engine": "Codex built-in image generation", "api_credits_used": false, "publication_status": "not uploaded or published"}
+  }
+}

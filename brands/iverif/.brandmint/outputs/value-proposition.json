@@ -1,0 +1,105 @@
+{
+  "skill": "value-proposition",
+  "cluster": "foundation",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 1,
+  "data": {
+    "evidence_scope": "Problem/solution from brand-config + brief; proof limits from ledger prohibited/hypotheses. FR-first framing.",
+    "pain_gain_map": {
+      "pains": {
+        "functional": [
+          "Recoupement manuel multi-pièces par dossier CEE / Primes Énergie",
+          "Rejets post-dépôt coûteux à corriger",
+          "Règles et fiches évolutives difficiles à industrialiser",
+          "Absence de piste de validation horodatée exploitable en revue"
+        ],
+        "emotional": [
+          "Stress d'audit / contrôle",
+          "Peur de faire échouer une valorisation pour une erreur évitable",
+          "Fatigue des pics de volume"
+        ],
+        "social": [
+          "Pression des obligés donneurs d'ordre sur la qualité des dossiers",
+          "Crédibilité de l'équipe back-office auprès du management et des partenaires"
+        ]
+      },
+      "gains": {
+        "functional": [
+          "Contrôles de cohérence cross-document avant soumission",
+          "Règles programme préconfigurées + onboarding managé",
+          "Journaux d'audit horodatés pour la scrutiny",
+          "Montée en charge sans embauche proportionnelle (direction de gain — pas un ROI chiffré public)"
+        ],
+        "emotional": [
+          "Tranquillité réglementaire relative",
+          "Fierté opérationnelle",
+          "Sentiment de contrôle sur ce qui a été vérifié"
+        ],
+        "social": [
+          "Posture de sérieux RegTech face aux obligés et auditeurs",
+          "Langage métier clair (obligé / délégataire / fiche) qui inspire confiance"
+        ]
+      }
+    },
+    "value_canvas": [
+      {
+        "customer_job": "Instruire et valider des dossiers CEE / Primes Énergie avant dépôt",
+        "pain_point": "Erreurs documentaires découvertes trop tard",
+        "solution": "Plateforme AI de validation contre règles programme, avec trails d'audit",
+        "gain_created": "Signal de conformité documentaire avant soumission — sans promettre un taux de rejet public non reçu"
+      },
+      {
+        "customer_job": "Absorber les évolutions de fiches / période sans reconstruire le process",
+        "pain_point": "Formation longue et règles qui bougent",
+        "solution": "Configuration programme managée + moteur de règles",
+        "gain_created": "Mises à jour de règles industrialisées (intention produit ; SLA non publié)"
+      },
+      {
+        "customer_job": "Se différencier des parcours primes grand public",
+        "pain_point": "Confusion avec Hellio / Effy côté acheteur",
+        "solution": "Positionnement logiciel back-office validation — pas distributeur de primes",
+        "gain_created": "Catégorie claire pour Marie et son COMEX"
+      }
+    ],
+    "statements": {
+      "classic_fr": "Pour les responsables back-office CEE et délégataires mid-market qui perdent des valorisations à cause d'erreurs documentaires évitables, iverif est une plateforme de validation AI pré-dépôt avec règles programme et onboarding managé — contrairement à l'OCR générique, au DMS de stockage, ou aux marques de primes qui opèrent le marché sans outiller le contrôle cross-document.",
+      "classic_en": "For mid-market CEE back-office leads and délégataires who lose subsidy value to avoidable document errors, iverif is an AI pre-submission validation platform with programme rules and managed onboarding — unlike generic OCR, storage-only DMS, or primes-operator brands that run the market without cross-document validation software.",
+      "one_sentence_fr": "iverif aide les opérateurs CEE à valider les dossiers avant dépôt pour ne plus perdre des claims sur des erreurs documentaires évitables.",
+      "one_sentence_en": "iverif helps CEE operators validate dossiers before submission so subsidy claims are not lost to avoidable document errors.",
+      "headlines": {
+        "primary_fr": "Arrêtez de perdre des CEE / primes pour des erreurs documentaires évitables.",
+        "primary_en": "Stop losing subsidy claims to avoidable document errors.",
+        "subheadline_fr": "Validation AI pré-dépôt pour back-offices CEE — règles programme, cohérence cross-document, pistes d'audit.",
+        "subheadline_en": "Pre-submission AI validation for CEE back-offices — programme rules, cross-document checks, audit trails.",
+        "proof_point": "Proof today is product intent + existing assets (iverif.fr / iverif.io / screenshots). Outcome metrics require dated iverif receipts before public use."
+      }
+    },
+    "value_hierarchy": {
+      "primary": {
+        "value": "Validation documentaire pré-soumission pour CEE / Primes Énergie",
+        "why_it_matters": "Le coût et le stress naissent surtout du rejet ou de la reprise après dépôt",
+        "proof": "Démo produit + trails ; pas de % public sans reçu"
+      },
+      "secondary": [
+        {
+          "value": "Onboarding managé des règles programme",
+          "why": "Les équipes n'ont pas de bande passante pour reconstruire un rule engine"
+        },
+        {
+          "value": "Audit trail horodaté",
+          "why": "Les revues exigent de montrer ce qui a été contrôlé"
+        },
+        {
+          "value": "Catégorie logicielle claire vs opérateurs primes",
+          "why": "Évite la confusion Hellio/Effy"
+        }
+      ]
+    },
+    "hypotheses": [
+      "Lead with FR CEE accuracy beats EU programme catalogue in hero copy (H1).",
+      "Obligé/délégataire clarity is itself a value signal (H2)."
+    ]
+  }
+}

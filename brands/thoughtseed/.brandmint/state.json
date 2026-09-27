@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "created_at": "2026-06-08T06:16:56Z",
-  "updated_at": "2026-06-08T06:19:27Z",
+  "updated_at": "2026-08-22T07:40:00Z",
   "current_wave": 7,
   "completed_waves": [
     1,
@@ -42,8 +42,89 @@
     "brand-documentation",
     "deliverables-package",
     "notebooklm-publishing",
-    "wiki-site-generator"
+    "wiki-site-generator",
+    "visual-content-bridge",
+    "social-content-engine",
+    "short-form-hook-generator",
+    "community-manager-brain",
+    "review-response-strategist",
+    "update-strategy-sequencer",
+    "brand-guidelines",
+    "campaign-orchestrator"
   ],
   "failed_skills": [],
-  "status": "initialized"
+  "status": "complete",
+  "regeneration_history": [
+    {
+      "regenerated_at": "2026-08-22T07:35:00Z",
+      "reason": "Updated visual language \u2014 Amir workflow outputs integrated; Wave 6 content retained (still voice-compliant); visual-content-bridge added to link copy to new visual assets",
+      "regenerated_outputs": [
+        "visual-language.json",
+        "color-palette.json",
+        "typography.json",
+        "logo-concept.json",
+        "hero-images.json",
+        "lifestyle-photography.json",
+        "product-photography.json",
+        "social-media-assets.json",
+        "brand-illustrations.json",
+        "icon-system.json",
+        "pattern-library.json",
+        "brand-documentation.json",
+        "notebooklm-publishing.json",
+        "wiki-site-generator.json",
+        "deliverables-package.json",
+        "visual-content-bridge.json",
+        "asset-manifest.json"
+      ],
+      "wave_6_kept_intact": [
+        "landing-page-copy.json",
+        "welcome-email-sequence.json",
+        "prelaunch-email-sequence.json",
+        "launch-email-sequence.json",
+        "ad-creative-copy.json",
+        "press-release.json",
+        "product-description.json"
+      ],
+      "voice_compliance_check": "PASS \u2014 0 prohibited terms across 7 Wave 6 content files",
+      "new_assets_added": 23,
+      "total_assets_after": 43,
+      "asset_manifest_validated": true
+    },
+    {
+      "regenerated_at": "2026-08-22T07:40:00Z",
+      "reason": "Integrated 7 relevant text-md skills from brandmint-oracle-aleph into meristem: 5 social-growth spokes + brand-guidelines + campaign-orchestrator. Skipped 14+ irrelevant skills (brand-name-studio, packaging-experience-designer, unboxing-journey-guide, affiliate-program-designer, influencer-outreach-pro, niche-validator, mds-messaging-direction-summary, competitive-ads-extractor, pre-launch-ads, live-campaign-ads, campaign-video-script, campaign-page-builder, campaign-page-copy).",
+      "skills_added": [
+        "social-content-engine",
+        "short-form-hook-generator",
+        "community-manager-brain",
+        "review-response-strategist",
+        "update-strategy-sequencer",
+        "brand-guidelines",
+        "campaign-orchestrator"
+      ],
+      "skills_skipped": [
+        "brand-name-studio",
+        "packaging-experience-designer",
+        "unboxing-journey-guide",
+        "affiliate-program-designer",
+        "influencer-outreach-pro",
+        "niche-validator",
+        "mds-messaging-direction-summary",
+        "competitive-ads-extractor",
+        "pre-launch-ads",
+        "live-campaign-ads",
+        "campaign-video-script",
+        "campaign-page-builder",
+        "campaign-page-copy"
+      ],
+      "clusters_added": [
+        "social-growth"
+      ],
+      "runner_updates": [
+        "common.sh: wave_to_clusters function for multi-cluster waves",
+        "launch.sh: dual-cluster wave execution"
+      ]
+    }
+  ]
 }

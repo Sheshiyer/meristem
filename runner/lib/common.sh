@@ -137,29 +137,61 @@ json_get() {
     jq -r "$path // \"$default\"" "$file" 2>/dev/null || echo "$default"
 }
 
+json_update() {
+    local file="$1"
+    local filter="$2"
+    shift 2
+
+    if ! command -v jq &>/dev/null; then
+        log_error "Required command not found: jq"
+        return 127
+    fi
+
+    if [[ ! -f "$file" ]]; then
+        log_error "JSON file not found: $file"
+        return 1
+    fi
+
+    # Keep the replacement in the same directory so mv is an atomic rename.
+    local tmp
+    if ! tmp=$(mktemp "$(dirname "$file")/.json-update.XXXXXX"); then
+        log_error "Unable to create temporary JSON update file for: $file"
+        return 1
+    fi
+
+    local status
+    if jq "$@" "$filter" "$file" > "$tmp" 2>/dev/null; then
+        if mv -f "$tmp" "$file"; then
+            return 0
+        else
+            status=$?
+        fi
+        log_error "Unable to replace JSON file: $file"
+    else
+        status=$?
+        log_error "Unable to update JSON file: $file"
+    fi
+
+    rm -f "$tmp"
+    return "$status"
+}
+
 json_set() {
     local file="$1"
     local path="$2"
     local value="$3"
-    
-    require_cmd jq
+
     # Support two call forms:
     #  - json_set FILE '.path' VALUE         -> jq '.path = VALUE'
     #  - json_set FILE '.arr += [x]' '[]'    -> jq '.arr += [x]'  (path is already a full update expr)
     local filter
-    if [[ "$path" == *"+="* ]]; then
+    if [[ "$path" == *"="* ]]; then
         filter="$path"
     else
         filter="$path = $value"
     fi
-    local tmp
-    tmp=$(mktemp)
-    if jq "$filter" "$file" > "$tmp" 2>/dev/null; then
-        mv "$tmp" "$file"
-    else
-        rm -f "$tmp"
-    fi
-    return 0
+
+    json_update "$file" "$filter"
 }
 
 # -----------------------------------------------------------------------------
@@ -206,9 +238,89 @@ state_set() {
     local brand_dir="$1"
     local path="$2"
     local value="$3"
-    
-    json_set "$(state_file "$brand_dir")" "$path" "$value"
-    json_set "$(state_file "$brand_dir")" '.updated_at' "\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\""
+
+    local mutation
+    if [[ "$path" == *"="* ]]; then
+        mutation="$path"
+    else
+        mutation="$path = $value"
+    fi
+
+    state_update "$brand_dir" "$mutation"
+}
+
+# Apply a state mutation and timestamp it in one jq rewrite. Additional arguments
+# are passed directly to jq (for example: --arg skill "$skill").
+state_update() {
+    local brand_dir="$1"
+    local filter="$2"
+    shift 2
+
+    local updated_at
+    if ! updated_at=$(date -u +%Y-%m-%dT%H:%M:%SZ); then
+        log_error "Unable to determine state update timestamp"
+        return 1
+    fi
+
+    json_update "$(state_file "$brand_dir")" \
+        "($filter) | .updated_at = \$updated_at" \
+        --arg updated_at "$updated_at" "$@"
+}
+
+state_record_skill_success() {
+    local brand_dir="$1"
+    local skill="$2"
+
+    state_update "$brand_dir" '
+        .completed_skills = ((.completed_skills // []) |
+            if index($skill) == null then . + [$skill] else . end)
+        | .failed_skills = ((.failed_skills // []) | map(select(. != $skill)))
+    ' --arg skill "$skill"
+}
+
+state_record_skill_failure() {
+    local brand_dir="$1"
+    local skill="$2"
+
+    state_update "$brand_dir" '
+        .failed_skills = ((.failed_skills // []) |
+            if index($skill) == null then . + [$skill] else . end)
+        | .completed_skills = ((.completed_skills // []) | map(select(. != $skill)))
+    ' --arg skill "$skill"
+}
+
+state_mark_wave_started() {
+    local brand_dir="$1"
+    local wave="$2"
+
+    state_update "$brand_dir" '
+        .completed_waves = ((.completed_waves // []) | map(select(. != $wave)))
+        | .current_wave = $wave
+        | .status = "running"
+    ' --argjson wave "$wave"
+}
+
+state_mark_wave_complete() {
+    local brand_dir="$1"
+    local wave="$2"
+
+    state_update "$brand_dir" '
+        .completed_waves = ((.completed_waves // []) |
+            if index($wave) == null then . + [$wave] else . end)
+        | .current_wave = $wave
+        | .status = "running"
+    ' --argjson wave "$wave"
+}
+
+state_mark_wave_failed() {
+    local brand_dir="$1"
+    local wave="$2"
+
+    state_update "$brand_dir" '
+        .completed_waves = ((.completed_waves // []) | map(select(. != $wave)))
+        | .current_wave = $wave
+        | .status = "failed"
+    ' --argjson wave "$wave"
 }
 
 # -----------------------------------------------------------------------------
@@ -231,8 +343,21 @@ wave_to_cluster() {
     echo "${WAVE_CLUSTERS[$((wave - 1))]}"
 }
 
+# Wave 6 has TWO clusters: content + social-growth
+# Returns space-separated list of clusters for the wave.
+wave_to_clusters() {
+    local wave="$1"
+    case "$wave" in
+        6) echo "content social-growth" ;;
+        *) wave_to_cluster "$wave" ;;
+    esac
+}
+
 cluster_to_wave() {
     local cluster="$1"
+    case "$cluster" in
+        content|social-growth) echo 6; return ;;
+    esac
     local i
     for i in "${!WAVE_CLUSTERS[@]}"; do
         if [[ "${WAVE_CLUSTERS[$i]}" == "$cluster" ]]; then

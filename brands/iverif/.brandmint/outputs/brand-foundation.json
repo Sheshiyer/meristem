@@ -1,0 +1,118 @@
+{
+  "skill": "brand-foundation",
+  "cluster": "foundation",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 1,
+  "data": {
+    "evidence_scope": "Grounded in brands/iverif/brand-config.yaml, BRAND-BRIEF.md, and research/EVIDENCE-LEDGER.md (classes fact/observation/hypothesis/prohibited). FR GTM lock: region FR / fr-FR; brand domain iverif.fr; wiki iverif.io.",
+    "mission": {
+      "statement_fr": "Donner aux opérateurs de subventions énergétiques (CEE / Primes Énergie) une validation documentaire précise avant dépôt, pour réduire les erreurs évitables et conserver des pistes d'audit exploitables.",
+      "statement_en": "Give energy subsidy operators (CEE / Primes Énergie first) precise pre-submission document validation so avoidable dossier errors are caught early and audit trails remain usable under scrutiny.",
+      "breakdown": {
+        "action": "valider avant dépôt / validate before submission",
+        "audience": "opérateurs CEE, délégataires, ESCos, agrégateurs de rénovation énergétique (FR first)",
+        "outcome": "dossiers cohérents face aux règles programme, pistes d'audit horodatées",
+        "differentiator": "règles programme préconfigurées + accompagnement managé — pas de simple OCR ni DMS de stockage"
+      }
+    },
+    "vision": {
+      "statement_fr": "Un marché CEE / primes où la conformité documentaire est un signal clair avant soumission — pas une découverte coûteuse après coup.",
+      "statement_en": "A CEE / primes market where document compliance is a clear pre-submission signal — not an expensive post-submission discovery.",
+      "time_horizon": "5–10 years",
+      "note": "Vision language is directional; not a market-size or outcome claim."
+    },
+    "values": [
+      {
+        "name": "Précision réglementaire",
+        "definition": "Le vocabulaire CEE, fiches d'opérations standardisées, obligé et délégataire est utilisé correctement (ledger P1–P5, F4).",
+        "in_practice": "Aucune affiliation inventée avec le PNCEE ou un statut d'obligé/délégataire (prohibited)."
+      },
+      {
+        "name": "Preuve avant promesse",
+        "definition": "Les cibles internes v1 (taux de rejet, délais) restent des aspirations jusqu'à reçu daté iverif.",
+        "in_practice": "Copy publique FR ne reprend pas « <2% », « 30 secondes », « go-live 5–7 jours » comme garanties (ledger prohibited)."
+      },
+      {
+        "name": "Clarté opérationnelle",
+        "definition": "Parler d'abord au back-office CEE (Marie Durand), pas au grand public primes.",
+        "in_practice": "LinkedIn FR, JDN, Les Échos, PNCEE comme contexte — jamais comme endorsement (channel-plan)."
+      },
+      {
+        "name": "Confiance discrète",
+        "definition": "Voix précise, autoritaire, calmement confiante ; pas de hype (F4).",
+        "in_practice": "Références craft aspirationales Stripe / Notion / Vercel / Linear — pas des partenariats."
+      }
+    ],
+    "brand_essence": {
+      "fr": "signal de validation avant dépôt",
+      "en": "pre-submission validation signal",
+      "theme_name": "Signal in the System",
+      "metaphor": "Tableau d'instrument haute précision — chaque seuil visible, chaque action traçable (v1 brand-foundation)."
+    },
+    "personality": {
+      "archetype_primary": "sage",
+      "archetype_secondary": "architect",
+      "traits": [
+        "precise",
+        "authoritative",
+        "quietly confident",
+        "no-hype",
+        "trustworthy"
+      ],
+      "voice_matrix": {
+        "formality": 0.7,
+        "enthusiasm": 0.3,
+        "technicality": 0.75,
+        "warmth": 0.4
+      },
+      "if_a_person": {
+        "fr": "Experte conformité CEE de 40 ans, ancienne responsable back-office chez un délégataire mid-market ; explique les fiches sans dramatiser.",
+        "en": "A mid-career CEE compliance expert who formerly ran délégataire back-office ops; explains fiches without drama."
+      },
+      "adjectives_fr": [
+        "précis",
+        "autoritaire",
+        "sobrement confiant",
+        "vérifiable",
+        "structuré"
+      ],
+      "adjectives_en": [
+        "precise",
+        "authoritative",
+        "quietly confident",
+        "verifiable",
+        "structured"
+      ]
+    },
+    "category": {
+      "public_descriptor": "AI document validation for energy subsidy operators",
+      "tagline": "Stop losing subsidy claims to avoidable document errors.",
+      "category_label": "RegTech SaaS / EU energy subsidy document validation",
+      "primary_programmes_fr_gtm": [
+        "CEE",
+        "Primes Énergie"
+      ],
+      "programme_scope_intent": [
+        "CEE",
+        "Primes Énergie",
+        "Conto Termico",
+        "BEG",
+        "ECO4",
+        "MOVES III"
+      ],
+      "programme_scope_note": "F2: list as product scope intent; depth of pre-configuration per programme is not independently audited in the ledger."
+    },
+    "domains": {
+      "brand": "iverif.fr",
+      "wiki": "iverif.io",
+      "gtm_region": "FR",
+      "default_locale": "fr-FR"
+    },
+    "hypotheses": [
+      "FR operators respond first to CEE / Primes Énergie accuracy + audit trails rather than multi-country breadth (ledger hypothesis 1).",
+      "Clear obligé vs délégataire language reduces mistrust in outbound/landing copy (ledger hypothesis 2)."
+    ]
+  }
+}

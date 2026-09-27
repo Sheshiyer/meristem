@@ -1,0 +1,29 @@
+{
+  "skill": "campaign-orchestrator",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-09-27T16:27:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "campaign_id": "cambium-infinite-game-concept-2026-09",
+    "phases": [
+      {"phase": 1, "name": "Category education", "skills": [{"skill": "social-content-engine", "status": "PASS", "output_path": ".brandmint/outputs/social-content-engine.json"}, {"skill": "short-form-hook-generator", "status": "PASS", "output_path": ".brandmint/outputs/short-form-hook-generator.json"}]},
+      {"phase": 2, "name": "Concept briefing", "skills": [{"skill": "landing-page-copy", "status": "PASS", "output_path": ".brandmint/outputs/landing-page-copy.json"}, {"skill": "product-description", "status": "PASS", "output_path": ".brandmint/outputs/product-description.json"}]},
+      {"phase": 3, "name": "Steward onboarding", "skills": [{"skill": "welcome-email-sequence", "status": "PASS", "output_path": ".brandmint/outputs/welcome-email-sequence.json"}, {"skill": "community-manager-brain", "status": "PASS", "output_path": ".brandmint/outputs/community-manager-brain.json"}]},
+      {"phase": 4, "name": "Evidence-led updates", "skills": [{"skill": "update-strategy-sequencer", "status": "PASS", "output_path": ".brandmint/outputs/update-strategy-sequencer.json"}, {"skill": "review-response-strategist", "status": "PASS", "output_path": ".brandmint/outputs/review-response-strategist.json"}]}
+    ],
+    "validation_gates": [
+      {"gate": "Product truth", "requirement": "Every public claim distinguishes concept, implementation evidence, live availability, and measured outcome.", "status": "PASS"},
+      {"gate": "Visual provenance", "requirement": "Every published visual has a real path, checksum, origin, and conceptual label where needed.", "status": "PASS"},
+      {"gate": "Audience acceptance", "requirement": "A real founder or portfolio steward has reviewed the briefing in the intended channel.", "status": "FAIL"},
+      {"gate": "Release authority", "requirement": "The owner separately approves public publication and any paid distribution.", "status": "FAIL"}
+    ],
+    "missing_outputs": [
+      "Real-audience briefing acceptance receipt",
+      "Owner-approved public release target and rollback path"
+    ],
+    "ready_for_launch": false,
+    "readiness_note": "The campaign system is authored and internally coherent, but no public launch, paid media, or audience acceptance is claimed or authorized."
+  }
+}

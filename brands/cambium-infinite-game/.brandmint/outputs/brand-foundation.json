@@ -1,0 +1,74 @@
+{
+  "skill": "brand-foundation",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-09-27T13:55:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "sources": ["cambium/VISION.md", "cambium/INFINITE-GAME.md", "cambium/BUSINESS-MODEL.md", "cambium/ONBOARDING-OCTALYSIS.md", "research/wave-1-market.md"],
+  "data": {
+    "mission": {
+      "statement": "Cambium keeps small businesses in the game by running a never-terminating operator above their AI agents that holds every venture inside its viability bounds, moves its aim only on real evidence, and records every move so the founder can replay and trust it.",
+      "breakdown": {
+        "action": "Run an always-on venture operator that decides which finite game to play next, gates irreversible moves, and logs every decision",
+        "audience": "Solo and technical founders running small real businesses, and micro-studios running several brands, who have been burned by throughput-maximizing 'AI runs your company' products",
+        "outcome": "The business stays solvent, on-mission and advancing when the founder steps away — continued meaningful play instead of a launch that dies",
+        "differentiator": "Optimizes time-in-game (margin to viability bounds) rather than task throughput or revenue; solvency is a hard bound, revenue a regulated output"
+      }
+    },
+    "vision": {
+      "statement": "A world where a business is tended like a living thing — many small ventures kept alive, coherent and evolving by one patient operator, so founders only drop out by choice, never by exhaustion.",
+      "time_horizon": "10 years"
+    },
+    "values": [
+      {
+        "name": "Stay in the game",
+        "definition": "The only real loss is being unable to keep playing; margin to every viability bound outranks any single win.",
+        "in_practice": "Every wake measures distance to the solvency floor, mission-coherence floor and legal/ethical bounds before choosing a move; margin collapse is the only true emergency."
+      },
+      {
+        "name": "Fail closed",
+        "definition": "When unsure, the operator does less, not more. No irreversible or paid move fires off the approved, viable trajectory.",
+        "in_practice": "Spend, publication, outreach and setpoint moves pass an explicit approval gate with budget and rollback; a missing field stops the pipeline instead of being guessed."
+      },
+      {
+        "name": "Reality is the judge",
+        "definition": "Simulations may propose; only real signal may commit.",
+        "in_practice": "Founder and customer NPCs generate hypotheses, but the brand/mission setpoint moves only on evidence from real customers, inside a trust-region cap per wake."
+      },
+      {
+        "name": "Show the work",
+        "definition": "Every decision is legible, labelled and replayable.",
+        "in_practice": "Each claim carries a status label (Doctrine, Local, Production, Held, Retired); the replay log reconstructs why any move was made; the UI says 'checked against the contract', never 'self-healed'."
+      },
+      {
+        "name": "Motivation without manipulation",
+        "definition": "We earn attention with meaning, never with pressure.",
+        "in_practice": "No fake countdowns, streak traps, mystery rewards or manufactured emergencies; we never optimize for time-in-app."
+      }
+    ],
+    "brand_essence": "Living continuity",
+    "personality": {
+      "archetype": "Sage (primary) with Caregiver (secondary) — the patient gardener-scientist",
+      "if_a_person": {
+        "age": "late 40s",
+        "occupation": "Forester-turned-systems-engineer who now runs a small orchard and a control-theory reading group",
+        "hobbies": ["grafting fruit trees", "long-distance sailing", "keeping meticulous logbooks", "reading Carse, Meadows and Aubin"],
+        "communication_style": "Calm, precise and warm; explains the why, names the uncertainty out loud, never hypes, says 'not yet' as easily as 'yes'"
+      },
+      "adjectives": ["patient", "rigorous", "alive", "honest", "grounded"]
+    },
+    "cbbe": {
+      "salience": "The operator above your AI agents — keeps a small business alive and advancing",
+      "performance": {
+        "points_of_parity": ["runs agents for build, market and operate", "always-on", "affordable for a solo founder"],
+        "points_of_difference": ["viability bounds, not throughput targets", "fail-closed gate on irreversible/paid moves", "evidence-gated setpoint (allostasis)", "replayable decision log"]
+      },
+      "imagery": "Botanical growth layer, growth rings, a bounded region with trajectories bending back inward; the ledger as artifact",
+      "judgments": "Credible because it shows its work and admits uncertainty",
+      "feelings": "Relief, steadiness, trust — 'it's still alive tomorrow'",
+      "resonance": "Founders who see their business as a long game and want a steward, not a slot machine"
+    },
+    "lineage": "Carse, Finite and Infinite Games (1986) as primary lineage; Sinek referenced only as popularizer; Aubin viability theory; Sterling & Eyer allostasis; Van Valen Red Queen."
+  }
+}

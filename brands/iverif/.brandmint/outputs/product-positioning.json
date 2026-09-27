@@ -1,0 +1,127 @@
+{
+  "skill": "product-positioning",
+  "cluster": "strategy",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 2,
+  "data": {
+    "evidence_scope": "CBBE spine from v1 product-positioning-summary + brief positioning spine; competitors from ledger C1–C4; claim limits enforced.",
+    "positioning_statement_fr": "Pour les responsables opérations et conformité des délégataires / opérateurs CEE mid-market en France, iverif est une plateforme RegTech de validation documentaire AI qui contrôle les dossiers contre des règles programme avant dépôt, afin de réduire les erreurs évitables et de conserver une piste d'audit — contrairement à l'OCR générique, au DMS de stockage, ou aux marques de primes (Hellio, Effy, etc.) qui opèrent le marché sans fournir ce logiciel de validation.",
+    "positioning_statement_en": "For operations and compliance leads at mid-market French CEE délégataires / operators, iverif is a RegTech AI document-validation platform that checks dossiers against programme rules before submission — reducing avoidable errors and preserving an audit trail — unlike generic OCR, storage-only DMS, or primes-operator brands (Hellio, Effy, and peers) that run the market without shipping this validation software.",
+    "category": {
+      "frame": "RegTech SaaS for EU energy subsidy document validation",
+      "fr_gtm_entry": "CEE / Primes Énergie first",
+      "not_category": [
+        "Primes marketplace",
+        "Rénovation consumer brand",
+        "Generic IDP",
+        "Obligation-scheme operator"
+      ]
+    },
+    "cbbe": {
+      "salience": {
+        "category": "RegTech SaaS / EU Energy Subsidies",
+        "core_problem": "Avoidable document errors that put subsidy claims at risk",
+        "simple_description_fr": "Validation AI des dossiers de subventions énergétiques",
+        "simple_description_en": "AI-powered document validation for energy subsidy dossiers"
+      },
+      "performance": {
+        "points_of_parity": [
+          "Document handling in regulated workflows",
+          "Interest in CEE / energy-subsidy compliance outcomes"
+        ],
+        "points_of_difference": [
+          "Pre-configured programme rules + managed onboarding",
+          "Cross-document validation before submission",
+          "Software category clarity vs Hellio / Effy / Économie d'Énergie SAS / GEO PLC operator class",
+          "Audit-trail-first architecture intent"
+        ],
+        "value_logic": "Catch avoidable documentation issues earlier; keep scrutiny explainable — without publishing unverified outcome KPIs"
+      },
+      "imagery": {
+        "associated_brands_aspirational_craft": [
+          "Stripe",
+          "Notion",
+          "Vercel",
+          "Linear"
+        ],
+        "usage_scenes": [
+          "Regulatory desk",
+          "CEE back-office",
+          "Document workflow",
+          "Modern ops floor"
+        ],
+        "mode_of_use": "Web platform with API integration intent; white-label readiness is product direction not a published partnership claim"
+      },
+      "judgments": {
+        "positive_beliefs": [
+          "Precise and authoritative",
+          "Understands obligé vs délégataire",
+          "Technical depth with clarity"
+        ],
+        "objections": [
+          "AI accuracy on edge cases",
+          "Integration effort",
+          "Cost vs headcount",
+          "Category confusion with primes brands"
+        ],
+        "credibility_proof_required": [
+          "Dated customer receipts",
+          "Demo of validation + audit log",
+          "Primary-page competitor fetches for Économie d'Énergie SAS / GEO PLC"
+        ]
+      },
+      "feelings": {
+        "target_emotions": [
+          "Confident control",
+          "Regulatory peace of mind",
+          "Operational pride"
+        ],
+        "voice": "Precise, authoritative, quietly confident",
+        "tone": "Professional, clean, conversion-aware without hype"
+      },
+      "resonance": {
+        "loyalty_logic": "Ongoing programme-rule stewardship + auditability",
+        "mission": "Empower energy subsidy operators with pre-submission document validation",
+        "community_note": "No claimed partnerships with regulatory bodies (prohibited)"
+      }
+    },
+    "points_of_difference": [
+      "Pre-submission validation software — not a primes distributor or renovation marketplace",
+      "Programme-rule configuration with managed expertise — not DIY OCR rules alone",
+      "FR role-accurate language (obligé / délégataire / fiche) as trust signal",
+      "Evidence-bounded public claims — no borrowed competitor euros or internal KPI theatre"
+    ],
+    "competitive_positioning_matrix": [
+      {
+        "vs": "Hellio",
+        "say": "Ils accompagnent CEE/primes ; nous validons les dossiers logiciels avant dépôt."
+      },
+      {
+        "vs": "Effy",
+        "say": "Ils vendent parcours et Prime Effy ; nous outillons le contrôle documentaire back-office."
+      },
+      {
+        "vs": "Économie d'Énergie SAS",
+        "say": "Acteur de marché — pas notre catégorie logicielle (comparatif features en attente de fetch)."
+      },
+      {
+        "vs": "GEO PLC",
+        "say": "Participant obligation-scheme — iverif reste scoped validation software."
+      },
+      {
+        "vs": "OCR/IDP",
+        "say": "Extraction ≠ validation contre fiches et cohérence cross-document."
+      },
+      {
+        "vs": "DMS",
+        "say": "Stocker / signer ≠ contrôler un dossier CEE avant soumission."
+      }
+    ],
+    "hypotheses": [
+      "H1",
+      "H3 — software vs operator framing wins FR deals"
+    ]
+  }
+}

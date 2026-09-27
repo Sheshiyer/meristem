@@ -1,0 +1,78 @@
+{
+  "skill": "short-form-hook-generator",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "hooks": [
+      {
+        "id": 1,
+        "category": "negative",
+        "hook_text": "Stop splitting your requirement across five vendors.",
+        "visual_action": "Founder closing tabs on laptop one by one, looking frustrated, then a single Thoughtseed tab opens showing the delivery loop",
+        "script": [
+          {"timestamp": "0:00-0:03", "voiceover": "Stop splitting your requirement across five vendors.", "on_screen": "Text overlay: 'Stop splitting your requirement across 5 vendors'"},
+          {"timestamp": "0:03-0:08", "voiceover": "Strategy, design, engineering, ops — none of them share one model of the problem.", "on_screen": "Split screen showing 4 different vendor logos, disconnected"},
+          {"timestamp": "0:08-0:15", "voiceover": "One coherent loop. One team. One handoff. Bring the requirement.", "on_screen": "Single Thoughtseed logo with delivery loop diagram, CTA card"}
+        ],
+        "cta": "Bring the requirement.",
+        "platform_fit": ["tiktok", "reels", "shorts"]
+      },
+      {
+        "id": 2,
+        "category": "curiosity",
+        "hook_text": "The #1 reason systems break at handoff.",
+        "visual_action": "Close-up of a working product on day 1, then a hand reaching for documentation that doesn't exist on day 90",
+        "script": [
+          {"timestamp": "0:00-0:03", "voiceover": "The #1 reason systems break at handoff.", "on_screen": "Text overlay: 'Why systems break at handoff'"},
+          {"timestamp": "0:03-0:08", "voiceover": "It's not the engineering. It's not the design. It's that documentation was the closing footnote, not a deliverable.", "on_screen": "Split screen: working product (left) vs. missing docs (right)"},
+          {"timestamp": "0:08-0:15", "voiceover": "We treat handoff as the first thing we think about. You inherit a system you can run.", "on_screen": "Ownership Transfer Pack: docs + runbook + control surfaces + decision log"}
+        ],
+        "cta": "Bring the requirement.",
+        "platform_fit": ["tiktok", "reels", "shorts"]
+      },
+      {
+        "id": 3,
+        "category": "outcome",
+        "hook_text": "How we ship a coherent system in 4 stages.",
+        "visual_action": "Time-lapse of a workspace: requirement sketch → system design → build → handoff",
+        "script": [
+          {"timestamp": "0:00-0:03", "voiceover": "How we ship a coherent system in 4 stages.", "on_screen": "Text overlay: '4 stages. 1 loop. 1 team.'"},
+          {"timestamp": "0:03-0:08", "voiceover": "Requirement, system, build, handoff. The same team carries it the whole way. Nothing lost between specialists.", "on_screen": "Animated 4-stage diagram: Requirement → System → Build → Handoff"},
+          {"timestamp": "0:08-0:15", "voiceover": "You talk to the operators doing the work. They hand back a system you can own.", "on_screen": "Founder at desk, system artifacts visible, Thoughtseed logo closing"}
+        ],
+        "cta": "Bring the requirement.",
+        "platform_fit": ["tiktok", "reels", "shorts"]
+      },
+      {
+        "id": 4,
+        "category": "visual_oddity",
+        "hook_text": "What is the Digital Wilderness concept?",
+        "visual_action": "Tree growing out of concrete wall — concrete-botanical installation",
+        "script": [
+          {"timestamp": "0:00-0:03", "voiceover": "What is the Digital Wilderness?", "on_screen": "Close-up: tree growing from weathered concrete, moss + ferns"},
+          {"timestamp": "0:03-0:08", "voiceover": "Disciplined engineering meets organic emergence. Architectural precision against cultivated texture.", "on_screen": "Pull back: full concrete-botanical installation"},
+          {"timestamp": "0:08-0:15", "voiceover": "Our visual world — the studio that grows them, not just designs them.", "on_screen": "Thoughtseed logo over installation, 'Digital Wilderness' title"}
+        ],
+        "cta": "Bring the requirement.",
+        "platform_fit": ["tiktok", "reels", "shorts"]
+      },
+      {
+        "id": 5,
+        "category": "negative",
+        "hook_text": "Don't build a system your team can't run.",
+        "visual_action": "Founder in the middle of disconnected vendor calls, hand on forehead",
+        "script": [
+          {"timestamp": "0:00-0:03", "voiceover": "Don't build a system your team can't run.", "on_screen": "Text overlay: 'Build a system your team can run'"},
+          {"timestamp": "0:03-0:08", "voiceover": "A beautiful deck disconnected from shipped reality. A running product no one can extend. A launch day that ends ownership.", "on_screen": "Three fast cuts: deck, broken code, empty handoff folder"},
+          {"timestamp": "0:08-0:15", "voiceover": "We hand back a system with documentation, training, control surfaces — your team can run it without us.", "on_screen": "Ownership Transfer Pack shown: docs + runbook + training + control surfaces"}
+        ],
+        "cta": "Bring the requirement.",
+        "platform_fit": ["tiktok", "reels", "shorts"]
+      }
+    ],
+    "voice_compliance": "PASS — all hooks ground in delivery loop vocabulary, no prohibited terms"
+  }
+}

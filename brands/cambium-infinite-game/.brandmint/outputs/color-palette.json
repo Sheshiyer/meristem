@@ -1,0 +1,110 @@
+{
+  "skill": "color-palette",
+  "cluster": "identity",
+  "wave": 3,
+  "timestamp": "2026-09-27T12:23:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "rationale": {
+      "brand_attributes": ["patient", "rigorous", "alive", "grounded", "warm"],
+      "color_psychology": "Deep lichen green carries continuity, patience, and living systems without the bright eco-tech shorthand. Cambium copper names the growth layer and introduces human warmth. Bone and bark neutrals make the system feel archival and tactile rather than synthetic.",
+      "competitor_differentiation": "The category leans on electric blue, violet gradients, neon accents, and black-glass dashboards. Cambium uses botanical darks, mineral warmth, and paper-like neutrals, so the identity reads as stewardship and instrumentation rather than AI spectacle."
+    },
+    "palette": {
+      "primary": {
+        "hex": "#1F3A2E",
+        "rgb": "31, 58, 46",
+        "hsl": "153, 30%, 17%",
+        "name": "Living Lichen",
+        "usage": "Primary brand field, headlines, navigation, key line work, and the stable outer boundary in diagrams.",
+        "variations": {
+          "50": "#F1F5F2",
+          "100": "#DDE8E1",
+          "200": "#BBD1C2",
+          "300": "#90B29D",
+          "400": "#638C72",
+          "500": "#446D54",
+          "600": "#345743",
+          "700": "#294636",
+          "800": "#1F3A2E",
+          "900": "#172B22"
+        }
+      },
+      "secondary": {
+        "hex": "#B76E3F",
+        "rgb": "183, 110, 63",
+        "hsl": "24, 49%, 48%",
+        "name": "Cambium Copper",
+        "usage": "Human decisions, founder gates, active growth rings, selected states, and small emphasis fields; pair with Ink, never white body text.",
+        "variations": {
+          "50": "#FBF4EF",
+          "100": "#F5E4D8",
+          "200": "#EBC8B0",
+          "300": "#DDA47F",
+          "400": "#CE8058",
+          "500": "#B76E3F",
+          "600": "#985432",
+          "700": "#783F29",
+          "800": "#5E3225",
+          "900": "#4D2A21"
+        }
+      },
+      "accent": {
+        "hex": "#7E9B63",
+        "rgb": "126, 155, 99",
+        "hsl": "91, 22%, 50%",
+        "name": "New Growth",
+        "usage": "Positive viability margin, safe inward trajectories, new evidence, and quiet highlights paired with Ink text."
+      },
+      "semantic": {
+        "success": "#4F7659",
+        "warning": "#C9903D",
+        "error": "#A14F45",
+        "info": "#577682"
+      },
+      "neutrals": {
+        "900": "#17201B",
+        "800": "#263129",
+        "700": "#3B463E",
+        "600": "#59635B",
+        "500": "#788078",
+        "400": "#9BA19A",
+        "300": "#C9B89E",
+        "200": "#DED2BF",
+        "100": "#ECE4D7",
+        "50": "#F4EFE3"
+      }
+    },
+    "accessibility": {
+      "contrast_checks": [
+        {"foreground": "#1F3A2E", "background": "#F4EFE3", "ratio": "10.75:1", "wcag_aa": true, "wcag_aaa": true},
+        {"foreground": "#17201B", "background": "#F4EFE3", "ratio": "14.54:1", "wcag_aa": true, "wcag_aaa": true},
+        {"foreground": "#F4EFE3", "background": "#1F3A2E", "ratio": "10.75:1", "wcag_aa": true, "wcag_aaa": true},
+        {"foreground": "#17201B", "background": "#C9B89E", "ratio": "8.61:1", "wcag_aa": true, "wcag_aaa": true},
+        {"foreground": "#17201B", "background": "#7E9B63", "ratio": "5.37:1", "wcag_aa": true, "wcag_aaa": false}
+      ],
+      "restricted_pairs": [
+        "Do not use white text on Cambium Copper; measured contrast is 3.95:1.",
+        "Do not use white text on New Growth; measured contrast is 3.11:1."
+      ]
+    },
+    "usage_guidelines": {
+      "primary": {
+        "do": ["Use as the dominant field or the darkest structural line.", "Pair with Bone for long-form reading.", "Let large dark areas breathe with generous margins."],
+        "dont": ["Do not turn it into a generic sustainability claim.", "Do not combine with neon green.", "Do not use every green variation in one surface."]
+      },
+      "secondary": {
+        "do": ["Reserve for human choice and living growth.", "Use Ink for text on copper fields.", "Keep copper under roughly fifteen percent of a composition."],
+        "dont": ["Do not use as an error state.", "Do not set small white type on it.", "Do not render it as glossy metallic chrome."]
+      }
+    },
+    "css_tokens": {
+      "--cambium-living-lichen": "#1F3A2E",
+      "--cambium-copper": "#B76E3F",
+      "--cambium-new-growth": "#7E9B63",
+      "--cambium-ink": "#17201B",
+      "--cambium-bone": "#F4EFE3"
+    }
+  }
+}

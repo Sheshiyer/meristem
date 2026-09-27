@@ -1,0 +1,155 @@
+{
+  "skill": "lifestyle-photography",
+  "cluster": "photography",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 4,
+  "data": {
+    "art_direction": {
+      "summary": "Documentary lifestyle of Marie Durand-class ops: FR CEE back-office mornings, compliance huddles, quiet focus — not lifestyle consumer ads.",
+      "photography_style": "editorial documentary",
+      "palette_hex": [
+        "#2EE600",
+        "#1C1917",
+        "#FAFAF9",
+        "#78716C"
+      ]
+    },
+    "subject_direction": {
+      "demographics": "French operations / compliance professionals, approx. 28–50, mid-market energy services or délégataire orgs (50–500 employees)",
+      "style": "Business-casual FR office: muted neutrals, no loud logos; natural hair/makeup; glasses ok",
+      "expression": "Focused, calm, competent — never exaggerated smile or stock celebration",
+      "diversity_notes": "Reflect contemporary French workplace diversity; avoid token staging",
+      "avoid": "Hard hats as primary motif, construction-site clichés, consumer renovation influencers"
+    },
+    "scenarios": [
+      {
+        "id": "LS-01",
+        "name": "Morning dossier triage",
+        "setting": "FR open-plan ops desk",
+        "activity": "Sorting CEE dossier folders before validation",
+        "mood": "Quiet focus",
+        "key_message": "Pre-submission care reduces avoidable document risk"
+      },
+      {
+        "id": "LS-02",
+        "name": "Cross-check moment",
+        "setting": "Dual-monitor workstation",
+        "activity": "Comparing fields across supporting documents",
+        "mood": "Precision",
+        "key_message": "Cross-document consistency is the job"
+      },
+      {
+        "id": "LS-03",
+        "name": "Compliance huddle",
+        "setting": "Glass meeting room",
+        "activity": "Ops manager and compliance officer review exception queue",
+        "mood": "Collaborative authority",
+        "key_message": "Audit-ready conversations, not fire drills"
+      },
+      {
+        "id": "LS-04",
+        "name": "Peak-season calm",
+        "setting": "Busy but orderly back-office",
+        "activity": "Team working without visible chaos",
+        "mood": "Controlled scale",
+        "key_message": "Volume without proportional panic"
+      },
+      {
+        "id": "LS-05",
+        "name": "Training new operator",
+        "setting": "Side-by-side desks",
+        "activity": "Senior operator onboarding junior on programme rules",
+        "mood": "Mentorship",
+        "key_message": "Programme rules change; tools should shorten ramp"
+      },
+      {
+        "id": "LS-06",
+        "name": "Obligé / délégataire call",
+        "setting": "Headset at desk, dossier open",
+        "activity": "Clarifying roles on a dossier handoff",
+        "mood": "Professional clarity",
+        "key_message": "Role-accurate language builds trust"
+      }
+    ],
+    "shot_list": [
+      {
+        "id": "LS-01-A",
+        "scenario": "LS-01",
+        "angle": "over-shoulder 3/4",
+        "crop": "medium",
+        "aspect_ratio": "4:5",
+        "priority": "high",
+        "generation_prompt": "Documentary lifestyle photo, French energy-subsidy ops desk morning. Woman ops manager sorting blank dossier folders, soft window light, muted wardrobe, dual monitors blurred. Editorial, precise, no celebration. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/ls-01-morning-triage.png"
+      },
+      {
+        "id": "LS-02-A",
+        "scenario": "LS-02",
+        "angle": "side profile",
+        "crop": "tight desk",
+        "aspect_ratio": "16:9",
+        "priority": "high",
+        "generation_prompt": "Side view of compliance operator at dual monitors comparing paper dossier to screen, French office, stone palette, one green status LED. Shallow DOF. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/ls-02-crosscheck.png"
+      },
+      {
+        "id": "LS-03-A",
+        "scenario": "LS-03",
+        "angle": "through glass",
+        "crop": "wide",
+        "aspect_ratio": "16:9",
+        "priority": "medium",
+        "generation_prompt": "Through frosted glass: two French professionals reviewing tablet and paper in meeting room, calm body language, dossier on table, editorial documentary. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/ls-03-huddle.png"
+      },
+      {
+        "id": "LS-04-A",
+        "scenario": "LS-04",
+        "angle": "elevated wide",
+        "crop": "establishing",
+        "aspect_ratio": "16:9",
+        "priority": "medium",
+        "generation_prompt": "Elevated wide shot of orderly French back-office during busy period, people at desks with dossiers, no chaos, muted tones, one green accent lamp. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/ls-04-peak.png"
+      },
+      {
+        "id": "LS-05-A",
+        "scenario": "LS-05",
+        "angle": "eye-level pair",
+        "crop": "medium",
+        "aspect_ratio": "4:5",
+        "priority": "medium",
+        "generation_prompt": "Senior and junior operators side-by-side at desks reviewing blank programme fiche printout (unreadable), mentoring gesture, French office daylight. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/ls-05-training.png"
+      },
+      {
+        "id": "LS-06-A",
+        "scenario": "LS-06",
+        "angle": "front 3/4",
+        "crop": "portrait desk",
+        "aspect_ratio": "1:1",
+        "priority": "low",
+        "generation_prompt": "Ops professional on headset with open dossier, calm expression, French B2B office, LinkedIn-ready square crop. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "generated_path": "./generated/ls-06-call.png"
+      }
+    ],
+    "quality_gates": {
+      "scenarios_count": 6,
+      "fr_persona_aligned": true,
+      "no_en_text_in_prompts": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total_shots": 6,
+      "generated": 0,
+      "pending": 6
+    },
+    "ledger_refs": [
+      "P5",
+      "F4",
+      "hypothesis-1"
+    ]
+  }
+}

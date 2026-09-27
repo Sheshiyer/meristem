@@ -1,0 +1,131 @@
+{
+  "skill": "messaging-framework",
+  "cluster": "strategy",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 2,
+  "data": {
+    "evidence_scope": "Tagline and descriptor from brand-config; channel plan for distribution; ledger for claim boundaries.",
+    "brand_promise_fr": "Un signal de validation documentaire explicable avant le dépôt des dossiers CEE / Primes Énergie.",
+    "brand_promise_en": "An explainable document-validation signal before CEE / Primes Énergie dossiers are submitted.",
+    "headline_fr": "Arrêtez de perdre des claims pour des erreurs documentaires évitables.",
+    "headline_en": "Stop losing subsidy claims to avoidable document errors.",
+    "tagline": {
+      "selected": "Stop losing subsidy claims to avoidable document errors.",
+      "selected_fr": "Ne perdez plus de subventions pour des erreurs documentaires évitables.",
+      "type": "problem-outcome descriptive",
+      "public_descriptor": "AI document validation for energy subsidy operators",
+      "alternatives_fr": [
+        "Validation documentaire avant dépôt — CEE / Primes Énergie",
+        "Le contrôle pré-soumission pour back-offices CEE",
+        "Règles programme. Cohérence cross-document. Piste d'audit."
+      ],
+      "alternatives_en": [
+        "Pre-submission validation for energy subsidy dossiers",
+        "Programme rules. Cross-document checks. Audit trails.",
+        "RegTech validation for CEE operators"
+      ]
+    },
+    "value_proposition": "iverif is AI document validation for energy subsidy operators — FR GTM centres on CEE / Primes Énergie with managed programme configuration and audit trails; not generic OCR, not storage-only DMS, not a primes marketplace.",
+    "elevator_pitch": {
+      "full_fr": "Les opérateurs CEE et délégataires perdent encore des valorisations à cause d'erreurs documentaires détectées trop tard. iverif est une plateforme de validation AI pré-dépôt : règles programme, contrôles de cohérence entre pièces, journaux d'audit. Contrairement à Hellio ou Effy, nous ne distribuons pas de primes ; contrairement à l'OCR générique, nous ancrons les contrôles dans les règles du dispositif. Démo et preuves produit sur iverif.fr — les métriques d'outcome restent à mesurer chez chaque client.",
+      "full_en": "CEE operators and délégataires still lose subsidy value to document errors found too late. iverif is an AI pre-submission validation platform: programme rules, cross-document consistency checks, audit logs. Unlike Hellio or Effy, we do not distribute primes; unlike generic OCR, we anchor checks in scheme rules. Product proof lives on iverif.fr — outcome metrics must be measured per customer.",
+      "components": {
+        "problem": "Avoidable document errors put subsidy claims at risk",
+        "solution": "AI validation against programme-specific rules before submission",
+        "differentiator": "Pre-configured programme rules + managed onboarding + audit trails; software not primes operator",
+        "proof": "Existing brand/product assets and domains (F1, F3); no public rejection-rate claim"
+      }
+    },
+    "key_messages": [
+      {
+        "pillar": "Pré-dépôt / Pre-submission",
+        "headline_fr": "Contrôlez avant de déposer",
+        "headline_en": "Validate before you submit",
+        "proof_points": [
+          "Cross-document consistency intent",
+          "Do not publish unverified rejection %"
+        ]
+      },
+      {
+        "pillar": "Règles programme / Programme rules",
+        "headline_fr": "Ancré dans le CEE et les fiches — pas un OCR générique",
+        "headline_en": "Anchored in CEE and fiches — not generic OCR",
+        "proof_points": [
+          "P1–P3 programme facts as context",
+          "F2 programme list as scope intent"
+        ]
+      },
+      {
+        "pillar": "Rôles clairs / Role clarity",
+        "headline_fr": "Logiciel pour back-office — ni obligé, ni délégataire",
+        "headline_en": "Back-office software — neither obligé nor délégataire",
+        "proof_points": [
+          "P5 role definitions",
+          "H2/H3 differentiation vs Hellio/Effy"
+        ]
+      },
+      {
+        "pillar": "Audit trail",
+        "headline_fr": "Montrez ce qui a été vérifié",
+        "headline_en": "Show what was checked",
+        "proof_points": [
+          "Timestamped validation logs as product intent",
+          "No GDPR/EU-host claim without audited receipt"
+        ]
+      }
+    ],
+    "audience_message_map": [
+      {
+        "audience": "Marie Durand / Responsable Back-Office CEE",
+        "message_fr": "Moins de reprises post-dépôt, plus de clarté pour votre équipe.",
+        "channel": "linkedin_fr"
+      },
+      {
+        "audience": "Compliance / Qualité CEE",
+        "message_fr": "Une piste exploitable quand la revue arrive.",
+        "channel": "linkedin_fr / pncee_context"
+      },
+      {
+        "audience": "COMEX energy services",
+        "message_fr": "Industrialiser le contrôle documentaire sans se transformer en éditeur de règles maison.",
+        "channel": "les_echos / jdn"
+      }
+    ],
+    "proof_points": {
+      "statistics": [],
+      "testimonials": [],
+      "credentials": [
+        "Brand domains iverif.fr / iverif.io (F1)",
+        "User-provided product/visual assets (F3)"
+      ],
+      "demonstrations": [
+        "Hero / product screenshot assets",
+        "Managed onboarding narrative (intent)"
+      ],
+      "guarantees": [],
+      "prohibited_until_proved": [
+        "Rejection-rate reduction figures",
+        "30 seconds per dossier",
+        "Go-live in 5–7 days as guarantee",
+        "Obligé/délégataire/government affiliation",
+        "Competitor euro primes amounts",
+        "~2M CEE ops / 15–20% rejection as public market stats without dated primary source",
+        "Unaudited GDPR / EU-hosted assurances"
+      ]
+    },
+    "channel_hooks_fr": {
+      "linkedin_fr": "Hook dossier-pain + titres Responsable Back-Office CEE / Chef de projet CEE",
+      "jdn": "Angle RegTech / validation documentaire subventions — sans accuracy claims non reçus",
+      "les_echos": "Cadre marché CEE + logiciel B2B factuel",
+      "pncee": "Glossaire et pédagogie — jamais endorsement",
+      "welcome_to_the_jungle": "Employer brand: moins de burnout de pic lié aux reprises documentaires (direction, pas métrique)"
+    },
+    "hypotheses": [
+      "H1 FR accuracy lead",
+      "H2 role-clarity trust",
+      "H3 software-vs-operator framing"
+    ]
+  }
+}

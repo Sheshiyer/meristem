@@ -1,0 +1,49 @@
+{
+  "skill": "lifestyle-photography",
+  "cluster": "photography",
+  "wave": 4,
+  "timestamp": "2026-09-27T12:42:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "scenarios": [
+      {"id": "LS-01", "name": "One consequential choice", "setting": "home studio at a garden threshold", "activity": "a solo founder reviews a paper field notebook beside a closed laptop", "mood": "calm stewardship", "key_message": "The founder governs consequence instead of supervising constant activity."},
+      {"id": "LS-02", "name": "Many gardens", "setting": "quiet studio archive", "activity": "a portfolio operator compares three distinct venture folios", "mood": "patient overview", "key_message": "One operator can preserve the distinct identity and viability of several ventures."}
+    ],
+    "subject_direction": {
+      "demographics": "Realistic adult founders and operators across genders, skin tones, ages 30–55, and small-business disciplines; never a homogeneous executive cast.",
+      "style": "Everyday natural materials, functional clothing, no conspicuous luxury or startup-uniform cosplay.",
+      "expression": "Attentive, reflective, or quietly relieved; no exaggerated excitement or fear.",
+      "diversity_notes": "Diversity should appear as ordinary reality, not a staged group shot. Preserve dignity, realistic skin texture, and non-tokenizing context."
+    },
+    "shot_list": [
+      {
+        "id": "lifestyle-founder-steward-v1",
+        "scenario": "One consequential choice",
+        "angle": "eye-level environmental portrait",
+        "crop": "medium-wide horizontal, hands visible",
+        "aspect_ratio": "3:2",
+        "priority": "high",
+        "generation_prompt": "Candid documentary photograph of a South Asian solo founder in their late 30s reviewing a paper field notebook at a simple worktable beside an open garden door; closed laptop and brass circular instrument nearby; right-third placement, soft left negative space, overcast daylight, calm stewardship, no legible data or AI clichés.",
+        "generated_path": "./generated/lifestyle-founder-steward-v1.png",
+        "sha256": "1249e4cef342f02a7c6e1f5bdc8caf762a05180c3692cf6934d033737b808c83",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative — generated brand expression, not customer evidence"
+      },
+      {
+        "id": "lifestyle-portfolio-steward-v1",
+        "scenario": "Many gardens",
+        "angle": "slightly elevated environmental portrait",
+        "crop": "wide horizontal with folios leading into depth",
+        "aspect_ratio": "3:2",
+        "priority": "medium",
+        "generation_prompt": "Candid editorial photograph of a Black woman portfolio operator in her early 40s reviewing three distinct open project folios on a long wooden studio table; one copper marker, natural maps and swatches, skylight, calm overview, no screens as hero, no legible text or corporate staging.",
+        "generated_path": "./generated/lifestyle-portfolio-steward-v1.png",
+        "sha256": "a517cea6d7d85e9c1c12286379cd97fd493054cd959b09436e4e5b48a9b7d687",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative — generated brand expression, not customer evidence"
+      }
+    ],
+    "generation_summary": {"total_shots": 2, "generated": 2, "pending": 0, "engine": "Codex built-in image generation", "api_credits_used": false}
+  }
+}

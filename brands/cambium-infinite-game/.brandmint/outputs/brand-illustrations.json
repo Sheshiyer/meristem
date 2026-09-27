@@ -1,0 +1,47 @@
+{
+  "skill": "brand-illustrations",
+  "cluster": "illustration",
+  "wave": 5,
+  "timestamp": "2026-09-27T12:58:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "style_codification": {
+      "line_work": {"weight": "variable 1.5–3px equivalent", "style": "organic field-guide contours disciplined by instrument precision", "color": "#1F3A2E"},
+      "fill_style": "very light flat New Growth washes with untouched Bone negative space; no gradients",
+      "color_palette": ["#1F3A2E", "#7E9B63", "#B76E3F", "#F4EFE3"],
+      "detail_level": "medium: one focal metaphor with three to seven supporting structures",
+      "perspective": "orthographic or gently elevated field-guide view; no dramatic cinematic foreshortening"
+    },
+    "illustrations": [
+      {
+        "id": "illustration-one-operator-many-gardens-v1",
+        "type": "hero",
+        "subject": "one steward and four bounded gardens inside a living viable region",
+        "concept": "The infinite operator holds continuity while each finite garden can rest.",
+        "usage": "brand report opener, landing-page principles section, NotebookLM visual catalog",
+        "aspect_ratio": "3:2",
+        "generation_prompt": "Precise living-systems field-guide plate of one calm steward at a copper gate outside four distinct small garden plots, all inside one irregular viable region connected by growth-ring contours; lichen ink, new-growth fills, bone paper, no labels or AI clichés.",
+        "generated_path": "./generated/illustration-one-operator-many-gardens-v1.png",
+        "sha256": "0f77e1d361c9f09b8e1ba1a00b95a1669896afd7521ce0544423266be96ce573",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative — generated brand expression, not product proof"
+      },
+      {
+        "id": "illustration-finite-instruments-v1",
+        "type": "spot",
+        "subject": "four resting specialist instruments inside one larger living ring",
+        "concept": "Seed press, tuning fork, hand tool, and lantern represent finite genesis, taste, hands, and signal games coordinated by one operator.",
+        "usage": "architecture explainer, social education, doctrine margin art",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Square editorial ink drawing of four self-contained instruments at rest inside their own quiet circles, joined within one larger living ring and one copper gate; field-guide restraint, no text, arrows, infinity sign, robots, or game imagery.",
+        "generated_path": "./generated/illustration-finite-instruments-v1.png",
+        "sha256": "24a7ca362a4345630b5ba18c8bcab578a1fbceb780e6d5fb1bb2e7d19263ea81",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative — generated brand expression, not system diagram"
+      }
+    ],
+    "consistency_verified": true,
+    "generation_summary": {"total": 2, "generated": 2, "pending": 0, "engine": "Codex built-in image generation", "api_credits_used": false}
+  }
+}

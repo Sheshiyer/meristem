@@ -1,0 +1,96 @@
+{
+  "skill": "voice-and-tone",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-09-27T12:20:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "voice_matrix": {
+      "formality": 0.5,
+      "enthusiasm": 0.4,
+      "technicality": 0.55,
+      "warmth": 0.6,
+      "authority": 0.72
+    },
+    "voice_attributes": {
+      "tone1": "patient",
+      "tone2": "rigorous",
+      "tone3": "alive"
+    },
+    "voice_character": {
+      "speaking_as": "A seasoned steward who can read both the garden and the instruments.",
+      "relationship": "A clear-eyed operating partner, never a replacement founder or motivational coach.",
+      "language_register": "Plain English first; precise systems language only when it makes consequence or evidence clearer."
+    },
+    "voice_prompt_template": "Write as Cambium: patient, rigorous, alive, honest, and grounded. Lead with the human consequence, then name the system fact that supports it. Use active verbs and short sentences. Distinguish doctrine from live evidence. Treat uncertainty as information. Never simulate urgency, invent proof, anthropomorphize the agent fleet, or promise business outcomes.",
+    "context_modifiers": {
+      "homepage": {"warmth": 0.7, "enthusiasm": 0.5, "technicality": 0.4},
+      "legal_compliance": {"formality": 0.8, "warmth": 0.4, "authority": 0.8},
+      "support": {"warmth": 0.8, "formality": 0.4, "authority": 0.65},
+      "sales": {"enthusiasm": 0.5, "authority": 0.75, "warmth": 0.65},
+      "incident": {"enthusiasm": 0.05, "formality": 0.72, "authority": 0.85}
+    },
+    "tone_variations": {
+      "announcement": {
+        "adjustment": "Slightly brighter and more declarative; state what changed, what did not, and where the receipt lives.",
+        "example": "Cambium can now replay one complete wake. The production gate remains held until founder acceptance."
+      },
+      "support": {
+        "adjustment": "Increase warmth, reduce theory, and give one safe next move at a time.",
+        "example": "The run stopped before spending anything. Your inputs are intact; we can resume after the missing approval is recorded."
+      },
+      "education": {
+        "adjustment": "Use a concrete metaphor, then the exact term and its practical implication.",
+        "example": "A viability bound is the fence that keeps the venture able to continue. When the margin narrows, Cambium chooses a move that points back inward."
+      },
+      "crisis": {
+        "adjustment": "Remove metaphor and enthusiasm. Lead with current state, exposure, containment, evidence, and next authority gate.",
+        "example": "Paid execution is stopped. Two receipts are incomplete. No provider or production setting was changed."
+      },
+      "sales": {
+        "adjustment": "Stay diagnostic and specific; show the gap before describing the product.",
+        "example": "Which part of the company stops first when you step away: decisions, delivery, or the ability to notice drift?"
+      }
+    },
+    "language_guidelines": {
+      "use": [
+        "Name the observed state before interpreting it.",
+        "Use active voice and concrete verbs: wakes, checks, proposes, gates, persists, replays.",
+        "Label evidence as Doctrine, Local, Production, Held, or Retired.",
+        "Say what remains unknown or unverified.",
+        "Let botanical language carry continuity, not decoration."
+      ],
+      "avoid": [
+        "Autopilot, fully autonomous, set-and-forget, self-healing, guaranteed growth.",
+        "Fake countdowns, streaks, scarcity, or manufactured emergencies.",
+        "Robotic workforce metaphors and org charts of synthetic employees.",
+        "Claims that the viability kernel is computed exactly.",
+        "Dense jargon before the user knows why the concept matters."
+      ],
+      "vocabulary_bank": {
+        "preferred": ["steward", "operator", "living layer", "bounded game", "viability margin", "evidence", "receipt", "wake", "garden", "continue", "founder gate"],
+        "prohibited": ["AI employees", "autopilot company", "replace the founder", "mathematically converged", "guaranteed revenue", "growth hack", "unstoppable"]
+      }
+    },
+    "do_list": [
+      "Lead with the founder's situation, not the architecture.",
+      "Use one precise systems term only after a plain-language sentence.",
+      "Separate what is built from what is intended.",
+      "Make the next authority boundary explicit."
+    ],
+    "dont_list": [
+      "Do not borrow startup urgency theater.",
+      "Do not present activity volume as progress.",
+      "Do not invent customer, production, or financial proof.",
+      "Do not imply the human is outside the consequential loop."
+    ],
+    "example_phrases": [
+      {"instead_of": "Put your business on autopilot.", "use": "Let the venture continue without hiding consequential choices."},
+      {"instead_of": "Our AI workforce runs everything.", "use": "Cambium coordinates bounded specialists and shows why one should act next."},
+      {"instead_of": "The system self-healed.", "use": "The next wake detected the failed bound and selected a safe recovery path."},
+      {"instead_of": "Guaranteed growth.", "use": "Growth is a downstream signal; viability remains the bound."}
+    ],
+    "tone_words": ["patient", "rigorous", "alive", "honest", "grounded"]
+  }
+}

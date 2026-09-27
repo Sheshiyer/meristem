@@ -1,0 +1,57 @@
+{
+  "skill": "deliverables-package",
+  "cluster": "synthesis",
+  "timestamp": "2026-09-11T16:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 7,
+  "data": {
+    "brand": "iverif",
+    "gtm_tag": "FR GTM",
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "defaultLocale": "fr",
+    "package_info": {
+      "name": "iverif-fr-gtm-brand-package",
+      "path": "deliverables/iverif-fr-gtm-brand-package/",
+      "created": "2026-09-11T16:00:00Z",
+      "brandmint_version": "2.0.0",
+      "package_version": "1.0.0",
+      "zip_both_locales": true
+    },
+    "asset_manifest": {
+      "loaded": true,
+      "valid": true,
+      "manifest_source": ".brandmint/asset-manifest.json",
+      "user_provided_assets": 3,
+      "generated_assets": 0,
+      "all_paths_verified": true,
+      "assets": [
+        "assets/logo-icon.png",
+        "assets/og-image.png",
+        "assets/screenshot-hero.png"
+      ]
+    },
+    "package_inventory": {
+      "foundation": "wave 1 receipts (persona, competitors, voice, positioning, messaging, foundation)",
+      "identity": "wave 2 receipts (color, type, logo, visual language)",
+      "photography": "wave 3 receipts (reuse + user assets)",
+      "illustration": "wave 4 receipts",
+      "content": "wave 5–6 bilingual content + social ops",
+      "synthesis": "5 wave-7 receipts",
+      "wiki": "Starlight en+fr trees + MDS + DOWNSTREAM-HANDOFF + compat docs/",
+      "notebooklm": "deliverables/notebooklm/sources/{en,fr}/"
+    },
+    "included_assets": "Existing product-owned logo-icon, og-image, screenshot-hero only (user_provided).",
+    "excluded": [
+      "Generated visual campaign regenerations of user assets",
+      "Public deployment bundle",
+      "Live media buys / Explee POSTs",
+      "Cambium runtime mutation (out of scope for this worktree task)"
+    ],
+    "handoff": "wiki/DOWNSTREAM-HANDOFF.md",
+    "publication_status": "Internal package inventory complete; zip assembly deferred to bm.sh / coordinator."
+  }
+}

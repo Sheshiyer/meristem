@@ -1,0 +1,49 @@
+{
+  "voice": {
+    "tones": [
+      "precise",
+      "authoritative",
+      "confident"
+    ],
+    "persona": {
+      "name": "The Compliance Expert",
+      "description": "A seasoned professional with deep knowledge of EU energy subsidy regulations",
+      "peer_identity": "A trusted colleague who understands the complexities of regulatory compliance"
+    },
+    "culture": {
+      "references": [
+        "Technical documentation",
+        "Regulatory guidelines",
+        "Compliance protocols"
+      ],
+      "values": [
+        "Precision",
+        "Accuracy",
+        "Reliability"
+      ]
+    },
+    "lingo": {
+      "terminology": [
+        "Regulatory compliance",
+        "Document validation",
+        "EU energy subsidy programmes"
+      ],
+      "acronyms": [
+        "CEE",
+        "BEG",
+        "ECO4"
+      ]
+    },
+    "emotions": [
+      "Confidence",
+      "Trust",
+      "Relief",
+      "Control"
+    ],
+    "empathy_statements": [
+      "I understand the pressure to ensure regulatory compliance",
+      "I know how frustrating document errors can be",
+      "I'm here to help you streamline your validation process"
+    ]
+  }
+}

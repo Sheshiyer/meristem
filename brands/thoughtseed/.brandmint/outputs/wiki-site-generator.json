@@ -2,303 +2,39 @@
   "skill": "wiki-site-generator",
   "cluster": "synthesis",
   "wave": 7,
-  "timestamp": "2026-06-08T06:10:00Z",
+  "timestamp": "2026-08-22T07:30:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "artifact_kind": "specification",
-    "brand": "Thoughtseed",
-    "manifest_source": ".brandmint/asset-manifest.json",
-    "site_config": {
-      "framework": "astro",
-      "template": "starlight",
-      "theme": "editorial",
-      "theme_description": "A matte, signal-rich editorial documentation theme — NOT glossy. Dark-first cool canvas (#0A0E14) with the deep-blue anchor (#1A237E), cool blue-gray scaffolding (#37474F), a teal (#00897B) working signal, and the orange (#F57C00) reserved for the single primary action. Depth comes from material, contrast, and negative space, never from gloss, glassmorphism, or drop-shadows. Reads like an engineering-grade publication.",
-      "theme_tokens": {
-        "canvas_dark": "#0A0E14",
-        "anchor": "#1A237E",
-        "scaffolding": "#37474F",
-        "signal_teal": "#00897B",
-        "ignition_orange_cta_only": "#F57C00",
-        "positive_green": "#B8E986",
-        "cta_label_rule": "Orange CTA buttons MUST use deep-blue (#1A237E) label text, never white (white-on-orange fails at 2.70:1).",
-        "font_display": "Tyros Pro (thresholds only)",
-        "font_body": "SubjectivitySerif (reading voice, 16px/1.625)",
-        "font_mono": "Fira Code (labels, metadata, section numbering)",
-        "color_label_rule": "Internal palette names are never surfaced in any page text, nav label, or UI string."
+    "theme": "editorial",
+    "navigation_structure": {
+      "home": {
+        "title": "Thoughtseed",
+        "sections": ["Hero", "Brand Statement", "Service Modules", "Visual Language", "CTA"]
       },
-      "appearance_rules": [
-        "Dark-first by default; light surfaces only for long-form reading pages and print.",
-        "One display moment per view; let negative space amplify.",
-        "Mono layer carries section numbering and metadata so the system always shows its engineering substrate.",
-        "Signal colors stay scarce; never flood teal, orange, or green.",
-        "No gloss, no glassmorphism, no drop-shadow depth — material and contrast only."
-      ]
-    },
-    "asset_handling": {
-      "manifest_loaded": true,
-      "manifest_valid": true,
-      "copy_policy": "Only assets present in asset-manifest.json are copied to /public/images/; every source path is verified to exist before copy. No blind cp.",
-      "assets_to_copy": {
-        "total": 20,
-        "user_provided": 4,
-        "generated": 16,
-        "deterministic": 4
+      "brand": {
+        "title": "Brand",
+        "sections": ["Identity", "Visual Language", "Logo System", "Typography", "Color Palette"]
       },
-      "image_destination_mapping": {
-        "logo": "/images/logo/",
-        "logo-icon": "/images/logo/",
-        "reference": "/images/logo/reference/",
-        "hero": "/images/hero/",
-        "lifestyle": "/images/photography/",
-        "product": "/images/product/",
-        "illustration": "/images/illustrations/",
-        "icons": "/images/illustrations/",
-        "moodboard": "/images/illustrations/",
-        "pattern": "/images/patterns/",
-        "social": "/images/social/"
+      "product": {
+        "title": "Product",
+        "sections": ["Service Modules", "Engagement Models", "Studio-Plus-IP", "Ownership Transfer Pack"]
       },
-      "copy_verification": {
-        "all_sources_exist": true,
-        "all_copies_planned": true,
-        "missing_sources": []
+      "marketing": {
+        "title": "Marketing",
+        "sections": ["Campaign Architecture", "Asset Inventory", "Social Media", "Compliance"]
       }
     },
-    "site_structure": {
-      "nav": [
-        {
-          "group": "About",
-          "items": [
-            { "label": "Overview", "path": "/about" },
-            { "label": "Story", "path": "/about/story" },
-            { "label": "Values", "path": "/about/values" }
-          ]
-        },
-        {
-          "group": "Identity",
-          "items": [
-            { "label": "Logo", "path": "/identity/logo" },
-            { "label": "Colors", "path": "/identity/colors" },
-            { "label": "Typography", "path": "/identity/typography" },
-            { "label": "Visual Style", "path": "/identity/visual-style" }
-          ]
-        },
-        {
-          "group": "Positioning",
-          "items": [
-            { "label": "Value Proposition", "path": "/positioning/value" },
-            { "label": "Audience", "path": "/positioning/audience" },
-            { "label": "Competitive Frame", "path": "/positioning/competitive" }
-          ]
-        },
-        {
-          "group": "Voice & Messaging",
-          "items": [
-            { "label": "Voice Guidelines", "path": "/voice/guidelines" },
-            { "label": "Messaging Pillars", "path": "/messaging/pillars" }
-          ]
-        },
-        {
-          "group": "Product",
-          "items": [
-            { "label": "Thoughtseed Studio", "path": "/product/overview" }
-          ]
-        },
-        {
-          "group": "Assets",
-          "items": [
-            { "label": "Asset Inventory", "path": "/assets/inventory" },
-            { "label": "Downloads", "path": "/assets/downloads" }
-          ]
-        }
-      ],
-      "pages": [
-        {
-          "path": "/about",
-          "title": "Overview",
-          "source_skills": ["brand-foundation"],
-          "content_summary": "Founder-led systems studio; essence coherent systems, cultivated; mission, vision, and the Sage-with-a-Creator's-hands personality. Visible effects only.",
-          "assets_referenced": [
-            { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided" },
-            { "id": "hero-02-establishing", "path": "./generated/hero-02-establishing.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/about/story",
-          "title": "Story",
-          "source_skills": ["brand-story"],
-          "content_summary": "Planted in 2020 from the observation that the problems worth solving were never single-discipline problems; fragmentation answered by one delivery loop; Digital Wilderness.",
-          "assets_referenced": [
-            { "id": "hero-01-digital-wilderness", "path": "./generated/hero-01-digital-wilderness.png", "origin": "generated" },
-            { "id": "lifestyle-02-studio", "path": "./generated/lifestyle-02-studio.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/about/values",
-          "title": "Values",
-          "source_skills": ["brand-foundation"],
-          "content_summary": "Clarity over theater, cross-disciplinary rigor, delivery integrity, accountable handoff, selective focus — each with what it looks like in practice.",
-          "assets_referenced": []
-        },
-        {
-          "path": "/identity/logo",
-          "title": "Logo",
-          "source_skills": ["logo-concept"],
-          "content_summary": "Two canonical marks used as a system; monochrome rule; clear space; minimum sizes; substitution rule; generated seal art is reference only, never a mark.",
-          "assets_referenced": [
-            { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided" },
-            { "id": "logo-tree-mark", "path": "./assets/thoughtseed-tree-mark-black-3x.png", "origin": "user_provided" },
-            { "id": "logo-reference-01", "path": "./assets/thoughtseed-logo-reference-01.jpg", "origin": "user_provided" },
-            { "id": "logo-reference-02", "path": "./assets/thoughtseed-logo-reference-02.jpg", "origin": "user_provided" }
-          ]
-        },
-        {
-          "path": "/identity/colors",
-          "title": "Colors",
-          "source_skills": ["color-palette"],
-          "content_summary": "Dark-first cool palette by hex and role; 60/25/10/5 distribution; the deep-blue-on-orange CTA contrast rule; purple-SaaS avoid. Internal color names omitted from page text.",
-          "assets_referenced": [
-            { "id": "pattern-01-dark", "path": "./generated/pattern-01-dark.png", "origin": "generated" },
-            { "id": "pattern-02-light", "path": "./generated/pattern-02-light.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/identity/typography",
-          "title": "Typography",
-          "source_skills": ["typography"],
-          "content_summary": "Three-role system: Tyros Pro display, SubjectivitySerif body, Fira Code data layer; 1.25 scale; restraint by role separation; self-host strategy.",
-          "assets_referenced": []
-        },
-        {
-          "path": "/identity/visual-style",
-          "title": "Visual Style",
-          "source_skills": ["visual-language"],
-          "content_summary": "Digital Wilderness principles; materials; editorial-documentary photography; geometric-organic illustration; icons, patterns; forbidden visuals.",
-          "assets_referenced": [
-            { "id": "visual-language-board", "path": "./generated/visual-language-board.png", "origin": "generated" },
-            { "id": "illus-01-systems-organism", "path": "./generated/illus-01-systems-organism.png", "origin": "generated" },
-            { "id": "illus-02-delivery-loop", "path": "./generated/illus-02-delivery-loop.png", "origin": "generated" },
-            { "id": "icons-01-sheet", "path": "./generated/icons-01-sheet.png", "origin": "generated" },
-            { "id": "lifestyle-01-worktable", "path": "./generated/lifestyle-01-worktable.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/positioning/value",
-          "title": "Value Proposition",
-          "source_skills": ["value-proposition"],
-          "content_summary": "One studio carries the requirement to a system you own; primary value of a single accountable owner of coherence; pain-to-gain motion; table stakes assumed.",
-          "assets_referenced": [
-            { "id": "product-01-system-artifacts", "path": "./generated/product-01-system-artifacts.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/positioning/audience",
-          "title": "Audience",
-          "source_skills": ["buyer-persona"],
-          "content_summary": "Mira, the System-Carrying Founder — profile, values, jobs to be done, and what she notices and respects.",
-          "assets_referenced": []
-        },
-        {
-          "path": "/positioning/competitive",
-          "title": "Competitive Frame",
-          "source_skills": ["competitor-analysis", "product-positioning"],
-          "content_summary": "Five single-slice alternatives and their translation-loss dependency; the ownable territory of editorial precision with operating clarity; the founder-led unfair advantage.",
-          "assets_referenced": []
-        },
-        {
-          "path": "/voice/guidelines",
-          "title": "Voice Guidelines",
-          "source_skills": ["voice-and-tone"],
-          "content_summary": "Founder-side systems translator voice; preferred vocabulary; prohibited terms; layer discipline; do/don't examples.",
-          "assets_referenced": []
-        },
-        {
-          "path": "/messaging/pillars",
-          "title": "Messaging Pillars",
-          "source_skills": ["messaging-framework"],
-          "content_summary": "Brand promise; Digital Wilderness headline and tagline; four pillars with proof points; approved phrases; objection responses.",
-          "assets_referenced": [
-            { "id": "social-og", "path": "./generated/social-og.png", "origin": "generated" },
-            { "id": "social-x-header", "path": "./generated/social-x-header.png", "origin": "generated" },
-            { "id": "social-ig-story", "path": "./generated/social-ig-story.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/product/overview",
-          "title": "Thoughtseed Studio",
-          "source_skills": ["product-description", "landing-page-copy"],
-          "content_summary": "Thoughtseed Studio described across lengths; three service modules; System Sprint and Requirement-to-Handoff Build; the numbered homepage delivery-loop arc.",
-          "assets_referenced": [
-            { "id": "hero-03-mobile", "path": "./generated/hero-03-mobile.png", "origin": "generated" },
-            { "id": "product-02-screen-surface", "path": "./generated/product-02-screen-surface.png", "origin": "generated" }
-          ]
-        },
-        {
-          "path": "/assets/inventory",
-          "title": "Asset Inventory",
-          "source_skills": [],
-          "content_summary": "Auto-generated from the asset manifest: user-provided (deterministic) assets and generated assets with wave, skill, and location. Mirrors the manifest exactly.",
-          "assets_referenced": [
-            { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided" },
-            { "id": "logo-tree-mark", "path": "./assets/thoughtseed-tree-mark-black-3x.png", "origin": "user_provided" }
-          ]
-        },
-        {
-          "path": "/assets/downloads",
-          "title": "Downloads",
-          "source_skills": [],
-          "content_summary": "Links to the deliverables package and per-category asset downloads; documents the user-provided vs generated split.",
-          "assets_referenced": []
-        }
-      ]
+    "asset_integration": {
+      "hero_image": "tier2-campaign/triptych/thoughtseed-triptych-hero-01.jpg",
+      "visual_language_board": "tier1-logo-objects (10 variants) + tier2-campaign (5 variants)",
+      "asset_count_total": 43,
+      "asset_manifest_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/asset-manifest.json"
     },
-    "per_page_asset_summary": {
-      "total_unique_assets_referenced": 20,
-      "user_provided_referenced": 4,
-      "generated_referenced": 16,
-      "all_in_manifest": true,
-      "unique_asset_ids": [
-        "logo-wordmark", "logo-tree-mark", "logo-reference-01", "logo-reference-02",
-        "hero-01-digital-wilderness", "hero-02-establishing", "hero-03-mobile",
-        "lifestyle-01-worktable", "lifestyle-02-studio",
-        "product-01-system-artifacts", "product-02-screen-surface",
-        "illus-01-systems-organism", "illus-02-delivery-loop",
-        "icons-01-sheet", "pattern-01-dark", "pattern-02-light",
-        "visual-language-board", "social-og", "social-x-header", "social-ig-story"
-      ]
-    },
-    "build_stack_recommendation": {
-      "framework": "Astro",
-      "docs_template": "Starlight",
-      "styling": "Astro/Starlight custom CSS with the editorial theme tokens; self-hosted Tyros Pro + SubjectivitySerif woff2, Fira Code from Google Fonts or self-host; font-display: swap.",
-      "search": "Starlight built-in (Pagefind) indexing all content",
-      "image_handling": "astro:assets for optimization; copy only manifest-validated assets into /public/images/ via a validated copy step",
-      "deploy_target": "Vercel (static build of dist/)",
-      "node": "Node 18+ / npm",
-      "build_verification": "Parse built HTML/MD for image references and fail the build if any referenced path is missing from dist/."
-    },
-    "layer_discipline_check": {
-      "avoided_terms_in_page_content": 0,
-      "krebs_or_consciousness_as_public_claim": false,
-      "internal_color_labels_in_page_text": false,
-      "note": "Page content surfaces visible effects only; internal color names and backstage methodology never appear in nav labels, page bodies, or UI strings."
-    },
-    "build_ready": true,
-    "build_ready_notes": [
-      "Specification only — no site is built by this spoke; the spec is complete and consistent enough to scaffold and build.",
-      "All 20 referenced assets exist in asset-manifest.json; zero hallucinated paths.",
-      "Theme is editorial (matte, signal-rich), not glossy, per the spoke requirement.",
-      "Logo pages use only the canonical user-provided marks; generated seal/poster art is never presented as a mark.",
-      "Copy placeholders in landing-page-copy and proof sections (testimonials, client logos, media mentions) remain placeholders until verified; the wiki should render them as explicit placeholders, not invent content.",
-      "Licensed display/body webfonts (Tyros Pro, SubjectivitySerif) must be present in the build environment for production parity; Fira Code is open source."
-    ],
-    "validation": {
-      "spec_complete": true,
-      "all_referenced_assets_in_manifest": true,
-      "all_paths_exist": true,
-      "missing_paths": [],
-      "hallucinated_paths": 0,
-      "broken_references_expected": 0
+    "compliance": {
+      "no_consciousness_framing": true,
+      "service_model_aligned": true,
+      "asset_paths_validated": true
     }
   }
 }

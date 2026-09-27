@@ -73,6 +73,34 @@ bm validate-doc-assets --config brand-config.yaml
 
 ### Step 2: Document Structure by Type
 
+#### Bilingual TOC (additive)
+
+When `market.region: FR` or bilingual locales are configured, emit **parallel TOCs** for FR and EN (same section numbers; localized headings). Primary TOC language follows `defaultLocale` (prefer `fr` for FR GTM). Non-bilingual brands keep a single TOC.
+
+```markdown
+# TOC — FR (default when FR GTM)
+1. Vue d'ensemble de la marque
+2. Système de logo
+3. Palette de couleurs
+4. Typographie
+5. Langage visuel
+...
+
+# TOC — EN
+1. Brand Overview
+2. Logo System
+3. Color Palette
+4. Typography
+5. Visual Language
+...
+```
+
+Write bilingual docs under:
+- `deliverables/docs/fr/`
+- `deliverables/docs/en/`
+
+Or mirror into wiki: `wiki/src/content/docs/{fr,en}/brand/`.
+
 #### Brand Identity Document (for designers)
 
 ```markdown
@@ -109,7 +137,6 @@ bm validate-doc-assets --config brand-config.yaml
    - Iconography Rules
    - Pattern Usage
 ```
-
 #### Product & Positioning Document (for product/sales)
 
 ```markdown
@@ -354,7 +381,7 @@ bm generate-docs --config brand-config.yaml --type campaign
 - [ ] Product Positioning document complete
 - [ ] Campaign Guidelines document complete
 - [ ] Each document serves its audience
-
+- [ ] If bilingual/FR: TOC emitted in both FR and EN; docs under locale paths
 ### Content Completeness
 - [ ] Logo usage guidelines clear
 - [ ] Color palette with accessibility notes

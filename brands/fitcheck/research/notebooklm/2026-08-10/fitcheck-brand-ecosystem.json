@@ -1,0 +1,129 @@
+{
+  "name": "Fitcheck Brand Ecosystem",
+  "children": [
+    {
+      "name": "Brand Identity",
+      "children": [
+        {
+          "name": "Public Descriptor: AI Fit Confidence for Shopify"
+        },
+        {
+          "name": "Positioning: Product-page confidence layer"
+        },
+        {
+          "name": "Voice: Precise, fashion-aware, warm"
+        },
+        {
+          "name": "Visuals: Orange, navy, and tech-blue logo"
+        }
+      ]
+    },
+    {
+      "name": "Commercial Strategy",
+      "children": [
+        {
+          "name": "Pricing Model",
+          "children": [
+            {
+              "name": "$99 monthly"
+            },
+            {
+              "name": "$799 yearly"
+            }
+          ]
+        },
+        {
+          "name": "Growth Motion",
+          "children": [
+            {
+              "name": "Targeted merchant outreach"
+            },
+            {
+              "name": "Guided setup"
+            },
+            {
+              "name": "Merchant-specific measurement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Evidence and Compliance",
+      "children": [
+        {
+          "name": "Prohibited Claims",
+          "children": [
+            {
+              "name": "No conversion lift promises"
+            },
+            {
+              "name": "No return reduction claims"
+            },
+            {
+              "name": "No fit certainty guarantees"
+            }
+          ]
+        },
+        {
+          "name": "Data and Privacy",
+          "children": [
+            {
+              "name": "Shopify privacy-safe requirements"
+            },
+            {
+              "name": "Compliance-webhook responses"
+            },
+            {
+              "name": "Transparency in data collection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Market Context",
+      "children": [
+        {
+          "name": "Competition",
+          "children": [
+            {
+              "name": "Synthenova (differentiate identity)"
+            },
+            {
+              "name": "297 apps in Shopify try-on category"
+            }
+          ]
+        },
+        {
+          "name": "Target Audience (ICP)",
+          "children": [
+            {
+              "name": "Emerging Shopify fashion brands"
+            },
+            {
+              "name": "Fashion marketplaces"
+            },
+            {
+              "name": "Retail tech teams"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Operational Governance",
+      "children": [
+        {
+          "name": "Evidence Ledger as input authority"
+        },
+        {
+          "name": "Handoff to Cambium downstream"
+        },
+        {
+          "name": "Wave 3 founder review stop rule"
+        }
+      ]
+    }
+  ]
+}

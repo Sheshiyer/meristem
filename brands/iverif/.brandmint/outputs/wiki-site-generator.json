@@ -1,0 +1,107 @@
+{
+  "skill": "wiki-site-generator",
+  "cluster": "synthesis",
+  "timestamp": "2026-09-11T16:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 7,
+  "data": {
+    "brand": "iverif",
+    "artifact_kind": "specification",
+    "gtm": {
+      "region": "FR",
+      "tag": "FR GTM",
+      "locales": [
+        "fr",
+        "en"
+      ],
+      "defaultLocale": "fr",
+      "channel_plan_path": "brands/iverif/research/channel-plan.md"
+    },
+    "manifest_source": ".brandmint/asset-manifest.json",
+    "site_config": {
+      "framework": "astro",
+      "template": "starlight",
+      "i18n": true,
+      "locales": [
+        "fr",
+        "en"
+      ],
+      "defaultLocale": "fr",
+      "content_root": "wiki/src/content/docs/",
+      "compat_docs_root": "wiki/docs/",
+      "theme_description": "Precise RegTech editorial documentation — no hype, evidence-bounded claim callouts, FR-first nav."
+    },
+    "paths": {
+      "mds": "wiki/MDS.md",
+      "handoff": "wiki/DOWNSTREAM-HANDOFF.md",
+      "starlight_en": "wiki/src/content/docs/en/",
+      "starlight_fr": "wiki/src/content/docs/fr/",
+      "compat_docs": "wiki/docs/"
+    },
+    "pages": {
+      "en": [
+        "src/content/docs/en/index.md",
+        "src/content/docs/en/product/overview.md",
+        "src/content/docs/en/product/claims.md",
+        "src/content/docs/en/brand/voice-tone.md",
+        "src/content/docs/en/audience/primary-persona.md",
+        "src/content/docs/en/market/competitive-landscape.md",
+        "src/content/docs/en/marketing/landing.md",
+        "src/content/docs/en/marketing/ads.md",
+        "src/content/docs/en/marketing/emails.md",
+        "src/content/docs/en/marketing/press.md",
+        "src/content/docs/en/operations/evidence-protocol.md",
+        "src/content/docs/en/operations/campaign-learning.md"
+      ],
+      "fr": [
+        "src/content/docs/fr/index.md",
+        "src/content/docs/fr/product/overview.md",
+        "src/content/docs/fr/product/claims.md",
+        "src/content/docs/fr/brand/voice-tone.md",
+        "src/content/docs/fr/audience/primary-persona.md",
+        "src/content/docs/fr/market/competitive-landscape.md",
+        "src/content/docs/fr/marketing/landing.md",
+        "src/content/docs/fr/marketing/ads.md",
+        "src/content/docs/fr/marketing/emails.md",
+        "src/content/docs/fr/marketing/press.md",
+        "src/content/docs/fr/operations/evidence-protocol.md",
+        "src/content/docs/fr/operations/campaign-learning.md"
+      ]
+    },
+    "compat_pages": [
+      "docs/index.md",
+      "docs/product/overview.md",
+      "docs/product/claims.md",
+      "docs/operations/evidence-protocol.md",
+      "docs/operations/campaign-learning.md"
+    ],
+    "assets_referenced": [
+      {
+        "id": "logo-icon",
+        "path": "assets/logo-icon.png",
+        "wiki_dest": "/images/logo/logo-icon.png"
+      },
+      {
+        "id": "og-image",
+        "path": "assets/og-image.png",
+        "wiki_dest": "/images/social/og-image.png"
+      },
+      {
+        "id": "screenshot-hero",
+        "path": "assets/screenshot-hero.png",
+        "wiki_dest": "/images/product/screenshot-hero.png"
+      }
+    ],
+    "status_note": "Internal bilingual wiki content package complete; Astro/Starlight build and deployment are intentionally not implied by this receipt.",
+    "guardrail": "Promote only evidence-bounded documents after founder review. Blocked claims remain labelled in product/claims.",
+    "upstream_waves": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}
