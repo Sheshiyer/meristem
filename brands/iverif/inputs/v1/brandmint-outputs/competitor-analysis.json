@@ -1,0 +1,44 @@
+{
+  "market_gaps": [
+    "No existing tool built specifically for EU energy subsidy document validation",
+    "Generic OCR tools cannot handle cross-document consistency checking",
+    "Legacy document management lacks programme-specific rule engines",
+    "Self-serve SaaS requires operators to configure complex validation rules alone",
+    "Single-market tools (e.g., French CEE-only) cannot serve multi-country operators"
+  ],
+  "technical_benchmark": {
+    "dimensions": {
+      "processing_speed": "30 seconds per full dossier",
+      "document_types": "Unlimited — invoices, attestations, certificates, technical sheets, affidavits",
+      "programme_coverage": "6 pre-configured EU programmes + custom configurations",
+      "accuracy_target": "<2% rejection rate"
+    },
+    "materials": [
+      "Generative AI for structured data extraction",
+      "Cross-document reasoning engine",
+      "Configurable rule engine per programme",
+      "EU-hosted infrastructure (GDPR compliant)",
+      "Full API for CRM/integration"
+    ]
+  },
+  "verified_anxieties": [
+    "Will AI catch edge cases that manual review catches?",
+    "What happens when programme rules change?",
+    "Is my data secure and GDPR compliant?",
+    "How long does onboarding actually take?",
+    "Will this integrate with our existing workflow?"
+  ],
+  "competitive_landscape": {
+    "direct_competitors": [
+      {"name": "Generic OCR Tools", "weakness": "No cross-document validation, no programme rules"},
+      {"name": "Legacy DMS (SharePoint, DocuSign)", "weakness": "No AI extraction, no validation logic"},
+      {"name": "Single-market CEE Tools", "weakness": "France-only, not configurable for other programmes"}
+    ],
+    "differentiation": [
+      "Only platform with managed onboarding — real team configures your rules",
+      "Only platform pre-configured for 6 EU programmes",
+      "Only platform with generative AI cross-document reasoning",
+      "Go-live in 5-7 days vs. months"
+    ]
+  }
+}

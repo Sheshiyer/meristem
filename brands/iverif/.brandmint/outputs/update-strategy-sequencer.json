@@ -1,0 +1,169 @@
+{
+  "skill": "update-strategy-sequencer",
+  "cluster": "social-growth",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 6,
+  "data": {
+    "update_types": [
+      {
+        "type": "product_calibration",
+        "when": "After meaningful rule-pack or exception UX improvement",
+        "voice": "precise changelog",
+        "frequency": "as_shipped"
+      },
+      {
+        "type": "programme_scope",
+        "when": "When onboarding depth for a programme is clarified",
+        "voice": "factual scope note",
+        "frequency": "as_needed"
+      },
+      {
+        "type": "gtm_milestone",
+        "when": "FR launch, press, waitlist open",
+        "voice": "restrained announce",
+        "frequency": "milestone"
+      },
+      {
+        "type": "education",
+        "when": "CEE period / role clarifications from public sources",
+        "voice": "sage explainer",
+        "frequency": "biweekly"
+      },
+      {
+        "type": "operational",
+        "when": "Status / maintenance",
+        "voice": "plain",
+        "frequency": "rare"
+      }
+    ],
+    "sequences": [
+      {
+        "id": "UPD-01",
+        "update_type": "gtm_milestone",
+        "subject_lines": [
+          "Ouverture GTM France iverif",
+          "Validation documentaire CEE — démarrage"
+        ],
+        "body": "Nous ouvrons les démonstrations FR pour la validation de dossiers CEE / Primes Énergie. Détails : iverif.fr. Pas de KPI de rejet dans cette note.",
+        "channels": [
+          "linkedin_fr",
+          "email_launch",
+          "les_echos_press"
+        ],
+        "cta": "Demander une démo",
+        "scheduled_for": "2026-09-15"
+      },
+      {
+        "id": "UPD-02",
+        "update_type": "education",
+        "subject_lines": [
+          "Obligé, délégataire, logiciel : trois rôles",
+          "Rappel utile pour le marché CEE"
+        ],
+        "body": "Petit rappel factuel pour éviter les malentendus de catégorie. Sources publiques CEE ; iverif reste un éditeur logiciel.",
+        "channels": [
+          "linkedin_fr"
+        ],
+        "cta": "Lire le brief",
+        "scheduled_for": "2026-09-22"
+      },
+      {
+        "id": "UPD-03",
+        "update_type": "product_calibration",
+        "subject_lines": [
+          "Amélioration file d’exceptions",
+          "Changelog : relecture d’audit"
+        ],
+        "body": "Nous avons clarifié l’affichage des exceptions et de la piste d’audit. Impact : relecture plus nette pour ops/conformité. Sans promesse de taux.",
+        "channels": [
+          "email_customers",
+          "linkedin_fr"
+        ],
+        "cta": "Voir les notes",
+        "scheduled_for": "2026-09-29"
+      },
+      {
+        "id": "UPD-04",
+        "update_type": "programme_scope",
+        "subject_lines": [
+          "Périmètre programmes — rappel",
+          "CEE d’abord ; multi-EU ensuite"
+        ],
+        "body": "Rappel du périmètre déclaré (CEE, Primes Énergie, Conto Termico, BEG, ECO4, MOVES III). Profondeur par programme = onboarding.",
+        "channels": [
+          "email_customers",
+          "wiki"
+        ],
+        "cta": "Contacter l’onboarding",
+        "scheduled_for": "2026-10-06"
+      },
+      {
+        "id": "UPD-05",
+        "update_type": "gtm_milestone",
+        "subject_lines": [
+          "Relais presse FR",
+          "Ce que nous avons dit à la presse"
+        ],
+        "body": "Synthèse du communiqué pour Les Échos / JDN : validation avant dépôt, pas d’affiliation institutionnelle.",
+        "channels": [
+          "linkedin_fr",
+          "jdn_amplify"
+        ],
+        "cta": "Lire le communiqué",
+        "scheduled_for": "2026-09-18"
+      }
+    ],
+    "calendar": [
+      {
+        "date": "2026-09-15",
+        "sequence_id": "UPD-01",
+        "channels": [
+          "linkedin_fr",
+          "email_launch",
+          "les_echos_press"
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "sequence_id": "UPD-05",
+        "channels": [
+          "linkedin_fr",
+          "jdn_amplify"
+        ]
+      },
+      {
+        "date": "2026-09-22",
+        "sequence_id": "UPD-02",
+        "channels": [
+          "linkedin_fr"
+        ]
+      },
+      {
+        "date": "2026-09-29",
+        "sequence_id": "UPD-03",
+        "channels": [
+          "email_customers",
+          "linkedin_fr"
+        ]
+      },
+      {
+        "date": "2026-10-06",
+        "sequence_id": "UPD-04",
+        "channels": [
+          "email_customers",
+          "wiki"
+        ]
+      }
+    ],
+    "voice_compliance": "PASS",
+    "channel_plan_refs": [
+      "linkedin_fr",
+      "welcome_to_the_jungle",
+      "jdn",
+      "pncee_context",
+      "les_echos"
+    ]
+  }
+}

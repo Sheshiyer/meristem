@@ -1,0 +1,162 @@
+{
+  "skill": "pattern-library",
+  "cluster": "illustration",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 5,
+  "data": {
+    "art_direction": {
+      "summary": "Subtle tiling patterns for backgrounds: document-flow grids, micro-check fields, stone paper grain — never loud."
+    },
+    "strategy": {
+      "usage_types": [
+        {
+          "usage": "Landing section backgrounds",
+          "pattern_type": "geometric grid",
+          "scale": "large",
+          "density": "low"
+        },
+        {
+          "usage": "Email header bands",
+          "pattern_type": "micro-check",
+          "scale": "small",
+          "density": "medium"
+        },
+        {
+          "usage": "Social story backgrounds",
+          "pattern_type": "dossier-flow",
+          "scale": "medium",
+          "density": "low"
+        },
+        {
+          "usage": "Slide decks",
+          "pattern_type": "paper grain + grid",
+          "scale": "large",
+          "density": "very low"
+        }
+      ]
+    },
+    "color_combinations": [
+      {
+        "name": "Stone on white",
+        "foreground": "#1C1917",
+        "background": "#FAFAF9",
+        "usage": "Default"
+      },
+      {
+        "name": "Muted grid",
+        "foreground": "#78716C",
+        "background": "#FAFAF9",
+        "usage": "Quiet sections"
+      },
+      {
+        "name": "Signal whisper",
+        "foreground": "#2EE600",
+        "background": "#FAFAF9",
+        "usage": "Success moments at ≤10% coverage"
+      },
+      {
+        "name": "Inverse stone",
+        "foreground": "#FAFAF9",
+        "background": "#1C1917",
+        "usage": "Dark footers only"
+      },
+      {
+        "name": "Caution dust",
+        "foreground": "#F59E0B",
+        "background": "#FAFAF9",
+        "usage": "Exception-themed bands sparingly"
+      }
+    ],
+    "patterns": [
+      {
+        "id": "PAT-01",
+        "name": "Document flow grid",
+        "type": "geometric",
+        "description": "Orthogonal lines suggesting dossier routing",
+        "tileable": true,
+        "scale_options": [
+          "8px",
+          "16px",
+          "32px"
+        ],
+        "generation_prompt": "Seamless geometric pattern of thin orthogonal routes and nodes, stone on off-white, low density",
+        "generated_path": "./generated/patterns/document-flow.svg"
+      },
+      {
+        "id": "PAT-02",
+        "name": "Micro validation checks",
+        "type": "geometric",
+        "description": "Tiny check marks in sparse grid",
+        "tileable": true,
+        "scale_options": [
+          "12px",
+          "24px"
+        ],
+        "generation_prompt": "Seamless sparse micro-check pattern, green at low opacity on off-white",
+        "generated_path": "./generated/patterns/micro-checks.svg"
+      },
+      {
+        "id": "PAT-03",
+        "name": "Fiche card lattice",
+        "type": "geometric",
+        "description": "Repeating blank card outlines",
+        "tileable": true,
+        "scale_options": [
+          "24px",
+          "48px"
+        ],
+        "generation_prompt": "Seamless lattice of small blank card rectangles, muted grey",
+        "generated_path": "./generated/patterns/fiche-lattice.svg"
+      },
+      {
+        "id": "PAT-04",
+        "name": "Audit node dots",
+        "type": "abstract",
+        "description": "Dot grid with occasional connected pairs",
+        "tileable": true,
+        "scale_options": [
+          "16px"
+        ],
+        "generation_prompt": "Seamless dot grid with rare connected pairs in green",
+        "generated_path": "./generated/patterns/audit-nodes.svg"
+      },
+      {
+        "id": "PAT-05",
+        "name": "Stone paper grain",
+        "type": "textural",
+        "description": "Fine paper grain texture",
+        "tileable": true,
+        "scale_options": [
+          "full"
+        ],
+        "generation_prompt": "Subtle seamless paper grain texture, warm stone, very low contrast",
+        "generated_path": "./generated/patterns/paper-grain.png"
+      }
+    ],
+    "textures": [
+      {
+        "name": "stone-paper",
+        "path": "./generated/patterns/paper-grain.png",
+        "usage": "Hero underlays at ≤15% opacity"
+      }
+    ],
+    "usage_guidelines": [
+      "Never place patterns behind dense body copy at high contrast",
+      "Green patterns max 10% visual coverage",
+      "Do not use official ministry or PNCEE motifs",
+      "Prefer PAT-01/PAT-05 for photography overlays"
+    ],
+    "quality_gates": {
+      "tileable": true,
+      "palette_locked": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total": 5,
+      "generated": 0,
+      "pending": 5
+    }
+  }
+}

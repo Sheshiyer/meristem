@@ -1,0 +1,262 @@
+{
+  "skill": "icon-system",
+  "cluster": "illustration",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 5,
+  "data": {
+    "art_direction": {
+      "summary": "Line icons, sharp corners on data metaphors, 24px base grid, stone primary / green secondary."
+    },
+    "style_definition": {
+      "type": "line",
+      "stroke_weight": "1.75px @ 24px",
+      "corner_radius": "0–1px (prefer sharp on data; slight radius on containers)",
+      "grid_size": "24px",
+      "padding": "2px",
+      "line_caps": "square",
+      "line_joins": "miter",
+      "colors": {
+        "primary": "#1C1917",
+        "secondary": "#2EE600",
+        "muted": "#78716C",
+        "caution": "#F59E0B"
+      }
+    },
+    "categories": {
+      "ui": [
+        "check",
+        "warning",
+        "close",
+        "search",
+        "filter",
+        "download",
+        "upload",
+        "calendar",
+        "user",
+        "settings",
+        "chevron-right",
+        "external-link"
+      ],
+      "feature": [
+        "cross-document",
+        "programme-rules",
+        "audit-trail",
+        "exception-queue",
+        "managed-onboarding",
+        "api-connect",
+        "dossier",
+        "validation-pass",
+        "validation-fail",
+        "timestamp"
+      ],
+      "category": [
+        "cee",
+        "primes-energie",
+        "conto-termico",
+        "beg",
+        "eco4",
+        "moves-iii",
+        "oblige",
+        "delegataire"
+      ]
+    },
+    "icons": [
+      {
+        "id": "IC-01",
+        "category": "feature",
+        "name": "cross-document",
+        "concept": "Two overlapping document rects with link arc",
+        "priority": "high",
+        "generation_prompt": "24px line icon: two overlapping document rectangles connected by thin arc, stone stroke, optional green node",
+        "generated_path": "./generated/icons/cross-document.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-02",
+        "category": "feature",
+        "name": "programme-rules",
+        "concept": "Grid of small cards / fiche metaphor",
+        "priority": "high",
+        "generation_prompt": "24px line icon: 2x2 card grid with one filled corner accent",
+        "generated_path": "./generated/icons/programme-rules.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-03",
+        "category": "feature",
+        "name": "audit-trail",
+        "concept": "Timeline with nodes",
+        "priority": "high",
+        "generation_prompt": "24px line icon: horizontal timeline three nodes",
+        "generated_path": "./generated/icons/audit-trail.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-04",
+        "category": "feature",
+        "name": "exception-queue",
+        "concept": "Stacked tickets with caution",
+        "priority": "high",
+        "generation_prompt": "24px line icon: stacked rectangles with small amber mark",
+        "generated_path": "./generated/icons/exception-queue.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-05",
+        "category": "feature",
+        "name": "dossier",
+        "concept": "Folder with document",
+        "priority": "high",
+        "generation_prompt": "24px line icon: dossier folder",
+        "generated_path": "./generated/icons/dossier.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-06",
+        "category": "feature",
+        "name": "validation-pass",
+        "concept": "Check in square",
+        "priority": "high",
+        "generation_prompt": "24px line icon: square with check, green secondary ok",
+        "generated_path": "./generated/icons/validation-pass.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-07",
+        "category": "feature",
+        "name": "managed-onboarding",
+        "concept": "Guide path / steps",
+        "priority": "medium",
+        "generation_prompt": "24px line icon: three ascending steps with guide node",
+        "generated_path": "./generated/icons/managed-onboarding.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-08",
+        "category": "ui",
+        "name": "check",
+        "concept": "Simple check",
+        "priority": "high",
+        "generation_prompt": "24px line checkmark",
+        "generated_path": "./generated/icons/check.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-09",
+        "category": "category",
+        "name": "cee",
+        "concept": "Abstract CEE mark — not official logo",
+        "priority": "medium",
+        "generation_prompt": "24px abstract energy-certificate motif geometric, invent no official seal",
+        "generated_path": "./generated/icons/cee.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      },
+      {
+        "id": "IC-10",
+        "category": "category",
+        "name": "delegataire",
+        "concept": "Bridge / intermediary",
+        "priority": "medium",
+        "generation_prompt": "24px bridge-like intermediary icon geometric",
+        "generated_path": "./generated/icons/delegataire.svg",
+        "sizes": [
+          "16",
+          "24",
+          "32",
+          "48",
+          "64",
+          "96"
+        ]
+      }
+    ],
+    "export_formats": [
+      "svg",
+      "png"
+    ],
+    "export_note": "SVG primary; PNG for social. Do not mimic PNCEE or ministry marks.",
+    "size_variants": [
+      "16",
+      "24",
+      "32",
+      "48",
+      "64",
+      "96"
+    ],
+    "quality_gates": {
+      "16px_legibility_planned": true,
+      "brand_palette_only": true,
+      "no_official_seals": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total_icons": 10,
+      "generated": 0,
+      "pending": 10
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "skill": "review-response-strategist",
+  "cluster": "social-growth",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 6,
+  "data": {
+    "tone_principles": [
+      "Remercier sans théâtraliser",
+      "Corriger les faits rôles/marché sans attaquer",
+      "Inviter au canal privé pour le détail dossier",
+      "Aucune promesse de performance dans la réponse publique"
+    ],
+    "response_patterns": [
+      {
+        "pattern_name": "positive_precise",
+        "trigger": "Avis positif sur clarté / onboarding",
+        "template": "Merci {{name}} — content que le cadrage des contrôles vous ait aidés. On reste disponibles pour calibrer les règles programme.",
+        "example_response": "Merci Marie — content que le cadrage des contrôles vous ait aidés. On reste disponibles pour calibrer les règles programme."
+      },
+      {
+        "pattern_name": "constructive_gap",
+        "trigger": "Critique sur une règle manquante / faux positif",
+        "template": "Merci pour le retour. Nous traitons ça comme un sujet de calibration de règles — pouvez-vous nous écrire (type dossier + pièce) via {{support}} ? Pas d’excuse générique.",
+        "example_response": "Merci pour le retour. Nous traitons ça comme un sujet de calibration de règles — écrivez-nous avec le type de dossier et la pièce via support@iverif.fr."
+      },
+      {
+        "pattern_name": "role_confusion",
+        "trigger": "Avis / commentaire qui prend iverif pour un délégataire ou primes",
+        "template": "Précision utile : iverif est un logiciel de validation documentaire, pas un délégataire ni un distributeur de primes. Happy to clarify on iverif.fr.",
+        "example_response": "Précision utile : iverif est un logiciel de validation documentaire, pas un délégataire ni un distributeur de primes. Détails sur iverif.fr."
+      },
+      {
+        "pattern_name": "unsupported_claim_pushback",
+        "trigger": "On nous attribue un % de rejet ou SLA",
+        "template": "Nous ne publions pas de garanties de taux de rejet ou de délai. Notre engagement public : validation avant dépôt + piste d’audit. Parlons de votre flux en privé.",
+        "example_response": "Nous ne publions pas de garanties de taux de rejet ou de délai. Notre engagement public : validation avant dépôt + piste d’audit. Parlons de votre flux en privé."
+      }
+    ],
+    "platform_specific": [
+      {
+        "platform": "linkedin_fr",
+        "response_length": "2–4 phrases",
+        "tone_adjustment": "professionnel FR, vouvoiement par défaut"
+      },
+      {
+        "platform": "welcome_to_the_jungle",
+        "response_length": "court",
+        "tone_adjustment": "humain, culture ops"
+      },
+      {
+        "platform": "g2_or_capterra",
+        "response_length": "3–5 phrases",
+        "tone_adjustment": "EN ou FR selon avis; factuel"
+      },
+      {
+        "platform": "les_echos_comments",
+        "response_length": "1–2 phrases + contact presse",
+        "tone_adjustment": "PR discipline"
+      }
+    ],
+    "do": [
+      "Remercier",
+      "Clarifier le catégorie",
+      "Escalader le détail hors fil public"
+    ],
+    "dont": [
+      "Polémique concurrente",
+      "KPI non ledger",
+      "Irony / dunking"
+    ],
+    "voice_compliance": "PASS"
+  }
+}

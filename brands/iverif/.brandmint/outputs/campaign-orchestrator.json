@@ -1,0 +1,147 @@
+{
+  "skill": "campaign-orchestrator",
+  "cluster": "synthesis",
+  "timestamp": "2026-09-11T16:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 7,
+  "data": {
+    "brand": "iverif",
+    "gtm": {
+      "region": "FR",
+      "tag": "FR GTM",
+      "locales": [
+        "fr",
+        "en"
+      ],
+      "defaultLocale": "fr",
+      "channel_plan_path": "brands/iverif/research/channel-plan.md",
+      "channels": [
+        "linkedin_fr",
+        "welcome_to_the_jungle",
+        "jdn",
+        "pncee",
+        "les_echos"
+      ]
+    },
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Foundation",
+        "skills": [
+          "buyer-persona",
+          "competitor-analysis",
+          "voice-and-tone"
+        ],
+        "wave": 1,
+        "status": "complete"
+      },
+      {
+        "phase": 2,
+        "name": "Strategy",
+        "skills": [
+          "messaging-framework",
+          "product-positioning",
+          "brand-story",
+          "value-proposition"
+        ],
+        "wave": 1,
+        "status": "complete"
+      },
+      {
+        "phase": 3,
+        "name": "Identity",
+        "skills": [
+          "color-palette",
+          "typography",
+          "logo-concept",
+          "visual-language"
+        ],
+        "wave": 2,
+        "status": "complete"
+      },
+      {
+        "phase": 4,
+        "name": "Photography",
+        "skills": [
+          "hero-images",
+          "lifestyle-photography",
+          "product-photography",
+          "social-media-assets"
+        ],
+        "wave": 3,
+        "status": "complete"
+      },
+      {
+        "phase": 5,
+        "name": "Illustration",
+        "skills": [
+          "brand-illustrations",
+          "icon-system",
+          "pattern-library"
+        ],
+        "wave": 4,
+        "status": "complete"
+      },
+      {
+        "phase": 6,
+        "name": "Content",
+        "skills": [
+          "landing-page-copy",
+          "ad-creative-copy",
+          "launch-email-sequence",
+          "prelaunch-email-sequence",
+          "welcome-email-sequence",
+          "press-release",
+          "product-description",
+          "short-form-hook-generator",
+          "social-content-engine"
+        ],
+        "wave": 5,
+        "status": "complete"
+      },
+      {
+        "phase": 7,
+        "name": "Social growth ops",
+        "skills": [
+          "community-manager-brain",
+          "review-response-strategist",
+          "update-strategy-sequencer"
+        ],
+        "wave": 6,
+        "status": "complete"
+      },
+      {
+        "phase": 8,
+        "name": "Synthesis",
+        "skills": [
+          "wiki-site-generator",
+          "notebooklm-publishing",
+          "brand-documentation",
+          "campaign-orchestrator",
+          "deliverables-package"
+        ],
+        "wave": 7,
+        "status": "complete"
+      }
+    ],
+    "sequence_gates": [
+      "Evidence ledger loaded before claim-bearing copy",
+      "User assets validated via asset-manifest before packaging",
+      "FR competitor set present (Hellio, Effy, Économie d'Énergie SAS, GEO PLC)",
+      "Marie Durand persona depth required for FR GTM",
+      "No Explee / ad-platform POST from Meristem spokes",
+      "No PNCEE partnership claim without evidence receipt"
+    ],
+    "handoffs": {
+      "wiki": "wiki/DOWNSTREAM-HANDOFF.md",
+      "mds": "wiki/MDS.md",
+      "next_runner": "bm.sh launch 1-7 (coordinator)"
+    },
+    "blocked_until_founder_review": [
+      "Public FR commercial copy citing CEE volumes, rejection rates, or go-live SLAs",
+      "Outcome guarantees (<2% rejection, 30 seconds, go-live 5–7 days)",
+      "Obligé / délégataire / government affiliation claims"
+    ]
+  }
+}

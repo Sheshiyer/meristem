@@ -1,0 +1,321 @@
+{
+  "skill": "welcome-email-sequence",
+  "cluster": "content",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "sequence_strategy": {
+      "campaign_length": "30 days post-signup",
+      "total_emails": 5,
+      "goals": [
+        "Activation",
+        "Shared vocabulary",
+        "Calibration review"
+      ],
+      "default_locale": "fr"
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Bienvenue",
+        "send_timing": "Immédiat",
+        "primary_lever": "welcome",
+        "urgency_level": "low",
+        "subject_lines": {
+          "primary": "Bienvenue sur iverif",
+          "variation_a": "Votre accès — prochaines étapes",
+          "variation_b": "Merci de nous faire confiance"
+        },
+        "preview_text": "Démarrer sans précipitation",
+        "body": "Bonjour {{prenom}},\n\nBienvenue. iverif aide votre équipe à valider les dossiers d’aides énergie avant dépôt.\n\nProchaine étape : un appel d’onboarding pour cartographier vos types de dossiers CEE / Primes Énergie et les contrôles prioritaires.\n\nCordialement,\n{{csm_name}}\niverif",
+        "cta": {
+          "text": "Planifier l’onboarding",
+          "url_placeholder": "{{onboarding_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 2,
+        "name": "Concepts clés",
+        "send_timing": "Jour 2",
+        "primary_lever": "education",
+        "urgency_level": "low",
+        "subject_lines": {
+          "primary": "Règles, exceptions, audit trail",
+          "variation_a": "Comment lire un signalement",
+          "variation_b": "Obligé vs délégataire (rappel)"
+        },
+        "preview_text": "Le vocabulaire utile dès J2",
+        "body": "Bonjour {{prenom}},\n\nTrois notions à ancrer :\n• Règles de programme — ce qui est contrôlé pour votre dispositif\n• Exceptions — ce que l’opérateur doit trancher\n• Audit trail — la trace horodatée des contrôles\n\nRappel : iverif n’est ni obligé ni délégataire.\n\nCordialement,\n{{csm_name}}",
+        "cta": {
+          "text": "Ouvrir le guide",
+          "url_placeholder": "{{docs_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 3,
+        "name": "Premier dossier",
+        "send_timing": "Jour 5",
+        "primary_lever": "activation",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Passez un premier dossier test",
+          "variation_a": "Checklist pièces critiques",
+          "variation_b": "Besoin d’aide sur une règle ?"
+        },
+        "preview_text": "Un dossier réel, en environnement guidé",
+        "body": "Bonjour {{prenom}},\n\nCette semaine : faites tourner un dossier représentatif (anonymisé si besoin) pour voir exceptions et journal.\n\nNous n’attendons pas un « score parfait » — nous calibrons.\n\nCordialement,\n{{csm_name}}",
+        "cta": {
+          "text": "Lancer un dossier test",
+          "url_placeholder": "{{app_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 4,
+        "name": "Équipe élargie",
+        "send_timing": "Jour 9",
+        "primary_lever": "expansion",
+        "urgency_level": "low",
+        "subject_lines": {
+          "primary": "Invitez un second opérateur",
+          "variation_a": "Rôles dans iverif",
+          "variation_b": "Quand faire monter la conformité"
+        },
+        "preview_text": "Le back-office gagne à être à plusieurs",
+        "body": "Bonjour {{prenom}},\n\nSi un seul compte porte tout le flux, invitez un collègue ops ou conformité pour partager exceptions et relecture d’audit.\n\nCordialement,\n{{csm_name}}",
+        "cta": {
+          "text": "Inviter un collègue",
+          "url_placeholder": "{{invite_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 5,
+        "name": "Revue 30 jours",
+        "send_timing": "Jour 30",
+        "primary_lever": "review",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Revue à 30 jours",
+          "variation_a": "Ce qui s’est bien passé",
+          "variation_b": "Prochains programmes / règles"
+        },
+        "preview_text": "Calibrage — pas un bilan KPI inventé",
+        "body": "Bonjour {{prenom}},\n\nÀ J+30, proposons une revue : types de dossiers couverts, exceptions fréquentes, règles à ajuster.\n\nPas de tableau de « % magiques » — un calibrage honnête.\n\nCordialement,\n{{csm_name}}\niverif.fr",
+        "cta": {
+          "text": "Réserver la revue",
+          "url_placeholder": "{{review_url}}"
+        },
+        "ps": ""
+      }
+    ],
+    "locales": {
+      "fr": {
+        "emails": [
+          {
+            "number": 1,
+            "name": "Bienvenue",
+            "send_timing": "Immédiat",
+            "primary_lever": "welcome",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Bienvenue sur iverif",
+              "variation_a": "Votre accès — prochaines étapes",
+              "variation_b": "Merci de nous faire confiance"
+            },
+            "preview_text": "Démarrer sans précipitation",
+            "body": "Bonjour {{prenom}},\n\nBienvenue. iverif aide votre équipe à valider les dossiers d’aides énergie avant dépôt.\n\nProchaine étape : un appel d’onboarding pour cartographier vos types de dossiers CEE / Primes Énergie et les contrôles prioritaires.\n\nCordialement,\n{{csm_name}}\niverif",
+            "cta": {
+              "text": "Planifier l’onboarding",
+              "url_placeholder": "{{onboarding_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 2,
+            "name": "Concepts clés",
+            "send_timing": "Jour 2",
+            "primary_lever": "education",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Règles, exceptions, audit trail",
+              "variation_a": "Comment lire un signalement",
+              "variation_b": "Obligé vs délégataire (rappel)"
+            },
+            "preview_text": "Le vocabulaire utile dès J2",
+            "body": "Bonjour {{prenom}},\n\nTrois notions à ancrer :\n• Règles de programme — ce qui est contrôlé pour votre dispositif\n• Exceptions — ce que l’opérateur doit trancher\n• Audit trail — la trace horodatée des contrôles\n\nRappel : iverif n’est ni obligé ni délégataire.\n\nCordialement,\n{{csm_name}}",
+            "cta": {
+              "text": "Ouvrir le guide",
+              "url_placeholder": "{{docs_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 3,
+            "name": "Premier dossier",
+            "send_timing": "Jour 5",
+            "primary_lever": "activation",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Passez un premier dossier test",
+              "variation_a": "Checklist pièces critiques",
+              "variation_b": "Besoin d’aide sur une règle ?"
+            },
+            "preview_text": "Un dossier réel, en environnement guidé",
+            "body": "Bonjour {{prenom}},\n\nCette semaine : faites tourner un dossier représentatif (anonymisé si besoin) pour voir exceptions et journal.\n\nNous n’attendons pas un « score parfait » — nous calibrons.\n\nCordialement,\n{{csm_name}}",
+            "cta": {
+              "text": "Lancer un dossier test",
+              "url_placeholder": "{{app_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 4,
+            "name": "Équipe élargie",
+            "send_timing": "Jour 9",
+            "primary_lever": "expansion",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Invitez un second opérateur",
+              "variation_a": "Rôles dans iverif",
+              "variation_b": "Quand faire monter la conformité"
+            },
+            "preview_text": "Le back-office gagne à être à plusieurs",
+            "body": "Bonjour {{prenom}},\n\nSi un seul compte porte tout le flux, invitez un collègue ops ou conformité pour partager exceptions et relecture d’audit.\n\nCordialement,\n{{csm_name}}",
+            "cta": {
+              "text": "Inviter un collègue",
+              "url_placeholder": "{{invite_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 5,
+            "name": "Revue 30 jours",
+            "send_timing": "Jour 30",
+            "primary_lever": "review",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Revue à 30 jours",
+              "variation_a": "Ce qui s’est bien passé",
+              "variation_b": "Prochains programmes / règles"
+            },
+            "preview_text": "Calibrage — pas un bilan KPI inventé",
+            "body": "Bonjour {{prenom}},\n\nÀ J+30, proposons une revue : types de dossiers couverts, exceptions fréquentes, règles à ajuster.\n\nPas de tableau de « % magiques » — un calibrage honnête.\n\nCordialement,\n{{csm_name}}\niverif.fr",
+            "cta": {
+              "text": "Réserver la revue",
+              "url_placeholder": "{{review_url}}"
+            },
+            "ps": ""
+          }
+        ]
+      },
+      "en": {
+        "emails": [
+          {
+            "number": 1,
+            "name": "Welcome",
+            "send_timing": "Immediate",
+            "primary_lever": "welcome",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Welcome to iverif",
+              "variation_a": "Your access — next steps",
+              "variation_b": "Thanks for trusting us"
+            },
+            "preview_text": "Start without rushing",
+            "body": "Hi {{first_name}},\n\nWelcome. iverif helps your team validate energy subsidy dossiers before submission.\n\nNext step: an onboarding call to map CEE / Primes Énergie dossier types and priority checks.\n\nBest,\n{{csm_name}}\niverif",
+            "cta": {
+              "text": "Schedule onboarding",
+              "url_placeholder": "{{onboarding_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 2,
+            "name": "Key concepts",
+            "send_timing": "Day 2",
+            "primary_lever": "education",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Rules, exceptions, audit trail",
+              "variation_a": "How to read a flag",
+              "variation_b": "Obligé vs délégataire (reminder)"
+            },
+            "preview_text": "Useful vocabulary by day 2",
+            "body": "Hi {{first_name}},\n\nThree anchors:\n• Programme rules — what is checked for your scheme\n• Exceptions — what operators must decide\n• Audit trail — timestamped check history\n\nReminder: iverif is neither obligé nor délégataire.\n\nBest,\n{{csm_name}}",
+            "cta": {
+              "text": "Open the guide",
+              "url_placeholder": "{{docs_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 3,
+            "name": "First dossier",
+            "send_timing": "Day 5",
+            "primary_lever": "activation",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Run a first test dossier",
+              "variation_a": "Critical documents checklist",
+              "variation_b": "Need help on a rule?"
+            },
+            "preview_text": "One real dossier, guided",
+            "body": "Hi {{first_name}},\n\nThis week: run a representative dossier (anonymised if needed) to see exceptions and the log.\n\nWe are not chasing a perfect score — we are calibrating.\n\nBest,\n{{csm_name}}",
+            "cta": {
+              "text": "Start a test dossier",
+              "url_placeholder": "{{app_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 4,
+            "name": "Expand team",
+            "send_timing": "Day 9",
+            "primary_lever": "expansion",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Invite a second operator",
+              "variation_a": "Roles in iverif",
+              "variation_b": "When to pull in compliance"
+            },
+            "preview_text": "Back office works better as a team",
+            "body": "Hi {{first_name}},\n\nIf one account owns the whole flow, invite an ops or compliance colleague to share exceptions and audit review.\n\nBest,\n{{csm_name}}",
+            "cta": {
+              "text": "Invite a colleague",
+              "url_placeholder": "{{invite_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 5,
+            "name": "30-day review",
+            "send_timing": "Day 30",
+            "primary_lever": "review",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "30-day review",
+              "variation_a": "What went well",
+              "variation_b": "Next programmes / rules"
+            },
+            "preview_text": "Calibration — not invented KPIs",
+            "body": "Hi {{first_name}},\n\nAt day 30, let’s review: dossier types covered, frequent exceptions, rules to tune.\n\nNo magic % dashboard — honest calibration.\n\nBest,\n{{csm_name}}\niverif.fr",
+            "cta": {
+              "text": "Book the review",
+              "url_placeholder": "{{review_url}}"
+            },
+            "ps": ""
+          }
+        ]
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/welcome-email-sequence.md",
+      "fr": "wiki/src/content/docs/fr/marketing/welcome-email-sequence.md"
+    }
+  }
+}
