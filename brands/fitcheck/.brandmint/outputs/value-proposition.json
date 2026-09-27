@@ -1,0 +1,101 @@
+{
+  "skill": "value-proposition",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-08-10T13:30:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "pain_gain_map": {
+      "pains": {
+        "functional": [
+          "Standard product photography does not let a shopper visualise a garment on themselves.",
+          "Size charts and fit notes can leave the personal visual decision unresolved.",
+          "A custom virtual-try-on project can exceed an emerging merchant's implementation capacity.",
+          "A generic try-on widget can feel misaligned with a fashion brand's product page."
+        ],
+        "emotional": [
+          "Anxiety about putting an unproven or misleading experience on the storefront.",
+          "Frustration when a new technology becomes an open-ended project.",
+          "Regret if budget is spent before the merchant has its own evidence."
+        ],
+        "social": [
+          "Pressure to make the product page feel as considered as the collection.",
+          "Concern that a generic experience could diminish brand perception."
+        ]
+      },
+      "gains": {
+        "functional": [
+          "A shopper-facing visual try-on moment on the Shopify product page.",
+          "A bounded way to test fit-confidence interaction before broader rollout.",
+          "A guided setup path rather than a bespoke platform project."
+        ],
+        "emotional": [
+          "Confidence in a more considered shopper experience.",
+          "Relief from having a concrete, testable next step.",
+          "Pride in presenting the brand with care for body realism and clarity."
+        ],
+        "social": [
+          "A product page that signals thoughtful fashion innovation without novelty theatre.",
+          "A credible way to explain a new interaction to internal stakeholders and partners."
+        ]
+      }
+    },
+    "value_canvas": [
+      {
+        "customer_job": "Help a shopper make a more informed decision on a fashion product page.",
+        "pain_point": "Standard product photography does not let a shopper visualise a garment on themselves.",
+        "solution": "Fitcheck adds an AI try-on interaction to the Shopify product page.",
+        "gain_created": "A more personal visual confidence moment before purchase, without representing it as sizing certainty."
+      },
+      {
+        "customer_job": "Improve a product page without commissioning a custom technology project.",
+        "pain_point": "A custom virtual-try-on project can exceed an emerging merchant's implementation capacity.",
+        "solution": "Fitcheck is positioned as a Shopify app with guided merchant setup.",
+        "gain_created": "A bounded rollout that can be assessed in the merchant's own store."
+      },
+      {
+        "customer_job": "Protect a carefully built fashion brand while introducing AI.",
+        "pain_point": "A generic try-on widget can feel misaligned with a fashion brand's product page.",
+        "solution": "Fitcheck uses an editorial, fashion-aware fit-confidence position and explicit product limitations.",
+        "gain_created": "A more credible innovation story that does not depend on novelty or outcome promises."
+      }
+    ],
+    "statements": {
+      "classic": "For founder-led and operator-led Shopify fashion brands that need to reduce the gap between a beautiful product page and a shopper's personal fit question, Fitcheck is an AI fit-confidence experience that adds a visual try-on moment with guided rollout, unlike static imagery, generic virtual-try-on listings, or custom projects that leave the decision impersonal, undifferentiated, or implementation-heavy.",
+      "one_sentence": "Fitcheck helps Shopify fashion merchants give shoppers a more personal fit-confidence moment through AI try-on, unlike static imagery or generic widgets.",
+      "headlines": {
+        "primary": "Let shoppers see the fit before they buy.",
+        "subheadline": "Fitcheck adds a fashion-aware AI try-on moment to Shopify product pages, with guided setup and merchant-specific learning.",
+        "proof_point": "Demonstrable product proof: Fitcheck has a public Shopify App Store listing and can be shown directly on a Shopify product-page try-on flow; commercial outcomes require each merchant's own evidence."
+      }
+    },
+    "value_hierarchy": {
+      "primary": {
+        "value": "Credible fit confidence on the Shopify product page.",
+        "why_it_matters": "It addresses the named challenge of shoppers being unable to picture a garment on themselves, while respecting the limits of a visual try-on.",
+        "proof": "Demonstrate the product-page interaction and validate impact through a merchant-specific rollout; do not claim conversion, return, or sizing outcomes in advance."
+      },
+      "secondary": [
+        {
+          "value": "A guided, bounded path to test the experience.",
+          "why_it_matters": "It addresses the named challenge that a custom implementation can consume scarce operator capacity."
+        },
+        {
+          "value": "An editorial, fashion-aware expression instead of generic AI novelty.",
+          "why_it_matters": "It addresses the named challenge that a widget can dilute a carefully built brand experience."
+        },
+        {
+          "value": "Transparent limits and merchant-specific evidence.",
+          "why_it_matters": "It addresses the named anxiety about putting a misleading or unproven experience on the storefront."
+        }
+      ],
+      "table_stakes": [
+        "A working Shopify installation path", 
+        "Clear merchant support and documentation", 
+        "A performant and accessible storefront experience", 
+        "Transparent handling of shopper data and consent"
+      ]
+    }
+  }
+}
