@@ -95,15 +95,62 @@ Transform `.brandmint/outputs/*.json` into structured markdown with **validated 
 
 ### Step 3: Site Structure with Asset Organization
 
+**Default (single-locale brands)** — unchanged layout under `wiki/src/content/docs/`.
+
+**Bilingual / FR GTM** — when `market.region: FR` or `locales: [en, fr]`, scaffold **Astro Starlight i18n** with locales `en` + `fr` and **`defaultLocale: fr`**:
+
+```js
+// astro.config.mjs (Starlight i18n excerpt)
+export default defineConfig({
+  integrations: [
+    starlight({
+      title: 'Brand Wiki',
+      defaultLocale: 'fr',
+      locales: {
+        fr: { label: 'Français', lang: 'fr' },
+        en: { label: 'English', lang: 'en' },
+      },
+    }),
+  ],
+});
+```
+
+Scaffold content trees:
+
+```
+wiki/src/content/docs/fr/   # primary
+wiki/src/content/docs/en/
+```
+
+Including marketing pages planned by content spokes:
+
+```
+wiki/src/content/docs/{en,fr}/marketing/
+  landing-page.md
+  ad-creative.md
+  launch-email-sequence.md
+  press-release.md
+  short-form-hooks.md   # optional
+```
+
 ```
 wiki/
 ├── src/
 │   ├── content/
 │   │   ├── docs/
-│   │   │   ├── about/
-│   │   │   │   ├── mission.md
-│   │   │   │   ├── values.md
-│   │   │   │   └── story.md
+│   │   │   ├── about/                 # single-locale brands
+│   │   │   ├── fr/                    # bilingual: defaultLocale
+│   │   │   │   ├── about/
+│   │   │   │   ├── identity/
+│   │   │   │   ├── marketing/
+│   │   │   │   ├── product/
+│   │   │   │   └── ...
+│   │   │   ├── en/
+│   │   │   │   ├── about/
+│   │   │   │   ├── identity/
+│   │   │   │   ├── marketing/
+│   │   │   │   ├── product/
+│   │   │   │   └── ...
 │   │   │   ├── identity/
 │   │   │   │   ├── logo.md         # References /images/logo/*
 │   │   │   │   ├── colors.md
@@ -133,11 +180,28 @@ wiki/
 │       ├── hero/                    # Generated hero images
 │       ├── photography/             # Generated photography
 │       └── illustrations/           # Generated illustrations
+├── DOWNSTREAM-HANDOFF.md            # Required handoff receipt
 ├── asset-manifest.json              # Copy of validated manifest
 ├── astro.config.mjs
 └── package.json
 ```
 
+**Image refs:** validate every markdown/HTML image path against `.brandmint/asset-manifest.json` (and the copied `wiki/asset-manifest.json`) before build; fail on broken refs.
+
+### Step 3b: Emit DOWNSTREAM-HANDOFF.md
+
+Always emit `wiki/DOWNSTREAM-HANDOFF.md` with YAML frontmatter (or equivalent leading YAML block) containing:
+
+```yaml
+brand: ""
+source_pages: []
+claim_class: supported|proof-required|prohibited
+evidence_receipt: ""
+reviewed_at: "YYYY-MM-DD"
+owner: ""
+```
+
+Body should summarize wiki purpose, stop conditions, and locale layout (`defaultLocale: fr` when FR GTM). Do not grant deployment authority.
 ### Step 4: Asset Copy with Validation
 
 **NEVER use blind `cp` commands.** Use validated asset copy:
@@ -298,7 +362,15 @@ wiki:
         "site_config": {
             "framework": "astro",
             "template": "starlight",
-            "theme": "brand-custom"
+            "theme": "brand-custom",
+            "i18n": {
+                "defaultLocale": "fr",
+                "locales": ["fr", "en"]
+            }
+        },
+        "downstream_handoff": {
+            "path": "wiki/DOWNSTREAM-HANDOFF.md",
+            "frontmatter_fields": ["brand", "source_pages", "claim_class", "evidence_receipt", "reviewed_at", "owner"]
         },
         "asset_handling": {
             "manifest_loaded": true,
@@ -369,6 +441,8 @@ wiki:
 - [ ] Navigation structure logical
 - [ ] Search indexes all content
 - [ ] Asset inventory page generated
+- [ ] If bilingual/FR: scaffold `wiki/src/content/docs/{en,fr}`; Starlight `defaultLocale: fr`
+- [ ] `DOWNSTREAM-HANDOFF.md` emitted with brand|source_pages|claim_class|evidence_receipt|reviewed_at|owner
 
 ### Deployment
 - [ ] Site builds without errors

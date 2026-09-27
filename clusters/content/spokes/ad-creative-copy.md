@@ -139,6 +139,58 @@ Body: [Don't miss out + recap value]
 CTA: Back Before It's Gone
 ```
 
+## Bilingual FR + EN (additive)
+
+When `market.region: FR` **or** `locales` includes `fr`, emit both language variants under `data.locales.{en,fr}`. JSON remains primary wave output.
+
+**Planned wiki paths:**
+- `wiki/src/content/docs/en/marketing/ad-creative.md`
+- `wiki/src/content/docs/fr/marketing/ad-creative.md`
+
+## Explee Draft Schema (draft-only, no POST)
+
+Also emit an **explee-compatible draft payload** for landing/ads/emails. This is **draft-only** — never POST to Explee or any live ad/email API from this spoke.
+
+```json
+{
+  "explee_draft": {
+    "mode": "draft_only",
+    "do_not_post": true,
+    "targets": ["landing", "ads", "emails"],
+    "locales": ["fr", "en"],
+    "output_format": {
+      "landing": {
+        "headline": "string",
+        "subhead": "string",
+        "cta": "string",
+        "body_blocks": ["string"]
+      },
+      "ads": [
+        {
+          "platform": "linkedin|meta|other",
+          "locale": "fr|en",
+          "headline": "string",
+          "primary_text": "string",
+          "cta": "string"
+        }
+      ],
+      "emails": [
+        {
+          "locale": "fr|en",
+          "subject": "string",
+          "preview": "string",
+          "body": "string",
+          "cta": "string"
+        }
+      ]
+    },
+    "source_skills": ["landing-page-copy", "ad-creative-copy", "launch-email-sequence"]
+  }
+}
+```
+
+Place under `data.explee_draft` in this skill's JSON (and mirror references from sibling content outputs when available). Downstream tools may import the draft; this spoke must not perform network writes.
+
 ## Output Schema
 
 ```json
@@ -148,7 +200,7 @@ CTA: Back Before It's Gone
     "wave": 6,
     "timestamp": "2024-01-15T10:30:00Z",
     "status": "complete",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "data": {
         "strategy": {
             "phases": ["pre-launch", "launch", "mid-campaign", "end-campaign"],
@@ -181,7 +233,22 @@ CTA: Back Before It's Gone
                 "body": "string",
                 "cta": "string"
             }
-        ]
+        ],
+        "locales": {
+            "en": { "hooks": {}, "pre_campaign_ads": [], "live_campaign_ads": [] },
+            "fr": { "hooks": {}, "pre_campaign_ads": [], "live_campaign_ads": [] }
+        },
+        "wiki_paths": {
+            "en": "wiki/src/content/docs/en/marketing/ad-creative.md",
+            "fr": "wiki/src/content/docs/fr/marketing/ad-creative.md"
+        },
+        "explee_draft": {
+            "mode": "draft_only",
+            "do_not_post": true,
+            "targets": ["landing", "ads", "emails"],
+            "locales": ["fr", "en"],
+            "output_format": {}
+        }
     }
 }
 ```
@@ -195,3 +262,5 @@ CTA: Back Before It's Gone
 - [ ] Each phase has appropriate urgency
 - [ ] Multiple hook angles covered
 - [ ] CTAs match campaign goals
+- [ ] If bilingual: `locales.en` and `locales.fr` complete; wiki paths documented
+- [ ] `explee_draft` present with `do_not_post: true` (draft-only; no POST)
