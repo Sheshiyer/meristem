@@ -1,0 +1,145 @@
+{
+  "skill": "buyer-persona",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-08-10T13:20:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "persona_name": "Operator Aisha",
+    "research_status": "hypothesis to validate with merchant interviews; not a claim about current customers",
+    "demographics": {
+      "age": 34,
+      "gender": "woman",
+      "education": "Bachelor's degree in business, fashion merchandising, or a related field",
+      "income": "US$90,000–US$120,000 personal annual income",
+      "location": "Urban United States or United Kingdom",
+      "occupation": "Founder or ecommerce lead at a Shopify fashion and apparel brand"
+    },
+    "psychographics": {
+      "identity": "Aisha sees herself as the person responsible for translating a distinct fashion point of view into a product page that earns a shopper's confidence.",
+      "values": [
+        "A considered customer experience over growth hacks",
+        "Clear evidence before expanding a new tool",
+        "A brand presentation that respects diverse bodies",
+        "Operational momentum without an engineering detour"
+      ],
+      "lifestyle": "She divides time between merchandising, creative review, customer feedback, retention metrics, and a lean team or agency partners.",
+      "aspirations": "Build a recognisable fashion brand whose product pages feel as considered as its collection, while making each next operational investment defensible.",
+      "community": "Independent fashion founders, Shopify operators, stylists, performance-marketing peers, and trusted creative or development partners."
+    },
+    "challenges": [
+      {
+        "challenge": "A shopper must infer how a garment may look from standard product imagery.",
+        "current_solution": "More flat-lay, model, or detail photography",
+        "why_it_fails": "It can show the product well without making the experience feel personal to an individual shopper.",
+        "quote": "Illustrative interview language: 'The page looks good, but I still cannot tell whether a shopper can picture herself in it.'"
+      },
+      {
+        "challenge": "Fit uncertainty can make the product-page decision feel risky.",
+        "current_solution": "Size charts, fit notes, and customer-support guidance",
+        "why_it_fails": "These tools address sizing information but do not create a visual, product-page confidence moment.",
+        "quote": "Illustrative interview language: 'I need to reduce hesitation without pretending that a chart answers every fit question.'"
+      },
+      {
+        "challenge": "New technology often competes with limited implementation capacity.",
+        "current_solution": "A custom build or a long internal evaluation",
+        "why_it_fails": "A bespoke route can pull attention from launches and day-to-day merchandising before value is proven.",
+        "quote": "Illustrative interview language: 'If this becomes a platform project, it will lose to the next collection deadline.'"
+      },
+      {
+        "challenge": "A generic virtual-try-on tool could dilute a carefully built brand experience.",
+        "current_solution": "Avoiding try-on or using a broadly positioned app",
+        "why_it_fails": "Avoidance leaves the confidence gap untouched; generic presentation can make the experience feel bolted on.",
+        "quote": "Illustrative interview language: 'I want the feature to feel like part of our product page, not another widget.'"
+      }
+    ],
+    "emotional_drivers": {
+      "positive": [
+        "Confidence that the product page gives shoppers a more informed visual decision",
+        "Relief from having a bounded, testable experiment rather than an open-ended technology project",
+        "Pride in offering a more considerate and body-respectful shopping experience",
+        "Control over how a new interaction fits the brand's visual world"
+      ],
+      "negative": [
+        "Anxiety about adding an unproven or misleading claim to the storefront",
+        "Frustration with tools that require disproportionate technical effort",
+        "Embarrassment if the experience feels generic or misaligned with the collection",
+        "Regret from spending budget before merchant-specific evidence exists"
+      ]
+    },
+    "cbbe": {
+      "salience": {
+        "product_category": "Shopify virtual try-on and product-page fit-confidence experience for fashion brands",
+        "problem_solved": "Helps a merchant give shoppers a more personal visual way to evaluate a garment when standard product imagery leaves uncertainty.",
+        "one_sentence": "Fitcheck is an AI try-on experience for Shopify fashion product pages that helps shoppers see a garment on themselves before deciding."
+      },
+      "performance": {
+        "points_of_difference": [
+          "A fit-confidence position rather than a generic AI novelty position",
+          "Designed around a Shopify product-page use case and guided merchant setup",
+          "Evidence-bounded communication that does not promise sizing certainty or unverified commercial outcomes"
+        ],
+        "points_of_parity": [
+          "Virtual try-on interaction for fashion ecommerce",
+          "Shopify-compatible storefront experience",
+          "A subscription product rather than a bespoke internal build"
+        ],
+        "core_features": [
+          "Photorealistic AI try-on presented on a Shopify product page",
+          "A shopper-facing interaction intended to support a more informed visual decision",
+          "Guided merchant setup and a test-first rollout approach"
+        ]
+      },
+      "imagery": {
+        "associated_brands": [
+          "Editorial fashion retail rather than novelty technology", 
+          "A precise, helpful Shopify operator rather than a generic widget vendor"
+        ],
+        "usage_locations": [
+          "Shopify fashion product pages", 
+          "Merchant merchandising and conversion-review workflows"
+        ],
+        "usage_methods": [
+          "A shopper initiates a visual try-on while considering a garment",
+          "A merchant reviews the experience on a limited set of products before deciding whether to expand"
+        ]
+      },
+      "judgments": {
+        "positive": [
+          "A clearer shopper-confidence interaction than static imagery alone",
+          "A purposeful fashion-ecommerce use case rather than undirected AI experimentation",
+          "A credible approach when the experience, privacy, and merchant-specific outcomes are reviewed transparently"
+        ],
+        "concerns": [
+          "How faithfully the visual result represents a particular garment or person",
+          "Whether the interaction matches the merchant's brand and storefront performance needs",
+          "How data handling, consent, and accessibility are communicated",
+          "Whether the merchant can validate value in its own store before wider adoption"
+        ],
+        "credibility": "Credibility should be earned through the public Shopify listing, a transparent product demonstration, clear limitations, and merchant-specific testing—not through conversion or return-rate promises before evidence exists."
+      },
+      "feelings": {
+        "desired_feelings": [
+          "More prepared to make a purchase decision",
+          "Respected rather than pressured", 
+          "Delighted by a useful personalisation moment",
+          "Confident that the merchant has considered the experience carefully"
+        ],
+        "voice": "A precise, fashion-aware guide: warm about the shopper experience and direct about what the product can and cannot establish.",
+        "tone": "Confident, editorial, practical, and never overclaiming."
+      },
+      "resonance": {
+        "why_missed": "Aisha would miss a product-page confidence layer that can be tested without turning a merchandising improvement into a custom platform programme.",
+        "mission_alignment": "Fitcheck's aim to replace fit guessing with a more informed visual moment aligns with Aisha's aim to make fashion shopping feel more considered and less uncertain.",
+        "core_values": [
+          "Fit truth over fit guessing",
+          "Merchant-first speed",
+          "Body realism, not body idealism",
+          "Pragmatic precision"
+        ],
+        "why_choose_us": "Choose Fitcheck when the priority is a Shopify-native, fashion-aware try-on experience positioned around credible fit confidence and testable merchant learning—not a claim of guaranteed sizing or business results."
+      }
+    }
+  }
+}

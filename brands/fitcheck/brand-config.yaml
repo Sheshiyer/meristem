@@ -1,0 +1,121 @@
+# Fitcheck Meristem intake — evidence-bounded, 2026-08-10.
+# Wave 1 uses research/EVIDENCE-LEDGER.md as a source ledger. It is not public copy.
+
+brand:
+  name: "Fitcheck"
+  slug: "fitcheck"
+  public_descriptor: "AI Fit Confidence for Shopify"
+  tagline: "Let every shopper see the fit before they buy."
+  category: "retail"
+  market:
+    b2b: true
+    b2c: false
+    enterprise: false
+    smb: true
+
+company:
+  description: |
+    Fitcheck is a Shopify virtual try-on product for fashion brands. It adds a
+    product-page try-on experience so shoppers can assess a garment with more
+    confidence. Initial growth is distribution-led: targeted merchant outreach
+    and guided setup, not reliance on App Store search.
+  founding_year: 2026
+  stage: "early"
+  problem: |
+    Fashion shoppers cannot always assess fit from standard product photography.
+    Merchants need a credible product-page confidence layer without committing to
+    a custom integration project.
+  solution: |
+    An AI virtual try-on experience for Shopify fashion product pages, with
+    guided merchant setup and a clear monthly or annual subscription.
+
+audience:
+  primary:
+    title: "Founder or Ecommerce Operator"
+    company_size: "Emerging to mid-market Shopify fashion brand"
+    industry: "Fashion and apparel ecommerce"
+    pain_points:
+      - "Shoppers cannot confidently assess fit from standard product photography"
+      - "Fit uncertainty can contribute to hesitation and fit-related returns"
+      - "Existing solutions can require technical implementation effort"
+    goals:
+      - "Give shoppers a credible way to preview a garment on product pages"
+      - "Launch a Shopify try-on experience without a prolonged implementation"
+      - "Measure merchant-specific outcomes before scaling deployment"
+  secondary:
+    title: "Product or Partnerships Lead"
+    company_size: "Growth-stage fashion marketplace or retail technology business"
+    industry: "Fashion marketplace or retail technology"
+
+competitors:
+  direct:
+    - name: "FitCheck | Virtual Try-On"
+      developer: "Synthenova"
+      positioning: "Virtual try-on for fashion brands with free and usage-based plans"
+      differentiation_rule: "Do not imitate its listing language or visual identity."
+  indirect:
+    - name: "Static product photography"
+      positioning: "Standard ecommerce product presentation"
+    - name: "Custom virtual try-on implementation"
+      positioning: "Bespoke agency or internal development project"
+
+personality:
+  traits: ["confident", "precise", "fashion-aware", "pragmatic", "trustworthy"]
+  voice:
+    formality: 0.55
+    enthusiasm: 0.55
+    technicality: 0.35
+    warmth: 0.60
+  archetypes:
+    primary: "sage"
+    secondary: "magician"
+
+visual_preferences:
+  color_mood: "bold"
+  photography_style: "editorial"
+  illustration_style: "geometric"
+  preferred_colors: ["#FF6B35", "#1A1A2E", "#16213E"]
+  avoid_colors: ["#00A86B"]
+
+user_provided_assets:
+  logo:
+    primary: { path: "./assets/logo.svg", type: logo, required: true }
+    icon: { path: "./assets/mark.svg", type: logo-icon, required: true }
+  screenshots:
+    - { path: "./assets/app-store-og.png", type: screenshot, label: "Fitcheck social asset" }
+    - { path: "./assets/hero.webp", type: screenshot, label: "Fitcheck landing hero" }
+
+commercial:
+  approved_pricing:
+    monthly_usd: 99
+    yearly_usd: 799
+  rule: "Use only these prices in future Fitcheck work."
+
+research:
+  source_ledger: "./research/EVIDENCE-LEDGER.md"
+  evidence_boundary: "Use facts only as scoped in the ledger; label all hypotheses."
+
+content:
+  landing_page:
+    sections: [hero, problem, solution, how_it_works, pricing, faq, cta]
+  email: { welcome_series: false, nurture_series: false, onboarding_series: false }
+  ads: { platforms: [], formats: [] }
+
+publishing:
+  notebooklm: { enabled: false, artifacts: [] }
+  wiki: { enabled: false, theme: "editorial" }
+  deliverables: { formats: [zip], include_origins: true }
+
+synthesis:
+  synthesize_prose: false
+  embedding_integration: { enabled: false, worker_url: "" }
+
+execution:
+  depth: "standard"
+  waves: "1-3"
+  non_interactive: true
+
+validation:
+  require_user_assets: true
+  warn_missing_optional: true
+  fail_on_hallucination: true

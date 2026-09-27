@@ -1,0 +1,72 @@
+{
+  "brand": "Fitcheck",
+  "slug": "fitcheck",
+  "generated_at": "2026-08-10T00:00:00+05:30",
+  "version": "1.0.0",
+  "wave": 0,
+  "user_provided_assets": [
+    {
+      "id": "logo-primary",
+      "path": "./assets/logo.svg",
+      "type": "logo",
+      "role": "primary",
+      "source": "user_provided",
+      "deterministic": true,
+      "required": true,
+      "sha256": "2c0bc07c2a4c5d2a8d875a83a5d25b1981202c0093738317f9e87680147a792f",
+      "label": "Fitcheck primary logo"
+    },
+    {
+      "id": "logo-icon",
+      "path": "./assets/mark.svg",
+      "type": "logo-icon",
+      "role": "icon",
+      "source": "user_provided",
+      "deterministic": true,
+      "required": true,
+      "sha256": "f11df06513fe62460ed17ac3259ae27e7f60be51fe3f4e308cc3839f95944185",
+      "label": "Fitcheck logo mark"
+    },
+    {
+      "id": "hero-landing",
+      "path": "./assets/hero.webp",
+      "type": "screenshot",
+      "role": "hero",
+      "source": "user_provided",
+      "deterministic": true,
+      "required": false,
+      "sha256": "49cdefbc729eb300af4be5e1f53483c68eace03dee038d97c64d39c71c8c2fa2",
+      "label": "Fitcheck landing hero"
+    },
+    {
+      "id": "social-og",
+      "path": "./assets/app-store-og.png",
+      "type": "screenshot",
+      "role": "social",
+      "source": "user_provided",
+      "deterministic": true,
+      "required": false,
+      "sha256": "d24a61d594c5a71f16511a73187f1c72518355308293db2f4820a71260ec262d",
+      "label": "Fitcheck social asset"
+    }
+  ],
+  "generated_assets": [],
+  "counts": {
+    "user_provided": 4,
+    "generated": 0,
+    "total": 4
+  },
+  "provenance": {
+    "note": "Product-owned source material copied unchanged from the working Fitcheck brand intake on 2026-08-10. Not generated campaign deliverables.",
+    "reference": "./assets/ASSET-ORIGINS.md"
+  },
+  "validation": {
+    "all_paths_exist": true,
+    "all_hashes_match": true,
+    "missing_paths": [],
+    "hash_mismatches": [],
+    "user_count": 4,
+    "generated_count": 0,
+    "checked_at": "2026-08-10T00:00:00+05:30"
+  }
+}
