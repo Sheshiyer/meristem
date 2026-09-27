@@ -24,3 +24,4 @@ node_modules/
 **/.brandmint/cache/
 *.stdout
 *.tmp
+.worktrees/
