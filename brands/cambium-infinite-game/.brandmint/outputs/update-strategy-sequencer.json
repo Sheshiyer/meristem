@@ -1,0 +1,27 @@
+{
+  "skill": "update-strategy-sequencer",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-09-27T16:19:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "update_types": [
+      {"type": "Evidence update", "when": "A capability or claim gains new verification", "voice": "Specific and receipt-led", "frequency": "As evidence changes"},
+      {"type": "Boundary update", "when": "A limitation, hold, or authority rule changes", "voice": "Direct and prominent", "frequency": "Immediately after review"},
+      {"type": "Seasonal field note", "when": "A meaningful learning closes a cycle", "voice": "Reflective and practical", "frequency": "Monthly"},
+      {"type": "Release update", "when": "A version is actually available to its stated audience", "voice": "Factual, scoped, and reversible", "frequency": "Per verified release"}
+    ],
+    "sequences": [
+      {"id": "EV-001", "update_type": "Evidence update", "subject_lines": ["What Cambium can support today", "New evidence in the Living Ledger"], "body": "This update records one verified change: [capability]. The evidence is [receipt]. It applies to [scope] and does not establish [adjacent unsupported claim]. The next review point is [date or condition].", "channels": ["email", "product sourcebook", "linkedin"], "cta": "Review the evidence boundary", "scheduled_for": "When a verification receipt is approved"},
+      {"id": "BD-001", "update_type": "Boundary update", "subject_lines": ["A Cambium boundary has changed", "Important: updated authority rule"], "body": "We changed the boundary for [action]. Previously: [old rule]. Now: [new rule]. Until the stated evidence gate passes, [held behavior] remains unavailable. No consent or authority is inferred from prior use.", "channels": ["email", "status note", "sourcebook errata"], "cta": "Read the updated boundary", "scheduled_for": "Immediately after human approval"},
+      {"id": "SF-001", "update_type": "Seasonal field note", "subject_lines": ["What this cycle taught us", "A field note on staying viable"], "body": "This cycle began with [constraint]. We tested [bounded move], observed [evidence], and retired or revised [instrument]. The purpose remains [purpose]. Here is what changes in the next cycle: [change].", "channels": ["newsletter", "linkedin", "community"], "cta": "Run your own four-line replay", "scheduled_for": "Last working day of each month"},
+      {"id": "RL-001", "update_type": "Release update", "subject_lines": ["Cambium [version] is available for [audience]", "A bounded release, with its receipts"], "body": "Cambium [version] is available to [audience] in [environment]. Verified in this release: [capabilities]. Still held: [limitations]. Rollback path: [path]. This message is availability evidence only for the stated scope.", "channels": ["email", "release notes", "status page"], "cta": "Read the verified release notes", "scheduled_for": "Only after source, runtime, and audience acceptance receipts exist"}
+    ],
+    "voice_compliance": "PASS",
+    "calendar": [
+      {"date": "2026-10-30", "sequence_id": "SF-001", "channels": ["newsletter", "linkedin", "community"]},
+      {"date": "2026-11-30", "sequence_id": "SF-001", "channels": ["newsletter", "linkedin", "community"]}
+    ]
+  }
+}

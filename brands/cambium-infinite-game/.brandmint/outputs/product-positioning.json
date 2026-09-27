@@ -1,0 +1,105 @@
+{
+  "skill": "product-positioning",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-09-27T12:18:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "positioning_statement": "For solo and technical founders whose businesses stop when they stop, Cambium is a viability-governed venture operator that keeps bounded AI agents coherent across time because it protects explicit limits, evolves only on evidence, gates consequence, and records every decision.",
+    "competitive_frame": "niche-specialist",
+    "cbbe": {
+      "salience": {
+        "product_category": "viability-governed venture operating system",
+        "problem_solved": "The absence of continuity, mission regulation, and accountable consequence between finite agent runs.",
+        "one_sentence": "Cambium is the living operator above your AI agents, keeping the venture able to continue."
+      },
+      "performance": {
+        "points_of_difference": [
+          "Optimizes viability and mission rather than task volume or revenue as a terminal objective.",
+          "Keeps paid and irreversible actions behind explicit fail-closed founder gates.",
+          "Persists typed world-state and replayable decisions across otherwise finite agent runs."
+        ],
+        "points_of_parity": [
+          "Coordinates specialist agents and existing business tools.",
+          "Automates routine bounded work after configuration.",
+          "Provides a view of current work, goals, and system state."
+        ],
+        "core_features": [
+          {"feature": "Event-driven wake loop", "value_level": "high"},
+          {"feature": "Viability monitor with explicit margins", "value_level": "high"},
+          {"feature": "Vision-mission-goal cascade controller", "value_level": "high"},
+          {"feature": "Founder approval gates for consequence", "value_level": "high"},
+          {"feature": "Typed event-sourced world-state and replay", "value_level": "high"},
+          {"feature": "Specialist finite-agent routing", "value_level": "table_stakes"}
+        ]
+      },
+      "imagery": {
+        "brand_associations": [
+          "the living layer beneath bark",
+          "growth rings that preserve history",
+          "a well-kept instrument panel",
+          "paths bending inward at a safe boundary",
+          "one patient steward across many gardens"
+        ],
+        "usage_locations": [
+          "the founder's quiet morning operating review",
+          "the portfolio operator's multi-venture command surface",
+          "the moment before a consequential agent action"
+        ],
+        "usage_methods": [
+          "inspect current margins and evidence",
+          "approve or reject a bounded next game",
+          "replay why a previous move happened"
+        ]
+      },
+      "judgments": {
+        "positive_judgments": [
+          "This is more honest than an autonomous-company promise.",
+          "The system knows where its authority stops.",
+          "I can understand why it wants to act.",
+          "Its patience is a feature, not a lack of ambition."
+        ],
+        "concerns_doubts": [
+          "Will it become another complicated dashboard?",
+          "Can an abstract viability model be useful in a real small business?",
+          "Does human approval erase the value of automation?",
+          "Is this product implemented or only doctrine?"
+        ],
+        "credibility": "Credibility comes from explicit contracts, bounded claims, live receipts, and visible uncertainty; never from anthropomorphic confidence.",
+        "concern_responses": [
+          {
+            "concern": "Another complicated dashboard",
+            "response": "Lead with the one next bounded decision and reveal deeper proof only on demand."
+          },
+          {
+            "concern": "Abstract viability",
+            "response": "Use a small set of named hard bounds and observable proxy margins; do not claim exact computation of a 1024-dimensional kernel."
+          },
+          {
+            "concern": "Approval slows automation",
+            "response": "Only consequence is gated. Reversible, pre-authorized finite work remains automatic."
+          },
+          {
+            "concern": "Doctrine versus product",
+            "response": "Label every surface Doctrine, Local, Production, Held, or Retired and show the receipt supporting the label."
+          }
+        ]
+      },
+      "feelings": {
+        "desired_feelings": ["relief", "orientation", "earned trust", "calm agency", "stewardship"],
+        "voice": "patient, rigorous, alive, honest, and grounded",
+        "tone": "warmly authoritative without hype, urgency theater, or synthetic certainty"
+      },
+      "resonance": {
+        "why_missed": "Founders do not need to watch another swarm perform busyness; they need evidence that the venture can continue without losing itself.",
+        "mission_alignment": "Keeping small ventures in the game advances a world where more founders can pursue a cause without trading their health for continuity.",
+        "core_values": ["viability before velocity", "evidence before consequence", "stewardship before autonomy", "learning without identity drift", "truthful provenance"],
+        "why_choose_us": "Choose Cambium when the cost of silent drift is higher than the value of unbounded automation."
+      }
+    },
+    "points_of_parity": ["agent coordination", "workflow automation", "goal and task visibility"],
+    "points_of_difference": ["viability kernel framing", "allostatic evidence gates", "founder consequence boundary", "replayable world-state"],
+    "positioning_summary": "Cambium occupies the space between AI-workforce tools and passive planning software. It is not a synthetic executive team, an agent builder, or an OKR dashboard. It is the meta-operator that decides when a finite specialist should play, checks whether that move preserves the venture's ability to continue, and keeps consequence legible to the human steward. Its category claim is intentionally narrow: viability-governed venture operations for founders who want continuity without theatrical autonomy."
+  }
+}

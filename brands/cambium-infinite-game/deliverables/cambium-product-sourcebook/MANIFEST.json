@@ -1,0 +1,38 @@
+{
+  "schema": "cambium.product-sourcebook.manifest.v1",
+  "brand": "Cambium",
+  "descriptor": "The Infinite Game Engine",
+  "created_at": "2026-09-27T16:35:00Z",
+  "package_mode": "manifest-based; canonical files remain in the parent brand directory",
+  "product_sources": [
+    "../../notebooklm/product-sources/01-product-overview.md",
+    "../../notebooklm/product-sources/02-operating-model.md",
+    "../../notebooklm/product-sources/03-positioning-and-language.md",
+    "../../notebooklm/product-sources/04-visual-system.md",
+    "../../notebooklm/product-sources/05-product-brief-and-proof-status.md"
+  ],
+  "process_provenance_local_only": [
+    "../../notebooklm/process-provenance/generation-method.md",
+    "../../notebooklm/process-provenance/source-boundary.md",
+    "../../notebooklm/process-provenance/publication-receipt.md"
+  ],
+  "asset_manifest": "../../.brandmint/asset-manifest.json",
+  "visual_asset_count": 12,
+  "notebooklm": {
+    "notebook_id": "492b06c0-5813-46df-aae4-c6454ac4da65",
+    "source_count": 5,
+    "process_source_count": 0,
+    "artifact_directory": "../../notebooklm/artifacts/"
+  },
+  "genesis_contract": {
+    "payload": "genesis-contract.json",
+    "evidence": "genesis-contract-evidence.json"
+  },
+  "validation": {
+    "all_listed_source_paths_exist": true,
+    "asset_paths_and_checksums_verified": true,
+    "raw_pipeline_markdown_uploaded": false,
+    "public_launch_authorized": false,
+    "warnings": ["Contour-field pattern is not verified as a seamless tile."]
+  }
+}

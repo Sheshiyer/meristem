@@ -1,0 +1,72 @@
+{
+  "skill": "landing-page-copy",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-09-27T13:13:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+  "hero": {
+    "eyebrow": "CAMBIUM · THE INFINITE GAME ENGINE",
+    "headline": "Your business, still able to play tomorrow.",
+    "subhead": "A viability-governed operator for finite work, human authority, and replayable learning.",
+    "product_pitch": "Cambium is the living operator above your finite AI agents. It wakes on evidence, protects viability, advances mission, gates consequence, and records why every meaningful move happened.",
+      "cta_button": "Map your viability bounds",
+      "secondary_cta": "See one wake"
+    },
+    "problem": {
+      "headline": "Your agents finish tasks. Your company still needs continuity.",
+      "body": "Genesis can mint the brand. Hands can build. Will can go to market. Each run should end. What is missing is the layer between them: the one that remembers the cause, watches the limits, and decides which bounded game matters next."
+    },
+    "features": [
+      {"name": "Wake", "headline": "Dormant between events. Never done.", "body": "Cambium wakes when real evidence arrives, takes one bounded operating step, persists the result, and returns to rest. Quiet is a valid state—not a failed activity metric.", "template_used": "1"},
+      {"name": "Viability", "headline": "Protect the ability to continue.", "body": "Name the bounds that matter: solvency, mission coherence, legal and ethical limits, founder capacity. When a margin narrows, the next move points inward.", "template_used": "2"},
+      {"name": "Cascade", "headline": "Advance the cause, not the dashboard.", "body": "Vision stays near-invariant. Missions renew. Goals become finite games. Revenue and growth remain regulated fuel—not the thing the system worships.", "template_used": "3"},
+      {"name": "Founder gate", "headline": "Consequence stays human.", "body": "Reversible, authorized work can proceed. Paid, irreversible, identity-changing, or externally representative actions stop at an explicit founder gate.", "template_used": "4"},
+      {"name": "Replay", "headline": "Every meaningful move leaves a reason.", "body": "Typed world-state and event receipts let you reconstruct what happened, what evidence was used, who had authority, and what remains held.", "template_used": "5"}
+    ],
+    "how_it_works": [
+      {"step": "1", "title": "Name the living bounds", "body": "Define the vision, current mission, goals, and the margins the venture cannot cross."},
+      {"step": "2", "title": "Let evidence wake the operator", "body": "A real event enters world-state. Cambium checks relevance, freshness, provenance, and current margin."},
+      {"step": "3", "title": "Play one finite game", "body": "Cambium proposes the bounded specialist run that best advances the mission while preserving viability."},
+      {"step": "4", "title": "Gate, persist, and learn", "body": "Consequential moves ask for the right authority. The result lands as a replayable receipt before the system rests again."}
+    ],
+    "principles": [
+      "Viability before velocity.",
+      "Evidence before consequence.",
+      "Stewardship before autonomy.",
+      "Learning without identity drift.",
+      "Truthful provenance over theatrical confidence."
+    ],
+    "pricing": {
+      "headline": "Genesis is free. Taste is the subscription.",
+      "body": "The commercial model is doctrine until a pricing contract is approved. Do not publish a price, discount, or availability claim from this draft.",
+      "status": "held — authoritative pricing not established in this run"
+    },
+    "social_proof": {
+      "testimonials": [],
+      "trust_badges": [],
+      "media_mentions": [],
+      "truth_note": "Pre-launch: no customer, certification, media, or production performance proof is approved. Replace this block with a one-wake demonstration and labeled local receipts until real proof exists."
+    },
+    "faq": [
+      {"question": "Is Cambium another team of AI employees?", "answer": "No. Specialist agents remain finite tools. Cambium is the operator that chooses when one should act, checks the venture's bounds, and carries learning across runs."},
+      {"question": "Does it replace the founder?", "answer": "No. It reduces continuous supervision while preserving the founder's authority over paid, irreversible, identity-changing, and externally representative moves."},
+      {"question": "Does Cambium maximize revenue?", "answer": "No. Revenue is fuel and solvency is a hard bound. The source objective is advancing the vision through renewable missions without losing the ability to continue."},
+      {"question": "What is a viability kernel here?", "answer": "The exact high-dimensional kernel is not computed. Cambium uses explicit hard bounds and observable proxy margins, and treats narrowing margin as a reason to choose a safer next move."},
+      {"question": "What does replayable mean?", "answer": "A consequential move carries the triggering event, evidence, current state, authority, decision, output, and receipt needed to reconstruct why it happened."},
+      {"question": "Is the product live?", "answer": "This brand package includes doctrine, local design outputs, and illustrative visuals. Live product capability must be stated only from current production receipts."}
+    ],
+    "final_cta": {
+      "headline": "Start with the bound that keeps you awake.",
+      "body": "Name what would force your venture out of the game. Then map the finite work that can widen that margin without hiding consequence.",
+      "button": "Map the first bound"
+    },
+    "asset_pairings": {
+      "hero": "./generated/hero-continuity-studio-v1.png",
+      "problem": "./generated/illustration-finite-instruments-v1.png",
+      "principles": "./generated/hero-viable-field-v1.png",
+      "final_cta": "./generated/illustration-one-operator-many-gardens-v1.png"
+    }
+  }
+}

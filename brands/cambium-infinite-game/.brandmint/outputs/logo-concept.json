@@ -1,0 +1,86 @@
+{
+  "skill": "logo-concept",
+  "cluster": "identity",
+  "wave": 3,
+  "timestamp": "2026-09-27T12:26:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "logo_type": {
+      "primary": "combination mark",
+      "rationale": "A restrained symbol can carry the living-layer and replay ideas at small sizes, while the Cambium wordmark keeps the unfamiliar product category legible. The symbol must work independently only after recognition is established."
+    },
+    "symbolism": {
+      "brand_attributes": ["living", "patient", "bounded", "replayable", "steward-led"],
+      "visual_concepts": [
+        "a thin living ring inside older growth rings",
+        "an open path that bends inward before crossing a boundary",
+        "a C-shaped cambium layer that is neither tree clip-art nor a loading spinner",
+        "one copper intervention point inside a stable lichen structure"
+      ],
+      "symbol_ideas": [
+        "Offset Ring: three imperfect concentric rings with one open copper layer forming a subtle C.",
+        "Viable Path: a single line approaches an enclosing ring, curves inward, and continues.",
+        "Living Ledger: two nested arcs with one small copper notch marking the current decision."
+      ]
+    },
+    "style_direction": {
+      "complexity": "simple",
+      "weight": "medium-light",
+      "shape": "organic geometry",
+      "style": "modern with archival restraint",
+      "mood": "serious, calm, alive"
+    },
+    "references": [
+      {
+        "brand": "Muji",
+        "what_works": "Restraint and confidence without spectacle.",
+        "gap_opportunity": "Cambium needs a more distinctive organic operating symbol, not retail minimalism."
+      },
+      {
+        "brand": "The Nature Conservancy",
+        "what_works": "A natural form reduced into a recognizable silhouette.",
+        "gap_opportunity": "Avoid a literal tree and communicate controlled continuity rather than conservation."
+      },
+      {
+        "brand": "Braun",
+        "what_works": "Instrument-like clarity, disciplined proportion, and durable form.",
+        "gap_opportunity": "Add living asymmetry and warmth so the system does not feel industrial or closed."
+      }
+    ],
+    "concept_directions": [
+      {
+        "name": "Living Boundary",
+        "concept": "Three quiet concentric growth rings. The middle ring opens into a subtle letter C and continues as a path that bends inward before crossing the outer boundary. One small copper segment marks human consequence.",
+        "style_notes": "Flat two-color symbol, imperfect botanical curvature disciplined by geometric spacing, no trunk, leaf, roots, arrows, or 3D effects.",
+        "generation_prompt": "Use case: logo-brand. Asset type: symbol exploration for Cambium, the Infinite Game Engine. Primary request: create one simple flat emblem built from three imperfect concentric growth rings; the middle living layer forms a subtle open letter C and continues as a path that curves inward before crossing the outer boundary; include one very small copper intervention segment. Style/medium: vector-friendly flat mark, organic geometry, archival restraint. Color palette: Living Lichen #1F3A2E and Cambium Copper #B76E3F. Composition: centered isolated symbol, strong silhouette, generous negative space, genuinely transparent background. Constraints: no wordmark, no letters drawn literally, no tree, leaf, roots, robot, brain, infinity symbol, arrows, gradient, glow, bevel, mockup, watermark, or extra text."
+      },
+      {
+        "name": "Viable Path",
+        "concept": "A continuous line enters a bounded oval, approaches its edge, then changes course and keeps moving inside it.",
+        "style_notes": "Monoline, calm tension, asymmetric but balanced; reads as continuation rather than optimization.",
+        "generation_prompt": "Use case: logo-brand. Asset type: alternate Cambium symbol. Primary request: a single continuous monoline path inside a softly irregular oval boundary; the path approaches the edge, bends inward, and continues, conveying viability and an infinite game without using an infinity sign. Style: minimal organic geometry, precise spacing, flat. Palette: #1F3A2E with one #B76E3F node. Transparent background. No text, arrows, leaves, robots, brains, gradients, glow, or mockup."
+      },
+      {
+        "name": "Decision Ring",
+        "concept": "Nested rings preserve history while a single offset notch records the current stewarded choice.",
+        "style_notes": "Most compact direction; suitable for favicon and provenance stamps.",
+        "generation_prompt": "Use case: logo-brand. Asset type: compact Cambium provenance mark. Primary request: two nested imperfect rings with one offset copper notch that feels like a recorded human decision. Strong small-size silhouette, flat vector-friendly construction, centered on transparent background. Use #1F3A2E and #B76E3F only. No letters, trees, leaves, infinity symbols, gradients, glow, or text."
+      }
+    ],
+    "selected_direction": "Living Boundary",
+    "usage_specs": {
+      "minimum_size": "24px symbol height; 120px combination-mark width",
+      "clear_space": "One copper-notch width around the symbol; one cap-height around the combination mark.",
+      "color_variations": ["full_color", "lichen_monochrome", "bone_reversed"],
+      "dont_do": [
+        "Do not close the living layer into a static target or loading spinner.",
+        "Do not add leaf, tree, root, robot, brain, or game-controller imagery.",
+        "Do not use copper for more than the single consequence segment.",
+        "Do not rotate the mark or animate it as endless activity.",
+        "Do not treat a generated raster concept as a production vector master."
+      ]
+    },
+    "asset_status": "concept-approved-for-generation; production vectorization and human mark approval remain separate"
+  }
+}

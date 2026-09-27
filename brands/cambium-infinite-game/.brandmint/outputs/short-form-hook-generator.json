@@ -1,0 +1,17 @@
+{
+  "skill": "short-form-hook-generator",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-09-27T16:17:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "hooks": [
+      {"id": 1, "category": "negative", "hook_text": "Busy is not viable.", "visual_action": "A dense task list folds into one bounded decision card.", "script": [{"timestamp": "0:00-0:03", "voiceover": "Busy is not viable.", "on_screen": "BUSY ≠ VIABLE"}, {"timestamp": "0:03-0:08", "voiceover": "Count the obligations that can end the game.", "on_screen": "cash · capacity · consent"}, {"timestamp": "0:08-0:15", "voiceover": "Then choose one reversible move inside the bound.", "on_screen": "Observe → Bound → Act → Learn"}], "cta": "Name the bound before the task.", "platform_fit": ["tiktok", "reels", "shorts"]},
+      {"id": 2, "category": "curiosity", "hook_text": "What ends your game?", "visual_action": "A glowing path stops at three labeled boundary stones.", "script": [{"timestamp": "0:00-0:03", "voiceover": "What ends your game?", "on_screen": "THE REAL CONSTRAINT"}, {"timestamp": "0:03-0:08", "voiceover": "Not the missed post. The obligation you cannot absorb.", "on_screen": "risk before reach"}, {"timestamp": "0:08-0:15", "voiceover": "A viable system sees the boundary before it moves.", "on_screen": "Stay in the game."}], "cta": "Write your non-negotiable bound.", "platform_fit": ["tiktok", "reels", "shorts"]},
+      {"id": 3, "category": "outcome", "hook_text": "Make decisions replayable.", "visual_action": "Four ledger cards align into a visible sequence.", "script": [{"timestamp": "0:00-0:03", "voiceover": "Make decisions replayable.", "on_screen": "NOT JUST EXPLAINABLE"}, {"timestamp": "0:03-0:08", "voiceover": "Keep the evidence, authority, action, and result together.", "on_screen": "evidence · gate · action · outcome"}, {"timestamp": "0:08-0:15", "voiceover": "Then the next cycle starts from truth, not theatre.", "on_screen": "Cambium · Living Ledger"}], "cta": "Replay one decision this week.", "platform_fit": ["tiktok", "reels", "shorts"]},
+      {"id": 4, "category": "visual_oddity", "hook_text": "Retire the ladder.", "visual_action": "A ladder dissolves into concentric seasonal rings and a branching path.", "script": [{"timestamp": "0:00-0:03", "voiceover": "Retire the ladder.", "on_screen": "GROWTH IS NOT ONE DIRECTION"}, {"timestamp": "0:03-0:08", "voiceover": "A venture can narrow, rest, branch, or begin again.", "on_screen": "narrow · rest · branch · renew"}, {"timestamp": "0:08-0:15", "voiceover": "The purpose continues; the instrument can end.", "on_screen": "finite work · infinite purpose"}], "cta": "Release one instrument that no longer serves.", "platform_fit": ["tiktok", "reels", "shorts"]}
+    ],
+    "voice_compliance": "PASS"
+  }
+}

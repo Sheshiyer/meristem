@@ -1,0 +1,47 @@
+{
+  "skill": "hero-images",
+  "cluster": "photography",
+  "wave": 4,
+  "timestamp": "2026-09-27T12:37:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "requirements": [
+      {"placement": "landing page hero", "aspect_ratio": "16:9", "purpose": "make continuity tangible through a real founder environment", "needs_text_zone": true},
+      {"placement": "campaign and doctrine hero", "aspect_ratio": "16:9", "purpose": "visualize viability and the evidence-gated path without software-chart clichés", "needs_text_zone": true}
+    ],
+    "concepts": [
+      {"name": "The Studio Continues", "message": "The venture remains prepared and legible while the founder steps away.", "emotional_impact": "earned relief and calm continuity", "visual_approach": "quiet documentary workspace at dawn with evidence-bearing objects and an asleep screen"},
+      {"name": "The Viable Field", "message": "A path can keep moving because it respects a living boundary.", "emotional_impact": "orientation and intelligent restraint", "visual_approach": "tactile archival field plate blending growth rings with phase-space trajectories"}
+    ],
+    "shot_list": [
+      {
+        "id": "hero-continuity-studio-v1",
+        "concept": "The Studio Continues",
+        "placement": "landing page hero",
+        "aspect_ratio": "1672:941 (approximately 16:9)",
+        "text_zone": "left half",
+        "priority": "high",
+        "generation_prompt": "Quiet editorial documentary photograph of a founder's studio at dawn after the founder has stepped away: open paper ledger, worn desk, circular brass instrument, copper pencil mark, sleeping laptop, soft garden beyond the window; right-third subject placement, left negative space; warm-muted natural light; no people, data, text, robots, neon, or AI clichés.",
+        "generated_path": "./generated/hero-continuity-studio-v1.png",
+        "sha256": "16f61e70c88350255189e6e215aa1f604c7d0862d8970ed0e68f28a369f40fb2",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative — generated brand expression, not product proof"
+      },
+      {
+        "id": "hero-viable-field-v1",
+        "concept": "The Viable Field",
+        "placement": "campaign and doctrine hero",
+        "aspect_ratio": "1672:941 (approximately 16:9)",
+        "text_zone": "right half",
+        "priority": "medium",
+        "generation_prompt": "Macro mixed-media topographic field on embossed handmade paper, combining growth rings with a phase-space trajectory that approaches a boundary, bends inward, and continues; one copper decision mark; left-center subject, right negative space; lichen, bone, new growth, copper; no text, arrows, infinity, UI, neon, or watermark.",
+        "generated_path": "./generated/hero-viable-field-v1.png",
+        "sha256": "fe66699426e082c4ee2fbee88db5caf3bdcd736a01cc4c7072ed7bdcf6f9cdc4",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative — generated brand expression, not product proof"
+      }
+    ],
+    "generation_summary": {"total_shots": 2, "generated": 2, "pending": 0, "engine": "Codex built-in image generation", "api_credits_used": false}
+  }
+}

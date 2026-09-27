@@ -1,0 +1,59 @@
+{
+  "skill": "brand-story",
+  "cluster": "strategy",
+  "wave": 2,
+  "status": "complete",
+  "data": {
+    "storybrand_framework": {
+      "character": {
+        "name": "The tired steward",
+        "description": "A solo or technical founder carrying a real small business whose progress stops whenever their attention, energy, or health gives out.",
+        "desire": "Keep the venture alive and advancing without surrendering judgment, identity, or control."
+      },
+      "problem": {
+        "external": "A collection of capable agents can complete tasks, but no layer watches whether the company remains viable or decides which bounded game should happen next.",
+        "internal": "The founder feels that stepping away is irresponsible because activity can continue while coherence, cash, and trust quietly erode.",
+        "philosophical": "A business should not demand the founder's constant presence merely to remain capable of playing tomorrow."
+      },
+      "guide": {
+        "empathy": "Cambium begins from the lived truth that the company stops when its steward stops.",
+        "authority": "It uses explicit viability bounds, evidence-gated setpoint changes, fail-closed approvals, and a replayable event log instead of claiming autonomous magic."
+      },
+      "plan": {
+        "steps": [
+          "Name the venture's vision, current mission, goals, and non-negotiable viability bounds.",
+          "Let Cambium wake on real events, measure margin, and propose the next finite game.",
+          "Approve consequential moves, inspect the receipt, and let each bounded run return to dormancy."
+        ]
+      },
+      "call_to_action": {
+        "direct": "Map your venture's viability bounds.",
+        "transitional": "See how one wake becomes a replayable decision."
+      },
+      "success": {
+        "external": "The venture continues making bounded progress while the founder is not at the keyboard.",
+        "internal": "The founder can step away without feeling that control has been replaced by opacity.",
+        "philosophical": "The system advances the cause while preserving the ability to keep playing."
+      },
+      "failure": {
+        "external": "Finite agents maximize activity, spend resources, and drift off-mission without a meta-player.",
+        "internal": "The founder returns to a pile of outputs that cannot be trusted or explained.",
+        "philosophical": "The business mistakes motion for viability and optimizes itself out of the game."
+      }
+    },
+    "origin_story": "Cambium began with a contradiction in an otherwise successful agent architecture: every organ could play its bounded game well, yet the venture as a whole still went still. Genesis could mint a brand. Hands could build. Will could go to market. Each run was designed to converge, finish, and sleep — correct behavior for a finite game. The missing part was not another agent. It was the living layer above them: an operator that never declares the venture finished, wakes only when evidence arrives, protects the ability to continue, and carries learning from one finite game into the next. That layer became Cambium, named for the thin living tissue that lets a tree keep growing without discarding its rings.",
+    "founder_narrative": "The founding insight is architectural rather than biographical: dormancy was never the defect. The defect was the absent meta-player. Cambium therefore does not promise an artificial founder or a tireless swarm. It gives the real founder a patient operating layer that can preserve mission, watch limits, and propose the next bounded move with evidence and receipts.",
+    "customer_transformation": "Before Cambium, the founder is the only continuity mechanism: every pause becomes drift, every agent run must be watched, and every success claim must be rechecked. With Cambium, the founder defines the cause and bounds once, then evaluates consequential proposals instead of supervising every task. The result is not a company without a human. It is a company whose continuity no longer depends on constant human vigilance.",
+    "key_story_moments": {
+      "aha": "The founder sees that the real problem is not insufficient automation; it is the absence of an operator that protects viability across automations.",
+      "first_experience": "A real event wakes Cambium, which shows the current viability margin, proposes one bounded game, and asks for approval only where consequence demands it.",
+      "transformation": "A week away produces a legible sequence of bounded decisions rather than silent drift or a theatrical activity feed.",
+      "advocacy": "The founder recommends Cambium because it makes autonomy explainable and absence survivable."
+    },
+    "story_formats": {
+      "one_liner": "One living operator keeps every finite agent in the game.",
+      "paragraph": "Your agents can mint, build, market, and operate. But each one plays a finite game and then stops. Cambium is the living layer above them: it wakes on real events, protects the venture's viability, advances its mission, and records every consequential choice. It does not replace the founder. It makes the company capable of continuing when the founder steps away.",
+      "short_story": "The modern founder can summon a fleet of agents, yet the company still stops when the founder stops. Each agent is built to finish a task: mint the brand, ship the site, publish the campaign, close the ticket. Those are finite games, and finishing them is correct. The failure appears between the games. Nothing holds the mission, watches solvency, learns from the last run, or decides what must happen next. Cambium is that missing living layer. Like the growth tissue under tree bark, it preserves the past while making the next ring possible. It wakes on evidence, measures the venture against explicit bounds, proposes one bounded move, and closes the loop with a replayable receipt. The founder remains the steward of consequence. The company gains continuity."
+    }
+  }
+}

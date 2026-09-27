@@ -1,0 +1,49 @@
+{
+  "skill": "notebooklm-publishing",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-09-27T16:41:00Z",
+  "status": "complete",
+  "version": "2.0.0",
+  "data": {
+    "pipeline": {
+      "transform": {"categories_processed": ["product-overview", "operating-model", "positioning-and-language", "visual-system", "product-brief-and-proof-status"], "sources_generated": 5, "synthesis_model": "NotebookLM managed synthesis", "fallback_used": false},
+      "curate": {"focus": "Cambium product sourcebook", "sources_selected": 5, "sources_excluded": 2, "budget_used": 5, "budget_total": 50, "exclusion_reason": "Generation method and process provenance remain local-only."},
+      "assemble": {"prose_docs": 5, "user_provided_assets": 0, "generated_assets_uploaded_as_sources": 0, "all_paths_validated": true, "raw_pipeline_markdown_uploaded": false}
+    },
+    "notebook": {
+      "id": "492b06c0-5813-46df-aae4-c6454ac4da65",
+      "name": "Cambium — Product Sourcebook · Internal | 2026-09-27",
+      "access": "restricted",
+      "is_public": false,
+      "share_url": null,
+      "created_at": "2026-09-27T12:47:57+00:00"
+    },
+    "sources_uploaded": {
+      "prose_documents": [
+        {"id": "cdfb4054-3f3f-4d11-930c-d4207327570e", "name": "01-product-overview.md", "category": "product-overview", "source_kind": "authored-product-source", "word_count": 423, "path": "notebooklm/product-sources/01-product-overview.md", "path_validated": true, "indexed": true, "status": "ready"},
+        {"id": "1e46f85e-7b7f-4388-a1fb-c7459d30f228", "name": "02-operating-model.md", "category": "product-strategy", "source_kind": "authored-product-source", "word_count": 495, "path": "notebooklm/product-sources/02-operating-model.md", "path_validated": true, "indexed": true, "status": "ready"},
+        {"id": "37fd9ece-ff01-4170-aa90-c3fcedda22a7", "name": "03-positioning-and-language.md", "category": "brand-identity", "source_kind": "authored-product-source", "word_count": 380, "path": "notebooklm/product-sources/03-positioning-and-language.md", "path_validated": true, "indexed": true, "status": "ready"},
+        {"id": "1e701510-fa5a-4010-9f25-061e9f29aa1c", "name": "04-visual-system.md", "category": "brand-identity", "source_kind": "authored-product-source", "word_count": 469, "path": "notebooklm/product-sources/04-visual-system.md", "path_validated": true, "indexed": true, "status": "ready"},
+        {"id": "69601739-6826-4d01-97c5-980fd19c9831", "name": "05-product-brief-and-proof-status.md", "category": "product-strategy", "source_kind": "authored-product-source", "word_count": 416, "path": "notebooklm/product-sources/05-product-brief-and-proof-status.md", "path_validated": true, "indexed": true, "status": "ready"}
+      ],
+      "assets": [],
+      "excluded_local_documents": ["notebooklm/process-provenance/generation-method.md", "notebooklm/process-provenance/source-boundary.md"]
+    },
+    "artifacts_generated": {
+      "mind_map": {"generated": true, "remote_id": "dee4e80f-6ef6-4469-8057-82e6ab4b7709", "title": "Operating System Mind Map", "path": "notebooklm/artifacts/cambium-product-mind-map.json", "sha256": "1a38e71987a24a59bfbe60b27794267341efc975bf972d9fbf421bb116534f27"},
+      "slides": {"generated": true, "remote_id": "10067787-78bc-4a0c-90cc-ddc211fb5c0f", "title": "Cambium Operating System Concept", "pdf_path": "notebooklm/artifacts/cambium-operating-system-concept-slides.pdf", "pdf_sha256": "405371f1140ed1397037740723ad5a9f5a167171291296695e171d0c323dcba7", "pptx_path": "notebooklm/artifacts/cambium-operating-system-concept-slides.pptx", "pptx_sha256": "75b75f8edd9518c496e427f5eda5c46209c0e9b4f6c83c3d76b612077031f866", "page_count": 16},
+      "report": {"generated": true, "remote_id": "2840b510-ab40-412c-af43-3f3f2a8f0d59", "title": "Cambium: Brand and Product Sourcebook", "path": "notebooklm/artifacts/cambium-brand-product-report.md", "sha256": "5da75c0a0fc2fa4b13ca0cae73bda22ec79ad54fdc41dc2a59a306f15595eab0"},
+      "audio": {"generated": true, "remote_id": "16afee38-db41-4f21-a294-a88fc360726d", "title": "Cambium prioritizes viability over velocity", "path": "notebooklm/artifacts/cambium-viability-over-velocity-audio.m4a", "sha256": "ef192218756f19ee99cf0eb9c733d5018fe74aae856f462412ee7ff7e41a7b41", "duration_seconds": 1589.359456, "codec": "AAC"}
+    },
+    "validation": {
+      "all_sources_ready": true,
+      "all_four_configured_artifact_types_completed": true,
+      "all_download_paths_exist": true,
+      "all_download_checksums_recorded": true,
+      "product_process_separation_passed": true,
+      "missing_paths": [],
+      "hallucinated_paths": 0
+    }
+  }
+}

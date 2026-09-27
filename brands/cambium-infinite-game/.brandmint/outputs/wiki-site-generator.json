@@ -1,0 +1,28 @@
+{
+  "skill": "wiki-site-generator",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-09-27T16:44:00Z",
+  "status": "complete",
+  "version": "2.0.0",
+  "data": {
+    "delivery_status": "source-only handoff complete; build and deployment held",
+    "site_config": {"framework": "unselected", "template": "unselected", "theme": "Cambium Living Ledger", "source_map": "deliverables/wiki-source/site-map.json"},
+    "asset_handling": {
+      "manifest_loaded": true,
+      "manifest_valid": true,
+      "assets_referenced": {"total": 12, "user_provided": 0, "generated": 12, "deterministic": 0},
+      "copy_verification": {"all_sources_exist": true, "copies_created": false, "reason": "The source-only handoff keeps canonical assets in place.", "missing_sources": []}
+    },
+    "pages_generated": [
+      {"route": "/overview", "source_skill": "brand-foundation", "title": "Product Overview", "source_path": "notebooklm/product-sources/01-product-overview.md", "validated": true},
+      {"route": "/operating-model", "source_skill": "product-positioning", "title": "Operating Model", "source_path": "notebooklm/product-sources/02-operating-model.md", "validated": true},
+      {"route": "/positioning", "source_skill": "messaging-framework", "title": "Positioning and Language", "source_path": "notebooklm/product-sources/03-positioning-and-language.md", "validated": true},
+      {"route": "/visual-system", "source_skill": "visual-language", "title": "Visual System", "source_path": "notebooklm/product-sources/04-visual-system.md", "validated": true},
+      {"route": "/proof-status", "source_skill": "value-proposition", "title": "Product Brief and Proof Status", "source_path": "notebooklm/product-sources/05-product-brief-and-proof-status.md", "validated": true}
+    ],
+    "image_verification": {"manifest_assets": 12, "references_resolved": 12, "broken_references": 0, "conceptual_labels_required": true},
+    "build": {"success": false, "output_path": null, "page_count": 5, "asset_count": 12, "held_reason": "No framework choice or local site-build scope was approved."},
+    "deployment": {"platform": null, "url": null, "deployed": false, "held_reason": "Production or public deployment requires separate owner approval and rollback evidence."}
+  }
+}
