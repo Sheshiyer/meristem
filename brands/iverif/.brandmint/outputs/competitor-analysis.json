@@ -1,0 +1,173 @@
+{
+  "skill": "competitor-analysis",
+  "cluster": "foundation",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 1,
+  "data": {
+    "evidence_scope": "Named FR actors from brand-config + ledger C1–C4 (observation). Tooling substitutes from v1 competitor-analysis. Do not invent feature parity matrices for Économie d'Énergie SAS / GEO PLC until primary pages are dated-fetched (C3).",
+    "market_frame_fr": {
+      "category_iverif": "Logiciel de validation documentaire pré-dépôt pour dossiers de subventions énergétiques (RegTech SaaS).",
+      "category_note": "Les acteurs primes / délégataires ci-dessous sont des pairs de marché (operators), pas des preuves qu'ils livrent le même logiciel de validation cross-document."
+    },
+    "competitors": [
+      {
+        "name": "Hellio",
+        "type": "direct_context_fr_operator",
+        "class": "observation (C1)",
+        "positioning": "Acteur FR efficacité énergétique / accompagnement CEE et primes énergie ; posture délégataire-style pour obligés et bénéficiaires.",
+        "evidence": [
+          "https://www.hellio.com/aides-financements/certificats-economies-energie",
+          "https://particulier.hellio.com/solutions/prime-energie"
+        ],
+        "target_audience": "Obligés, professionnels, particuliers cherchant primes / accompagnement CEE",
+        "key_signals": [
+          "Contenu éducatif primes énergie",
+          "Accompagnement dispositif CEE",
+          "Marque grand public + pro"
+        ],
+        "strengths": [
+          "Notoriété FR sur CEE / primes",
+          "Présence contenu et parcours accompagnement"
+        ],
+        "weaknesses_for_iverif_lens": [
+          "Opérateur / distributeur de primes — pas une preuve de moteur AI de validation cross-document équivalent à iverif"
+        ],
+        "differentiation_rule": "Ne pas impliquer d'affiliation. iverif valide des dossiers ; Hellio opère des services CEE / primes.",
+        "iverif_response": "Cadre iverif comme logiciel de contrôle pré-soumission pour back-offices — complementary or alternative to operator journeys, never as a Hellio clone."
+      },
+      {
+        "name": "Économie d'Énergie SAS",
+        "type": "direct_context_fr_operator",
+        "class": "observation (C3) — secondary confirmation pending live primary-page fetch",
+        "positioning": "Acteur FR économies d'énergie / marché CEE (operator / market-participant class per Phase 1 intake).",
+        "evidence": [
+          "Founder / Phase 1 Meristem intake directive 2026-09-11; primary-page fetch pending"
+        ],
+        "target_audience": "Marché CEE / obligation-scheme participants",
+        "key_signals": [
+          "Named peer for FR GTM differentiation rules"
+        ],
+        "strengths": [
+          "Ancrage marché obligation CEE (à confirmer sur pages primaires datées)"
+        ],
+        "weaknesses_for_iverif_lens": [
+          "Ne pas inventer de comparatif produit feature-à-feature tant que les pages primaires ne sont pas fetchées"
+        ],
+        "differentiation_rule": "Positionner comme opérateur / acteur de marché, pas comme logiciel AI de validation de dossiers.",
+        "iverif_response": "Rester sur le scope validation logicielle ; aucune reprise de claims commerciaux tiers."
+      },
+      {
+        "name": "Effy",
+        "type": "direct_context_fr_operator",
+        "class": "observation (C2)",
+        "positioning": "Parcours rénovation énergétique et marque « Prime Effy » sous mécanisme CEE pour ménages et pros.",
+        "evidence": [
+          "https://www.effy.fr/",
+          "https://www.effy.fr/renovation-energetique/certificat-economie-energie",
+          "https://www.effy.fr/pro/accompagnement-client/comprendre-le-marche-des-primes-energies"
+        ],
+        "target_audience": "Particuliers et professionnels de la rénovation ; marché primes",
+        "key_signals": [
+          "Prime Effy brandée",
+          "Pédagogie marché primes (obligé / délégataire / bénéficiaire)",
+          "Parcours rénovation"
+        ],
+        "strengths": [
+          "Marque consumer/pro forte",
+          "Clarté pédagogique sur les rôles du marché"
+        ],
+        "weaknesses_for_iverif_lens": [
+          "Vend primes et parcours rénovation — pas un DMS/validation AI pré-dépôt pour back-office délégataire"
+        ],
+        "differentiation_rule": "Effy vend primes et parcours ; iverif vend la validation documentaire pré-soumission. Ne pas réutiliser montants euros ou « jusqu'à X% » (prohibited).",
+        "iverif_response": "Réutiliser uniquement la clarté de rôles (P5) ; jamais les montants marketing Effy."
+      },
+      {
+        "name": "GEO PLC",
+        "type": "direct_context_eu_obligation_scheme",
+        "class": "observation (C3) — secondary confirmation pending live primary-page fetch",
+        "positioning": "Participant de marché efficacité énergétique / obligation schemes (intake Phase 1).",
+        "evidence": [
+          "Founder / Phase 1 Meristem intake directive 2026-09-11; primary-page fetch pending"
+        ],
+        "target_audience": "Obligation-scheme market participants (EU)",
+        "key_signals": [
+          "Named competitive context for FR/EU GTM seed"
+        ],
+        "strengths": [
+          "Présence catégorie obligation-scheme (à documenter)"
+        ],
+        "weaknesses_for_iverif_lens": [
+          "Pas de matrice features inventée ; attendre fetch daté"
+        ],
+        "differentiation_rule": "Ne pas copier les claims commerciaux ; garder iverif scoped au logiciel de validation.",
+        "iverif_response": "Différenciation soft : software validation vs market participant / scheme operator."
+      },
+      {
+        "name": "Generic OCR / IDP platforms",
+        "type": "indirect_tooling",
+        "class": "observation (C4 / v1)",
+        "positioning": "Extraction documentaire générique sans règles CEE / fiches embarquées.",
+        "key_features": [
+          "OCR",
+          "classification",
+          "extraction de champs"
+        ],
+        "weaknesses": [
+          "Pas de cohérence cross-document vs règles programme CEE",
+          "Configuration règles à charge du client"
+        ],
+        "differentiation_rule": "iverif = validation contre règles programme, pas extraction seule."
+      },
+      {
+        "name": "Legacy DMS (SharePoint, DocuSign, etc.)",
+        "type": "indirect_tooling",
+        "class": "observation (C4 / v1)",
+        "positioning": "Stockage, workflow, signature — sans moteur de validation subvention cross-document.",
+        "weaknesses": [
+          "Stocke et route ; ne valide pas les dossiers CEE contre fiches"
+        ],
+        "differentiation_rule": "iverif valide avant dépôt ; le DMS archive."
+      },
+      {
+        "name": "Single-market CEE point tools",
+        "type": "indirect_tooling",
+        "class": "observation (v1)",
+        "positioning": "Outils France-only ou partiels pour CEE.",
+        "weaknesses": [
+          "Couverture multi-programme limitée ; souvent sans onboarding managé de règles"
+        ],
+        "differentiation_rule": "Scope produit iverif inclut CEE-first FR GTM avec intention multi-programme UE (F2) — sans sur-promettre la profondeur par programme."
+      }
+    ],
+    "market_gaps": [
+      "Peu d'outils explicitement positionnés comme validation AI pré-dépôt pour back-offices CEE / délégataires (hypothèse de catégorie — v1 gap language; treat as hypothesis not monopoly claim).",
+      "OCR générique ne couvre pas la cohérence cross-document vs fiches.",
+      "DMS legacy sans rule engine programme.",
+      "Self-serve SaaS qui laisse l'opérateur configurer seul des règles complexes.",
+      "Confusion acheteur entre opérateur de primes (Hellio/Effy) et logiciel de validation (iverif)."
+    ],
+    "verified_anxieties": [
+      "L'IA attrapera-t-elle les edge cases du manuel ?",
+      "Que se passe-t-il quand les fiches / période 6 changent ?",
+      "Données et hébergement — claims GDPR seulement avec reçu audité (prohibited otherwise).",
+      "Durée réelle d'onboarding ?",
+      "Intégration au workflow existant ?"
+    ],
+    "internal_benchmarks_not_for_public_copy": {
+      "note": "From v1 competitor artifact — product aspirations until iverif-dated receipts exist",
+      "items": [
+        "~30 seconds per dossier",
+        "<2% rejection target",
+        "go-live 5–7 days"
+      ],
+      "class": "prohibited as public guarantees"
+    },
+    "hypotheses": [
+      "Differentiation vs Hellio/Effy succeeds when iverif is framed as pre-submission validation software, not primes distributor (ledger H3).",
+      "Buyer confusion between operator brands and RegTech software is a primary objection in FR discovery calls."
+    ]
+  }
+}

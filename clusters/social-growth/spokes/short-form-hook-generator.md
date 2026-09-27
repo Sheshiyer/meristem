@@ -46,6 +46,20 @@ Write the first 15 seconds for each hook:
 - 0:03-0:08 — Setup (5-second context)
 - 0:08-0:15 — Payoff (7-second reveal + CTA)
 
+## Bilingual FR + EN (additive)
+
+When `market.region: FR` **or** `locales` includes `fr`, generate hooks in **both** French and English. Prefer native FR phrasing (not literal translation) for CEE / PNCEE / dossier vocabulary when the brand is energy-subsidy.
+
+Rules:
+- `data.hooks` = primary/default locale set (prefer `fr` when `defaultLocale: fr`).
+- `data.locales.en.hooks` / `data.locales.fr.hooks` = full parallel hook arrays.
+- Each hook may include `"locale": "fr|en"` for filtering.
+- For FR GTM, prioritize LinkedIn-native short clips and professional tone over pure TikTok slang unless config requests consumer channels.
+
+**Planned wiki paths (optional marketing mirror):**
+- `wiki/src/content/docs/en/marketing/short-form-hooks.md`
+- `wiki/src/content/docs/fr/marketing/short-form-hooks.md`
+
 ## Output Schema
 
 ```json
@@ -55,12 +69,13 @@ Write the first 15 seconds for each hook:
     "wave": 6,
     "timestamp": "ISO 8601",
     "status": "complete",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "data": {
         "hooks": [
             {
                 "id": "number",
                 "category": "negative|curiosity|outcome|visual_oddity",
+                "locale": "en|fr",
                 "hook_text": "string (≤5 sec spoken)",
                 "visual_action": "string",
                 "script": [
@@ -69,9 +84,17 @@ Write the first 15 seconds for each hook:
                     {"timestamp": "0:08-0:15", "voiceover": "string", "on_screen": "string"}
                 ],
                 "cta": "string",
-                "platform_fit": ["tiktok", "reels", "shorts"]
+                "platform_fit": ["tiktok", "reels", "shorts", "linkedin"]
             }
         ],
+        "locales": {
+            "en": { "hooks": [] },
+            "fr": { "hooks": [] }
+        },
+        "wiki_paths": {
+            "en": "wiki/src/content/docs/en/marketing/short-form-hooks.md",
+            "fr": "wiki/src/content/docs/fr/marketing/short-form-hooks.md"
+        },
         "voice_compliance": "PASS"
     }
 }
@@ -85,3 +108,4 @@ Write the first 15 seconds for each hook:
 - [ ] Visual action is specific (not "person doing something")
 - [ ] All scripts ground in delivery loop vocabulary
 - [ ] No prohibited terms
+- [ ] If bilingual: both `locales.en` and `locales.fr` hook sets complete

@@ -1,0 +1,528 @@
+{
+  "skill": "social-content-engine",
+  "cluster": "social-growth",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 6,
+  "data": {
+    "gtm_tag": "FR",
+    "default_locale": "fr",
+    "channel_plan": {
+      "primary": [
+        "linkedin_fr",
+        "welcome_to_the_jungle",
+        "jdn",
+        "pncee",
+        "les_echos"
+      ],
+      "secondary_notes": [
+        {
+          "channel": "jdn",
+          "role": "Pitch RegTech byline / product announce from press-release FR",
+          "cadence": "as_earned"
+        },
+        {
+          "channel": "les_echos",
+          "role": "Primary business newswire for press-release",
+          "cadence": "launch_window"
+        },
+        {
+          "channel": "pncee",
+          "role": "Glossary/FAQ language source only — no paid buy, no endorsement claim",
+          "cadence": "reference_only"
+        }
+      ],
+      "source": "brands/iverif/research/channel-plan.md"
+    },
+    "weekly_themes": [
+      {
+        "week": 1,
+        "theme": "Problème dossier / avant dépôt",
+        "focus": "Pain CEE back-office",
+        "post_count": 7
+      },
+      {
+        "week": 2,
+        "theme": "Rôles marché & différenciation",
+        "focus": "Obligé / délégataire / pas Hellio-Effy",
+        "post_count": 7
+      },
+      {
+        "week": 3,
+        "theme": "Produit : règles, exceptions, audit",
+        "focus": "Features without KPI claims",
+        "post_count": 8
+      },
+      {
+        "week": 4,
+        "theme": "Preuve sobre & invite démo",
+        "focus": "Press, WTTJ culture, CTA",
+        "post_count": 8
+      }
+    ],
+    "platform_strategy": {
+      "linkedin_fr": {
+        "format": "single + carousel + short native video",
+        "voice": "precise FR B2B",
+        "post_count": 22
+      },
+      "welcome_to_the_jungle": {
+        "format": "company culture / ops narrative",
+        "voice": "humain, crédible",
+        "post_count": 4
+      },
+      "jdn": {
+        "format": "earned byline / announce",
+        "voice": "RegTech factuel",
+        "post_count": 0
+      },
+      "les_echos": {
+        "format": "press wire",
+        "voice": "PR",
+        "post_count": 0
+      },
+      "pncee": {
+        "format": "reference only",
+        "voice": "institutional adjacency — no claim",
+        "post_count": 0
+      },
+      "x": {
+        "format": "optional EN mirror",
+        "voice": "restrained",
+        "post_count": 0
+      },
+      "instagram": {
+        "format": "optional visual reuse",
+        "voice": "minimal",
+        "post_count": 0
+      }
+    },
+    "content_mix": {
+      "value": {
+        "percentage": 40,
+        "topic_examples": [
+          "contrôle avant dépôt",
+          "fiches / règles",
+          "audit trail"
+        ]
+      },
+      "connection": {
+        "percentage": 30,
+        "topic_examples": [
+          "journée type Marie Durand",
+          "culture ops WTTJ",
+          "rôles marché"
+        ]
+      },
+      "engagement": {
+        "percentage": 20,
+        "topic_examples": [
+          "quiz obligé vs délégataire",
+          "question open sur exceptions"
+        ]
+      },
+      "promotion": {
+        "percentage": 10,
+        "topic_examples": [
+          "demande démo",
+          "lien iverif.fr"
+        ]
+      }
+    },
+    "calendar": [
+      {
+        "day": 1,
+        "date": "2026-09-15",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "value",
+        "hook": "Les écarts documentaires se voient trop tard.",
+        "body": "Sur un dossier CEE, croiser les pièces après coup coûte cher. Placez le contrôle avant dépôt.",
+        "visual_description": "Desk still + green LED",
+        "cta": "Lire sur iverif.fr",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 2,
+        "date": "2026-09-16",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Obligé ≠ délégataire ≠ iverif.",
+        "body": "Gardons les rôles nets : nous sommes un logiciel de validation.",
+        "visual_description": "Role-handoff illustration",
+        "cta": "Clarifier les rôles",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 3,
+        "date": "2026-09-17",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "engagement",
+        "hook": "Et votre OCR ?",
+        "body": "Extraire du texte n’est pas appliquer des règles de programme.",
+        "visual_description": "OCR crossed out soft",
+        "cta": "Voir la différence",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 4,
+        "date": "2026-09-18",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "promotion",
+        "hook": "File d’exceptions > recontrôle total.",
+        "body": "Focalisez les opérateurs sur ce qui est signalé.",
+        "visual_description": "Exception tickets illustration",
+        "cta": "Parler produit",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 5,
+        "date": "2026-09-19",
+        "platform": "welcome_to_the_jungle",
+        "post_type": "carousel",
+        "category": "connection",
+        "hook": "Culture ops : moins de rush post-rejet.",
+        "body": "Outil pensé pour les équipes qui absorbent le volume.",
+        "visual_description": "Calm ops floor photo",
+        "cta": "WTTJ / carrière ops",
+        "locale": "fr",
+        "channel_plan_ref": "welcome_to_the_jungle"
+      },
+      {
+        "day": 6,
+        "date": "2026-09-20",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "promotion",
+        "hook": "Démo FR : apportez un dossier type.",
+        "body": "Cadrage factuel — sans % inventés.",
+        "visual_description": "Product soft-UI",
+        "cta": "Demander une démo",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 7,
+        "date": "2026-09-21",
+        "platform": "linkedin_fr",
+        "post_type": "short_video",
+        "category": "value",
+        "hook": "Fiches qui bougent, contrôles qui suivent.",
+        "body": "Configuration de programme gérée — détails à l’onboarding.",
+        "visual_description": "Fiche lattice pattern",
+        "cta": "Échanger avec l’équipe",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 8,
+        "date": "2026-09-22",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "value",
+        "hook": "Les écarts documentaires se voient trop tard.",
+        "body": "Sur un dossier CEE, croiser les pièces après coup coûte cher. Placez le contrôle avant dépôt.",
+        "visual_description": "Desk still + green LED",
+        "cta": "Lire sur iverif.fr",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 9,
+        "date": "2026-09-23",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Obligé ≠ délégataire ≠ iverif.",
+        "body": "Gardons les rôles nets : nous sommes un logiciel de validation.",
+        "visual_description": "Role-handoff illustration",
+        "cta": "Clarifier les rôles",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 10,
+        "date": "2026-09-24",
+        "platform": "linkedin_fr",
+        "post_type": "carousel",
+        "category": "engagement",
+        "hook": "Et votre OCR ?",
+        "body": "Extraire du texte n’est pas appliquer des règles de programme.",
+        "visual_description": "OCR crossed out soft",
+        "cta": "Voir la différence",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 11,
+        "date": "2026-09-25",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "value",
+        "hook": "File d’exceptions > recontrôle total.",
+        "body": "Focalisez les opérateurs sur ce qui est signalé.",
+        "visual_description": "Exception tickets illustration",
+        "cta": "Parler produit",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 12,
+        "date": "2026-09-26",
+        "platform": "welcome_to_the_jungle",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Culture ops : moins de rush post-rejet.",
+        "body": "Outil pensé pour les équipes qui absorbent le volume.",
+        "visual_description": "Calm ops floor photo",
+        "cta": "WTTJ / carrière ops",
+        "locale": "fr",
+        "channel_plan_ref": "welcome_to_the_jungle"
+      },
+      {
+        "day": 13,
+        "date": "2026-09-27",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "promotion",
+        "hook": "Démo FR : apportez un dossier type.",
+        "body": "Cadrage factuel — sans % inventés.",
+        "visual_description": "Product soft-UI",
+        "cta": "Demander une démo",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 14,
+        "date": "2026-09-28",
+        "platform": "linkedin_fr",
+        "post_type": "short_video",
+        "category": "value",
+        "hook": "Fiches qui bougent, contrôles qui suivent.",
+        "body": "Configuration de programme gérée — détails à l’onboarding.",
+        "visual_description": "Fiche lattice pattern",
+        "cta": "Échanger avec l’équipe",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 15,
+        "date": "2026-09-29",
+        "platform": "linkedin_fr",
+        "post_type": "carousel",
+        "category": "value",
+        "hook": "Les écarts documentaires se voient trop tard.",
+        "body": "Sur un dossier CEE, croiser les pièces après coup coûte cher. Placez le contrôle avant dépôt.",
+        "visual_description": "Desk still + green LED",
+        "cta": "Lire sur iverif.fr",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 16,
+        "date": "2026-09-30",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Obligé ≠ délégataire ≠ iverif.",
+        "body": "Gardons les rôles nets : nous sommes un logiciel de validation.",
+        "visual_description": "Role-handoff illustration",
+        "cta": "Clarifier les rôles",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 17,
+        "date": "2026-10-01",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "engagement",
+        "hook": "Et votre OCR ?",
+        "body": "Extraire du texte n’est pas appliquer des règles de programme.",
+        "visual_description": "OCR crossed out soft",
+        "cta": "Voir la différence",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 18,
+        "date": "2026-10-02",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "promotion",
+        "hook": "File d’exceptions > recontrôle total.",
+        "body": "Focalisez les opérateurs sur ce qui est signalé.",
+        "visual_description": "Exception tickets illustration",
+        "cta": "Parler produit",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 19,
+        "date": "2026-10-03",
+        "platform": "welcome_to_the_jungle",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Culture ops : moins de rush post-rejet.",
+        "body": "Outil pensé pour les équipes qui absorbent le volume.",
+        "visual_description": "Calm ops floor photo",
+        "cta": "WTTJ / carrière ops",
+        "locale": "fr",
+        "channel_plan_ref": "welcome_to_the_jungle"
+      },
+      {
+        "day": 20,
+        "date": "2026-10-04",
+        "platform": "linkedin_fr",
+        "post_type": "carousel",
+        "category": "promotion",
+        "hook": "Démo FR : apportez un dossier type.",
+        "body": "Cadrage factuel — sans % inventés.",
+        "visual_description": "Product soft-UI",
+        "cta": "Demander une démo",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 21,
+        "date": "2026-10-05",
+        "platform": "linkedin_fr",
+        "post_type": "short_video",
+        "category": "value",
+        "hook": "Fiches qui bougent, contrôles qui suivent.",
+        "body": "Configuration de programme gérée — détails à l’onboarding.",
+        "visual_description": "Fiche lattice pattern",
+        "cta": "Échanger avec l’équipe",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 22,
+        "date": "2026-10-06",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "value",
+        "hook": "Les écarts documentaires se voient trop tard.",
+        "body": "Sur un dossier CEE, croiser les pièces après coup coûte cher. Placez le contrôle avant dépôt.",
+        "visual_description": "Desk still + green LED",
+        "cta": "Lire sur iverif.fr",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 23,
+        "date": "2026-10-07",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Obligé ≠ délégataire ≠ iverif.",
+        "body": "Gardons les rôles nets : nous sommes un logiciel de validation.",
+        "visual_description": "Role-handoff illustration",
+        "cta": "Clarifier les rôles",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 24,
+        "date": "2026-10-08",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "engagement",
+        "hook": "Et votre OCR ?",
+        "body": "Extraire du texte n’est pas appliquer des règles de programme.",
+        "visual_description": "OCR crossed out soft",
+        "cta": "Voir la différence",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 25,
+        "date": "2026-10-09",
+        "platform": "linkedin_fr",
+        "post_type": "carousel",
+        "category": "value",
+        "hook": "File d’exceptions > recontrôle total.",
+        "body": "Focalisez les opérateurs sur ce qui est signalé.",
+        "visual_description": "Exception tickets illustration",
+        "cta": "Parler produit",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 26,
+        "date": "2026-10-10",
+        "platform": "welcome_to_the_jungle",
+        "post_type": "single_image_post",
+        "category": "connection",
+        "hook": "Culture ops : moins de rush post-rejet.",
+        "body": "Outil pensé pour les équipes qui absorbent le volume.",
+        "visual_description": "Calm ops floor photo",
+        "cta": "WTTJ / carrière ops",
+        "locale": "fr",
+        "channel_plan_ref": "welcome_to_the_jungle"
+      },
+      {
+        "day": 27,
+        "date": "2026-10-11",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "promotion",
+        "hook": "Démo FR : apportez un dossier type.",
+        "body": "Cadrage factuel — sans % inventés.",
+        "visual_description": "Product soft-UI",
+        "cta": "Demander une démo",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 28,
+        "date": "2026-10-12",
+        "platform": "linkedin_fr",
+        "post_type": "short_video",
+        "category": "value",
+        "hook": "Fiches qui bougent, contrôles qui suivent.",
+        "body": "Configuration de programme gérée — détails à l’onboarding.",
+        "visual_description": "Fiche lattice pattern",
+        "cta": "Échanger avec l’équipe",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 29,
+        "date": "2026-10-13",
+        "platform": "linkedin_fr",
+        "post_type": "single_image_post",
+        "category": "value",
+        "hook": "Les écarts documentaires se voient trop tard.",
+        "body": "Sur un dossier CEE, croiser les pièces après coup coûte cher. Placez le contrôle avant dépôt.",
+        "visual_description": "Desk still + green LED",
+        "cta": "Lire sur iverif.fr",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      },
+      {
+        "day": 30,
+        "date": "2026-10-14",
+        "platform": "linkedin_fr",
+        "post_type": "carousel",
+        "category": "connection",
+        "hook": "Obligé ≠ délégataire ≠ iverif.",
+        "body": "Gardons les rôles nets : nous sommes un logiciel de validation.",
+        "visual_description": "Role-handoff illustration",
+        "cta": "Clarifier les rôles",
+        "locale": "fr",
+        "channel_plan_ref": "linkedin_fr"
+      }
+    ],
+    "voice_compliance": "PASS — no prohibited terms; FR channels from channel-plan referenced",
+    "en_mirror_note": "EN mirrors available for investor/EU desks via wiki en/marketing paths; daily calendar is FR-first LinkedIn."
+  }
+}

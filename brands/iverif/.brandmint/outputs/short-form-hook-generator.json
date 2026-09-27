@@ -1,0 +1,369 @@
+{
+  "skill": "short-form-hook-generator",
+  "cluster": "social-growth",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "default_locale": "fr",
+    "platform_bias": [
+      "linkedin_fr_native_short",
+      "optional_reels_professional"
+    ],
+    "hooks": [
+      {
+        "id": 1,
+        "category": "negative",
+        "locale": "fr",
+        "hook_text": "Arrêtez de découvrir l’écart après dépôt.",
+        "visual_action": "Smash cut: tampon « à reprendre » sur dossier flou → bureau calme",
+        "script_15s": {
+          "0_03": "Arrêtez de découvrir l’écart après dépôt.",
+          "0_03_08": "Sur un dossier CEE, 10 à 20 pièces à croiser.",
+          "0_08_15": "iverif signale les incohérences avant l’envoi. Demandez une démo — iverif.fr"
+        },
+        "cta": "Demandez une démo — iverif.fr",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 2,
+        "category": "curiosity",
+        "locale": "fr",
+        "hook_text": "La question que le back-office CEE évite trop longtemps.",
+        "visual_action": "Zoom sur pile de dossiers, cut vers écran flou vert",
+        "script_15s": {
+          "0_03": "La question que le back-office CEE évite trop longtemps.",
+          "0_03_08": "Qui porte vraiment le risque documentaire — ops ou conformité ?",
+          "0_08_15": "Un logiciel de validation, pas un parcours primes. Voir le positionnement"
+        },
+        "cta": "Voir le positionnement",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 3,
+        "category": "outcome",
+        "locale": "fr",
+        "hook_text": "Valider avant de déposer — voilà le geste.",
+        "visual_action": "Main qui glisse un dossier vers une zone « prêt » abstraite",
+        "script_15s": {
+          "0_03": "Valider avant de déposer — voilà le geste.",
+          "0_03_08": "Règles de programme + contrôles inter-documents.",
+          "0_08_15": "Piste d’audit horodatée pour les revues. Cadrez votre flux"
+        },
+        "cta": "Cadrez votre flux",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 4,
+        "category": "visual_oddity",
+        "locale": "fr",
+        "hook_text": "Ce n’est pas une fiche CEE. C’est le filet avant la fiche.",
+        "visual_action": "Illustration géométrique de fils verts entre documents",
+        "script_15s": {
+          "0_03": "Ce n’est pas une fiche CEE. C’est le filet avant la fiche.",
+          "0_03_08": "Les fiches évoluent côté ministère — votre contrôle doit suivre.",
+          "0_08_15": "Configuration gérée, sans KPI magiques. Échange de cadrage"
+        },
+        "cta": "Échange de cadrage",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 5,
+        "category": "negative",
+        "locale": "fr",
+        "hook_text": "Obligé n’est pas délégataire. Et iverif n’est ni l’un ni l’autre.",
+        "visual_action": "Deux blocs géométriques étiquetés silhouettes — cut logo soft",
+        "script_15s": {
+          "0_03": "Obligé n’est pas délégataire. Et iverif n’est ni l’un ni l’autre.",
+          "0_03_08": "Le marché confond souvent les rôles.",
+          "0_08_15": "On vend de la validation documentaire. Point. Lire le brief"
+        },
+        "cta": "Lire le brief",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 6,
+        "category": "curiosity",
+        "locale": "fr",
+        "hook_text": "Pourquoi votre OCR ne sauve pas le dossier CEE.",
+        "visual_action": "Scanner générique barré d’un soft X, cut desk FR",
+        "script_15s": {
+          "0_03": "Pourquoi votre OCR ne sauve pas le dossier CEE.",
+          "0_03_08": "Extraire n’est pas croiser les règles de programme.",
+          "0_08_15": "iverif est construit pour ce croisement. Voir le produit"
+        },
+        "cta": "Voir le produit",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 7,
+        "category": "outcome",
+        "locale": "fr",
+        "hook_text": "Moins de panique en revue — plus de trace.",
+        "visual_action": "Timeline d’audit animée (nodes)",
+        "script_15s": {
+          "0_03": "Moins de panique en revue — plus de trace.",
+          "0_03_08": "Chaque contrôle laisse un horodatage.",
+          "0_08_15": "Utile quand la conformité pose une question simple. Planifier un échange"
+        },
+        "cta": "Planifier un échange",
+        "channel_bias": "linkedin_fr_short"
+      },
+      {
+        "id": 8,
+        "category": "negative",
+        "locale": "fr",
+        "hook_text": "Le volume monte. Le recontrôle manuel, lui, plie.",
+        "visual_action": "Time-lapse soft d’une file de dossiers qui s’allonge",
+        "script_15s": {
+          "0_03": "Le volume monte. Le recontrôle manuel, lui, plie.",
+          "0_03_08": "Les équipes 50–500 le sentent en période haute.",
+          "0_08_15": "File d’exceptions plutôt que tout reprendre. Parler à l’équipe"
+        },
+        "cta": "Parler à l’équipe",
+        "channel_bias": "linkedin_fr_short"
+      }
+    ],
+    "locales": {
+      "fr": {
+        "hooks": [
+          {
+            "id": 1,
+            "category": "negative",
+            "locale": "fr",
+            "hook_text": "Arrêtez de découvrir l’écart après dépôt.",
+            "visual_action": "Smash cut: tampon « à reprendre » sur dossier flou → bureau calme",
+            "script_15s": {
+              "0_03": "Arrêtez de découvrir l’écart après dépôt.",
+              "0_03_08": "Sur un dossier CEE, 10 à 20 pièces à croiser.",
+              "0_08_15": "iverif signale les incohérences avant l’envoi. Demandez une démo — iverif.fr"
+            },
+            "cta": "Demandez une démo — iverif.fr",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 2,
+            "category": "curiosity",
+            "locale": "fr",
+            "hook_text": "La question que le back-office CEE évite trop longtemps.",
+            "visual_action": "Zoom sur pile de dossiers, cut vers écran flou vert",
+            "script_15s": {
+              "0_03": "La question que le back-office CEE évite trop longtemps.",
+              "0_03_08": "Qui porte vraiment le risque documentaire — ops ou conformité ?",
+              "0_08_15": "Un logiciel de validation, pas un parcours primes. Voir le positionnement"
+            },
+            "cta": "Voir le positionnement",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 3,
+            "category": "outcome",
+            "locale": "fr",
+            "hook_text": "Valider avant de déposer — voilà le geste.",
+            "visual_action": "Main qui glisse un dossier vers une zone « prêt » abstraite",
+            "script_15s": {
+              "0_03": "Valider avant de déposer — voilà le geste.",
+              "0_03_08": "Règles de programme + contrôles inter-documents.",
+              "0_08_15": "Piste d’audit horodatée pour les revues. Cadrez votre flux"
+            },
+            "cta": "Cadrez votre flux",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 4,
+            "category": "visual_oddity",
+            "locale": "fr",
+            "hook_text": "Ce n’est pas une fiche CEE. C’est le filet avant la fiche.",
+            "visual_action": "Illustration géométrique de fils verts entre documents",
+            "script_15s": {
+              "0_03": "Ce n’est pas une fiche CEE. C’est le filet avant la fiche.",
+              "0_03_08": "Les fiches évoluent côté ministère — votre contrôle doit suivre.",
+              "0_08_15": "Configuration gérée, sans KPI magiques. Échange de cadrage"
+            },
+            "cta": "Échange de cadrage",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 5,
+            "category": "negative",
+            "locale": "fr",
+            "hook_text": "Obligé n’est pas délégataire. Et iverif n’est ni l’un ni l’autre.",
+            "visual_action": "Deux blocs géométriques étiquetés silhouettes — cut logo soft",
+            "script_15s": {
+              "0_03": "Obligé n’est pas délégataire. Et iverif n’est ni l’un ni l’autre.",
+              "0_03_08": "Le marché confond souvent les rôles.",
+              "0_08_15": "On vend de la validation documentaire. Point. Lire le brief"
+            },
+            "cta": "Lire le brief",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 6,
+            "category": "curiosity",
+            "locale": "fr",
+            "hook_text": "Pourquoi votre OCR ne sauve pas le dossier CEE.",
+            "visual_action": "Scanner générique barré d’un soft X, cut desk FR",
+            "script_15s": {
+              "0_03": "Pourquoi votre OCR ne sauve pas le dossier CEE.",
+              "0_03_08": "Extraire n’est pas croiser les règles de programme.",
+              "0_08_15": "iverif est construit pour ce croisement. Voir le produit"
+            },
+            "cta": "Voir le produit",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 7,
+            "category": "outcome",
+            "locale": "fr",
+            "hook_text": "Moins de panique en revue — plus de trace.",
+            "visual_action": "Timeline d’audit animée (nodes)",
+            "script_15s": {
+              "0_03": "Moins de panique en revue — plus de trace.",
+              "0_03_08": "Chaque contrôle laisse un horodatage.",
+              "0_08_15": "Utile quand la conformité pose une question simple. Planifier un échange"
+            },
+            "cta": "Planifier un échange",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 8,
+            "category": "negative",
+            "locale": "fr",
+            "hook_text": "Le volume monte. Le recontrôle manuel, lui, plie.",
+            "visual_action": "Time-lapse soft d’une file de dossiers qui s’allonge",
+            "script_15s": {
+              "0_03": "Le volume monte. Le recontrôle manuel, lui, plie.",
+              "0_03_08": "Les équipes 50–500 le sentent en période haute.",
+              "0_08_15": "File d’exceptions plutôt que tout reprendre. Parler à l’équipe"
+            },
+            "cta": "Parler à l’équipe",
+            "channel_bias": "linkedin_fr_short"
+          }
+        ]
+      },
+      "en": {
+        "hooks": [
+          {
+            "id": 101,
+            "category": "negative",
+            "locale": "en",
+            "hook_text": "Stop finding the gap after you submit.",
+            "visual_action": "Stamp smash on dossier → calm desk",
+            "script_15s": {
+              "0_03": "Stop finding the gap after you submit.",
+              "0_03_08": "CEE dossiers often span 10–20 documents.",
+              "0_08_15": "iverif flags inconsistencies before send. Request a demo — iverif.fr"
+            },
+            "cta": "Request a demo — iverif.fr",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 102,
+            "category": "curiosity",
+            "locale": "en",
+            "hook_text": "The CEE back-office question teams delay.",
+            "visual_action": "Dossier stack zoom → soft green UI blur",
+            "script_15s": {
+              "0_03": "The CEE back-office question teams delay.",
+              "0_03_08": "Who owns document risk — ops or compliance?",
+              "0_08_15": "Validation software, not a primes journey. See positioning"
+            },
+            "cta": "See positioning",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 103,
+            "category": "outcome",
+            "locale": "en",
+            "hook_text": "Validate before you submit — that’s the move.",
+            "visual_action": "Folder sliding to abstract ready zone",
+            "script_15s": {
+              "0_03": "Validate before you submit — that’s the move.",
+              "0_03_08": "Programme rules plus cross-document checks.",
+              "0_08_15": "Timestamped audit trail for reviews. Scope your flow"
+            },
+            "cta": "Scope your flow",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 104,
+            "category": "visual_oddity",
+            "locale": "en",
+            "hook_text": "This isn’t a CEE fiche. It’s the net before the fiche.",
+            "visual_action": "Geometric green threads between documents",
+            "script_15s": {
+              "0_03": "This isn’t a CEE fiche. It’s the net before the fiche.",
+              "0_03_08": "Ministry fiches change — your checks must keep up.",
+              "0_08_15": "Managed configuration, no magic KPIs. Book scoping"
+            },
+            "cta": "Book scoping",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 105,
+            "category": "negative",
+            "locale": "en",
+            "hook_text": "Obligé isn’t délégataire. iverif is neither.",
+            "visual_action": "Two geometric role blocks — soft logo",
+            "script_15s": {
+              "0_03": "Obligé isn’t délégataire. iverif is neither.",
+              "0_03_08": "The market muddies roles constantly.",
+              "0_08_15": "We sell document validation. Full stop. Read the brief"
+            },
+            "cta": "Read the brief",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 106,
+            "category": "curiosity",
+            "locale": "en",
+            "hook_text": "Why generic OCR doesn’t save the CEE dossier.",
+            "visual_action": "Generic scanner soft-X’d → FR desk",
+            "script_15s": {
+              "0_03": "Why generic OCR doesn’t save the CEE dossier.",
+              "0_03_08": "Extraction isn’t programme-rule cross-checking.",
+              "0_08_15": "iverif is built for that cross-check. See the product"
+            },
+            "cta": "See the product",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 107,
+            "category": "outcome",
+            "locale": "en",
+            "hook_text": "Less review panic — more trail.",
+            "visual_action": "Animated audit nodes",
+            "script_15s": {
+              "0_03": "Less review panic — more trail.",
+              "0_03_08": "Every check leaves a timestamp.",
+              "0_08_15": "Useful when compliance asks a simple question. Book a call"
+            },
+            "cta": "Book a call",
+            "channel_bias": "linkedin_fr_short"
+          },
+          {
+            "id": 108,
+            "category": "negative",
+            "locale": "en",
+            "hook_text": "Volume rises. Manual re-checks bend.",
+            "visual_action": "Soft time-lapse of growing dossier queue",
+            "script_15s": {
+              "0_03": "Volume rises. Manual re-checks bend.",
+              "0_03_08": "50–500 person teams feel peak season.",
+              "0_08_15": "Exception queues beat redoing everything. Talk to the team"
+            },
+            "cta": "Talk to the team",
+            "channel_bias": "linkedin_fr_short"
+          }
+        ]
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/short-form-hooks.md",
+      "fr": "wiki/src/content/docs/fr/marketing/short-form-hooks.md"
+    },
+    "voice_compliance": "PASS — no prohibited outcome claims",
+    "version_note": "1.1.0 bilingual FR+EN"
+  }
+}

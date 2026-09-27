@@ -130,6 +130,19 @@ Apply the voice prompt template from `voice-and-tone.json` to all copy:
 - Use domain-specific language
 - Engage emotional drivers
 
+## Bilingual FR + EN (additive)
+
+When `market.region: FR` **or** `locales` includes `fr`, emit **both** language variants. JSON remains the primary wave output; wiki markdown is a planned secondary emit for synthesis.
+
+**Planned wiki paths (document; do not invent live site):**
+- `wiki/src/content/docs/en/marketing/landing-page.md`
+- `wiki/src/content/docs/fr/marketing/landing-page.md`
+
+Rules:
+- `data` holds the default/primary locale copy (prefer `fr` when `defaultLocale: fr`).
+- `data.locales.en` and `data.locales.fr` each contain the full landing structure (hero, features, social_proof, faq, final_cta).
+- Non-bilingual brands omit `locales` and keep the existing single-locale schema.
+
 ## Output Schema
 
 ```json
@@ -139,7 +152,7 @@ Apply the voice prompt template from `voice-and-tone.json` to all copy:
     "wave": 6,
     "timestamp": "2024-01-15T10:30:00Z",
     "status": "complete",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "data": {
         "hero": {
             "headline": "string (8-14 words)",
@@ -169,6 +182,14 @@ Apply the voice prompt template from `voice-and-tone.json` to all copy:
             "headline": "string",
             "body": "string",
             "button": "string"
+        },
+        "locales": {
+            "en": { "hero": {}, "features": [], "social_proof": {}, "faq": [], "final_cta": {} },
+            "fr": { "hero": {}, "features": [], "social_proof": {}, "faq": [], "final_cta": {} }
+        },
+        "wiki_paths": {
+            "en": "wiki/src/content/docs/en/marketing/landing-page.md",
+            "fr": "wiki/src/content/docs/fr/marketing/landing-page.md"
         }
     }
 }
@@ -185,3 +206,4 @@ Apply the voice prompt template from `voice-and-tone.json` to all copy:
 - [ ] At least 3 FAQs address potential objections
 - [ ] CTAs use action verbs
 - [ ] No generic superlatives without proof
+- [ ] If bilingual: both `locales.en` and `locales.fr` complete; wiki paths documented

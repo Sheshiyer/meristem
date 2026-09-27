@@ -1,0 +1,131 @@
+{
+  "skill": "brand-illustrations",
+  "cluster": "illustration",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 5,
+  "data": {
+    "art_direction": {
+      "summary": "Geometric Swiss-precision illustrations for dossier/regulatory motifs: document stacks, cross-check arrows, fiche-rule grids, audit timeline nodes. Signal green sparingly; stone linework on off-white.",
+      "style": "geometric",
+      "references_craft": [
+        "Stripe diagrams",
+        "Linear empty states",
+        "Notion line icons at larger scale"
+      ]
+    },
+    "style_codification": {
+      "line_work": {
+        "weight": "1.5–2px at 24px optical",
+        "style": "geometric continuous",
+        "color": "#1C1917"
+      },
+      "fill_style": "flat fills with one accent; minimal hatching",
+      "color_palette": [
+        "#2EE600",
+        "#1C1917",
+        "#FAFAF9",
+        "#78716C",
+        "#F59E0B"
+      ],
+      "detail_level": "medium — information-first, no ornament",
+      "perspective": "isometric 15° or flat orthographic; no exaggerated 3D"
+    },
+    "illustrations": [
+      {
+        "id": "ILL-01",
+        "type": "hero",
+        "subject": "Cross-document validation",
+        "concept": "Multiple document planes linked by green consistency threads",
+        "usage": "Landing solution section",
+        "aspect_ratio": "16:9",
+        "generation_prompt": "Geometric vector-style illustration: three floating dossier planes connected by thin signal-green consistency lines on off-white field, stone outlines, Swiss precision, isometric subtle. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-01-cross-document.png"
+      },
+      {
+        "id": "ILL-02",
+        "type": "conceptual",
+        "subject": "Fiche / programme rules",
+        "concept": "Grid of standardised operation cards referencing CEE fiche shape without inventing IDs",
+        "usage": "Programmes section",
+        "aspect_ratio": "4:3",
+        "generation_prompt": "Flat geometric illustration of a neat grid of blank programme rule cards with one highlighted card and green corner mark, stone lines, off-white background. Abstract — no readable fiche codes. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-02-programme-rules.png"
+      },
+      {
+        "id": "ILL-03",
+        "type": "spot",
+        "subject": "Audit trail timeline",
+        "concept": "Horizontal timestamp nodes with check accents",
+        "usage": "Trust / how-it-works",
+        "aspect_ratio": "3:1",
+        "generation_prompt": "Minimal geometric timeline of five nodes with thin stone connectors and two green check dots, wide banner. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-03-audit-timeline.png"
+      },
+      {
+        "id": "ILL-04",
+        "type": "spot",
+        "subject": "Exception queue",
+        "concept": "Inbox stack with amber caution tab + green resolved tab",
+        "usage": "Feature callout",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Square spot illustration: stacked abstract tickets, one amber tab, one green resolved mark, geometric flat style. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-04-exceptions.png"
+      },
+      {
+        "id": "ILL-05",
+        "type": "conceptual",
+        "subject": "Obligé / délégataire handoff",
+        "concept": "Two labelled-role silhouettes as abstract blocks exchanging a dossier — roles shown via shape not text",
+        "usage": "Audience education",
+        "aspect_ratio": "16:9",
+        "generation_prompt": "Two geometric building-block figures exchanging a dossier folder icon, clear spatial roles, stone and green accents, educational RegTech diagram style. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-05-role-handoff.png"
+      },
+      {
+        "id": "ILL-06",
+        "type": "decorative",
+        "subject": "Validation check motif",
+        "concept": "Abstract check inside rounded-square status chip",
+        "usage": "Empty states, email headers",
+        "aspect_ratio": "1:1",
+        "generation_prompt": "Simple geometric status chip with abstract check shape in #2EE600 on #FAFAF9, stone border. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-06-check-motif.png"
+      },
+      {
+        "id": "ILL-07",
+        "type": "hero",
+        "subject": "EU programme map abstract",
+        "concept": "Connected nodes for CEE, Conto Termico, BEG, ECO4, MOVES III as abstract marks — not a political map claim",
+        "usage": "Multi-programme section",
+        "aspect_ratio": "16:9",
+        "generation_prompt": "Abstract network of five geometric nodes with thin connectors on off-white, one node emphasized in green for FR CEE focus, no map borders, no country names. No text, letters, words, or logos in the illustration.",
+        "generated_path": "./generated/ill-07-programme-network.png"
+      }
+    ],
+    "consistency_verified": true,
+    "consistency_checks": [
+      "palette locked",
+      "line weight coherent",
+      "no mascot drift",
+      "no government seal"
+    ],
+    "quality_gates": {
+      "dossier_regulatory_motifs": true,
+      "brand_colors_only": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total": 7,
+      "generated": 0,
+      "pending": 7
+    },
+    "ledger_refs": [
+      "P2",
+      "P5",
+      "F2",
+      "F4"
+    ]
+  }
+}

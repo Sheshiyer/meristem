@@ -1,0 +1,417 @@
+{
+  "skill": "landing-page-copy",
+  "cluster": "content",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "page_type": "marketing_landing",
+    "default_locale": "fr",
+    "gtm_tag": "FR",
+    "sections": [
+      "hero",
+      "problem",
+      "solution",
+      "programmes",
+      "how_it_works",
+      "audience",
+      "faq",
+      "cta"
+    ],
+    "hero": {
+      "headline": "Arrêtez de perdre des dossiers CEE pour des erreurs évitables.",
+      "subhead": "iverif valide les pièces et champs de vos dossiers d’aides énergie avant dépôt, avec des règles de programme et une piste d’audit horodatée.",
+      "product_pitch": "Plateforme de validation documentaire par IA pour opérateurs d’aides énergie (CEE / Primes Énergie). Contrôles inter-documents, configuration de programme gérée, journaux d’audit — sans vous transformer en obligé ou délégataire.",
+      "cta_button": "Demander une démo FR"
+    },
+    "problem": {
+      "headline": "Le contrôle manuel ne suit pas le volume.",
+      "body": "Chaque dossier CEE croise souvent 10 à 20 pièces avec des règles qui évoluent. Les écarts découverts après dépôt coûtent cher à corriger — et laissent une piste d’audit fragile."
+    },
+    "solution": {
+      "headline": "Valider avant de déposer.",
+      "body": "iverif prépare vos dossiers contre des règles de programme configurées, signale les incohérences inter-documents, et conserve une trace horodatée pour les revues."
+    },
+    "features": [
+      {
+        "name": "Contrôles inter-documents",
+        "headline": "Cohérence champ à champ",
+        "body": "Croisez les pièces d’un même dossier pour repérer les écarts avant dépôt, plutôt qu’après rejet.",
+        "template_used": "1"
+      },
+      {
+        "name": "Règles de programme",
+        "headline": "CEE & Primes Énergie d’abord",
+        "body": "Configuration orientée programmes FR, avec couverture prévue aussi pour Conto Termico, BEG, ECO4 et MOVES III.",
+        "template_used": "2"
+      },
+      {
+        "name": "Onboarding géré",
+        "headline": "Pas un OCR générique",
+        "body": "Accompagnement pour caler les règles et le flux — sans projet IT lourd pour démarrer.",
+        "template_used": "3"
+      },
+      {
+        "name": "Piste d’audit",
+        "headline": "Horodatée et relisible",
+        "body": "Chaque contrôle laisse une trace utile quand la conformité demande des preuves de revue.",
+        "template_used": "4"
+      },
+      {
+        "name": "File d’exceptions",
+        "headline": "Traiter l’essentiel",
+        "body": "Concentrez les opérateurs sur les écarts signalés plutôt que sur un recontrôle exhaustif à la main.",
+        "template_used": "5"
+      },
+      {
+        "name": "Rôles marché clairs",
+        "headline": "Obligé ≠ délégataire",
+        "body": "Le langage produit respecte les rôles du dispositif CEE — iverif reste un logiciel de validation.",
+        "template_used": "2"
+      }
+    ],
+    "programmes": {
+      "headline": "Programmes dans le périmètre produit",
+      "items": [
+        "CEE (FR)",
+        "Primes Énergie (FR)",
+        "Conto Termico (IT)",
+        "BEG (DE)",
+        "ECO4 (UK)",
+        "MOVES III (ES)"
+      ],
+      "note": "Profondeur « pré-configurée » par programme à confirmer à l’onboarding (ledger F2)."
+    },
+    "how_it_works": [
+      {
+        "step": 1,
+        "title": "Cadrer le programme",
+        "body": "On mappe vos types de dossiers CEE / Primes Énergie et les pièces critiques."
+      },
+      {
+        "step": 2,
+        "title": "Configurer les contrôles",
+        "body": "Règles et contrôles inter-documents calés avec onboarding géré."
+      },
+      {
+        "step": 3,
+        "title": "Valider avant dépôt",
+        "body": "Les opérateurs traitent les exceptions ; l’audit trail reste disponible."
+      }
+    ],
+    "audience": {
+      "headline": "Pour les équipes back-office CEE",
+      "body": "Responsables opérations, conformité et coordinateurs chez délégataires, ESCos et agrégateurs rénovation — typiquement 50 à 500 personnes."
+    },
+    "social_proof": {
+      "testimonials": [],
+      "trust_badges": [
+        "Logiciel de validation — non affilié PNCEE",
+        "Domaines : iverif.fr / iverif.io"
+      ],
+      "media_mentions": [],
+      "note": "Pas de témoignages ni chiffres de performance tant que non reçus (ledger prohibited)."
+    },
+    "faq": [
+      {
+        "question": "iverif est-il un délégataire ou un obligé ?",
+        "answer": "Non. iverif est une plateforme logicielle de validation de dossiers. Nous ne collectons pas de CEE pour le compte d’obligés et n’avons pas d’obligation réglementaire d’économies d’énergie."
+      },
+      {
+        "question": "Remplacez-vous Hellio, Effy ou un parcours primes ?",
+        "answer": "Non. Ces acteurs opèrent des parcours aides / rénovation. iverif se concentre sur la validation documentaire avant dépôt."
+      },
+      {
+        "question": "Quels programmes sont couverts ?",
+        "answer": "Le GTM FR met l’accent sur CEE et Primes Énergie. Le périmètre produit vise aussi Conto Termico, BEG, ECO4 et MOVES III — la profondeur par programme se cadre à l’onboarding."
+      },
+      {
+        "question": "Garantissez-vous un taux de rejet ou un délai de go-live ?",
+        "answer": "Non. Nous ne publions pas de garanties de taux de rejet, de durée de traitement ou de délai de mise en service tant qu’elles ne sont pas prouvées et datées."
+      },
+      {
+        "question": "Comment gérez-vous l’évolution des fiches CEE ?",
+        "answer": "Les opérations standardisées évoluent côté ministère. Notre approche repose sur une configuration de programme gérée ; les détails de mise à jour se précisent avec votre équipe."
+      }
+    ],
+    "final_cta": {
+      "headline": "Voyez iverif sur vos dossiers CEE.",
+      "body": "Échangez avec l’équipe sur un flux back-office réel — sans promesses de performance non sourcées.",
+      "button": "Planifier un échange"
+    },
+    "locales": {
+      "fr": {
+        "hero": {
+          "headline": "Arrêtez de perdre des dossiers CEE pour des erreurs évitables.",
+          "subhead": "iverif valide les pièces et champs de vos dossiers d’aides énergie avant dépôt, avec des règles de programme et une piste d’audit horodatée.",
+          "product_pitch": "Plateforme de validation documentaire par IA pour opérateurs d’aides énergie (CEE / Primes Énergie). Contrôles inter-documents, configuration de programme gérée, journaux d’audit — sans vous transformer en obligé ou délégataire.",
+          "cta_button": "Demander une démo FR"
+        },
+        "problem": {
+          "headline": "Le contrôle manuel ne suit pas le volume.",
+          "body": "Chaque dossier CEE croise souvent 10 à 20 pièces avec des règles qui évoluent. Les écarts découverts après dépôt coûtent cher à corriger — et laissent une piste d’audit fragile."
+        },
+        "solution": {
+          "headline": "Valider avant de déposer.",
+          "body": "iverif prépare vos dossiers contre des règles de programme configurées, signale les incohérences inter-documents, et conserve une trace horodatée pour les revues."
+        },
+        "features": [
+          {
+            "name": "Contrôles inter-documents",
+            "headline": "Cohérence champ à champ",
+            "body": "Croisez les pièces d’un même dossier pour repérer les écarts avant dépôt, plutôt qu’après rejet.",
+            "template_used": "1"
+          },
+          {
+            "name": "Règles de programme",
+            "headline": "CEE & Primes Énergie d’abord",
+            "body": "Configuration orientée programmes FR, avec couverture prévue aussi pour Conto Termico, BEG, ECO4 et MOVES III.",
+            "template_used": "2"
+          },
+          {
+            "name": "Onboarding géré",
+            "headline": "Pas un OCR générique",
+            "body": "Accompagnement pour caler les règles et le flux — sans projet IT lourd pour démarrer.",
+            "template_used": "3"
+          },
+          {
+            "name": "Piste d’audit",
+            "headline": "Horodatée et relisible",
+            "body": "Chaque contrôle laisse une trace utile quand la conformité demande des preuves de revue.",
+            "template_used": "4"
+          },
+          {
+            "name": "File d’exceptions",
+            "headline": "Traiter l’essentiel",
+            "body": "Concentrez les opérateurs sur les écarts signalés plutôt que sur un recontrôle exhaustif à la main.",
+            "template_used": "5"
+          },
+          {
+            "name": "Rôles marché clairs",
+            "headline": "Obligé ≠ délégataire",
+            "body": "Le langage produit respecte les rôles du dispositif CEE — iverif reste un logiciel de validation.",
+            "template_used": "2"
+          }
+        ],
+        "programmes": {
+          "headline": "Programmes dans le périmètre produit",
+          "items": [
+            "CEE (FR)",
+            "Primes Énergie (FR)",
+            "Conto Termico (IT)",
+            "BEG (DE)",
+            "ECO4 (UK)",
+            "MOVES III (ES)"
+          ],
+          "note": "Profondeur « pré-configurée » par programme à confirmer à l’onboarding (ledger F2)."
+        },
+        "audience": {
+          "headline": "Pour les équipes back-office CEE",
+          "body": "Responsables opérations, conformité et coordinateurs chez délégataires, ESCos et agrégateurs rénovation — typiquement 50 à 500 personnes."
+        },
+        "social_proof": {
+          "testimonials": [],
+          "trust_badges": [
+            "Logiciel de validation — non affilié PNCEE",
+            "Domaines : iverif.fr / iverif.io"
+          ],
+          "media_mentions": [],
+          "note": "Pas de témoignages ni chiffres de performance tant que non reçus (ledger prohibited)."
+        },
+        "faq": [
+          {
+            "question": "iverif est-il un délégataire ou un obligé ?",
+            "answer": "Non. iverif est une plateforme logicielle de validation de dossiers. Nous ne collectons pas de CEE pour le compte d’obligés et n’avons pas d’obligation réglementaire d’économies d’énergie."
+          },
+          {
+            "question": "Remplacez-vous Hellio, Effy ou un parcours primes ?",
+            "answer": "Non. Ces acteurs opèrent des parcours aides / rénovation. iverif se concentre sur la validation documentaire avant dépôt."
+          },
+          {
+            "question": "Quels programmes sont couverts ?",
+            "answer": "Le GTM FR met l’accent sur CEE et Primes Énergie. Le périmètre produit vise aussi Conto Termico, BEG, ECO4 et MOVES III — la profondeur par programme se cadre à l’onboarding."
+          },
+          {
+            "question": "Garantissez-vous un taux de rejet ou un délai de go-live ?",
+            "answer": "Non. Nous ne publions pas de garanties de taux de rejet, de durée de traitement ou de délai de mise en service tant qu’elles ne sont pas prouvées et datées."
+          },
+          {
+            "question": "Comment gérez-vous l’évolution des fiches CEE ?",
+            "answer": "Les opérations standardisées évoluent côté ministère. Notre approche repose sur une configuration de programme gérée ; les détails de mise à jour se précisent avec votre équipe."
+          }
+        ],
+        "final_cta": {
+          "headline": "Voyez iverif sur vos dossiers CEE.",
+          "body": "Échangez avec l’équipe sur un flux back-office réel — sans promesses de performance non sourcées.",
+          "button": "Planifier un échange"
+        },
+        "how_it_works": [
+          {
+            "step": 1,
+            "title": "Cadrer le programme",
+            "body": "On mappe vos types de dossiers CEE / Primes Énergie et les pièces critiques."
+          },
+          {
+            "step": 2,
+            "title": "Configurer les contrôles",
+            "body": "Règles et contrôles inter-documents calés avec onboarding géré."
+          },
+          {
+            "step": 3,
+            "title": "Valider avant dépôt",
+            "body": "Les opérateurs traitent les exceptions ; l’audit trail reste disponible."
+          }
+        ]
+      },
+      "en": {
+        "hero": {
+          "headline": "Stop losing subsidy claims to avoidable document errors.",
+          "subhead": "iverif checks energy-subsidy dossier fields and supporting documents against programme rules before submission — with managed configuration and a timestamped audit trail.",
+          "product_pitch": "AI document validation for energy subsidy operators. Cross-document checks, programme-aware configuration, and audit logs — without turning iverif into an obligé or délégataire.",
+          "cta_button": "Request a FR GTM demo"
+        },
+        "problem": {
+          "headline": "Manual checks do not scale with dossier volume.",
+          "body": "CEE-style dossiers often span 10–20 supporting documents against evolving rules. Issues found after submission are expensive to unwind — and leave a thin audit story."
+        },
+        "solution": {
+          "headline": "Validate before you submit.",
+          "body": "iverif runs dossiers against configured programme rules, flags cross-document inconsistencies, and keeps a timestamped trail for reviews."
+        },
+        "features": [
+          {
+            "name": "Cross-document checks",
+            "headline": "Field-level consistency",
+            "body": "Compare supporting documents inside one dossier so mismatches surface before submission.",
+            "template_used": "1"
+          },
+          {
+            "name": "Programme rules",
+            "headline": "CEE & Primes Énergie first",
+            "body": "France-first programme configuration, with product scope also covering Conto Termico, BEG, ECO4, and MOVES III.",
+            "template_used": "2"
+          },
+          {
+            "name": "Managed onboarding",
+            "headline": "Not generic OCR",
+            "body": "Guided setup for rules and workflow — without a heavyweight IT programme to start.",
+            "template_used": "3"
+          },
+          {
+            "name": "Audit trail",
+            "headline": "Timestamped and reviewable",
+            "body": "Each check leaves a trail when compliance asks how a dossier was reviewed.",
+            "template_used": "4"
+          },
+          {
+            "name": "Exception queue",
+            "headline": "Work the exceptions",
+            "body": "Focus operators on flagged gaps instead of exhaustive manual re-checks.",
+            "template_used": "5"
+          },
+          {
+            "name": "Market roles",
+            "headline": "Obligé ≠ délégataire",
+            "body": "Copy and product language keep CEE market roles accurate — iverif stays validation software.",
+            "template_used": "2"
+          }
+        ],
+        "programmes": {
+          "headline": "Programmes in product scope",
+          "items": [
+            "CEE (FR)",
+            "Primes Énergie (FR)",
+            "Conto Termico (IT)",
+            "BEG (DE)",
+            "ECO4 (UK)",
+            "MOVES III (ES)"
+          ],
+          "note": "Pre-configured depth per programme confirmed at onboarding (ledger F2)."
+        },
+        "audience": {
+          "headline": "Built for CEE back-office teams",
+          "body": "Operations managers, compliance officers, and coordinators at délégataires, ESCos, and retrofit aggregators — typically 50–500 people."
+        },
+        "social_proof": {
+          "testimonials": [],
+          "trust_badges": [
+            "Validation software — not PNCEE-affiliated",
+            "Domains: iverif.fr / iverif.io"
+          ],
+          "media_mentions": [],
+          "note": "No testimonials or performance figures until evidenced."
+        },
+        "faq": [
+          {
+            "question": "Is iverif a délégataire or obligé?",
+            "answer": "No. iverif is document-validation software. We do not collect CEE on behalf of obligés and hold no statutory energy-savings obligation."
+          },
+          {
+            "question": "Do you replace Hellio, Effy, or a primes journey?",
+            "answer": "No. Those actors run aids / renovation journeys. iverif focuses on pre-submission document validation."
+          },
+          {
+            "question": "Which programmes are covered?",
+            "answer": "FR GTM leads with CEE and Primes Énergie. Product scope also includes Conto Termico, BEG, ECO4, and MOVES III — depth is scoped in onboarding."
+          },
+          {
+            "question": "Do you guarantee rejection rates or go-live timing?",
+            "answer": "No. We do not publish rejection-rate, processing-time, or go-live guarantees until they are evidenced and dated."
+          },
+          {
+            "question": "How do you handle evolving CEE fiches?",
+            "answer": "Standardised operations change on the ministry side. We use managed programme configuration; update mechanics are agreed with your team."
+          }
+        ],
+        "final_cta": {
+          "headline": "See iverif on your CEE dossiers.",
+          "body": "Talk through a real back-office flow — without unsourced performance promises.",
+          "button": "Book a conversation"
+        },
+        "how_it_works": [
+          {
+            "step": 1,
+            "title": "Scope the programme",
+            "body": "Map CEE / Primes Énergie dossier types and critical documents."
+          },
+          {
+            "step": 2,
+            "title": "Configure checks",
+            "body": "Programme rules and cross-document controls with managed onboarding."
+          },
+          {
+            "step": 3,
+            "title": "Validate before submit",
+            "body": "Operators work exceptions; the audit trail stays available."
+          }
+        ]
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/landing-page.md",
+      "fr": "wiki/src/content/docs/fr/marketing/landing-page.md"
+    },
+    "claim_guardrails": {
+      "prohibited_omitted": [
+        "rejection-rate %",
+        "30 seconds",
+        "go-live SLA",
+        "accreditation",
+        "competitor euro amounts",
+        "market-size figures",
+        "unaudited GDPR claims"
+      ],
+      "ledger_refs": [
+        "P1",
+        "P4",
+        "P5",
+        "F1",
+        "F2",
+        "C1",
+        "C2"
+      ]
+    },
+    "status_note": "Internal draft — founder review before publishing FR commercial copy that cites CEE volumes or outcomes."
+  }
+}

@@ -95,6 +95,16 @@ Standard "About [Company]" paragraph:
 - Key differentiator
 - Website URL
 
+## Bilingual FR + EN (additive)
+
+When `market.region: FR` **or** `locales` includes `fr`, emit both language variants. JSON remains the primary wave output.
+
+**Planned wiki paths:**
+- `wiki/src/content/docs/en/marketing/press-release.md`
+- `wiki/src/content/docs/fr/marketing/press-release.md`
+
+For FR releases: use French newswire conventions where appropriate (`POUR DIFFUSION IMMÉDIATE`, dateline city in France, factual tone). Keep EN variant media-ready for international desks. Prefer Les Échos / JDN-ready factual framing when FR GTM is active (see channel plan research).
+
 ## Output Schema
 
 ```json
@@ -104,7 +114,7 @@ Standard "About [Company]" paragraph:
     "wave": 6,
     "timestamp": "2024-01-15T10:30:00Z",
     "status": "complete",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "data": {
         "release_type": "FOR IMMEDIATE RELEASE|EMBARGOED UNTIL [date]",
         "headline": "string",
@@ -140,7 +150,15 @@ Standard "About [Company]" paragraph:
             "email": "string",
             "phone": "string"
         },
-        "full_release": "string (complete formatted press release)"
+        "full_release": "string (complete formatted press release)",
+        "locales": {
+            "en": { "headline": "string", "subheadline": "string", "lead_paragraph": "string", "full_release": "string" },
+            "fr": { "headline": "string", "subheadline": "string", "lead_paragraph": "string", "full_release": "string" }
+        },
+        "wiki_paths": {
+            "en": "wiki/src/content/docs/en/marketing/press-release.md",
+            "fr": "wiki/src/content/docs/fr/marketing/press-release.md"
+        }
     }
 }
 ```
@@ -155,3 +173,4 @@ Standard "About [Company]" paragraph:
 - [ ] Product details clearly stated
 - [ ] Follows standard PR format
 - [ ] Can be sent to media as-is
+- [ ] If bilingual: both `locales.en` and `locales.fr` full releases; wiki paths documented

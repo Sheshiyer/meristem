@@ -1,0 +1,162 @@
+# iverif Meristem intake — evidence-bounded Phase 1 brand seed.
+# Wave 1 uses research/EVIDENCE-LEDGER.md as a source ledger. It is not public copy.
+# Region lock: France (FR) / fr-FR. Brand domain iverif.fr; wiki domain iverif.io.
+
+brand:
+  name: "iverif"
+  slug: "iverif"
+  public_descriptor: "AI document validation for energy subsidy operators"
+  tagline: "Stop losing subsidy claims to avoidable document errors."
+  category: "technology"  # RegTech SaaS / EU energy subsidies
+  market:
+    b2b: true
+    b2c: false
+    enterprise: false
+    smb: true
+    region: "FR"
+    language: "fr-FR"
+
+domains:
+  brand: "iverif.fr"
+  wiki: "iverif.io"
+
+company:
+  description: |
+    iverif is an AI-powered document validation platform for EU energy subsidy
+    operators. It cross-checks dossier fields and supporting documents against
+    programme-specific rules before submission, with managed programme
+    configuration and audit trails. Initial GTM focus is France (CEE / Primes
+    Énergie), with multi-programme coverage across the EU.
+  founding_year: 2026
+  stage: "growth"
+  problem: |
+    Energy subsidy dossiers require cross-checking 10–20 supporting documents
+    against programme-specific rules. Manual validation is slow, error-prone,
+    hard to audit, and does not scale when volumes spike.
+  solution: |
+    An AI validation platform pre-configured for major EU energy subsidy
+    programmes, with managed onboarding, cross-document consistency checks,
+    and timestamped audit logs for regulatory scrutiny.
+
+programmes:
+  - name: "CEE"
+    market: "FR"
+    note: "Certificats d'économies d'énergie — primary FR GTM programme"
+  - name: "Primes Énergie"
+    market: "FR"
+    note: "Prime énergie / prime CEE consumer-facing label of the CEE mechanism"
+  - name: "Conto Termico"
+    market: "IT"
+  - name: "BEG"
+    market: "DE"
+  - name: "ECO4"
+    market: "UK"
+  - name: "MOVES III"
+    market: "ES"
+
+audience:
+  primary:
+    name: "Marie Durand"
+    title: "Operations Manager"
+    company_size: "50-500 employees"
+    industry: "Energy subsidy operators, ESCos, aggregators, retrofit coordinators"
+    location: "France"
+    focus_programme: "CEE"
+    role_notes: |
+      Distinguishes obligé (energy supplier with a statutory CEE obligation)
+      from délégataire (accredited party that collects CEE on behalf of
+      obligés). Marie typically sits in a mid-market operator or délégataire
+      back-office processing dossiers for CEE / Primes Énergie.
+    pain_points:
+      - "Manual cross-check of 10–20 documents per dossier is slow and error-prone"
+      - "Rejections discovered after submission are expensive to correct"
+      - "Programme rules change frequently; training new operators takes months"
+      - "Incomplete audit trails make regulatory reviews stressful"
+    goals:
+      - "Reduce avoidable documentation-error rejections"
+      - "Validate dossiers faster without proportional headcount growth"
+      - "Maintain audit-ready trails for CEE / Primes Énergie scrutiny"
+      - "Onboard programme rule updates in days, not months"
+  secondary:
+    title: "Compliance Officer / Subsidy Coordinator"
+    company_size: "10-500 employees"
+    industry: "Energy services, délégataires, retrofit aggregators"
+
+competitors:
+  direct:
+    - name: "Hellio"
+      positioning: "FR energy-efficiency / CEE délégataire and primes accompaniment"
+      differentiation_rule: "Do not imply affiliation; iverif validates dossiers, Hellio operates CEE / primes services."
+    - name: "Économie d'Énergie SAS"
+      positioning: "FR energy-savings / CEE market actor"
+      differentiation_rule: "Position as operator/market actor, not as AI dossier-validation software."
+    - name: "Effy"
+      positioning: "FR renovation énergétique and Prime Effy (CEE) consumer/pro accompaniment"
+      differentiation_rule: "Effy sells primes and renovation journeys; iverif sells pre-submission document validation."
+    - name: "GEO PLC"
+      positioning: "Energy efficiency / obligation-scheme market participant"
+      differentiation_rule: "Do not copy commercial claims; keep iverif scoped to validation software."
+  indirect:
+    - name: "Generic OCR / IDP platforms"
+      positioning: "Document extraction without programme-specific CEE rules"
+    - name: "Legacy DMS (SharePoint, DocuSign)"
+      positioning: "Storage and e-signature without cross-document subsidy validation"
+
+personality:
+  traits: ["precise", "authoritative", "quietly confident", "no-hype", "trustworthy"]
+  voice:
+    formality: 0.70
+    enthusiasm: 0.30
+    technicality: 0.75
+    warmth: 0.40
+  archetypes:
+    primary: "sage"
+    secondary: "architect"
+  aspirational_references:
+    - "Stripe"
+    - "Notion"
+    - "Vercel"
+    - "Linear"
+
+visual_preferences:
+  color_mood: "minimal"
+  photography_style: "editorial"
+  illustration_style: "geometric"
+  preferred_colors: ["#2EE600", "#1C1917", "#FAFAF9", "#78716C", "#F59E0B"]
+  avoid_colors: ["#2563EB"]  # generic blue corporate SaaS
+
+user_provided_assets:
+  logo:
+    icon: { path: "./assets/logo-icon.png", type: logo-icon, required: true }
+  screenshots:
+    - { path: "./assets/og-image.png", type: screenshot, label: "iverif Open Graph image", deterministic: true }
+    - { path: "./assets/screenshot-hero.png", type: screenshot, label: "iverif product / hero screenshot", deterministic: true }
+
+research:
+  source_ledger: "./research/EVIDENCE-LEDGER.md"
+  evidence_boundary: "Use facts only as scoped in the ledger; label all hypotheses. No unverified rejection-rate or time-saved claims in public copy."
+
+content:
+  landing_page:
+    sections: [hero, problem, solution, programmes, how_it_works, audience, faq, cta]
+  email: { welcome_series: false, nurture_series: false, onboarding_series: false }
+  ads: { platforms: [], formats: [] }
+
+publishing:
+  notebooklm: { enabled: false, artifacts: [] }
+  wiki: { enabled: false, theme: "editorial" }
+  deliverables: { formats: [zip], include_origins: true }
+
+synthesis:
+  synthesize_prose: false
+  embedding_integration: { enabled: false, worker_url: "" }
+
+execution:
+  depth: "standard"
+  waves: "1-7"
+  non_interactive: true
+
+validation:
+  require_user_assets: true
+  warn_missing_optional: true
+  fail_on_hallucination: true

@@ -1,0 +1,67 @@
+{
+  "skill": "color-palette",
+  "cluster": "identity",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 3,
+  "data": {
+    "evidence_scope": "v1 visual-identity-core + wiki visual-guidelines + brand-config preferred_colors. Existing assets must be respected (F3).",
+    "strategy": "Precision meets regulatory authority. Minimal color mood; Signal Green used sparingly for validation/CTA.",
+    "palette": {
+      "signal_green": {
+        "hex": "#2EE600",
+        "name": "Signal Green",
+        "role": "primary accent",
+        "psychology": "Validation, go-signal, correctness. Confidence and action.",
+        "usage": "CTAs, success/validation states, sparse accents — never large floods of green"
+      },
+      "regulatory_stone": {
+        "hex": "#1C1917",
+        "name": "Regulatory Stone",
+        "role": "secondary / primary text and dark surfaces",
+        "psychology": "Authority, permanence, seriousness without coldness",
+        "usage": "Headings, body on light, dark footers/sections"
+      },
+      "clean_white": {
+        "hex": "#FAFAF9",
+        "name": "Clean White",
+        "role": "accent / canvas",
+        "psychology": "Clarity, space to think, professionalism",
+        "usage": "Page backgrounds, breathing room in dense regulatory UI"
+      },
+      "warm_stone": {
+        "hex": "#78716C",
+        "name": "Warm Stone",
+        "role": "neutral supporting",
+        "psychology": "Secondary text, borders, quiet hierarchy",
+        "usage": "Captions, dividers, muted labels"
+      },
+      "caution_amber": {
+        "hex": "#F59E0B",
+        "name": "Caution Amber",
+        "role": "semantic warning",
+        "psychology": "Attention without alarmism",
+        "usage": "Warnings, pending validation states — not marketing decoration"
+      }
+    },
+    "avoid_colors": [
+      {
+        "hex": "#2563EB",
+        "reason": "Generic blue corporate SaaS — brand-config avoid_colors"
+      }
+    ],
+    "usage_rules": [
+      "Green on white for primary actions and success states",
+      "Stone on white for body text and headings",
+      "White on stone for dark sections or footers",
+      "Green + stone never compete for attention on the same element",
+      "Test contrast in implementation; this receipt is not an accessibility certification"
+    ],
+    "guardrails": [
+      "Do not expand palette for campaign novelty without identity review",
+      "Do not borrow Hellio/Effy consumer-bright conventions",
+      "Respect existing logo-icon / og / hero assets (ASSET-ORIGINS)"
+    ]
+  }
+}

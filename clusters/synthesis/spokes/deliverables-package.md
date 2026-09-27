@@ -226,6 +226,18 @@ Create organized delivery structure that clearly marks asset origins:
 │   ├── ad-copy.md
 │   └── press-release.md
 │
+├── 09-Copy-Locales/                 # Bilingual / FR GTM only
+│   ├── en/
+│   │   ├── landing-page-copy.md
+│   │   ├── email-sequences/
+│   │   ├── ad-copy.md
+│   │   └── press-release.md
+│   └── fr/
+│       ├── landing-page-copy.md
+│       ├── email-sequences/
+│       ├── ad-copy.md
+│       └── press-release.md
+│
 ├── 10-Social-Media/
 │   ├── generated/
 │   │   ├── instagram/
@@ -237,15 +249,30 @@ Create organized delivery structure that clearly marks asset origins:
 ├── 11-NotebookLM/
 │   ├── mind-map.png
 │   ├── slides.pdf
-│   └── audio-overview.mp3
+│   ├── audio-overview.mp3
+│   └── sources/                     # Bilingual when FR GTM
+│       ├── en/
+│       └── fr/
 │
 ├── 12-Wiki/
-│   └── [built site files]
+│   └── [built site files; docs/{en,fr} when bilingual]
 │
 └── _source/
     ├── outputs/                     # Raw JSON outputs
     ├── asset-manifest.json          # Complete asset manifest
     └── brand-config.yaml            # Original config
+```
+
+### Bilingual zip (additive)
+
+When `market.region: FR` or locales include both `en` and `fr`, the package **MUST** include both locale trees (copy, notebooklm sources, wiki docs) and the ZIP must contain both. Single-locale brands keep the previous layout and a single ZIP unchanged.
+
+```bash
+# Example artifact names
+deliverables/[brand]-brand-package.zip          # full package including both locales
+# Optional convenience extracts (if generated):
+deliverables/[brand]-docs-fr.zip
+deliverables/[brand]-docs-en.zip
 ```
 
 ### Step 5: Create ASSET-ORIGINS.md
@@ -496,6 +523,7 @@ bm verify-package --path brand-name-brand-package/
 - [ ] MANIFEST lists all files with metadata
 - [ ] Logo in multiple formats (SVG, PNG)
 - [ ] Colors in designer-friendly formats
+- [ ] If bilingual/FR: both `en` and `fr` locale trees packaged
 
 ### Verification
 - [ ] ZIP created and verified
@@ -503,3 +531,4 @@ bm verify-package --path brand-name-brand-package/
 - [ ] Checksums match
 - [ ] No missing or broken references
 - [ ] Package ready for delivery
+- [ ] If bilingual/FR: ZIP contains both locales

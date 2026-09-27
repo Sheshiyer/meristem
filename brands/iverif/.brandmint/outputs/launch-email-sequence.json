@@ -1,0 +1,388 @@
+{
+  "skill": "launch-email-sequence",
+  "cluster": "content",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "sequence_strategy": {
+      "campaign_length": "16 days",
+      "total_emails": 6,
+      "goals": [
+        "Demo requests",
+        "Position as validation software",
+        "Educate obligé vs délégataire"
+      ],
+      "default_locale": "fr",
+      "gtm_tag": "FR"
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Annonce lancement",
+        "send_timing": "Jour 0",
+        "primary_lever": "announce",
+        "urgency_level": "high",
+        "subject_lines": {
+          "primary": "iverif est disponible pour le back-office CEE",
+          "variation_a": "Validation documentaire avant dépôt",
+          "variation_b": "Nouveau : iverif pour opérateurs d’aides énergie"
+        },
+        "preview_text": "Règles de programme + piste d’audit",
+        "body": "Bonjour {{prenom}},\n\niverif ouvre son GTM France : une plateforme de validation documentaire pour dossiers d’aides énergie (CEE / Primes Énergie).\n\nObjectif simple — signaler les écarts entre pièces et champs avant dépôt, avec une configuration de programme gérée et une piste d’audit horodatée.\n\nNous ne publions pas de taux de rejet garantis. Nous proposons un cadrage sur votre flux réel.\n\nÀ bientôt,\nL’équipe iverif\niverif.fr",
+        "cta": {
+          "text": "Demander une démo",
+          "url_placeholder": "{{demo_url}}"
+        },
+        "ps": "P.S. iverif est un logiciel de validation — pas un délégataire ni un parcours primes."
+      },
+      {
+        "number": 2,
+        "name": "Problème dossier",
+        "send_timing": "Jour 2",
+        "primary_lever": "problem",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Quand l’écart apparaît après dépôt",
+          "variation_a": "10–20 pièces, encore à croiser à la main ?",
+          "variation_b": "Le coût caché du recontrôle"
+        },
+        "preview_text": "Le manuel ne suit pas toujours le volume",
+        "body": "Bonjour {{prenom}},\n\nSur un dossier CEE, croiser 10 à 20 pièces reste fréquent. Quand l’incohérence sort après dépôt, la correction est plus lourde — et la revue plus stressante.\n\niverif se place avant l’envoi : contrôles inter-documents, file d’exceptions, journal horodaté.\n\nSi vous gérez un back-office délégataire ou opérateur, voyons votre typologie de dossiers.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Partager un flux type",
+          "url_placeholder": "{{discovery_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 3,
+        "name": "Différenciation",
+        "send_timing": "Jour 5",
+        "primary_lever": "positioning",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Pas Hellio. Pas Effy. Pas un OCR générique.",
+          "variation_a": "Validation ≠ distribution de primes",
+          "variation_b": "Obligé et délégataire : gardons les rôles clairs"
+        },
+        "preview_text": "Logiciel de validation pour opérateurs",
+        "body": "Bonjour {{prenom}},\n\nLe marché FR des primes et du CEE est peuplé d’opérateurs et d’accompagnateurs (Hellio, Effy, etc.). iverif ne les remplace pas.\n\nNous vendons la validation documentaire avant dépôt — pas une prime, pas une obligation, pas une accréditation.\n\nSi votre critère est la précision du dossier et la capacité d’audit, parlons produit.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Voir le positionnement",
+          "url_placeholder": "{{positioning_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 4,
+        "name": "Preuve produit",
+        "send_timing": "Jour 8",
+        "primary_lever": "product",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Ce que fait iverif sur un dossier",
+          "variation_a": "Règles, exceptions, audit trail",
+          "variation_b": "Programmes dans le périmètre"
+        },
+        "preview_text": "CEE & Primes Énergie d’abord",
+        "body": "Bonjour {{prenom}},\n\nSur un dossier type :\n1) pièces et champs contrôlés selon règles de programme configurées\n2) incohérences remontées en exceptions\n3) contrôles tracés pour relecture\n\nPérimètre produit déclaré : CEE, Primes Énergie, Conto Termico, BEG, ECO4, MOVES III — profondeur par programme cadrée à l’onboarding.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Planifier une démo",
+          "url_placeholder": "{{demo_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 5,
+        "name": "Objection intégration",
+        "send_timing": "Jour 12",
+        "primary_lever": "objection",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Sans projet IT de six mois",
+          "variation_a": "Onboarding géré, démarrage cadré",
+          "variation_b": "Et si le process actuel « suffit » ?"
+        },
+        "preview_text": "Démarrer sans tout reconstruire",
+        "body": "Bonjour {{prenom}},\n\nObjection fréquente : « notre process manuel suffit » ou « l’intégration sera trop lourde ».\n\nNotre réponse : onboarding géré pour caler règles et flux, sans promettre un go-live miracle. On part de vos dossiers CEE réels.\n\nSi le volume monte ou si les fiches bougent, le sujet devient la capacité à suivre — pas le remplacement de toute la stack.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Réserver un cadrage",
+          "url_placeholder": "{{discovery_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 6,
+        "name": "Relance finale",
+        "send_timing": "Jour 16",
+        "primary_lever": "urgency",
+        "urgency_level": "high",
+        "subject_lines": {
+          "primary": "Dernier créneau de cadrage cette vague",
+          "variation_a": "Toujours pertinent pour votre back-office CEE ?",
+          "variation_b": "Fermeture des démos de la vague"
+        },
+        "preview_text": "Réponse courte suffit",
+        "body": "Bonjour {{prenom}},\n\nNous clôturons les créneaux de démo de cette vague FR.\n\nSi la validation avant dépôt reste un sujet pour votre équipe, répondez à cet e-mail ou choisissez un créneau.\n\nSinon, nous resterons discrets.\n\nCordialement,\nL’équipe iverif\niverif.fr",
+        "cta": {
+          "text": "Choisir un créneau",
+          "url_placeholder": "{{calendar_url}}"
+        },
+        "ps": "P.S. Aucune promesse de % de rejet dans cet échange — uniquement un cadrage factuel."
+      }
+    ],
+    "locales": {
+      "fr": {
+        "emails": [
+          {
+            "number": 1,
+            "name": "Annonce lancement",
+            "send_timing": "Jour 0",
+            "primary_lever": "announce",
+            "urgency_level": "high",
+            "subject_lines": {
+              "primary": "iverif est disponible pour le back-office CEE",
+              "variation_a": "Validation documentaire avant dépôt",
+              "variation_b": "Nouveau : iverif pour opérateurs d’aides énergie"
+            },
+            "preview_text": "Règles de programme + piste d’audit",
+            "body": "Bonjour {{prenom}},\n\niverif ouvre son GTM France : une plateforme de validation documentaire pour dossiers d’aides énergie (CEE / Primes Énergie).\n\nObjectif simple — signaler les écarts entre pièces et champs avant dépôt, avec une configuration de programme gérée et une piste d’audit horodatée.\n\nNous ne publions pas de taux de rejet garantis. Nous proposons un cadrage sur votre flux réel.\n\nÀ bientôt,\nL’équipe iverif\niverif.fr",
+            "cta": {
+              "text": "Demander une démo",
+              "url_placeholder": "{{demo_url}}"
+            },
+            "ps": "P.S. iverif est un logiciel de validation — pas un délégataire ni un parcours primes."
+          },
+          {
+            "number": 2,
+            "name": "Problème dossier",
+            "send_timing": "Jour 2",
+            "primary_lever": "problem",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Quand l’écart apparaît après dépôt",
+              "variation_a": "10–20 pièces, encore à croiser à la main ?",
+              "variation_b": "Le coût caché du recontrôle"
+            },
+            "preview_text": "Le manuel ne suit pas toujours le volume",
+            "body": "Bonjour {{prenom}},\n\nSur un dossier CEE, croiser 10 à 20 pièces reste fréquent. Quand l’incohérence sort après dépôt, la correction est plus lourde — et la revue plus stressante.\n\niverif se place avant l’envoi : contrôles inter-documents, file d’exceptions, journal horodaté.\n\nSi vous gérez un back-office délégataire ou opérateur, voyons votre typologie de dossiers.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Partager un flux type",
+              "url_placeholder": "{{discovery_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 3,
+            "name": "Différenciation",
+            "send_timing": "Jour 5",
+            "primary_lever": "positioning",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Pas Hellio. Pas Effy. Pas un OCR générique.",
+              "variation_a": "Validation ≠ distribution de primes",
+              "variation_b": "Obligé et délégataire : gardons les rôles clairs"
+            },
+            "preview_text": "Logiciel de validation pour opérateurs",
+            "body": "Bonjour {{prenom}},\n\nLe marché FR des primes et du CEE est peuplé d’opérateurs et d’accompagnateurs (Hellio, Effy, etc.). iverif ne les remplace pas.\n\nNous vendons la validation documentaire avant dépôt — pas une prime, pas une obligation, pas une accréditation.\n\nSi votre critère est la précision du dossier et la capacité d’audit, parlons produit.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Voir le positionnement",
+              "url_placeholder": "{{positioning_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 4,
+            "name": "Preuve produit",
+            "send_timing": "Jour 8",
+            "primary_lever": "product",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Ce que fait iverif sur un dossier",
+              "variation_a": "Règles, exceptions, audit trail",
+              "variation_b": "Programmes dans le périmètre"
+            },
+            "preview_text": "CEE & Primes Énergie d’abord",
+            "body": "Bonjour {{prenom}},\n\nSur un dossier type :\n1) pièces et champs contrôlés selon règles de programme configurées\n2) incohérences remontées en exceptions\n3) contrôles tracés pour relecture\n\nPérimètre produit déclaré : CEE, Primes Énergie, Conto Termico, BEG, ECO4, MOVES III — profondeur par programme cadrée à l’onboarding.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Planifier une démo",
+              "url_placeholder": "{{demo_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 5,
+            "name": "Objection intégration",
+            "send_timing": "Jour 12",
+            "primary_lever": "objection",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Sans projet IT de six mois",
+              "variation_a": "Onboarding géré, démarrage cadré",
+              "variation_b": "Et si le process actuel « suffit » ?"
+            },
+            "preview_text": "Démarrer sans tout reconstruire",
+            "body": "Bonjour {{prenom}},\n\nObjection fréquente : « notre process manuel suffit » ou « l’intégration sera trop lourde ».\n\nNotre réponse : onboarding géré pour caler règles et flux, sans promettre un go-live miracle. On part de vos dossiers CEE réels.\n\nSi le volume monte ou si les fiches bougent, le sujet devient la capacité à suivre — pas le remplacement de toute la stack.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Réserver un cadrage",
+              "url_placeholder": "{{discovery_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 6,
+            "name": "Relance finale",
+            "send_timing": "Jour 16",
+            "primary_lever": "urgency",
+            "urgency_level": "high",
+            "subject_lines": {
+              "primary": "Dernier créneau de cadrage cette vague",
+              "variation_a": "Toujours pertinent pour votre back-office CEE ?",
+              "variation_b": "Fermeture des démos de la vague"
+            },
+            "preview_text": "Réponse courte suffit",
+            "body": "Bonjour {{prenom}},\n\nNous clôturons les créneaux de démo de cette vague FR.\n\nSi la validation avant dépôt reste un sujet pour votre équipe, répondez à cet e-mail ou choisissez un créneau.\n\nSinon, nous resterons discrets.\n\nCordialement,\nL’équipe iverif\niverif.fr",
+            "cta": {
+              "text": "Choisir un créneau",
+              "url_placeholder": "{{calendar_url}}"
+            },
+            "ps": "P.S. Aucune promesse de % de rejet dans cet échange — uniquement un cadrage factuel."
+          }
+        ]
+      },
+      "en": {
+        "emails": [
+          {
+            "number": 1,
+            "name": "Launch announce",
+            "send_timing": "Day 0",
+            "primary_lever": "announce",
+            "urgency_level": "high",
+            "subject_lines": {
+              "primary": "iverif is live for CEE back offices",
+              "variation_a": "Document validation before submission",
+              "variation_b": "New: iverif for energy subsidy operators"
+            },
+            "preview_text": "Programme rules + audit trail",
+            "body": "Hi {{first_name}},\n\niverif is opening France GTM: document validation for energy subsidy dossiers (CEE / Primes Énergie).\n\nSimple goal — surface field and document gaps before submission, with managed programme configuration and a timestamped audit trail.\n\nWe do not publish guaranteed rejection rates. We offer a scoped look at your real flow.\n\nBest,\nThe iverif team\niverif.fr",
+            "cta": {
+              "text": "Request a demo",
+              "url_placeholder": "{{demo_url}}"
+            },
+            "ps": "P.S. iverif is validation software — not a délégataire or primes journey."
+          },
+          {
+            "number": 2,
+            "name": "Dossier problem",
+            "send_timing": "Day 2",
+            "primary_lever": "problem",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "When the gap appears after submit",
+              "variation_a": "Still cross-checking 10–20 documents?",
+              "variation_b": "The hidden cost of rework"
+            },
+            "preview_text": "Manual checks struggle with volume",
+            "body": "Hi {{first_name}},\n\nCEE dossiers often span 10–20 supporting documents. When inconsistency shows up after submission, fixes get expensive — and reviews get stressful.\n\niverif sits before send: cross-document checks, exception queue, timestamped log.\n\nIf you run a délégataire or operator back office, let’s map your dossier types.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Share a sample flow",
+              "url_placeholder": "{{discovery_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 3,
+            "name": "Differentiation",
+            "send_timing": "Day 5",
+            "primary_lever": "positioning",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Not Hellio. Not Effy. Not generic OCR.",
+              "variation_a": "Validation ≠ primes distribution",
+              "variation_b": "Keep obligé / délégataire roles clear"
+            },
+            "preview_text": "Validation software for operators",
+            "body": "Hi {{first_name}},\n\nFrance’s CEE / primes market has operators and accompaniments (Hellio, Effy, and peers). iverif does not replace them.\n\nWe sell pre-submission document validation — not a prime, not an obligation, not an accreditation.\n\nIf your buying criteria are dossier precision and auditability, let’s talk product.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "See positioning",
+              "url_placeholder": "{{positioning_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 4,
+            "name": "Product proof",
+            "send_timing": "Day 8",
+            "primary_lever": "product",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "What iverif does on a dossier",
+              "variation_a": "Rules, exceptions, audit trail",
+              "variation_b": "Programmes in scope"
+            },
+            "preview_text": "CEE & Primes Énergie first",
+            "body": "Hi {{first_name}},\n\nOn a typical dossier:\n1) fields and documents checked against configured programme rules\n2) inconsistencies raised as exceptions\n3) checks logged for later review\n\nDeclared product scope: CEE, Primes Énergie, Conto Termico, BEG, ECO4, MOVES III — depth per programme set in onboarding.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Schedule a demo",
+              "url_placeholder": "{{demo_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 5,
+            "name": "Integration objection",
+            "send_timing": "Day 12",
+            "primary_lever": "objection",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Without a six-month IT programme",
+              "variation_a": "Managed onboarding, scoped start",
+              "variation_b": "What if manual is “good enough”?"
+            },
+            "preview_text": "Start without rebuilding everything",
+            "body": "Hi {{first_name}},\n\nCommon objections: “manual is fine” or “integration will be heavy.”\n\nOur answer: managed onboarding to set rules and flow — without promising a miracle go-live. We start from your real CEE dossiers.\n\nWhen volume rises or fiches change, the question becomes keeping up — not ripping out the stack.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Book a scoping call",
+              "url_placeholder": "{{discovery_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 6,
+            "name": "Final nudge",
+            "send_timing": "Day 16",
+            "primary_lever": "urgency",
+            "urgency_level": "high",
+            "subject_lines": {
+              "primary": "Last scoping slots this wave",
+              "variation_a": "Still relevant for your CEE back office?",
+              "variation_b": "Closing this wave’s demos"
+            },
+            "preview_text": "A short reply is enough",
+            "body": "Hi {{first_name}},\n\nWe’re closing demo slots for this FR wave.\n\nIf pre-submission validation still matters for your team, reply or pick a time.\n\nOtherwise we’ll stay quiet.\n\nBest,\nThe iverif team\niverif.fr",
+            "cta": {
+              "text": "Pick a slot",
+              "url_placeholder": "{{calendar_url}}"
+            },
+            "ps": "P.S. No rejection-rate promises in that conversation — only factual scoping."
+          }
+        ]
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/launch-email-sequence.md",
+      "fr": "wiki/src/content/docs/fr/marketing/launch-email-sequence.md"
+    },
+    "claim_guardrails": {
+      "no_outcome_kpis": true,
+      "ledger_refs": [
+        "P5",
+        "C1",
+        "C2",
+        "F2"
+      ]
+    }
+  }
+}

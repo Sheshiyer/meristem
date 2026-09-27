@@ -36,6 +36,28 @@ Use this when launching or running a full campaign that requires coordinated exe
 - Output paths follow `.brandmint/outputs/{skill}.json` convention
 - The `templates/` directories in oracle-aleph are NOT used — meristem is JSON-only
 
+### Market region → GTM tag (additive)
+
+Read `market.region` from `brand-config.yaml` (or equivalent execution context):
+
+| `market.region` | GTM tag | Effects |
+|-----------------|---------|---------|
+| `FR` | `FR GTM` | Force bilingual FR+EN content/synthesis; `defaultLocale: fr`; require FR competitor set + Marie Durand depth; load `brands/iverif/research/channel-plan.md` when brand is iverif |
+| other / unset | (none) | Existing single-locale behaviour |
+
+Emit on orchestrator output:
+
+```json
+"gtm": {
+  "region": "FR",
+  "tag": "FR GTM",
+  "locales": ["fr", "en"],
+  "defaultLocale": "fr",
+  "channel_plan_path": "brands/iverif/research/channel-plan.md"
+}
+```
+
+Other brands without FR region omit `gtm` or set `tag` null.
 ## Campaign Phases for Service Studios
 
 ### Phase 1: Foundation
@@ -121,7 +143,14 @@ Per phase:
             {"gate": "string", "requirement": "string", "status": "PASS|FAIL"}
         ],
         "missing_outputs": ["string"],
-        "ready_for_launch": "boolean"
+        "ready_for_launch": "boolean",
+        "gtm": {
+            "region": "string|null",
+            "tag": "FR GTM|null",
+            "locales": ["fr", "en"],
+            "defaultLocale": "fr",
+            "channel_plan_path": "string|null"
+        }
     }
 }
 ```
@@ -133,3 +162,4 @@ Per phase:
 - [ ] Missing outputs flagged
 - [ ] ready_for_launch boolean accurate
 - [ ] Output paths verified to exist
+- [ ] If `market.region=FR`: `gtm.tag` is `FR GTM` and bilingual gates acknowledged

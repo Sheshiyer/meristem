@@ -1,0 +1,55 @@
+{
+  "skill": "brand-story",
+  "cluster": "strategy",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 2,
+  "data": {
+    "evidence_scope": "No verified founder biography in ledger/brief — do not invent origin mythology. Story centres on Marie's operational problem and category clarity vs primes operators. Founding_year 2026 from brand-config.",
+    "origin_story": {
+      "the_before": "Les back-offices CEE / délégataires recoupent encore 10–20 pièces à la main face à des fiches et des textes de période qui évoluent.",
+      "inciting_incident": "Unknown founder incident — not evidenced; do not invent.",
+      "the_struggle": "Les erreurs documentaires se paient après dépôt ; les outils génériques (OCR, DMS) et les marques de primes (Hellio, Effy) ne résolvent pas le même job logiciel.",
+      "the_breakthrough": "Une plateforme de validation AI pré-dépôt, préconfigurée pour les programmes de subvention énergétique, avec onboarding managé et trails d'audit — intention produit (F2), profondeur par programme non auditée dans le ledger.",
+      "the_mission": "Rendre le signal de conformité documentaire visible avant soumission pour les opérateurs FR (CEE / Primes Énergie d'abord).",
+      "full_narrative_fr": "iverif naît du constat opérationnel du marché CEE : la valorisation dépend d'un dossier cohérent, mais le contrôle reste souvent manuel, tardif et difficile à auditer. Le récit de marque ne fabrique pas une biographie fondateur non documentée. Il raconte le métier de Marie Durand — responsable back-office chez un délégataire ou opérateur mid-market — qui doit distinguer son rôle de celui de l'obligé, suivre les fiches, et présenter une piste claire en cas de revue. Face à Hellio ou Effy, iverif ne prétend pas distribuer des primes : il outille la validation avant dépôt. Face à l'OCR et au DMS, il apporte règles programme et cohérence cross-document. La promesse publique reste sobre : moins d'erreurs évitables, plus de traçabilité — sans chiffres d'outcome tant que des reçus iverif datés n'existent pas.",
+      "full_narrative_en": "iverif starts from an operational CEE-market fact pattern: subsidy value depends on a coherent dossier, yet checks are still often manual, late, and hard to audit. The brand does not invent an undocumented founder biography. It tells Marie Durand's job — back-office lead at a mid-market délégataire or operator — who must keep obligé vs délégataire roles clear, track fiches, and show a usable trail under review. Against Hellio or Effy, iverif does not claim to distribute primes: it supplies pre-submission validation software. Against OCR and DMS, it adds programme rules and cross-document consistency. Public promise stays sober: fewer avoidable errors, more traceability — no outcome metrics until dated iverif receipts exist."
+    },
+    "brand_mythology": {
+      "archetype": "sage + architect",
+      "enemy": "Erreurs documentaires évitables découvertes trop tard ; hype RegTech ; confusion catégorie avec les opérateurs de primes",
+      "promised_land": "Un back-office où chaque dossier porte un signal de validation explicable avant dépôt",
+      "transformation_enabled": "Du recoupement manuel opaque à un contrôle pré-soumission traçable"
+    },
+    "storybrand_framework": {
+      "character": "Marie Durand — Responsable Back-Office CEE / ops délégataire",
+      "problem": {
+        "external": "Dossiers multi-pièces à valider contre règles / fiches avant dépôt",
+        "internal": "Peur du rejet, de l'audit, de décevoir l'obligé donneur d'ordre",
+        "philosophical": "La conformité documentaire mérite un signal clair avant soumission, pas un théâtre de promesses"
+      },
+      "guide": "iverif — expert sobre de la validation documentaire subventions énergétiques",
+      "plan": [
+        "Cartographier le flux dossier CEE / Primes Énergie",
+        "Configurer les règles programme avec accompagnement managé",
+        "Valider avant dépôt et conserver la piste d'audit"
+      ],
+      "call_to_action": "Explorer une démo FR sur iverif.fr — sans claim d'affiliation PNCEE",
+      "success": "Dossiers contrôlés plus tôt, trails exploitables, catégorie logicielle claire",
+      "failure": "Rejets tardifs, stress d'audit, confusion avec une marque de primes"
+    },
+    "story_formats": {
+      "one_liner_fr": "La validation documentaire avant dépôt pour les opérateurs CEE.",
+      "one_liner_en": "Pre-submission document validation for CEE operators.",
+      "paragraph_fr": "iverif est une plateforme AI de validation de dossiers de subventions énergétiques. En France, elle s'adresse d'abord aux back-offices CEE / Primes Énergie : règles programme, cohérence cross-document, pistes d'audit — sans se faire passer pour un délégataire ou un distributeur de primes.",
+      "paragraph_en": "iverif is an AI platform for energy-subsidy dossier validation. In France it leads with CEE / Primes Énergie back-offices: programme rules, cross-document checks, audit trails — without posing as a délégataire or primes distributor.",
+      "short_story_fr": "Marie gère l'usine à dossiers. Chaque pièce compte. iverif lui donne un contrôle avant dépôt et une mémoire de ce qui a été vérifié — précise, autoritaire, sans hype.",
+      "short_story_en": "Marie runs the dossier factory. Every document matters. iverif gives her a pre-submission check and a memory of what was verified — precise, authoritative, no hype."
+    },
+    "hypotheses": [
+      "FR-first story outperforms EU multi-programme origin myths for conversion (H1).",
+      "Explicit anti-confusion vs Hellio/Effy in narrative improves sales-cycle clarity (H3)."
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "skill": "hero-images",
+  "cluster": "photography",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 4,
+  "data": {
+    "art_direction": {
+      "theme": "Dossier Clarity — FR regulatory office",
+      "summary": "Editorial documentary heroes set in French energy-subsidy back-office contexts: clean desks, paper and digital dossiers, soft natural light through office blinds, Signal Green (#2EE600) used only as a restrained status accent (LED, sticky tab, or UI glow — never as neon wash). Stone (#1C1917) and Clean White (#FAFAF9) dominate. Negative space reserved for layout overlays; no baked text.",
+      "model": "prompt-only (generation deferred; do not run bm.sh)",
+      "lighting": "North-facing office daylight, soft window falloff, controlled shadows, shallow depth of field; never flat stock-office glare.",
+      "color_treatment": "Desaturated stone/warm-grey base; #FAFAF9 paper whites; single #2EE600 validation accent; amber (#F59E0B) only as secondary caution tab if needed.",
+      "composition": "Asymmetric crops, rule-of-thirds desk planes, left or lower third clear for headline overlay in layout.",
+      "mood": "Precise, calm authority; quietly confident RegTech — Stripe/Linear craft, not corporate blue SaaS.",
+      "palette_hex": [
+        "#2EE600",
+        "#1C1917",
+        "#FAFAF9",
+        "#78716C",
+        "#F59E0B"
+      ],
+      "avoid": [
+        "#2563EB generic blue",
+        "stock handshake",
+        "government seal implications",
+        "neon cyberpunk"
+      ]
+    },
+    "text_overlay_policy": "NO English (or any) text overlays in generation prompts. Headline/CTA applied later in layout over deliberate negative space. French layout copy lives outside the image file.",
+    "assets": [
+      {
+        "id": "hero-01-dossier-desk",
+        "path": "./generated/hero-01-dossier-desk.png",
+        "aspect_ratio": "16:9",
+        "model": "deferred",
+        "source": "prompt_documented",
+        "user_provided": false,
+        "description": "Primary landing hero: modern Paris-region open office desk with a CEE dossier stack (blank paper faces, no readable print), dual monitors showing abstract soft-blur UI panels, a single green status LED, left third empty for overlay.",
+        "prompt": "Editorial brand hero photography for iverif RegTech SaaS. French mid-market energy-subsidy operations office. Wide 16:9 desk scene: neat stack of dossier folders with blank unreadable paper faces, dual monitors with soft abstract UI blurs (no readable characters), brushed aluminium laptop edge, stone-grey desk, warm daylight from tall office window on the right. One small signal-green LED indicator near a folder tab. Left third of frame is clean negative space for later layout overlay. Mood: precise, calm, authoritative. Color palette stone black, off-white, muted grey, single green accent. High-end documentary advertising still, shallow depth of field. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "text_safe_zones": {
+          "left": true,
+          "center": false,
+          "right": false,
+          "bottom": true
+        },
+        "cta_placement": "bottom-left",
+        "priority": "high",
+        "usage": [
+          "landing-page-hero",
+          "press-kit",
+          "campaign-key-visual"
+        ],
+        "context": "FR office / CEE dossier"
+      },
+      {
+        "id": "hero-02-crosscheck",
+        "path": "./generated/hero-02-crosscheck.png",
+        "aspect_ratio": "16:9",
+        "model": "deferred",
+        "source": "prompt_documented",
+        "user_provided": false,
+        "description": "Secondary hero: hands-off still life of cross-document validation — open dossier, stylus, tablet with abstract checklist glow in green, no faces required.",
+        "prompt": "Editorial still-life hero for iverif. Top-down angled desk: open energy-subsidy dossier with blank pages, tablet showing soft abstract validation panels with one green highlight glow, metal stylus, coffee cup out of focus. French office materials — stone paper, aluminium, warm wood edge. Generous left negative space. Documentary precision, no stock smiles. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "text_safe_zones": {
+          "left": true,
+          "center": false,
+          "right": false,
+          "bottom": false
+        },
+        "cta_placement": "left",
+        "priority": "high",
+        "usage": [
+          "secondary-hero",
+          "section-header",
+          "linkedin-cover"
+        ],
+        "context": "FR dossier cross-check"
+      },
+      {
+        "id": "hero-03-mobile-audit",
+        "path": "./generated/hero-03-mobile-audit.png",
+        "aspect_ratio": "9:16",
+        "model": "deferred",
+        "source": "prompt_documented",
+        "user_provided": false,
+        "description": "Vertical mobile hero: tall frame of audit-trail metaphor — timestamped paper tabs and a soft green check motif without readable text.",
+        "prompt": "Tall 9:16 editorial brand stage for iverif mobile hero. Vertical stack of dossier tabs and blank audit slips on a stone desk, cool daylight shaft from above, one signal-green checkmark-shaped light reflection (abstract, not typography). Top third empty for overlay. French regulatory office mood, minimal, precise. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "text_safe_zones": {
+          "top": true,
+          "center": false,
+          "bottom": false
+        },
+        "cta_placement": "top",
+        "priority": "high",
+        "usage": [
+          "mobile-hero",
+          "story-cover",
+          "vertical-ad"
+        ],
+        "context": "FR audit-ready dossier"
+      },
+      {
+        "id": "hero-04-ops-floor",
+        "path": "./generated/hero-04-ops-floor.png",
+        "aspect_ratio": "16:9",
+        "model": "deferred",
+        "source": "prompt_documented",
+        "user_provided": false,
+        "description": "Establishing ops-floor shot: quiet French back-office with multiple dossier carts, no brand logos on walls, soft green accent lamp.",
+        "prompt": "Wide establishing photograph of a calm French energy-services back-office: rows of clean desks, dossier carts, frosted glass meeting room, muted stone palette, one desk lamp with subtle green accent glow. No people faces required; empty chairs ok. Architectural crop with right-side negative space. Editorial documentary. Absolutely no text, no words, no letters, no logos, no UI chrome with readable characters, no English overlays baked into the image.",
+        "text_safe_zones": {
+          "left": false,
+          "center": false,
+          "right": true,
+          "bottom": true
+        },
+        "cta_placement": "right",
+        "priority": "medium",
+        "usage": [
+          "about-section",
+          "press-kit",
+          "welcome-to-the-jungle-banner"
+        ],
+        "context": "FR délégataire / operator office"
+      }
+    ],
+    "requirements": [
+      {
+        "placement": "Landing page hero",
+        "aspect_ratio": "16:9",
+        "purpose": "First impression — FR dossier clarity",
+        "needs_text_zone": true
+      },
+      {
+        "placement": "LinkedIn / social cover",
+        "aspect_ratio": "16:9",
+        "purpose": "Brand presence FR ABM",
+        "needs_text_zone": true
+      },
+      {
+        "placement": "Mobile / vertical",
+        "aspect_ratio": "9:16",
+        "purpose": "Mobile hero and stories",
+        "needs_text_zone": true
+      },
+      {
+        "placement": "Press kit",
+        "aspect_ratio": "16:9",
+        "purpose": "Les Échos / JDN media kit",
+        "needs_text_zone": false
+      }
+    ],
+    "existing_assets_note": "Reuse brands/iverif/assets/screenshot-hero.png and og-image.png as product UI references; do not regenerate blindly (F3).",
+    "quality_gates": {
+      "prompts_documented": true,
+      "fr_office_dossier_context": true,
+      "no_en_text_overlays_in_prompts": true,
+      "no_baked_text_or_logos": true,
+      "brand_palette_respected": true,
+      "generation_performed": false
+    },
+    "generation_summary": {
+      "total_shots": 4,
+      "generated": 0,
+      "pending": 4,
+      "model": "deferred",
+      "reason": "Spoke output documents prompts only; bm.sh not run"
+    },
+    "ledger_refs": [
+      "F1",
+      "F3",
+      "F4",
+      "P1",
+      "P5"
+    ]
+  }
+}

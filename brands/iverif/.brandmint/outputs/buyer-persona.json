@@ -1,0 +1,183 @@
+{
+  "skill": "buyer-persona",
+  "cluster": "foundation",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 1,
+  "data": {
+    "evidence_scope": "Marie Durand archetype from brand-config + BRAND-BRIEF + wiki primary-persona; role accuracy from ledger P5; channels from research/channel-plan.md. Market stats from v1 wiki (15–20% rejection, volume figures) are labeled hypothesis/prohibited for public copy until dated primary sources exist.",
+    "primary_persona": {
+      "name": "Marie Durand",
+      "archetype": "Responsable opérations / back-office CEE",
+      "research_status": "Archetype for FR GTM — hypothesis to validate with operator interviews; not a claim about current customers.",
+      "title_fr": "Responsable Back-Office CEE / Operations Manager",
+      "title_en": "Operations Manager — CEE dossier back-office",
+      "company_profile": {
+        "size": "50–500 employees (primary); secondary buyers may sit in 10–500",
+        "type_fr": "Délégataire CEE mid-market, ESCo, agrégateur de rénovation, opérateur de primes énergie B2B",
+        "type_en": "Mid-market CEE délégataire, ESCo, retrofit aggregator, B2B primes operator",
+        "location": "France",
+        "focus_programme": "CEE / Primes Énergie"
+      },
+      "role_clarity": {
+        "obligé": {
+          "definition_fr": "Fournisseur d'énergie soumis à une obligation légale de promouvoir des économies d'énergie et d'obtenir des CEE (ledger P1, P5).",
+          "definition_en": "Energy supplier with a statutory obligation to promote energy savings and obtain CEE certificates.",
+          "marie_relation": "Marie may process dossiers that ultimately serve obligé quotas, but she typically does not sit inside the obligé legal entity."
+        },
+        "delegataire": {
+          "definition_fr": "Acteur accrédité qui collecte / valorise des CEE pour le compte d'obligés (ledger P5).",
+          "definition_en": "Accredited party that collects CEE on behalf of obligés.",
+          "marie_relation": "Most often Marie's employer is a délégataire or mid-market operator running the dossier factory for obligés and end beneficiaries."
+        },
+        "iverif_boundary": "iverif is validation software — not an obligé, not a délégataire, not a government body (prohibited)."
+      },
+      "pncee_context": {
+        "what_it_is": "PNCEE — institutional / regulatory adjacency for CEE programme stakeholders (channel-plan).",
+        "usage_in_persona": "Marie monitors PNCEE / ministry rule updates and fiches; she needs tools that absorb rule changes without months of retraining.",
+        "messaging_guardrail": "Treat PNCEE as language/context source only; never imply iverif partnership, accreditation, or endorsement (channel-plan stop conditions; ledger prohibited)."
+      },
+      "linkedin_fr_titles": [
+        "Responsable Back-Office CEE",
+        "Chef de projet CEE",
+        "Responsable Conformité CEE",
+        "Chargé(e) de dossiers CEE",
+        "Responsable Opérations Délégataire",
+        "Responsable Opérations Obligé (back-office primes)",
+        "Coordinateur(trice) Primes Énergie",
+        "Responsable Qualité / Audit CEE",
+        "Operations Manager — Energy Services",
+        "Compliance Officer — Subsidy / CEE"
+      ],
+      "demographics": {
+        "job_titles_en_legacy_v1": [
+          "Back-office Manager",
+          "Compliance Officer",
+          "Dossier Processor",
+          "Subsidy Coordinator",
+          "Operations Director"
+        ],
+        "company_size": "50–500 (primary ICP)",
+        "industry": "Energy subsidy operators, ESCos, aggregators, retrofit coordinators"
+      },
+      "daily_reality_fr": {
+        "team": "Équipe d'opérateurs qui instruit des dossiers CEE (attestations, factures, rapports techniques, photos).",
+        "workload_shape": "Chaque dossier exige un recoupement multi-documents face aux règles / fiches d'opérations standardisées (P2).",
+        "peak_pressure": "Les pics (fin de période / campagnes) saturent le back-office — hypothèse opérationnelle héritée de v1, à valider en entretien.",
+        "audit_stress": "Les revues réglementaires sont stressantes si la piste de validation est incomplète."
+      },
+      "pain_points": [
+        {
+          "pain": "Recoupement manuel de 10–20 pièces par dossier — lent et sujet à erreur",
+          "class": "first-party problem statement (brand-config)",
+          "public_copy": "safe as problem framing"
+        },
+        {
+          "pain": "Rejets découverts après dépôt — correction coûteuse",
+          "class": "first-party problem statement",
+          "public_copy": "safe as problem framing; do not attach unverified %"
+        },
+        {
+          "pain": "Règles programme et fiches qui évoluent ; formation opérateurs longue",
+          "class": "first-party + P2/P3 context",
+          "public_copy": "safe"
+        },
+        {
+          "pain": "Pistes d'audit incomplètes sous scrutiny CEE",
+          "class": "first-party",
+          "public_copy": "safe"
+        },
+        {
+          "pain": "Confusion obligé / délégataire dans les outils génériques du marché",
+          "class": "hypothesis (ledger H2)",
+          "public_copy": "label as need for role clarity, not competitor smear"
+        }
+      ],
+      "goals": [
+        {
+          "goal": "Réduire les rejets liés aux erreurs documentaires évitables",
+          "note": "Outcome direction OK; specific % targets from v1 are internal aspirations / prohibited as public guarantees"
+        },
+        {
+          "goal": "Valider plus vite sans croissance proportionnelle des effectifs",
+          "note": "OK as goal language"
+        },
+        {
+          "goal": "Conserver des trails audit-ready pour CEE / Primes Énergie",
+          "note": "OK"
+        },
+        {
+          "goal": "Intégrer des mises à jour de règles en jours, pas en mois",
+          "note": "Aspirational product intent — not a published SLA"
+        }
+      ],
+      "fears": [
+        "Amendes / non-conformité",
+        "Perte de crédibilité auprès des obligés donneurs d'ordre",
+        "Burnout équipe en période de pic",
+        "Outil AI qui invente des contrôles hors fiches"
+      ],
+      "decision_criteria": [
+        {
+          "rank": 1,
+          "criterion": "Accuracy — le moteur attrape-t-il vraiment les incohérences?"
+        },
+        {
+          "rank": 2,
+          "criterion": "Time-to-value — délais d'onboarding sans projet IT lourd"
+        },
+        {
+          "rank": 3,
+          "criterion": "Auditor trust — sorties traçables et explicables"
+        },
+        {
+          "rank": 4,
+          "criterion": "Integration — usage équipe sans chantier SI"
+        }
+      ],
+      "emotional_drivers": {
+        "primary": "Regulatory peace of mind — ne plus perdre une prime / un CEE pour une erreur documentaire évitable",
+        "secondary": "Operational pride — valider avec la précision que le métier mérite",
+        "tertiary": "Time reclaimed — moins de recoupement manuel"
+      },
+      "objections": [
+        {
+          "concern": "Le process manuel « suffit »",
+          "rebuttal_direction": "Montrer le coût du rejet post-dépôt et le stress audit — sans stats inventées"
+        },
+        {
+          "concern": "Fiabilité de l'IA sur documents réglementaires",
+          "rebuttal_direction": "Mettre en avant règles programme + audit trail explicable, pas magie"
+        },
+        {
+          "concern": "Intégration CRM / GED",
+          "rebuttal_direction": "API + onboarding managé ; pas de promesse de délai non reçue"
+        },
+        {
+          "concern": "Coût vs headcount",
+          "rebuttal_direction": "Cadre TCO opérationnel ; ROI mesuré chez le client — pas de claim public prématuré"
+        }
+      ],
+      "channels_to_reach": [
+        "linkedin_fr",
+        "welcome_to_the_jungle",
+        "jdn",
+        "pncee_context",
+        "les_echos"
+      ],
+      "quote_illustrative_fr": "On instruit des milliers de dossiers. Une pièce manquante ou incohérente peut faire tomber la valorisation. J'ai besoin d'un contrôle avant dépôt — pas d'un constat après.",
+      "quote_note": "Illustrative archetype language — not a customer testimonial."
+    },
+    "secondary_persona": {
+      "title_fr": "Responsable Conformité / Coordinateur Subventions",
+      "title_en": "Compliance Officer / Subsidy Coordinator",
+      "company_size": "10–500",
+      "focus": "Contrôle qualité, préparation audits, alignement sur fiches et textes période 6 CEE (P3 — confirm dates before citing)."
+    },
+    "hypotheses": [
+      "LinkedIn FR title targeting on Responsable Back-Office CEE / Chef de projet CEE outperforms generic 'ops manager' EN titles for FR GTM.",
+      "Messaging that leads with CEE/Primes accuracy beats multi-programme EU breadth for Marie (ledger H1)."
+    ]
+  }
+}
