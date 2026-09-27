@@ -1,0 +1,42 @@
+{
+  "meta_project": {
+    "product_name": "iverif.io Platform",
+    "persona_name": "The Compliance Operator",
+    "tone_source": "Precise, authoritative, quietly confident. Technical depth delivered with clarity. No hype — just proven results."
+  },
+  "voice_samples": {
+    "professional": "Cross-check every field across 10-20 documents per dossier in under 30 seconds.",
+    "authoritative": "Pre-configured for CEE, Conto Termico, BEG, ECO4, Primes Énergie, and MOVES III.",
+    "confident": "<2% rejection rate target. 100% audit-trail coverage. GDPR compliant — EU-hosted."
+  },
+  "emotional_drivers": {
+    "primary": "Regulatory peace of mind — never lose a subsidy claim to avoidable errors again",
+    "secondary": "Operational pride — validate dossiers with the precision their work deserves",
+    "tertiary": "Time reclaimed — hours of manual cross-checking reduced to seconds"
+  },
+  "demographics": {
+    "job_titles": ["Back-office Manager", "Compliance Officer", "Dossier Processor", "Subsidy Coordinator", "Operations Director"],
+    "company_size": "10-500 employees",
+    "company_type": "Energy subsidy operators, ESCos, aggregators, retrofit coordinators"
+  },
+  "pain_points": [
+    "Manual cross-checking of 10-20 documents per dossier is time-consuming and error-prone",
+    "Rejection only discovered after submission, when correction is expensive",
+    "Each EU programme has unique rules that change frequently",
+    "Maintaining compliance across multiple subsidy programmes is a full-time job",
+    "No audit trail for validation checks when regulators question dossiers"
+  ],
+  "goals": [
+    "Reduce dossier rejection rate to under 2%",
+    "Validate full dossiers in under 30 seconds",
+    "Maintain 100% audit-trail coverage for regulatory compliance",
+    "Onboard new programmes in days, not months",
+    "Scale submission volume without proportional team growth"
+  ],
+  "objections": [
+    "Current manual process works 'well enough'",
+    "Concern about AI accuracy with regulatory documents",
+    "Integration complexity with existing CRM/document systems",
+    "Cost vs. current headcount allocation"
+  ]
+}

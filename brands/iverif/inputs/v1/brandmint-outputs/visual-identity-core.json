@@ -1,0 +1,38 @@
+{
+  "visual_strategy": "Precision meets regulatory authority. Clean, functional aesthetic that communicates trust and technical competence without visual noise.",
+  "color_psychology": {
+    "primary": {
+      "color": "#2EE600 Signal Green",
+      "psychology": "Validation, go-signal, correctness. Triggers confidence and action. Used sparingly for maximum impact on CTAs and status indicators."
+    },
+    "secondary": {
+      "color": "#1C1917 Regulatory Stone",
+      "psychology": "Authority, permanence, seriousness. Anchors the brand in regulatory gravitas without being cold."
+    },
+    "accent": {
+      "color": "#FAFAF9 Clean White",
+      "psychology": "Clarity, space to think, professionalism. Creates breathing room in dense regulatory interfaces."
+    }
+  },
+  "typography": {
+    "header": "Geist Sans Light/SemiBold — clean, technical, modern. Conveys precision without decoration.",
+    "body": "Geist Sans Regular/Medium — highly readable, neutral, gets out of the way of content.",
+    "data": "Geist Mono Regular/Medium — monospace for document fields, validation reports, audit trails. Signals technical accuracy."
+  },
+  "logo_guidelines": {
+    "placement": "Top-left or centered. Always on white or light stone background.",
+    "clear_space": "Minimum 1x icon height on all sides",
+    "variations": ["Full wordmark with icon", "Icon only (favicon, app icon)", "White version for dark backgrounds"],
+    "constraints": "Never distort, never add effects, never place on busy backgrounds"
+  },
+  "imagery_art_direction": {
+    "photography": "Documentary precision. Real regulatory documents, real desks, real processes. No stock-photo humans.",
+    "illustration": "Technical diagrams with Swiss precision. Clean lines, minimal color, information-first.",
+    "environments": "Modern office, regulatory desk, clean workspace. Neutral tones with green accent lighting."
+  },
+  "graphic_elements": {
+    "shapes": "Sharp corners, precise angles, grid-aligned. No rounded corners on data elements.",
+    "textures": "Fine-grain stone paper, brushed aluminum, circuit traces — subtle, never dominant.",
+    "patterns": "Grid systems, document flow diagrams, validation checkmark motifs"
+  }
+}
