@@ -4,7 +4,7 @@
 
 The checkpoint histories for Meristem and Iverif FR GTM are integrated on `codex/reconcile-meristem-20260927`, based on `origin/main` at `e95a8f2`. Duplicate input archives were deduplicated by content; FR additions and historical metric records remain.
 
-Runner completion hardening and synthetic verification are the active work. See current `ISA.md`, `.planning/STATE.md`, `.planning/ROADMAP.md` and `.local/review-ready.md` for results and remaining review gates.
+Runner completion hardening is implemented and verified: all three test suites pass under Bash 5.3 and macOS Bash 3.2. Source integration is ready for the parent's curated PR review and exact-head release checks. See current `ISA.md`, `.planning/STATE.md`, `.planning/ROADMAP.md` and `.local/review-ready.md` for results and remaining review gates.
 
 Cambium's Infinite Game generation is historical exploration; the later reviewed system guide is a separate artifact. Iverif has brand inputs, draft channel evidence, 36 historical wave receipts and bilingual content; those need claim review and evidence refresh before public use, and no buildable wiki application is present. Thoughtseed references external host assets. No new generation, NotebookLM publication, live delivery, deployment or remote Git update is performed here.
 

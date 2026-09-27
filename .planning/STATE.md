@@ -8,7 +8,7 @@ Base: `origin/main` at `e95a8f2`
 
 Both preserved branch histories are integrated: `codex/checkpoint-meristem-20260927` and `codex/iverif-fr-gtm-20260911`. Duplicate Fitcheck/Iverif files were identical; FR-enriched spoke variants and both dated metric append histories are retained. The upstream output-directory regression test remains present.
 
-Status: implementation and verification in progress. Do not launch generation from this state file.
+Status: source implementation and local verification complete; ready for parent review of a curated PR. All three runner test suites passed under Bash 5.3 and macOS Bash 3.2; shell syntax, brand JSON and available asset checksums verified. Do not launch generation from this state file.
 
 ## Readiness boundaries
 
@@ -20,4 +20,4 @@ Status: implementation and verification in progress. Do not launch generation fr
 
 ## Next action
 
-Complete the synthetic runner checks and source validation listed in `ISA.md`; record concrete results in `.local/review-ready.md`. Then review the final diff and release boundaries before any push or merge.
+Parent workflow: review the final-tree diff and `.local/review-ready.md`, repeat secret/exact-head checks on the curated PR commit, then follow the authorized PR/merge gate. No implementation test remains pending in this checkout. Any subsequent public brand use still requires its specific claim, source-freshness and owner review gates.

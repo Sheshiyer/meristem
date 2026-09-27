@@ -32,14 +32,14 @@ Only this isolated Meristem checkout is mutable. No live generation, NotebookLM 
 ## Criteria
 
 - [x] ISC-1: Both checkpoint tips are ancestors of this integration branch; identical brand inputs are retained once.
-- [ ] ISC-2: Required missing/empty clusters and tracer/later failures return failure and cannot mark a wave complete.
-- [ ] ISC-3: Only existing valid JSON with matching skill and complete status can complete a spoke; skipped/partial output fails.
-- [ ] ISC-4: Retry completion is idempotent, stale failure clears on success, and failed reruns remove obsolete completion.
-- [ ] ISC-5: Existing directory regression plus synthetic failure, retry and state-write checks pass without providers or waits.
+- [x] ISC-2: Required missing/empty clusters and tracer/later failures return failure and cannot mark a wave complete.
+- [x] ISC-3: Only existing valid JSON with matching skill and complete status can complete a spoke; skipped/partial output fails.
+- [x] ISC-4: Retry completion is idempotent, stale failure clears on success, and failed reruns remove obsolete completion.
+- [x] ISC-5: Existing directory regression plus synthetic failure, retry and state-write checks pass without providers or waits.
 - [x] ISC-6: FR additions remain, with unreviewed or absent Iverif channel evidence blocking readiness and CEE guidance scoped to an evidenced domain.
 - [x] ISC-7: Historical Cambium generation is distinct from current reviewed system/visual authority.
 - [x] ISC-8: All 173 current brand JSON files parse; Cambium 12, Fitcheck 4 and Iverif 3 asset hashes match; external Thoughtseed paths are explicitly qualified.
-- [ ] ISC-9: Shell syntax and changed-file whitespace checks pass; exact tests/risks are recorded for review.
+- [x] ISC-9: Shell syntax and changed-file whitespace checks pass; exact tests/risks are recorded for review.
 - [x] ISC-10: No remote Git release, provider generation, publication, campaign or deployment is performed by this task.
 
 ## Test strategy
@@ -63,4 +63,4 @@ Preserve the original brand packages without silently rewriting source claims. R
 
 ## Verification
 
-Implementation verification is in progress; update the checked criteria and `.local/review-ready.md` only from observed results.
+All three runner suites passed under Bash 5.3 and macOS Bash 3.2. Each runner/test/planning shell file passed syntax checking with both interpreters. All 173 tracked brand JSON files parse; 19 available Cambium/Fitcheck/Iverif asset hashes match. Thoughtseed has 44 existing references, including 24 external host paths without stored hashes; this remains a portability limitation. New runtime, tests and reconciliation documents pass base-to-head whitespace checks. Inherited archival generated-source whitespace is preserved intentionally. Both checkpoint tips are ancestors. See `.local/review-ready.md` for scope, route attribution and release boundaries.
