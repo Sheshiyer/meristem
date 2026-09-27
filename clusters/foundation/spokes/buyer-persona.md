@@ -37,7 +37,7 @@ Define concrete demographics:
 
 ### Step 1b: FR Energy-Subsidy Depth — Marie Durand (additive)
 
-When `market.region: FR` **or** the brand domain is French CEE / energy-subsidy operations, deepen (or default) the primary persona as **Marie Durand** with the following required dimensions. Non-FR brands skip this step unchanged.
+Only when the evidenced brand domain is French CEE / energy-subsidy operations, deepen the primary persona with the following dimensions. **Marie Durand** is an illustrative persona label, not a verified customer. French locale alone does not trigger this domain-specific section. Use supplied persona evidence; do not invent interview findings.
 
 **Market-role clarity (obligé vs délégataire):**
 - Document whether Marie works for an **obligé** (energy supplier with CEE obligation) or a **délégataire** (entity that takes on / manages obligation volumes and dossier flows), or a hybrid ESCo/aggregator serving both.
@@ -57,7 +57,7 @@ Include realistic French LinkedIn titles in demographics / targeting hooks, e.g.
 - Chargé(e) de validation dossiers
 - Responsable Qualité & Audit réglementaire
 
-Emit optional schema fields when the FR gate fires:
+Emit domain-specific schema fields only when the evidenced French CEE gate fires:
 - `data.fr_market_role`: `"obligé" | "délégataire" | "hybrid" | "esco_aggregator"`
 - `data.pncee_context`: short string
 - `data.linkedin_fr_titles`: string[]
@@ -204,7 +204,7 @@ For each section, answer the consumer's implicit question:
                 "why_choose_us": "string"
             }
         },
-        "fr_market_role": "obligé|délégataire|hybrid|esco_aggregator (optional; required when market.region=FR / CEE)",
+        "fr_market_role": "obligé|délégataire|hybrid|esco_aggregator (optional; required for evidenced French CEE domain)",
         "pncee_context": "string (optional)",
         "linkedin_fr_titles": ["string (optional; FR LinkedIn titles)"]
     }
@@ -220,4 +220,4 @@ For each section, answer the consumer's implicit question:
 - [ ] All 6 CBBE sections completed
 - [ ] Language reflects how the persona would actually speak
 - [ ] Challenges reference real pain points, not assumed ones
-- [ ] If FR / CEE: Marie Durand (or equivalent) covers obligé vs délégataire, PNCEE context, and LinkedIn FR titles
+- [ ] If the evidenced domain is French CEE: the sourced persona (or labelled illustrative persona) covers obligé vs délégataire, PNCEE context, and LinkedIn FR titles

@@ -1,72 +1,66 @@
 ---
-schema: thoughtseed.isa.seed.v1
-seed: true
-effort: extended
-generated_by: temperance-hands ready
-generated_at: 2026-08-22T10:59:02Z
+schema: thoughtseed.isa.v1
 project: meristem
+effort: E3
+updated_at: 2026-09-27
 ---
 
 ## Problem
 
-This repository is enrolled as a Temperance **Hands** execute root in Superset, but it lacked a project ISA. Acceptance was undefined, so ALGORITHM runs could not bind Ideal State Criteria.
+Two preserved branches contain overlapping brand packages and shared coordinator changes. The coordinator could mark a wave complete after missing clusters or failed spokes. Historical generation artifacts and unfinished Iverif planning could also be mistaken for current product or launch authority.
 
 ## Vision
 
-Operators open this repo in Superset, run Noesis ALGORITHM against a living ISA, and finish with falsifiable verification — not vibes.
-
-## Out of Scope
-
-Hermes/Phloem company-agent delivery. Non-git portfolio folders. Codex App as a Superset worker. Bulk-import of every Thoughtseed folder.
-
-## Principles
-
-- Acceptance lives in `ISA.md` (SoR); GSD `.planning/` plans work but does not replace ISC probes.
-- Hands execute only on git roots via Superset + Claude (Mac plant).
-
-## Constraints
-
-- Execute lock: Superset + Claude via OmniRoute; never Codex App as worker.
-- Do not enroll Hermes as a Hands workspace.
+A reviewable local integration that preserves source history and makes completion depend on evidence. Fresh generation and remote release remain explicit future actions.
 
 ## Goal
 
-Maintain a project ISA with at least Goal + Criteria (+ E3 sections) so every Hands ALGORITHM session can OBSERVE → VERIFY against named ISCs.
+Integrate both checkpoint histories, repair coordinator completion semantics, retain valid bilingual instructions, verify synthetic behavior and brand source integrity, and document actual remaining boundaries before the parent reviews a merge.
+
+## Principles
+
+- Historical generated artifacts are preserved with provenance; they do not redefine product identity.
+- A failed or skipped prerequisite cannot be converted to completion.
+- Domain-specific research follows source evidence, not locale inference.
+- Host configuration, credentials and execution traces stay local.
+- Explicit return checks must remain reliable when Bash functions run in conditional contexts.
+
+## Scope and constraints
+
+Only this isolated Meristem checkout is mutable. No live generation, NotebookLM publication, delivery, deployment, organ activation or remote Git operation is in scope. The native parent may coordinate Git and planning; substantial implementation routes through the configured Build rail. The earlier August enrollment ISA is superseded for this reconciliation; no claim is made about Superset registration or current host runtime readiness.
 
 ## Criteria
 
-- [ ] ISC-1: `ISA.md` exists at repo root and contains `## Goal` and `## Criteria`.
-- [ ] ISC-2: `.temperance/project.json` has `active_planner` set to `isa` or `gsd`.
-- [ ] ISC-3: Superset local.db lists this repo path as a project with ≥1 workspace (`temperance-superset-sync --check`).
-- [ ] ISC-4: Anti: no Hermes/Phloem agent job is launched from this Superset workspace.
+- [x] ISC-1: Both checkpoint tips are ancestors of this integration branch; identical brand inputs are retained once.
+- [ ] ISC-2: Required missing/empty clusters and tracer/later failures return failure and cannot mark a wave complete.
+- [ ] ISC-3: Only existing valid JSON with matching skill and complete status can complete a spoke; skipped/partial output fails.
+- [ ] ISC-4: Retry completion is idempotent, stale failure clears on success, and failed reruns remove obsolete completion.
+- [ ] ISC-5: Existing directory regression plus synthetic failure, retry and state-write checks pass without providers or waits.
+- [x] ISC-6: FR additions remain, with absent Iverif channel evidence blocking readiness and CEE guidance scoped to an evidenced domain.
+- [x] ISC-7: Historical Cambium generation is distinct from current reviewed system/visual authority.
+- [x] ISC-8: All 173 current brand JSON files parse; Cambium 12 and Fitcheck 4 asset hashes match; external Thoughtseed paths are explicitly qualified.
+- [ ] ISC-9: Shell syntax and changed-file whitespace checks pass; exact tests/risks are recorded for review.
+- [x] ISC-10: No remote Git release, provider generation, publication, campaign or deployment is performed by this task.
 
-## Test Strategy
+## Test strategy
 
-| isc | type | check | threshold | tool |
-|---|---|---|---|---|
-| ISC-1 | file | ISA.md sections | present | rg/read |
-| ISC-2 | file | active_planner | isa\|gsd | jq |
-| ISC-3 | db | local.db project row | 1 | sqlite3 / temperance-superset-sync |
-| ISC-4 | policy | hermes path absent | 0 | temperance-hands / doctor |
+| Criterion | Verification |
+|---|---|
+| ISC-1 | `git merge-base --is-ancestor` for both checkpoint tips |
+| ISC-2–5 | All `tests/runner-*.test.sh` with synthetic fixtures and stubbed side effects |
+| ISC-6–7 | Source review of FR contracts and brand provenance/readiness documents |
+| ISC-8 | Parse tracked brand JSON; recompute SHA-256 for available manifest hashes; classify absolute external refs |
+| ISC-9 | `bash -n`, `git diff --check`, local review receipt |
+| ISC-10 | Scoped operation record; no runtime acceptance inferred |
 
-## Features
+## Features and dependencies
 
-| name | description | satisfies | depends_on | parallelizable |
-|---|---|---|---|---|
-| seed-isa | Initial ISA seed for Hands readiness | [ISC-1, ISC-4] | [] | false |
-| planner-pin | Pin active_planner for Manifest/GSD non-fight | [ISC-2] | [seed-isa] | false |
+Source reconciliation precedes runner verification. Historical asset packages and bilingual instruction refinements are independently reviewable; neither grants execution authority. Release follows parent review rather than automatic next-wave dispatch.
 
 ## Decisions
 
-- 2026-08-22T10:59:02Z: `refined:` seeded ISA via `temperance-hands ready` — deepen via ISA Interview before treating as full E3 product doctrine.
-
-## Changelog
-
-- conjectured: Hands repos can run ALGORITHM without a project ISA
-- refuted by: Manifest/GSD fight + missing acceptance SoR on unset planners
-- learned: seed ISA + active_planner before Execute
-- criterion now: ISC-1..ISC-4
+Preserve the original brand packages without silently rewriting source claims. Record qualifications in new provenance/readiness documents. Keep Iverif current-generation prerequisites missing until actually supplied and reviewed.
 
 ## Verification
 
-- pending: fill after first Hands ALGORITHM verify pass
+Implementation verification is in progress; update the checked criteria and `.local/review-ready.md` only from observed results.

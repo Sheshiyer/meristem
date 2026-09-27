@@ -39,9 +39,9 @@ For each competitor, gather:
 
 ### Step 1b: Regional Required Set (additive)
 
-When `brand-config.yaml` sets `market.region: FR` **or** the product domain is French energy-subsidy / CEE / PNCEE operations, the competitor set **MUST** include these named players (direct or indirect as evidence warrants). Do not substitute generics for them:
+Only when the evidenced product domain is French energy-subsidy / CEE / PNCEE operations, investigate these historical research candidates. French locale alone does not establish competitor relevance. Verify current identity, relevance, and claims before including a candidate as a competitor; unresolved candidates belong in evidence gaps, not asserted findings:
 
-| Required name | Typical role in FR energy-subsidy market |
+| Research candidate | Typical role in FR energy-subsidy market |
 |---------------|------------------------------------------|
 | Hellio | Major délégataire / CEE programme actor |
 | Économie d'Énergie SAS | CEE / energy-efficiency services competitor |
@@ -49,9 +49,9 @@ When `brand-config.yaml` sets `market.region: FR` **or** the product domain is F
 | GEO PLC | Energy-services / obligation-market peer |
 
 Rules:
-- Still analyze 2–5 competitors total when the brand is not FR energy-subsidy; this required set applies only under the FR / energy-subsidy gate above.
-- Other brands (non-FR, non-energy-subsidy) skip this step unchanged.
-- Record each required name under `data.competitors[]` with evidence-backed strengths/weaknesses; if a player is adjacent rather than same-category, mark `type: "indirect"` and say why.
+- Still analyze 2–5 competitors total when the brand is not FR energy-subsidy; this research set applies only under the French energy-subsidy domain gate above.
+- Brands outside the evidenced French energy-subsidy domain skip this step unchanged.
+- Record verified relevant candidates under `data.competitors[]` with evidence-backed strengths/weaknesses; if a player is adjacent rather than same-category, mark `type: "indirect"` and say why.
 - Optionally emit `data.regional_required_competitors: ["Hellio", "Économie d'Énergie SAS", "Effy", "GEO PLC"]` when the gate fires so downstream synthesis can audit coverage.
 
 ### Step 2: Feature Comparison Matrix
@@ -165,7 +165,7 @@ because [reason to believe].
             "unfair_advantage": "string"
         },
         "positioning_statement": "string",
-        "regional_required_competitors": ["string (optional; required names when market.region=FR / energy subsidy)"]
+        "regional_required_competitors": ["string (optional; research candidates for evidenced French energy subsidy domain)"]
     }
 }
 ```
@@ -178,4 +178,4 @@ because [reason to believe].
 - [ ] Whitespace opportunities identified
 - [ ] Positioning statement is specific and defensible
 - [ ] Analysis is based on evidence, not assumptions
-- [ ] If `market.region=FR` or energy-subsidy domain: Hellio, Économie d'Énergie SAS, Effy, and GEO PLC are all present in `competitors[]`
+- [ ] If French energy-subsidy domain: each research candidate has current supporting evidence or an explicit evidence gap

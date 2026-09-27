@@ -38,11 +38,11 @@ Use this when launching or running a full campaign that requires coordinated exe
 
 ### Market region → GTM tag (additive)
 
-Read `market.region` from `brand-config.yaml` (or equivalent execution context):
+Read `brand.market.region` from the current example config (`market.region` is accepted as a legacy execution-context alias). A language/region choice alone does not establish a business domain:
 
 | `market.region` | GTM tag | Effects |
 |-----------------|---------|---------|
-| `FR` | `FR GTM` | Force bilingual FR+EN content/synthesis; `defaultLocale: fr`; require FR competitor set + Marie Durand depth; load `brands/iverif/research/channel-plan.md` when brand is iverif |
+| `FR` | `FR GTM` | Force bilingual FR+EN content/synthesis; `defaultLocale: fr`; apply evidence-backed CEE competitor/persona depth only for a CEE-domain brand; require a reviewed channel plan for Iverif before campaign readiness |
 | other / unset | (none) | Existing single-locale behaviour |
 
 Emit on orchestrator output:
@@ -53,11 +53,15 @@ Emit on orchestrator output:
   "tag": "FR GTM",
   "locales": ["fr", "en"],
   "defaultLocale": "fr",
-  "channel_plan_path": "brands/iverif/research/channel-plan.md"
+  "channel_plan_path": null,
+  "channel_plan_status": "missing"
 }
 ```
 
 Other brands without FR region omit `gtm` or set `tag` null.
+
+For Iverif, `brands/iverif/research/channel-plan.md` is a planned prerequisite and is currently absent. Do not load a fabricated path or infer a channel plan from historical inputs. Emit `channel_plan_path: null`, `channel_plan_status: "missing"`, add the prerequisite to `missing_outputs`, and set `ready_for_launch: false`. Only populate a path after the reviewed file exists and its evidence has been checked. The imported `brands/iverif/inputs/v1/` materials are historical references, not current founder approval, campaign readiness, or permission to send.
+
 ## Campaign Phases for Service Studios
 
 ### Phase 1: Foundation
@@ -149,7 +153,8 @@ Per phase:
             "tag": "FR GTM|null",
             "locales": ["fr", "en"],
             "defaultLocale": "fr",
-            "channel_plan_path": "string|null"
+            "channel_plan_path": "string|null",
+            "channel_plan_status": "reviewed|missing|unreviewed"
         }
     }
 }
@@ -163,3 +168,4 @@ Per phase:
 - [ ] ready_for_launch boolean accurate
 - [ ] Output paths verified to exist
 - [ ] If `market.region=FR`: `gtm.tag` is `FR GTM` and bilingual gates acknowledged
+- [ ] For Iverif: channel plan exists and is reviewed; otherwise missing prerequisite keeps `ready_for_launch: false`

@@ -1,5 +1,17 @@
 # Project handoff
 
+## Current reconciliation — 2026-09-27
+
+The checkpoint histories for Meristem and Iverif FR GTM are integrated on `codex/reconcile-meristem-20260927`, based on `origin/main` at `e95a8f2`. Duplicate input archives were deduplicated by content; FR additions and historical metric records remain.
+
+Runner completion hardening and synthetic verification are the active work. See current `ISA.md`, `.planning/STATE.md`, `.planning/ROADMAP.md` and `.local/review-ready.md` for results and remaining review gates.
+
+Cambium's Infinite Game generation is historical exploration; the later reviewed system guide is a separate artifact. Iverif is missing current approved generation inputs and channel evidence. Thoughtseed references external host assets. No new generation, NotebookLM publication, live delivery, deployment or remote Git update is performed here.
+
+The older handoff below is preserved as historical evidence. Its earlier "not committed" and next-action wording describes that packet's state at creation, not this integration branch. Registry admission and live-apply authority remain separate and are not advanced by a Git merge.
+
+## Historical handoff
+
 ## Checkpoint
 
 - Status: `draft-held`

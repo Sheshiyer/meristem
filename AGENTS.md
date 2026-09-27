@@ -13,7 +13,7 @@
 Brandmint v2 is a **skill-cluster-based** brand generation pipeline:
 
 - **7 waves** (foundation → strategy → identity → photography → illustration → content → synthesis)
-- **Each wave = one skill cluster** (orchestrator + core + spokes)
+- **Waves map to skill clusters** (orchestrator + core + spokes); wave 6 runs `content` then `social-growth`
 - **Shell-first execution** (deterministic, no Python async issues)
 - **Conducty-style orchestration** (Obsidian vault as context engine)
 
@@ -26,7 +26,7 @@ Brandmint v2 is a **skill-cluster-based** brand generation pipeline:
 | 3 | `identity` | Logo concept, color palette, typography, visual language |
 | 4 | `photography` | Lifestyle shots, product photography, hero images |
 | 5 | `illustration` | Brand illustrations, icon system, pattern library |
-| 6 | `content` | Landing page copy, email sequences, ad creative, press release |
+| 6 | `content` + `social-growth` | Landing page copy, email sequences, ad creative, press release, social/community drafts |
 | 7 | `synthesis` | NotebookLM publishing, brand docs, wiki site |
 
 ## How to Run
@@ -324,3 +324,11 @@ temperance-batch --foreground --tasks .planning/next-wave-tasks.json --concurren
 Manifest: `.temperance/project.json` (schema temperance.project.v1)
 <!-- temperance:project-rail:end -->
 
+
+## Reconciliation and source authority (2026-09-27)
+
+- Current acceptance is `ISA.md`; continuation is `.planning/STATE.md`. Historical `.planning/IVERIF-FR-GTM-DAG.md` is not permission to launch a pipeline.
+- For region-aware spokes, `brand.market.region` is the current example-config location; `market.region` is a legacy execution-context alias. Region selects locale behavior, not a business domain or researched fact.
+- `brands/iverif/inputs/v1/` is historical imported input, not an approved current brand seed. Missing evidence and channel planning block campaign readiness.
+- `brands/cambium-infinite-game/PROVENANCE.md` qualifies the earlier generated exploration. Existing Cambium organ and interface identity stays governed by current product sources.
+- Keep host-private `.superset/`, `.temperance/`, execution logs and generated prompt traces local. A source merge grants no provider, publication, deployment or sending authority.
