@@ -36,9 +36,9 @@ Only this isolated Meristem checkout is mutable. No live generation, NotebookLM 
 - [ ] ISC-3: Only existing valid JSON with matching skill and complete status can complete a spoke; skipped/partial output fails.
 - [ ] ISC-4: Retry completion is idempotent, stale failure clears on success, and failed reruns remove obsolete completion.
 - [ ] ISC-5: Existing directory regression plus synthetic failure, retry and state-write checks pass without providers or waits.
-- [x] ISC-6: FR additions remain, with absent Iverif channel evidence blocking readiness and CEE guidance scoped to an evidenced domain.
+- [x] ISC-6: FR additions remain, with unreviewed or absent Iverif channel evidence blocking readiness and CEE guidance scoped to an evidenced domain.
 - [x] ISC-7: Historical Cambium generation is distinct from current reviewed system/visual authority.
-- [x] ISC-8: All 173 current brand JSON files parse; Cambium 12 and Fitcheck 4 asset hashes match; external Thoughtseed paths are explicitly qualified.
+- [x] ISC-8: All 173 current brand JSON files parse; Cambium 12, Fitcheck 4 and Iverif 3 asset hashes match; external Thoughtseed paths are explicitly qualified.
 - [ ] ISC-9: Shell syntax and changed-file whitespace checks pass; exact tests/risks are recorded for review.
 - [x] ISC-10: No remote Git release, provider generation, publication, campaign or deployment is performed by this task.
 

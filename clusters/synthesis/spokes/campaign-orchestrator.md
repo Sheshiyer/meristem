@@ -53,14 +53,14 @@ Emit on orchestrator output:
   "tag": "FR GTM",
   "locales": ["fr", "en"],
   "defaultLocale": "fr",
-  "channel_plan_path": null,
-  "channel_plan_status": "missing"
+  "channel_plan_path": "brands/iverif/research/channel-plan.md",
+  "channel_plan_status": "unreviewed"
 }
 ```
 
 Other brands without FR region omit `gtm` or set `tag` null.
 
-For Iverif, `brands/iverif/research/channel-plan.md` is a planned prerequisite and is currently absent. Do not load a fabricated path or infer a channel plan from historical inputs. Emit `channel_plan_path: null`, `channel_plan_status: "missing"`, add the prerequisite to `missing_outputs`, and set `ready_for_launch: false`. Only populate a path after the reviewed file exists and its evidence has been checked. The imported `brands/iverif/inputs/v1/` materials are historical references, not current founder approval, campaign readiness, or permission to send.
+For Iverif, `brands/iverif/research/channel-plan.md` exists as draft research and explicitly grants no live media/budget authority. Load that actual file together with `research/EVIDENCE-LEDGER.md` and preserve its draft status: `channel_plan_status: "unreviewed"`, with `ready_for_launch: false` until a current review receipt supports promotion. If the file is absent in another checkout, emit `channel_plan_path: null`, `channel_plan_status: "missing"` and add it to `missing_outputs`; do not invent a replacement. The imported `inputs/v1/` archive, historical wave receipts and wiki handoff labels do not establish current approval, deployment or sending permission.
 
 ## Campaign Phases for Service Studios
 

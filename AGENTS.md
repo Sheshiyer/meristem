@@ -329,6 +329,6 @@ Manifest: `.temperance/project.json` (schema temperance.project.v1)
 
 - Current acceptance is `ISA.md`; continuation is `.planning/STATE.md`. Historical `.planning/IVERIF-FR-GTM-DAG.md` is not permission to launch a pipeline.
 - For region-aware spokes, `brand.market.region` is the current example-config location; `market.region` is a legacy execution-context alias. Region selects locale behavior, not a business domain or researched fact.
-- `brands/iverif/inputs/v1/` is historical imported input, not an approved current brand seed. Missing evidence and channel planning block campaign readiness.
+- `brands/iverif/inputs/v1/` is historical imported input. Current-root config, brief, draft research, wave receipts and bilingual wiki content are also present; use their claim boundaries and do not infer current founder approval or launch readiness. Missing/unreviewed evidence or channel planning blocks readiness.
 - `brands/cambium-infinite-game/PROVENANCE.md` qualifies the earlier generated exploration. Existing Cambium organ and interface identity stays governed by current product sources.
 - Keep host-private `.superset/`, `.temperance/`, execution logs and generated prompt traces local. A source merge grants no provider, publication, deployment or sending authority.

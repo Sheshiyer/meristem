@@ -1,6 +1,6 @@
 # Iverif FR GTM historical execution plan
 
-> Status as of reconciliation, 2026-09-27: archived plan, not executable approval. Only imported `inputs/v1/` and shared bilingual instructions exist. Current brand root config, brief, evidence ledger, channel plan and assets/manifest are missing. The "locked decisions" below record the earlier planning session; they do not authorize generation, admitted flips, publication or sends in this reconciliation. See `brands/iverif/README.md` and current roadmap.
+> Status as of reconciliation, 2026-09-27: archived plan, not executable approval. Root config/brief, evidence ledger, draft channel plan, assets/manifest, 36 wave receipts and bilingual wiki content are now present alongside imported `inputs/v1/`. Public claim approval, evidence refresh and a buildable wiki application remain outstanding. The "locked decisions" below record the earlier planning session; they do not authorize generation, admitted flips, publication or sends in this reconciliation. See `brands/iverif/README.md` and current roadmap.
 
 ## Original execution DAG (2026-09-11)
 

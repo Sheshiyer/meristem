@@ -49,7 +49,7 @@ Research artifact for Meristem wave runs. Prefer this over adding a `social-grow
 
 ## Secondary / support
 
-- Company website FR landing (`wiki/src/content/docs/fr/marketing/landing-page.md` → site build).
+- Company website FR landing (`wiki/src/content/docs/fr/marketing/landing.md` → site build).
 - Email sequences (`launch-email-sequence` locales fr/en).
 - EN mirrors for EU desks and international investors (`wiki/src/content/docs/en/marketing/*`).
 

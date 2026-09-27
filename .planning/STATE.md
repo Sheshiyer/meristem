@@ -14,7 +14,7 @@ Status: implementation and verification in progress. Do not launch generation fr
 
 - The current task tests only local deterministic behavior; it does not run providers, NotebookLM, campaigns, deployments or live organs.
 - Cambium's generated Infinite Game package is a historical exploration, not canonical product identity. See its `PROVENANCE.md`.
-- Iverif has historical inputs only. Current approved brand config, evidence ledger, channel plan and validated generation assets remain missing. See `brands/iverif/README.md`.
+- Iverif has a root brand config/brief, evidence ledger, draft channel plan, 36 historical wave receipts, three manifested assets and bilingual wiki content. Founder review of claim-bearing output, evidence freshness and a buildable wiki application remain outstanding. See `brands/iverif/README.md`.
 - Thoughtseed's manifest depends on 24 external host asset references. They exist on this host; a fresh clone is not a self-contained brand release bundle.
 - The parent integration review owns push/PR/main-merge decisions. No remote update is claimed here.
 
