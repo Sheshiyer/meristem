@@ -1,0 +1,66 @@
+{
+  "skill": "review-response-strategist",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "tone_principles": [
+      "Steady and exact — acknowledge the situation plainly",
+      "Point to the next concrete step — not celebration theater",
+      "Evidence close to the claim — never inflate",
+      "Maintain calm confidence — not loud luxury",
+      "Short declarative sentences — peer to the founder"
+    ],
+    "response_patterns": [
+      {
+        "pattern_name": "Specific Outcome Acknowledged",
+        "trigger": "Founder highlights a concrete result (coherence, handoff, ownership)",
+        "template": "Thank you for the observation. The point you raise — [specific outcome] — is exactly what the delivery loop is shaped to produce. One team carries the requirement from framing to handoff so the system ships coherent. If you want to talk specifics about your situation, we're here. [Link or contact]",
+        "example_response": "Thank you for the observation. The point you raise — coherence from framing to handoff — is exactly what the delivery loop is shaped to produce. The same team frames the requirement, designs the operating logic, ships the engineering, and prepares the handoff. Decisions stay close to the work, and they get written down as artifacts you can trace. If you want to talk specifics about your situation, we're here."
+      },
+      {
+        "pattern_name": "Concern Raised",
+        "trigger": "Founder raises concern about coherence, handoff, agency vs studio distinction",
+        "template": "That concern is fair. [Acknowledge specifically]. In practice, [specific evidence or method that addresses it]. [Specific next step if applicable]",
+        "example_response": "That concern is fair — most engagements do fail at ownership transfer because handoff is treated as a closing footnote, not a deliverable. In practice, we ship documentation, training, and control surfaces with the build. The Ownership Transfer Pack is what you inherit. If you want to see one, reach out."
+      },
+      {
+        "pattern_name": "Praise + Use Case",
+        "trigger": "Founder describes a specific use case where the studio's approach helped",
+        "template": "Thank you. [Specific element of the observation]. The work you saw was the loop running as designed. If your situation has a similar shape, the same loop applies.",
+        "example_response": "Thank you. The point about treating user behavior as part of the system, not a layer added later — that's exactly the studio's design discipline. The work you saw was the loop running as designed. If your situation has a similar shape, the same loop applies."
+      },
+      {
+        "pattern_name": "Disagreement / Critical",
+        "trigger": "Founder raises specific criticism of the studio's approach or claims",
+        "template": "We hear you. [Specific acknowledgment]. Where we differ: [honest, restrained explanation of approach]. The studio is not for every engagement. If the problem is too entangled to split, we study it; if it needs a different shape, we say so.",
+        "example_response": "We hear you. The concern about scoped delivery not fitting long-running engagements is real. Where we differ: a scoped engagement with a real handoff at the end tends to be healthier than an always-on retainer, because the founder inherits a system they can run. The studio is not for every engagement. If the problem is too entangled to split, we study it; if it needs a different shape, we say so."
+      }
+    ],
+    "platform_specific": [
+      {"platform": "G2 / Capterra", "response_length": "100-200 words", "tone_adjustment": "More formal, cite specific platform dynamics (workflows, integrations)"},
+      {"platform": "LinkedIn recommendations", "response_length": "50-100 words", "tone_adjustment": "Brief, peer-to-peer, no promotion"},
+      {"platform": "Design community (Dribbble, Are.na, design Slack/Discord)", "response_length": "30-80 words", "tone_adjustment": "Conversational, design-literate, no superlatives"},
+      {"platform": "Email (direct testimonial)", "response_length": "80-150 words", "tone_adjustment": "Personal, specific to their engagement"}
+    ],
+    "do": [
+      "Acknowledge the specific observation plainly",
+      "Reference the delivery loop or Ownership Transfer Pack by name where relevant",
+      "Use short declarative sentences",
+      "Maintain the founder-side systems translator voice",
+      "Be willing to say 'this is not for you' if applicable",
+      "Cite specific methods, not vague superlatives"
+    ],
+    "dont": [
+      "Use superlatives ('amazing', 'incredible', 'game-changing')",
+      "Inflate specific outcomes ('best system we've ever built')",
+      "Name the internal methodology (Krebs origins, consciousness) in public copy",
+      "Use prohibited terms (consciousness-aligned, disruptive, best-in-class, full-service agency)",
+      "Make promises the studio can't keep",
+      "Reply to criticism defensively — acknowledge, explain, redirect"
+    ],
+    "voice_compliance": "PASS"
+  }
+}

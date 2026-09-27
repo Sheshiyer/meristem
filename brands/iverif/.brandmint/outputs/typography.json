@@ -1,0 +1,47 @@
+{
+  "skill": "typography",
+  "cluster": "identity",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 3,
+  "data": {
+    "evidence_scope": "v1 visual-identity-core + wiki visual-guidelines. Geist stack prescribed.",
+    "typefaces": {
+      "sans": {
+        "family": "Geist Sans",
+        "roles": {
+          "display_header": "Light / SemiBold — clean, technical, modern; precision without decoration",
+          "body": "Regular / Medium — highly readable, neutral, content-first"
+        }
+      },
+      "mono": {
+        "family": "Geist Mono",
+        "roles": {
+          "data": "Regular / Medium — document fields, validation reports, audit trails; signals technical accuracy"
+        }
+      }
+    },
+    "rationale": {
+      "type_direction": "Technical editorial RegTech — same craft family as modern developer-tooling brands (aspirational refs Stripe/Linear/Vercel), adapted to regulatory seriousness.",
+      "why_geist": "Neutral geometric sans + mono pair keeps FR regulatory copy legible and makes validation data feel instrument-grade."
+    },
+    "hierarchy": {
+      "display": "Concise page-level claim (FR hero first)",
+      "heading": "Section decisions — programme, problem, how it works",
+      "body": "Operational explanation; vouvoiement FR",
+      "caption": "Source, limitation, or hypothesis labels",
+      "data": "Geist Mono for field names, rule IDs, timestamps, audit rows"
+    },
+    "implementation": {
+      "rule": "Validate font files and licenses before production deployment",
+      "pairing": "Geist Sans for chrome/marketing; Geist Mono strictly for machine-readable / validation surfaces",
+      "fr_typesetting": "Prefer proper French typographic spacing in production (nbsp before ; : ! ? where applicable) — implementation detail for later wiki/site waves"
+    },
+    "do_not": [
+      "Decorative script or rounded consumer display faces",
+      "All-caps walls of regulatory fear copy",
+      "Mixing additional primary families without identity review"
+    ]
+  }
+}

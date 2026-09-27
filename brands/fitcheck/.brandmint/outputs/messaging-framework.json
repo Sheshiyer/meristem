@@ -1,0 +1,21 @@
+{
+  "skill": "messaging-framework",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-08-10T00:00:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_promise": "Give fashion shoppers a more considered visual starting point on the Shopify product page.",
+    "headline": "Let shoppers see the fit before they buy.",
+    "tagline": {"selected": "See the fit first", "type": "descriptive", "alternatives": ["Fit confidence, on page", "A clearer fit moment", "More informed fit", "Confidence, visually"]},
+    "value_proposition": "Fitcheck is AI Fit Confidence for Shopify: a product-page visual try-on experience for fashion merchants who want a guided way to explore shopper fit confidence without promising commercial or sizing outcomes.",
+    "elevator_pitch": {"full": "Fashion merchants know that static product imagery can leave a shopper's personal fit question unresolved. Fitcheck is an AI fit-confidence experience for Shopify that adds a visual try-on moment to the product page. Unlike a custom, open-ended project or a generic novelty widget, it offers a guided rollout and merchant-specific learning. Fitcheck is listed in the Shopify App Store; outcomes must be measured in each merchant's own context.", "components": {"problem": "Product imagery may not resolve a shopper's personal fit question.", "solution": "A visual try-on moment on the Shopify product page.", "differentiator": "Guided, fashion-aware, evidence-bounded rollout.", "proof": "Public Shopify App Store distribution presence."}},
+    "key_messages": [
+      {"pillar": "Product-page confidence", "headline": "Give shoppers a more considered visual starting point", "proof_points": ["Show the product flow directly.", "Do not represent try-on as sizing certainty."]},
+      {"pillar": "Guided learning", "headline": "Start with a bounded merchant rollout", "proof_points": ["Use merchant-specific measurement.", "Treat outcomes as hypotheses until measured."]},
+      {"pillar": "Fashion-aware trust", "headline": "Keep the experience clear, editorial, and transparent", "proof_points": ["Use the approved identity assets.", "Avoid competitor language and unsupported claims."]}
+    ],
+    "proof_points": {"statistics": [], "testimonials": [], "credentials": ["Public Shopify App Store listing."], "demonstrations": ["Product-page flow demonstration."], "guarantees": []}
+  }
+}

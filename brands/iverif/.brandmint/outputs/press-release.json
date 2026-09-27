@@ -1,0 +1,95 @@
+{
+  "skill": "press-release",
+  "cluster": "content",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "release_type": "FOR IMMEDIATE RELEASE",
+    "headline": "iverif lance une plateforme de validation documentaire pour les dossiers d’aides énergie en France",
+    "subheadline": "Logiciel pour back-offices CEE / Primes Énergie — contrôles inter-documents et piste d’audit, sans rôle de délégataire",
+    "dateline": {
+      "city": "Paris, France",
+      "date": "11 septembre 2026"
+    },
+    "lead_paragraph": "iverif annonce le lancement de sa plateforme de validation documentaire par IA pour opérateurs d’aides énergie, avec un GTM France centré sur le CEE et les Primes Énergie, accessible via iverif.fr.",
+    "body_paragraphs": [
+      {
+        "topic": "problem_context",
+        "content": "Les dossiers d’aides énergie nécessitent le croisement de nombreuses pièces justificatives avec des règles de programme. Les écarts découverts après dépôt sont coûteux à corriger."
+      },
+      {
+        "topic": "product",
+        "content": "iverif propose des contrôles de cohérence inter-documents, une configuration de programme gérée et des journaux d’audit horodatés, positionnés avant le dépôt."
+      },
+      {
+        "topic": "differentiation",
+        "content": "La société se distingue des acteurs de distribution / accompagnement de primes (ex. Hellio, Effy) en restant un éditeur de logiciel de validation, sans obligation ni accréditation délégataire."
+      },
+      {
+        "topic": "programmes",
+        "content": "Périmètre déclaré : CEE, Primes Énergie, Conto Termico, BEG, ECO4, MOVES III. Profondeur par programme définie à l’onboarding."
+      },
+      {
+        "topic": "claims_boundary",
+        "content": "Aucun taux de rejet, délai de traitement ou SLA de go-live n’est garanti dans ce communiqué."
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Direction iverif",
+        "title": "Leadership",
+        "quote": "Nous construisons un outil de précision pour les équipes qui portent le risque documentaire au quotidien — pas un distributeur de primes, pas un obligé, pas une affiliation institutionnelle."
+      }
+    ],
+    "product_details": {
+      "availability": "Démonstrations sur demande via iverif.fr",
+      "pricing": "Sur devis — non publié dans ce release",
+      "launch_date": "2026-09-11",
+      "where_to_buy": "iverif.fr (demandes) ; wiki iverif.io"
+    },
+    "boilerplate": "iverif est une plateforme RegTech de validation documentaire pour opérateurs d’aides énergie dans l’UE. Marque : iverif.fr. Wiki : iverif.io.",
+    "media_contact": {
+      "name": "Presse iverif",
+      "title": "Media relations",
+      "email": "presse@iverif.fr",
+      "phone": "Sur demande"
+    },
+    "distribution_targets_fr": [
+      "Les Échos",
+      "JDN (Journal du Net)",
+      "Welcome to the Jungle (context employeur)",
+      "LinkedIn FR company page"
+    ],
+    "distribution_note": "PNCEE is language/context source only — do not claim endorsement (channel-plan).",
+    "full_release": "POUR DIFFUSION IMMÉDIATE\n\niverif lance une plateforme de validation documentaire pour les dossiers d’aides énergie en France\n\nLe logiciel cible les back-offices CEE / Primes Énergie avec contrôles inter-documents et piste d’audit — sans se poser en délégataire.\n\nPARIS, France — 11 septembre 2026 — iverif annonce le lancement de sa plateforme de validation documentaire par IA destinée aux opérateurs d’aides à l’énergie. Le premier marché est la France, autour des certificats d’économies d’énergie (CEE) et des Primes Énergie, label grand public associé au mécanisme CEE.\n\nLes dossiers d’aides exigent souvent le croisement de nombreuses pièces avec des règles de programme évolutives. iverif positionne son produit avant le dépôt : contrôles de cohérence inter-documents, configuration de programme gérée, et journaux d’audit horodatés pour faciliter les revues.\n\n« Nous construisons un outil de précision pour les équipes qui portent le risque documentaire au quotidien — pas un distributeur de primes, pas un obligé, pas une affiliation institutionnelle », indique la direction d’iverif. « Le langage marché doit rester exact : obligé et délégataire sont des rôles réglementaires ; iverif est un logiciel. »\n\nLe périmètre produit déclaré inclut CEE et Primes Énergie en France, ainsi que Conto Termico, BEG, ECO4 et MOVES III pour une couverture multi-programmes européenne. La profondeur de configuration par programme est définie lors de l’onboarding.\n\niverif ne publie pas, à ce stade, de garanties de taux de rejet, de durée de traitement ou de délai de mise en service.\n\nDisponibilité : demandes de démonstration via iverif.fr. Surface produit / wiki : iverif.io.\n\nÀ propos d’iverif\niverif est une plateforme RegTech de validation documentaire pour opérateurs d’aides énergie dans l’UE. Marque : iverif.fr. Wiki : iverif.io.\n\nContact presse\npresse@iverif.fr\nParis, France\n\n###\n",
+    "locales": {
+      "fr": {
+        "headline": "iverif lance une plateforme de validation documentaire pour les dossiers d’aides énergie en France",
+        "subheadline": "Logiciel pour back-offices CEE / Primes Énergie — contrôles inter-documents et piste d’audit, sans rôle de délégataire",
+        "lead_paragraph": "iverif annonce le lancement de sa plateforme de validation documentaire par IA pour opérateurs d’aides énergie, avec un GTM France centré sur le CEE et les Primes Énergie, accessible via iverif.fr.",
+        "full_release": "POUR DIFFUSION IMMÉDIATE\n\niverif lance une plateforme de validation documentaire pour les dossiers d’aides énergie en France\n\nLe logiciel cible les back-offices CEE / Primes Énergie avec contrôles inter-documents et piste d’audit — sans se poser en délégataire.\n\nPARIS, France — 11 septembre 2026 — iverif annonce le lancement de sa plateforme de validation documentaire par IA destinée aux opérateurs d’aides à l’énergie. Le premier marché est la France, autour des certificats d’économies d’énergie (CEE) et des Primes Énergie, label grand public associé au mécanisme CEE.\n\nLes dossiers d’aides exigent souvent le croisement de nombreuses pièces avec des règles de programme évolutives. iverif positionne son produit avant le dépôt : contrôles de cohérence inter-documents, configuration de programme gérée, et journaux d’audit horodatés pour faciliter les revues.\n\n« Nous construisons un outil de précision pour les équipes qui portent le risque documentaire au quotidien — pas un distributeur de primes, pas un obligé, pas une affiliation institutionnelle », indique la direction d’iverif. « Le langage marché doit rester exact : obligé et délégataire sont des rôles réglementaires ; iverif est un logiciel. »\n\nLe périmètre produit déclaré inclut CEE et Primes Énergie en France, ainsi que Conto Termico, BEG, ECO4 et MOVES III pour une couverture multi-programmes européenne. La profondeur de configuration par programme est définie lors de l’onboarding.\n\niverif ne publie pas, à ce stade, de garanties de taux de rejet, de durée de traitement ou de délai de mise en service.\n\nDisponibilité : demandes de démonstration via iverif.fr. Surface produit / wiki : iverif.io.\n\nÀ propos d’iverif\niverif est une plateforme RegTech de validation documentaire pour opérateurs d’aides énergie dans l’UE. Marque : iverif.fr. Wiki : iverif.io.\n\nContact presse\npresse@iverif.fr\nParis, France\n\n###\n"
+      },
+      "en": {
+        "headline": "iverif launches document-validation software for energy subsidy dossiers in France",
+        "subheadline": "Built for CEE / Primes Énergie back offices — cross-document checks and audit trail, without posing as a délégataire",
+        "lead_paragraph": "iverif announced the launch of its AI document-validation platform for energy subsidy operators, with France GTM centred on CEE and Primes Énergie, available via iverif.fr.",
+        "full_release": "FOR IMMEDIATE RELEASE\n\niverif launches document-validation software for energy subsidy dossiers in France\n\nThe platform targets CEE / Primes Énergie back offices with cross-document checks and an audit trail — without posing as a délégataire.\n\nPARIS, France — September 11, 2026 — iverif today announced the launch of its AI document-validation platform for energy subsidy operators. The first go-to-market focus is France, centred on certificats d’économies d’énergie (CEE) and Primes Énergie, the consumer-facing label commonly tied to the CEE mechanism.\n\nEnergy subsidy dossiers often require cross-checking many supporting documents against evolving programme rules. iverif positions its product before submission: cross-document consistency checks, managed programme configuration, and timestamped audit logs to support reviews.\n\n“We are building a precision tool for teams that carry document risk every day — not a primes distributor, not an obligé, and not an institutional affiliate,” said iverif leadership. “Market language must stay accurate: obligé and délégataire are regulatory roles; iverif is software.”\n\nDeclared product scope includes CEE and Primes Énergie in France, plus Conto Termico, BEG, ECO4, and MOVES III for broader EU programme coverage. Configuration depth per programme is set during onboarding.\n\niverif is not publishing rejection-rate, processing-time, or go-live guarantees at this stage.\n\nAvailability: demo requests via iverif.fr. Product / wiki surface: iverif.io.\n\nAbout iverif\niverif is a RegTech document-validation platform for EU energy subsidy operators. Brand: iverif.fr. Wiki: iverif.io.\n\nMedia contact\npresse@iverif.fr\nParis, France\n\n###\n"
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/press-release.md",
+      "fr": "wiki/src/content/docs/fr/marketing/press-release.md"
+    },
+    "ledger_refs": [
+      "P1",
+      "P4",
+      "P5",
+      "F1",
+      "F2",
+      "C1",
+      "C2"
+    ]
+  }
+}

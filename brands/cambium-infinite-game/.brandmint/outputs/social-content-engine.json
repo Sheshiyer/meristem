@@ -1,0 +1,35 @@
+{
+  "skill": "social-content-engine",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-09-27T16:18:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "weekly_themes": [
+      {"week": 1, "theme": "Viability before velocity", "focus": "Recognize the bounds that preserve continuation", "post_count": 3},
+      {"week": 2, "theme": "Finite instruments", "focus": "Separate projects and tactics from enduring purpose", "post_count": 3},
+      {"week": 3, "theme": "The living ledger", "focus": "Make evidence, authority, action, and outcome replayable", "post_count": 3},
+      {"week": 4, "theme": "Seasonal stewardship", "focus": "Normalize rest, narrowing, retirement, and renewal", "post_count": 3}
+    ],
+    "platform_strategy": {
+      "instagram": {"format": "Carousels, quiet motion studies, and field-note captions", "voice": "Warm, visual, reflective", "post_count": 4},
+      "linkedin": {"format": "Operator essays, decision replays, and diagrams", "voice": "Precise, evidence-led, collegial", "post_count": 4},
+      "x": {"format": "Concise principles, short threads, and questions", "voice": "Direct, bounded, unsensational", "post_count": 4}
+    },
+    "content_mix": {
+      "value": {"percentage": 40, "topic_examples": ["Viability cascade", "Authority gates", "Decision replay"]},
+      "connection": {"percentage": 30, "topic_examples": ["Steward field notes", "Seasonal reflections", "What founders choose not to automate"]},
+      "engagement": {"percentage": 20, "topic_examples": ["Constraint prompts", "Finite instrument audits", "Replay questions"]},
+      "promotion": {"percentage": 10, "topic_examples": ["Sourcebook invitation", "Concept briefing", "Research participation"]}
+    },
+    "calendar": [
+      {"day": 1, "date": "2026-10-05", "platform": "LinkedIn", "post_type": "Essay", "category": "value", "hook": "Revenue is an output. Solvency is a bound.", "body": "A venture cannot learn after it loses the ability to continue. Before optimizing output, make cash, capacity, consent, and downside visible. Then authorize only the next bounded move. Cambium calls this viability before velocity.", "visual_description": "Living Ledger cards arranged around a restrained luminous boundary.", "cta": "Which bound governs your next decision?"},
+      {"day": 3, "date": "2026-10-07", "platform": "Instagram", "post_type": "Carousel", "category": "connection", "hook": "The purpose can continue after the project ends.", "body": "A campaign, offer, or company is a finite instrument. Ending one is not always failure. Sometimes it is stewardship: releasing a form so the deeper purpose can find another season.", "visual_description": "A ladder dissolving into growth rings and branching paths.", "cta": "What instrument are you ready to release?"},
+      {"day": 5, "date": "2026-10-09", "platform": "X", "post_type": "Thread", "category": "engagement", "hook": "Can you replay your last consequential decision?", "body": "Keep four things together: the evidence you saw, the authority that permitted action, the action actually taken, and the outcome observed. If one is missing, the next cycle begins from a story instead of a record.", "visual_description": "Four minimal ledger glyphs connected by a single line.", "cta": "Replay one decision in four lines."},
+      {"day": 8, "date": "2026-10-12", "platform": "LinkedIn", "post_type": "Diagram", "category": "value", "hook": "Observe → Bound → Act → Learn", "body": "The viability cascade is deliberately small. Observe the real field. Bound the downside and authority. Act inside the boundary. Learn from the result. Repeat without pretending the model is the world.", "visual_description": "Four-stage circular field diagram in mineral blue and cambium green.", "cta": "Where does your current process lose the record?"},
+      {"day": 12, "date": "2026-10-16", "platform": "Instagram", "post_type": "Field note", "category": "promotion", "hook": "A sourcebook for staying in the game.", "body": "We are assembling Cambium as a product sourcebook: purpose, viability, authority, replay, language, and visual system. It describes the concept honestly and marks what remains unproven.", "visual_description": "The Steward Kit objects on a living desk; clearly labeled conceptual visualization.", "cta": "Request the concept briefing."}
+    ],
+    "voice_compliance": "PASS — no prohibited terms or unsupported launch claims"
+  }
+}

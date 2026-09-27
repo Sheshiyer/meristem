@@ -1,0 +1,322 @@
+{
+  "skill": "prelaunch-email-sequence",
+  "cluster": "content",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.1.0",
+  "wave": 6,
+  "data": {
+    "sequence_strategy": {
+      "campaign_length": "21 days pre-launch",
+      "total_emails": 5,
+      "goals": [
+        "Waitlist growth",
+        "Category education",
+        "Warm demo demand"
+      ],
+      "default_locale": "fr",
+      "gtm_tag": "FR"
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Liste d’attente",
+        "send_timing": "J-21",
+        "primary_lever": "curiosity",
+        "urgency_level": "low",
+        "subject_lines": {
+          "primary": "Quelque chose se prépare pour le back-office CEE",
+          "variation_a": "Validation documentaire — bientôt",
+          "variation_b": "Rejoignez la liste iverif FR"
+        },
+        "preview_text": "Avant le dépôt, un contrôle plus net",
+        "body": "Bonjour {{prenom}},\n\nNous préparons iverif pour les équipes qui traitent des dossiers CEE / Primes Énergie en France.\n\nIdée centrale : valider pièces et champs avant dépôt, avec règles de programme et piste d’audit — sans confusion avec un délégataire.\n\nInscrivez-vous pour l’ouverture des démos.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Rejoindre la liste",
+          "url_placeholder": "{{waitlist_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 2,
+        "name": "Problème nommé",
+        "send_timing": "J-14",
+        "primary_lever": "problem",
+        "urgency_level": "low",
+        "subject_lines": {
+          "primary": "Le rejet trop tardif",
+          "variation_a": "Croiser 10–20 pièces sans filet",
+          "variation_b": "Ce que le volume fait au contrôle manuel"
+        },
+        "preview_text": "Le sujet n’est pas « plus d’OCR »",
+        "body": "Bonjour {{prenom}},\n\nLe point de douleur que nous entendons : l’écart documentaire découvert trop tard, quand corriger coûte cher.\n\niverif ne promet pas un pourcentage magique. Nous construisons un logiciel de validation avant dépôt pour opérateurs.\n\nPlus de détail à l’ouverture.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Rester informé",
+          "url_placeholder": "{{waitlist_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 3,
+        "name": "Catégorie claire",
+        "send_timing": "J-7",
+        "primary_lever": "education",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "RegTech pour dossiers d’aides énergie",
+          "variation_a": "CEE, fiches, rôles marché",
+          "variation_b": "Ce que iverif n’est pas"
+        },
+        "preview_text": "Précis, sans effet d’annonce",
+        "body": "Bonjour {{prenom}},\n\niverif = validation documentaire IA pour opérateurs d’aides énergie.\n\nPas : distributeur de primes, obligé, délégataire, ni affiliation PNCEE.\n\nOui : contrôles inter-documents, configuration programme gérée, audit trail.\n\nOuverture des conversations la semaine prochaine.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Préparer une question",
+          "url_placeholder": "{{waitlist_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 4,
+        "name": "Teaser démo",
+        "send_timing": "J-3",
+        "primary_lever": "anticipation",
+        "urgency_level": "medium",
+        "subject_lines": {
+          "primary": "Les créneaux démo s’ouvrent bientôt",
+          "variation_a": "Apportez un flux dossier type",
+          "variation_b": "3 jours avant l’ouverture"
+        },
+        "preview_text": "FR GTM — places limitées",
+        "body": "Bonjour {{prenom}},\n\nDans trois jours nous ouvrons les démos FR.\n\nUtile d’avoir sous la main : un type de dossier CEE fréquent, les pièces critiques, et qui tranche les exceptions chez vous.\n\nÀ très vite,\nL’équipe iverif",
+        "cta": {
+          "text": "Bloquer un rappel",
+          "url_placeholder": "{{reminder_url}}"
+        },
+        "ps": ""
+      },
+      {
+        "number": 5,
+        "name": "Ouverture imminente",
+        "send_timing": "J-1",
+        "primary_lever": "urgency",
+        "urgency_level": "high",
+        "subject_lines": {
+          "primary": "Demain : ouverture des démos iverif",
+          "variation_a": "Dernier rappel liste d’attente",
+          "variation_b": "Validation avant dépôt — démarrage"
+        },
+        "preview_text": "Lien démo demain",
+        "body": "Bonjour {{prenom}},\n\nDemain nous envoyons le lien pour demander une démo iverif (GTM France).\n\nMerci d’être sur la liste — demain, passage à l’action si le sujet est chaud.\n\nCordialement,\nL’équipe iverif",
+        "cta": {
+          "text": "Surveiller sa boîte",
+          "url_placeholder": "{{waitlist_url}}"
+        },
+        "ps": ""
+      }
+    ],
+    "locales": {
+      "fr": {
+        "emails": [
+          {
+            "number": 1,
+            "name": "Liste d’attente",
+            "send_timing": "J-21",
+            "primary_lever": "curiosity",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Quelque chose se prépare pour le back-office CEE",
+              "variation_a": "Validation documentaire — bientôt",
+              "variation_b": "Rejoignez la liste iverif FR"
+            },
+            "preview_text": "Avant le dépôt, un contrôle plus net",
+            "body": "Bonjour {{prenom}},\n\nNous préparons iverif pour les équipes qui traitent des dossiers CEE / Primes Énergie en France.\n\nIdée centrale : valider pièces et champs avant dépôt, avec règles de programme et piste d’audit — sans confusion avec un délégataire.\n\nInscrivez-vous pour l’ouverture des démos.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Rejoindre la liste",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 2,
+            "name": "Problème nommé",
+            "send_timing": "J-14",
+            "primary_lever": "problem",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Le rejet trop tardif",
+              "variation_a": "Croiser 10–20 pièces sans filet",
+              "variation_b": "Ce que le volume fait au contrôle manuel"
+            },
+            "preview_text": "Le sujet n’est pas « plus d’OCR »",
+            "body": "Bonjour {{prenom}},\n\nLe point de douleur que nous entendons : l’écart documentaire découvert trop tard, quand corriger coûte cher.\n\niverif ne promet pas un pourcentage magique. Nous construisons un logiciel de validation avant dépôt pour opérateurs.\n\nPlus de détail à l’ouverture.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Rester informé",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 3,
+            "name": "Catégorie claire",
+            "send_timing": "J-7",
+            "primary_lever": "education",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "RegTech pour dossiers d’aides énergie",
+              "variation_a": "CEE, fiches, rôles marché",
+              "variation_b": "Ce que iverif n’est pas"
+            },
+            "preview_text": "Précis, sans effet d’annonce",
+            "body": "Bonjour {{prenom}},\n\niverif = validation documentaire IA pour opérateurs d’aides énergie.\n\nPas : distributeur de primes, obligé, délégataire, ni affiliation PNCEE.\n\nOui : contrôles inter-documents, configuration programme gérée, audit trail.\n\nOuverture des conversations la semaine prochaine.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Préparer une question",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 4,
+            "name": "Teaser démo",
+            "send_timing": "J-3",
+            "primary_lever": "anticipation",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Les créneaux démo s’ouvrent bientôt",
+              "variation_a": "Apportez un flux dossier type",
+              "variation_b": "3 jours avant l’ouverture"
+            },
+            "preview_text": "FR GTM — places limitées",
+            "body": "Bonjour {{prenom}},\n\nDans trois jours nous ouvrons les démos FR.\n\nUtile d’avoir sous la main : un type de dossier CEE fréquent, les pièces critiques, et qui tranche les exceptions chez vous.\n\nÀ très vite,\nL’équipe iverif",
+            "cta": {
+              "text": "Bloquer un rappel",
+              "url_placeholder": "{{reminder_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 5,
+            "name": "Ouverture imminente",
+            "send_timing": "J-1",
+            "primary_lever": "urgency",
+            "urgency_level": "high",
+            "subject_lines": {
+              "primary": "Demain : ouverture des démos iverif",
+              "variation_a": "Dernier rappel liste d’attente",
+              "variation_b": "Validation avant dépôt — démarrage"
+            },
+            "preview_text": "Lien démo demain",
+            "body": "Bonjour {{prenom}},\n\nDemain nous envoyons le lien pour demander une démo iverif (GTM France).\n\nMerci d’être sur la liste — demain, passage à l’action si le sujet est chaud.\n\nCordialement,\nL’équipe iverif",
+            "cta": {
+              "text": "Surveiller sa boîte",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          }
+        ]
+      },
+      "en": {
+        "emails": [
+          {
+            "number": 1,
+            "name": "Waitlist",
+            "send_timing": "D-21",
+            "primary_lever": "curiosity",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Something’s coming for CEE back offices",
+              "variation_a": "Document validation — soon",
+              "variation_b": "Join the iverif FR list"
+            },
+            "preview_text": "Cleaner checks before submission",
+            "body": "Hi {{first_name}},\n\nWe’re preparing iverif for teams processing CEE / Primes Énergie dossiers in France.\n\nCore idea: validate documents and fields before submission, with programme rules and an audit trail — without posing as a délégataire.\n\nJoin the list for demo opening.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Join the waitlist",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 2,
+            "name": "Named problem",
+            "send_timing": "D-14",
+            "primary_lever": "problem",
+            "urgency_level": "low",
+            "subject_lines": {
+              "primary": "Rejection that arrives too late",
+              "variation_a": "Cross-checking 10–20 docs without a net",
+              "variation_b": "What volume does to manual control"
+            },
+            "preview_text": "The answer isn’t “more OCR”",
+            "body": "Hi {{first_name}},\n\nThe pain we hear: document gaps found too late, when fixes are expensive.\n\niverif doesn’t promise a magic percentage. We’re building pre-submission validation software for operators.\n\nMore at opening.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Stay informed",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 3,
+            "name": "Clear category",
+            "send_timing": "D-7",
+            "primary_lever": "education",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "RegTech for energy subsidy dossiers",
+              "variation_a": "CEE, fiches, market roles",
+              "variation_b": "What iverif is not"
+            },
+            "preview_text": "Precise, no hype",
+            "body": "Hi {{first_name}},\n\niverif = AI document validation for energy subsidy operators.\n\nNot: primes distributor, obligé, délégataire, or PNCEE affiliate.\n\nYes: cross-document checks, managed programme configuration, audit trail.\n\nConversations open next week.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Prep a question",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 4,
+            "name": "Demo teaser",
+            "send_timing": "D-3",
+            "primary_lever": "anticipation",
+            "urgency_level": "medium",
+            "subject_lines": {
+              "primary": "Demo slots open soon",
+              "variation_a": "Bring a typical dossier flow",
+              "variation_b": "3 days to opening"
+            },
+            "preview_text": "FR GTM — limited seats",
+            "body": "Hi {{first_name}},\n\nIn three days we open FR demos.\n\nHelpful to have ready: a common CEE dossier type, critical documents, and who owns exceptions on your team.\n\nSee you soon,\nThe iverif team",
+            "cta": {
+              "text": "Set a reminder",
+              "url_placeholder": "{{reminder_url}}"
+            },
+            "ps": ""
+          },
+          {
+            "number": 5,
+            "name": "Opening imminent",
+            "send_timing": "D-1",
+            "primary_lever": "urgency",
+            "urgency_level": "high",
+            "subject_lines": {
+              "primary": "Tomorrow: iverif demos open",
+              "variation_a": "Final waitlist reminder",
+              "variation_b": "Validate before submit — starting"
+            },
+            "preview_text": "Demo link tomorrow",
+            "body": "Hi {{first_name}},\n\nTomorrow we send the link to request an iverif demo (France GTM).\n\nThanks for being on the list — tomorrow, act if the topic is hot.\n\nBest,\nThe iverif team",
+            "cta": {
+              "text": "Watch your inbox",
+              "url_placeholder": "{{waitlist_url}}"
+            },
+            "ps": ""
+          }
+        ]
+      }
+    },
+    "wiki_paths": {
+      "en": "wiki/src/content/docs/en/marketing/prelaunch-email-sequence.md",
+      "fr": "wiki/src/content/docs/fr/marketing/prelaunch-email-sequence.md"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "skill": "review-response-strategist",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-09-27T16:16:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "tone_principles": [
+      "Acknowledge the lived experience before explaining the system",
+      "Answer the specific claim and state the evidence boundary",
+      "Offer a reviewable next step without pressuring the reviewer",
+      "Never expose private operational details in public replies"
+    ],
+    "response_patterns": [
+      {"pattern_name": "Constructive positive review", "trigger": "A reviewer names a specific practice that helped", "template": "Thank you for naming [practice]. We are glad it helped you [bounded outcome]. The part we value most is that the decision remained yours and the evidence remained visible.", "example_response": "Thank you for naming the viability check. We are glad it helped you separate a reversible test from a consequential commitment. The part we value most is that the decision remained yours and the evidence remained visible."},
+      {"pattern_name": "Expectation mismatch", "trigger": "A reviewer expected autonomous execution or guaranteed growth", "template": "You expected [expectation], and the experience did not meet it. Cambium is designed around bounded, reviewable action rather than guaranteed autonomy. We should have made that distinction clearer. If you are willing, share [non-sensitive detail] through the support path so a human can review it.", "example_response": "You expected the system to launch the campaign without review, and it did not. Cambium is designed around gated, reviewable action rather than guaranteed autonomy. We should have made that distinction clearer."},
+      {"pattern_name": "Safety or privacy concern", "trigger": "A review alleges harmful action, data exposure, or authority misuse", "template": "We take this seriously. Please do not post account details here. Use the private incident channel with the reference [case ID]; a human reviewer will examine the event log and authority boundary.", "example_response": "We take this seriously. Please do not post account details here. Use the private incident channel with your case reference; a human reviewer will examine the event log and authority boundary."}
+    ],
+    "platform_specific": [
+      {"platform": "Public review platform", "response_length": "60–120 words", "tone_adjustment": "Plain, accountable, no operational detail"},
+      {"platform": "LinkedIn", "response_length": "40–90 words", "tone_adjustment": "Professional and principle-led"},
+      {"platform": "X", "response_length": "One concise post plus private escalation if needed", "tone_adjustment": "Direct, never combative"}
+    ],
+    "do": ["Own clarity failures", "State what is and is not verified", "Move sensitive cases to a private human-reviewed channel"],
+    "dont": ["Argue with a reviewer", "Offer incentives for changing a review", "Reveal identities, logs, or account state", "Promise a result before investigation"],
+    "voice_compliance": "PASS"
+  }
+}

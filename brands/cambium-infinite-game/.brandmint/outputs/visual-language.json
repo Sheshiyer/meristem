@@ -1,0 +1,112 @@
+{
+  "skill": "visual-language",
+  "cluster": "identity",
+  "wave": 3,
+  "timestamp": "2026-09-27T12:31:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "system_name": "The Living Ledger",
+    "essence": "A living venture made legible: organic continuity held inside calm, evidence-bearing boundaries.",
+    "composition_bias": {
+      "principles": [
+        "Asymmetric editorial fields with generous negative space",
+        "One copper consequence marker per composition",
+        "Organic viable regions paired with precise evidence rails",
+        "Visible layers that retain history instead of erasing it"
+      ]
+    },
+    "forbidden_visuals": [
+      "Neon AI gradients, glassmorphism, and black cyberpunk dashboards",
+      "Friendly robot employees, glowing brains, and particle swarms",
+      "Literal tree logos, decorative leaf repetition, and infinity symbols",
+      "Controllers, trophies, scoreboards, and other finite-game victory clichés",
+      "Generated interface imagery presented as evidence of a live product"
+    ],
+    "visual_principles": [
+      {
+        "name": "Growth keeps its rings",
+        "description": "New information is added as a visible layer; it does not erase history. Use nested contours, dated marks, and restrained palimpsest effects."
+      },
+      {
+        "name": "Boundaries are information",
+        "description": "A limit is drawn clearly and calmly. Safe trajectories bend inward; gates appear as deliberate human interventions, not alarms."
+      },
+      {
+        "name": "One consequence at a time",
+        "description": "Every composition has one copper focal point representing the current consequential choice. Everything else supports orientation."
+      },
+      {
+        "name": "Evidence has texture",
+        "description": "Use paper grain, bark fiber, pencil lines, stamped labels, and quiet instrument marks so provenance feels physical and inspectable."
+      },
+      {
+        "name": "Dormancy is not emptiness",
+        "description": "Negative space communicates a system at rest and ready. Avoid filling silence with dashboards, particles, or constant motion."
+      }
+    ],
+    "photography": {
+      "style": {
+        "lighting": "Soft northern-window daylight or overcast natural light; gentle falloff; no neon rim light or glossy tech studio treatment.",
+        "composition": "Editorial wide frames with quiet negative space, one human trace, and tactile foreground detail. Prefer asymmetric balance and layers that suggest time.",
+        "color_treatment": "Warm-muted filmic color, restrained saturation, deep lichen shadows, bone highlights, and occasional copper-brown material accents.",
+        "subject_focus": "The steward's environment, instruments, notebooks, garden/workshop metaphors, and the evidence of a decision; avoid staring founder portraits and screens as the only subject.",
+        "mood": "Calm vigilance, earned relief, continuity, patience, and quiet competence.",
+        "context": "Real small-business workspaces, gardens, workshops, studios, and threshold moments before or after a bounded decision."
+      },
+      "references": [
+        "A founder's desk after dawn: ledger open, tea cooling, screen asleep, one copper pencil mark.",
+        "Macro botanical study of the thin living layer beneath bark, scientifically plausible but poetic.",
+        "A small workshop prepared for work yet momentarily empty, showing continuity without busyness.",
+        "Overhead arrangement of receipts, field notes, and one clean operating instrument."
+      ],
+      "prompt_template": "Use case: photorealistic-natural. Asset type: {asset}. Scene: {real founder or small-business environment}. Subject: {one evidence-bearing human trace or instrument}. Style: quiet editorial documentary photograph with natural material texture. Composition: {framing} with generous negative space. Lighting: soft northern-window or overcast daylight. Palette: warm-muted, deep lichen #1F3A2E, bone #F4EFE3, small copper #B76E3F accent. Mood: calm vigilance and continuity. Constraints: no robots, no holograms, no neon, no purple AI gradient, no stock-photo handshake, no legible private data, no logos, no text, no watermark."
+    },
+    "illustration": {
+      "style": {
+        "type": "editorial line art with scientific-field-guide discipline",
+        "complexity": "medium: one focal metaphor, three to seven supporting marks",
+        "line_weight": "variable 1.5–3px equivalent; organic outer contour with precise instrument annotations",
+        "color_approach": "Living Lichen line work on Bone, New Growth fills for safe regions, one Cambium Copper decision mark; no gradients",
+        "character_style": "Humans appear as partial gestures or small steward figures, never mascots, avatars, or synthetic employee portraits."
+      },
+      "prompt_template": "Use case: illustration-story. Asset type: {surface}. Primary request: visualize {concept} as a living-systems field-guide plate. Medium: precise editorial ink line art with subtle paper grain. Composition: one strong central metaphor, ample whitespace, a few instrument-like annotations without text. Palette: #1F3A2E, #7E9B63, #B76E3F on #F4EFE3. Constraints: no gradients, no robots, no brains, no game controller, no fantasy tree, no corporate vector people, no text, no watermark."
+    },
+    "iconography": {
+      "style": "monoline with one optional copper state notch",
+      "stroke_weight": "1.75px at 24px; optical correction allowed at joins",
+      "corner_radius": "2px geometric corners softened by one-quarter stroke width",
+      "grid_size": "24px with 2px safe area",
+      "categories": ["wake", "viability", "mission", "goal", "evidence", "founder-gate", "finite-game", "replay", "dormant", "risk-bound"]
+    },
+    "patterns": {
+      "type": "non-repeating contour-field pattern derived from growth rings and viable trajectories",
+      "scale": "large and sparse: one contour interval every 48–96px at common display sizes",
+      "usage": ["report covers", "quiet section transitions", "packaging interiors", "social backgrounds", "artifact provenance cards"],
+      "prompt_template": "Use case: stylized-concept. Asset type: seamless or wide brand pattern. Primary request: sparse contour lines inspired by tree growth rings and phase-space trajectories, with paths gently bending inward near a boundary. Flat line art, generous negative space, #1F3A2E and #7E9B63 on #F4EFE3, one rare #B76E3F notch. No text, gradients, leaves, topographic-map labels, infinity symbols, glow, or watermark."
+    },
+    "layout_language": {
+      "grid": "Twelve-column editorial grid on desktop, four-column mobile; evidence rail may occupy two columns.",
+      "spacing": "Use an 8px base rhythm with 24/40/64/104px narrative intervals.",
+      "shapes": "Soft irregular ovals for viable regions; hairline rules and squared receipt cards for evidence; never pill-everything UI.",
+      "motion": "Slow state transitions that begin and end at rest; animate a path only when showing a real wake or replay."
+    },
+    "guidelines": {
+      "do": [
+        "Pair organic boundaries with precise evidence labels.",
+        "Use one copper focal point per composition.",
+        "Show continuation through layering rather than arrows or speed lines.",
+        "Let empty space communicate dormancy and readiness.",
+        "Label generated visuals as illustrative, not product proof."
+      ],
+      "dont": [
+        "Do not use neon AI gradients, glassmorphism, particle swarms, or black cyberpunk dashboards.",
+        "Do not depict teams of friendly AI employee avatars.",
+        "Do not make a literal tree logo or repeat leaf motifs decoratively.",
+        "Do not confuse infinite game with gaming, controllers, trophies, or scoreboards.",
+        "Do not use generated interface imagery as evidence of a live product."
+      ]
+    },
+    "asset_label": "Illustrative — generated brand expression, not product proof"
+  }
+}

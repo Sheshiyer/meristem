@@ -55,6 +55,18 @@ For each skill output:
 5. Record in source-manifest.json
 ```
 
+### Bilingual sources (additive)
+
+When `market.region: FR` or `locales` includes `fr`, write transformed prose under locale trees:
+
+```
+.brandmint/sources/en/{category}/{skill-id}.md
+.brandmint/sources/fr/{category}/{skill-id}.md
+```
+
+Also accept brand-local publish mirrors such as `brands/{slug}/publish/notebooklm/sources/{en,fr}/` when the brand uses that layout. Single-locale brands keep the existing `.brandmint/sources/{category}/` paths unchanged.
+
+Prefer FR prose as primary when `defaultLocale: fr`. Record locale on each `source-manifest.json` entry (`locale: en|fr`).
 **Prose synthesis (if OPENROUTER_API_KEY set):**
 - Use LLM to transform JSON → narrative
 - Write *as* the brand using voice-and-tone
@@ -377,7 +389,7 @@ bm notebooklm-download --config brand-config.yaml
 - [ ] Curate: Sources selected by artifact focus
 - [ ] Curate: Budget not exceeded (max 50)
 - [ ] Assemble: Final manifest validated
-
+- [ ] If bilingual/FR: sources emitted under `sources/{en,fr}/` (or `.brandmint/sources/{en,fr}/...`)
 ### NotebookLM
 - [ ] Notebook created successfully
 - [ ] All sources uploaded

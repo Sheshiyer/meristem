@@ -1,0 +1,105 @@
+{
+  "skill": "community-manager-brain",
+  "cluster": "social-growth",
+  "timestamp": "2026-09-11T15:30:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 6,
+  "data": {
+    "gtm_tag": "FR",
+    "primary_channels": [
+      "linkedin_fr",
+      "welcome_to_the_jungle",
+      "jdn",
+      "pncee_context",
+      "les_echos"
+    ],
+    "engagement_tiers": [
+      {
+        "tier": 1,
+        "audience": "Prospect ICP (ops/compliance CEE) inbound",
+        "response_time": "< 2 hours (jours ouvrés)",
+        "voice": "precise, peer-to-peer",
+        "template": "Merci pour votre message. iverif est un logiciel de validation de dossiers (CEE / Primes Énergie), pas un délégataire. Pouvez-vous préciser votre volume de dossiers et votre rôle (ops / conformité) ? Nous proposons un cadrage — sans KPI non sourcés."
+      },
+      {
+        "tier": 2,
+        "audience": "Client / essai actif",
+        "response_time": "< 4 hours",
+        "voice": "supportif, technique clair",
+        "template": "Bien reçu. Pour débloquer : (1) type de dossier, (2) pièce concernée, (3) règle attendue. Nous calibrons les exceptions avec vous — pas de promesse de taux de rejet."
+      },
+      {
+        "tier": 3,
+        "audience": "Presse / JDN / Les Échos",
+        "response_time": "< 1 business day",
+        "voice": "factuel PR",
+        "template": "Merci. Éléments publics : positionnement validation documentaire, GTM FR CEE/Primes Énergie, domaines iverif.fr / iverif.io. Kit presse et interview sur demande via presse@iverif.fr. Pas d’affiliation PNCEE."
+      },
+      {
+        "tier": 4,
+        "audience": "Commentaire général LinkedIn / WTTJ",
+        "response_time": "< 24 hours",
+        "voice": "court, éducatif",
+        "template": "Merci. Notre angle : valider avant dépôt, avec rôles obligé/délégataire clairement séparés du logiciel. Lien : iverif.fr"
+      }
+    ],
+    "engagement_tactics": [
+      {
+        "tactic": "Répondre aux questions de rôle marché",
+        "purpose": "Réduire la méfiance (hypothèse ledger #2)",
+        "frequency": "chaque occurrence"
+      },
+      {
+        "tactic": "Partager glossaire CEE factuel (sources publiques)",
+        "purpose": "Autorité sage sans hype",
+        "frequency": "2× / semaine LinkedIn FR"
+      },
+      {
+        "tactic": "Relayer annonces produit sans KPI inventés",
+        "purpose": "Promotion sobre 10%",
+        "frequency": "1× / semaine"
+      },
+      {
+        "tactic": "WTTJ : culture ops (moins de rush post-rejet)",
+        "purpose": "Crédibilité employeur adjacente",
+        "frequency": "2× / mois"
+      },
+      {
+        "tactic": "Ne pas débattre des montants primes concurrents",
+        "purpose": "Respect ledger prohibited",
+        "frequency": "toujours"
+      }
+    ],
+    "voice_discipline": "PASS — precise/authoritative/no-hype; preferred: dossier, CEE, Primes Énergie, audit trail, obligé, délégataire; no rejection-rate guarantees",
+    "response_do": [
+      "Corriger poliment toute confusion iverif = délégataire",
+      "Pointer vers iverif.fr pour démo",
+      "Utiliser FR d’abord sur LinkedIn FR",
+      "Citer le dispositif CEE comme contexte public, pas comme endorsement"
+    ],
+    "response_dont": [
+      "Promettre % de rejet, 30 secondes, go-live 5–7 jours",
+      "Réutiliser euros / Trustpilot concurrents",
+      "Impliquer un partenariat PNCEE",
+      "Ton startup hype / emoji excessifs sur LinkedIn FR"
+    ],
+    "preferred_vocabulary": [
+      "dossier",
+      "validation",
+      "CEE",
+      "Primes Énergie",
+      "piste d’audit",
+      "exceptions",
+      "obligé",
+      "délégataire",
+      "avant dépôt"
+    ],
+    "prohibited_vocabulary": [
+      "garanti <2%",
+      "30 secondes par dossier",
+      "accrédité PNCEE",
+      "jusqu’à X% d’aides"
+    ]
+  }
+}

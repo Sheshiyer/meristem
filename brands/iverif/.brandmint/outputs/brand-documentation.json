@@ -1,0 +1,128 @@
+{
+  "skill": "brand-documentation",
+  "cluster": "synthesis",
+  "timestamp": "2026-09-11T16:00:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "wave": 7,
+  "data": {
+    "brand": "iverif",
+    "gtm_tag": "FR GTM",
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "defaultLocale": "fr",
+    "document_separation_rationale": "Separate Brand Identity, Product & Positioning, and Campaign & Content docs; keep Internal Strategy (competitors, ledger) out of public-facing packs.",
+    "canonical_documents": [
+      "BRAND-BRIEF.md",
+      "brand-config.yaml",
+      "research/EVIDENCE-LEDGER.md",
+      "research/channel-plan.md",
+      "wiki/MDS.md",
+      "wiki/DOWNSTREAM-HANDOFF.md",
+      "wiki/src/content/docs/fr/",
+      "wiki/src/content/docs/en/",
+      "wiki/docs/",
+      ".brandmint/asset-manifest.json",
+      "assets/ASSET-ORIGINS.md"
+    ],
+    "document_types": {
+      "brand_identity": {
+        "audience": "Designers, marketing",
+        "sources": [
+          "brand-foundation",
+          "color-palette",
+          "typography",
+          "logo-concept",
+          "visual-language",
+          "voice-and-tone"
+        ],
+        "toc_fr": [
+          "Essence",
+          "Voix",
+          "Couleurs",
+          "Typographie",
+          "Logo",
+          "Langage visuel"
+        ],
+        "toc_en": [
+          "Essence",
+          "Voice",
+          "Colors",
+          "Typography",
+          "Logo",
+          "Visual language"
+        ]
+      },
+      "product_positioning": {
+        "audience": "Product, sales, founder",
+        "sources": [
+          "product-positioning",
+          "value-proposition",
+          "buyer-persona",
+          "competitor-analysis",
+          "product-description"
+        ],
+        "toc_fr": [
+          "Positionnement",
+          "Proposition de valeur",
+          "Persona Marie Durand",
+          "Paysage concurrentiel",
+          "Claims"
+        ],
+        "toc_en": [
+          "Positioning",
+          "Value proposition",
+          "Marie Durand persona",
+          "Competitive landscape",
+          "Claims"
+        ]
+      },
+      "campaign_content": {
+        "audience": "Marketing, content",
+        "sources": [
+          "messaging-framework",
+          "landing-page-copy",
+          "ad-creative-copy",
+          "launch-email-sequence",
+          "press-release",
+          "social-content-engine"
+        ],
+        "toc_fr": [
+          "Promesse",
+          "Landing",
+          "Ads LinkedIn FR",
+          "Emails",
+          "Presse"
+        ],
+        "toc_en": [
+          "Promise",
+          "Landing",
+          "Ads",
+          "Emails",
+          "Press"
+        ]
+      },
+      "internal_strategy": {
+        "audience": "Leadership only",
+        "sources": [
+          "research/EVIDENCE-LEDGER.md",
+          "research/channel-plan.md",
+          "competitor-analysis"
+        ],
+        "publication": "internal-only"
+      }
+    },
+    "source_of_truth": {
+      "claims": "research/EVIDENCE-LEDGER.md",
+      "channels": "research/channel-plan.md",
+      "asset_provenance": "assets/ASSET-ORIGINS.md and .brandmint/asset-manifest.json",
+      "domains": {
+        "brand": "iverif.fr",
+        "wiki": "iverif.io"
+      }
+    },
+    "publication_status": "Internal documentation only; no public deployment is authorized."
+  }
+}

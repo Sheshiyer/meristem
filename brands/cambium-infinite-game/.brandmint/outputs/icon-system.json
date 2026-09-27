@@ -1,0 +1,46 @@
+{
+  "skill": "icon-system",
+  "cluster": "illustration",
+  "wave": 5,
+  "timestamp": "2026-09-27T13:02:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "style_definition": {
+      "type": "line",
+      "stroke_weight": "1.75px at 24px after production vectorization",
+      "corner_radius": "2px with optical correction",
+      "grid_size": "24px",
+      "padding": "2px",
+      "line_caps": "round",
+      "line_joins": "round",
+      "colors": {"primary": "#1F3A2E", "secondary": "#B76E3F"}
+    },
+    "categories": {
+      "ui": ["wake", "evidence", "founder-gate", "replay", "dormant"],
+      "feature": ["viability", "mission", "goal", "finite-game"],
+      "category": ["state", "constraint", "decision", "history"]
+    },
+    "icons": [
+      {"id": "icon-wake", "category": "ui", "name": "Wake", "concept": "one new ripple begins", "priority": "high", "generation_prompt": "small ripple beginning around one copper point", "generated_path": "./generated/icon-system-reference-v1.png#cell-1", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-viability", "category": "feature", "name": "Viability", "concept": "path bends inward at a boundary", "priority": "high", "generation_prompt": "continuous path approaching and respecting one boundary", "generated_path": "./generated/icon-system-reference-v1.png#cell-2", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-mission", "category": "feature", "name": "Mission", "concept": "steady direction held inside a living ring", "priority": "high", "generation_prompt": "quiet compass vector without arrowhead", "generated_path": "./generated/icon-system-reference-v1.png#cell-3", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-goal", "category": "feature", "name": "Goal", "concept": "one bounded seed point", "priority": "high", "generation_prompt": "one point inside a clear bounded circle", "generated_path": "./generated/icon-system-reference-v1.png#cell-4", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-evidence", "category": "ui", "name": "Evidence", "concept": "receipt card with one verified notch", "priority": "high", "generation_prompt": "simple receipt card with abstract lines and one copper notch", "generated_path": "./generated/icon-system-reference-v1.png#cell-5", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-founder-gate", "category": "ui", "name": "Founder gate", "concept": "open gate with a copper hinge", "priority": "high", "generation_prompt": "two open gate leaves and one small copper hinge", "generated_path": "./generated/icon-system-reference-v1.png#cell-6", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-finite-game", "category": "feature", "name": "Finite game", "concept": "small closed working circle inside a larger open ring", "priority": "medium", "generation_prompt": "small complete circle held inside a larger open contour", "generated_path": "./generated/icon-system-reference-v1.png#cell-7", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-replay", "category": "ui", "name": "Replay", "concept": "two preserved growth-ring traces", "priority": "high", "generation_prompt": "two offset preserved ring traces with a visible opening", "generated_path": "./generated/icon-system-reference-v1.png#cell-8", "sizes": ["16", "24", "32", "48", "64", "96"]},
+      {"id": "icon-dormant", "category": "ui", "name": "Dormant", "concept": "quiet instrument at rest", "priority": "medium", "generation_prompt": "simple upright instrument at rest with one copper state point", "generated_path": "./generated/icon-system-reference-v1.png#cell-9", "sizes": ["16", "24", "32", "48", "64", "96"]}
+    ],
+    "reference_sheet": {
+      "path": "./generated/icon-system-reference-v1.png",
+      "dimensions": "1254x1254",
+      "alpha": true,
+      "sha256": "bccb5fdebbafd6968fdd4ee6929ea05770d70e64c93cbc4872208928c24a8a86",
+      "origin": "generated: Codex built-in image generation",
+      "label": "Exploratory raster reference — production icons require deterministic SVG reconstruction and optical review"
+    },
+    "export_formats": ["png-reference", "svg-planned"],
+    "generation_summary": {"total_icons": 9, "generated": 9, "pending": 0, "asset_files": 1, "engine": "Codex built-in image generation", "api_credits_used": false}
+  }
+}

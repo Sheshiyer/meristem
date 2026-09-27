@@ -109,6 +109,19 @@ For each email:
 | 24hr | Very High | "Ends tomorrow" |
 | Final | Maximum | "Last chance - hours left" |
 
+## Bilingual FR + EN (additive)
+
+When `market.region: FR` **or** `locales` includes `fr`, emit both language variants. JSON remains the primary wave output.
+
+**Planned wiki paths:**
+- `wiki/src/content/docs/en/marketing/launch-email-sequence.md`
+- `wiki/src/content/docs/fr/marketing/launch-email-sequence.md`
+
+Rules:
+- `data.emails` = default/primary locale sequence (prefer `fr` when `defaultLocale: fr`).
+- `data.locales.en.emails` / `data.locales.fr.emails` = full parallel sequences.
+- Align subjects/CTAs with `ad-creative-copy` `explee_draft.emails` when that draft is present (draft-only; no POST).
+
 ## Output Schema
 
 ```json
@@ -118,7 +131,7 @@ For each email:
     "wave": 6,
     "timestamp": "2024-01-15T10:30:00Z",
     "status": "complete",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "data": {
         "sequence_strategy": {
             "campaign_length": "string (e.g., '30 days')",
@@ -145,7 +158,15 @@ For each email:
                 },
                 "ps": "string"
             }
-        ]
+        ],
+        "locales": {
+            "en": { "emails": [] },
+            "fr": { "emails": [] }
+        },
+        "wiki_paths": {
+            "en": "wiki/src/content/docs/en/marketing/launch-email-sequence.md",
+            "fr": "wiki/src/content/docs/fr/marketing/launch-email-sequence.md"
+        }
     }
 }
 ```
@@ -159,3 +180,4 @@ For each email:
 - [ ] Social proof included where relevant
 - [ ] Final emails have maximum urgency
 - [ ] All CTAs link to campaign page
+- [ ] If bilingual: both locale sequences complete; wiki paths documented

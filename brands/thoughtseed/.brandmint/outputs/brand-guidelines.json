@@ -1,0 +1,85 @@
+{
+  "skill": "brand-guidelines",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "document_title": "Thoughtseed — Brand Guidelines",
+    "sections": [
+      {
+        "section_number": 1,
+        "title": "Brand at a Glance",
+        "content": "Thoughtseed is a founder-led systems studio. Headline: Digital Wilderness. Tagline: We plant ideas. They grow wild. Promise: One coherent system from requirement to handoff. CTA: Bring the requirement.",
+        "source_outputs": ["brand-foundation", "messaging-framework"]
+      },
+      {
+        "section_number": 2,
+        "title": "Mission & Values",
+        "content": "Mission: Thoughtseed turns complex requirements into coherent systems by aligning user psychology, founder operating logic, interface design, engineering delivery, and structured handoff — inside one delivery loop. Values: coherence over performative specialization, ownership over dependency, competence and taste with restraint, evidence of shipping over polished promises, clarity about tradeoffs.",
+        "source_outputs": ["brand-foundation"]
+      },
+      {
+        "section_number": 3,
+        "title": "Brand Personality",
+        "content": "Archetype: Sage + Creator. Adjectives: clear, grounded, crafted, founder-led, precise. If-a-person: founder-side systems translator. Speaking as an operator who has built systems and lived with ambiguity. Peer to the founder. Short declarative sentences with evidence close to the claim.",
+        "source_outputs": ["brand-foundation", "voice-and-tone"]
+      },
+      {
+        "section_number": 4,
+        "title": "Voice & Tone",
+        "content": "Voice matrix: formality 0.55, enthusiasm 0.4, technicality 0.6, warmth 0.5, authority 0.7. Tone variations: announcement (calm confidence, state what shipped), support (steady, exact, point to next step), education (explicit, structured, low-drama), crisis (serious, grounded, evidence-close), sales (confident, concrete, scoped not pressured). Channel calibration: website hero (spare, atmospheric), proposal (named requirement first), technical docs (low-drama, inheritable), case study (evidence-led), founder note (peer-to-peer).",
+        "source_outputs": ["voice-and-tone"]
+      },
+      {
+        "section_number": 5,
+        "title": "Visual Identity",
+        "content": "Visual concept: Digital Wilderness — disciplined engineering meets organic emergence. Architectural precision against cultivated texture. Materials: matte paper, brushed aluminum, weathered stone, living moss, oxidized copper, screen glow, architectural shadow. Photography: editorial-documentary, real prototyping spaces. Logo: horizontal wordmark + tree mark (canonical, never regenerated). Logo objects: dark metal emblem, metallic 3D, glass, wax seal, holo-vinyl, concrete-botanical installation — art-direction references, never replacement marks.",
+        "source_outputs": ["visual-language", "logo-concept", "color-palette", "typography"]
+      },
+      {
+        "section_number": 6,
+        "title": "Messaging",
+        "content": "Key messages: Digital Wilderness, We plant ideas. They grow wild., Bring the requirement., Founder-led systems studio, One coherent system from requirement to handoff. Value pillars: One integrated delivery loop, Founder-led judgment, Ownership transfer as first-class output, Studio-plus-IP model. Observable outcome: 'Your team runs and extends the system without us after handoff — fewer vendors, owned delivery.'",
+        "source_outputs": ["messaging-framework", "value-proposition"]
+      },
+      {
+        "section_number": 7,
+        "title": "Positioning",
+        "content": "Differentiation: One integrated studio logic (vs fragmented vendors), Founder-led judgment (vs account-managed), Handoff as first-class output (vs closing footnote), Studio-plus-IP (vs pure services). Points of parity: senior design and engineering craft, modern engineering across web/mobile/AI, project framing, professional artifacts. Observable outcome: the team runs and extends the system without us after handoff. Wedge vs integrated boutique product studios (Thoughtbot, Work&Co, Metalab, Postlight): founder-led + requirement-to-handoff ownership + studio-plus-IP, not just one team.",
+        "source_outputs": ["product-positioning", "competitor-analysis"]
+      },
+      {
+        "section_number": 8,
+        "title": "Audience",
+        "content": "Primary: Mira, the System-Carrying Founder. Founder / CTO / innovation lead / product strategist. Lean senior team. Funded startups through scaleups. Pain points: fragmentation across vendors, strategy disconnected from shipped reality, shallow AI proposals, handoff breaks. Goals: solve without becoming translator, one studio that understands, system they can run. Secondary: innovation team / technical operator needing one coherent partner.",
+        "source_outputs": ["buyer-persona"]
+      },
+      {
+        "section_number": 9,
+        "title": "What We Don't Do",
+        "content": "Prohibited terms (never use in public copy): consciousness-aligned, conscious growth, consciousness technology, organic growth operations, disruptive, revolutionary, synergy, best-in-class, future-proof, cutting-edge, guru, healing journey, vibration, AMC, full-service agency. Forbidden visual elements: purple SaaS gradients, stock startup photos, empty futurism, mystical fog, glossy plastic, cartoon icons, baked-in text.",
+        "source_outputs": ["voice-and-tone", "visual-language"]
+      }
+    ],
+    "render_versions": [
+      {"version": "internal", "audience": "operators, future staff, partners", "scope": "Full detail, all variants, troubleshooting"},
+      {"version": "partner", "audience": "external agencies, freelancers, collaborators", "scope": "Voice and visual rules, no internal methodology"},
+      {"version": "public", "audience": "general public, press", "scope": "High-level identity, approved phrases, visual mood"}
+    ],
+    "source_outputs_used": [
+      "brand-foundation.json",
+      "voice-and-tone.json",
+      "messaging-framework.json",
+      "product-positioning.json",
+      "buyer-persona.json",
+      "competitor-analysis.json",
+      "visual-language.json",
+      "color-palette.json",
+      "typography.json",
+      "logo-concept.json"
+    ],
+    "voice_compliance": "PASS — no prohibited terms in any section"
+  }
+}

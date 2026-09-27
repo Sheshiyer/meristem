@@ -1,0 +1,37 @@
+{
+  "skill": "social-content-engine",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "weekly_themes": [
+      {"week": 1, "theme": "Pain Awareness", "focus": "The fragmentation problem, what the founder carries, why it breaks", "post_count": 7},
+      {"week": 2, "theme": "Solution Education", "focus": "The delivery loop, what each stage does, how it holds together", "post_count": 8},
+      {"week": 3, "theme": "Studio Story", "focus": "Who does the work, how decisions are made, what handoff means", "post_count": 8},
+      {"week": 4, "theme": "Call to Engage", "focus": "Bring the requirement, scoped delivery, ownership transfer", "post_count": 7}
+    ],
+    "platform_strategy": {
+      "instagram": {"format": "Reel ideas, carousel posts, single image with caption", "voice": "Visual-first, restrained text", "post_count": 12},
+      "linkedin": {"format": "Long-form text, document posts, articles", "voice": "Professional, evidence-led", "post_count": 10},
+      "x": {"format": "Threads, single tweets, quote cards", "voice": "Concise, declarative, evidence-close", "post_count": 8}
+    },
+    "content_mix": {
+      "value": {"percentage": 40, "topic_examples": ["How the delivery loop holds requirement to handoff", "What 'user behavior treated as part of the system' actually means", "Why handoff is the first thing we think about, not the last"]},
+      "connection": {"percentage": 30, "topic_examples": ["Who does the work at Thoughtseed", "How a founder-led studio is shaped differently from an agency", "What a real prototyping space looks like"]},
+      "engagement": {"percentage": 20, "topic_examples": ["Are you still translating between five vendors?", "What does 'ownership transfer' look like in your last project?", "When did you last hand off a system your team could actually run?"]},
+      "promotion": {"percentage": 10, "topic_examples": ["Bring the requirement", "Start with a System Sprint", "Scoped delivery, real handoff"]}
+    },
+    "calendar": [
+      {"day": 1, "date": "2026-09-01", "platform": "linkedin", "post_type": "long-form text", "category": "value", "hook": "The founder-side systems translator", "body": "Most studios pass your problem between specialists. Strategy, design, engineering, ops — none of them share one model of the problem. The founder ends up as the full-time translator between them. Coherence breaks before launch. Ownership breaks after it. We built Thoughtseed so that does not happen.", "visual_description": "Not applicable", "cta": "Bring the requirement."},
+      {"day": 2, "date": "2026-09-02", "platform": "x", "post_type": "single tweet", "category": "engagement", "hook": "How many vendors does your current project have?", "body": "Strategy. Design. Engineering. Ops. If the answer is more than one, you are doing the integration work for them. One coherent loop, one team, one handoff.", "visual_description": "Not applicable", "cta": ""},
+      {"day": 3, "date": "2026-09-03", "platform": "instagram", "post_type": "carousel", "category": "connection", "hook": "Inside the studio", "body": "This is what a Thoughtseed prototyping space looks like. Working artifacts. Real materials. No stock photos, no glossy plastic. Architectural precision against cultivated texture.", "visual_description": "Carousel: 5 slides showing the prototyping space — brushed aluminum tables, matte paper with hand-drawn requirement sketches, weathered concrete planters with living moss, screen glow from a delivery dashboard, the founder's hand reaching in", "cta": ""},
+      {"day": 4, "date": "2026-09-04", "platform": "linkedin", "post_type": "long-form text", "category": "value", "hook": "What 'handoff' actually means", "body": "A system that works on launch day but breaks at ownership transfer is not finished. Documentation, training, control surfaces, and operational artifacts — the handoff is a first-class output. You inherit a system you can run, extend, and own without depending on the people who built it.", "visual_description": "Not applicable", "cta": "Bring the requirement."},
+      {"day": 5, "date": "2026-09-05", "platform": "x", "post_type": "thread", "category": "value", "hook": "The delivery loop, in four stages", "body": "1. Requirement — we study the problem, the people who will use it, and how you want to run it. 2. System — interface and operating logic designed together. 3. Build — what we framed is what we build. 4. Handoff — you inherit, you run, you own. One team. One loop.", "visual_description": "Not applicable", "cta": ""},
+      {"day": 6, "date": "2026-09-06", "platform": "instagram", "post_type": "reel idea", "category": "engagement", "hook": "Quick question for founders", "body": "When did your last shipped product actually reflect what was on slide 12 of the strategy deck? [Show hands — yes/no reaction split]", "visual_description": "15-second reel: founder looking at a strategy deck, then at a real product, looking confused", "cta": ""},
+      {"day": 7, "date": "2026-09-07", "platform": "linkedin", "post_type": "long-form text", "category": "value", "hook": "Why we don't call ourselves an agency", "body": "An agency optimizes for utilization. A studio optimizes for inheritable systems. The difference matters: one bills hours, the other hands back a system the founder can run without us. The engagement shape changes — scoped delivery, real handoff at the end, not an always-on retainer.", "visual_description": "Not applicable", "cta": "Bring the requirement."}
+    ],
+    "voice_compliance": "PASS — all posts use preferred vocabulary, no prohibited terms"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "skill": "welcome-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-09-27T16:10:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_strategy": {
+      "goals": [
+        "Replace urgency with a calm operating rhythm",
+        "Teach the difference between finite instruments and an infinite purpose",
+        "Establish that consequential actions remain gated and reviewable"
+      ],
+      "timing": "Three messages across the first seven days: immediate orientation, day two operating model, day seven reflection.",
+      "total_emails": 3
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Begin with what must remain alive",
+        "send_timing": "Immediately after joining",
+        "goal": "Orient the steward around continuity rather than activity volume.",
+        "tone": "Calm, precise, companionable",
+        "subject_lines": {
+          "primary": "Welcome to Cambium — start with what must remain alive",
+          "variation_a": "Your first Cambium question",
+          "variation_b": "Before the work, name the living thing"
+        },
+        "preview_text": "A quiet first step for building a business that can keep playing.",
+        "body": "Welcome to Cambium. Before choosing tools, channels, or tactics, name the venture you are stewarding and the conditions it needs to remain viable. Cambium begins there: purpose is the horizon; projects, offers, and campaigns are finite instruments. Your first practice is simple. Write one sentence for what must remain alive, one for the constraint that could end the game, and one for the next reversible move. You do not need to automate everything. You need a system that knows what deserves protection.",
+        "cta": {
+          "text": "Define the living venture",
+          "action": "Open the orientation worksheet and write the purpose, viability bound, and next reversible move."
+        },
+        "ps": "Cambium is an operating concept under active development; consequential actions remain human-approved."
+      },
+      {
+        "number": 2,
+        "name": "The viability cascade",
+        "send_timing": "Two days after joining",
+        "goal": "Teach the recurring observe, bound, act, and learn loop.",
+        "tone": "Grounded and instructional",
+        "subject_lines": {
+          "primary": "A business can move without gambling itself",
+          "variation_a": "The four moves of a viable cycle",
+          "variation_b": "Observe. Bound. Act. Learn."
+        },
+        "preview_text": "A repeatable cycle for making progress without hiding risk.",
+        "body": "Cambium treats every cycle as a viability cascade. First observe the current field: cash, obligations, demand, energy, and unresolved risk. Then set the bounds: what may proceed automatically, what requires review, and what must stop. Choose the smallest useful action inside those bounds. Finally, record what happened so the next cycle begins from evidence instead of narrative. This is not slower decision-making. It is a way to preserve optionality while the venture learns.",
+        "cta": {
+          "text": "Run a viability check",
+          "action": "Review one live initiative against its evidence, downside bound, approval gate, and replay record."
+        },
+        "ps": "A green signal is permission for the stated step only, never a blanket authorization."
+      },
+      {
+        "number": 3,
+        "name": "Make the next season legible",
+        "send_timing": "Seven days after joining",
+        "goal": "Invite a weekly stewardship practice and reinforce reviewable evidence.",
+        "tone": "Reflective, encouraging, unsentimental",
+        "subject_lines": {
+          "primary": "What did the venture learn this week?",
+          "variation_a": "Keep the evidence; release the performance",
+          "variation_b": "A weekly practice for staying in the game"
+        },
+        "preview_text": "Close the week with evidence, constraints, and one honest next move.",
+        "body": "At the end of a cycle, the most useful question is not how busy the system was. Ask what changed in the venture's ability to continue. Which constraint tightened? Which assumption became evidence? Which action should be repeated, revised, or retired? Cambium's promise is not endless output. It is a legible practice for continuing with integrity: finite work in service of an infinite purpose, with every meaningful choice available for review.",
+        "cta": {
+          "text": "Record the weekly replay",
+          "action": "Capture the week's evidence, decisions, held actions, and next review point."
+        },
+        "ps": "Staying in the game includes knowing when to pause, narrow, or close a finite initiative."
+      }
+    ]
+  }
+}

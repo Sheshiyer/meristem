@@ -24,3 +24,14 @@ node_modules/
 **/.brandmint/cache/
 *.stdout
 *.tmp
+.worktrees/
+
+# Host enrollment, routing receipts and generated execution traces stay local.
+.superset/
+.temperance/
+.planning/NEXT-WAVE.json
+.planning/ORCHESTRATION.json
+**/.brandmint/prompts/
+**/.brandmint/.seen-prompts
+.local/*
+!.local/review-ready.md

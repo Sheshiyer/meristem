@@ -1,0 +1,17 @@
+{
+  "skill": "product-positioning",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-08-10T00:00:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "positioning_statement": "For emerging to mid-market Shopify fashion brands, Fitcheck is an AI fit-confidence experience that adds a visual try-on moment to the product page, helping shoppers make a more informed decision without presenting a result as sizing certainty or a promised commercial outcome.",
+    "points_of_difference": [
+      "A product-page confidence layer rather than a claim of perfect fit, conversion lift, or return reduction.",
+      "A guided, bounded rollout path rather than an open-ended custom implementation project.",
+      "An editorial, fashion-aware expression rather than generic AI novelty or competitor imitation.",
+      "Merchant-specific learning as the basis for future measurement rather than pre-claimed outcomes."
+    ]
+  }
+}

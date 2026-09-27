@@ -1,0 +1,165 @@
+{
+  "skill": "buyer-persona",
+  "cluster": "foundation",
+  "wave": 1,
+  "timestamp": "2026-08-10T13:30:00+05:30",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "persona_name": "Merchant Maya",
+    "demographics": {
+      "age": 34,
+      "gender": "female",
+      "education": "B.A. Fashion Merchandising, minor in Entrepreneurship",
+      "income": "$130,000 (founder draw from $800K ARR brand)",
+      "location": "Austin, Texas — urban, creative-class neighborhood",
+      "occupation": "Founder & CEO of a DTC womenswear brand on Shopify"
+    },
+    "psychographics": {
+      "identity": "Maya sees herself as a product-first founder who built her brand from a personal frustration: she couldn't find well-fitting workwear that didn't cost a fortune. Fashion is her craft; Shopify is her storefront; technology is the lever she uses to compete with brands 10x her size. She doesn't call herself a 'techie' but she's scrappy — she'll try any tool that gives her an edge.",
+      "values": [
+        "Customer experience over growth hacking — she'd rather have 1,000 loyal customers than 10,000 one-time visitors",
+        "Profitability before vanity metrics — her brand is bootstrapped and she intends to keep it that way",
+        "Representation matters — her product photography uses diverse models, but she knows it's still a compromise",
+        "Pragmatic adoption — she'll invest in tools that prove ROI within a quarter, not experimental tech"
+      ],
+      "lifestyle": "Maya's week splits between creative direction (mornings, when her eye is fresh), operations (afternoons, when decisions need to be made), and customer support (evenings, because she refuses to outsource the relationship). She's in three Shopify founder Slack groups, listens to DTC podcasts during her morning run, and unwinds by actually wearing her own product — she's her brand's most honest fit tester.",
+      "aspirations": "Maya wants to cross $2M ARR without taking venture capital, build a brand that customers evangelize organically, and prove that independent fashion brands can win on experience — not just price or paid acquisition. In five years, she wants to be the brand that other Shopify founders point to and say, 'They did it right.'",
+      "community": "Shopify entrepreneur Slack communities, DTC Twitter (the indie operator corner, not the VC-growth thread), local Austin retail-founder meetups, and a tight group of three other women founders who trade supplier recommendations and vent about return rates."
+    },
+    "challenges": [
+      {
+        "challenge": "Fit-related returns are quietly eating her margin",
+        "current_solution": "Standard product photography with a size chart and customer reviews mentioning fit",
+        "why_it_fails": "Photos show the garment on a model with one body type; size charts are abstract numbers shoppers ignore; reviews are anecdotal and don't apply to the reader's specific body. Maya knows roughly 30% of her returns are fit-related but suspects the real number is higher because customers don't always specify the reason.",
+        "quote": "'Every time I process a return tagged \"didn't fit,\" I know that's a customer who might not come back — and I have nothing better to offer them than a refund.'"
+      },
+      {
+        "challenge": "Shoppers hesitate at the product page and abandon carts",
+        "current_solution": "High-quality product photography, 360-degree garment videos, detailed size guides",
+        "why_it_fails": "None of these help the shopper answer the question they're actually asking: 'How will this look on me?' The hesitation isn't about image quality — it's about imagination. Maya has invested heavily in product imagery and still sees cart abandonment tied to product pages where fit uncertainty is highest (dresses, fitted tops, pants).",
+        "quote": "'I can show them the dress from every angle, on three different models, and they'll still ask \"but will it look like that on me?\" I get it — I ask the same question when I shop.'"
+      },
+      {
+        "challenge": "Competitors with better tech are raising shopper expectations",
+        "current_solution": "None — Maya hasn't found a Shopify-native virtual try-on tool she trusts",
+        "why_it_fails": "Virtual try-on experiences she has seen are either clunky (poor rendering), expensive (enterprise-priced), or require a development sprint she can't afford. She's aware that larger brands are adopting this tech and worries her product page experience is starting to feel dated by comparison.",
+        "quote": "'I know virtual try-on is the next thing. I just need one that actually works on Shopify, doesn't look like a video game, and doesn't require me to hire a developer to set it up.'"
+      },
+      {
+        "challenge": "Model photography is expensive and still doesn't represent her customers",
+        "current_solution": "Quarterly photoshoots with 3-4 diverse models, supplemented by customer-submitted photos",
+        "why_it_fails": "Even with diverse models, Maya can only show a handful of body types — nowhere near the full range of her actual customers. Each photoshoot costs thousands and ages quickly as inventory turns over. Customer photos help but are inconsistent in quality and coverage.",
+        "quote": "'I spend $4,000 a shoot to show four bodies. My customers have four hundred different bodies. There has to be a better way.'"
+      },
+      {
+        "challenge": "Evaluating new Shopify plugins is a time sink with no guarantee of payoff",
+        "current_solution": "Trial-and-error: install, test, uninstall when it doesn't deliver",
+        "why_it_fails": "Maya has been burned by plugins that overpromise and underdeliver — slow load times, clunky UIs, poor mobile experiences, or setup processes that assume she has a developer on staff. She's skeptical of anything that claims to boost conversion because she's seen too many that didn't.",
+        "quote": "'I've installed and uninstalled more Shopify apps than I can count. At this point, I need someone to show me it works on a store like mine before I'll even click install.'"
+      }
+    ],
+    "emotional_drivers": {
+      "positive": [
+        "Pride — in offering a shopping experience that feels premium and thoughtful, not generic",
+        "Relief — from the constant background anxiety of returns eating into her carefully managed margins",
+        "Confidence — that her product page answers the shopper's real question before they have to abandon the cart to ask it",
+        "Satisfaction — of seeing a customer keep and love a garment they bought with fit confidence",
+        "Admiration from peers — being the Shopify founder who 'cracked the fit problem' in her niche",
+        "Control — over a previously unsolvable part of her ecommerce operation"
+      ],
+      "negative": [
+        "Frustration — at losing customers to a solvable problem she can't fix with photography or copy alone",
+        "Embarrassment — when a customer posts a fit complaint publicly, undermining the brand she's spent years building",
+        "Anxiety — about falling behind competitors who invest in emerging tech while she's stuck optimizing the old playbook",
+        "Regret — over returns that could have been prevented, each one a customer relationship damaged",
+        "Wasted effort — hours spent on photoshoots, size guides, and customer fit consultations that still don't close the gap",
+        "Isolation — feeling like she's solving a technical problem without a technical co-founder or team"
+      ]
+    },
+    "cbbe": {
+      "salience": {
+        "product_category": "AI virtual try-on for Shopify fashion product pages — a fit-confidence layer that sits between the product image and the purchase decision.",
+        "problem_solved": "Fashion shoppers cannot confidently assess garment fit from standard product photography. Maya's customers need to see themselves in the garment before they'll commit to a purchase, and Maya needs a solution that doesn't require a development team or a six-figure budget.",
+        "one_sentence": "Fitcheck lets every shopper see how a garment fits their body before they buy — embedded directly in the Shopify product page, set up in a guided session, not a development project."
+      },
+      "performance": {
+        "points_of_difference": [
+          "Photorealistic AI try-on that renders garments on the shopper's actual body — not a generic avatar or a warped product photo overlay",
+          "Shopify-native integration that doesn't require a developer, custom API work, or theme hacking",
+          "Guided merchant onboarding that explains real steps and sets realistic expectations — no aspirational setup timelines",
+          "Body realism as a product-design principle — representation is built into the rendering pipeline, not added as a marketing afterthought",
+          "Credible fit assessment that communicates what try-on can and cannot prove, rather than fabricating certainty"
+        ],
+        "points_of_parity": [
+          "Works on standard Shopify product pages without requiring a custom storefront",
+          "Reduces fit-related returns by increasing pre-purchase confidence",
+          "Monthly or annual subscription pricing that scales with the merchant's store",
+          "Mobile-responsive — works where Maya's customers actually shop",
+          "Does not require shoppers to create an account or download an app"
+        ],
+        "core_features": [
+          "Photorealistic virtual try-on rendered directly on the product page",
+          "Guided setup session that walks Maya through configuration in hours, not sprints",
+          "Performance measurement so Maya can see merchant-specific outcomes before expanding rollout",
+          "No-model-needed experience — shoppers use their own photo or measurements, not a library of preset models",
+          "Fashion-aware rendering that preserves garment drape, fabric texture, and color accuracy"
+        ]
+      },
+      "imagery": {
+        "associated_brands": [
+          "Warby Parker — pioneered virtual try-on for a category where 'how this looks on me' is the entire purchase decision, and made it feel simple rather than gimmicky",
+          "Shopify — the platform that gave independent brands a credible storefront without enterprise ecommerce costs; Fitcheck extends that promise to the fit experience",
+          "Stitch Fix — proved that technology and fashion can coexist without either one feeling compromised; Fitcheck brings that same data-informed confidence to the self-service shopping moment"
+        ],
+        "usage_locations": [
+          "On the Shopify product page — at the exact moment of the purchase decision, between 'I like this' and 'I'll buy this'",
+          "On mobile — where the majority of Maya's customers browse and where fit uncertainty is highest because images are smaller",
+          "During the consideration phase — when a shopper has browsed, liked a garment, and is deciding whether to add it to cart or keep scrolling"
+        ],
+        "usage_methods": [
+          "Shopper uploads a front-facing photo or provides basic body measurements — one-time setup, reused across all garments in Maya's store",
+          "Try-on renders appear inline on the product page alongside standard product photography — not in a separate tool or popup",
+          "Merchant configures garment mapping once during guided setup — Fitcheck handles the rendering pipeline from there"
+        ]
+      },
+      "judgments": {
+        "positive": [
+          "Credible — the try-on render is good enough to make a yes/no fit decision, which is all Maya's shoppers actually need",
+          "Easy to install — guided setup means Maya can launch without hiring or pausing her product roadmap",
+          "Modern — photorealistic rendering signals that Maya's brand invests in the shopping experience, not just the product",
+          "Honest — Fitcheck's communication about what the try-on can and cannot prove builds trust rather than overpromising"
+        ],
+        "concerns": [
+          "Accuracy risk — Maya will worry that an inaccurate render could create a worse experience than no render at all, eroding trust instead of building it",
+          "Page performance — every Shopify merchant fears a plugin that slows down their product page and hurts their Core Web Vitals and SEO",
+          "ROI uncertainty — at a subscription price point, Maya needs to see evidence that the tool is reducing returns or increasing conversion before she'll commit beyond a trial",
+          "Shopper adoption — Maya will wonder whether her customers will actually use the try-on feature or ignore it like they ignore size charts"
+        ],
+        "credibility": "Fitcheck earns credibility through evidence, not claims. The brand does not publish conversion-rate promises without merchant-specific proof. Instead, it offers a guided setup with measurable outcomes — Maya sees her own data before deciding to expand. This mirrors how Maya runs her own business: trust is built on results, not pitch decks. The brand's commitment to body realism and pragmatic precision signals that Fitcheck understands fashion ecommerce well enough to know what a visual try-on cannot prove — and that honesty is itself a credibility signal."
+      },
+      "feelings": {
+        "desired_feelings": [
+          "Confident — that she has given her shoppers the best possible tool to make a purchase decision",
+          "Relieved — that the fit-return problem finally has a practical solution she can implement without a dev team",
+          "Smart — that she adopted a technology her competitors haven't yet, giving her brand a genuine edge",
+          "In control — of a part of her ecommerce operation that previously felt like an unsolvable cost of doing business",
+          "Proud — that her product page experience now reflects the quality of her garments and the thoughtfulness of her brand"
+        ],
+        "voice": "A confident guide who explains the 'why' behind recommendations without jargon. The Sage archetype dominates — Fitcheck speaks with earned authority about garment fit — but the Magician surfaces in moments of delight when a shopper first sees themselves in a garment. The voice respects Maya's business instincts, never condescends to her technical questions, and matches her own pragmatic, evidence-backed communication style.",
+        "tone": "Direct and evidence-backed, but warm. Fashion-aware without being trendy. Precise about what Fitcheck can and cannot prove — no aspirational language, no vague promises. The tone says: 'We understand this problem deeply, we built a real solution, and we'll be honest with you about what it does.' Enthusiasm is earned, not performed — Fitcheck gets excited about Maya's results, not its own features."
+      },
+      "resonance": {
+        "why_missed": "If Fitcheck disappeared, Maya would lose the only Shopify-native tool that gives her shoppers credible, photorealistic fit preview without requiring a development team or an enterprise budget. She'd be back to standard product photography, size charts that shoppers ignore, and fit-related returns she can't prevent — knowing a better solution existed and is now gone. More than the tool, she'd miss the confidence that her product page experience was genuinely competitive with brands 10x her size.",
+        "mission_alignment": "Fitcheck's mission — empowering shoppers to confidently see themselves in every garment — aligns directly with Maya's mission of building a brand where every customer feels seen and valued. When Maya reduces fit uncertainty, she's not just reducing returns; she's delivering on the promise she made when she started her brand: that great-fitting clothes should be accessible, and shopping for them shouldn't require imagination or guesswork.",
+        "core_values": [
+          "Fit truth over fit guessing — Maya built her brand on honest garment construction and real fit; Fitcheck extends that honesty to the digital shopping experience",
+          "Merchant-first speed — Maya doesn't have a development team or a six-month implementation runway; Fitcheck's guided setup respects her timeline",
+          "Body realism, not body idealism — Maya's customer base spans far more body types than any photoshoot can capture; Fitcheck's rendering pipeline treats that diversity as a product requirement",
+          "Pragmatic precision — Maya trusts tools that make evidence-backed claims over tools that make aspirational promises; Fitcheck's communication style mirrors her own decision-making"
+        ],
+        "why_choose_us": "Maya will choose Fitcheck because it's the first virtual try-on tool that speaks her language — it doesn't pitch her like an enterprise SaaS buyer or confuse her with technical jargon. It shows up as a guided setup, not a development project; it measures outcomes she cares about (returns, confidence, conversion) rather than vanity metrics; it's honest about what the try-on can and cannot prove, which paradoxically builds more trust than a tool that overpromises. Fitcheck earns Maya's loyalty the same way she earns her customers' loyalty: by delivering a real, measurable improvement to an experience that previously felt broken."
+      }
+    }
+  }
+}

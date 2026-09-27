@@ -2,75 +2,52 @@
   "skill": "product-photography",
   "cluster": "photography",
   "wave": 4,
-  "timestamp": "2026-06-08T06:00:00Z",
+  "timestamp": "2026-08-22T07:30:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "art_direction": {
-      "theme": "Digital Wilderness",
-      "summary": "Thoughtseed's 'product' is a delivered system, so product photography treats the system as a physical and on-screen artifact rather than a retail object on white. One frame is a premium flat-lay of documentation and control-surface sheets — the inheritable handoff — bound and arranged on weathered stone with a connecting teal signal line. The other is a close on-device shot of an abstract systems interface. Both use brushed metal, architectural shadow, shallow depth of field, and a single orange status accent. No pure-white e-commerce backgrounds; depth comes from material and contrast, not gloss.",
-      "model": "gemini-3-pro-image-preview",
-      "lighting": "Studio-controlled directional light with architectural shadow; shallow depth of field; clean contrast, no flat even fill, no glossy hotspots.",
-      "color_treatment": "Deep blue-black and cool gray base; teal (#00897B) signal lines connecting elements; a single Energetic Orange (#F57C00) status point.",
-      "composition": "Premium flat-lay (4:5) and close product crop (4:3); architectural shadow; intentional negative space; one signal moment per frame."
-    },
-    "product_description": "The Thoughtseed delivered system rendered as an artifact: handoff documentation and control surfaces as physical sheets, and the working systems interface on a device screen. This represents the brand promise — one coherent system from requirement to handoff — made tangible, not a conventional retail product.",
-    "key_features_to_highlight": [
-      "Handoff as a first-class, physical, inheritable artifact (documentation + control surfaces)",
-      "Systems thinking made visible (geometric diagrams, node maps printed as abstract marks)",
-      "On-screen systems interface: teal signal lines, node graph, single orange status point",
-      "Material truth — brushed metal, weathered stone, architectural shadow over gloss"
-    ],
-    "shot_types": [
-      { "type": "Flat-lay / artifact", "purpose": "Show the delivered system as a physical, inheritable handoff", "background": "weathered stone", "lighting": "directional studio light, architectural shadow" },
-      { "type": "Close product / screen", "purpose": "Show the working systems interface as the on-screen product surface", "background": "brushed-metal stand, dark field", "lighting": "controlled, shallow depth of field" }
-    ],
-    "assets": [
+    "shots": [
       {
-        "id": "product-01-system-artifacts",
-        "path": "./generated/product-01-system-artifacts.png",
-        "aspect_ratio": "4:5",
-        "model": "gemini-3-pro-image-preview",
-        "source": "generated",
-        "user_provided": false,
-        "type": "flat-lay / artifact",
-        "angle": "top-down flat-lay",
-        "background": "weathered stone",
-        "feature_focus": "Handoff documentation and control-surface sheets as a delivered physical system",
-        "description": "Premium flat-lay of a delivered system as a physical artifact: a stack of matte-paper documentation and control-surface sheets bound with a brushed-metal clip, faint geometric diagrams and node maps printed as abstract marks, arranged on weathered stone with a thin teal signal line connecting the pieces.",
-        "prompt": "A premium flat-lay of a delivered system as a physical artifact: a stack of matte-paper documentation and control-surface sheets bound with a brushed-metal clip, faint geometric diagrams and node maps printed as abstract marks, arranged on weathered stone with a thin teal signal line connecting the pieces.",
-        "priority": "high",
-        "usage": ["work-section", "handoff-section", "proof", "social", "deck"]
+        "id": "product-01-system-artifacts-knolling",
+        "type": "knolling",
+        "concept": "System artifacts arranged precisely on brushed aluminum surface",
+        "prompt_used": "Top-down editorial shot on brushed aluminum surface showing: notebook with hand-drawn requirement sketches, prototype circuit board with teal indicator lights, matte paper card with Thoughtseed tree mark embossed, small sprig of living moss for organic contrast. Knolling composition — every item carefully placed. Deep Quantum Blue notebook, Teal accents, Mindful Gray tones.",
+        "generated_path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/product-01-system-artifacts-knolling.jpg",
+        "background": "brushed-aluminum",
+        "lighting": "soft-overhead-studio",
+        "aspect_ratio": "3:4",
+        "model": "gpt-image-2"
       },
       {
-        "id": "product-02-screen-surface",
-        "path": "./generated/product-02-screen-surface.png",
-        "aspect_ratio": "4:3",
-        "model": "gemini-3-pro-image-preview",
-        "source": "generated",
-        "user_provided": false,
-        "type": "close product / screen",
-        "angle": "close three-quarter",
-        "background": "brushed-metal stand on a dark field",
-        "feature_focus": "Working systems interface — teal signal lines, node graph, one orange status point",
-        "description": "Close premium product shot of a single dark device screen on a brushed-metal stand, displaying an abstract systems interface of teal signal lines, a node graph and one orange status point on a deep blue-black UI, with architectural shadow and shallow depth of field.",
-        "prompt": "A close premium product shot of a single dark device screen on a brushed-metal stand, displaying an abstract systems interface of teal signal lines, a node graph and one orange status point on a deep blue-black UI, with architectural shadow and shallow depth of field.",
-        "priority": "high",
-        "usage": ["product-section", "interface-systems-module", "proof", "deck"]
+        "id": "product-02-original-system-artifacts",
+        "type": "detail",
+        "concept": "System artifacts close-up",
+        "prompt_used": "Original 2026-06-08 generation",
+        "generated_path": "../meristem/brands/thoughtseed/generated/product-01-system-artifacts.png",
+        "background": "editorial",
+        "lighting": "studio",
+        "aspect_ratio": "16:9",
+        "note": "Original 2026-06-08 asset, retained for provenance"
+      },
+      {
+        "id": "product-03-original-screen-surface",
+        "type": "detail",
+        "concept": "Screen surface",
+        "prompt_used": "Original 2026-06-08 generation",
+        "generated_path": "../meristem/brands/thoughtseed/generated/product-02-screen-surface.png",
+        "background": "editorial",
+        "lighting": "studio",
+        "aspect_ratio": "16:9",
+        "note": "Original 2026-06-08 asset, retained for provenance"
       }
     ],
-    "quality_gates": {
-      "hero_shot_defined": "product-01-system-artifacts is the primary artifact frame.",
-      "angles_covered": "Top-down flat-lay and close three-quarter screen crop.",
-      "feature_detail_shots": "Screen surface shot serves as the interface detail.",
-      "background_treatment": "Material-truth backgrounds (weathered stone, brushed metal, dark field) instead of pure-white e-commerce — intentional per Digital Wilderness direction.",
-      "lighting_direction_included": true,
-      "no_glossy_plastic": true,
-      "no_baked_text_or_logos": true,
-      "forbidden_visuals_avoided": true,
-      "all_images_generated": true,
-      "prompts_documented": true
+    "product_styling": {
+      "surface_material": "Brushed aluminum",
+      "arrangement": "Knolling — precise, intentional, premium",
+      "color_palette": "#1A237E / #00897B / #37474F / #B8E986",
+      "lighting": "Soft overhead studio light with directional warm tone"
     },
-    "generation_summary": { "total_shots": 2, "generated": 2, "pending": 0, "model": "gemini-3-pro-image-preview" }
+    "color_palette_compliance": "PASS",
+    "visual_language_compliance": "PASS"
   }
 }

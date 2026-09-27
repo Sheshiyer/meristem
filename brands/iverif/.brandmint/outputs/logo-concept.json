@@ -1,0 +1,48 @@
+{
+  "skill": "logo-concept",
+  "cluster": "identity",
+  "timestamp": "2026-09-11T09:44:04Z",
+  "status": "complete",
+  "version": "2.0",
+  "wave": 3,
+  "data": {
+    "evidence_scope": "F3 user assets + ASSET-ORIGINS.md + v1 logo guidelines. Do not regenerate unless founder requests.",
+    "concept_direction": {
+      "name": "Signal mark",
+      "idea": "Compact validation signal paired with lowercase wordmark iverif — precision instrument, not consumer badge.",
+      "archetype_fit": "Sage/architect — geometric clarity, no ornamental flourishes"
+    },
+    "approved_assets": {
+      "icon": "brands/iverif/assets/logo-icon.png",
+      "og_image": "brands/iverif/assets/og-image.png",
+      "hero_screenshot": "brands/iverif/assets/screenshot-hero.png",
+      "origins": "Copied from iverif/website-assets corpus; product-owned — not newly generated campaign art",
+      "rule": "Reuse recorded assets; do not regenerate in Wave 3–5 unless founder requests replacement (validation.require_user_assets)."
+    },
+    "usage_specs": {
+      "placement": "Top-left or centered; always on white or light stone background",
+      "clear_space": "Minimum 1x icon height on all sides",
+      "variations": [
+        "Full wordmark with icon",
+        "Icon only (favicon, app icon)",
+        "White version for dark (Regulatory Stone) backgrounds"
+      ],
+      "constraints": [
+        "Never distort",
+        "Never add shadows, glows, gradients",
+        "Never place on busy photographic backgrounds",
+        "Always maintain contrast"
+      ],
+      "prohibitions": [
+        "Do not imitate Hellio/Effy consumer marks",
+        "Do not invent PNCEE or ministry co-branding",
+        "Do not treat asset presence as trademark clearance (ASSET-ORIGINS note)"
+      ]
+    },
+    "domains_lockup": {
+      "brand_site": "iverif.fr",
+      "wiki_product": "iverif.io",
+      "wordmark": "iverif (lowercase as brand name lock)"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "skill": "buyer-persona", "cluster": "foundation", "wave": 1,
+  "timestamp": "2026-09-27T13:58:00Z", "status": "complete", "version": "1.0.0",
+  "sources": ["research/wave-1-market.md (Pancake, Indie Hackers, Taskade, SoloStack)"],
+  "data": {
+    "persona_name": "Maya, the Tired Steward",
+    "demographics": {
+      "age": 36, "gender": null,
+      "education": "BSc Computer Science; self-taught marketer",
+      "income": "USD 60k–110k blended (contract work + a small product doing ~USD 3k MRR)",
+      "location": "Lisbon, remote-first; customers in US/EU",
+      "occupation": "Solo technical founder of a niche B2B SaaS, plus one side venture"
+    },
+    "psychographics": {
+      "identity": "A builder who wants to be a steward — sees the business as a long game, not a lottery ticket",
+      "values": ["independence", "craft", "honesty with customers", "sustainable pace"],
+      "lifestyle": "Works in bursts; travels 6–8 weeks a year; has already had one burnout that stalled the product for a quarter",
+      "aspirations": "A calm, durable business that keeps compounding when she is offline, and room to start a second venture without abandoning the first",
+      "community": "Indie Hackers, a founder Discord, X build-in-public circles, a local coworking guild"
+    },
+    "challenges": [
+      {"challenge": "The company stops when she stops", "current_solution": "Zapier chains, scheduled posts, a VA 5 hours a week", "why_it_fails": "Automations run blind — nothing notices when the business drifts off-mission or runway shrinks", "quote": "Every time I take a week off, the queue backs up and I come back to a smaller business."},
+      {"challenge": "Autonomous agents fail silently", "current_solution": "Tried an 'AI runs your company' tool for a month", "why_it_fails": "It reported tasks complete that never shipped and emailed prospects the wrong price", "quote": "I don't need more autonomy. I need to know when it's wrong."},
+      {"challenge": "Throughput without traction", "current_solution": "Agent posting 20 times a day on X", "why_it_fails": "Optimizes activity, not viability — five weeks, net zero growth, real credits burned", "quote": "It was very busy doing nothing."},
+      {"challenge": "Brand and mission drift", "current_solution": "A Notion brand doc nobody reads, including the agents", "why_it_fails": "The brand is write-once; nothing feeds learnings back into it", "quote": "The product I'm selling today isn't the one my landing page describes."}
+    ],
+    "emotional_drivers": {
+      "positive": ["relief that the business is still alive tomorrow", "pride in a coherent, honest brand", "trust earned from a legible record", "freedom to rest or start something new"],
+      "negative": ["dread of coming back to a dead business", "shame of an agent misrepresenting her to customers", "anxiety about runway she can't see", "exhaustion from being the only heartbeat"]
+    },
+    "cbbe": {
+      "salience": {"product_category": "Venture operator / autonomous business steward", "problem_solved": "Keeping a small business alive, on-mission and advancing when the founder isn't driving", "one_sentence": "Cambium is the patient operator above your AI agents that keeps your business in the game."},
+      "performance": {
+        "points_of_difference": ["Viability bounds (solvency, mission coherence, legal/ethical) instead of throughput targets", "Fail-closed gate on every irreversible or paid move", "Setpoint moves only on real customer evidence, capped per wake", "Replayable decision log with honest status labels"],
+        "points_of_parity": ["Orchestrates agents for build, marketing and operations", "Always-on, event-driven", "Affordable for a solo founder (Genesis free)"],
+        "core_features": ["Wake loop", "Viability monitor", "Vision → mission → goal cascade controller", "Founder and ICP NPC simulations (propose, never commit)", "Approval gate", "Replay log"]
+      },
+      "imagery": {"associated_brands": ["Linear (calm craft)", "Patagonia (long-game values)", "Are.na (thoughtful tooling)", "Teenage Engineering (instrument aesthetic)"], "usage_locations": ["laptop at a café between trips", "phone via Telegram mini-app while travelling", "Sunday review ritual at home"], "usage_methods": ["glances at viability margin", "approves or declines gated moves", "replays why a move happened", "adds a new garden (venture)"]},
+      "judgments": {"positive": ["It tells me when it's unsure", "Nothing expensive happens without me", "I can see why"], "concerns": ["Is it just another autopilot?", "Will the math language be over my head?", "Cost creep from model usage"], "credibility": "Shows its work: labelled claims, replay log, fail-closed defaults, and a free Genesis tier to try before trusting"},
+      "feelings": {"desired_feelings": ["steadiness", "relief", "trust", "quiet pride"], "voice": "Calm, precise, warm steward", "tone": "Honest and unhurried; names uncertainty; never hypes or pressures"},
+      "resonance": {"why_missed": "Every competitor sells how much the agent does; none sell what it keeps alive", "mission_alignment": "She wants a business she can tend for years, not a launch that burns out", "core_values": ["stay in the game", "fail closed", "reality is the judge", "show the work"], "why_choose_us": "The only operator built for the infinite game: it protects margin to survival first and treats revenue as a regulated output, so she can step away without dread"}
+    },
+    "secondary_persona": {
+      "persona_name": "Dev, the Portfolio Gardener",
+      "summary": "Runs a 6-person micro-studio with 9 live client and owned brands; each drifts off-voice once the launch team moves on; wants one operator across many gardens with per-brand memory and a portfolio viability view."
+    }
+  }
+}

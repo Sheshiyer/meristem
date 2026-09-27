@@ -1,0 +1,72 @@
+{
+  "brand": "iverif",
+  "slug": "iverif",
+  "generated_at": "2026-09-11T16:00:00Z",
+  "version": "1.0.0",
+  "wave": 7,
+  "user_provided_assets": [
+    {
+      "id": "logo-icon",
+      "path": "./assets/logo-icon.png",
+      "relative_path": "assets/logo-icon.png",
+      "type": "logo-icon",
+      "role": "icon",
+      "source": "user_provided",
+      "origin": "iverif/website-assets",
+      "deterministic": true,
+      "required": true,
+      "sha256": "ab24a609fac98e9bc9bfde74b6ce10a410384ef8869f17a01d8181546e0157fc",
+      "label": "Logo / app icon",
+      "exists": true
+    },
+    {
+      "id": "og-image",
+      "path": "./assets/og-image.png",
+      "relative_path": "assets/og-image.png",
+      "type": "og-image",
+      "role": "social",
+      "source": "user_provided",
+      "origin": "iverif/website-assets",
+      "deterministic": true,
+      "required": false,
+      "sha256": "1e51bc67406d4ed644ac3780f8e9968e9788227057526c649f982dcd657aca69",
+      "label": "Open Graph social preview",
+      "exists": true
+    },
+    {
+      "id": "screenshot-hero",
+      "path": "./assets/screenshot-hero.png",
+      "relative_path": "assets/screenshot-hero.png",
+      "type": "screenshot",
+      "role": "hero",
+      "source": "user_provided",
+      "origin": "iverif/website-assets",
+      "deterministic": true,
+      "required": false,
+      "sha256": "ffb51604ea97792ca4757565bccc2a27a5b82e0f23ad76efc878e0156be090fc",
+      "label": "Product / hero screenshot",
+      "exists": true
+    }
+  ],
+  "generated_assets": [],
+  "counts": {
+    "user_provided": 3,
+    "generated": 0,
+    "total": 3
+  },
+  "provenance": {
+    "note": "Product-owned website-ready assets copied from iverif/website-assets for Meristem Phase 1. Not newly generated campaign deliverables.",
+    "reference": "./assets/ASSET-ORIGINS.md",
+    "domains": {
+      "brand": "iverif.fr",
+      "wiki": "iverif.io"
+    }
+  },
+  "validation": {
+    "all_paths_exist": true,
+    "missing_paths": [],
+    "user_count": 3,
+    "generated_count": 0,
+    "checked_at": "2026-09-11T16:00:00Z"
+  }
+}

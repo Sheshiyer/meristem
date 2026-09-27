@@ -1,0 +1,33 @@
+{
+  "skill": "community-manager-brain",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-09-27T16:15:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "engagement_tiers": [
+      {"tier": 1, "audience": "Steward asking about the operating concept", "response_time": "Within one working day", "voice": "Direct and grounded", "template": "Thank you for naming the real constraint. Cambium begins with what the venture must preserve, then makes the next bounded action reviewable. Which part of the cycle are you testing?"},
+      {"tier": 2, "audience": "Skeptical founder or practitioner", "response_time": "Within one working day", "voice": "Evidence-led and non-defensive", "template": "That is a fair challenge. Cambium is an operating concept under active development, not proof of autonomous business operation. The claim we can support here is [specific claim]; [unsupported claim] remains unproven."},
+      {"tier": 3, "audience": "Safety, legal, financial, or account-specific request", "response_time": "Acknowledge promptly; escalate before substantive reply", "voice": "Clear and bounded", "template": "This needs a qualified human review. We have recorded the question and will not infer permission or offer account-specific guidance in this channel."}
+    ],
+    "engagement_tactics": [
+      {"tactic": "Constraint clinic", "purpose": "Help stewards turn vague pressure into an observable viability bound", "frequency": "Weekly"},
+      {"tactic": "Decision replay", "purpose": "Examine one choice through evidence, authority, action, and outcome", "frequency": "Twice monthly"},
+      {"tactic": "Finite instrument retirement", "purpose": "Normalize pausing or closing work that no longer serves the purpose", "frequency": "Monthly"}
+    ],
+    "voice_discipline": "PASS — uses preferred vocabulary, avoids autonomy theatre, guaranteed outcomes, and urgency pressure",
+    "response_do": [
+      "Name the user's actual constraint before proposing a framework",
+      "Separate verified capability from concept or aspiration",
+      "Invite a small reversible next step",
+      "Escalate consequential, personal, financial, or legal cases"
+    ],
+    "response_dont": [
+      "Claim that Cambium runs or saves a business autonomously",
+      "Treat engagement as consent for account or provider changes",
+      "Use fear of failure as a conversion tactic",
+      "Invent customer outcomes, availability, or launch dates"
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Fitcheck",
+  "children": [
+    {
+      "name": "Product Definition",
+      "children": [
+        {
+          "name": "AI Fit Confidence for Shopify"
+        },
+        {
+          "name": "Visual try-on experience"
+        },
+        {
+          "name": "Fashion product-page layer"
+        }
+      ]
+    },
+    {
+      "name": "Target Audience",
+      "children": [
+        {
+          "name": "Shopify fashion merchants"
+        },
+        {
+          "name": "Brands seeking considered experiences"
+        },
+        {
+          "name": "Online fashion shoppers"
+        }
+      ]
+    },
+    {
+      "name": "Pricing Plans",
+      "children": [
+        {
+          "name": "Monthly: $99 USD"
+        },
+        {
+          "name": "Yearly: $799 USD"
+        }
+      ]
+    },
+    {
+      "name": "Key Benefits",
+      "children": [
+        {
+          "name": "For Shoppers",
+          "children": [
+            {
+              "name": "Personal visual starting point"
+            },
+            {
+              "name": "Garment exploration"
+            },
+            {
+              "name": "Interactive try-on moment"
+            }
+          ]
+        },
+        {
+          "name": "For Merchants",
+          "children": [
+            {
+              "name": "Fashion-aware presentation"
+            },
+            {
+              "name": "Selected product focus"
+            },
+            {
+              "name": "Storefront integration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Product Boundaries",
+      "children": [
+        {
+          "name": "No fit guarantee"
+        },
+        {
+          "name": "Complements existing product info"
+        },
+        {
+          "name": "Does not replace shopper judgment"
+        },
+        {
+          "name": "No commercial result promises"
+        }
+      ]
+    },
+    {
+      "name": "Brand Voice",
+      "children": [
+        {
+          "name": "Precise"
+        },
+        {
+          "name": "Fashion-aware"
+        },
+        {
+          "name": "Warm"
+        },
+        {
+          "name": "Plain product language"
+        }
+      ]
+    }
+  ]
+}
