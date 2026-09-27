@@ -11,7 +11,7 @@ Two preserved branches contain overlapping brand packages and shared coordinator
 
 ## Vision
 
-A reviewable local integration that preserves source history and makes completion depend on evidence. Fresh generation and remote release remain explicit future actions.
+A reviewed source integration that preserves recovery history and makes completion depend on evidence. Fresh generation and public brand release remain separate future actions.
 
 ## Goal
 
@@ -27,11 +27,11 @@ Integrate both checkpoint histories, repair coordinator completion semantics, re
 
 ## Scope and constraints
 
-Only this isolated Meristem checkout is mutable. No live generation, NotebookLM publication, delivery, deployment, organ activation or remote Git operation is in scope. The native parent may coordinate Git and planning; substantial implementation routes through the configured Build rail. The earlier August enrollment ISA is superseded for this reconciliation; no claim is made about Superset registration or current host runtime readiness.
+Implementation was isolated from the primary checkout. The parent completed authorized source release through reviewed PR #2; no live generation, NotebookLM publication, delivery, deployment or organ activation is included. Substantial implementation used the Build rail, with provider attribution explicitly unresolved. The earlier August enrollment ISA is superseded for this reconciliation; no claim is made about Superset registration or current host runtime readiness.
 
 ## Criteria
 
-- [x] ISC-1: Both checkpoint tips are ancestors of this integration branch; identical brand inputs are retained once.
+- [x] ISC-1: Both checkpoint tips are ancestors of preserved `codex/reconcile-meristem-20260927`; main contains its reviewed curated tree and identical brand inputs are retained once.
 - [x] ISC-2: Required missing/empty clusters and tracer/later failures return failure and cannot mark a wave complete.
 - [x] ISC-3: Only existing valid JSON with matching skill and complete status can complete a spoke; skipped/partial output fails.
 - [x] ISC-4: Retry completion is idempotent, stale failure clears on success, and failed reruns remove obsolete completion.
@@ -40,7 +40,7 @@ Only this isolated Meristem checkout is mutable. No live generation, NotebookLM 
 - [x] ISC-7: Historical Cambium generation is distinct from current reviewed system/visual authority.
 - [x] ISC-8: All 173 current brand JSON files parse; Cambium 12, Fitcheck 4 and Iverif 3 asset hashes match; external Thoughtseed paths are explicitly qualified.
 - [x] ISC-9: Shell syntax and changed-file whitespace checks pass; exact tests/risks are recorded for review.
-- [x] ISC-10: No remote Git release, provider generation, publication, campaign or deployment is performed by this task.
+- [x] ISC-10: Remote source release uses a reviewed, pinned-head PR; provider generation, publication, campaign and deployment remain outside this task.
 
 ## Test strategy
 
@@ -59,7 +59,11 @@ Source reconciliation precedes runner verification. Historical asset packages an
 
 ## Decisions
 
-Preserve the original brand packages without silently rewriting source claims. Record qualifications in new provenance/readiness documents. Keep Iverif current-generation prerequisites missing until actually supplied and reviewed.
+Preserve the original brand packages without silently rewriting source claims. Record qualifications in new provenance/readiness documents. Iverif seed material exists; current claim approval, evidence refresh and wiki application packaging remain incomplete.
+
+## Changelog
+
+2026-09-27: Source release completed through PR #2 (`05b4853`). The prepared and merged trees match exactly; primary main was clean and synchronized. Earlier worktree-only release holds are closed, while brand/publication/runtime gates remain open.
 
 ## Verification
 
