@@ -12,9 +12,9 @@ A wave completes only when every required cluster and spoke completes with valid
 
 Preserve older generated Cambium artifacts explicitly as historical exploration. Keep Iverif's draft channel-plan status and unresolved claim evidence visible, requiring fresh reviewed sources before campaign readiness. Treat Thoughtseed host asset references as an archival portability limitation.
 
-## 4. Review and merge — next concrete external gate
+## 4. Review and merge — complete
 
-The parent integration workflow reviews commits, secret scan, exact-head checks and release scope. Push/PR/main merge are not performed by this worktree task. Asset size is material: the earlier Cambium package includes ~49 MiB audio and ~14–15 MiB decks; review repository storage policy without deleting the preserved originals.
+PR #2 merged as `05b4853` on 2026-09-27 after source review, a clean secret scan and exact-head checks. Main was fast-forwarded and its tree matched the prepared candidate. Asset size remains material: the earlier Cambium package includes ~49 MiB audio and ~14–15 MiB decks; future storage-policy work must preserve originals.
 
 ## 5. Future brand production — not started or authorized here
 
