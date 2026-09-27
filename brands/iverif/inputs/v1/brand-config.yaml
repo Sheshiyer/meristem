@@ -1,0 +1,233 @@
+_brandmint:
+  document:
+    kind: brand-config
+    contract_version: '1'
+    state: approved
+  lineage:
+    source_type: product-md
+    source_uri: https://iverif.fr/
+    created_at: '2026-06-03T21:00:00+00:00'
+    updated_at: '2026-06-03T21:00:00+00:00'
+  review:
+    pending_fields: []
+    edited_fields: []
+    fields: {}
+  approval:
+    approved_by: opencode-agent
+    approved_at: '2026-06-03T21:00:00+00:00'
+    approval_note: Auto-approved based on website extraction
+    fingerprint_algorithm: sha256
+    fingerprint_scope: semantic-config-v1
+    fingerprint_value: auto-approved-iverif-io-20260603
+execution_context:
+  budget_tier: standard
+  launch_channel: saas
+  maturity_stage: growth
+  depth_level: comprehensive
+  tone: conversion-focused
+  quality_bar: premium
+brand:
+  name: iverif.io
+  tagline: AI document validation for energy subsidy operators
+  archetype: The Architect
+  voice: Precise, authoritative, quietly confident. Technical depth delivered with
+    clarity. No hype — just proven results.
+  domain: RegTech SaaS / EU Energy Subsidies
+  domain_tags:
+  - saas
+  - b2b
+  - enterprise
+  - regtech
+theme:
+  name: Signal in the System
+  description: A visual system built on precision, clarity, and trust. Where regulatory
+    complexity meets AI elegance.
+  metaphor: A high-precision instrument panel — every signal clear, every threshold
+    visible, every action traceable.
+  mood_keywords:
+  - precision
+  - clarity
+  - trust
+  - technical elegance
+  - regulatory confidence
+  - system intelligence
+  - structured
+  - verifiable
+palette:
+  primary:
+    name: Signal Green
+    hex: '#2EE600'
+    role: 60% — CTAs, validation indicators, primary actions, alive elements
+  secondary:
+    name: Regulatory Stone
+    hex: '#1C1917'
+    role: 30% — text, anchoring surfaces, authority
+  accent:
+    name: Clean White
+    hex: '#FAFAF9'
+    role: 10% — backgrounds, breathing room, contrast
+  support:
+    name: Medium Stone
+    hex: '#78716C'
+    role: Borders, metadata, secondary text
+  signal:
+    name: Alert Amber
+    hex: '#F59E0B'
+    role: Warning states, attention flags, review needed
+typography:
+  header:
+    font: Geist Sans
+    weights:
+    - Light
+    - Regular
+    - SemiBold
+    display_weight: Light
+    emphasis_weight: SemiBold
+    case: title case
+  body:
+    font: Geist Sans
+    weights:
+    - Regular
+    - Medium
+  data:
+    font: Geist Mono
+    weights:
+    - Regular
+    - Medium
+materials:
+- brushed aluminum
+- matte black carbon fiber
+- green LED indicator glass
+- fine-grain stone paper
+- surgical steel
+- polished concrete
+- circuit board traces
+- frosted acrylic
+photography:
+  style: High-contrast editorial, clean lines, documentary precision
+  environment: Modern office, regulatory desk, document workflow
+  constraint: No generic stock photo faces. No gradient backgrounds. No cartoonish
+    elements.
+  camera: Sony A7 IV, 35mm f/1.4, neutral color profile
+illustration:
+  style: Technical diagram meets editorial illustration — precise linework with subtle
+    depth
+  references: Dieter Rams product photography meets Swiss International Style information
+    graphics
+sigil:
+  description: A document icon with an integrated validation checkmark, formed by
+    converging lines suggesting both paper and digital signal
+  components:
+  - document form
+  - validation signal
+  - digital precision
+audience:
+  persona_name: The Compliance Operator
+  aesthetic_affinity: Clean, functional, no-frills professionalism. Values precision
+    over decoration.
+  aspirational_brands: Stripe, Notion, Vercel, Linear
+  emotional_register: Confident control, regulatory peace of mind, operational pride
+competitive_context:
+  avoid_visual_patterns: Generic blue corporate SaaS, playful fintech colors, overly
+    complex dashboard mockups
+  differentiate_from: Legacy document management (DocuSign, SharePoint), generic OCR
+    tools
+  occupy_territory: Where regulatory precision meets AI intelligence — the intersection
+    of compliance and automation
+positioning:
+  statement: The only AI validation platform built specifically for EU energy subsidy
+    operators, with pre-configured programme rules and managed onboarding.
+  hero_headline: Stop losing subsidy claims to avoidable document errors.
+  identity_pillars:
+  - Regulatory precision
+  - AI intelligence
+  - Managed expertise
+  - EU-native compliance
+products:
+  hero:
+    name: iverif.io Platform
+    description: AI-powered document validation for energy subsidy dossiers — cross-check
+      every field, every document, every programme rule before submission.
+    physical_form: Web platform with API integration, white-label ready
+  capsule_lineup:
+  - name: Dossier Validation
+    description: Full cross-document validation for any EU energy subsidy programme
+  - name: Programme Configuration
+    description: Managed setup for CEE, Conto Termico, BEG, ECO4, Primes Énergie,
+      MOVES III
+  - name: Audit Trail
+    description: Complete timestamped logs of every validation check for regulatory
+      compliance
+  detail:
+    name: Validation Engine
+    focus: Real-time cross-document field extraction, rule checking, and inconsistency
+      flagging with explainable AI output
+  flatlay_objects:
+    count: 6
+    items:
+    - printed CEE attestation
+    - technical specification sheet
+    - installation certificate
+    - smartphone showing validation report
+    - fine-tip pen on regulatory desk
+    - EU flag pin
+  category: Regulatory SaaS platform
+negative_prompt: 'cartoon, anime, clipart, watermark, text overlay, blurry, low resolution,
+
+  stock photo, generic, cheap, oversaturated, gradient backgrounds,
+
+  playful colors, handwritten fonts, organic shapes, decorative flourishes,
+
+  human faces, posed people, casual lifestyle imagery
+
+  '
+generation:
+  output_dir: generated
+  seeds:
+  - 42
+  - 137
+  resolution: 2K
+  output_format: png
+  provider: gpt-image2
+  fallback_order:
+  - gpt-image2
+  - fal
+  - replicate
+  - openrouter
+  - openai
+  - inference
+  default_model: gpt-image-2
+  model_overrides: {}
+  env_file: ~/.claude/.env
+  reference_overrides: {}
+prompts:
+  brand_identity:
+  - bento_grid
+  - seal
+  - logo_emboss
+  products:
+  - capsule_collection
+  - hero_product
+  - product_detail
+  photography:
+  - catalog_layout
+  - flatlay
+  illustration:
+    types:
+    - heritage_engraving
+    - campaign_grid
+    - art_panel
+  narrative:
+    types:
+    - contact_sheet
+  posters:
+    types:
+    - seeker_poster
+
+# ─── PUBLISHING ─────────────────────────────────────────────
+publishing:
+  synthesize: true
+  notebooklm:
+    source_profile: brand-public
+    max_sources: 50
+    sanitize_sources: true

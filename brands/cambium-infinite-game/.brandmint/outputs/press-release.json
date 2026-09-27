@@ -1,0 +1,34 @@
+{
+  "skill": "press-release",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-09-27T13:24:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "release_type": "EMBARGOED UNTIL OWNER APPROVAL",
+    "distribution_status": "held — internal draft only",
+    "headline": "Cambium Introduces a Viability-Governed Operator for AI-Powered Ventures",
+    "subheadline": "The Infinite Game Engine coordinates bounded specialist agents while preserving founder authority, mission continuity, and replayable evidence.",
+    "dateline": {"city": "[CITY]", "date": "[APPROVED RELEASE DATE]"},
+    "lead_paragraph": "[CITY], [DATE] — Thoughtseed today unveiled Cambium, a proposed venture operating layer designed to coordinate finite AI systems around a business's ability to continue. Built for solo founders and small venture operators, Cambium wakes on real events, evaluates explicit viability bounds, proposes the next bounded specialist run, and keeps paid or irreversible actions behind a founder-controlled gate.",
+    "body_paragraphs": [
+      {"topic": "The gap", "content": "Existing agent systems can mint brands, build software, publish campaigns, and complete operational tasks. Those are finite games with appropriate end states. Cambium addresses the layer between them: carrying a venture's vision, current mission, constraints, authority, and learning from one completed run to the next."},
+      {"topic": "Viability over activity", "content": "Cambium treats revenue as operating fuel and solvency as a bound rather than maximizing activity or growth as a terminal objective. The system is designed around observable margins such as solvency, mission coherence, legal and ethical limits, and founder capacity. It does not claim to compute an exact high-dimensional viability kernel."},
+      {"topic": "Bounded agency", "content": "Reversible and pre-authorized work can proceed through specialist systems. Paid, irreversible, identity-changing, data-moving, or externally representative actions remain fail-closed until the designated founder authority approves them."},
+      {"topic": "Replayable evidence", "content": "Cambium's doctrine calls for typed, event-sourced world-state and receipts that name the triggering event, evidence, current state, authority, decision, and result. Public capability statements will be released only with current production receipts."},
+      {"topic": "Initial experience", "content": "The proposed first experience is deliberately small: map one venture, name one viability bound, admit one evidence-bearing event, and replay one governed decision. Broader availability, product readiness, and commercial terms remain subject to owner approval and acceptance evidence."}
+    ],
+    "quotes": [],
+    "quote_note": "No spokesperson quote is included. Do not invent or attribute a quote; add one only after the named speaker approves exact language.",
+    "product_details": {
+      "availability": "Held pending product, policy, and acceptance gates.",
+      "pricing": "Not announced. The doctrine states that Genesis is free and Taste is the subscription, but no authoritative price is established here.",
+      "launch_date": "Not announced.",
+      "where_to_buy": "Not announced. Do not publish a placeholder URL."
+    },
+    "boilerplate": "About Thoughtseed — Thoughtseed develops governed systems that help people create, operate, and evolve ventures while preserving human authority, source provenance, and explicit acceptance boundaries. This draft does not establish public availability, performance, pricing, or deployment state for Cambium.",
+    "media_contact": {"name": "[APPROVED CONTACT]", "title": "[TITLE]", "email": "[EMAIL]", "phone": "[OPTIONAL PHONE]"},
+    "full_release": "EMBARGOED UNTIL OWNER APPROVAL\n\nCAMBIUM INTRODUCES A VIABILITY-GOVERNED OPERATOR FOR AI-POWERED VENTURES\n\nThe Infinite Game Engine coordinates bounded specialist agents while preserving founder authority, mission continuity, and replayable evidence.\n\n[CITY], [DATE] — Thoughtseed today unveiled Cambium, a proposed venture operating layer designed to coordinate finite AI systems around a business's ability to continue. Built for solo founders and small venture operators, Cambium wakes on real events, evaluates explicit viability bounds, proposes the next bounded specialist run, and keeps paid or irreversible actions behind a founder-controlled gate.\n\nExisting agent systems can mint brands, build software, publish campaigns, and complete operational tasks. Those are finite games with appropriate end states. Cambium addresses the layer between them: carrying a venture's vision, current mission, constraints, authority, and learning from one completed run to the next.\n\nCambium treats revenue as operating fuel and solvency as a bound rather than maximizing activity or growth as a terminal objective. Its doctrine uses observable margins such as solvency, mission coherence, legal and ethical limits, and founder capacity. The system does not claim to compute an exact high-dimensional viability kernel.\n\nReversible and pre-authorized work can proceed through specialist systems. Paid, irreversible, identity-changing, data-moving, or externally representative actions remain fail-closed until the designated founder authority approves them.\n\nThe proposed first experience is deliberately small: map one venture, name one viability bound, admit one evidence-bearing event, and replay one governed decision. Availability, acceptance, pricing, and release timing remain unannounced.\n\nABOUT THOUGHTSEED\nThoughtseed develops governed systems that help people create, operate, and evolve ventures while preserving human authority, source provenance, and explicit acceptance boundaries.\n\nMEDIA CONTACT\n[APPROVED CONTACT]\n[TITLE]\n[EMAIL]\n[OPTIONAL PHONE]"
+  }
+}

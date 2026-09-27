@@ -1,0 +1,49 @@
+{
+  "skill": "brand-documentation",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-09-27T16:25:00Z",
+  "status": "complete",
+  "version": "2.0.0",
+  "data": {
+    "documents": {
+      "product_overview": {"title": "Cambium — Product Overview", "path": "notebooklm/product-sources/01-product-overview.md", "format": "markdown", "sections_complete": 6, "sections_total": 6},
+      "operating_model": {"title": "Cambium — Operating Model", "path": "notebooklm/product-sources/02-operating-model.md", "format": "markdown", "sections_complete": 6, "sections_total": 6},
+      "positioning_and_language": {"title": "Cambium — Positioning and Language", "path": "notebooklm/product-sources/03-positioning-and-language.md", "format": "markdown", "sections_complete": 7, "sections_total": 7},
+      "visual_system": {"title": "Cambium — Visual System", "path": "notebooklm/product-sources/04-visual-system.md", "format": "markdown", "sections_complete": 7, "sections_total": 7},
+      "proof_status": {"title": "Cambium — Product Brief and Proof Status", "path": "notebooklm/product-sources/05-product-brief-and-proof-status.md", "format": "markdown", "sections_complete": 6, "sections_total": 6}
+    },
+    "asset_validation": {
+      "total_assets_referenced": 12,
+      "assets_validated": 12,
+      "assets_missing": 0,
+      "assets_with_warnings": 1,
+      "user_provided_count": 0,
+      "generated_count": 12,
+      "deterministic_count": 0,
+      "warning_detail": "The contour-field pattern is a non-repeating source master; seamless tiling is not claimed."
+    },
+    "sections": [
+      {"name": "Product doctrine", "document": "product_overview", "source_skill": "brand-foundation", "assets_embedded": [], "complete": true},
+      {"name": "Viability cascade", "document": "operating_model", "source_skill": "product-positioning", "assets_embedded": [{"path": "generated/illustration-finite-instruments-v1.png", "validated": true, "origin": "generated", "proof_label": "conceptual"}], "complete": true},
+      {"name": "Logo system", "document": "visual_system", "source_skill": "logo-concept", "assets_embedded": [{"path": "generated/logo-symbol-living-boundary-v1.png", "validated": true, "origin": "generated", "proof_label": "brand concept"}], "complete": true},
+      {"name": "Product scene", "document": "visual_system", "source_skill": "product-photography", "assets_embedded": [{"path": "generated/product-steward-kit-concept-v1.png", "validated": true, "origin": "generated", "proof_label": "conceptual visualization, not manufactured-product proof"}], "complete": true},
+      {"name": "Proof boundary", "document": "proof_status", "source_skill": "value-proposition", "assets_embedded": [], "complete": true}
+    ],
+    "outputs": {
+      "product_source_directory": "notebooklm/product-sources/",
+      "process_provenance_directory": "notebooklm/process-provenance/",
+      "product_documents": 5,
+      "process_documents": 3,
+      "raw_generated_markdown_uploaded": false
+    },
+    "validation_report": {
+      "all_assets_exist": true,
+      "all_document_paths_exist": true,
+      "all_assets_in_manifest": true,
+      "hallucinated_paths": 0,
+      "warnings": ["Pattern master is not verified as a seamless tile."],
+      "claims_boundary": "Documentation describes the product concept and proof status; it does not claim a live autonomous operator or measured outcomes."
+    }
+  }
+}

@@ -1,0 +1,174 @@
+# Brandmint v2 — Cambium · Infinite Game Engine
+# Source doctrine: cambium repo INFINITE-GAME.md, HOMEOSTASIS.md, VISION.md, MISSION.md,
+# BUSINESS-MODEL.md, ONBOARDING-OCTALYSIS.md. Wave-1 research ledger: research/wave-1-market.md
+#
+# Top-level `name:` duplicates brand.name because runner/lib/common.sh yaml_get greps ^name:.
+name: "Cambium"
+
+brand:
+  name: "Cambium"
+  descriptor: "The Infinite Game Engine"
+  slug: "cambium-infinite-game"
+  tagline: "Stay in the game."
+  category: "technology"
+  naming_note: |
+    Lead mark is Cambium (a tree's living growth layer). "Infinite Game Engine" is a
+    descriptor, not the lead mark: the phrase is Sinek-saturated and collides with
+    "Infinite Games" / Infinite Game Publishing marks. Cite Carse as lineage; let the
+    physics (viability, allostasis, Red Queen) carry the proof. Trademark check pending.
+  market:
+    b2b: true
+    b2c: false
+    enterprise: false
+    smb: true
+
+company:
+  description: |
+    Cambium is the always-on venture operator that sits above finite AI agents. Its organs
+    play bounded games — Genesis mints a brand, Hands build, Will goes to market, Ops
+    operates — and each should end. The Infinite Game Engine is the layer above them that
+    never terminates: it wakes on events, keeps the business inside the set of states from
+    which play can continue (the viability kernel), lets the brand/mission setpoint move
+    only on real evidence (allostasis), co-evolves strategy against a moving market (Red
+    Queen), and regulates the vision → mission → goal cascade so revenue and growth fall
+    out downstream as regulated fuel, with solvency as a hard bound — never the objective.
+  founding_year: 2026
+  stage: "pre-seed"
+  problem: |
+    "The company stops when you stop." Founders now have agents that can mint, build and
+    post — but every autonomous "run your company" product optimizes task throughput or
+    revenue, runs without bounds, reports success on work it didn't do, and fails silently.
+    Most such companies never earn a dollar. Nothing sits above the finite agents asking the
+    only question that matters in an infinite game: are we still able to keep playing?
+  solution: |
+    One operator, many gardens. Cambium's Infinite Game Engine is dormant between events and
+    never done: each wake it reads world-state, measures margin to every viability bound
+    (solvency floor, mission coherence, legal/ethical), simulates founder and ideal customer
+    as NPCs that may propose but never commit, and only then chooses which finite game to
+    play next. Irreversible or paid moves pass a fail-closed gate; every decision lands in a
+    replayable log. Genesis is free; Taste — the memory and conscience — is the subscription.
+
+audience:
+  primary:
+    title: "Solo / technical founder running a real (small) business"
+    company_size: "1–5 people, often solo; pre-revenue to early revenue"
+    industry: "Software, digital products, indie SaaS, creator-led businesses"
+    pain_points:
+      - "The company stops when I stop — travel, burnout or a bad week stalls everything"
+      - "Autonomous agents are demo-strong and production-fragile; failure is invisible"
+      - "Agents chased throughput — 20 posts a day, net zero growth — and burned credits"
+      - "Burned by 'AI runs your company' products that report success on work not done"
+    goals:
+      - "Keep the business alive and advancing while away from the keyboard"
+      - "Bounded risk: nothing irreversible or paid happens without approval"
+      - "See why every move was made — a record I can replay and trust"
+  secondary:
+    title: "Micro-studio / agency / venture-studio operator running several brands"
+    company_size: "2–20 people, 3–20 live brands"
+    pain_points:
+      - "Each brand drifts off-voice and off-mission once the launch team moves on"
+      - "No portfolio-level view of which ventures are still viable"
+    goals:
+      - "One operator across many gardens, with per-brand memory and taste"
+
+competitors:
+  direct:
+    - name: "Polsia"
+      positioning: "Nine agents run your company autonomously; $20/mo + revenue share"
+      weakness: "Autonomy without viability bounds — silent failures, ~50% monthly churn, no kill switch"
+    - name: "NanoCorp"
+      positioning: "Launch an autonomous AI business with no human in the loop"
+      weakness: "Autonomy levels cap task volume, not risk; most businesses earn nothing"
+    - name: "Cofounder (General Intelligence Co.)"
+      positioning: "Run an entire company with AI departments"
+      weakness: "Org-chart coverage, no setpoint or mission regulation"
+  indirect:
+    - name: "Sintra / Lindy / Relevance AI"
+      positioning: "AI workforce / teammates / agent builders"
+      weakness: "Finite helpers with no operator above them"
+    - name: "OKR tools (Tability, WorkBoard/Quantive)"
+      positioning: "Measure goals"
+      weakness: "Measure, never regulate or act"
+    - name: "Agentic venture studios (e.g. Alloy Partners)"
+      positioning: "Services model: one operator + many agents"
+      weakness: "Not a product; not available to a solo founder"
+
+personality:
+  traits: ["patient", "rigorous", "alive", "honest", "grounded"]
+  voice:
+    formality: 0.5
+    enthusiasm: 0.4
+    technicality: 0.55
+    warmth: 0.6
+  archetypes:
+    primary: "sage"
+    secondary: "caregiver"
+  tone_rules:
+    - "Motivation without manipulation: no fake countdowns, streak traps or manufactured emergencies"
+    - "Never claim 'mathematically converged' or 'self-healed'; say 'checked against the contract'"
+    - "Label claims honestly: Doctrine, Local, Production, Held, Retired"
+    - "Never optimize for time-in-app"
+
+visual_preferences:
+  color_mood: "warm-muted"
+  photography_style: "editorial"
+  illustration_style: "line-art"
+  motifs:
+    - "cambium / growth rings / living bark layer (botanical, organic)"
+    - "phase-space and viability-kernel diagrams (a bounded region, trajectories bending inward)"
+    - "instrument / ledger aesthetic — the replay log as a visible artifact"
+    - "one operator, many gardens"
+  preferred_colors: []
+  avoid:
+    - "purple-to-magenta AI gradients, neon glow"
+    - "org-chart 'team of AI employees' avatars"
+    - "robots, brains, rocket ships, 'reimagine the future' hero clichés"
+    - "game controllers / esports imagery (the 'game' is Carse's, not gaming)"
+
+user_provided_assets:
+  logo:
+    primary:
+      path: ./generated/logo-primary.png
+      type: logo
+      required: false
+      note: "No prior Cambium mark exists; Wave 3 generates candidates via gpt-image-2 (Codex)"
+  screenshots: []
+  existing: []
+
+content:
+  landing_page:
+    sections: [hero, problem, how-it-works, principles, pricing, cta]
+  email:
+    welcome_series: true
+    nurture_series: false
+    onboarding_series: true
+  ads:
+    platforms: [x, linkedin]
+    formats: [text, image]
+
+publishing:
+  notebooklm:
+    enabled: true
+    artifacts: [mind_map, slides, audio_overview, brand_report]
+  wiki:
+    enabled: false
+  deliverables:
+    formats: [zip]
+    include_origins: true
+
+synthesis:
+  synthesize_prose: false
+  embedding_integration:
+    enabled: false
+
+execution:
+  depth: "comprehensive"
+  waves: "1-7"
+  image_engine: "gpt-image-2 via visual/gpt-image-2/scripts/gen.sh (codex exec --enable image_generation)"
+  max_cost: 0
+  non_interactive: true
+
+validation:
+  require_user_assets: false
+  warn_missing_optional: true
+  fail_on_hallucination: true

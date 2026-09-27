@@ -1,0 +1,128 @@
+{
+  "skill": "messaging-framework",
+  "cluster": "strategy",
+  "wave": 2,
+  "timestamp": "2026-09-27T12:15:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "tagline": {
+      "selected": "Stay in the game.",
+      "type": "imperative",
+      "alternatives": [
+        "Built to keep playing.",
+        "Continuity for the company.",
+        "One operator. Many gardens.",
+        "Alive between the runs."
+      ]
+    },
+    "brand_promise": "Cambium helps the venture remain capable of continuing, without hiding consequence from its founder.",
+    "value_proposition": "For founders whose businesses stop when they stop, Cambium coordinates bounded agents around explicit viability limits, real evidence, founder gates, and replayable decisions.",
+    "elevator_pitch": {
+      "full": "Founders now have agents that can mint, build, market, and operate, but no layer protects the company between those finite runs. Cambium is the living venture operator that wakes on real events, measures viability, and proposes the next bounded move. Unlike autonomous-company swarms, it keeps consequential actions fail-closed and records every decision so the founder can step away without surrendering judgment.",
+      "components": {
+        "problem": "The company still depends on the founder as its only continuity mechanism.",
+        "solution": "A persistent operator coordinates finite agents around viability and mission.",
+        "differentiator": "It bounds consequence, requires evidence, and makes decisions replayable.",
+        "proof": "The doctrine specifies a typed world-state, wake loop, viability monitor, founder gates, and event log; product performance claims remain unproven until live acceptance."
+      }
+    },
+    "key_messages": [
+      {
+        "pillar": "Continuity",
+        "headline": "The company can continue when you step away.",
+        "proof_points": [
+          "The operator persists above finite agents instead of pretending each finished run is the business.",
+          "It wakes on events, takes one bounded tick, persists state, and returns to dormancy."
+        ]
+      },
+      {
+        "pillar": "Viability",
+        "headline": "Protect tomorrow before optimizing one more metric.",
+        "proof_points": [
+          "Solvency, mission coherence, and legal or ethical limits are modeled as bounds.",
+          "Revenue is treated as regulated fuel and a solvency constraint, not the objective."
+        ]
+      },
+      {
+        "pillar": "Bounded agency",
+        "headline": "Autonomy ends where real consequence begins.",
+        "proof_points": [
+          "Irreversible and paid moves pass a fail-closed founder gate.",
+          "Simulated founder and customer agents may propose; they never commit."
+        ]
+      },
+      {
+        "pillar": "Legibility",
+        "headline": "Every meaningful move leaves a replayable reason.",
+        "proof_points": [
+          "World-state is typed and event-sourced rather than inferred from an activity feed.",
+          "Receipts distinguish doctrine, local evidence, production proof, held work, and retired paths."
+        ]
+      }
+    ],
+    "audience_variants": {
+      "technical_buyer": {
+        "message": "An event-sourced meta-operator coordinates finite agents with explicit bounds, trust regions, and replayable gates.",
+        "avoid": "Do not imply that high-dimensional viability kernels are computed exactly."
+      },
+      "economic_buyer": {
+        "message": "Keep the venture capable of continuing without paying for unbounded agent activity or hidden risk.",
+        "avoid": "Do not promise revenue, growth, or founder-free operation."
+      },
+      "portfolio_operator": {
+        "message": "See which gardens remain viable, what each needs next, and which consequential moves require a steward.",
+        "avoid": "Do not flatten distinct brands into a single generic operating playbook."
+      }
+    },
+    "elevator_pitches": {
+      "10_second": "Cambium keeps finite AI agents aligned to the venture's ability to continue.",
+      "30_second": "Your agents can finish tasks, but none of them keeps the company alive between runs. Cambium is the operator above them: it watches viability, advances mission, gates consequential actions, and records why each move happened.",
+      "60_second": "A business is not a project that reaches done. It is an infinite game that ends only when it can no longer continue. Today's agents are finite players: good at minting, building, publishing, and operating one bounded run. Cambium is the living layer above them. It wakes on real events, measures margin to explicit viability bounds, lets mission evolve only on evidence, and selects the next finite game. Paid or irreversible actions remain founder-gated, and every decision is replayable. The goal is not more autonomous activity. It is a venture that stays capable of playing tomorrow."
+    },
+    "message_matrix": {
+      "social_media": {
+        "message": "More agents do not make a company alive. A living operator keeps their finite games coherent.",
+        "tone": "plain, provocative, grounded"
+      },
+      "email_subject": {
+        "message": "What keeps the company alive between agent runs?",
+        "tone": "curious, direct, unhurried"
+      },
+      "landing_page": {
+        "message": "Your business, still able to play tomorrow.",
+        "tone": "warm, assured, evidence-aware"
+      },
+      "press_release": {
+        "message": "Cambium introduces a viability-governed operator for bounded AI business systems.",
+        "tone": "professional, precise, claim-limited"
+      },
+      "sales": {
+        "message": "Show me where your company depends on your constant attention; we will map the bounds and the finite games around it.",
+        "tone": "consultative, diagnostic, non-coercive"
+      }
+    },
+    "proof_points": {
+      "statistics": [
+        "No Cambium performance statistic is approved yet; use only dated third-party category evidence with a citation.",
+        "No revenue, retention, time-saved, or uptime figure may appear until a production receipt supports it."
+      ],
+      "testimonials": [
+        "No customer testimonial is approved yet; never synthesize or paraphrase one.",
+        "Future testimonials must carry speaker consent, date, role, and an exact source."
+      ],
+      "credentials": [
+        "Current authority is the repository doctrine and acceptance ledger, not an award or certification.",
+        "Use architectural receipts only for what they prove: typed state, gates, and replay contracts."
+      ],
+      "demonstrations": [
+        "Demonstrate one wake from event to viability check, proposal, gate, receipt, and dormancy.",
+        "Demonstrate deterministic replay of the same event log without fabricating a live production outcome."
+      ],
+      "guarantees": [
+        "Guarantee no paid or irreversible move without the configured founder gate; verify before publishing.",
+        "Guarantee provenance labels on claims and assets; do not guarantee business outcomes."
+      ]
+    }
+  }
+}

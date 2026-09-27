@@ -1,0 +1,54 @@
+{
+  "skill": "ad-creative-copy",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-09-27T13:10:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "strategy": {
+      "phases": ["pre-launch", "launch", "education", "evidence"],
+      "platforms": ["x", "linkedin"],
+      "formats": ["single_image", "carousel", "short_text"],
+      "status": "draft-only; no paid campaign, scheduling, or publication authorized"
+    },
+    "hooks": {
+      "problem_aware": [
+        "Your agents finish tasks. Who keeps the company alive between them?",
+        "The company still stops when you stop.",
+        "More autonomous activity can still mean less control."
+      ],
+      "solution_aware": [
+        "One living operator above every finite agent.",
+        "Bound the consequence. Replay the reason.",
+        "Revenue is fuel. Viability is the bound."
+      ],
+      "social_proof": [
+        "No customer proof is approved yet—show the architecture and receipts instead.",
+        "Demonstrate one real wake before making one performance claim."
+      ],
+      "urgency": [
+        "Not a countdown: if your margin is narrowing, name the bound now.",
+        "Do not manufacture urgency; use the venture's actual viability signal."
+      ]
+    },
+    "pre_campaign_ads": [
+      {"id": "PRE-01", "name": "Between the runs", "angle": "problem reframing", "headline": "Who operates between agent runs?", "body": "Tasks end. Businesses do not. See the missing layer above your AI agents.", "cta": "Read the doctrine"},
+      {"id": "PRE-02", "name": "Still alive tomorrow", "angle": "viability", "headline": "Your business, still able to play", "body": "Map the bounds that keep a venture capable of continuing.", "cta": "Map the bounds"},
+      {"id": "PRE-03", "name": "No synthetic founder", "angle": "honest autonomy", "headline": "Autonomy ends at consequence", "body": "Cambium proposes. The founder governs paid and irreversible moves.", "cta": "See the gate"}
+    ],
+    "live_campaign_ads": [
+      {"id": "LIVE-01", "name": "One Wake", "phase": "launch", "angle": "demonstration", "headline": "Watch one bounded decision unfold", "body": "Event. Viability check. Proposal. Founder gate. Receipt. Dormancy.", "cta": "Replay the wake"},
+      {"id": "LIVE-02", "name": "Many Gardens", "phase": "education", "angle": "portfolio", "headline": "One operator. Many distinct gardens.", "body": "Carry learning across ventures without flattening their identity.", "cta": "Explore the model"},
+      {"id": "LIVE-03", "name": "Proof Labels", "phase": "evidence", "angle": "trust", "headline": "Know what is doctrine—and what is live", "body": "Every claim is labeled Doctrine, Local, Production, Held, or Retired.", "cta": "Inspect the receipt"}
+    ],
+    "visual_pairings": {
+      "PRE-01": "./generated/illustration-finite-instruments-v1.png",
+      "PRE-02": "./generated/social-stay-in-game-square-v1.png",
+      "PRE-03": "./generated/product-steward-kit-concept-v1.png",
+      "LIVE-01": "./generated/hero-viable-field-v1.png",
+      "LIVE-02": "./generated/illustration-one-operator-many-gardens-v1.png",
+      "LIVE-03": "./generated/icon-system-reference-v1.png"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "skill": "pattern-library",
+  "cluster": "illustration",
+  "wave": 5,
+  "timestamp": "2026-09-27T13:06:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "strategy": {
+      "usage_types": [
+        {"usage": "report cover or section transition", "pattern_type": "large non-repeating contour field", "scale": "large", "density": "sparse"},
+        {"usage": "social or provenance-card background", "pattern_type": "cropped contour field", "scale": "medium", "density": "sparse"},
+        {"usage": "packaging or print interior", "pattern_type": "future deterministic repeat derived from the contour field", "scale": "small", "density": "low"}
+      ]
+    },
+    "color_combinations": [
+      {"name": "Living Ledger", "foreground": "#1F3A2E", "background": "#F4EFE3", "usage": "default editorial and document pattern"},
+      {"name": "Dormant Night", "foreground": "#F4EFE3", "background": "#1F3A2E", "usage": "limited dark field; preserve text contrast"},
+      {"name": "New Margin", "foreground": "#7E9B63", "background": "#F4EFE3", "usage": "quiet secondary surfaces with one copper decision notch"}
+    ],
+    "patterns": [
+      {
+        "id": "pattern-contour-field-v1",
+        "name": "Viable Contours",
+        "type": "abstract",
+        "colors": {"foreground": "#1F3A2E with #7E9B63 and one #B76E3F notch", "background": "transparent master for placement over #F4EFE3"},
+        "usage": "non-repeating report, campaign, packaging, and social background; crop freely while preserving one quiet copper focal point",
+        "tile_size": "1254x1254 source; non-repeating master",
+        "generation_prompt": "Sparse field of irregular growth-ring contours and phase-space trajectories, paths bending inward near boundaries, one tiny copper notch, low-density line art, transparent master intended over Bone.",
+        "generated_path": "./generated/pattern-contour-field-v1.png",
+        "sha256": "61888f6265fb289d15f179625cd230f8838ddbf7bf124c5e9f93719861c8c242",
+        "tiling_verified": false,
+        "origin": "generated: Codex built-in image generation",
+        "label": "Non-repeating generated pattern master; seamless production tile remains a deterministic design task"
+      }
+    ],
+    "textures": [
+      {
+        "id": "texture-bone-paper",
+        "name": "Bone Paper",
+        "type": "subtle handmade paper grain embedded across generated brand assets",
+        "base_color": "#F4EFE3",
+        "intensity": "low",
+        "generation_prompt": "Subtle natural paper fiber with no stains, no vintage distress, and no central lighting vignette.",
+        "generated_path": "embedded-in-brand-assets; no standalone file promoted"
+      }
+    ],
+    "generation_summary": {"total": 1, "generated": 1, "verified_tileable": 0, "engine": "Codex built-in image generation", "api_credits_used": false}
+  }
+}

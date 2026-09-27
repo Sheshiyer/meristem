@@ -1,0 +1,15 @@
+{
+  "schema": "cambium.wiki-source-map.v1",
+  "title": "Cambium — Product Sourcebook",
+  "status": "source-only",
+  "pages": [
+    {"route": "/overview", "title": "Product Overview", "source": "../../notebooklm/product-sources/01-product-overview.md"},
+    {"route": "/operating-model", "title": "Operating Model", "source": "../../notebooklm/product-sources/02-operating-model.md"},
+    {"route": "/positioning", "title": "Positioning and Language", "source": "../../notebooklm/product-sources/03-positioning-and-language.md"},
+    {"route": "/visual-system", "title": "Visual System", "source": "../../notebooklm/product-sources/04-visual-system.md"},
+    {"route": "/proof-status", "title": "Product Brief and Proof Status", "source": "../../notebooklm/product-sources/05-product-brief-and-proof-status.md"}
+  ],
+  "asset_manifest": "../../.brandmint/asset-manifest.json",
+  "build_authorized": false,
+  "deployment_authorized": false
+}

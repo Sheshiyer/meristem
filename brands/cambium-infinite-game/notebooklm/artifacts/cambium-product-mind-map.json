@@ -1,0 +1,288 @@
+{
+  "name": "Cambium Operating System",
+  "children": [
+    {
+      "name": "Product Purpose",
+      "children": [
+        {
+          "name": "Infinite Game Engine",
+          "children": [
+            {
+              "name": "Operating Posture Concept"
+            },
+            {
+              "name": "Commitment to Meaningful Play"
+            }
+          ]
+        },
+        {
+          "name": "Dual-Layer Architecture",
+          "children": [
+            {
+              "name": "Infinite Purpose Layer"
+            },
+            {
+              "name": "Finite Instrument Layer"
+            }
+          ]
+        },
+        {
+          "name": "Core Product Promise",
+          "children": [
+            {
+              "name": "Stay in the Game"
+            },
+            {
+              "name": "Continued Capacity over Growth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Viability Cascade",
+      "children": [
+        {
+          "name": "Four Decision Moves",
+          "children": [
+            {
+              "name": "Observe Current Field State"
+            },
+            {
+              "name": "Bound Downside and Authority"
+            },
+            {
+              "name": "Act with Smallest Move"
+            },
+            {
+              "name": "Learn via Replayable Record"
+            }
+          ]
+        },
+        {
+          "name": "Event-Driven Wake Loop",
+          "children": [
+            {
+              "name": "Ingest Event and State Update"
+            },
+            {
+              "name": "Classify Event Scope"
+            },
+            {
+              "name": "Recompute Viability Margins"
+            },
+            {
+              "name": "Return to Dormancy"
+            }
+          ]
+        },
+        {
+          "name": "Viability Margins",
+          "children": [
+            {
+              "name": "Solvency and Cash Obligations"
+            },
+            {
+              "name": "Legal and Ethical Constraints"
+            },
+            {
+              "name": "Human Capacity and Burnout Risk"
+            },
+            {
+              "name": "Consent and Delegated Authority"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Control Horizons",
+      "children": [
+        {
+          "name": "Micro Horizon",
+          "children": [
+            {
+              "name": "Tactical Correction Focus"
+            },
+            {
+              "name": "Fast and Bounded Authority"
+            }
+          ]
+        },
+        {
+          "name": "Meso Horizon",
+          "children": [
+            {
+              "name": "Human and Market Interpretation"
+            },
+            {
+              "name": "Propose and Review Posture"
+            }
+          ]
+        },
+        {
+          "name": "Macro Horizon",
+          "children": [
+            {
+              "name": "Vision, Mission, and Goals"
+            },
+            {
+              "name": "Fail-Closed Directional Changes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Authority and Evidence",
+      "children": [
+        {
+          "name": "Authority Gates",
+          "children": [
+            {
+              "name": "Fail-Closed Design"
+            },
+            {
+              "name": "Prohibition of Silent Expansion"
+            }
+          ]
+        },
+        {
+          "name": "Evidence Principles",
+          "children": [
+            {
+              "name": "Evidence over Theatre"
+            },
+            {
+              "name": "Simulation Proposes, Reality Evaluates"
+            }
+          ]
+        },
+        {
+          "name": "Deterministic Replay Log",
+          "children": [
+            {
+              "name": "Connected Evidence and Action"
+            },
+            {
+              "name": "Accountability Spine Architecture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Positioning and Audience",
+      "children": [
+        {
+          "name": "Primary Stewards",
+          "children": [
+            {
+              "name": "Overworked Founders and Operators"
+            },
+            {
+              "name": "Multi-Venture Studio Stewards"
+            }
+          ]
+        },
+        {
+          "name": "Core Message Pillars",
+          "children": [
+            {
+              "name": "Viability before Velocity"
+            },
+            {
+              "name": "Finite Work, Infinite Purpose"
+            },
+            {
+              "name": "Decisions Should Replay"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Visual System",
+      "children": [
+        {
+          "name": "Creative Idea",
+          "children": [
+            {
+              "name": "Living Ledger Concept"
+            },
+            {
+              "name": "Organic Fields and Ledger Lines"
+            }
+          ]
+        },
+        {
+          "name": "Color Palette",
+          "children": [
+            {
+              "name": "Night Soil Mineral Ground"
+            },
+            {
+              "name": "Cambium Green Living Accent"
+            },
+            {
+              "name": "Mineral Blue Evidence Structure"
+            },
+            {
+              "name": "Seasonal Amber Attention Marker"
+            },
+            {
+              "name": "Signal Red Violated Bounds"
+            }
+          ]
+        },
+        {
+          "name": "Asset Families",
+          "children": [
+            {
+              "name": "Living-Boundary Logo Symbol"
+            },
+            {
+              "name": "Conceptual Steward Kit Scenes"
+            },
+            {
+              "name": "Contour-Field Pattern Master"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Boundaries and Status",
+      "children": [
+        {
+          "name": "Defined Capabilities",
+          "children": [
+            {
+              "name": "Infinite-Game Doctrine"
+            },
+            {
+              "name": "Viability Cascade and Wake Loop"
+            },
+            {
+              "name": "Visual and Voice System"
+            }
+          ]
+        },
+        {
+          "name": "Pending Implementation",
+          "children": [
+            {
+              "name": "Long-Lived Operator Process"
+            },
+            {
+              "name": "External Action Adapters"
+            },
+            {
+              "name": "Measured Customer Outcomes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

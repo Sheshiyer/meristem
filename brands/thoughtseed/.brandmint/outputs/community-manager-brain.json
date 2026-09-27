@@ -1,0 +1,64 @@
+{
+  "skill": "community-manager-brain",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "engagement_tiers": [
+      {
+        "tier": 1,
+        "audience": "founder inquiry (DM, comment with a real requirement)",
+        "response_time": "< 2 hours",
+        "voice": "direct, founder-to-founder",
+        "template": "Brief acknowledgment of what they brought. The short version: one team carries framing, behavior, product, execution, and handoff inside a single delivery loop. The people who frame the requirement are the people who build it. If the problem is too entangled to split across vendors, bring it here. We study it, build the system, and hand it back in a form you can run. [Link to /start or scoped entry point]"
+      },
+      {
+        "tier": 2,
+        "audience": "operator inquiry (technical question about the loop, handoff, or studio)",
+        "response_time": "< 8 hours",
+        "voice": "technical, specific",
+        "template": "Specific technical acknowledgment. Here's how the loop runs in your case: Requirement — [specific framing of their question]. System — [specific design decision]. Build — [specific engineering approach]. Handoff — [specific deliverable, e.g., Ownership Transfer Pack]. [Detail or link to case study showing this approach]"
+      },
+      {
+        "tier": 3,
+        "audience": "general follower (comment, share, low-effort engagement)",
+        "response_time": "< 24 hours",
+        "voice": "restrained, illustrative",
+        "template": "Restrained acknowledgment. The loop is the studio. Four stages, one team, one handoff. Here's [link to relevant content — most relevant landing page section, blog post, or social post]"
+      },
+      {
+        "tier": 4,
+        "audience": "industry observer (deep engagement from a peer in design/engineering/AI space)",
+        "response_time": "< 48 hours",
+        "voice": "editorial, grounded",
+        "template": "Longer reflection if appropriate, drawing on delivery-loop principles. Acknowledge their specific observation. [Link to relevant deeper content — notebooklm source, case study, or longer essay]"
+      }
+    ],
+    "engagement_tactics": [
+      {"tactic": "Monday Loop Notes", "purpose": "Weekly share of a delivery-loop principle applied to a current observation", "frequency": "weekly Monday"},
+      {"tactic": "Founder Field Notes", "purpose": "Behind-the-scenes from active engagements, anonymized", "frequency": "bi-weekly"},
+      {"tactic": "Comment Threads (not posts)", "purpose": "Engage thoughtfully with adjacent communities (design circles, AI/automation founders)", "frequency": "daily check, respond 3-5x/week"},
+      {"tactic": "Quarterly Studio Letter", "purpose": "Long-form update on what the studio is shipping, learning, building toward", "frequency": "quarterly"},
+      {"tactic": "Open Studio Hours", "purpose": "Monthly live Q&A where founders can bring requirements openly", "frequency": "monthly"}
+    ],
+    "voice_discipline": "PASS — uses preferred vocabulary, no prohibited terms, founder-side systems translator voice",
+    "response_do": [
+      "Acknowledge the specific observation plainly before responding",
+      "Point to the next concrete step (a link, an action, a reference)",
+      "Maintain calm confidence — not celebration theater",
+      "Use evidence close to the claim (cite the loop, cite the studio's approach)",
+      "Be willing to say 'this is not for you' if applicable",
+      "Treat every interaction as evidence the studio respects the founder's time"
+    ],
+    "response_dont": [
+      "Don't use superlatives or celebration language",
+      "Don't name the internal methodology (Krebs origins, consciousness layer) in public copy",
+      "Don't use prohibited terms (consciousness-aligned, disruptive, best-in-class, full-service agency)",
+      "Don't fake expertise — say 'I don't know' if you don't",
+      "Don't engage in long debates; redirect to relevant content",
+      "Don't make promises the studio can't keep"
+    ]
+  }
+}

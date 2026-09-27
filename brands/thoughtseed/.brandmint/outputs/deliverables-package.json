@@ -2,182 +2,45 @@
   "skill": "deliverables-package",
   "cluster": "synthesis",
   "wave": 7,
-  "timestamp": "2026-06-08T06:10:00Z",
+  "timestamp": "2026-08-22T07:30:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "package_info": {
-      "name": "thoughtseed-brand-package",
-      "path": "deliverables/thoughtseed-brand-package/",
-      "brand": "Thoughtseed",
-      "created": "2026-06-08T06:10:00Z",
-      "brandmint_version": "2.0.0",
-      "package_version": "1.0.0"
+    "package": {
+      "name": "thoughtseed-brand-package-v2",
+      "version": "2.0.0",
+      "generated_at": "2026-08-22T07:30:00Z",
+      "format": "vault + zipped-archive",
+      "deliverable_formats": ["zip", "pdf"]
     },
-    "asset_manifest": {
-      "loaded": true,
-      "valid": true,
-      "manifest_source": ".brandmint/asset-manifest.json",
-      "user_provided_assets": 4,
-      "generated_assets": 16,
-      "all_paths_verified": true
-    },
-    "formats": ["folder", "zip", "pdf"],
-    "folder_structure": [
-      "thoughtseed-brand-package/README.md",
-      "thoughtseed-brand-package/MANIFEST.json",
-      "thoughtseed-brand-package/ASSET-ORIGINS.md",
-      "thoughtseed-brand-package/01-Brand-Guidelines/",
-      "thoughtseed-brand-package/02-Logo/user-provided/",
-      "thoughtseed-brand-package/03-Colors/",
-      "thoughtseed-brand-package/04-Typography/",
-      "thoughtseed-brand-package/05-Photography/generated/",
-      "thoughtseed-brand-package/06-Product/generated/",
-      "thoughtseed-brand-package/07-Illustrations/generated/",
-      "thoughtseed-brand-package/08-Patterns/generated/",
-      "thoughtseed-brand-package/09-Copy/",
-      "thoughtseed-brand-package/10-Social-Media/generated/",
-      "thoughtseed-brand-package/11-NotebookLM/",
-      "thoughtseed-brand-package/12-Wiki/",
-      "thoughtseed-brand-package/_source/outputs/"
-    ],
     "contents": {
-      "documents": {
-        "count": 11,
-        "origin": "deterministic",
-        "origin_note": "Generated deterministically from validated skill outputs; no AI image generation involved in these artifacts.",
-        "items": [
-          { "path": "01-Brand-Guidelines/thoughtseed-brand-identity.pdf", "type": "pdf", "source_skills": ["brand-documentation"], "origin": "deterministic" },
-          { "path": "01-Brand-Guidelines/thoughtseed-product-positioning.pdf", "type": "pdf", "source_skills": ["brand-documentation"], "origin": "deterministic" },
-          { "path": "01-Brand-Guidelines/thoughtseed-campaign-guidelines.pdf", "type": "pdf", "source_skills": ["brand-documentation"], "origin": "deterministic" },
-          { "path": "03-Colors/palette.css", "type": "css", "source_skills": ["color-palette"], "origin": "deterministic" },
-          { "path": "03-Colors/palette.json", "type": "json", "source_skills": ["color-palette"], "origin": "deterministic" },
-          { "path": "04-Typography/typography-guide.md", "type": "markdown", "source_skills": ["typography"], "origin": "deterministic" },
-          { "path": "09-Copy/landing-page-copy.md", "type": "markdown", "source_skills": ["landing-page-copy"], "origin": "deterministic" },
-          { "path": "09-Copy/product-description.md", "type": "markdown", "source_skills": ["product-description"], "origin": "deterministic" },
-          { "path": "09-Copy/ad-creative-copy.md", "type": "markdown", "source_skills": ["ad-creative-copy"], "origin": "deterministic" },
-          { "path": "09-Copy/press-release.md", "type": "markdown", "source_skills": ["press-release"], "origin": "deterministic" },
-          { "path": "09-Copy/email-sequences.md", "type": "markdown", "source_skills": ["launch-email-sequence", "prelaunch-email-sequence", "welcome-email-sequence"], "origin": "deterministic" }
-        ]
-      },
-      "user_provided_assets": {
-        "count": 4,
-        "origin": "user_provided",
-        "category": "02-Logo",
-        "items": [
-          { "id": "logo-wordmark", "manifest_path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "package_path": "02-Logo/user-provided/thoughtseed-horizontal-wordmark-3x.png", "type": "logo", "deterministic": true, "required": true },
-          { "id": "logo-tree-mark", "manifest_path": "./assets/thoughtseed-tree-mark-black-3x.png", "package_path": "02-Logo/user-provided/thoughtseed-tree-mark-black-3x.png", "type": "logo-icon", "deterministic": true, "required": false },
-          { "id": "logo-reference-01", "manifest_path": "./assets/thoughtseed-logo-reference-01.jpg", "package_path": "02-Logo/user-provided/thoughtseed-logo-reference-01.jpg", "type": "reference", "deterministic": true, "required": false },
-          { "id": "logo-reference-02", "manifest_path": "./assets/thoughtseed-logo-reference-02.jpg", "package_path": "02-Logo/user-provided/thoughtseed-logo-reference-02.jpg", "type": "reference", "deterministic": true, "required": false }
-        ]
-      },
-      "generated_assets": {
-        "count": 16,
-        "origin": "generated",
-        "model": "gemini-3-pro-image-preview",
-        "items": [
-          { "id": "hero-01-digital-wilderness", "manifest_path": "./generated/hero-01-digital-wilderness.png", "package_path": "05-Photography/generated/hero-01-digital-wilderness.png", "type": "hero", "deterministic": false, "wave": 4, "skill": "hero-images" },
-          { "id": "hero-02-establishing", "manifest_path": "./generated/hero-02-establishing.png", "package_path": "05-Photography/generated/hero-02-establishing.png", "type": "hero", "deterministic": false, "wave": 4, "skill": "hero-images" },
-          { "id": "hero-03-mobile", "manifest_path": "./generated/hero-03-mobile.png", "package_path": "05-Photography/generated/hero-03-mobile.png", "type": "hero", "deterministic": false, "wave": 4, "skill": "hero-images" },
-          { "id": "lifestyle-01-worktable", "manifest_path": "./generated/lifestyle-01-worktable.png", "package_path": "05-Photography/generated/lifestyle-01-worktable.png", "type": "lifestyle", "deterministic": false, "wave": 4, "skill": "lifestyle-photography" },
-          { "id": "lifestyle-02-studio", "manifest_path": "./generated/lifestyle-02-studio.png", "package_path": "05-Photography/generated/lifestyle-02-studio.png", "type": "lifestyle", "deterministic": false, "wave": 4, "skill": "lifestyle-photography" },
-          { "id": "product-01-system-artifacts", "manifest_path": "./generated/product-01-system-artifacts.png", "package_path": "06-Product/generated/product-01-system-artifacts.png", "type": "product", "deterministic": false, "wave": 4, "skill": "product-photography" },
-          { "id": "product-02-screen-surface", "manifest_path": "./generated/product-02-screen-surface.png", "package_path": "06-Product/generated/product-02-screen-surface.png", "type": "product", "deterministic": false, "wave": 4, "skill": "product-photography" },
-          { "id": "illus-01-systems-organism", "manifest_path": "./generated/illus-01-systems-organism.png", "package_path": "07-Illustrations/generated/illus-01-systems-organism.png", "type": "illustration", "deterministic": false, "wave": 5, "skill": "brand-illustrations" },
-          { "id": "illus-02-delivery-loop", "manifest_path": "./generated/illus-02-delivery-loop.png", "package_path": "07-Illustrations/generated/illus-02-delivery-loop.png", "type": "illustration", "deterministic": false, "wave": 5, "skill": "brand-illustrations" },
-          { "id": "icons-01-sheet", "manifest_path": "./generated/icons-01-sheet.png", "package_path": "07-Illustrations/generated/icons-01-sheet.png", "type": "icons", "deterministic": false, "wave": 5, "skill": "icon-system" },
-          { "id": "pattern-01-dark", "manifest_path": "./generated/pattern-01-dark.png", "package_path": "08-Patterns/generated/pattern-01-dark.png", "type": "pattern", "deterministic": false, "wave": 5, "skill": "pattern-library" },
-          { "id": "pattern-02-light", "manifest_path": "./generated/pattern-02-light.png", "package_path": "08-Patterns/generated/pattern-02-light.png", "type": "pattern", "deterministic": false, "wave": 5, "skill": "pattern-library" },
-          { "id": "social-ig-story", "manifest_path": "./generated/social-ig-story.png", "package_path": "10-Social-Media/generated/social-ig-story.png", "type": "social", "deterministic": false, "wave": 4, "skill": "social-media-assets" },
-          { "id": "social-og", "manifest_path": "./generated/social-og.png", "package_path": "10-Social-Media/generated/social-og.png", "type": "social", "deterministic": false, "wave": 4, "skill": "social-media-assets" },
-          { "id": "social-x-header", "manifest_path": "./generated/social-x-header.png", "package_path": "10-Social-Media/generated/social-x-header.png", "type": "social", "deterministic": false, "wave": 4, "skill": "social-media-assets" },
-          { "id": "visual-language-board", "manifest_path": "./generated/visual-language-board.png", "package_path": "07-Illustrations/generated/visual-language-board.png", "type": "moodboard", "deterministic": false, "wave": 3, "skill": "visual-language" }
-        ]
-      },
-      "data": {
-        "count": 28,
-        "origin": "deterministic",
-        "items": [
-          { "path": "_source/outputs/", "type": "directory", "description": "All 26 prior spoke JSON outputs plus the 4 synthesis outputs", "origin": "deterministic" },
-          { "path": "_source/asset-manifest.json", "type": "json", "description": "Validated asset manifest, copied", "origin": "deterministic" },
-          { "path": "MANIFEST.json", "type": "json", "description": "Package inventory with validation", "origin": "deterministic" }
-        ]
-      }
+      "vault_path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/",
+      "meristem_pipeline_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/",
+      "asset_manifest": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/asset-manifest.json"
     },
-    "origin_tracking": {
-      "asset_origins_generated": true,
-      "user_provided_clearly_marked": true,
-      "generated_clearly_marked": true,
-      "deterministic_assets_identified": 4,
-      "folder_convention": "Image categories split into user-provided/ and generated/ subfolders; documents and data are deterministic, generated from validated skill JSON without AI image synthesis.",
-      "asset_origins_summary": {
-        "user_provided": {
-          "count": 4,
-          "deterministic": true,
-          "description": "Provided by the brand owner, exactly as supplied, not modified or AI-generated. The two canonical logo marks plus two mark reference images.",
-          "ids": ["logo-wordmark", "logo-tree-mark", "logo-reference-01", "logo-reference-02"]
-        },
-        "generated": {
-          "count": 16,
-          "deterministic": false,
-          "model": "gemini-3-pro-image-preview",
-          "description": "Created by AI image generation during waves 3-5. Hero, lifestyle, product, illustration, icon, pattern, social, and moodboard assets. Art direction and creative suggestions that may warrant human review; none contain baked-in text or logos.",
-          "by_skill": {
-            "hero-images": 3,
-            "lifestyle-photography": 2,
-            "product-photography": 2,
-            "brand-illustrations": 2,
-            "icon-system": 1,
-            "pattern-library": 2,
-            "social-media-assets": 3,
-            "visual-language": 1
-          }
-        },
-        "deterministic_documents_and_data": {
-          "description": "PDF guidelines, copy markdown, color/type tokens, JSON outputs, and the manifest are produced deterministically from validated skill outputs. Always accurate, never AI-image-generated.",
-          "document_count": 11,
-          "data_artifacts": ["all spoke JSON outputs", "asset-manifest.json", "MANIFEST.json", "ASSET-ORIGINS.md", "README.md"]
-        }
-      }
+    "asset_origins": {
+      "user_provided": [
+        {"id": "thoughtseed-horizontal-wordmark", "type": "logo", "deterministic": true, "count": 1},
+        {"id": "thoughtseed-tree-mark", "type": "logo-icon", "deterministic": true, "count": 1},
+        {"id": "thoughtseed-logo-ref-01", "type": "reference", "deterministic": true, "count": 1},
+        {"id": "thoughtseed-logo-ref-02", "type": "reference", "deterministic": true, "count": 1}
+      ],
+      "generated": [
+        {"id": "tier1-logo-objects", "count": 10, "model": "gpt-image-2", "wave": 3},
+        {"id": "tier2-campaign", "count": 5, "model": "gpt-image-2", "wave": "2-4"},
+        {"id": "wave4-photography", "count": 3, "model": "gpt-image-2", "wave": 4},
+        {"id": "social-media", "count": 5, "model": "gpt-image-2", "wave": 4},
+        {"id": "original-2026-06-08", "count": 16, "model": "nanobanana", "wave": "4-5"}
+      ]
     },
-    "totals": {
-      "folders": 13,
-      "documents": 11,
-      "user_provided_images": 4,
-      "generated_images": 16,
-      "total_image_assets": 20
-    },
-    "outputs": {
-      "manifest_path": "MANIFEST.json",
-      "readme_path": "README.md",
-      "asset_origins_path": "ASSET-ORIGINS.md"
-    },
-    "exports": {
-      "folder": {
-        "path": "deliverables/thoughtseed-brand-package/",
-        "created": true,
-        "verified": true
-      },
-      "zip": {
-        "path": "deliverables/thoughtseed-brand-package.zip",
-        "created": true,
-        "contains_only_manifest_assets": true
-      },
-      "pdf": {
-        "documents": [
-          "deliverables/thoughtseed-brand-package/01-Brand-Guidelines/thoughtseed-brand-identity.pdf",
-          "deliverables/thoughtseed-brand-package/01-Brand-Guidelines/thoughtseed-product-positioning.pdf",
-          "deliverables/thoughtseed-brand-package/01-Brand-Guidelines/thoughtseed-campaign-guidelines.pdf"
-        ]
-      }
-    },
-    "validation": {
-      "all_paths_exist": true,
-      "all_referenced_assets_in_manifest": true,
-      "hallucinated_paths": 0,
-      "missing_required": 0,
+    "total_assets": 43,
+    "compliance": {
+      "all_paths_exist": "PASS",
       "missing_paths": [],
-      "warnings": []
-    }
+      "voice_discipline": "PASS",
+      "forbidden_elements_avoided": "PASS",
+      "differentiation_visible": "PASS"
+    },
+    "deliverable_ready": true
   }
 }

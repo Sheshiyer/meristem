@@ -1,0 +1,28 @@
+- title: "Start"
+  items:
+    - docs/index.md
+    - MDS.md
+- title: "Product"
+  items:
+    - docs/product/overview.md
+    - docs/product/pricing.md
+    - docs/product/claims.md
+- title: "Market"
+  items:
+    - docs/market/competitive-landscape.md
+- title: "Brand"
+  items:
+    - docs/brand/mission-values.md
+    - docs/brand/voice-tone.md
+    - docs/brand/visual-guidelines.md
+- title: "Audience"
+  items:
+    - docs/audience/primary-persona.md
+- title: "Operations"
+  items:
+    - docs/operations/evidence-protocol.md
+    - docs/operations/campaign-learning.md
+    - docs/operations/agency-pilot.md
+- title: "Marketing"
+  items:
+    - docs/marketing/safe-assets.md

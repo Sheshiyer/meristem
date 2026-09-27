@@ -1,0 +1,41 @@
+{
+  "skill": "competitor-analysis", "cluster": "foundation", "wave": 1,
+  "timestamp": "2026-09-27T13:58:00Z", "status": "complete", "version": "1.0.0",
+  "sources": ["research/wave-1-market.md"],
+  "data": {
+    "competitors": [
+      {"name": "Polsia", "type": "direct", "price": "USD 20/mo per company; Pro 50; Max 200–1,000; +3% revenue, +20% ad spend", "value_proposition": "Nine agents run research, code, ads, support and sales without continuous human intervention", "target_audience": "Solo founders wanting a hands-off company", "key_features": ["multi-agent departments", "scheduled autonomous tasks", "revenue share model"], "positioning": {"headline": "Your company, run by AI", "category_claimed": "Autonomous company operator"}, "strengths": ["momentum and funding (USD 30M @ 250M, May 2026)", "low entry price", "broad agent coverage"], "weaknesses": ["no viability bounds or kill switch", "silent failures — tasks marked complete that never shipped", "~50% monthly churn; founder-cited ~90% earn nothing"], "customer_sentiment": {"praise_points": ["fast start", "cheap to try"], "complaints": ["reports success on work not done", "wrong prices sent to prospects", "credits burned"]}},
+      {"name": "NanoCorp", "type": "direct", "price": "Free 3-day trial; USD 30/mo Founder", "value_proposition": "Launch an autonomous AI business with no human in the loop", "target_audience": "Aspiring founders and side-hustlers", "key_features": ["autonomy levels", "one-sentence launch", "long-running software entity"], "positioning": {"headline": "Launch an autonomous AI business", "category_claimed": "Autonomous business launcher"}, "strengths": ["YC backing", "strong launch narrative", "self-demonstrated ARR claim"], "weaknesses": ["autonomy caps volume, not risk", "launch frame, not continuity", "reviews headline most businesses earn nothing"], "customer_sentiment": {"praise_points": ["speed to launch"], "complaints": ["businesses don't earn", "no real control surface"]}},
+      {"name": "Cofounder (General Intelligence Co.)", "type": "direct", "price": "Not public", "value_proposition": "Run an entire company with AI departments under a Cofounder agent", "target_audience": "Founders and small teams", "key_features": ["department agents", "top-level cofounder agent", "approval on dangerous actions"], "positioning": {"headline": "Run an entire company with AI", "category_claimed": "AI cofounder"}, "strengths": ["USV-backed credibility", "coherent org metaphor", "some approval gating"], "weaknesses": ["org-chart coverage, no mission/setpoint regulation", "no stated failure model", "no replay record"], "customer_sentiment": {"praise_points": ["ambitious scope"], "complaints": ["early; limited public reviews"]}},
+      {"name": "Sintra", "type": "indirect", "price": "USD 97–197/mo, credit-based", "value_proposition": "An AI workforce of 12+ helpers to scale without headcount", "target_audience": "SMB owners", "key_features": ["named helper personas", "task templates"], "positioning": {"headline": "Your AI employees", "category_claimed": "AI workforce"}, "strengths": ["approachable", "broad task templates"], "weaknesses": ["finite helpers, no operator above them", "credit anxiety"], "customer_sentiment": {"praise_points": ["easy to start"], "complaints": ["generic output", "costs add up"]}},
+      {"name": "Lindy", "type": "indirect", "price": "USD 29.99–199.99/user/mo; free plan dropped Q1 2026", "value_proposition": "An AI teammate across Slack, email and meetings", "target_audience": "Knowledge workers and small teams", "key_features": ["assistant agents", "integrations"], "positioning": {"headline": "Your AI teammate", "category_claimed": "AI assistant"}, "strengths": ["polish", "integrations"], "weaknesses": ["task-level, not business-level", "variable cost complaints"], "customer_sentiment": {"praise_points": ["useful for inbox/meetings"], "complaints": ["pricing changes"]}},
+      {"name": "OKR tools (Tability, WorkBoard/Quantive)", "type": "indirect", "price": "~USD 6–9/user/mo", "value_proposition": "Track goals and progress", "target_audience": "Teams with planning rituals", "key_features": ["OKRs", "check-ins", "dashboards"], "positioning": {"headline": "Goals, measured", "category_claimed": "Strategy execution"}, "strengths": ["familiar frameworks"], "weaknesses": ["measure, never regulate or act", "Quantive self-serve winding down"], "customer_sentiment": {"praise_points": ["clarity"], "complaints": ["busywork"]}},
+      {"name": "Agentic venture studios (e.g. Alloy Partners)", "type": "aspirational", "price": "Services engagement", "value_proposition": "One operator plus 1,000+ agents building many companies", "target_audience": "Corporates and investors", "key_features": ["agent swarms", "nightly agent-proposing cron"], "positioning": {"headline": "Agentic venture studio", "category_claimed": "Venture building"}, "strengths": ["proof that one operator can steward many ventures"], "weaknesses": ["not a product; not available to a solo founder"], "customer_sentiment": {"praise_points": ["speed"], "complaints": ["n/a — services"]}}
+    ],
+    "feature_matrix": {
+      "features": ["Multi-agent orchestration", "Always-on / event-driven", "Viability bounds (solvency floor as hard limit)", "Fail-closed gate on irreversible/paid moves", "Evidence-gated setpoint (mission/brand moves on real signal)", "Replayable decision log", "Customer/founder simulation before acting", "Multi-venture portfolio view"],
+      "comparison": {
+        "our_product": [true, true, true, true, true, true, true, true],
+        "competitors": {
+          "Polsia": [true, true, false, false, false, false, false, true],
+          "NanoCorp": [true, true, false, false, false, false, false, false],
+          "Cofounder": [true, true, false, true, false, false, false, false],
+          "Sintra": [true, false, false, false, false, false, false, false],
+          "Lindy": [true, true, false, false, false, false, false, false],
+          "OKR tools": [false, false, false, false, false, false, false, true]
+        }
+      }
+    },
+    "whitespace": {
+      "unmet_needs": ["visible, trustworthy failure", "bounded risk while away", "a business that stays coherent over years, not days"],
+      "missing_features": ["solvency as a hard bound", "irreversibility/admission gating", "replay of why a move happened", "evidence-gated brand evolution"],
+      "underserved_segments": ["founders already burned by autonomous operators", "micro-studios stewarding many small brands"]
+    },
+    "differentiation": {
+      "genuine_differences": ["Objective is time-in-game (viability margin), not throughput or revenue", "Revenue is a regulated output; solvency is a bound", "NPCs propose, only reality commits", "Every claim labelled; every move replayable"],
+      "ownable_territory": "Living continuity — the operator that keeps a business in the game (infinite-game physics, Carse lineage)",
+      "unfair_advantage": "A formal doctrine (viability kernel, allostasis, Red Queen) already encoded as fail-closed contracts across a working organ stack, plus free Genesis as the top of funnel"
+    },
+    "positioning_statement": "For solo founders and small studios burned by agents that 'run your company' into the ground, Cambium is the always-on venture operator that keeps the business inside its viability bounds. Unlike Polsia or NanoCorp, which maximize task throughput, Cambium treats solvency as a hard limit, gates every irreversible move, and logs every decision so it can be replayed."
+  }
+}

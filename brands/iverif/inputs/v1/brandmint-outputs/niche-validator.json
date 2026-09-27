@@ -1,0 +1,43 @@
+{
+  "complaint_clusters": [
+    {
+      "theme": "Document Validation Headaches",
+      "complaints": [
+        "I hate when our subsidy claims get rejected due to minor document errors.",
+        "Why does our team always struggle with validating documents for EU energy subsidies?",
+        "Worst part about our current process is the lack of automation in document validation."
+      ],
+      "pain_points": [
+        "Time-consuming manual validation",
+        "High error rates",
+        "Lack of automation"
+      ]
+    },
+    {
+      "theme": "Regulatory Complexity",
+      "complaints": [
+        "I'm frustrated with the constant changes in EU energy subsidy regulations.",
+        "Why does our team always have to deal with complex regulatory requirements?",
+        "Worst part about our job is staying up-to-date with regulatory changes."
+      ],
+      "pain_points": [
+        "Regulatory complexity",
+        "Difficulty staying up-to-date",
+        "Fear of non-compliance"
+      ]
+    }
+  ],
+  "viability_scores": {
+    "niche_size": 8,
+    "competition": 4,
+    "growth_potential": 9,
+    "revenue_potential": 8,
+    "overall_score": 29
+  },
+  "verdict": "Go",
+  "recommendations": [
+    "Develop a user-friendly document validation platform with AI-powered automation.",
+    "Provide regulatory expertise and managed onboarding for EU energy subsidy operators.",
+    "Offer real-time validation and audit trails to reduce errors and ensure compliance."
+  ]
+}

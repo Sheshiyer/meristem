@@ -2,97 +2,99 @@
   "skill": "social-media-assets",
   "cluster": "photography",
   "wave": 4,
-  "timestamp": "2026-06-08T06:00:00Z",
+  "timestamp": "2026-08-22T07:30:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "art_direction": {
-      "theme": "Digital Wilderness",
-      "summary": "Social assets carry the Digital Wilderness atmosphere into platform formats while leaving deliberate dark negative space for overlay applied in the layout layer. Each format places a tactile material vignette (matte paper, brushed metal, weathered stone, moss) and a teal signal network against a deep blue-black field, with a single orange ignition accent. The OG and X header bias content to one side / one sweep so headline copy, the canonical wordmark, or profile elements can be composited over clean space — never baked in. Restraint keeps the brand reading as founder-led and editorial across the feed.",
-      "model": "gemini-3-pro-image-preview",
-      "lighting": "Cool screen-glow shaft and controlled architectural shadow; clean contrast.",
-      "color_treatment": "Deep Quantum Blue / near-black field, teal (#00897B) signal nodes, single Energetic Orange (#F57C00) accent; desaturated.",
-      "composition": "Format-specific: right-two-thirds vignette with empty left (OG), left-to-right material sweep (X header), low vignette with calm top/bottom (IG story)."
-    },
-    "platforms": ["linkedin", "x", "instagram", "facebook", "youtube"],
-    "profile_strategy": {
-      "approach": "Use the existing canonical Thoughtseed marks as the profile image — the black tree mark on light, or the white/reversed tree mark on the dark anchor field. No new profile mark is generated; the logo-concept spoke governs usage. Generated imagery is never used as the avatar mark.",
-      "background": "Deep Quantum Blue (#1A237E) or dark canvas (#0A0E14) for reversed mark; Neutral 50 (#F8F9F9) for black mark.",
-      "note": "Per logo-concept: switch to the tree mark in square/compact contexts; keep it monochrome and give full clear space.",
-      "prompt": "N/A — profile mark uses canonical asset files (assets/thoughtseed-tree-mark-black-3x.png), not generated imagery."
-    },
-    "cover_strategy": {
-      "approach": "Atmospheric Digital Wilderness vignettes with composed empty space for text/profile/wordmark overlay added in layout.",
-      "safe_zones": "OG keeps the left third empty; X header keeps the left clear and accounts for the centered profile-photo crop; IG story keeps top and bottom calm. Account for platform UI cropping on each.",
-      "seasonal_updates": false
-    },
-    "assets": [
+    "platforms": [
       {
-        "id": "social-og",
-        "path": "./generated/social-og.png",
-        "aspect_ratio": "16:9",
-        "platform": "open-graph / linkedin / facebook / x-post",
-        "type": "share / OG card",
-        "dimensions": "1200x675 (16:9)",
-        "model": "gemini-3-pro-image-preview",
-        "source": "generated",
-        "user_provided": false,
-        "description": "Balanced social share image: an atmospheric Digital Wilderness material vignette occupying the right two-thirds with teal signal nodes and one orange accent, and deliberate empty dark negative space on the left for later overlay (headline + wordmark).",
-        "prompt": "A balanced social share image: an atmospheric Digital Wilderness material vignette occupying the right two-thirds with teal signal nodes and one orange accent, and deliberate empty dark negative space on the left for later overlay.",
-        "text_safe_zone": "left third",
-        "priority": "high",
-        "usage": ["open-graph-card", "linkedin-post", "facebook-post", "x-post-image", "link-preview"]
+        "platform": "Instagram",
+        "format": "Post",
+        "aspect_ratio": "1:1",
+        "asset": {
+          "id": "thoughtseed-ig-post-01",
+          "path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/instagram-post/thoughtseed-ig-post-01.jpg",
+          "prompt_used": "Dark metal 3D emblem centered on Deep Quantum Blue (#1A237E) background. THOUGHTSEED wordmark in white, tagline in teal italic. Minimal premium composition.",
+          "model": "gpt-image-2"
+        }
       },
       {
-        "id": "social-x-header",
-        "path": "./generated/social-x-header.png",
-        "aspect_ratio": "21:9",
-        "platform": "x / twitter",
-        "type": "profile header / banner",
-        "dimensions": "1500x500 (~21:9 ultra-wide)",
-        "model": "gemini-3-pro-image-preview",
-        "source": "generated",
-        "user_provided": false,
-        "description": "Ultra-wide banner: a horizontal sweep from architectural shadow on the left into a tactile material study on the right of matte paper, brushed metal, stone and moss, connected by a single long faint teal signal line across deep blue-black with generous negative space for the profile-photo crop and overlay.",
-        "prompt": "An ultra-wide banner: a horizontal sweep from architectural shadow on the left into a tactile material study on the right of matte paper, brushed metal, stone and moss, connected by a single long faint teal signal line across deep blue-black with generous negative space.",
-        "text_safe_zone": "left and lower-center (profile-photo crop zone)",
-        "priority": "high",
-        "usage": ["x-profile-header", "linkedin-cover", "wide-banner"]
-      },
-      {
-        "id": "social-ig-story",
-        "path": "./generated/social-ig-story.png",
+        "platform": "Instagram",
+        "format": "Story",
         "aspect_ratio": "9:16",
-        "platform": "instagram / stories / reels",
-        "type": "story / vertical",
-        "dimensions": "1080x1920 (9:16)",
-        "model": "gemini-3-pro-image-preview",
-        "source": "generated",
-        "user_provided": false,
-        "description": "Vertical story-format brand stage: a tall dark composition with a shaft of cool light, a single material vignette of brushed metal meeting moss and stone low in the frame, teal nodes rising through empty space and one small orange ignition accent, with calm empty space at top and bottom for sticker/headline overlay.",
-        "prompt": "A vertical story-format brand stage: a tall dark composition with a shaft of cool light, a single material vignette of brushed metal meeting moss and stone low in the frame, teal nodes rising through empty space and one small orange ignition accent, with calm empty space at top and bottom.",
-        "text_safe_zone": "top and bottom",
-        "priority": "high",
-        "usage": ["instagram-story", "reel-cover", "vertical-ad", "story-ad"]
+        "asset": {
+          "id": "thoughtseed-ig-story-01",
+          "path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/instagram-story/thoughtseed-ig-story-01.jpg",
+          "prompt_used": "Holo-vinyl sticker in upper third on white background. THOUGHTSEED in Deep Quantum Blue. Digital Wilderness in teal. CTA in Energetic Orange.",
+          "model": "gpt-image-2"
+        }
+      },
+      {
+        "platform": "X",
+        "format": "Header",
+        "aspect_ratio": "16:9",
+        "asset": {
+          "id": "thoughtseed-x-header-01",
+          "path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/x-header/thoughtseed-x-header-01.jpg",
+          "prompt_used": "Metallic teal tree mark on left, Mindful Gray. THOUGHTSEED in white on right, Digital Wilderness in teal. Gray to Deep Quantum Blue gradient.",
+          "model": "gpt-image-2"
+        }
+      },
+      {
+        "platform": "LinkedIn",
+        "format": "Company banner",
+        "aspect_ratio": "16:9",
+        "asset": {
+          "id": "thoughtseed-linkedin-banner-01",
+          "path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/linkedin-banner/thoughtseed-linkedin-banner-01.jpg",
+          "prompt_used": "Founder in prototyping space with system artifacts. Deep Quantum Blue and Teal tones. THOUGHTSEED headline on right.",
+          "model": "gpt-image-2"
+        }
+      },
+      {
+        "platform": "Web",
+        "format": "OG image",
+        "aspect_ratio": "16:9",
+        "asset": {
+          "id": "thoughtseed-og-image-01",
+          "path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/og-image/thoughtseed-og-image-01.jpg",
+          "prompt_used": "4-module bento grid: tree mark, teal swatch, Tyros Pro specimen, tagline. THOUGHTSEED wordmark strip on Deep Quantum Blue.",
+          "model": "gpt-image-2"
+        }
+      },
+      {
+        "platform": "Instagram",
+        "format": "Story (original 2026-06-08)",
+        "aspect_ratio": "9:16",
+        "asset": {
+          "id": "social-ig-story-original",
+          "path": "../meristem/brands/thoughtseed/generated/social-ig-story.png",
+          "note": "Original 2026-06-08 asset, retained for provenance"
+        }
+      },
+      {
+        "platform": "X",
+        "format": "Header (original 2026-06-08)",
+        "aspect_ratio": "3:1",
+        "asset": {
+          "id": "social-x-header-original",
+          "path": "../meristem/brands/thoughtseed/generated/social-x-header.png",
+          "note": "Original 2026-06-08 asset, retained for provenance"
+        }
+      },
+      {
+        "platform": "Web",
+        "format": "OG (original 2026-06-08)",
+        "aspect_ratio": "1.91:1",
+        "asset": {
+          "id": "social-og-original",
+          "path": "../meristem/brands/thoughtseed/generated/social-og.png",
+          "note": "Original 2026-06-08 asset, retained for provenance"
+        }
       }
     ],
-    "post_templates": [
-      { "name": "Quote / phrase card", "purpose": "Engagement", "elements": ["approved brand phrase as overlay text", "social-og vignette ground", "wordmark"], "prompt": "Overlay an approved brand phrase (e.g. 'Build the system, not just the story.' or 'From requirement to handoff.') in the left safe zone of social-og.png; apply text in layout, never bake into the generated image." },
-      { "name": "Announcement", "purpose": "News / launch", "elements": ["bold headline overlay", "single orange ignition accent visible", "wordmark"], "prompt": "Use social-og.png or social-ig-story.png with headline overlaid in the safe zone; reserve the orange accent moment for launch energy." },
-      { "name": "Work / proof", "purpose": "Credibility", "elements": ["product-photography artifact frame", "short caption overlay"], "prompt": "Pair product-01-system-artifacts.png with a restrained caption in layout to show shipped, inheritable work." }
-    ],
-    "quality_gates": {
-      "profile_images_defined": "Profile marks use canonical logo assets (not generated) per logo-concept.",
-      "cover_safe_zones_specified": true,
-      "dimensions_match_platforms": true,
-      "post_templates_cover_key_types": true,
-      "brand_consistency": "All assets hold the Digital Wilderness dark-first field with single teal/orange signal.",
-      "small_size_legibility": "Profile legibility handled by the canonical tree mark per logo-concept minimum sizes.",
-      "no_baked_text_or_logos": true,
-      "forbidden_visuals_avoided": true,
-      "all_images_generated": true,
-      "prompts_documented": true
-    },
-    "generation_summary": { "total_assets": 3, "generated": 3, "pending": 0, "model": "gemini-3-pro-image-preview" }
+    "manifest_path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/MANIFEST.json",
+    "color_palette_compliance": "PASS",
+    "visual_language_compliance": "PASS"
   }
 }

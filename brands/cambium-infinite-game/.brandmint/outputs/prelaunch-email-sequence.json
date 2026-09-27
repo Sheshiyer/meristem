@@ -1,0 +1,78 @@
+{
+  "skill": "prelaunch-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-09-27T13:21:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_strategy": {
+      "goals": ["teach finite versus infinite games", "name the founder continuity problem", "introduce viability and authority", "show how proof labels work", "invite readiness-based access without false scarcity"],
+      "timing": "Five emails over two weeks before an evidence-gated launch; launch date remains a placeholder until approved.",
+      "total_emails": 5,
+      "status": "draft-only; no mailing list action or send authorized"
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "Finite games end",
+        "send_timing": "Immediately after explicit signup",
+        "goal": "establish the frame",
+        "subject_lines": {"primary": "Some work should end. The company should not.", "curiosity": "Why good agents go dormant", "benefit": "Finish the task without losing continuity", "urgency": "No rush: start with the game you are actually playing"},
+        "preview_text": "The organs are finite. The operator is not.",
+        "hook": "A useful agent knows when its task is finished.",
+        "body": "A brand run should converge. A build should ship. A campaign should close.\n\nThe mistake is asking any one of those finite systems to become the company.\n\nCambium begins one level higher. It keeps the vision, current mission, viability bounds, and learning alive while specialist runs start, finish, and rest.\n\nOver the next two weeks, we will show the model without asking you to believe a synthetic-founder story.",
+        "cta": {"text": "Read the finite/infinite frame", "url_placeholder": "{{frame_url}}"},
+        "ps": "P.S. These emails are education drafts, not evidence that the product is publicly available."
+      },
+      {
+        "number": 2,
+        "name": "The continuity tax",
+        "send_timing": "Day 3",
+        "goal": "make the founder problem concrete",
+        "subject_lines": {"primary": "The company stops when you stop", "curiosity": "What only the founder is carrying", "benefit": "Reduce supervision without losing the thread", "urgency": "Name the continuity gap before adding another agent"},
+        "preview_text": "More tools do not remove the founder as the only memory layer.",
+        "hook": "The hidden operating cost is not the task. It is the thread between tasks.",
+        "body": "Founders pay a continuity tax every time they reconstruct context, check whether work really happened, reconcile conflicting outputs, or remember which constraint made an earlier decision safe.\n\nMore agents can increase that tax.\n\nCambium treats the venture as typed world-state with explicit bounds and replayable events. The aim is not less human judgment. It is less human reassembly.",
+        "cta": {"text": "Find your continuity gap", "url_placeholder": "{{continuity_url}}"},
+        "ps": "P.S. If a system cannot show its source and authority, the founder still has to carry both."
+      },
+      {
+        "number": 3,
+        "name": "The viability worksheet",
+        "send_timing": "Day 6",
+        "goal": "provide a practical tool",
+        "subject_lines": {"primary": "A small worksheet for staying in the game", "curiosity": "Which margin is quietly narrowing?", "benefit": "Turn risk into a named operating bound", "urgency": "Use the actual margin—not a countdown"},
+        "preview_text": "Four questions: bound, signal, safe direction, authority.",
+        "hook": "Write down the one condition that would force your venture to stop.",
+        "body": "1. What bound cannot be crossed?\n2. What fresh evidence tells you the margin is narrowing?\n3. Which reversible finite game could widen it?\n4. Which authority is required before that game creates consequence?\n\nThat is the smallest useful Cambium loop. No 1024-dimensional dashboard required.\n\nA bound you can name and verify is better than an impressive model you cannot govern.",
+        "cta": {"text": "Open the worksheet", "url_placeholder": "{{worksheet_url}}"},
+        "ps": "P.S. Treat the worksheet as a hypothesis. The receipt should show when reality refutes it."
+      },
+      {
+        "number": 4,
+        "name": "Proof has a label",
+        "send_timing": "Day 10",
+        "goal": "build credibility through epistemic restraint",
+        "subject_lines": {"primary": "Doctrine is not production proof", "curiosity": "Five labels that make claims safer", "benefit": "Know what is live before you trust it", "urgency": "Check the label before the claim travels"},
+        "preview_text": "Doctrine. Local. Production. Held. Retired.",
+        "hook": "A beautiful diagram can still be only doctrine.",
+        "body": "Cambium uses five plain labels.\n\nDoctrine describes the intended system. Local means a source or test exists here. Production means the live boundary was probed. Held means the work exists but lacks authority or acceptance. Retired means the path is historical evidence, not a current option.\n\nThe label does not make a claim true. It makes the kind of truth visible.",
+        "cta": {"text": "See the proof labels", "url_placeholder": "{{proof_labels_url}}"},
+        "ps": "P.S. No testimonial belongs in this sequence until a real person approves an exact quote and context."
+      },
+      {
+        "number": 5,
+        "name": "Ready when the gates are",
+        "send_timing": "When launch readiness is actually approved",
+        "goal": "invite access without manufactured scarcity",
+        "subject_lines": {"primary": "Cambium opens when the evidence is ready", "curiosity": "What must pass before the first garden opens", "benefit": "Begin with a governed first mapping", "urgency": "No artificial deadline—the readiness gate is the deadline"},
+        "preview_text": "One venture. One bound. One event. One replay.",
+        "hook": "We will not turn a date into proof.",
+        "body": "When the first product boundary is accepted, Cambium will open with one deliberately small experience: map a venture, name a bound, admit one event, and replay one decision.\n\nIf those four things are not legible, more autonomy would only hide the gap.\n\nIf you want to take part, join the readiness list. We will write again only when the product, policy, and evidence gates say the same thing.",
+        "cta": {"text": "Join the readiness list", "url_placeholder": "{{readiness_url}}"},
+        "ps": "P.S. Replace this placeholder only after consent handling, availability, and the first-wake acceptance receipt are real."
+      }
+    ]
+  }
+}

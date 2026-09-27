@@ -1,0 +1,83 @@
+{
+  "skill": "visual-content-bridge",
+  "cluster": "synthesis",
+  "wave": 7,
+  "timestamp": "2026-08-22T07:35:00Z",
+  "status": "complete",
+  "version": "2.0.0",
+  "purpose": "Map Wave 6 copy (landing page, emails, ads, product description) to the new visual-language assets (Wave 3-5 outputs) so the brand surface is unified.",
+  "data": {
+    "landing_page_integration": {
+      "headline_source": "landing-page-copy.json / hero.headline",
+      "headline_value": "Digital Wilderness",
+      "hero_image_source": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/triptych/thoughtseed-triptych-hero-01.jpg",
+      "triptych_workflow_source": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/triptych/thoughtseed-triptych-full-workflow-01.jpg",
+      "visual_language_alignment": "Triptych uses Deep Quantum Blue (#1A237E) left panel + Teal (#00897B) center/right — matches brand-palette.json"
+    },
+    "email_sequence_integration": {
+      "welcome_email": {
+        "headline_source": "welcome-email-sequence.json / email_1.subject",
+        "hero_image_source": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/hero-01-digital-wilderness-workshop.jpg",
+        "visual_note": "Hero image shows founder in prototyping space — supports welcome narrative of who we are"
+      },
+      "prelaunch_email": {
+        "headline_source": "prelaunch-email-sequence.json / campaign_subject",
+        "visual_note": "Use campaign key visual (3:2) for hero: ../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/campaign/thoughtseed-campaign-key-visual-01.jpg"
+      },
+      "launch_email": {
+        "headline_source": "launch-email-sequence.json / launch_subject",
+        "hero_image_source": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/lifestyle-01-digital-wilderness-workspace.jpg",
+        "visual_note": "Workspace shot supports 'Digital Wilderness as a working system' narrative"
+      }
+    },
+    "ad_creative_integration": {
+      "linkedin_variants": {
+        "headline_pattern": "Digital Wilderness — one coherent system from requirement to handoff.",
+        "hero_image_source": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/triptych/thoughtseed-triptych-hero-01.jpg",
+        "alternative": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/hero-01-digital-wilderness-workshop.jpg"
+      },
+      "x_variants": {
+        "headline_pattern": "Bring the requirement.",
+        "asset_recommendation": "tier1-logo-objects/dark-metal/thoughtseed-dark-metal-emblem-01.jpg"
+      }
+    },
+    "press_release_integration": {
+      "press_kit_path": "../thoughtseed-labs/10-brand-essence/presskit/",
+      "recommended_hero": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/hero-01-digital-wilderness-workshop.jpg",
+      "recommended_logo_lockup": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/concrete-botanical/thoughtseed-concrete-botanical-brutalist-01.jpg",
+      "caption_for_logo_lockup": "Thoughtseed — Digital Wilderness (concrete-botanical installation by Amir [dir. 13] workflow)"
+    },
+    "product_description_integration": {
+      "service_modules": {
+        "Requirement Architecture": {
+          "visual": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/concrete-botanical/thoughtseed-concrete-botanical-brutalist-01.jpg",
+          "rationale": "Concrete-botanical = disciplined engineering meets organic emergence — visualizes 'requirement' as a structure filled with growth"
+        },
+        "Product & Interface Systems": {
+          "visual": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/product-01-system-artifacts-knolling.jpg",
+          "rationale": "Knolling of system artifacts = products and interfaces in one composed view"
+        },
+        "Handoff & Decision Systems": {
+          "visual": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/holo-vinyl/thoughtseed-holo-vinyl-01.jpg",
+          "rationale": "Holo-vinyl collectible = durable, premium, transferable artifact — the handoff as a thing you can hold"
+        }
+      }
+    },
+    "social_media_integration": {
+      "manifest_path": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/MANIFEST.json",
+      "platforms": {
+        "instagram_post": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/instagram-post/thoughtseed-ig-post-01.jpg",
+        "instagram_story": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/instagram-story/thoughtseed-ig-story-01.jpg",
+        "x_header": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/x-header/thoughtseed-x-header-01.jpg",
+        "linkedin_banner": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/linkedin-banner/thoughtseed-linkedin-banner-01.jpg",
+        "og_image": "../thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/og-image/thoughtseed-og-image-01.jpg"
+      }
+    },
+    "validation": {
+      "wave_6_content_intact": true,
+      "voice_discipline_preserved": true,
+      "prohibited_terms_check": "PASS — 0 violations across 7 content files",
+      "visual_assets_aligned_to_voice": true
+    }
+  }
+}

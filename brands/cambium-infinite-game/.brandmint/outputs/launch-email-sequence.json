@@ -1,0 +1,78 @@
+{
+  "skill": "launch-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "timestamp": "2026-09-27T13:17:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_strategy": {
+      "campaign_length": "14 days, event-triggered rather than scarcity-driven",
+      "total_emails": 5,
+      "goals": ["introduce the missing operator layer", "teach viability without jargon", "demonstrate one bounded wake", "address founder-authority concerns", "invite a source-grounded first mapping"],
+      "truth_boundary": "Draft only. Do not send until product availability, audience consent, URLs, and live demonstration receipts are approved."
+    },
+    "emails": [
+      {
+        "number": 1,
+        "name": "The missing layer",
+        "send_timing": "Launch day",
+        "primary_lever": "reframing",
+        "urgency_level": "low",
+        "subject_lines": {"primary": "Your agents finish. Your company continues.", "variation_a": "The missing layer above your AI agents", "variation_b": "What operates between the runs?"},
+        "preview_text": "Cambium is built for the part of business that never reaches done.",
+        "body": "A brand can be minted. A site can be shipped. A campaign can end.\n\nThose are finite games, and finishing them is correct.\n\nThe company is different. It has to carry its cause, limits, and learning from one finished game into the next. Until now, the founder has been the only layer doing that work.\n\nCambium is the living operator above bounded AI agents. It wakes on evidence, checks the venture's ability to continue, proposes the next finite game, gates consequence, and leaves a receipt.\n\nNot a synthetic founder. Not an activity swarm. A continuity layer for the real steward.",
+        "cta": {"text": "See the infinite-game model", "url_placeholder": "{{infinite_game_url}}"},
+        "ps": "P.S. Every visual in this launch is illustrative. Live product claims will carry their own receipts."
+      },
+      {
+        "number": 2,
+        "name": "Name the bound",
+        "send_timing": "Day 3",
+        "primary_lever": "self-diagnosis",
+        "urgency_level": "low",
+        "subject_lines": {"primary": "What would force your venture out of the game?", "variation_a": "Start with the bound that keeps you awake", "variation_b": "Solvency is a bound, not the mission"},
+        "preview_text": "Continuity begins by naming what cannot be crossed.",
+        "body": "The fastest way to make an agent system unsafe is to give it one number to maximize.\n\nRevenue matters. So do founder capacity, mission coherence, legal limits, and trust. None of them is the whole game.\n\nCambium begins with a smaller question: what margin must remain positive for this venture to keep playing?\n\nName the bound. Name the evidence. Then choose the finite move that widens the margin without hiding consequence.\n\nThat is viability in practice—less grand than autonomy, and far more useful.",
+        "cta": {"text": "Map one viability bound", "url_placeholder": "{{bounds_url}}"},
+        "ps": "P.S. We do not claim to compute an exact high-dimensional viability kernel. We use explicit bounds and observable proxy margins."
+      },
+      {
+        "number": 3,
+        "name": "One wake",
+        "send_timing": "Day 6",
+        "primary_lever": "demonstration",
+        "urgency_level": "low",
+        "subject_lines": {"primary": "One event. One bounded decision. One receipt.", "variation_a": "What a Cambium wake actually does", "variation_b": "The opposite of an activity feed"},
+        "preview_text": "Event → viability check → proposal → gate → receipt → rest.",
+        "body": "Cambium is quiet by default.\n\nA real event arrives. The operator checks its source, freshness, and relevance. It reads current world-state and the margins that matter. It proposes one finite game.\n\nIf the move is reversible and authorized, it can proceed. If it spends, publishes, changes identity, or cannot be undone, it stops at the founder gate.\n\nThe outcome lands with its evidence and authority. Then Cambium returns to dormancy.\n\nNo celebration for staying busy. No success claim without the work. Just one legible operating step.",
+        "cta": {"text": "Replay the demonstration", "url_placeholder": "{{wake_demo_url}}"},
+        "ps": "P.S. Replace this draft link only with a current, verifiable demonstration."
+      },
+      {
+        "number": 4,
+        "name": "Authority stays human",
+        "send_timing": "Day 10",
+        "primary_lever": "objection handling",
+        "urgency_level": "low",
+        "subject_lines": {"primary": "Cambium does not replace the founder", "variation_a": "Autonomy ends where consequence begins", "variation_b": "What stays behind the founder gate"},
+        "preview_text": "Reduce supervision without surrendering authority.",
+        "body": "If a system can act, it needs a clear answer to a harder question: who is allowed to cause consequence?\n\nCambium separates routine bounded work from actions that spend money, publish externally, change identity, move data, or create an irreversible commitment.\n\nThe first class can be pre-authorized. The second remains human.\n\nThe point is not to keep the founder clicking approve all day. It is to make the boundary explicit enough that the quiet work can happen safely—and the consequential work can never hide inside it.",
+        "cta": {"text": "Inspect the authority boundary", "url_placeholder": "{{authority_url}}"},
+        "ps": "P.S. A founder gate is useful only when the default is fail-closed and the receipt names the exact authority."
+      },
+      {
+        "number": 5,
+        "name": "First mapping",
+        "send_timing": "Day 14",
+        "primary_lever": "invitation",
+        "urgency_level": "low",
+        "subject_lines": {"primary": "Start with one garden", "variation_a": "Ready to map the first finite game?", "variation_b": "From constant supervision to stewardship"},
+        "preview_text": "Begin with the venture, the bound, and one evidence-bearing event.",
+        "body": "You do not need a synthetic company on day one.\n\nStart with one real venture. Name its near-invariant vision. Name the mission that can renew. Name the bound whose collapse would force the game to stop. Then choose one event that should wake the operator.\n\nThat is enough to test whether Cambium makes the next decision more viable, more legible, and less dependent on constant vigilance.\n\nIf it does not, the receipt should tell us why.",
+        "cta": {"text": "Begin the first mapping", "url_placeholder": "{{mapping_url}}"},
+        "ps": "P.S. No artificial deadline. The right time to begin is when the evidence and authority are ready."
+      }
+    ]
+  }
+}

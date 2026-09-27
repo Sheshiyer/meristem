@@ -2,139 +2,117 @@
   "skill": "visual-language",
   "cluster": "identity",
   "wave": 3,
-  "timestamp": "2026-06-08T06:00:00Z",
+  "timestamp": "2026-08-22T07:35:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "theme": "Digital Wilderness",
-    "essence": "Disciplined engineering meets organic emergence. Architectural precision held against cultivated texture; structured layouts against alive surfaces. Editorial, signal-rich, tactile, intentional, founder-led, technically grounded.",
-    "reference_assets": {
-      "moodboard": "generated/visual-language-board.png",
-      "note": "The moodboard is a generated reference that captures the Digital Wilderness mood and material range. It is direction, not a deliverable, and contains no baked-in text or logos."
-    },
     "visual_principles": [
       {
-        "name": "Architectural precision against cultivated texture",
-        "description": "Every composition holds an engineered structure (grids, crops, system diagrams, clean type) in tension with something grown and tactile (moss, oxidized copper, weathered stone, screen glow). Neither side wins; the duality is the brand."
+        "name": "Digital Wilderness",
+        "description": "Disciplined engineering meets organic emergence. Architectural precision against cultivated texture. The brand sits at the seam where rigor and growth meet — neither clinical nor lush, but held together."
       },
       {
-        "name": "Signal over noise",
-        "description": "A dark-first, cool-anchored field where a single warm or teal signal carries meaning. Restraint makes the signal legible. If everything is highlighted, nothing reads."
+        "name": "Editorial-documentary photography",
+        "description": "Real prototyping spaces, not staged studios. Tactile materials. Working environments. Evidence sits next to every claim. Photography looks like feature stories in a design or technology publication, not startup marketing."
       },
       {
-        "name": "Negative space as structure",
-        "description": "Space is composed, not leftover. Architectural crops and intentional emptiness give the work editorial calm and let materials and type breathe."
+        "name": "Material honesty",
+        "description": "Surfaces read as themselves: matte paper has grain, brushed aluminum has direction, weathered stone has texture, living moss is alive. No glossy plastic, no stock gradients, no fake texture. The materials carry the meaning."
       },
       {
-        "name": "Material truth over gloss",
-        "description": "Depth comes from real material and contrast — matte paper, brushed aluminium, architectural shadow — not from glossy plastic, drop-shadows, or glassmorphism. Tactile and grounded, like something that ships."
+        "name": "Restraint over excess",
+        "description": "Generous negative space, limited labels, clear modular grids. The brand speaks quietly. Atmosphere comes from phrasing and image choice, not volume. Premium restraint, not loud luxury."
       },
       {
-        "name": "Show the system",
-        "description": "Geometric systems diagrams, labels, and numbering are part of the aesthetic. The work looks like it was built by people who think in systems and ship them."
+        "name": "Bento-grid composition",
+        "description": "Editorial layouts use a 6-module bento structure: hero, social, palette, typography specimen, logo block, brand DNA. Each module earns its place. The grid is structural, not decorative."
+      },
+      {
+        "name": "Material expressions of the logo",
+        "description": "The tree mark translates across premium materials — dark metal, polished chrome, embossed glass, wax seal, holo-vinyl, concrete-botanical installation — without ever being replaced. Material variations are art-direction references, not replacement marks."
       }
-    ],
-    "materials": [
-      "matte paper",
-      "black ink",
-      "glass",
-      "brushed aluminium",
-      "oxidized copper",
-      "weathered stone",
-      "living moss",
-      "screen glow",
-      "architectural shadow"
     ],
     "photography": {
       "style": {
-        "approach": "editorial documentary",
-        "lighting": "natural, directional, clean contrast; controlled hard shadow for architectural depth — never flat or over-lit",
-        "composition": "architectural crops, asymmetric framing, intentional negative space; structure-forward",
-        "color_treatment": "cool cast anchored to the deep blue / near-black system, with restrained warm or teal signal accents from the real scene — desaturated rather than candy-bright",
-        "subject_focus": "materials, prototyping spaces, worktables, structured interiors, hands building, devices and screens in context; environment and object over staged people",
-        "mood": "calm, intentional, grounded, signal-rich; founder-led and technical, not aspirational-glossy",
-        "context": "studio, workshop, structured interior, architectural exterior; real working surfaces"
+        "lighting": "Soft architectural daylight with dramatic single-source side lighting. Screen glow accents from active displays. Warm Energetic Orange highlights on prototype surfaces.",
+        "composition": "Rule of thirds with text-safe zones for hero/lifestyle. Editorial framing. Knolling for product shots. Wide cinematic for establishing shots.",
+        "color_treatment": "Branded tint — Deep Quantum Blue (#1A237E) shadows, Teal (#00897B) accent tones, Mindful Gray (#37474F) neutrals. Energetic Orange (#F57C00) ignition. Growth Light (#B8E986) for organic signals.",
+        "subject_focus": "Founders and operators in prototyping spaces — not stock photo models. System artifacts as the subject matter: screens showing delivery dashboards, hand-drawn requirement sketches on matte paper, working prototypes on brushed aluminum.",
+        "mood": "Premium, sophisticated, real. The feeling of a serious design studio that cares about craft. Working environments, not staged sets.",
+        "context": "Editorial-documentary. The kind of imagery that appears in design publications (Fast Company, Wired, Awwwards) as feature stories, not marketing pages."
       },
       "references": [
-        "A matte-paper worktable shot from directly above: prototypes, system sketches, a device, raking natural light and clean shadow.",
-        "An architectural interior crop — concrete, glass, steel — with deep negative space and a single screen-glow accent in the frame.",
-        "A close, tactile macro of oxidized copper or living moss against a machined aluminium edge: precision meeting growth.",
-        "A structured workshop scene, cool light, desaturated palette, a small teal or warm signal occurring naturally in the equipment."
+        "Editorial feature photography from Fast Company and Wired founder profiles",
+        "Architecture photography from Brutalist and Contemporary museum installations",
+        "Studio documentation photography from Pentagram and IDEO project archives",
+        "Industrial design photography from Dezeen and Wallpaper*"
       ],
-      "prompt_template": "[Scene: prototyping space / worktable / structured interior / architectural crop] in an editorial-documentary photography style. Lighting: natural, directional, clean contrast with controlled architectural shadow. Mood: calm, intentional, grounded, technically precise. Color palette: cool, anchored to deep blue-black and cool grays with a single restrained teal or warm signal accent; desaturated, not candy-bright. Composition: architectural crop, asymmetric, generous intentional negative space. Materials in frame: matte paper, brushed aluminium, glass, weathered stone, oxidized copper, or living moss. High-quality professional photography. No text, no lettering, no logos anywhere in the image. Avoid: purple-on-white SaaS gradients, stock startup team photos, empty futurism, wellness or mystical fog, glossy plastic, cartoon elements."
+      "prompt_template": "Editorial [lifestyle/product/hero] photography for Thoughtseed — a founder-led systems studio. [Subject: founder in prototyping space]. [Setting: real workspace, not staged]. [Lighting: soft architectural daylight with Teal screen accents]. [Color palette: Deep Quantum Blue shadows, Teal accents, Energetic Orange highlights]. [Style: editorial-documentary, high resolution, film grain]. [Aspect ratio: 16:9 for hero, 4:3 for product, 9:16 for stories]."
     },
     "illustration": {
       "style": {
-        "type": "geometric systems diagrams blended with organic signal patterns and cultivated-landscape motifs",
-        "complexity": "moderate — legible structure, not busy",
-        "line_weight": "precise, mostly uniform technical line with selective organic variation where growth motifs enter",
-        "color_approach": "brand palette only — Mindful Gray / neutral structure with teal signal lines, Growth Light for positive/emergent notes, Deep Quantum Blue fields, and Energetic Orange reserved for a single highlighted element",
-        "character_style": "non-figurative by default; if any figure appears, geometric and simplified, never cartoonish",
-        "motif": "the Digital Wilderness duality — engineered grid/diagram structure overgrown or interwoven with organic signal patterns and cultivated-landscape forms (roots, branches, contour lines)"
+        "type": "geometric systems diagrams blended with organic signal patterns",
+        "complexity": "medium — diagrams are legible, not overworked",
+        "line_weight": "consistent, measured — technical drawing aesthetic",
+        "color_approach": "primary palette with restrained accents — no rainbow gradients",
+        "character_style": "no characters; pure diagrammatic illustration"
       },
-      "prompt_template": "[Subject: systems diagram / signal pattern / cultivated-landscape motif] as a geometric technical illustration blended with organic growth forms. Line work: precise, mostly uniform, with selective organic variation. Colors: brand palette only — neutral gray structure, teal (#00897B) signal lines, Growth Light (#B8E986) emergent accents, deep blue (#1A237E) fields, with at most one Energetic Orange (#F57C00) highlight. Style: geometric meets organic, moderate complexity, legible not busy. Background: dark-first canvas (#0A0E14) or matte light. Vector-style, clean edges. No text, no lettering, no logos in the artwork. Avoid: purple SaaS gradients, glossy 3D plastic, cartoon iconography, mystical fog."
+      "prompt_template": "Geometric systems diagram for Thoughtseed — a founder-led systems studio. [Subject: e.g., delivery loop, requirement architecture, handoff system]. [Style: clean line art, technical diagram aesthetic]. [Color palette: Deep Quantum Blue + Teal + Mindful Gray, with Energetic Orange ignition on critical paths]. [Background: white or light neutral]. [Tone: editorial, calm, legible]. High resolution, vector-clean."
     },
     "iconography": {
-      "style": "line, single-weight, with optional duotone using a neutral plus one signal color",
-      "stroke_weight": "2px standard, 1.5px at small sizes",
-      "corner_radius": "2px (near-sharp) — precise and engineered, lightly softened",
-      "grid_size": "24x24 base, scaled to 16 / 32 / 48",
-      "optical_adjustments": "yes — balance weight optically across the set",
+      "style": "line (monoline) with selective solid fills",
+      "stroke_weight": "consistent, medium — uniform line weight across all icons",
+      "corner_radius": "subtle rounding — 2-4px on rectangular elements",
+      "grid_size": "24px base grid, 1.5px stroke",
       "categories": [
-        "UI icons (navigation, actions, states)",
-        "feature icons (service modules: requirement architecture, product & interface systems, handoff & decision systems)",
-        "category icons (sections, document and diagram types)"
-      ],
-      "note": "Icons share one weight and one geometric construction logic so the set reads as a system. Color follows the palette: neutral by default, teal for active/signal, never the ignition orange except on a true primary action."
+        "service_modules (Requirement Architecture, Product & Interface Systems, Handoff & Decision Systems)",
+        "engagement_models (System Sprint, Requirement-to-Handoff Build)",
+        "delivery_loop_stages (Requirement, System, Build, Handoff)",
+        "system_artifacts (screen, sketch, prototype, document)"
+      ]
     },
     "patterns": {
-      "type": "geometric systems grid interwoven with organic signal / contour motifs",
-      "scale": "medium — present but quiet; used as texture, not focal",
+      "type": "geometric systems diagrams blended with organic signal patterns; tessellating",
+      "scale": "scalable — works at 16px (favicon-sized) and 1600px (hero background)",
       "usage": [
-        "section dividers and backgrounds",
-        "document covers and closeout collateral",
-        "quiet watermark-scale texture behind dark fields",
-        "data-viz framing and diagram grounds"
+        "background fills for editorial sections",
+        "section dividers between content blocks",
+        "hero overlays with reduced opacity",
+        "social media card backgrounds",
+        "presentation slide backgrounds"
       ],
-      "colors": "brand palette only — neutral structure on the dark-first canvas with sparse teal or Growth Light signal; never large fills of orange or green",
-      "prompt_template": "Seamless tileable pattern: a fine geometric systems grid interwoven with organic contour and root/branch signal motifs. Style: geometric meets organic, minimal and quiet. Colors: neutral gray structure on a dark canvas (#0A0E14) or matte light, with sparse teal (#00897B) or Growth Light (#B8E986) signal lines only. Suitable as a subtle background texture. No text, no lettering, no logos. Avoid: purple gradients, glossy plastic, busy rainbow palettes."
+      "prompt_template": "Tessellating geometric pattern for Thoughtseed — a founder-led systems studio. [Subject: e.g., delivery loop motif, requirement diagram as tile]. [Color: Deep Quantum Blue base with Teal accents, OR Mindful Gray base with Teal/Growth Light accents]. [Style: editorial, geometric, clean]. [Scale: tileable, seamless edges]. High resolution."
     },
-    "composition_bias": {
-      "principles": [
-        "Architectural crops: frame tight on structure and let edges run; favor strong horizon/vertical lines.",
-        "Intentional negative space: compose emptiness deliberately for editorial calm.",
-        "Asymmetric, grid-aware layouts over centered symmetry.",
-        "Dark-first fields with a single signal moment per composition.",
-        "Build depth with material and contrast (matte paper, brushed metal, architectural shadow), not gloss or drop-shadows."
-      ]
-    },
-    "forbidden_visuals": [
-      "generic purple-on-white SaaS gradients",
-      "stock startup team photography",
-      "empty futurism / sci-fi cliché",
-      "wellness clichés or mystical fog without structure",
-      "glossy plastic surfaces",
-      "cartoon iconography",
-      "ANY text, lettering, words, or logos baked permanently into generated imagery"
-    ],
     "guidelines": {
       "do": [
-        "Hold architectural precision against cultivated, tactile texture in every composition.",
-        "Anchor on the dark-first cool field and let one teal or warm signal carry meaning.",
-        "Use editorial-documentary photography of real materials, prototyping spaces, and structured interiors.",
-        "Compose with architectural crops and intentional negative space.",
-        "Keep illustration to geometric systems diagrams blended with organic signal motifs, in brand colors only.",
-        "Build depth from material and contrast; reference the moodboard at generated/visual-language-board.png for mood."
+        "Use editorial-documentary photography for hero, lifestyle, and product shots",
+        "Anchor compositions with Deep Quantum Blue shadows and Teal accents",
+        "Apply bento-grid structure to brand overview and identity compositions",
+        "Translate the tree mark across premium materials as art direction",
+        "Use generous negative space and restrained typography",
+        "Pair every claim with the artifact that proves it",
+        "Show real prototyping spaces with working artifacts",
+        "Maintain material honesty — surfaces read as themselves"
       ],
       "dont": [
-        "Don't use purple-on-white SaaS gradients or any avoided-startup look.",
-        "Don't use stock startup team photography or staged perfection.",
-        "Don't drift into empty futurism, sci-fi cliché, or mystical wellness fog without structure.",
-        "Don't use glossy plastic surfaces, glassmorphism, or gloss-based depth.",
-        "Don't use cartoon iconography.",
-        "Don't bake any text, lettering, words, or logos into generated imagery.",
-        "Don't flood compositions with signal color — scarcity is what makes teal/orange/green read as signal."
+        "Don't use purple SaaS gradients",
+        "Don't use stock startup photos",
+        "Don't use empty futurism (chrome, glow, sterile surfaces)",
+        "Don't use mystical fog or mystical atmosphere",
+        "Don't use glossy plastic textures",
+        "Don't use cartoon icons",
+        "Don't bake text into hero imagery — render typography separately",
+        "Don't name the internal methodology or its metaphors in public copy",
+        "Don't use 'conscious/consciousness' framing in public copy",
+        "Don't use 'full-service agency' framing — the studio is scoped, scoped, scoped"
       ]
+    },
+    "asset_inventory": {
+      "logo_objects": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/",
+      "campaign": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/",
+      "photography_wave4": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/",
+      "social_media": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/",
+      "total_images": 23
     }
   }
 }

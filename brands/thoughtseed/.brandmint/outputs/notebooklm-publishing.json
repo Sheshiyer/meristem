@@ -2,265 +2,146 @@
   "skill": "notebooklm-publishing",
   "cluster": "synthesis",
   "wave": 7,
-  "timestamp": "2026-06-08T06:10:00Z",
+  "timestamp": "2026-08-22T07:35:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "brand": "Thoughtseed",
-    "manifest_source": ".brandmint/asset-manifest.json",
-    "pipeline": {
-      "stage1_transform": {
-        "description": "Skill outputs transformed into categorized narrative prose, written as the brand. Sources are PROSE summaries, never raw JSON. Voice follows voice-and-tone: clear, grounded, crafted, with evidence next to the claim and no avoided terms.",
-        "synthesis_voice": "founder-side systems translator",
-        "categories_processed": ["brand-identity", "product-strategy", "voice-messaging", "campaign-content", "visual-catalog"],
-        "sources_generated": 5,
-        "fallback_used": false,
-        "sources": [
-          {
-            "category": "brand-identity",
-            "source_skills": ["brand-foundation", "color-palette", "typography", "logo-concept"],
-            "source_doc": ".brandmint/sources/brand-identity/thoughtseed-brand-identity.md",
-            "format": "prose",
-            "prose": "Thoughtseed is a founder-led systems studio whose essence is coherent systems, cultivated. The identity reads as Sage with a Creator's hands: it earns trust through clarity and coherence, then ships what it frames. Its visible system is built for restraint. Two canonical marks work together rather than as a single lockup: a horizontal wordmark for headers and mastheads, and a standalone tree mark for square and compact contexts. The marks stay monochrome — black on light, reversed white on the dark or deep-blue field — and never take accent color. The palette is dark-first and cool-anchored: a deep indigo-blue and a cool near-black carry long-horizon trust, a blue-gray supplies scaffolding and metadata, a teal is the working signal, a single warm orange is reserved for the primary call-to-action so its scarcity reads as ignition, and a soft green marks positive emergence. Type is a three-role system — a display face for hero thresholds, an editorial serif as the reading voice, and a monospace as the load-bearing data layer of labels and numbering — so the page reads as an editorial publication built by engineers. Across all of it, one calm signal beats visual noise.",
-            "word_count": 198,
-            "path_validated": true
-          },
-          {
-            "category": "product-strategy",
-            "source_skills": ["product-positioning", "value-proposition", "buyer-persona", "competitor-analysis"],
-            "source_doc": ".brandmint/sources/product-strategy/thoughtseed-product-strategy.md",
-            "format": "prose",
-            "prose": "Thoughtseed defines the founder-led systems studio: the studio that carries a complex requirement all the way to a system the client can own, instead of selling a single slice of strategy, design, or engineering. Its primary value is a single accountable owner of coherence from requirement to handoff, which ends the founder's exhausting role as the full-time translator between five specialists. The buyer is Mira, the System-Carrying Founder — a founder, CTO, innovation lead, or product strategist running a lean senior team, controlling a six-figure project budget, skeptical of buzzwords and pitch theater, who pays for competence once trust is earned through specificity. Her jobs to be done: frame a problem too entangled to split, ship a product real users adopt, add AI without it being a demo that never matures, and own the system after the engagement. The competitive field is five single-slice alternatives, each structurally dependent on translation loss — consultancies that package process but rarely ship, design agencies that hand off before the system runs, AI shops that stop at a demo, engineering vendors that build the spec as handed over, and freelancer swarms that make the founder the integrator. The ownable territory is editorial precision with operating clarity, and the unfair advantage is that the same senior operators frame, design for adoption, ship the engineering, and build the handoff.",
-            "word_count": 226,
-            "path_validated": true
-          },
-          {
-            "category": "voice-messaging",
-            "source_skills": ["voice-and-tone", "messaging-framework", "brand-story"],
-            "source_doc": ".brandmint/sources/voice-messaging/thoughtseed-voice-messaging.md",
-            "format": "prose",
-            "prose": "Thoughtseed speaks as the founder-side systems translator: an operator who has built systems and lived with ambiguity, peer to peer with the founder, in short declarative sentences with evidence close to every claim. The voice is clear, grounded, and crafted, and it describes the downstream effects of the work — clearer requirements, calmer execution, stronger trust and adoption, cleaner ownership transfer — rather than the internal method behind them. The brand promise is one coherent system from requirement to handoff. The public headline is Digital Wilderness and the tagline is We plant ideas. They grow wild. Four message pillars carry everything: one coherent loop, founder-led judgment, behavior as part of the system, and handoff you can run. The origin story holds the whole arc: planted in 2020 from the observation that the problems worth solving were never single-discipline problems, Thoughtseed answered fragmentation with a single delivery loop where the same senior operators frame the requirement, design for adoption, ship the engineering, and build the handoff. Nothing is thrown over a wall, because there is no wall. The enemy is fragmentation; the promised land is a coherent system the founder owns and the team can run. Build the system, not just the story. Bring the requirement.",
-            "word_count": 206,
-            "path_validated": true
-          },
-          {
-            "category": "campaign-content",
-            "source_skills": ["landing-page-copy", "product-description", "ad-creative-copy", "press-release", "launch-email-sequence", "prelaunch-email-sequence", "welcome-email-sequence"],
-            "source_doc": ".brandmint/sources/campaign-content/thoughtseed-campaign-content.md",
-            "format": "prose",
-            "prose": "Thoughtseed's campaign surfaces run as a calm editorial sequence. The homepage moves through a numbered arc — Hero, Delivery Loop, Work, Proof, Handoff, Start — opening on Digital Wilderness with the line Build the system, not just the story, and the supporting note We plant ideas. They grow wild. The delivery loop is told in four stages: Requirement, where the entangled problem and its constraints surface before anything is built; System, where interface and operating logic are designed together with user behavior treated as part of the system; Build, where senior engineers ship what was framed; and Handoff, where documentation, training, and control surfaces ship with the build so the client inherits a system they can run. Product copy describes Thoughtseed Studio from a twenty-two-word micro line up to a full narrative, always landing on one coherent system from requirement to handoff and ownership over dependency. Two engagement models recur: a System Sprint to frame and de-risk the next decision, and a Requirement-to-Handoff Build for scoped delivery through ownership transfer. Email sequences and ad creative carry the same pillars and approved phrases; the press release stays factual, restrained, and newsworthy. Every call to action resolves to: Bring the requirement.",
-            "word_count": 201,
-            "path_validated": true
-          },
-          {
-            "category": "visual-catalog",
-            "source_skills": ["visual-language", "hero-images", "lifestyle-photography", "product-photography", "brand-illustrations", "icon-system", "pattern-library", "social-media-assets"],
-            "source_doc": ".brandmint/sources/visual-catalog/thoughtseed-visual-catalog.md",
-            "format": "prose",
-            "prose": "Thoughtseed's visual territory is Digital Wilderness: architectural precision held against cultivated texture, structured layouts against alive surfaces, with neither side winning. Five principles govern the work — architectural precision against cultivated texture, signal over noise, negative space as structure, material truth over gloss, and show the system. Materials run matte paper, black ink, glass, brushed aluminium, oxidized copper, weathered stone, living moss, screen glow, and architectural shadow. The visual catalog comprises a moodboard that fixes the mood and material range; three hero compositions including the primary Digital Wilderness hero, an establishing crop, and a mobile crop; two lifestyle scenes of a worktable and a studio; two product compositions of system artifacts and a screen surface; two illustrations rendering a systems-organism and the delivery loop; an icon construction sheet; and two patterns for dark and light fields, plus social cards for open-graph, profile header, and story formats. Photography is editorial documentary with a cool desaturated cast and at most one signal accent; illustration is geometric systems diagrams blended with organic motifs in brand colors only. No generated image contains baked-in text or logos — the real marks are always placed as assets over imagery.",
-            "word_count": 197,
-            "path_validated": true,
-            "catalog_assets": [
-              { "id": "visual-language-board", "path": "./generated/visual-language-board.png" },
-              { "id": "hero-01-digital-wilderness", "path": "./generated/hero-01-digital-wilderness.png" },
-              { "id": "hero-02-establishing", "path": "./generated/hero-02-establishing.png" },
-              { "id": "hero-03-mobile", "path": "./generated/hero-03-mobile.png" },
-              { "id": "lifestyle-01-worktable", "path": "./generated/lifestyle-01-worktable.png" },
-              { "id": "lifestyle-02-studio", "path": "./generated/lifestyle-02-studio.png" },
-              { "id": "product-01-system-artifacts", "path": "./generated/product-01-system-artifacts.png" },
-              { "id": "product-02-screen-surface", "path": "./generated/product-02-screen-surface.png" },
-              { "id": "illus-01-systems-organism", "path": "./generated/illus-01-systems-organism.png" },
-              { "id": "illus-02-delivery-loop", "path": "./generated/illus-02-delivery-loop.png" },
-              { "id": "icons-01-sheet", "path": "./generated/icons-01-sheet.png" },
-              { "id": "pattern-01-dark", "path": "./generated/pattern-01-dark.png" },
-              { "id": "pattern-02-light", "path": "./generated/pattern-02-light.png" },
-              { "id": "social-og", "path": "./generated/social-og.png" },
-              { "id": "social-x-header", "path": "./generated/social-x-header.png" },
-              { "id": "social-ig-story", "path": "./generated/social-ig-story.png" }
-            ]
-          }
+    "pipeline": "TRANSFORM → CURATE → ASSEMBLE",
+    "notebook_id": "thoughtseed-delivery-loop",
+    "notebook_focus": "Flow-first. The delivery loop, the voice, the inheritance. NOT the ICP, the market, the product features, or industry verticals.",
+    "stages": {
+      "transform": {
+        "description": "Wave 6 copy (which is already flow-first) → categorized prose sources",
+        "sources_transformed": 4,
+        "output_categories": [
+          "the-loop-itself",
+          "voice-and-language",
+          "what-the-flow-produces",
+          "faq-the-flow"
         ]
       },
-      "stage2_curate": {
-        "description": "Sources selected per target artifact and priority. User-provided assets always included; deterministic logo marks prioritized; generated assets selected by relevance. Source budget is the NotebookLM Standard limit of 50; prose sources count toward the budget, plus the validated image assets attached.",
-        "source_budget_total": 50,
-        "priority_order": ["user_provided", "brand-identity", "product-strategy", "voice-messaging", "campaign-content", "visual-catalog"],
-        "artifacts": [
-          {
-            "artifact": "mind-map",
-            "required_sources": ["brand-identity", "product-strategy"],
-            "optional_sources": ["voice-messaging"],
-            "prose_sources_selected": ["brand-identity", "product-strategy", "voice-messaging"],
-            "assets_selected": [
-              { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided", "deterministic": true },
-              { "id": "illus-02-delivery-loop", "path": "./generated/illus-02-delivery-loop.png", "origin": "generated", "deterministic": false }
-            ],
-            "budget_used": 5,
-            "budget_total": 10
-          },
-          {
-            "artifact": "brand-slides",
-            "required_sources": ["brand-identity", "voice-messaging"],
-            "optional_sources": ["visual-catalog"],
-            "prose_sources_selected": ["brand-identity", "voice-messaging", "visual-catalog"],
-            "assets_selected": [
-              { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided", "deterministic": true },
-              { "id": "logo-tree-mark", "path": "./assets/thoughtseed-tree-mark-black-3x.png", "origin": "user_provided", "deterministic": true },
-              { "id": "hero-01-digital-wilderness", "path": "./generated/hero-01-digital-wilderness.png", "origin": "generated", "deterministic": false },
-              { "id": "visual-language-board", "path": "./generated/visual-language-board.png", "origin": "generated", "deterministic": false },
-              { "id": "pattern-01-dark", "path": "./generated/pattern-01-dark.png", "origin": "generated", "deterministic": false }
-            ],
-            "budget_used": 8,
-            "budget_total": 15
-          },
-          {
-            "artifact": "brand-report",
-            "required_sources": ["brand-identity", "product-strategy", "voice-messaging", "campaign-content", "visual-catalog"],
-            "optional_sources": [],
-            "prose_sources_selected": ["brand-identity", "product-strategy", "voice-messaging", "campaign-content", "visual-catalog"],
-            "assets_selected": [
-              { "id": "logo-wordmark", "path": "./assets/thoughtseed-horizontal-wordmark-3x.png", "origin": "user_provided", "deterministic": true },
-              { "id": "logo-tree-mark", "path": "./assets/thoughtseed-tree-mark-black-3x.png", "origin": "user_provided", "deterministic": true },
-              { "id": "logo-reference-01", "path": "./assets/thoughtseed-logo-reference-01.jpg", "origin": "user_provided", "deterministic": true },
-              { "id": "logo-reference-02", "path": "./assets/thoughtseed-logo-reference-02.jpg", "origin": "user_provided", "deterministic": true },
-              { "id": "hero-01-digital-wilderness", "path": "./generated/hero-01-digital-wilderness.png", "origin": "generated", "deterministic": false },
-              { "id": "hero-02-establishing", "path": "./generated/hero-02-establishing.png", "origin": "generated", "deterministic": false },
-              { "id": "hero-03-mobile", "path": "./generated/hero-03-mobile.png", "origin": "generated", "deterministic": false },
-              { "id": "lifestyle-01-worktable", "path": "./generated/lifestyle-01-worktable.png", "origin": "generated", "deterministic": false },
-              { "id": "lifestyle-02-studio", "path": "./generated/lifestyle-02-studio.png", "origin": "generated", "deterministic": false },
-              { "id": "product-01-system-artifacts", "path": "./generated/product-01-system-artifacts.png", "origin": "generated", "deterministic": false },
-              { "id": "product-02-screen-surface", "path": "./generated/product-02-screen-surface.png", "origin": "generated", "deterministic": false },
-              { "id": "illus-01-systems-organism", "path": "./generated/illus-01-systems-organism.png", "origin": "generated", "deterministic": false },
-              { "id": "illus-02-delivery-loop", "path": "./generated/illus-02-delivery-loop.png", "origin": "generated", "deterministic": false },
-              { "id": "icons-01-sheet", "path": "./generated/icons-01-sheet.png", "origin": "generated", "deterministic": false },
-              { "id": "pattern-01-dark", "path": "./generated/pattern-01-dark.png", "origin": "generated", "deterministic": false },
-              { "id": "pattern-02-light", "path": "./generated/pattern-02-light.png", "origin": "generated", "deterministic": false },
-              { "id": "social-og", "path": "./generated/social-og.png", "origin": "generated", "deterministic": false },
-              { "id": "social-x-header", "path": "./generated/social-x-header.png", "origin": "generated", "deterministic": false },
-              { "id": "social-ig-story", "path": "./generated/social-ig-story.png", "origin": "generated", "deterministic": false }
-            ],
-            "budget_used": 24,
-            "budget_total": 50
-          }
-        ]
-      },
-      "stage3_assemble": {
-        "description": "Prose sources combined with validated user and generated assets into source routing. Every asset path checked against the manifest before inclusion; none reference a non-manifest path.",
-        "all_paths_validated": true,
-        "prose_docs": 5,
-        "user_provided_assets": 4,
-        "generated_assets": 16,
-        "source_routing": {
-          "brand-overview-artifacts": {
-            "prose_sources": [
-              ".brandmint/sources/brand-identity/thoughtseed-brand-identity.md",
-              ".brandmint/sources/product-strategy/thoughtseed-product-strategy.md",
-              ".brandmint/sources/voice-messaging/thoughtseed-voice-messaging.md"
-            ],
-            "assets": [
-              "./assets/thoughtseed-horizontal-wordmark-3x.png",
-              "./assets/thoughtseed-tree-mark-black-3x.png",
-              "./generated/hero-01-digital-wilderness.png",
-              "./generated/visual-language-board.png",
-              "./generated/illus-02-delivery-loop.png"
-            ]
-          },
-          "product-artifacts": {
-            "prose_sources": [
-              ".brandmint/sources/product-strategy/thoughtseed-product-strategy.md",
-              ".brandmint/sources/campaign-content/thoughtseed-campaign-content.md"
-            ],
-            "assets": [
-              "./generated/product-01-system-artifacts.png",
-              "./generated/product-02-screen-surface.png",
-              "./generated/illus-01-systems-organism.png"
-            ]
-          },
-          "campaign-artifacts": {
-            "prose_sources": [
-              ".brandmint/sources/campaign-content/thoughtseed-campaign-content.md",
-              ".brandmint/sources/voice-messaging/thoughtseed-voice-messaging.md"
-            ],
-            "assets": [
-              "./generated/hero-02-establishing.png",
-              "./generated/hero-03-mobile.png",
-              "./generated/lifestyle-01-worktable.png",
-              "./generated/lifestyle-02-studio.png",
-              "./generated/social-og.png",
-              "./generated/social-x-header.png",
-              "./generated/social-ig-story.png"
-            ]
-          },
-          "visual-artifacts": {
-            "prose_sources": [
-              ".brandmint/sources/visual-catalog/thoughtseed-visual-catalog.md",
-              ".brandmint/sources/brand-identity/thoughtseed-brand-identity.md"
-            ],
-            "assets": [
-              "./assets/thoughtseed-logo-reference-01.jpg",
-              "./assets/thoughtseed-logo-reference-02.jpg",
-              "./generated/icons-01-sheet.png",
-              "./generated/pattern-01-dark.png",
-              "./generated/pattern-02-light.png"
-            ]
-          }
+      "curate": {
+        "description": "Select sources for the notebook based on query scope (loop/voice/inheritance)",
+        "artifact_types": [
+          "mind_map",
+          "slides",
+          "brand_report"
+        ],
+        "query_routing": {
+          "flow_questions": "01-the-delivery-loop.md",
+          "voice_questions": "02-voice-and-language.md",
+          "outcome_questions": "03-what-the-flow-produces.md",
+          "faq_questions": "04-faq-the-flow.md"
         }
+      },
+      "assemble": {
+        "description": "Combine sources with notebook manifest",
+        "notebook_manifest": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/notebooklm/NOTEBOOK.md",
+        "user_provided_count": 0,
+        "generated_count": 4,
+        "asset_manifest_validated": true
       }
     },
-    "notebook": {
-      "name": "Thoughtseed — Brand System",
-      "planned": true,
-      "source_count_planned": 25,
-      "note": "Notebook spec: 5 prose category documents plus up to 20 validated image assets. Created on upload; sources are prose, assets are manifest-validated."
+    "source_files": [
+      {
+        "id": "source-01-the-delivery-loop",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/notebooklm/sources/01-the-delivery-loop.md",
+        "title": "The Delivery Loop",
+        "word_count": 1100,
+        "category": "loop-itself",
+        "scope": "What the loop is, the four stages, what enters and what leaves"
+      },
+      {
+        "id": "source-02-voice-and-language",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/notebooklm/sources/02-voice-and-language.md",
+        "title": "Voice, Language, and the Delivery Loop",
+        "word_count": 1300,
+        "category": "voice-language",
+        "scope": "Voice matrix, tone variations, vocabulary bank, prohibited terms"
+      },
+      {
+        "id": "source-03-what-the-flow-produces",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/notebooklm/sources/03-what-the-flow-produces.md",
+        "title": "What the Flow Produces",
+        "word_count": 1200,
+        "category": "outcomes",
+        "scope": "Outcomes, deliverables, inheritance, before/after states"
+      },
+      {
+        "id": "source-04-faq-the-flow",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/.brandmint/notebooklm/sources/04-faq-the-flow.md",
+        "title": "FAQ — The Flow Itself",
+        "word_count": 1100,
+        "category": "faq",
+        "scope": "Direct flow-not-product answers to common questions"
+      }
+    ],
+    "notebook_artifacts": {
+      "mind_map": {
+        "source": "Source 01 + Source 03",
+        "branches": [
+          "The Loop",
+          "Stages (Requirement, System, Build, Handoff)",
+          "What Enters",
+          "What Leaves",
+          "Inheritance"
+        ]
+      },
+      "slides": {
+        "deck_title": "Thoughtseed — The Delivery Loop",
+        "slide_count": 12,
+        "structure": [
+          "Cover",
+          "What enters the loop",
+          "The four stages",
+          "Why one loop, not many vendors",
+          "What the founder inherits",
+          "Service modules",
+          "Engagement models",
+          "Voice discipline",
+          "Vocabulary bank",
+          "Approved phrases",
+          "What the loop is not",
+          "Closing — ownership is the goal"
+        ]
+      },
+      "brand_report": {
+        "title": "The Thoughtseed Delivery Loop",
+        "sections": [
+          "What the loop is",
+          "The four stages",
+          "What enters and what leaves",
+          "Voice and language",
+          "What the loop produces",
+          "Vocabulary and prohibitions"
+        ]
+      }
     },
-    "sources_uploaded": {
-      "prose_documents": [
-        { "name": "thoughtseed-brand-identity.md", "category": "brand-identity", "source_skills": ["brand-foundation", "color-palette", "typography", "logo-concept"], "word_count": 198, "path_validated": true },
-        { "name": "thoughtseed-product-strategy.md", "category": "product-strategy", "source_skills": ["product-positioning", "value-proposition", "buyer-persona", "competitor-analysis"], "word_count": 226, "path_validated": true },
-        { "name": "thoughtseed-voice-messaging.md", "category": "voice-messaging", "source_skills": ["voice-and-tone", "messaging-framework", "brand-story"], "word_count": 206, "path_validated": true },
-        { "name": "thoughtseed-campaign-content.md", "category": "campaign-content", "source_skills": ["landing-page-copy", "product-description", "ad-creative-copy", "press-release", "launch-email-sequence", "prelaunch-email-sequence", "welcome-email-sequence"], "word_count": 201, "path_validated": true },
-        { "name": "thoughtseed-visual-catalog.md", "category": "visual-catalog", "source_skills": ["visual-language", "hero-images", "lifestyle-photography", "product-photography", "brand-illustrations", "icon-system", "pattern-library", "social-media-assets"], "word_count": 197, "path_validated": true }
+    "scope_enforcement": {
+      "in_scope": [
+        "delivery loop mechanics",
+        "four stages (Requirement, System, Build, Handoff)",
+        "voice discipline",
+        "vocabulary bank",
+        "prohibited terms",
+        "what the founder inherits",
+        "service modules and engagement models",
+        "approved brand phrases"
       ],
-      "assets": [
-        { "id": "logo-wordmark", "type": "logo", "origin": "user_provided", "deterministic": true, "path_validated": true },
-        { "id": "logo-tree-mark", "type": "logo-icon", "origin": "user_provided", "deterministic": true, "path_validated": true },
-        { "id": "logo-reference-01", "type": "reference", "origin": "user_provided", "deterministic": true, "path_validated": true },
-        { "id": "logo-reference-02", "type": "reference", "origin": "user_provided", "deterministic": true, "path_validated": true },
-        { "id": "hero-01-digital-wilderness", "type": "hero", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "hero-02-establishing", "type": "hero", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "hero-03-mobile", "type": "hero", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "lifestyle-01-worktable", "type": "lifestyle", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "lifestyle-02-studio", "type": "lifestyle", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "product-01-system-artifacts", "type": "product", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "product-02-screen-surface", "type": "product", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "illus-01-systems-organism", "type": "illustration", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "illus-02-delivery-loop", "type": "illustration", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "icons-01-sheet", "type": "icons", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "pattern-01-dark", "type": "pattern", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "pattern-02-light", "type": "pattern", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "social-og", "type": "social", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "social-x-header", "type": "social", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "social-ig-story", "type": "social", "origin": "generated", "deterministic": false, "path_validated": true },
-        { "id": "visual-language-board", "type": "moodboard", "origin": "generated", "deterministic": false, "path_validated": true }
-      ]
-    },
-    "artifacts_planned": {
-      "mind_map": { "planned": true, "path": "deliverables/notebooklm/mind-map.png" },
-      "brand_slides": { "planned": true, "path": "deliverables/notebooklm/brand-slides.pdf" },
-      "brand_report": { "planned": true, "path": "deliverables/notebooklm/brand-report.pdf" }
-    },
-    "layer_discipline_check": {
-      "avoided_terms_in_prose": 0,
-      "krebs_or_consciousness_as_public_claim": false,
-      "internal_color_labels_in_prose": false,
-      "note": "All five prose sources describe visible effects only; internal color names and backstage methodology are excluded from every source document."
+      "out_of_scope": [
+        "ICP demographics (use buyer-persona.json)",
+        "product features and pricing",
+        "industry verticals",
+        "competitors (use competitor-analysis.json)",
+        "founding history (use brand-foundation.json)"
+      ],
+      "refusal_pattern": "If asked about out-of-scope topics, respond with: 'That information is in the brand foundation package, not the delivery loop sources. Refer to buyer-persona.json, competitor-analysis.json, or brand-foundation.json.'"
     },
     "validation": {
-      "sources_are_prose": true,
-      "all_paths_exist": true,
-      "all_referenced_assets_in_manifest": true,
-      "missing_paths": [],
-      "hallucinated_paths": 0
+      "source_paths_exist": "PASS",
+      "voice_discipline_check": "PASS — 0 prohibited terms in any source",
+      "flow_first_check": "PASS — every source focuses on the loop, not the product/ICP/market",
+      "scope_routing_documented": "PASS"
     }
   }
 }

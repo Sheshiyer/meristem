@@ -1,0 +1,31 @@
+{
+  "skill": "product-photography",
+  "cluster": "photography",
+  "wave": 4,
+  "timestamp": "2026-09-27T12:45:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "product_description": "Cambium is software, so this visual is conceptual collateral rather than a product screenshot or shippable physical kit. The steward kit translates typed world-state, founder gates, and replay receipts into tactile brand objects without claiming they exist.",
+    "key_features_to_highlight": ["durable world-state", "one visible consequential gate", "replayable provenance", "calm instrument-like precision"],
+    "shot_types": [
+      {"type": "conceptual collateral still life", "purpose": "make abstract operating concepts tactile without fabricating a software interface", "background": "warm mineral work surface", "lighting": "soft raking daylight"}
+    ],
+    "shot_list": [
+      {
+        "id": "product-steward-kit-concept-v1",
+        "type": "conceptual collateral still life",
+        "angle": "three-quarter overhead",
+        "background": "warm tactile mineral surface with sparse botanical material",
+        "feature_focus": "lichen field ledger, bone provenance cards, and brass decision token with one copper notch",
+        "priority": "high",
+        "generation_prompt": "Photorealistic editorial tabletop still life of a hypothetical Cambium steward kit: unbranded lichen clothbound ledger, circular brass token with three grooves and one copper notch, bone-paper provenance cards with abstract marks, dark-green pencil; tactile daylight, no text, logos, screens, neon, or tech gadget styling.",
+        "generated_path": "./generated/product-steward-kit-concept-v1.png",
+        "sha256": "4f3321b1fdb95bb17eaaa085fa7dbd8deed86ad83b148eb07d88ecd368175d1d",
+        "origin": "generated: Codex built-in image generation",
+        "label": "Illustrative concept collateral — not a physical product or live UI"
+      }
+    ],
+    "generation_summary": {"total_shots": 1, "generated": 1, "pending": 0, "engine": "Codex built-in image generation", "api_credits_used": false}
+  }
+}

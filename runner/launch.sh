@@ -83,42 +83,52 @@ execute_wave() {
     local brand_dir="$2"
     local brand_config="$3"
     
-    local cluster
-    cluster=$(wave_to_cluster "$wave")
+    # Wave 6 has TWO clusters (content + social-growth)
+    # Other waves have one cluster.
+    local clusters
+    clusters=$(wave_to_clusters "$wave")
     
-    log_info "=== Wave $wave: $cluster ==="
+    log_info "=== Wave $wave: $clusters ==="
     
-    local cluster_dir="$PROJECT_ROOT/clusters/$cluster"
-    require_dir "$cluster_dir" "cluster directory"
-    
-    # Get list of spokes
-    local spokes
-    spokes=$(list_spokes "$cluster")
-    
-    if [[ -z "$spokes" ]]; then
-        log_warn "No spokes found for cluster: $cluster"
-        return 0
-    fi
-    
-    # Tracer-first: run first spoke to validate assumptions
-    local tracer
-    tracer=$(echo "$spokes" | head -1)
-    log_info "Running tracer: $tracer"
-    
-    if ! execute_spoke "$cluster" "$tracer" "$brand_dir" "$brand_config"; then
-        log_error "Tracer failed for wave $wave. Plan needs revision."
-        vault_log_failure "Tracer failure: $tracer" "Wave $wave, cluster $cluster"
-        return 1
-    fi
-    
-    # Execute remaining spokes
-    echo "$spokes" | tail -n +2 | while read -r spoke; do
-        [[ -z "$spoke" ]] && continue
-        log_info "Running spoke: $spoke"
-        execute_spoke "$cluster" "$spoke" "$brand_dir" "$brand_config" || {
-            log_error "Spoke failed: $spoke"
-            state_set "$brand_dir" ".failed_skills += [\"$spoke\"]" "[]"
-        }
+    # Run all clusters in this wave sequentially
+    for cluster in $clusters; do
+        local cluster_dir="$PROJECT_ROOT/clusters/$cluster"
+        if [[ ! -d "$cluster_dir" ]]; then
+            log_warn "Cluster directory not found: $cluster_dir"
+            continue
+        fi
+        
+        # Get list of spokes for this cluster
+        local spokes
+        spokes=$(list_spokes "$cluster")
+        
+        if [[ -z "$spokes" ]]; then
+            log_warn "No spokes found for cluster: $cluster"
+            continue
+        fi
+        
+        log_info "--- Cluster $cluster ($spokes total spokes) ---"
+        
+        # Tracer-first: run first spoke to validate assumptions
+        local tracer
+        tracer=$(echo "$spokes" | head -1)
+        log_info "Running tracer: $tracer"
+        
+        if ! execute_spoke "$cluster" "$tracer" "$brand_dir" "$brand_config"; then
+            log_error "Tracer failed for $cluster. Plan needs revision."
+            vault_log_failure "Tracer failure: $tracer" "Wave $wave, cluster $cluster"
+            return 1
+        fi
+        
+        # Execute remaining spokes
+        echo "$spokes" | tail -n +2 | while read -r spoke; do
+            [[ -z "$spoke" ]] && continue
+            log_info "Running spoke: $spoke"
+            execute_spoke "$cluster" "$spoke" "$brand_dir" "$brand_config" || {
+                log_error "Spoke failed: $spoke"
+                state_set "$brand_dir" ".failed_skills += [\"$spoke\"]" "[]"
+            }
+        done
     done
     
     # Mark wave complete
@@ -127,6 +137,9 @@ execute_wave() {
     
     log_success "Wave $wave complete"
 }
+
+# Old single-cluster execute_wave replaced by multi-cluster version above (line 81)
+# This block intentionally left empty — the dual-cluster version handles all waves.
 
 execute_spoke() {
     local cluster="$1"
@@ -352,11 +365,19 @@ main() {
     if [[ "$DRY_RUN" == "true" ]]; then
         log_info "=== DRY RUN - Execution Plan ==="
         for wave in $waves; do
-            local cluster
-            cluster=$(wave_to_cluster "$wave")
-            echo "Wave $wave: $cluster"
-            echo "  Spokes:"
-            list_spokes "$cluster" | sed 's/^/    - /'
+            local dry_clusters
+            dry_clusters=$(wave_to_clusters "$wave")
+            echo "Wave $wave: $dry_clusters"
+            for cluster in $dry_clusters; do
+                echo "  Cluster: $cluster"
+                local spokes_list
+                spokes_list=$(list_spokes "$cluster")
+                if [[ -z "$spokes_list" ]]; then
+                    echo "    (no spokes)"
+                else
+                    echo "$spokes_list" | sed 's/^/    - /'
+                fi
+            done
         done
         exit 0
     fi
