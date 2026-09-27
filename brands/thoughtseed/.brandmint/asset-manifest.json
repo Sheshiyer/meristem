@@ -1,206 +1,391 @@
 {
+  "schema": "brandmint.asset-manifest.v1",
   "brand": "thoughtseed",
-  "generated_at": "2026-06-08T06:10:00Z",
-  "user_provided_assets": [
-    {
-      "id": "logo-wordmark",
-      "path": "./assets/thoughtseed-horizontal-wordmark-3x.png",
-      "type": "logo",
-      "exists": true,
-      "deterministic": true,
-      "required": true
-    },
-    {
-      "id": "logo-tree-mark",
-      "path": "./assets/thoughtseed-tree-mark-black-3x.png",
-      "type": "logo-icon",
-      "exists": true,
-      "deterministic": true,
-      "required": false
-    },
-    {
-      "id": "logo-reference-01",
-      "path": "./assets/thoughtseed-logo-reference-01.jpg",
-      "type": "reference",
-      "exists": true,
-      "deterministic": true,
-      "required": false
-    },
-    {
-      "id": "logo-reference-02",
-      "path": "./assets/thoughtseed-logo-reference-02.jpg",
-      "type": "reference",
-      "exists": true,
-      "deterministic": true,
-      "required": false
-    }
-  ],
-  "generated_assets": [
-    {
-      "id": "hero-01-digital-wilderness",
-      "path": "./generated/hero-01-digital-wilderness.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "hero-images",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "hero-02-establishing",
-      "path": "./generated/hero-02-establishing.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "hero-images",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "hero-03-mobile",
-      "path": "./generated/hero-03-mobile.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "hero-images",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "icons-01-sheet",
-      "path": "./generated/icons-01-sheet.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 5,
-      "skill": "icon-system",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "illus-01-systems-organism",
-      "path": "./generated/illus-01-systems-organism.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 5,
-      "skill": "brand-illustrations",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "illus-02-delivery-loop",
-      "path": "./generated/illus-02-delivery-loop.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 5,
-      "skill": "brand-illustrations",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "lifestyle-01-worktable",
-      "path": "./generated/lifestyle-01-worktable.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "lifestyle-photography",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "lifestyle-02-studio",
-      "path": "./generated/lifestyle-02-studio.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "lifestyle-photography",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "pattern-01-dark",
-      "path": "./generated/pattern-01-dark.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 5,
-      "skill": "pattern-library",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "pattern-02-light",
-      "path": "./generated/pattern-02-light.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 5,
-      "skill": "pattern-library",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "product-01-system-artifacts",
-      "path": "./generated/product-01-system-artifacts.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "product-photography",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "product-02-screen-surface",
-      "path": "./generated/product-02-screen-surface.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "product-photography",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "social-ig-story",
-      "path": "./generated/social-ig-story.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "social-media-assets",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "social-og",
-      "path": "./generated/social-og.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "social-media-assets",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "social-x-header",
-      "path": "./generated/social-x-header.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 4,
-      "skill": "social-media-assets",
-      "model": "gemini-3-pro-image-preview"
-    },
-    {
-      "id": "visual-language-board",
-      "path": "./generated/visual-language-board.png",
-      "exists": true,
-      "deterministic": false,
-      "source": "generated",
-      "wave": 3,
-      "skill": "visual-language",
-      "model": "gemini-3-pro-image-preview"
-    }
-  ],
+  "generated_at": "2026-08-22T07:30:00Z",
+  "generated_by": "meristem-pipeline-regenerate",
   "validation": {
     "all_paths_exist": true,
     "missing_paths": [],
-    "user_count": 4,
-    "generated_count": 16
+    "total_user_provided": 4,
+    "total_generated": 39,
+    "total_assets": 43
+  },
+  "user_provided_assets": [
+    {
+      "id": "thoughtseed-horizontal-wordmark",
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-horizontal-wordmark-3x.png",
+      "exists": true,
+      "deterministic": true,
+      "type": "logo",
+      "required": true,
+      "rule": "Canonical wordmark — never regenerated"
+    },
+    {
+      "id": "thoughtseed-tree-mark",
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-tree-mark-black-3x.png",
+      "exists": true,
+      "deterministic": true,
+      "type": "logo-icon",
+      "required": false,
+      "rule": "Canonical tree mark — never regenerated"
+    },
+    {
+      "id": "thoughtseed-logo-ref-01",
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-logo-reference-01.jpg",
+      "exists": true,
+      "deterministic": true,
+      "type": "reference"
+    },
+    {
+      "id": "thoughtseed-logo-ref-02",
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-logo-reference-02.jpg",
+      "exists": true,
+      "deterministic": true,
+      "type": "reference"
+    }
+  ],
+  "vault_artboard_references": [
+    {
+      "id": "artboard-7",
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/logos/1x/Artboard 7@1x.png",
+      "exists": true,
+      "deterministic": true,
+      "type": "vault-reference",
+      "rule": "Vault copy of the tree mark — used as visual reference for prompt workflows (e.g. image_edit operations). Not the canonical logo source — the canonical source is the meristem brand assets directory."
+    }
+  ],
+  "generated_assets": {
+    "tier1_logo_objects": [
+      {
+        "id": "thoughtseed-dark-metal-emblem",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/dark-metal/thoughtseed-dark-metal-emblem-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir v05 — 2-variable dark metal system",
+        "variables": {"BRAND_NAME": "Thoughtseed", "BG_COLOR": "#1A237E"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-metallic-3d-teal-gray",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/metallic-3d/thoughtseed-metallic-3d-teal-gray-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir v02 — 3-variable metallic system",
+        "variables": {"BRAND_NAME": "Thoughtseed", "BG_COLOR": "#37474F", "OBJ_COLOR": "#00897B"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-metallic-3d-blue-white",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/metallic-3d/thoughtseed-metallic-3d-blue-white-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir v02 — 3-variable metallic system",
+        "variables": {"BRAND_NAME": "Thoughtseed", "BG_COLOR": "FFFFFF", "OBJ_COLOR": "#1A237E"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-metallic-3d-orange-gray",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/metallic-3d/thoughtseed-metallic-3d-orange-gray-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir v02 — 3-variable metallic system",
+        "variables": {"BRAND_NAME": "Thoughtseed", "BG_COLOR": "#37474F", "OBJ_COLOR": "#F57C00"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-holo-vinyl-sticker",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/holo-vinyl/thoughtseed-holo-vinyl-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir v01 — 2-variable holo-vinyl system",
+        "variables": {"BRAND_NAME": "Thoughtseed", "BG_COLOR": "White"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "3:4"
+      },
+      {
+        "id": "thoughtseed-glass-logo",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/glass/thoughtseed-glass-logo-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Glass logo prompt",
+        "variables": {"BRAND": "Thoughtseed", "COLOR": "#00897B"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-wax-seal",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/wax-seal/thoughtseed-wax-seal-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Wax seal prompt",
+        "variables": {"MATERIAL_COLOR": "#F57C00", "BRAND": "Thoughtseed"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-concrete-botanical-brutalist",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/concrete-botanical/thoughtseed-concrete-botanical-brutalist-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir [dir. 13] — concrete-botanical installation",
+        "variables": {"BRAND_NAME": "Thoughtseed", "MATERIAL_COLOR": "#B8E986"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-concrete-botanical-gallery",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/concrete-botanical/thoughtseed-concrete-botanical-gallery-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir [dir. 13] — concrete-botanical installation",
+        "variables": {"BRAND_NAME": "Thoughtseed", "MATERIAL_COLOR": "#B8E986"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1"
+      },
+      {
+        "id": "thoughtseed-metallic-3d-original",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/metallic-3d/thoughtseed-metallic-3d-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "logo-object",
+        "workflow": "Amir v02 — 3-variable metallic system",
+        "variables": {"BRAND_NAME": "Thoughtseed", "BG_COLOR": "#37474F", "OBJ_COLOR": "#00897B"},
+        "model": "gpt-image-2",
+        "aspect_ratio": "1:1",
+        "note": "Original variant from session start"
+      }
+    ],
+    "tier2_campaign": [
+      {
+        "id": "thoughtseed-triptych-hero",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/triptych/thoughtseed-triptych-hero-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 2,
+        "skill": "messaging-framework",
+        "subcategory": "campaign",
+        "workflow": "Amir 8-phase triptych hero banner",
+        "model": "gpt-image-2",
+        "aspect_ratio": "16:9"
+      },
+      {
+        "id": "thoughtseed-triptych-full-workflow",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/triptych/thoughtseed-triptych-full-workflow-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 2,
+        "skill": "messaging-framework",
+        "subcategory": "campaign",
+        "workflow": "Amir 8-phase triptych hero banner (full execution)",
+        "model": "gpt-image-2",
+        "aspect_ratio": "16:9"
+      },
+      {
+        "id": "thoughtseed-campaign-key-visual",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/campaign/thoughtseed-campaign-key-visual-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 2,
+        "skill": "messaging-framework",
+        "subcategory": "campaign",
+        "workflow": "Amir Image-to-Engine Campaign Step 5",
+        "model": "gpt-image-2",
+        "aspect_ratio": "3:2"
+      },
+      {
+        "id": "thoughtseed-brand-kit-bento",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/brand-kit/thoughtseed-brand-kit-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 3,
+        "skill": "visual-language",
+        "subcategory": "campaign",
+        "workflow": "Amir brand kit from one prompt",
+        "model": "gpt-image-2",
+        "aspect_ratio": "4:3"
+      },
+      {
+        "id": "thoughtseed-photo-triptych",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier2-campaign/photo-triptych/thoughtseed-photo-triptych-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "lifestyle-photography",
+        "subcategory": "campaign",
+        "workflow": "Amir photo campaign triptych",
+        "model": "gpt-image-2",
+        "aspect_ratio": "16:9"
+      }
+    ],
+    "wave4_photography": [
+      {
+        "id": "thoughtseed-hero-workshop",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/hero-01-digital-wilderness-workshop.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "hero-images",
+        "subcategory": "hero",
+        "model": "gpt-image-2",
+        "aspect_ratio": "16:9"
+      },
+      {
+        "id": "thoughtseed-lifestyle-workspace",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/lifestyle-01-digital-wilderness-workspace.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "lifestyle-photography",
+        "subcategory": "lifestyle",
+        "model": "gpt-image-2",
+        "aspect_ratio": "16:9"
+      },
+      {
+        "id": "thoughtseed-product-knolling",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/photography-wave4/product-01-system-artifacts-knolling.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "product-photography",
+        "subcategory": "product",
+        "model": "gpt-image-2",
+        "aspect_ratio": "3:4"
+      }
+    ],
+    "social_media": [
+      {
+        "id": "thoughtseed-ig-post",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/instagram-post/thoughtseed-ig-post-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "social-media-assets",
+        "platform": "Instagram",
+        "format": "Post",
+        "aspect_ratio": "1:1",
+        "model": "gpt-image-2"
+      },
+      {
+        "id": "thoughtseed-ig-story",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/instagram-story/thoughtseed-ig-story-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "social-media-assets",
+        "platform": "Instagram",
+        "format": "Story",
+        "aspect_ratio": "9:16",
+        "model": "gpt-image-2"
+      },
+      {
+        "id": "thoughtseed-x-header",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/x-header/thoughtseed-x-header-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "social-media-assets",
+        "platform": "X",
+        "format": "Header",
+        "aspect_ratio": "16:9",
+        "model": "gpt-image-2"
+      },
+      {
+        "id": "thoughtseed-linkedin-banner",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/linkedin-banner/thoughtseed-linkedin-banner-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "social-media-assets",
+        "platform": "LinkedIn",
+        "format": "Banner",
+        "aspect_ratio": "16:9",
+        "model": "gpt-image-2"
+      },
+      {
+        "id": "thoughtseed-og-image",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/social-media/og-image/thoughtseed-og-image-01.jpg",
+        "exists": true,
+        "deterministic": false,
+        "wave": 4,
+        "skill": "social-media-assets",
+        "platform": "Web",
+        "format": "OG",
+        "aspect_ratio": "16:9",
+        "model": "gpt-image-2"
+      }
+    ],
+    "original_generated": [
+      {"id": "hero-01-digital-wilderness", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/hero-01-digital-wilderness.png", "exists": true, "deterministic": false, "wave": 4, "skill": "hero-images", "note": "Original 2026-06-08"},
+      {"id": "hero-02-establishing", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/hero-02-establishing.png", "exists": true, "deterministic": false, "wave": 4, "skill": "hero-images", "note": "Original 2026-06-08"},
+      {"id": "hero-03-mobile", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/hero-03-mobile.png", "exists": true, "deterministic": false, "wave": 4, "skill": "hero-images", "note": "Original 2026-06-08"},
+      {"id": "icons-01-sheet", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/icons-01-sheet.png", "exists": true, "deterministic": false, "wave": 5, "skill": "icon-system", "note": "Original 2026-06-08"},
+      {"id": "illus-01-systems-organism", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/illus-01-systems-organism.png", "exists": true, "deterministic": false, "wave": 5, "skill": "brand-illustrations", "note": "Original 2026-06-08"},
+      {"id": "illus-02-delivery-loop", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/illus-02-delivery-loop.png", "exists": true, "deterministic": false, "wave": 5, "skill": "brand-illustrations", "note": "Original 2026-06-08"},
+      {"id": "lifestyle-01-worktable", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/lifestyle-01-worktable.png", "exists": true, "deterministic": false, "wave": 4, "skill": "lifestyle-photography", "note": "Original 2026-06-08"},
+      {"id": "lifestyle-02-studio", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/lifestyle-02-studio.png", "exists": true, "deterministic": false, "wave": 4, "skill": "lifestyle-photography", "note": "Original 2026-06-08"},
+      {"id": "pattern-01-dark", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/pattern-01-dark.png", "exists": true, "deterministic": false, "wave": 5, "skill": "pattern-library", "note": "Original 2026-06-08"},
+      {"id": "pattern-02-light", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/pattern-02-light.png", "exists": true, "deterministic": false, "wave": 5, "skill": "pattern-library", "note": "Original 2026-06-08"},
+      {"id": "product-01-system-artifacts", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/product-01-system-artifacts.png", "exists": true, "deterministic": false, "wave": 4, "skill": "product-photography", "note": "Original 2026-06-08"},
+      {"id": "product-02-screen-surface", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/product-02-screen-surface.png", "exists": true, "deterministic": false, "wave": 4, "skill": "product-photography", "note": "Original 2026-06-08"},
+      {"id": "social-ig-story", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/social-ig-story.png", "exists": true, "deterministic": false, "wave": 4, "skill": "social-media-assets", "note": "Original 2026-06-08"},
+      {"id": "social-og", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/social-og.png", "exists": true, "deterministic": false, "wave": 4, "skill": "social-media-assets", "note": "Original 2026-06-08"},
+      {"id": "social-x-header", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/social-x-header.png", "exists": true, "deterministic": false, "wave": 4, "skill": "social-media-assets", "note": "Original 2026-06-08"},
+      {"id": "visual-language-board", "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/generated/visual-language-board.png", "exists": true, "deterministic": false, "wave": 3, "skill": "visual-language", "note": "Original 2026-06-08"}
+    ]
+  },
+  "by_wave": {
+    "wave_3_identity": {
+      "assets": ["logo-concept (user-provided)", "color-palette", "typography", "visual-language"],
+      "generated_count": 10,
+      "user_provided_count": 4
+    },
+    "wave_4_photography": {
+      "assets": ["hero-images", "lifestyle-photography", "product-photography", "social-media-assets"],
+      "generated_count": 8
+    },
+    "wave_5_illustration": {
+      "assets": ["brand-illustrations", "icon-system", "pattern-library"],
+      "generated_count": 5
+    }
+  },
+  "validation_gates": {
+    "all_paths_exist": "PASS",
+    "missing_paths": [],
+    "logo_geometry_preserved": "PASS — tree mark proportions respected in all tier1 objects",
+    "brand_compliance": "PASS",
+    "wave_7_ready": true
   }
 }

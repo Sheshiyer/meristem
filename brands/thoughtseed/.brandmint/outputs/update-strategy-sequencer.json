@@ -1,0 +1,108 @@
+{
+  "skill": "update-strategy-sequencer",
+  "cluster": "social-growth",
+  "wave": 6,
+  "timestamp": "2026-08-22T07:40:00Z",
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "update_types": [
+      {
+        "type": "kickoff",
+        "when": "Day 0 of engagement",
+        "voice": "Calm confidence, state what begins",
+        "frequency": "Once per engagement"
+      },
+      {
+        "type": "mid_engagement",
+        "when": "Day 7-14 of engagement",
+        "voice": "Steady, exact, point to next step",
+        "frequency": "Every 1-2 weeks during active engagement"
+      },
+      {
+        "type": "milestone_reached",
+        "when": "When requirement is locked, system is designed, build ships, handoff completes",
+        "voice": "Reflective, evidence-led",
+        "frequency": "Per major milestone (3-4 per engagement)"
+      },
+      {
+        "type": "handoff_announcement",
+        "when": "Day of ownership transfer",
+        "voice": "Quietly proud, peer to the founder",
+        "frequency": "Once per engagement, at end"
+      }
+    ],
+    "sequences": [
+      {
+        "id": "kickoff-001",
+        "update_type": "kickoff",
+        "subject_lines": [
+          "We have the requirement. Here is what happens next.",
+          "Your build is on the calendar",
+          "From requirement to handoff: where we start"
+        ],
+        "body": "Thanks for bringing the requirement to us. The short version of what you've signed up for: one team carries framing, behavior, product, engineering, and handoff inside a single delivery loop. What happens next: 1. We confirm the kickoff time and who joins from your side. 2. We open with the requirement: the problem, the people who will use the system, and the way you want to run it. 3. From there we design, build, and hand it back in a form your team can own. You will always talk to the operators doing the work, not an account layer.",
+        "channels": ["email"],
+        "cta": "Confirm your kickoff details",
+        "scheduled_for": "Immediate upon kickoff"
+      },
+      {
+        "id": "mid-001",
+        "update_type": "mid_engagement",
+        "subject_lines": [
+          "Where the loop is right now",
+          "Quick note on where we are"
+        ],
+        "body": "Quick note on where the loop is right now: [stage name]. Here is what we have, what we're doing next, and what we need from you. [Specific progress items]. [Specific next step]. Nothing is at risk. If you have questions, reply to this email.",
+        "channels": ["email"],
+        "cta": "Reply to this email",
+        "scheduled_for": "Day 7-14"
+      },
+      {
+        "id": "milestone-001-requirement-locked",
+        "update_type": "milestone_reached",
+        "subject_lines": [
+          "The requirement is locked",
+          "We're moving to system design"
+        ],
+        "body": "The requirement is locked. Here is the framing we landed on: [brief description of the locked requirement]. The next stage is system design — interface and operating logic together, with user behavior treated as part of the system. From here: [timeline]. If anything in the locked requirement needs adjustment, this is the right moment to flag it.",
+        "channels": ["email", "linkedin"],
+        "cta": "Review the locked requirement",
+        "scheduled_for": "When requirement stage completes"
+      },
+      {
+        "id": "milestone-002-build-shipped",
+        "update_type": "milestone_reached",
+        "subject_lines": [
+          "The system shipped to production",
+          "We are at handoff"
+        ],
+        "body": "The system shipped to production. What was framed is what we built — the loop held. Next stage is handoff: documentation, training, control surfaces, the Ownership Transfer Pack. From here: [handoff timeline]. You inherit a system you can run, extend, and own without us.",
+        "channels": ["email", "linkedin"],
+        "cta": "Schedule handoff session",
+        "scheduled_for": "When build stage completes"
+      },
+      {
+        "id": "handoff-001",
+        "update_type": "handoff_announcement",
+        "subject_lines": [
+          "The system is yours to run",
+          "Ownership transfer complete",
+          "What you inherit"
+        ],
+        "body": "The system is yours to run. Here is what you inherit: a running system, not a deck disconnected from shipped reality. Documentation written to be read by the team that will run it. Control surfaces and operational artifacts that keep the system legible. A model of the problem you can carry forward without us. We are not an always-on retainer. If a new entangled requirement appears, you can come back for a new engagement.",
+        "channels": ["email", "linkedin", "x"],
+        "cta": "Reach out when you need us",
+        "scheduled_for": "Day of handoff"
+      }
+    ],
+    "voice_compliance": "PASS — all sequences use preferred vocabulary, no prohibited terms, founder-side systems translator voice",
+    "calendar": [
+      {"date": "Day 0", "sequence_id": "kickoff-001", "channels": ["email"]},
+      {"date": "Day 7-14", "sequence_id": "mid-001", "channels": ["email"]},
+      {"date": "When requirement locked", "sequence_id": "milestone-001-requirement-locked", "channels": ["email", "linkedin"]},
+      {"date": "When build ships", "sequence_id": "milestone-002-build-shipped", "channels": ["email", "linkedin"]},
+      {"date": "Day of handoff", "sequence_id": "handoff-001", "channels": ["email", "linkedin", "x"]}
+    ]
+  }
+}

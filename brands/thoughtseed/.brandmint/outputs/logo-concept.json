@@ -2,115 +2,124 @@
   "skill": "logo-concept",
   "cluster": "identity",
   "wave": 3,
-  "timestamp": "2026-06-08T06:00:00Z",
+  "timestamp": "2026-08-22T07:35:00Z",
   "status": "complete",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "data": {
-    "mode": "codify-existing",
-    "codification_note": "This spoke does NOT invent or generate a new logo. Thoughtseed's marks already exist and are canonical. This file codifies correct usage of the two existing marks. Any generated emboss, seal, or poster imagery in the generated/ directory is art-direction reference only and is NEVER a replacement mark, an alternate logo, or a logo lockup. Use only the canonical asset files below as the actual logo.",
-    "canonical_marks": {
-      "wordmark": {
-        "name": "Horizontal wordmark",
-        "asset": "assets/thoughtseed-horizontal-wordmark-3x.png",
-        "type": "wordmark",
-        "role": "primary",
-        "description": "The full Thoughtseed name set horizontally. This is the default mark for most surfaces: site headers, document mastheads, decks, signatures, and any context with adequate horizontal room.",
-        "use_when": "There is enough horizontal space and the brand must be named in full, e.g. page headers, footers, title slides, letterheads, email signatures, proposal and contract mastheads."
-      },
-      "tree_mark": {
-        "name": "Tree mark (black)",
-        "asset": "assets/thoughtseed-tree-mark-black-3x.png",
-        "type": "symbol",
-        "role": "secondary / standalone symbol",
-        "description": "The standalone tree symbol. Carries the 'Digital Wilderness — we plant ideas, they grow wild' idea as a compact, recognizable mark. Used where the wordmark will not fit or where a square/compact mark is required.",
-        "use_when": "Square or compact contexts: app icons, avatars, favicons, social profile marks, watermarks, loading states, embossed cover details, or as a quiet repeating motif on collateral."
-      },
-      "reference_assets": {
-        "note": "Canonical visual references for the marks. Do not regenerate, redraw, or vectorize these into a 'new' logo — they document the existing mark.",
-        "files": [
-          "assets/thoughtseed-logo-reference-01.jpg",
-          "assets/thoughtseed-logo-reference-02.jpg"
-        ]
-      }
-    },
     "logo_type": {
-      "primary": "wordmark + standalone symbol (two canonical marks, used as a system rather than a single locked combination)",
-      "rationale": "The name 'Thoughtseed' is distinctive enough to carry a wordmark, while the tree symbol gives a compact, ownable mark for square and small contexts. Keeping them as two deliberate marks — rather than one fixed lockup — fits a founder-led systems studio that values restraint and legibility over decorative branding."
+      "primary": "wordmark + tree mark (icon)",
+      "rationale": "The Thoughtseed horizontal wordmark carries primary brand identity. The tree mark (circular canopy with structured trunk and root system) is the icon variant. The wordmark reads first; the tree mark carries the brand at small sizes and in monochromatic contexts. Both are codified from the original logo references and never regenerated. Generated logo-object imagery (dark metal emblem, metallic 3D, glass, wax seal, concrete-botanical installation) are art-direction references and material expressions of the canonical mark, never replacement logos."
     },
     "symbolism": {
       "brand_attributes": [
-        "cross-disciplinary",
-        "founder-led",
-        "precise",
+        "disciplined",
+        "foundational",
         "editorial",
-        "grounded"
+        "tactile",
+        "growth-oriented",
+        "cross-disciplinary"
       ],
       "visual_concepts": [
-        "a planted idea that grows into a structured system",
-        "architectural precision meeting cultivated, living growth",
-        "from requirement to handoff as a single rooted, branching form"
+        "The tree mark as a living organism — disciplined form filled with organic growth (concrete-botanical installation)",
+        "The tree mark as a precision artifact — machined dark metal, polished chrome, embossed glass",
+        "The tree mark as a heritage object — wax seal impression for editorial contexts",
+        "The tree mark as a collectible — holo-vinyl sticker for social media and merch"
       ],
-      "symbol_meaning": "The tree mark reads as a seed that has grown structure: roots (the requirement and operating reality), trunk (the delivery loop), and branches (the shipped, inheritable system). It states the Digital Wilderness duality — disciplined engineering and organic emergence — without any literal text or slogan baked into the mark."
+      "symbol_ideas": [
+        "Concrete-botanical installation: weathered architectural concrete with the tree canopy filled by living moss + ferns, trunk and roots as concrete negative space",
+        "Dark metal emblem: Deep Quantum Blue-tinted polished chrome with cinematic bloom on edges",
+        "Metallic 3D object: teal chrome with mirror finish on Mindful Gray background",
+        "Glass logo: embossed glass bezel on Deep Quantum Blue surface",
+        "Wax seal: Energetic Orange wax with raised tree mark relief",
+        "Holo-vinyl sticker: prismatic sticker with peeled corner on white background"
+      ]
     },
     "style_direction": {
-      "complexity": "simple — reductive, single-weight, no gradients or ornament",
-      "weight": "medium — confident strokes that hold at small sizes",
-      "shape": "balanced — geometric structure carrying an organic, grown silhouette",
-      "style": "modern-editorial — restrained, founder-led, not decorative",
-      "mood": "serious and calm — grounded, intentional, signal over noise"
+      "complexity": "simple — the canonical mark is minimal and structural; generated logo objects add material complexity as art direction",
+      "weight": "medium — the tree mark carries visible weight without becoming heavy",
+      "shape": "geometric-organic — circular canopy (geometric) with structured trunk and root system (organic-mechanical)",
+      "style": "modern with editorial restraint",
+      "mood": "serious, crafted, grounded"
     },
-    "color_treatment": {
-      "default": "Monochrome. The tree mark ships black (#0A0E14 cool near-black) on light surfaces and reversed to white (#FFFFFF) on dark/anchor surfaces.",
-      "anchor_surface": "On the Deep Quantum Blue (#1A237E) or dark canvas (#0A0E14), use the white/reversed mark.",
-      "light_surface": "On white or Neutral 50 (#F8F9F9) paper, use the black mark.",
-      "accent_rule": "Do not recolor the mark into teal, orange, or green. Brand accent colors (#00897B teal signal, #F57C00 ignition, #B8E986 growth) belong to the surrounding system — links, CTAs, signal — not to the logo itself. The mark stays monochrome so it reads as a stable identity anchor while the accents do the signalling.",
-      "single_exception": "If a single-color reproduction must carry brand color (e.g. a one-ink emboss), Deep Quantum Blue (#1A237E) is the only permitted non-neutral, and only for the full mark in isolation — never mid-layout beside live teal/orange signal."
-    },
-    "clear_space": {
-      "wordmark": "Minimum clear space on all four sides equal to the cap-height of the 'T' in the wordmark. Nothing — text, image edge, fold, or other mark — may enter this zone.",
-      "tree_mark": "Minimum clear space on all four sides equal to one quarter of the mark's height (0.25x). Prefer 0.5x where layout allows for a calmer, more editorial frame.",
-      "principle": "Negative space is part of the identity. When in doubt, give the mark more room, not less."
-    },
-    "minimum_sizes": {
-      "wordmark_digital": "Minimum 120px wide on screen so the wordmark stays legible. Below this, switch to the tree mark.",
-      "wordmark_print": "Minimum 28mm wide in print.",
-      "tree_mark_digital": "Minimum 24px height on screen (favicon/app contexts may go to 16px only when no smaller-legible alternative exists and the silhouette still reads).",
-      "tree_mark_print": "Minimum 8mm height in print.",
-      "rule": "If the wordmark cannot meet its minimum, do not shrink it — substitute the tree mark."
-    },
-    "surface_treatments": {
-      "matte_paper": "Black ink on matte uncoated stock is the signature print treatment — editorial, tactile, no gloss. Use the black wordmark or tree mark. A blind or single-ink deboss of the tree mark is encouraged for covers and closeout documents.",
-      "brushed_metal": "On brushed aluminium or oxidized-copper surfaces, use a clean reversed (etched/engraved) tree mark. Let the material's grain and patina supply texture; keep the mark itself crisp and unembellished.",
-      "dark_textured": "On dark textured fields (architectural shadow, weathered stone, screen-glow darks), use the white/reversed mark with generous clear space so it holds against the texture. Never drop a busy texture inside the mark's clear-space zone.",
-      "glass_and_screen": "On glass or live screen surfaces, the reversed mark sits on the dark-first canvas (#0A0E14); maintain full clear space and never place it over high-frequency imagery."
-    },
-    "generated_art_disclaimer": "Generated emboss, seal, and poster artwork (e.g. anything under generated/) are mood and art-direction references that show how the mark might feel on a surface. They are NOT the logo, NOT approved lockups, and must never be exported, traced, or shipped as the mark. Production always uses the canonical asset files named in canonical_marks.",
+    "references": [
+      {
+        "brand": "Thoughtseed canonical wordmark",
+        "what_works": "Horizontal layout reads cleanly; serif character carries editorial weight",
+        "gap_opportunity": "Material expressions (concrete-botanical, metallic 3D) extend the mark into premium surfaces without replacing it"
+      },
+      {
+        "brand": "Thoughtseed tree mark (canonical)",
+        "what_works": "Circular canopy + trunk + roots reads as both architecture and growth",
+        "gap_opportunity": "Logo-object workflows translate this geometry across premium materials while preserving proportions"
+      }
+    ],
+    "concept_directions": [
+      {
+        "name": "Concrete-Botanical Installation",
+        "concept": "Architectural concrete wall with the tree canopy as living moss + ferns and trunk/roots as concrete negative space",
+        "style_notes": "Museum-grade, brutalist or gallery-clean, moss in vivid Growth Light",
+        "generation_prompt": "Photorealistic architectural visualization with the Thoughtseed tree mark deeply recessed into weathered architectural concrete. The canopy is filled with dense living moss in #B8E986 and small ferns. The trunk and roots are formed by the negative space of the concrete. Museum-grade, premium editorial. Material variable: [BRAND_NAME=Thoughtseed], [MATERIAL_COLOR=vivid Growth Light #B8E986]."
+      },
+      {
+        "name": "Dark Metal Emblem",
+        "concept": "Machined dark metal relief with cinematic bloom on edges",
+        "style_notes": "Deep Quantum Blue-tinted chrome, white void background, film grain overlay",
+        "generation_prompt": "Square 1:1 studio CGI visualization of the Thoughtseed tree mark as a shallow, precisely machined dark-metal relief panel. Polished Deep Quantum Blue (#1A237E) tinted chrome with subtle micro-scratches. Cinematic bloom on metallic edges. 50mm lens, film grain."
+      },
+      {
+        "name": "Metallic 3D Object",
+        "concept": "Floating polished chrome tree mark on studio background",
+        "style_notes": "Multiple color variants: teal on gray, + orange on gray, + blue on white",
+        "generation_prompt": "Premium 1:1 studio product render of the Thoughtseed tree mark as a polished chrome metallic object floating center-frame. Variables: [BRAND_NAME], [BG_COLOR], [OBJ_COLOR]. 85-100mm macro lens, shallow depth of field, premium collectible-object presentation."
+      },
+      {
+        "name": "Glass Emboss",
+        "concept": "Embossed glass contour render with soft tonal gradients",
+        "style_notes": "Monochromatic teal, blind emboss effect, matte surface with film grain",
+        "generation_prompt": "3D embossed glossy contour render of the Thoughtseed tree mark on a flat surface. Monochromatic teal (#00897B) palette. Raised smooth liquid-like glass bezel. Soft diffuse lighting, strong specular highlights, top-down view. Premium minimalist."
+      },
+      {
+        "name": "Wax Seal",
+        "concept": "Heritage wax seal with raised tree mark relief",
+        "style_notes": "Energetic Orange wax with drip extending right; soft lighting",
+        "generation_prompt": "Glossy wax seal icon of the Thoughtseed tree mark on white background. Deformed thick wax in Energetic Orange (#F57C00) with drip extending right. Raised relief of tree mark. Soft lighting, smooth specular highlights. Heritage/editorial context."
+      },
+      {
+        "name": "Holo-Vinyl Sticker",
+        "concept": "Collectible-grade vinyl sticker with prismatic finish",
+        "style_notes": "White background, controlled spectral reflections, peeled upper corner",
+        "generation_prompt": "Premium studio product photograph of a die-cut vinyl sticker in the shape of the Thoughtseed tree mark. Transparent prismatic finish with cyan, turquoise, magenta, violet, emerald, amber, gold, and pearlescent white reflections. Cleanly peeled upper corner. White background."
+      }
+    ],
     "usage_specs": {
-      "minimum_size": "Wordmark 120px / 28mm wide; tree mark 24px / 8mm tall (16px favicon floor only when silhouette still reads).",
-      "clear_space": "Wordmark: 1x cap-height of 'T' on all sides. Tree mark: 0.25x height minimum (0.5x preferred).",
+      "minimum_size": "Wordmark: 80px wide. Tree mark: 24px height. Logo objects: 320px minimum for material detail to read.",
+      "clear_space": "Minimum clear space = 1× the height of the tree mark, on all sides. For wordmark: 1× the cap-height of the wordmark.",
       "color_variations": [
-        "black_on_light",
-        "white_reversed_on_dark",
-        "single_ink_deep_quantum_blue_for_isolated_emboss_only"
-      ],
-      "color_locked": "Monochrome only in layout; accent colors never applied to the mark.",
-      "do": [
-        "Use the canonical asset files as the only real logo.",
-        "Give the mark its full clear space and keep it monochrome.",
-        "Switch from wordmark to tree mark when space is tight rather than shrinking below minimum size.",
-        "Reverse to white on dark/anchor surfaces; keep black on light paper.",
-        "Let surface material (matte paper, brushed metal, dark texture) carry the texture while the mark stays crisp."
+        "full_color",
+        "monochrome_black",
+        "monochrome_white",
+        "monochrome_deep_quantum_blue",
+        "reversed_on_color",
+        "concrete_botanical_installation"
       ],
       "dont_do": [
-        "Do not generate, redraw, or substitute a new logo or alternate mark.",
-        "Do not treat generated emboss/seal/poster art as a replacement or approved lockup.",
-        "Do not recolor the mark into teal, orange, green, or any gradient.",
-        "Do not stretch, skew, rotate, add shadows, outlines, or glows to the mark.",
-        "Do not place the mark on a busy texture or image without preserving full clear space.",
-        "Do not shrink the wordmark below its legibility minimum — use the tree mark instead.",
-        "Do not bake the tagline or any text into the symbol; the tree mark stands alone.",
-        "Do not put the mark inside a colored badge that competes with the system's teal/orange signal."
+        "Do not regenerate the canonical wordmark or tree mark. They are codified.",
+        "Do not use logo objects as replacements for the canonical mark in formal contexts (decks, contracts, press kits).",
+        "Do not stretch, skew, or recolor the canonical mark outside the approved palette.",
+        "Do not apply the mark at low contrast (<4.5:1) on backgrounds.",
+        "Do not place logo objects inside purple SaaS gradients.",
+        "Do not bake text into logo object renders — the canonical typography is always rendered separately."
       ]
+    },
+    "asset_paths": {
+      "primary_wordmark": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-horizontal-wordmark-3x.png",
+      "tree_mark": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-tree-mark-black-3x.png",
+      "logo_references": [
+        "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-logo-reference-01.jpg",
+        "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/thoughtseed/assets/thoughtseed-logo-reference-02.jpg"
+      ],
+      "vault_artboard": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/logos/1x/Artboard 7@1x.png",
+      "logo_objects": "/Volumes/madara/2026/Projects/thoughtseed/thoughtseed-labs/10-brand-essence/presskit/visual-language/tier1-logo-objects/"
     }
   }
 }
