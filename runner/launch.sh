@@ -364,7 +364,81 @@ generate_spoke_prompt() {
     
     local spoke_file="$PROJECT_ROOT/clusters/$cluster/spokes/${spoke}.md"
     local core_file="$PROJECT_ROOT/clusters/$cluster/brandmint-${cluster}-core.md"
-    
+
+    # Spoke file must exist
+    if [[ ! -f "$spoke_file" ]]; then
+        log_error "Spoke file not found: $spoke_file"
+        return 1
+    fi
+
+    # Brand config must exist and be readable
+    if [[ ! -f "$brand_config" ]]; then
+        log_error "Unable to read brand config: $brand_config"
+        return 1
+    fi
+
+    # Parse and validate dependencies from YAML frontmatter
+    local resolved_deps
+    if ! resolved_deps=$(python3 -c '
+import sys, re, yaml
+
+spoke_file, cluster, spoke = sys.argv[1], sys.argv[2], sys.argv[3]
+try:
+    with open(spoke_file, "r", encoding="utf-8") as f:
+        content = f.read()
+except Exception as e:
+    sys.stderr.write(f"Unable to read spoke file {spoke_file}: {e}\n")
+    sys.exit(1)
+
+deps = []
+if content.startswith("---"):
+    parts = content.split("---", 2)
+    if len(parts) < 3:
+        sys.stderr.write(f"Malformed frontmatter in {spoke_file}: unclosed frontmatter block\n")
+        sys.exit(1)
+    try:
+        fm = yaml.safe_load(parts[1])
+    except Exception as e:
+        sys.stderr.write(f"Malformed YAML in frontmatter {spoke_file}: {e}\n")
+        sys.exit(1)
+    if fm is not None:
+        if not isinstance(fm, dict):
+            sys.stderr.write(f"Malformed frontmatter in {spoke_file}: root is not a mapping\n")
+            sys.exit(1)
+        raw_deps = fm.get("dependencies")
+        if raw_deps is not None:
+            if not isinstance(raw_deps, list):
+                sys.stderr.write(f"Malformed dependencies in {spoke_file}: expected list, got {type(raw_deps).__name__}\n")
+                sys.exit(1)
+            name_re = re.compile(r"^[a-zA-Z0-9_-]+$")
+            for item in raw_deps:
+                if not isinstance(item, str) or not name_re.match(item.strip()):
+                    sys.stderr.write(f"Malformed dependency name in {spoke_file}: {item!r}\n")
+                    sys.exit(1)
+                deps.append(item.strip())
+
+if cluster in ("content", "social-growth", "brandmint-content", "brandmint-social-growth"):
+    shared = ["voice-and-tone", "messaging-framework", "buyer-persona", "product-positioning"]
+    for s in shared:
+        if s not in deps:
+            deps.append(s)
+
+seen = set()
+resolved = []
+for d in deps:
+    if d == spoke:
+        continue
+    if d not in seen:
+        seen.add(d)
+        resolved.append(d)
+
+for d in resolved:
+    print(d)
+' "$spoke_file" "$cluster" "$spoke" 2>&1); then
+        log_error "Dependency resolution failed for spoke $spoke: $resolved_deps"
+        return 1
+    fi
+
     # Build prompt from:
     # 1. Core cluster context
     # 2. Spoke instructions
@@ -390,18 +464,13 @@ EOF
     fi
     
     # Include spoke
-    if [[ -f "$spoke_file" ]]; then
-        echo "## Skill Instructions"
-        echo ""
-        if ! cat "$spoke_file"; then
-            log_error "Unable to read spoke file: $spoke_file"
-            return 1
-        fi
-        echo ""
-    else
-        log_error "Spoke file not found: $spoke_file"
+    echo "## Skill Instructions"
+    echo ""
+    if ! cat "$spoke_file"; then
+        log_error "Unable to read spoke file: $spoke_file"
         return 1
     fi
+    echo ""
     
     # Include brand config context
     echo "## Brand Context"
@@ -414,23 +483,28 @@ EOF
     echo '```'
     echo ""
     
-    # Include upstream outputs if any
+    # Include upstream outputs for declared dependencies only
     local outputs_dir="$brand_dir/.brandmint/outputs"
-    if [[ -d "$outputs_dir" ]] && ls "$outputs_dir"/*.json &>/dev/null; then
+    if [[ -n "$resolved_deps" ]]; then
         echo "## Upstream Outputs"
         echo ""
-        for output in "$outputs_dir"/*.json; do
-            local name
-            name=$(basename "$output" .json)
-            echo "### $name"
-            echo '```json'
-            if ! cat "$output"; then
-                log_error "Unable to read upstream output: $output"
-                return 1
+        local dep
+        while IFS= read -r dep; do
+            [[ -z "$dep" ]] && continue
+            local output_path="$outputs_dir/${dep}.json"
+            echo "### $dep"
+            if [[ -f "$output_path" ]]; then
+                echo '```json'
+                if ! cat "$output_path"; then
+                    log_error "Unable to read upstream output: $output_path"
+                    return 1
+                fi
+                echo '```'
+            else
+                echo "*(Dependency output missing: required upstream source outputs/${dep}.json not available)*"
             fi
-            echo '```'
             echo ""
-        done
+        done <<< "$resolved_deps"
     fi
     
     # Output instructions
