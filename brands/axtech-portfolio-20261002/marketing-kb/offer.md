@@ -22,6 +22,6 @@ Name one relevant topic and ask a qualifying question. Do not combine all portfo
 Preserve the chosen brand's boundaries; supplier-comparison sources support comparisons, not our offers.
 No savings, CEE eligibility, compatibility guarantee, installation coverage, client relationship, certification or delivery promise is approved here.
 Check actual product documents and owner-approved commercial conditions before proposing a deliverable or quote.
-Custom ERP must eventually own approved products/conditions; an MCP connection or stock feed has not been demonstrated.
+The custom ERP MCP reference connection is verified. Approved brand/product mappings, sellability, price and stock feeds remain unverified.
 
 Open gaps: commercial owner, product/SKU documentation, installation/support scope, pricing and source-approved offer version.

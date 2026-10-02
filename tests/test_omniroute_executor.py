@@ -152,7 +152,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
 
     def test_draft_only_and_source_gate_enforcement(self):
         brand_cfg = {"name": "TestBrand"}
-        
+
         # Missing draft_only
         obj_no_draft = {
             "skill": "value-proposition",

@@ -21,5 +21,5 @@ The [product marketing context index](.agents/product-marketing-context.md) is a
 
 Sender/domain identity, service regions, product documentation, usable client proof and customer interviews remain incomplete.
 Meristem Wave 2 strategy and Wave 6 content outputs are pending; this pack does not cite future files as evidence.
-The owner's custom ERP must connect through MCP on the new Mac mini; it is not connected or verified here.
+The custom ERP MCP is connected for read-only schema/reference queries. Campaign write, suppression, consent and end-to-end acceptance remain pending; see the [ERP audit](/Volumes/madara/2026/Projects/thoughtseed/heyzack/axtech-campaign-agent/docs/AXTECH-ERP-READONLY-AUDIT.md).
 Explee, social publishing, Vapi calls and marketplace operations remain held. See campaign [results](campaigns/b2b-mep-fr-preparation/results.md).

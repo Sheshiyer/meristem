@@ -48,4 +48,4 @@ Provisional task rule: French vous, precise professional topic, one courteous qu
 Public commercial proof, approved customer logos/testimonials and performance metrics are unavailable. Registry identity and retrieval receipts have narrower meanings; see proof.md and brand ledgers.
 
 ## Goals
-Prepare source-backed B2B trade-specific drafts before activation. Success now is checked copy and explicit gaps; live conversion and performance goals await owner review and custom ERP/new Mac mini MCP connection.
+Prepare source-backed B2B trade-specific drafts before activation. Success now is checked copy and explicit gaps; live conversion and performance goals await owner review and operational acceptance of the connected read-only ERP references.

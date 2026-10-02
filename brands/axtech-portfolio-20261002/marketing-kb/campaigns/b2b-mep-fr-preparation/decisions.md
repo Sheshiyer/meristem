@@ -10,7 +10,7 @@ These decisions encode the current user scope and source curation, not an approv
 | French vous outreach, English operator docs | user language preference | provisional task rule |
 | Wave outside MEP | its authority describes mobile accessories | held outside this campaign |
 | Symphonics held | identity/offers unavailable; unrelated name quarantined | no generation |
-| Custom ERP canonical | direct user clarification; future Mac mini MCP | connection pending |
+| Custom ERP canonical | direct user clarification; connected read-only MCP | reference reads verified; operational adapters pending |
 | No campaign/publication mutation | current preparation boundary; readbacks require live receipts | held |
 | No approved proof/offer fork | linked brand ledgers own claims | source rule |
 

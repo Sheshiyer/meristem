@@ -11,7 +11,7 @@ This local snapshot does not authorize project/campaign/budget mutation. No curr
 - Current brand research is linked in [research](research/README.md); copy examples are explicitly illustrative/internal.
 - Exa/usable Firecrawl retrieval is recorded; Perplexity authentication and Symphonics identity gaps remain.
 - Meristem Wave 2 and Wave 6 outputs/reviews are pending; no wave completion claimed here.
-- Custom ERP MCP, sender/contact/suppression contract and live E2E are unproved.
+- ERP MCP scoped reference reads are verified; sender/contact/suppression contract and live E2E remain unproved.
 - No sent/delivered/replied, qualified-lead, revenue, impression, engagement or conversion metrics available.
 
 ## Future performance record

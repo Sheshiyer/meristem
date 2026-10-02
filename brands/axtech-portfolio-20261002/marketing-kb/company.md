@@ -1,7 +1,7 @@
 # Company — source navigation
 
 Axtech's group page is the public portfolio entry point; brands preserve their different business domains.
-The custom ERP is the owner's intended operational system of record, via future new Mac mini MCP.
+The custom ERP is the canonical system of record. Its MCP reference connection now works with read-only authority; operational writes and campaign adapters remain pending.
 This file routes company questions to researched sources; legal identity does not establish product or delivery capability.
 
 Context entry: [product marketing index](.agents/product-marketing-context.md); brand sources below remain authority.

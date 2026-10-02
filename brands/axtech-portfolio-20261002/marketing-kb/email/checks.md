@@ -10,7 +10,7 @@
 - Wave has no MEP draft; Symphonics has no draft; consumers/short-stay are excluded.
 - Sender placeholder and unresolved facts are clearly flagged in internal notes.
 - A future send-ready artifact needs verified sender, contact basis and suppression; this checklist grants no send authority.
-- Custom ERP/MCP and Vapi integration remain pending; no real call or transfer reported.
+- ERP MCP reference reads work; operational transfer and Vapi terminal writeback remain pending. No real call or transfer is reported.
 - Draft includes an edit rationale and evidence gaps so review can be concrete.
 
 Evidence navigation: [offer](../offer.md), [proof](../proof.md), [campaign research](../campaigns/b2b-mep-fr-preparation/research/README.md).

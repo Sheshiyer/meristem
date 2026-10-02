@@ -21,7 +21,7 @@ Do not enroll leads, merge trades, schedule follow-ups, invent an exhaustive mar
 
 ## Integration and success criteria
 
-Custom ERP via new Mac mini MCP is planned, not connected. Map actual schema/permissions, deduplication, contact basis and suppression first.
+Custom ERP MCP is connected for read-only references. Scoped schemas and taxonomy are documented; operational mapping, deduplication, contact basis and suppression still require acceptance.
 Then prove synthetic ERP/Vapi/Explee/content transfer with clear synthetic labels; no successful live E2E is asserted.
 Success for this task: source links valid, trades/brands separated, internal copy checked and gaps explicit.
 Activation requires verified sender/commercial facts and distinct authority for each live action; no sends or mutations here.
