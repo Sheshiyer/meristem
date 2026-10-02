@@ -68,3 +68,16 @@ Preserve the original brand packages without silently rewriting source claims. R
 ## Verification
 
 All three runner suites passed under Bash 5.3 and macOS Bash 3.2. Each runner/test/planning shell file passed syntax checking with both interpreters. All 173 tracked brand JSON files parse; 19 available Cambium/Fitcheck/Iverif asset hashes match. Thoughtseed has 44 existing references, including 24 external host paths without stored hashes; this remains a portability limitation. New runtime, tests and reconciliation documents pass base-to-head whitespace checks. Inherited archival generated-source whitespace is preserved intentionally. Both checkpoint tips are ancestors. See `.local/review-ready.md` for scope, route attribution and release boundaries.
+
+## Axtech portfolio run — 2026-10-02
+
+The user now authorizes fresh research and Meristem flow per supplied brand, with B2B MEP targeting before Explee campaigns or social publication. The historical reconciliation criteria above remain closed; this run has independent open criteria. Current identity assets remain source-authoritative.
+
+- [x] AX-ISC-1: Canonical runner and configured research rails are traced from current source.
+- [ ] AX-ISC-2: Each of six domains has a fresh source/evidence research dossier with provider receipts or explicit provider/availability failure.
+- [ ] AX-ISC-3: Per-brand Meristem prompts and outputs are advanced through the actual runner with honest tracer and completeness states.
+- [ ] AX-ISC-4: B2B MEP segmentation includes sole traders and deduplicates verified mixed activities.
+- [ ] AX-ISC-5: Per-brand marketing and social draft artifacts cite validated inputs and preserve claim boundaries.
+- [x] AX-ISC-6: ERP, Vapi, Explee and social contracts are mapped; configured, source, synthetic and live evidence are distinguished.
+- [ ] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
+- [ ] AX-ISC-8: No Explee start, send, budget increase, public social publish, secret/provider migration or unapproved live-data write occurs.
