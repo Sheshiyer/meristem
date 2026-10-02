@@ -3,6 +3,7 @@ schema: thoughtseed.isa.v1
 project: meristem
 effort: E3
 updated_at: 2026-09-27
+phase: execute
 ---
 
 ## Problem
@@ -76,8 +77,20 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [x] AX-ISC-1: Canonical runner and configured research rails are traced from current source.
 - [x] AX-ISC-2: Each of six domains has a fresh source/evidence research dossier with provider receipts or explicit provider/availability failure.
 - [ ] AX-ISC-3: Per-brand Meristem prompts and outputs are advanced through the actual runner with honest tracer and completeness states.
+- [x] AX-ISC-3.1: Six actual first-run tracer attempts have runner state and provider/gate receipts; failed and partial runs are not marked complete.
+- [ ] AX-ISC-3.2: Five evidenced brands complete the scoped research, strategy and content draft waves; Symphonics remains an explicit identity hold.
 - [ ] AX-ISC-4: B2B MEP segmentation includes sole traders and deduplicates verified mixed activities.
 - [ ] AX-ISC-5: Per-brand marketing and social draft artifacts cite validated inputs and preserve claim boundaries.
 - [x] AX-ISC-6: ERP, Vapi, Explee and social contracts are mapped; configured, source, synthetic and live evidence are distinguished.
 - [ ] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
 - [ ] AX-ISC-8: No Explee start, send, budget increase, public social publish, secret/provider migration or unapproved live-data write occurs.
+
+### Current verification — 2 October 2026
+
+AX-ISC-3.1: Read actual six `.brandmint/state.json` files and tracer receipts. Five first attempts failed structured-response parsing; Symphonics produced a local identity-gated partial without a provider call. Preserved fresh authoring-v2 attempts completed wave1 for HeyZack, Ecoled and Axtech, then stopped before HTTP at the128KiB context guard. No state was hand-edited. A dependency-assembly repair and a fresh v3 attempt remain required; partial generation is not a finished marketing package.
+
+AX-ISC-6: User connected the custom Axtech ERP MCP for read-only references. Fifteen bounded SELECT queries verified actual society/business-unit/brand/activity/client/lead/product schemas and aggregates. `docs/AXTECH-ERP-READONLY-AUDIT.md` and the portable integration binding distinguish verified reads from unbound writes, suppression, consent, idempotency and terminal writeback. ERPNext/Zoho remain unselected.
+
+AX-ISC-4/7: Local CLI105tests and strict typecheck passed, but independent synthetic probes found residual contactability-merge, provenance/domain, vendor-key and brand-copy faults. These criteria remain open until the exact probes pass after correction. Meristem33Python tests and5shell suites pass; current real generation exposed the unbounded upstream assembly despite those fixture checks.
+
+Decision: Operator communication is English; prospect copy remains French vous. The research providers remain explicitly Exa/Firecrawl via OmniRoute, with Perplexity's semantic sign-in failure recorded. Structured draft authoring uses configured noesis-write after noesis-research returned conversational announcements. Gateway response metadata reports composer-2.5; physical provider resolution is unverified. Advisor was attempted through Inference.ts and timed out after30s; no successful advisor verdict is claimed.

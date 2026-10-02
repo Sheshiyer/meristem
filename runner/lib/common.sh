@@ -97,11 +97,17 @@ yaml_get() {
     local file="$1"
     local key="$2"
     local default="${3:-}"
-    
+
+    # JSON is valid YAML and is used by the portfolio configs.
+    if jq -e 'type == "object"' "$file" >/dev/null 2>&1; then
+        jq -r --arg key "$key" --arg fallback "$default" '.[$key] // $fallback' "$file"
+        return
+    fi
+
     # Simple key: value extraction (no nested support)
     local value
     value=$(grep -E "^${key}:" "$file" 2>/dev/null | head -1 | sed 's/^[^:]*: *//' | sed 's/^["'"'"']//' | sed 's/["'"'"']$//')
-    
+
     if [[ -z "$value" ]]; then
         echo "$default"
     else
@@ -113,7 +119,7 @@ yaml_get_nested() {
     local file="$1"
     local path="$2"  # e.g., "brand.name"
     local default="${3:-}"
-    
+
     # Use yq if available, otherwise fallback to grep
     if command -v yq &>/dev/null; then
         yq -r ".$path // \"$default\"" "$file" 2>/dev/null || echo "$default"
@@ -132,7 +138,7 @@ json_get() {
     local file="$1"
     local path="$2"
     local default="${3:-}"
-    
+
     require_cmd jq
     jq -r "$path // \"$default\"" "$file" 2>/dev/null || echo "$default"
 }
@@ -207,9 +213,9 @@ state_init() {
     local brand_dir="$1"
     local state_file
     state_file=$(state_file "$brand_dir")
-    
+
     mkdir -p "$(dirname "$state_file")"
-    
+
     if [[ ! -f "$state_file" ]]; then
         cat > "$state_file" <<EOF
 {
@@ -230,7 +236,7 @@ state_get() {
     local brand_dir="$1"
     local path="$2"
     local default="${3:-}"
-    
+
     json_get "$(state_file "$brand_dir")" "$path" "$default"
 }
 
@@ -368,15 +374,81 @@ cluster_to_wave() {
     die "Unknown cluster: $cluster"
 }
 
+cluster_canonical_spokes() {
+    local cluster="$1"
+    case "$cluster" in
+        foundation)
+            echo "brand-foundation buyer-persona competitor-analysis value-proposition"
+            ;;
+        strategy)
+            echo "voice-and-tone product-positioning messaging-framework brand-story"
+            ;;
+        identity)
+            echo "color-palette typography logo-concept visual-language"
+            ;;
+        photography)
+            echo "product-photography lifestyle-photography hero-images social-media-assets"
+            ;;
+        illustration)
+            echo "brand-illustrations icon-system pattern-library"
+            ;;
+        content)
+            echo "product-description landing-page-copy prelaunch-email-sequence launch-email-sequence welcome-email-sequence ad-creative-copy press-release"
+            ;;
+        social-growth)
+            echo "social-content-engine short-form-hook-generator update-strategy-sequencer community-manager-brain review-response-strategist"
+            ;;
+        synthesis)
+            echo "brand-documentation wiki-site-generator notebooklm-publishing deliverables-package campaign-orchestrator"
+            ;;
+        *)
+            echo ""
+            ;;
+    esac
+}
+
 list_spokes() {
     local cluster="$1"
     local cluster_dir="${PROJECT_ROOT:-$(pwd)}/clusters/$cluster"
-    
+
     require_dir "$cluster_dir/spokes" "cluster spokes directory"
-    
-    find "$cluster_dir/spokes" -name "*.md" -type f | \
-        xargs -I {} basename {} .md | \
-        sort
+
+    local canonical
+    canonical=$(cluster_canonical_spokes "$cluster")
+
+    local actual_files
+    actual_files=$(find "$cluster_dir/spokes" -name "*.md" -type f | xargs -I {} basename {} .md | sort)
+
+    if [[ -z "$actual_files" ]]; then
+        return 0
+    fi
+
+    if [[ -z "$canonical" ]]; then
+        echo "$actual_files"
+        return 0
+    fi
+
+    local spoke
+    for spoke in $canonical; do
+        if [[ -f "$cluster_dir/spokes/${spoke}.md" ]]; then
+            echo "$spoke"
+        fi
+    done
+
+    local actual_spoke
+    while IFS= read -r actual_spoke; do
+        [[ -z "$actual_spoke" ]] && continue
+        local is_canonical=false
+        for spoke in $canonical; do
+            if [[ "$actual_spoke" == "$spoke" ]]; then
+                is_canonical=true
+                break
+            fi
+        done
+        if [[ "$is_canonical" == "false" ]]; then
+            echo "$actual_spoke"
+        fi
+    done <<< "$actual_files"
 }
 
 # -----------------------------------------------------------------------------
@@ -399,19 +471,19 @@ wait_for_output() {
     local output_file="$1"
     local timeout_sec="${2:-300}"
     local poll_sec="${3:-5}"
-    
+
     local elapsed=0
     while [[ ! -f "$output_file" ]] && [[ $elapsed -lt $timeout_sec ]]; do
         sleep "$poll_sec"
         elapsed=$((elapsed + poll_sec))
         log_debug "Waiting for output: $output_file ($elapsed/${timeout_sec}s)"
     done
-    
+
     if [[ ! -f "$output_file" ]]; then
         log_error "Timeout waiting for output: $output_file"
         return 1
     fi
-    
+
     log_success "Output received: $output_file"
     return 0
 }
@@ -428,29 +500,29 @@ vault_write_plan() {
     local brand_name="$1"
     local waves="$2"
     local content="$3"
-    
+
     local vault
     vault=$(vault_root)
     local timestamp
     timestamp=$(date +"%Y-%m-%d %H%M")
     local filename="Plan $timestamp $brand_name.md"
-    
+
     mkdir -p "$vault/Plans"
     echo "$content" > "$vault/Plans/$filename"
-    
+
     log_info "Plan written: $filename"
     echo "$vault/Plans/$filename"
 }
 
 vault_append_metric() {
     local metric_line="$1"
-    
+
     local vault
     vault=$(vault_root)
     local metrics_file="$vault/Accumulators/Metrics.md"
-    
+
     mkdir -p "$(dirname "$metrics_file")"
-    
+
     if [[ ! -f "$metrics_file" ]]; then
         cat > "$metrics_file" <<EOF
 # Metrics
@@ -459,20 +531,20 @@ vault_append_metric() {
 |-----------|-------|------|-------|----------|--------|-------|
 EOF
     fi
-    
+
     echo "$metric_line" >> "$metrics_file"
 }
 
 vault_log_failure() {
     local pattern="$1"
     local context="$2"
-    
+
     local vault
     vault=$(vault_root)
     local failures_file="$vault/Accumulators/Failure Patterns.md"
-    
+
     mkdir -p "$(dirname "$failures_file")"
-    
+
     if [[ ! -f "$failures_file" ]]; then
         cat > "$failures_file" <<EOF
 # Failure Patterns
@@ -483,7 +555,7 @@ Accumulated failure patterns from pipeline runs. Used to inform future plans.
 
 EOF
     fi
-    
+
     cat >> "$failures_file" <<EOF
 
 ## $(date +"%Y-%m-%d %H:%M")
@@ -504,13 +576,13 @@ generate_image() {
     local prompt="$1"
     local output="$2"
     local ref_image="${3:-}"
-    
+
     local gen_script="${PROJECT_ROOT:-$(pwd)}/visual/gpt-image-2/scripts/gen.sh"
     require_file "$gen_script" "gpt-image-2 generator"
-    
+
     local args=(--prompt "$prompt" --out "$output")
     [[ -n "$ref_image" ]] && args+=(--ref "$ref_image")
-    
+
     log_info "Generating image: $output"
     bash "$gen_script" "${args[@]}"
 }
@@ -519,10 +591,10 @@ generate_video() {
     local prompt="$1"
     local output="$2"
     local duration="${3:-30}"
-    
+
     local gen_script="${PROJECT_ROOT:-$(pwd)}/visual/arcplume/scripts/gen-video.sh"
     require_file "$gen_script" "arcplume video generator"
-    
+
     log_info "Generating video: $output"
     bash "$gen_script" "$prompt" "$output" "$duration"
 }
@@ -539,17 +611,47 @@ timestamp_local() {
     date +"%Y-%m-%d %H:%M"
 }
 
-# Parse wave range (e.g., "1-3" -> "1 2 3", "2" -> "2")
+# Parse wave range: supports N, N-M, and comma-separated (e.g. "1-2,6" -> "1\n2\n6")
+# Validates each segment is an integer 1..7, disallows reverse/empty ranges.
+# Output: sorted unique wave numbers, one per line.
 parse_wave_range() {
     local range="$1"
-    
-    if [[ "$range" =~ ^([0-9]+)-([0-9]+)$ ]]; then
-        local start="${BASH_REMATCH[1]}"
-        local end="${BASH_REMATCH[2]}"
-        seq "$start" "$end"
-    elif [[ "$range" =~ ^[0-9]+$ ]]; then
-        echo "$range"
-    else
-        die "Invalid wave range: $range (expected N or N-M)"
+    local -a result=()
+    local segment
+
+    IFS=',' read -ra _segments <<< "$range"
+    for segment in "${_segments[@]}"; do
+        # Strip all whitespace from segment (handles "1 - 2" -> "1-2")
+        segment="${segment//[[:space:]]/}"
+        if [[ -z "$segment" ]]; then
+            die "Invalid wave range: empty segment in '$range'"
+        fi
+        if [[ "$segment" =~ ^([0-9]+)-([0-9]+)$ ]]; then
+            local start="${BASH_REMATCH[1]}"
+            local end="${BASH_REMATCH[2]}"
+            if [[ "$start" -gt "$end" ]]; then
+                die "Invalid wave range: reverse range '$segment' in '$range'"
+            fi
+            if [[ "$start" -lt 1 || "$end" -gt 7 ]]; then
+                die "Wave range out of bounds: '$segment' (must be 1..7)"
+            fi
+            local i
+            for ((i=start; i<=end; i++)); do
+                result+=("$i")
+            done
+        elif [[ "$segment" =~ ^[0-9]+$ ]]; then
+            if [[ "$segment" -lt 1 || "$segment" -gt 7 ]]; then
+                die "Wave number out of bounds: '$segment' (must be 1..7)"
+            fi
+            result+=("$segment")
+        else
+            die "Invalid wave range: '$segment' in '$range' (expected N or N-M)"
+        fi
+    done
+
+    if [[ ${#result[@]} -eq 0 ]]; then
+        die "Wave range produced no valid waves from '$range'"
     fi
+
+    printf '%s\n' "${result[@]}" | sort -nu
 }
