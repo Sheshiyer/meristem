@@ -1,0 +1,371 @@
+{
+  "schema": "axtech.research-evidence.v1",
+  "brand": "Ecoled Europe",
+  "slug": "ecoled-europe",
+  "domain": "https://ecoled-europe.com/",
+  "curated_at_utc": "2026-10-02T14:03:22.204616+00:00",
+  "scope": {
+    "draft_only": true,
+    "send": false,
+    "publish": false,
+    "consumer_activation": false,
+    "shortstay_activation": false,
+    "mep_activation": false,
+    "all_company_sizes_requested": true
+  },
+  "positioning": "Solutions d’éclairage LED professionnel et études d’éclairage ; priorité électriciens, BET électricité/éclairage et prescripteurs.",
+  "source_completeness": "Offre générale officielle exploitable et trois candidats identifiés ; preuve technique/produit, couverture et conditions commerciales manquantes.",
+  "review_coverage": {
+    "exa_result_count": 7,
+    "all_available_exa_result_text_reviewed": true,
+    "firecrawl_content_reviewed": true,
+    "full_domain_crawl": false,
+    "perplexity_success": false,
+    "independent_commercial_proof": false,
+    "local_audit_scope": "Existing HeyZack audit plus selected source-map entries; no new archive-wide review."
+  },
+  "provider_receipts": [
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "sha256": "82d6ddd699e15a7297dd07c5a0752991af44cd80febef4fffa6b466a4eeb9ee7",
+      "subject": "ecoled-europe",
+      "requested_provider": "exa-search",
+      "response_provider": "exa-search",
+      "gateway": "http://127.0.0.1:20128/v1/search",
+      "requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "usable",
+      "interpretation": "Résultats et textes extraits effectivement disponibles ; pertinence de chaque résultat qualifiée séparément.",
+      "usable_research": true,
+      "response_id": "search-34e18bb4-7002-47a6-b3d4-038b5a4c5859",
+      "response_model": null
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-ecoled-europe.json",
+      "sha256": "ff2b998d3ceab4afa4384b6ee9d5c1bcc0c6b87c7c2fc7f820899875cd91a1d3",
+      "subject": "ecoled-europe",
+      "requested_provider": "firecrawl",
+      "response_provider": "firecrawl",
+      "gateway": "http://127.0.0.1:20128/v1/web/fetch",
+      "requested_at_utc": "2026-10-02T13:50:53.766581+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "usable",
+      "interpretation": "Corps officiel exploitable ; publication, livraison et conformité non validées.",
+      "usable_research": true,
+      "response_id": null,
+      "response_model": null
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/perplexity-web-ecoled-europe.json",
+      "sha256": "c25990e2d352424e8e9c96f5324dab192960ad0111c8c609e97cbf580a4d4f3f",
+      "subject": "ecoled-europe",
+      "requested_provider": "perplexity-web",
+      "response_provider": null,
+      "gateway": "http://127.0.0.1:20128/v1/chat/completions",
+      "requested_at_utc": "2026-10-02T13:50:55.903002+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "semantic_authentication_failure",
+      "interpretation": "HTTP200, contenu demandant de s’inscrire et de répéter la demande ; aucun résultat de recherche exploitable.",
+      "usable_research": false,
+      "response_id": "chatcmpl-pplx-f819c429-736",
+      "response_model": "pplx-sonar"
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/perplexity-openrouter-axtech.json",
+      "sha256": "ffe9e63df93dd7b8a14481a9165bb42b183f445f3125fa1de5a308a0488b9b09",
+      "subject": "axtech",
+      "requested_provider": "perplexity-openrouter",
+      "response_provider": null,
+      "gateway": "http://127.0.0.1:20128/v1/chat/completions",
+      "requested_at_utc": "2026-10-02T13:51:07.160919+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 400,
+      "semantic_status": "model_unavailable",
+      "interpretation": "HTTP400 : perplexity/sonar-pro absent du catalogue live openrouter. Tentative effectuée sur Axtech seulement.",
+      "usable_research": false,
+      "response_id": null,
+      "response_model": null,
+      "relation_to_this_brand": "portfolio_rail_failure_reference_not_attempt_for_this_brand"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ecoled-europe:exa:1",
+      "url": "https://www.ecoled-europe.com/",
+      "title": "Ecoled Europe – Solutions d'éclairage LED innovantes ...",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/0/content/text",
+      "text_characters": 52,
+      "text_sha256": "8cc28a9ebcac2dcfbf7c62550192adfea2440b6dd18b1ad99f7c12a75abccbfa",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:exa:2",
+      "url": "https://www.trilux.com/fr/application/tertiaire/eclairage-de-bureau/",
+      "title": "Éclairage de bureau performant et durable| TRILUX",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/1/content/text",
+      "text_characters": 3945,
+      "text_sha256": "055a3cd3e30436a042284f656b1f25890ba18a023afa8e792c323fd6b407609f",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:exa:3",
+      "url": "https://www.signify.com/fr-fr/prof",
+      "title": "Produits | Signify France",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/2/content/text",
+      "text_characters": 5611,
+      "text_sha256": "0a64146cf57653e31bb00ab375982121b47fcf171e3648ac4a6a4e2b7aba4120",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:exa:4",
+      "url": "https://ecoled-france.com/",
+      "title": "EcoLED France - Éclairage LED Professionnel avec CEE ...",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/3/content/text",
+      "text_characters": 63,
+      "text_sha256": "c0c5b3caf896b246df77a0053c5d4f217a120ff7fc281b6ce49008b63d0e6f47",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:exa:5",
+      "url": "https://ecoled-pro.fr/",
+      "title": "EcoLED Pro - Éclairage LED Professionnel avec CEE Tertiaires",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/4/content/text",
+      "text_characters": 6793,
+      "text_sha256": "23b060666500b33acc1c542d2155ff63a2b893a133082fafb7196037f4043422",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:exa:6",
+      "url": "https://go-spi.fr/",
+      "title": "GOSPI - Expert Éclairage LED",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/5/content/text",
+      "text_characters": 18256,
+      "text_sha256": "d573b0bdd9dbec8105ab738019e53278190edcba1f838872c268c0668f21b6e9",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:exa:7",
+      "url": "https://ecoleds-pro.com/",
+      "title": "EcoLed Pro - Éclairage LED Professionnel Financement CEE ...",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:55.270799+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-ecoled-europe.json",
+      "json_pointer": "/response/results/6/content/text",
+      "text_characters": 6069,
+      "text_sha256": "c5d1c65da79fb8949170926542c4b5b9c34cfb55b9ea190cae30c0034f07307f",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "ecoled-europe:firecrawl",
+      "url": "https://ecoled-europe.com/",
+      "title": "Ecoled Europe – Solutions d'éclairage LED innovantes | Conception & fabrication sur mesure",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:53.766581+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-ecoled-europe.json",
+      "json_pointer": "/response/content",
+      "text_characters": 3408,
+      "text_sha256": "d75f072d6aaa91bea0a3c46409cf1fad9d03b0304fa4817730ccab3833d05684",
+      "content_reviewed": true,
+      "extraction_scope": "homepage_fetch_only",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "group:firecrawl:axtech",
+      "url": "https://www.axtech.fr/",
+      "title": "Axtech — Groupe Technologique Français | Innovation & Marques",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:46:41.680957+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-axtech.json",
+      "json_pointer": "/response/content",
+      "text_characters": 6589,
+      "text_sha256": "fd9fe2b98453194f637b21be995855d5efe768e32d18f33f33f8248b4bae6bc2",
+      "content_reviewed": true,
+      "extraction_scope": "homepage_fetch_only",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    }
+  ],
+  "claims": [
+    {
+      "id": "EL-O1",
+      "classification": "first_party_claim",
+      "statement": "L’accueil Ecoled Europe décrit conception optique, études photométriques et ingénierie/R&D pour des solutions LED adaptées au projet.",
+      "source_ids": [
+        "ecoled-europe:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "EL-O2",
+      "classification": "first_party_claim",
+      "statement": "L’accueil décrit accompagnement de projet et solutions d’éclairage architectural, industriel et commercial.",
+      "source_ids": [
+        "ecoled-europe:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "EL-O3",
+      "classification": "first_party_claim",
+      "statement": "Ecoled annonce fabrication/assemblage et production France/Europe ; origine, usine et taux de production ne sont pas corroborés.",
+      "source_ids": [
+        "ecoled-europe:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "EL-H1",
+      "classification": "strategic_hypothesis",
+      "statement": "Proposer aux électriciens et BET de partir d’un cahier des charges, de plans et d’un besoin photométrique avant devis.",
+      "source_ids": [
+        "ecoled-europe:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    }
+  ],
+  "segmentation_hypotheses": [
+    "Électriciens et entreprises d’électricité : prescription, achat et installation d’éclairage ; toutes tailles incluant indépendants.",
+    "BET électricité/éclairage : études, choix de luminaires, photométrie et contraintes du projet à examiner.",
+    "Architectes, architectes d’intérieur et maîtres d’œuvre : conception lumière et coordination, avec offre adaptée à leur rôle.",
+    "BET fluides : seulement si périmètre incluant électricité/éclairage ou coordination attestée ; conserver leur spécialité exacte.",
+    "Plombiers, CVC seuls et BET structure : aucune offre directe démontrée ; ne pas les ajouter au même brief par simple appartenance au bâtiment."
+  ],
+  "strategic_hypotheses": [
+    "Faire du cahier des charges un point d’entrée : usage, plan, hauteur, contraintes de pose et documents techniques requis.",
+    "Une matrice par SKU peut rapprocher fichiers photométriques, conformité documentée et conditions commerciales avant génération de devis."
+  ],
+  "competitor_candidates": [
+    {
+      "name": "TRILUX",
+      "url": "https://www.trilux.com/fr/application/tertiaire/eclairage-de-bureau/",
+      "source_id": "ecoled-europe:exa:2",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat pour éclairage tertiaire et accompagnement d’études ; concurrence effective et faiblesse inconnues.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    },
+    {
+      "name": "Signify",
+      "url": "https://www.signify.com/fr-fr/prof",
+      "source_id": "ecoled-europe:exa:3",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat pour catalogue et systèmes d’éclairage professionnels ; documents techniques décrits par le fabricant.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    },
+    {
+      "name": "GOSPI",
+      "url": "https://go-spi.fr/",
+      "source_id": "ecoled-europe:exa:6",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat ou partenaire d’études éclairage ; relation compétitive/complémentaire à qualifier.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    }
+  ],
+  "uncertainties": [
+    "Délai 24/48h, origine de fabrication, compteurs et témoignage industriel du site restent des claims non corroborés.",
+    "Aucune gamme/SKU, prix approuvé, disponibilité, document photométrique, garantie ou dossier de conformité collecté.",
+    "Les sources concurrentes évoquent DIALux/Relux, CEE ou normes ; elles ne prouvent pas ces capacités pour Ecoled Europe.",
+    "Aucun lead réel ou taille exhaustive du marché électrique/BET mesuré ; segmentation de recherche seulement.",
+    "Perplexity-web a répondu HTTP200 avec une demande d’inscription sur chaque marque : échec sémantique d’authentification, pas une recherche réussie.",
+    "L’alternative openrouter/perplexity/sonar-pro, testée sur Axtech seulement, a répondu HTTP400 modèle absent du catalogue actif ; ne pas généraliser une tentative non faite aux cinq autres marques.",
+    "Les timestamps sont ceux du début des requêtes gateway ; dates de mise à jour effectives des pages non établies.",
+    "Couverture nationale des prospects demandée, mais aucune couverture nationale/régionale de prestation n’est prouvée. Région/département servent à segmenter le prospect.",
+    "Ce lot ne contient aucun lead réel, consentement de contact, suppression, prix approuvé ni preuve ERP/Vapi/Explee/social live.",
+    "Receipts bruts sous .local : disponibles sur cet hôte, non portables par simple clone Git. Leurs chemins et SHA-256 sont conservés ici.",
+    "ERP canonique = ERP personnalisé du propriétaire ; MCP prévu sur le nouveau Mac mini. Aucun schéma ni connexion prouvé ; activation Explee/social/Vapi tenue en attente de ce contrat."
+  ],
+  "regionalisation": {
+    "prospect_market": "France",
+    "prospect_region_department": "research segmentation; not promised service area",
+    "verified_service_regions": [],
+    "service_coverage_status": "unverified",
+    "postal_address_is_coverage_proof": false
+  },
+  "gates": {
+    "identity": "Offre d’éclairage identifiable dans la page officielle ; rattachement au portefeuille déclaré sur Axtech.",
+    "downstream_brand_generation": "allowed_for_evidence_bounded_drafts",
+    "ready_for_launch": false,
+    "explee_import": false,
+    "live_erp_vapi_contract": "held_until_custom_erp_mcp_connected_on_new_mac_mini_and_verified",
+    "social_publication": false,
+    "marketplace_listing": false,
+    "wave_mep_excluded": false,
+    "symphonics_name_collision_quarantined": false
+  },
+  "canonical_integration": {
+    "system_of_record": "user_custom_erp",
+    "authority": "direct_user_clarification_in_current_task",
+    "planned_host": "new_mac_mini",
+    "planned_transport": "MCP",
+    "mcp_connection_status": "not_connected_or_verified_in_this_research",
+    "erpnext_or_zoho_canonical": false,
+    "downstream_gate": "Discover the actual MCP schema and permissions on the new Mac mini, map contacts/company deduplication/offers/consent/suppression, then prove synthetic handoff before any separately authorized live write, send or call."
+  }
+}

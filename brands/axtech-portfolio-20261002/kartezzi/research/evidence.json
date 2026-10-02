@@ -1,0 +1,371 @@
+{
+  "schema": "axtech.research-evidence.v1",
+  "brand": "Kartezzi",
+  "slug": "kartezzi",
+  "domain": "https://www.kartezzi.com/",
+  "curated_at_utc": "2026-10-02T14:03:22.204616+00:00",
+  "scope": {
+    "draft_only": true,
+    "send": false,
+    "publish": false,
+    "consumer_activation": false,
+    "shortstay_activation": false,
+    "mep_activation": false,
+    "all_company_sizes_requested": true
+  },
+  "positioning": "Matériaux décoratifs, panneaux et agencement ; priorité architectes, décorateurs, menuisiers et prescripteurs, sans assimilation à une offre MEP.",
+  "source_completeness": "Accueil riche récupéré ; trois alternatives exactes. Fiches/certifications, conditions de pose, tarifs, histoire et régions non vérifiés.",
+  "review_coverage": {
+    "exa_result_count": 7,
+    "all_available_exa_result_text_reviewed": true,
+    "firecrawl_content_reviewed": true,
+    "full_domain_crawl": false,
+    "perplexity_success": false,
+    "independent_commercial_proof": false,
+    "local_audit_scope": "Existing HeyZack audit plus selected source-map entries; no new archive-wide review."
+  },
+  "provider_receipts": [
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "sha256": "6b4b56e7e1e7e4c4635e8b50723b70f997b69f549304998be9064724491f5877",
+      "subject": "kartezzi",
+      "requested_provider": "exa-search",
+      "response_provider": "exa-search",
+      "gateway": "http://127.0.0.1:20128/v1/search",
+      "requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "usable",
+      "interpretation": "Résultats et textes extraits effectivement disponibles ; pertinence de chaque résultat qualifiée séparément.",
+      "usable_research": true,
+      "response_id": "search-2779883b-ce22-4b51-a148-2ad495a82b40",
+      "response_model": null
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-kartezzi.json",
+      "sha256": "4e9a6a82b54392da6d7a692ffe3bee615a5954dfbb619abf296708d6f083d078",
+      "subject": "kartezzi",
+      "requested_provider": "firecrawl",
+      "response_provider": "firecrawl",
+      "gateway": "http://127.0.0.1:20128/v1/web/fetch",
+      "requested_at_utc": "2026-10-02T13:50:50.924832+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "usable",
+      "interpretation": "Corps officiel exploitable ; publication, livraison et conformité non validées.",
+      "usable_research": true,
+      "response_id": null,
+      "response_model": null
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/perplexity-web-kartezzi.json",
+      "sha256": "67d6ec0009fc75a0ecf99ba2161754308e8457d9890159f0e3da9ba5693e38d2",
+      "subject": "kartezzi",
+      "requested_provider": "perplexity-web",
+      "response_provider": null,
+      "gateway": "http://127.0.0.1:20128/v1/chat/completions",
+      "requested_at_utc": "2026-10-02T13:50:53.492847+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "semantic_authentication_failure",
+      "interpretation": "HTTP200, contenu demandant de s’inscrire et de répéter la demande ; aucun résultat de recherche exploitable.",
+      "usable_research": false,
+      "response_id": "chatcmpl-pplx-feda4072-a4a",
+      "response_model": "pplx-sonar"
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/perplexity-openrouter-axtech.json",
+      "sha256": "ffe9e63df93dd7b8a14481a9165bb42b183f445f3125fa1de5a308a0488b9b09",
+      "subject": "axtech",
+      "requested_provider": "perplexity-openrouter",
+      "response_provider": null,
+      "gateway": "http://127.0.0.1:20128/v1/chat/completions",
+      "requested_at_utc": "2026-10-02T13:51:07.160919+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 400,
+      "semantic_status": "model_unavailable",
+      "interpretation": "HTTP400 : perplexity/sonar-pro absent du catalogue live openrouter. Tentative effectuée sur Axtech seulement.",
+      "usable_research": false,
+      "response_id": null,
+      "response_model": null,
+      "relation_to_this_brand": "portfolio_rail_failure_reference_not_attempt_for_this_brand"
+    }
+  ],
+  "sources": [
+    {
+      "id": "kartezzi:exa:1",
+      "url": "https://www.bricodepot.fr/catalogue/panneau-tasseaux-acoustique-mdf-finition-chene-clair-2440-x-600-mm-epaisseur-21-mm/prod95565/",
+      "title": "Panneau tasseaux acoustique MDF finition chêne clair - 2440 x 600 mm, épaisseur 21 mm - Brico Dépôt",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/0/content/text",
+      "text_characters": 6190,
+      "text_sha256": "ebac27659a3c8d88f84a6c65b79690f08c658250a103bf809cf8b5559cef7b55",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:exa:2",
+      "url": "https://kronospan.com/fr_FR/products/view/revetements-de-sol-et-panneaux-muraux/acoustic-panels/panneaux-acoustiques-mdf-naturel/panneaux-acoustiques-mdf-naturel-765/",
+      "title": "Panneaux acoustiques MDF Naturel - Panneaux acoustiques - Revêtements de sol et Panneaux muraux - Produits - Kronospan",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/1/content/text",
+      "text_characters": 1608,
+      "text_sha256": "74b51f2fc698a630ec995bd63fa0b852782d5bd1d942b82f50aacb503162f018",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:exa:3",
+      "url": "https://aesthedgewallpanel.com/fr/spc-wall-panels-the-ultimate-solution-for-modern-interiors/",
+      "title": "SPC Wall Panels: The Ultimate Solution for Modern Interiors",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/2/content/text",
+      "text_characters": 5748,
+      "text_sha256": "c444192b50c5a4f13b54580eb6fda5e3636e3432370ade7a2ed984f3711b7cf5",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:exa:4",
+      "url": "https://french.wooden-panels.com/sale-41726457-stylish-21mm-interior-wpc-wall-panel-wooden-mdf-base-slat-acoustic-with-pet-core.html",
+      "title": "Stylé 21mm intérieur Wpc panneau mural en bois MDF base ardoise acoustique avec noyau PET",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/3/content/text",
+      "text_characters": 6066,
+      "text_sha256": "b9ba3be786e1b790823cb8977dfcc9264abb5e5961448a2e6246fe27f49a6018",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:exa:5",
+      "url": "https://aesthedgewallpanel.com/fr/types-of-indoor-wpc-wall-panels/",
+      "title": "Types of indoor wpc wall panels - AesthedgeWallPanel",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/4/content/text",
+      "text_characters": 7805,
+      "text_sha256": "28ca3545bb994ecde1e98a8ee8ccee5c3756bc61820346aeb4d2751233a1a73b",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:exa:6",
+      "url": "https://silentwood.com/fr/collections/standard-panneau-acoustique",
+      "title": "Standard - Panneau Acoustique - Silentwood.com",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/5/content/text",
+      "text_characters": 5311,
+      "text_sha256": "374c85696660ba1ecb2c529dfc145f553706565c6c13680698dbfd1d75f31b6f",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:exa:7",
+      "url": "https://www.craftivaart.com/fr/products/accent-wall",
+      "title": "Panneau MDF acoustique 3D, mur d'accent en bois 3D - CraftivaArt",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:52.111725+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-kartezzi.json",
+      "json_pointer": "/response/results/6/content/text",
+      "text_characters": 2728,
+      "text_sha256": "94668ed789c44ae315b2b76ada743226a997a4914b3d5b316a4904947b162cd4",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "kartezzi:firecrawl",
+      "url": "https://www.kartezzi.com/",
+      "title": "Kartezzi - Panneaux Décoratifs Muraux",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:50.924832+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-kartezzi.json",
+      "json_pointer": "/response/content",
+      "text_characters": 11847,
+      "text_sha256": "0b813e6ee12ca1adc8b88b86c669e141c3d712871bdabfcd87cce7d9c46f6a2e",
+      "content_reviewed": true,
+      "extraction_scope": "homepage_fetch_only",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "group:firecrawl:axtech",
+      "url": "https://www.axtech.fr/",
+      "title": "Axtech — Groupe Technologique Français | Innovation & Marques",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:46:41.680957+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-axtech.json",
+      "json_pointer": "/response/content",
+      "text_characters": 6589,
+      "text_sha256": "fd9fe2b98453194f637b21be995855d5efe768e32d18f33f33f8248b4bae6bc2",
+      "content_reviewed": true,
+      "extraction_scope": "homepage_fetch_only",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    }
+  ],
+  "claims": [
+    {
+      "id": "KZ-O1",
+      "classification": "first_party_claim",
+      "statement": "L’accueil propose panneaux décoratifs/acoustiques en MDF, WPC, SPC et PET, moulures, pierre flexible/PU et aménagements extérieurs.",
+      "source_ids": [
+        "kartezzi:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "KZ-O2",
+      "classification": "first_party_claim",
+      "statement": "Le contenu actuel propose aussi menuiserie sur mesure, bibliothèques/dressings, portes, cuisines et éclairage LED intégré.",
+      "source_ids": [
+        "kartezzi:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "KZ-O3",
+      "classification": "first_party_claim",
+      "statement": "Le parcours professionnel propose échange autour des plans, nuanciers et chiffrage ; déplacement et installation sont annoncés sans zones vérifiées.",
+      "source_ids": [
+        "kartezzi:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "KZ-H1",
+      "classification": "strategic_hypothesis",
+      "statement": "Séparer panneaux/matières et agencement sur mesure pour adapter les briefs aux architectes, décorateurs, menuisiers ou acheteurs.",
+      "source_ids": [
+        "kartezzi:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    }
+  ],
+  "segmentation_hypotheses": [
+    "Architectes d’intérieur, décorateurs, architectes : prescription de matières et d’agencement, toutes tailles incluant indépendants.",
+    "Menuisiers, agenceurs, poseurs et entreprises d’aménagement : plans, finition, pose et coordination à qualifier.",
+    "Électriciens : seulement pour un projet d’éclairage intégré et les contraintes de pose attestées ; aucun brief domotique inventé.",
+    "BET construction/structure : au besoin de coordination du projet ; BET fluides/CVC/plomberie ne sont pas une cible d’offre directe prouvée."
+  ],
+  "strategic_hypotheses": [
+    "Deux portes d’entrée : sélection de panneaux/matières pour une prescription ; agencement sur mesure à partir de plans et dimensions.",
+    "Un dossier produit doit distinguer décoratif, absorption acoustique mesurée, résistance au feu et conditions de pose avant prescription technique."
+  ],
+  "competitor_candidates": [
+    {
+      "name": "Kronospan",
+      "url": "https://kronospan.com/fr_FR/products/view/revetements-de-sol-et-panneaux-muraux/acoustic-panels/panneaux-acoustiques-mdf-naturel/panneaux-acoustiques-mdf-naturel-765/",
+      "source_id": "kartezzi:exa:2",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat sur panneaux MDF acoustiques ; performances propres et equivalence non vérifiées.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    },
+    {
+      "name": "Silent Wood",
+      "url": "https://silentwood.com/fr/collections/standard-panneau-acoustique",
+      "source_id": "kartezzi:exa:6",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat sur panneaux acoustiques décoratifs ; commercialisation FR à examiner, non preuve de stock.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    },
+    {
+      "name": "Brico Dépôt",
+      "url": "https://www.bricodepot.fr/catalogue/panneau-tasseaux-acoustique-mdf-finition-chene-clair-2440-x-600-mm-epaisseur-21-mm/prod95565/",
+      "source_id": "kartezzi:exa:1",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Alternative de distribution pour panneaux ; ne pas confondre assortiment avec prestation sur mesure.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    }
+  ],
+  "uncertainties": [
+    "Délai court de pose et devis/expédition affichés versus FAQ 6–10 semaines pour sur mesure : conditions spécifiques non reconciliées.",
+    "Site Kartezzi situe l’origine en 2020 ; Axtech évoque un lancement en 2024. Aucun récit historique combiné approuvé.",
+    "Certifications, imperméabilité, garanties, prix comparatifs et performances acoustiques exigent des pièces par produit et montage.",
+    "Témoignages, volumes de références/projets et photos du site ne constituent pas des références clients autorisées ou une preuve chantier.",
+    "Aucune zone validée de déplacement/installation ; livraison européenne annoncée ne démontre pas un service de pose national.",
+    "Perplexity-web a répondu HTTP200 avec une demande d’inscription sur chaque marque : échec sémantique d’authentification, pas une recherche réussie.",
+    "L’alternative openrouter/perplexity/sonar-pro, testée sur Axtech seulement, a répondu HTTP400 modèle absent du catalogue actif ; ne pas généraliser une tentative non faite aux cinq autres marques.",
+    "Les timestamps sont ceux du début des requêtes gateway ; dates de mise à jour effectives des pages non établies.",
+    "Couverture nationale des prospects demandée, mais aucune couverture nationale/régionale de prestation n’est prouvée. Région/département servent à segmenter le prospect.",
+    "Ce lot ne contient aucun lead réel, consentement de contact, suppression, prix approuvé ni preuve ERP/Vapi/Explee/social live.",
+    "Receipts bruts sous .local : disponibles sur cet hôte, non portables par simple clone Git. Leurs chemins et SHA-256 sont conservés ici.",
+    "ERP canonique = ERP personnalisé du propriétaire ; MCP prévu sur le nouveau Mac mini. Aucun schéma ni connexion prouvé ; activation Explee/social/Vapi tenue en attente de ce contrat."
+  ],
+  "regionalisation": {
+    "prospect_market": "France",
+    "prospect_region_department": "research segmentation; not promised service area",
+    "verified_service_regions": [],
+    "service_coverage_status": "unverified",
+    "postal_address_is_coverage_proof": false
+  },
+  "gates": {
+    "identity": "Marque identifiable via site officiel et portefeuille Axtech ; récit historique et rattachement juridique détaillé non corroborés.",
+    "downstream_brand_generation": "allowed_for_evidence_bounded_drafts",
+    "ready_for_launch": false,
+    "explee_import": false,
+    "live_erp_vapi_contract": "held_until_custom_erp_mcp_connected_on_new_mac_mini_and_verified",
+    "social_publication": false,
+    "marketplace_listing": false,
+    "wave_mep_excluded": false,
+    "symphonics_name_collision_quarantined": false
+  },
+  "canonical_integration": {
+    "system_of_record": "user_custom_erp",
+    "authority": "direct_user_clarification_in_current_task",
+    "planned_host": "new_mac_mini",
+    "planned_transport": "MCP",
+    "mcp_connection_status": "not_connected_or_verified_in_this_research",
+    "erpnext_or_zoho_canonical": false,
+    "downstream_gate": "Discover the actual MCP schema and permissions on the new Mac mini, map contacts/company deduplication/offers/consent/suppression, then prove synthetic handoff before any separately authorized live write, send or call."
+  }
+}

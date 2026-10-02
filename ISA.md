@@ -74,7 +74,7 @@ All three runner suites passed under Bash 5.3 and macOS Bash 3.2. Each runner/te
 The user now authorizes fresh research and Meristem flow per supplied brand, with B2B MEP targeting before Explee campaigns or social publication. The historical reconciliation criteria above remain closed; this run has independent open criteria. Current identity assets remain source-authoritative.
 
 - [x] AX-ISC-1: Canonical runner and configured research rails are traced from current source.
-- [ ] AX-ISC-2: Each of six domains has a fresh source/evidence research dossier with provider receipts or explicit provider/availability failure.
+- [x] AX-ISC-2: Each of six domains has a fresh source/evidence research dossier with provider receipts or explicit provider/availability failure.
 - [ ] AX-ISC-3: Per-brand Meristem prompts and outputs are advanced through the actual runner with honest tracer and completeness states.
 - [ ] AX-ISC-4: B2B MEP segmentation includes sole traders and deduplicates verified mixed activities.
 - [ ] AX-ISC-5: Per-brand marketing and social draft artifacts cite validated inputs and preserve claim boundaries.

@@ -1,0 +1,455 @@
+{
+  "schema": "axtech.research-evidence.v1",
+  "brand": "HeyZack",
+  "slug": "heyzack",
+  "domain": "https://heyzack.ai/",
+  "curated_at_utc": "2026-10-02T14:03:22.204616+00:00",
+  "scope": {
+    "draft_only": true,
+    "send": false,
+    "publish": false,
+    "consumer_activation": false,
+    "shortstay_activation": false,
+    "mep_activation": false,
+    "all_company_sizes_requested": true
+  },
+  "positioning": "Automatisation résidentielle et commerciale ; qualification de projets de pilotage éclairage, climat, énergie et accès avec les professionnels concernés.",
+  "source_completeness": "Accueil et parcours partenaires documentés ; catalogue et flux locaux cartographiés via audit. Livraison terrain, claims, régions et E2E non prouvés.",
+  "review_coverage": {
+    "exa_result_count": 7,
+    "all_available_exa_result_text_reviewed": true,
+    "firecrawl_content_reviewed": true,
+    "full_domain_crawl": false,
+    "perplexity_success": false,
+    "independent_commercial_proof": false,
+    "local_audit_scope": "Existing HeyZack audit plus selected source-map entries; no new archive-wide review."
+  },
+  "provider_receipts": [
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "sha256": "329607e8b8555625408620d5e538cf4382b3a533490b5ddd28cc230cbb111479",
+      "subject": "heyzack",
+      "requested_provider": "exa-search",
+      "response_provider": "exa-search",
+      "gateway": "http://127.0.0.1:20128/v1/search",
+      "requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "usable",
+      "interpretation": "Résultats et textes extraits effectivement disponibles ; pertinence de chaque résultat qualifiée séparément.",
+      "usable_research": true,
+      "response_id": "search-4125abae-9102-4527-98c2-7800f8395d95",
+      "response_model": null
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-heyzack.json",
+      "sha256": "6b5b419e03288a2ff5377c526a628725d7cadff0155488478f4edaa3d691c72e",
+      "subject": "heyzack",
+      "requested_provider": "firecrawl",
+      "response_provider": "firecrawl",
+      "gateway": "http://127.0.0.1:20128/v1/web/fetch",
+      "requested_at_utc": "2026-10-02T13:50:49.704200+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "usable",
+      "interpretation": "Corps officiel exploitable ; publication, livraison et conformité non validées.",
+      "usable_research": true,
+      "response_id": null,
+      "response_model": null
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/perplexity-web-heyzack.json",
+      "sha256": "9b5c9860658a7439f0badae2dbbbd3e10fd8560aba3f1424610002cdb7f5543f",
+      "subject": "heyzack",
+      "requested_provider": "perplexity-web",
+      "response_provider": null,
+      "gateway": "http://127.0.0.1:20128/v1/chat/completions",
+      "requested_at_utc": "2026-10-02T13:50:49.704558+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 200,
+      "semantic_status": "semantic_authentication_failure",
+      "interpretation": "HTTP200, contenu demandant de s’inscrire et de répéter la demande ; aucun résultat de recherche exploitable.",
+      "usable_research": false,
+      "response_id": "chatcmpl-pplx-e68134cc-6ce",
+      "response_model": "pplx-sonar"
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/perplexity-openrouter-axtech.json",
+      "sha256": "ffe9e63df93dd7b8a14481a9165bb42b183f445f3125fa1de5a308a0488b9b09",
+      "subject": "axtech",
+      "requested_provider": "perplexity-openrouter",
+      "response_provider": null,
+      "gateway": "http://127.0.0.1:20128/v1/chat/completions",
+      "requested_at_utc": "2026-10-02T13:51:07.160919+00:00",
+      "timestamp_semantics": "gateway_request_start; response completion timestamp not recorded",
+      "http_status": 400,
+      "semantic_status": "model_unavailable",
+      "interpretation": "HTTP400 : perplexity/sonar-pro absent du catalogue live openrouter. Tentative effectuée sur Axtech seulement.",
+      "usable_research": false,
+      "response_id": null,
+      "response_model": null,
+      "relation_to_this_brand": "portfolio_rail_failure_reference_not_attempt_for_this_brand"
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/annuaire-axtech.json",
+      "sha256": "44bda021e0ee08d5ac8d3746bac5e608044ad11e5ec6cd0bf0baeabde4f8a5e7",
+      "subject": "axtech",
+      "requested_provider": "official_public_registry_direct",
+      "gateway": null,
+      "retrieved_at_utc": "2026-10-02T13:55:17.141869+00:00",
+      "http_status": null,
+      "semantic_status": "usable",
+      "usable_research": true,
+      "interpretation": "Structured primary government registry content, independent of Exa extraction; HTTP status not retained in this receipt."
+    }
+  ],
+  "sources": [
+    {
+      "id": "heyzack:exa:1",
+      "url": "https://heyzack.ai/",
+      "title": "HeyZack — intelligent buildings & smart homes",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/0/content/text",
+      "text_characters": 1268,
+      "text_sha256": "922f1561246ce6e7a90f001df7e7dcfb0660fe4529ee117a9d121806b26cc925",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:exa:2",
+      "url": "https://heyzack.ai/fr/commercial",
+      "title": "HeyZack — intelligent buildings & smart homes",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/1/content/text",
+      "text_characters": 127,
+      "text_sha256": "dba9d73f72082c20fdccf05454078f8c4c790bb5237a71cda0469354531b05ab",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:exa:3",
+      "url": "https://domoxa.fr/",
+      "title": "Domoxa | Expert Loxone & Domotique en France",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/2/content/text",
+      "text_characters": 6354,
+      "text_sha256": "17fa8b279cde52ffe65e30ca749e59455d07dcfeba94fbe8c133aec81b1f3c85",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:exa:4",
+      "url": "https://weav.fr/batiments-intelligents.php",
+      "title": "Bâtiments intelligents & domotique Loxone — GTB, CVC | WEAV",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/3/content/text",
+      "text_characters": 1442,
+      "text_sha256": "e13fd00dd66eb7059ea1efe41aacc7b7117431287019b9c8b24c5e1f00a8b528",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:exa:5",
+      "url": "https://exa.ai/library/organization/lvrg9c2xpyl",
+      "title": "Heyzack AI",
+      "classification": "unverified_directory_or_aggregated_profile",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/4/content/text",
+      "text_characters": 2209,
+      "text_sha256": "e977700b3c1e1c25cf6aafc62370610c87eba7387282a93b5ee90e4ebe90cc1a",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:exa:6",
+      "url": "https://heyzack.ai/fr/smarthome",
+      "title": "Maison Intelligente | Automatisation Domestique par IA",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/5/content/text",
+      "text_characters": 127,
+      "text_sha256": "dba9d73f72082c20fdccf05454078f8c4c790bb5237a71cda0469354531b05ab",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:exa:7",
+      "url": "https://dominco.fr/eclairage-intelligent/",
+      "title": "Éclairage intelligent - Dominco",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704507+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-heyzack.json",
+      "json_pointer": "/response/results/6/content/text",
+      "text_characters": 6719,
+      "text_sha256": "88c66ba12940c55fce3ae2aaafe98d7caaf01cf2a63e014595c8bfe7c54b17ee",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:firecrawl",
+      "url": "https://heyzack.ai/",
+      "title": "HeyZack — intelligent buildings & smart homes",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:50:49.704200+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-heyzack.json",
+      "json_pointer": "/response/content",
+      "text_characters": 5602,
+      "text_sha256": "308fe96457bf61e34b6a3158741a6c0804653efaed62366268f46dbd97c4eb2a",
+      "content_reviewed": true,
+      "extraction_scope": "homepage_fetch_only",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "group:firecrawl:axtech",
+      "url": "https://www.axtech.fr/",
+      "title": "Axtech — Groupe Technologique Français | Innovation & Marques",
+      "classification": "brand_first_party",
+      "retrieval_requested_at_utc": "2026-10-02T13:46:41.680957+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/firecrawl-axtech.json",
+      "json_pointer": "/response/content",
+      "text_characters": 6589,
+      "text_sha256": "fd9fe2b98453194f637b21be995855d5efe768e32d18f33f33f8248b4bae6bc2",
+      "content_reviewed": true,
+      "extraction_scope": "homepage_fetch_only",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "shared:symphonics:exa:4",
+      "url": "https://heyzack.ai/partners",
+      "title": "Become a HeyZack partner",
+      "classification": "other_first_party_market_source",
+      "retrieval_requested_at_utc": "2026-10-02T13:51:01.163476+00:00",
+      "timestamp_semantics": "gateway request start, not confirmed page update time",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/exa-search-symphonics.json",
+      "json_pointer": "/response/results/3/content/text",
+      "text_characters": 2668,
+      "text_sha256": "79b23187f0997b39c8f95e03edd97b1abe26b7a09af1a6b586ba49be5f65d3f4",
+      "content_reviewed": true,
+      "extraction_scope": "search_provider_extracted_text",
+      "usable_text": true,
+      "does_not_establish": "Operational delivery, client relationship, stock, certification, savings or geographic service coverage are not established by marketing text."
+    },
+    {
+      "id": "heyzack:local:review",
+      "path": "/Users/sheshnarayaniyer/.codex/visualizations/2026/10/02/01a0fcb9-6706-7683-8e4f-c88c4a8a32af/heyzack-content-review/REVIEW.md",
+      "classification": "reviewed_local_source_audit",
+      "sha256": "53bb11ab9c6be0f41335866643a775d93bd1e7535b8a3b490daee92cdc8f28a3",
+      "content_reviewed": "full audit report; selected relevant source-map entries",
+      "source_review_date": "2026-10-02",
+      "does_not_establish": "No fresh runtime/device/integration or entire archive acceptance inferred."
+    },
+    {
+      "id": "heyzack:local:document-map",
+      "path": "/Users/sheshnarayaniyer/.codex/visualizations/2026/10/02/01a0fcb9-6706-7683-8e4f-c88c4a8a32af/heyzack-content-review/document-map.json",
+      "classification": "reviewed_local_source_audit",
+      "sha256": "60067e29e4b128d97192772d97db2ba959309c65fd1104d1bda55dd30a995faf",
+      "content_reviewed": "full audit report; selected relevant source-map entries",
+      "source_review_date": "2026-10-02",
+      "does_not_establish": "No fresh runtime/device/integration or entire archive acceptance inferred."
+    },
+    {
+      "id": "shared:registry:axtech-direct",
+      "url": "https://recherche-entreprises.api.gouv.fr/search?q=751982760&per_page=1",
+      "title": "API publique Recherche d’entreprises — AX TECH (ECOLED WAVE CONCEPT)",
+      "classification": "independent_public_registry",
+      "retrieved_at_utc": "2026-10-02T13:55:17.141869+00:00",
+      "receipt_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/annuaire-axtech.json",
+      "json_pointer": "/results/0",
+      "sha256": "44bda021e0ee08d5ac8d3746bac5e608044ad11e5ec6cd0bf0baeabde4f8a5e7",
+      "content_reviewed": true,
+      "usable_text": true,
+      "extraction_scope": "direct_structured_public_registry",
+      "does_not_establish": "No customer, revenue, stock, certification, installation or regional coverage proof."
+    }
+  ],
+  "claims": [
+    {
+      "id": "HZ-O1",
+      "classification": "first_party_claim",
+      "statement": "L’accueil HeyZack propose une automatisation de bâtiments résidentiels et commerciaux autour de l’éclairage, du climat, de l’énergie et de l’accès.",
+      "source_ids": [
+        "heyzack:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "HZ-O2",
+      "classification": "first_party_claim",
+      "statement": "L’accueil présente une application, des scénarios et un parcours de demande de contact/démonstration. Leur existence dans la page ne prouve pas la connexion aux équipements.",
+      "source_ids": [
+        "heyzack:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "HZ-O3",
+      "classification": "first_party_claim",
+      "statement": "La page partenaires décrit trois parcours : installateurs, revendeurs et distributeurs. Formation, outils et conditions sont des déclarations à vérifier.",
+      "source_ids": [
+        "shared:symphonics:exa:4"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "HZ-L1",
+      "classification": "local_source_review",
+      "statement": "La revue locale distingue catalogue, source native, estimation et API/Vapi ; elle ne valide ni les intégrations live ni une installation terrain.",
+      "source_ids": [
+        "heyzack:local:review",
+        "heyzack:local:document-map"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "HZ-H1",
+      "classification": "strategic_hypothesis",
+      "statement": "Construire des briefs distincts pour électriciens, CVC et BET fluides/électricité selon un besoin de pilotage et une compatibilité à examiner.",
+      "source_ids": [
+        "heyzack:firecrawl"
+      ],
+      "permitted_use": "internal evidence-bounded research/draft; source attribution preserved",
+      "approved_for_public_claim": false
+    },
+    {
+      "id": "HZ-I1",
+      "classification": "independent_confirmation",
+      "statement": "L’API gouvernementale confirme seulement l’unité légale AX TECH, SIREN 751982760, active avec siège 8 rue Marbeau 75016 Paris ; pas une preuve de performance HeyZack.",
+      "source_ids": [
+        "shared:registry:axtech-direct"
+      ],
+      "permitted_use": "internal identity reconciliation",
+      "approved_for_public_claim": false
+    }
+  ],
+  "segmentation_hypotheses": [
+    "Électriciens/installateurs électricité : métier attesté et intérêt de pilotage ; indépendants, TPE, PME et grandes structures inclus.",
+    "CVC/climatisation : pilotage chauffage, climatisation ou ventilation à qualifier ; aucune compatibilité universelle.",
+    "Plomberie seule : conserver comme métier séparé, ne cibler HeyZack qu’avec besoin pertinent documenté ; aucune offre sanitaire inventée.",
+    "Plomberie + CVC : segment mixte si les deux activités sont prouvées ; sinon classement séparé ou activité inconnue.",
+    "BET fluides, BET électricité et architectes : prescription/coordination du pilotage ; BET structure uniquement pour un cas d’usage établi.",
+    "Propriétaires particuliers et location courte durée : aucune collecte ou activation dans ce chantier B2B MEP."
+  ],
+  "strategic_hypotheses": [
+    "Angle métier : quel chantier nécessite éclairage, chauffage/climatisation ou accès piloté, et quelles contraintes existantes faut-il vérifier ?",
+    "Qualifier équipements/protocoles/SKU, rôle, département et horizon projet avant proposition, puis conserver le doute et la revue humaine.",
+    "Vapi peut clarifier un lead après consentement et passage ERP ; cette connexion est une cible d’intégration, pas un résultat établi par le dossier."
+  ],
+  "competitor_candidates": [
+    {
+      "name": "Domoxa",
+      "url": "https://domoxa.fr/",
+      "source_id": "heyzack:exa:3",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat à comparer pour installation et programmation domotique ; revendications Loxone non auditées.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    },
+    {
+      "name": "WEAV",
+      "url": "https://weav.fr/batiments-intelligents.php",
+      "source_id": "heyzack:exa:4",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat pour pilotage tertiaire/CVC ; couverture Île-de-France revendiquée par ce concurrent seulement.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    },
+    {
+      "name": "Dominco",
+      "url": "https://dominco.fr/eclairage-intelligent/",
+      "source_id": "heyzack:exa:7",
+      "classification": "strategic_competitor_candidate",
+      "fit_hypothesis": "Candidat secondaire ; texte reçu comporte incohérences de FAQ/protocoles, aucune conclusion de supériorité.",
+      "first_party_offer_seen": true,
+      "independently_confirmed_competitive_relationship": false,
+      "weaknesses": "unverified; no negative claim permitted",
+      "customer_overlap": "unverified",
+      "affiliation_to_brand": "not established"
+    }
+  ],
+  "uncertainties": [
+    "Les promesses d’économies, ROI, protection continue, latence, chiffrement, nombre de partenaires/produits et conformité BAT-TH-116/CEE restent sans dossiers de preuve.",
+    "Tarifs et packages du site ne valent pas devis approuvé ; catalogue/SKU, installation, disponibilité et conditions restent à rapprocher.",
+    "Numéro de téléphone FR manifestement générique dans certains extraits ; ne pas le publier comme identité d’expéditeur validée.",
+    "Les marges/conditions partenaires et toute formation certifiante doivent être documentées avant communication.",
+    "La revue locale indique un callback Vapi désactivé en pdf_only et des sources d’API ; aucun test live bout en bout n’est fourni ici.",
+    "Perplexity-web a répondu HTTP200 avec une demande d’inscription sur chaque marque : échec sémantique d’authentification, pas une recherche réussie.",
+    "L’alternative openrouter/perplexity/sonar-pro, testée sur Axtech seulement, a répondu HTTP400 modèle absent du catalogue actif ; ne pas généraliser une tentative non faite aux cinq autres marques.",
+    "Les timestamps sont ceux du début des requêtes gateway ; dates de mise à jour effectives des pages non établies.",
+    "Couverture nationale des prospects demandée, mais aucune couverture nationale/régionale de prestation n’est prouvée. Région/département servent à segmenter le prospect.",
+    "Ce lot ne contient aucun lead réel, consentement de contact, suppression, prix approuvé ni preuve ERP/Vapi/Explee/social live.",
+    "Receipts bruts sous .local : disponibles sur cet hôte, non portables par simple clone Git. Leurs chemins et SHA-256 sont conservés ici.",
+    "ERP canonique = ERP personnalisé du propriétaire ; MCP prévu sur le nouveau Mac mini. Aucun schéma ni connexion prouvé ; activation Explee/social/Vapi tenue en attente de ce contrat."
+  ],
+  "regionalisation": {
+    "prospect_market": "France",
+    "prospect_region_department": "research segmentation; not promised service area",
+    "verified_service_regions": [],
+    "service_coverage_status": "unverified",
+    "postal_address_is_coverage_proof": false
+  },
+  "gates": {
+    "identity": "Marque publique présentée par Axtech ; AX TECH apparaît aussi dans les mentions légales. L’identité d’expéditeur opérationnelle reste à confirmer.",
+    "downstream_brand_generation": "allowed_for_evidence_bounded_drafts",
+    "ready_for_launch": false,
+    "explee_import": false,
+    "live_erp_vapi_contract": "held_until_custom_erp_mcp_connected_on_new_mac_mini_and_verified",
+    "social_publication": false,
+    "marketplace_listing": false,
+    "wave_mep_excluded": false,
+    "symphonics_name_collision_quarantined": false
+  },
+  "canonical_integration": {
+    "system_of_record": "user_custom_erp",
+    "authority": "direct_user_clarification_in_current_task",
+    "planned_host": "new_mac_mini",
+    "planned_transport": "MCP",
+    "mcp_connection_status": "not_connected_or_verified_in_this_research",
+    "erpnext_or_zoho_canonical": false,
+    "downstream_gate": "Discover the actual MCP schema and permissions on the new Mac mini, map contacts/company deduplication/offers/consent/suppression, then prove synthetic handoff before any separately authorized live write, send or call."
+  }
+}
