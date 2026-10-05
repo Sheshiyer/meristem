@@ -339,6 +339,10 @@ def validate_output_details(
     if data.get("draft_only") is not True:
         errors.append("Field 'data.draft_only' must be boolean true")
 
+    # Enforce operational_readiness: 'held'
+    if data.get("operational_readiness") != "held":
+        errors.append("Field 'data.operational_readiness' must be 'held'")
+
     # Enforce uncertainties list presence
     uncertainties = data.get("uncertainties")
     if uncertainties is None or not isinstance(uncertainties, list):
@@ -441,6 +445,7 @@ def build_prompt_messages(
     prompt_text: str,
     brand_config: Dict[str, Any],
     dossier_text: str = "",
+    request_timestamp: str = "",
 ) -> List[Dict[str, str]]:
     """Construct structured chat prompt enforcing strict JSON schema and evidence grounding."""
     brand_name = brand_config.get("name") or brand_config.get("brand", {}).get("name", "Target Brand")
@@ -452,22 +457,35 @@ def build_prompt_messages(
         "2. Ground all claims strictly in the provided research dossier. Do not fabricate unverifiable pricing, metrics, or geographic coverage.\n"
         "3. If product identity or domain is missing/unreachable, return status 'partial' with explicit blockers and uncertainties.\n"
         "4. For competitor-analysis complete outputs, cite at least 2 distinct competitors with real URLs from the dossier.\n"
-        "5. Include evidence pointers, uncertainties (as a list), and enforce draft_only: true.\n"
+        "5. Include evidence pointers, uncertainties (as a list), and enforce data.draft_only=true.\n"
         "6. Do not include or trigger any live external actions (no publishing, no video generation, no live CRM mutations).\n"
         "7. Output ONLY the raw JSON object. Do not output conversational markdown prose outside the JSON.\n"
+        "8. status='complete' means the requested internal draft artifact is substantively delivered, "
+        "grounded in the included source material, with all essential dependencies satisfied. "
+        "It NEVER means founder approval, available stock, accepted prices/sender, "
+        "operational integration, or launch readiness. "
+        "Unknown optional commercial facts must remain explicit uncertainties and operational holds, not invented claims. "
+        "Missing essential identity, missing required upstream artifact, or missing requested substantive deliverable "
+        "still yields status='partial' and stops the coordinator.\n"
+        "9. Every complete or partial output MUST include data.operational_readiness='held'.\n"
+        "10. Return concise, valid JSON within the model's token budget. Do not truncate mid-field, "
+        "forcibly rewrite a partial result into status='complete', or omit required top-level keys.\n"
     )
 
     user_content = prompt_text
     if dossier_text:
         user_content += "\n\n## Grounded Research Dossier & Sources\n" + dossier_text
+    req_ts = request_timestamp if request_timestamp else time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     user_content += (
         "\n\n## Completion transport override\n"
         "This is a text completion request. The executor owns file writes. "
         "Return the complete JSON artifact now; do not announce work, inspect files, "
         "call tools, or attempt to write the path shown above. All required source "
         "context is included in this request. Return ONLY one JSON object. "
-        "Use current UTC time for timestamp; include data.draft_only=true, "
-        "data.evidence and data.uncertainties. Unknown claims remain explicit unknowns."
+        "Use the following request timestamp for the output timestamp field: " + req_ts + ". "
+        "Include data.draft_only=true, data.evidence, data.uncertainties, "
+        "and data.operational_readiness='held'. "
+        "Unknown claims remain explicit uncertainties and operational holds, not invented claims."
     )
 
     total_bytes = len(system_instructions.encode("utf-8")) + len(user_content.encode("utf-8"))
@@ -793,6 +811,7 @@ class MeristemExternalExecutor:
                         "Domain http://symphonics.heyzack.ai/ did not resolve; no product facts available"
                     ],
                     "draft_only": True,
+                    "operational_readiness": "held",
                 },
             }
             output_content = json.dumps(partial_obj, indent=2)
@@ -825,7 +844,7 @@ class MeristemExternalExecutor:
         # Build prompt messages BEFORE network call (prompt-build failure: no network call)
         print(f"[EXECUTOR] Calling OmniRoute ({self.model}) for spoke: {spoke}")
         try:
-            messages = build_prompt_messages(prompt_content, self.brand_config, self.dossier_text)
+            messages = build_prompt_messages(prompt_content, self.brand_config, self.dossier_text, request_timestamp=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
         except Exception as exc:
             print(f"[EXECUTOR ERROR] Prompt build failed for {spoke}: {exc}", file=sys.stderr)
             failure_obj = {
@@ -839,6 +858,7 @@ class MeristemExternalExecutor:
                     "blockers": [f"Prompt build error: {exc}"],
                     "uncertainties": ["Prompt construction failed before network call"],
                     "draft_only": True,
+                    "operational_readiness": "held",
                 },
             }
             failure_content = json.dumps(failure_obj, indent=2)
@@ -891,6 +911,7 @@ class MeristemExternalExecutor:
                     "blockers": [f"Model execution error: {exc}"],
                     "uncertainties": ["OmniRoute model execution failed"],
                     "draft_only": True,
+                    "operational_readiness": "held",
                 },
             }
             failure_content = json.dumps(failure_obj, indent=2)
@@ -939,6 +960,7 @@ class MeristemExternalExecutor:
                     "blockers": [f"Response processing error: {exc}"],
                     "uncertainties": ["Model response could not be extracted or parsed as JSON"],
                     "draft_only": True,
+                    "operational_readiness": "held",
                 },
             }
             failure_content = json.dumps(failure_obj, indent=2)
@@ -994,6 +1016,7 @@ class MeristemExternalExecutor:
                     "blockers": all_errors,
                     "uncertainties": ["Validation rejected candidate output"],
                     "draft_only": True,
+                    "operational_readiness": "held",
                 },
             }
             partial_content = json.dumps(partial_obj, indent=2)

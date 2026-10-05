@@ -381,7 +381,7 @@ cluster_canonical_spokes() {
             echo "brand-foundation buyer-persona competitor-analysis value-proposition"
             ;;
         strategy)
-            echo "voice-and-tone product-positioning messaging-framework brand-story"
+            echo "product-positioning voice-and-tone messaging-framework brand-story"
             ;;
         identity)
             echo "color-palette typography logo-concept visual-language"

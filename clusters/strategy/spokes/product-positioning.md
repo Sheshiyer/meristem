@@ -4,6 +4,7 @@ description: "Create comprehensive product positioning using the CBBE framework.
 cluster: brandmint-strategy
 wave: 2
 dependencies:
+  - brand-foundation
   - buyer-persona
   - competitor-analysis
 triggers:

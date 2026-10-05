@@ -29,7 +29,7 @@ assert_equal "$foundation_spokes" $'brand-foundation\nbuyer-persona\ncompetitor-
     'foundation spoke ordering incorrect'
 
 strategy_spokes="$(list_spokes "strategy")"
-assert_equal "$strategy_spokes" $'voice-and-tone\nproduct-positioning\nmessaging-framework\nbrand-story' \
+assert_equal "$strategy_spokes" $'product-positioning\nvoice-and-tone\nmessaging-framework\nbrand-story' \
     'strategy spoke ordering incorrect'
 
 identity_spokes="$(list_spokes "identity")"
@@ -89,6 +89,151 @@ assert_equal "$extra_strategy" $'voice-and-tone\nbrand-story\na-extra\nz-extra' 
 mkdir -p "$fixture_root/clusters/empty-cluster/spokes"
 empty_spokes="$(list_spokes "empty-cluster")"
 assert_equal "$empty_spokes" "" 'empty cluster spokes should be empty'
+
+# 6. Dependency graph: canonical order satisfies declared frontmatter dependencies
+#    for waves 1, 2, and 6 (all real spoke files in the repository).
+#    Every dependency of each spoke must either (a) live in an earlier wave,
+#    (b) appear earlier in the same wave's canonical ordering (cross-cluster
+#    within the wave, respecting cluster execution order: content then social-growth),
+#    or (c) appear earlier in the same cluster's canonical order.
+
+PROJECT_ROOT="$repo_root"
+
+extract_frontmatter_deps() {
+    local spoke_file="$1"
+    local in_frontmatter=0
+    local in_deps=0
+    local deps=""
+    while IFS= read -r line; do
+        if [[ "$line" == "---" ]]; then
+            if [[ $in_frontmatter -eq 0 ]]; then
+                in_frontmatter=1
+            else
+                break
+            fi
+            continue
+        fi
+        if [[ $in_frontmatter -eq 1 ]]; then
+            if [[ "$line" =~ ^dependencies:\ *$ ]]; then
+                in_deps=1
+                continue
+            fi
+            if [[ $in_deps -eq 1 ]]; then
+                if [[ "$line" =~ ^[[:space:]]+-[[:space:]]+(.+)$ ]]; then
+                    local dep
+                    dep=$(echo "${BASH_REMATCH[1]}" | tr -d '"' | tr -d "'" | xargs)
+                    [[ -n "$dep" ]] && deps="$deps $dep"
+                elif [[ "$line" =~ ^[[:space:]]*$ ]]; then
+                    continue
+                else
+                    in_deps=0
+                fi
+            fi
+        fi
+    done < "$spoke_file"
+    echo "$deps"
+}
+
+# Canonical orders by wave — wave 6 clusters executed in order: content then social-growth
+w1_canonical="brand-foundation buyer-persona competitor-analysis value-proposition"
+w2_canonical="product-positioning voice-and-tone messaging-framework brand-story"
+# Wave 6: content first, then social-growth (matches runner execution order)
+w6_content_canonical="product-description landing-page-copy prelaunch-email-sequence launch-email-sequence welcome-email-sequence ad-creative-copy press-release"
+w6_social_canonical="social-content-engine short-form-hook-generator update-strategy-sequencer community-manager-brain review-response-strategist"
+w6_wave_ordered="$w6_content_canonical $w6_social_canonical"
+
+# Resolve waves without associative arrays so macOS Bash 3.2 is supported.
+spoke_wave_for() {
+    local candidate="$1"
+    local item
+    for item in $w1_canonical; do
+        if [[ "$item" == "$candidate" ]]; then echo 1; return; fi
+    done
+    for item in $w2_canonical; do
+        if [[ "$item" == "$candidate" ]]; then echo 2; return; fi
+    done
+    for item in $w6_wave_ordered; do
+        if [[ "$item" == "$candidate" ]]; then echo 6; return; fi
+    done
+    echo 0
+}
+
+# All spokes from earlier waves (wave < current)
+w1_earlier=""
+w2_earlier="$w1_canonical"
+w6_earlier="$w1_canonical $w2_canonical"
+
+dep_errors=0
+
+check_cluster_deps() {
+    local cluster="$1"
+    local wave="$2"
+    local earlier_spokes="$3"
+    local wave_ordered_spokes="$4"
+    local cluster_dir="$repo_root/clusters/$cluster/spokes"
+    local canonical
+    canonical=$(cluster_canonical_spokes "$cluster")
+
+    for spoke in $canonical; do
+        local spoke_file="$cluster_dir/$spoke.md"
+        [[ -f "$spoke_file" ]] || continue
+        local deps
+        deps=$(extract_frontmatter_deps "$spoke_file")
+        for dep in $deps; do
+            local dep_wave
+            dep_wave="$(spoke_wave_for "$dep")"
+            if [[ "$dep_wave" -gt 0 && "$dep_wave" -lt "$wave" ]]; then
+                continue  # earlier wave — always satisfied
+            fi
+            if [[ "$dep_wave" -eq "$wave" ]]; then
+                # Check if dep is in earlier-wave spokes (shouldn't be for same wave, but guard)
+                local in_earlier=false
+                for e in $earlier_spokes; do
+                    [[ "$e" == "$dep" ]] && in_earlier=true && break
+                done
+                if [[ "$in_earlier" == "true" ]]; then
+                    continue
+                fi
+                # Check wave-level ordering: dep must appear before spoke in wave ordered list
+                local found_spoke=false
+                local found_dep=false
+                for w in $wave_ordered_spokes; do
+                    if [[ "$w" == "$spoke" ]]; then
+                        found_spoke=true
+                        break
+                    fi
+                    if [[ "$w" == "$dep" ]]; then
+                        found_dep=true
+                        break
+                    fi
+                done
+                if [[ "$found_dep" == "false" ]]; then
+                    printf 'DEPENDENCY ERROR: %s (wave %d) depends on %s which is not ordered before it\n' \
+                        "$spoke" "$wave" "$dep" >&2
+                    dep_errors=$((dep_errors + 1))
+                fi
+            elif [[ "$dep_wave" -eq 0 ]]; then
+                printf 'DEPENDENCY WARNING: %s depends on unknown spoke %s (not in any canonical wave)\n' \
+                    "$spoke" "$dep" >&2
+            else
+                printf 'DEPENDENCY ERROR: %s (wave %d) depends on %s (wave %d) — reverse dependency\n' \
+                    "$spoke" "$wave" "$dep" "$dep_wave" >&2
+                dep_errors=$((dep_errors + 1))
+            fi
+        done
+    done
+}
+
+check_cluster_deps "foundation" 1 "$w1_earlier" "$w1_canonical"
+check_cluster_deps "strategy" 2 "$w2_earlier" "$w2_canonical"
+check_cluster_deps "content" 6 "$w6_earlier" "$w6_wave_ordered"
+check_cluster_deps "social-growth" 6 "$w6_earlier" "$w6_wave_ordered"
+
+if [[ $dep_errors -gt 0 ]]; then
+    fail "$dep_errors dependency graph violation(s) found in canonical spoke ordering"
+fi
+
+printf 'dependency graph tests passed for waves 1, 2, 6\n'
 
 chmod +x "$repo_root/tests/runner-spoke-order.test.sh"
 printf 'runner spoke order tests passed\n'

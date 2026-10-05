@@ -66,8 +66,8 @@ Date : 2 octobre 2026. Statut : recherche et brouillons internes ; aucun envoi, 
 
 ## ERP canonique et connexion aval
 
-- ERP personnalisé du propriétaire ; connexion MCP prévue sur le nouveau Mac mini. Cette précision vient directement du propriétaire.
-- Schéma/permissions, déduplication, offres, consentements et suppressions restent à inspecter dans ce MCP ; aucune substitution ERPNext/Zoho.
+- ERP personnalisé du propriétaire, canonique ; MCP Axtech connecté pour les références en lecture seule. Les lectures de schéma/références du2octobre ont réussi et un SELECT1 du5octobre a revalidé la connexion. Les anciens textes de connexion prévue sont historiques.
+- Le schéma et les références ont été inspectés avec des limites explicites ; droits d’écriture, périmètre tenant/expéditeur, politiques de consentement/suppression, idempotence et événements durables restent non acceptés. Aucune substitution ERPNext/Zoho. Les données ERP privées ne sont pas des sources publiques pour ce dossier.
 - Prouver un transfert synthétique ERP → Vapi → Explee/social, puis obtenir l’autorité distincte des actions live. Aucun appel, envoi ou publication ici.
 
 ## Receipts locaux et traçabilité

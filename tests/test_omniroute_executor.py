@@ -167,7 +167,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
         obj_no_unc = {
             "skill": "value-proposition",
             "status": "complete",
-            "data": {"value": "High quality", "draft_only": True},
+            "data": {"value": "High quality", "draft_only": True, "operational_readiness": "held"},
         }
         ok, errors = executor_mod.validate_output_details(obj_no_unc, brand_cfg)
         self.assertFalse(ok)
@@ -179,7 +179,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
             "status": "complete",
             "data": {
                 "value": "High quality",
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
                 "live_action": True,
             },
@@ -198,7 +198,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
             "status": "complete",
             "data": {
                 "competitors": [{"name": "Comp1", "url": "https://comp1.test/about"}],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
             },
         }
@@ -215,7 +215,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                     {"name": "Comp1", "url": "https://comp1.test/about"},
                     {"name": "Comp1", "url": "https://comp2.test/pricing"},
                 ],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
             },
         }
@@ -232,7 +232,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                     {"name": "Comp1", "url": "https://comp1.test/about"},
                     {"name": "Comp2", "url": "https://fabricated-unverified.com"},
                 ],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
             },
         }
@@ -249,7 +249,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                     {"name": "Comp1", "url": "https://comp1.test/about"},
                     {"name": "Comp2", "url": "https://comp2.test/pricing"},
                 ],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
                 "evidence": ["Direct review of verified competitors"],
             },
@@ -266,7 +266,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
             "status": "complete",
             "data": {
                 "personas": "Marie Durand is an operations manager",
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
                 "evidence": ["Interview notes"],
             },
@@ -288,7 +288,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                         "challenges": ["Dossier audit compliance"],
                     }
                 ],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": ["Needs field interview validation"],
                 "evidence": ["CEE regulatory documentation"],
             },
@@ -308,7 +308,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                 "vision": "TODO",
                 "essence": "Placeholder",
                 "values": ["Innovation", "Quality"],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
                 "evidence": ["Founding brief"],
             },
@@ -328,7 +328,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                 "vision": "Become the standard operating system for energy transition audits.",
                 "essence": "Deterministic audit integrity.",
                 "values": ["Precision", "Transparency", "Rigor"],
-                "draft_only": True,
+                "draft_only": True, "operational_readiness": "held",
                 "uncertainties": [],
                 "evidence": ["Founding brief"],
             },
@@ -478,6 +478,10 @@ class TestOmniRouteExecutor(unittest.TestCase):
         self.assertEqual(receipt["status"], "partial")
         self.assertIn("output_sha256", receipt)
         self.assertIn("dossier_sha256", receipt)
+        with open(os.path.join(brand_dir, ".brandmint", "outputs", "brand-foundation.json")) as f:
+            output = json.load(f)
+        self.assertEqual(output["status"], "partial")
+        self.assertEqual(output["data"]["operational_readiness"], "held")
 
     def test_end_to_end_synthetic_execution_wave1_isolated_vault(self):
         brand_dir = os.path.join(self.test_dir, "e2e_brand")
@@ -507,7 +511,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                     "vision": "Scale automated brand verification.",
                     "essence": "Synthetic precision.",
                     "values": ["Speed", "Accuracy", "Quality"],
-                    "draft_only": True,
+                    "draft_only": True, "operational_readiness": "held",
                     "uncertainties": [],
                     "evidence": ["Synthetic test suite"],
                 }
@@ -521,7 +525,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
                             "challenges": ["Compliance accuracy"],
                         }
                     ],
-                    "draft_only": True,
+                    "draft_only": True, "operational_readiness": "held",
                     "uncertainties": [],
                     "evidence": ["Synthetic test suite"],
                 }
@@ -531,14 +535,14 @@ class TestOmniRouteExecutor(unittest.TestCase):
                         {"name": "Competitor Alpha", "url": "https://alpha.test/pricing"},
                         {"name": "Competitor Beta", "url": "https://beta.test/features"},
                     ],
-                    "draft_only": True,
+                    "draft_only": True, "operational_readiness": "held",
                     "uncertainties": [],
                     "evidence": ["Synthetic test suite"],
                 }
             else:
                 data = {
                     "value_props": ["High efficiency", "Deterministic reliability"],
-                    "draft_only": True,
+                    "draft_only": True, "operational_readiness": "held",
                     "uncertainties": [],
                     "evidence": ["Synthetic test suite"],
                 }
@@ -732,7 +736,7 @@ class TestOmniRouteExecutor(unittest.TestCase):
             out_obj = {
                 "skill": "test-spoke", "cluster": "foundation", "wave": 1,
                 "status": "complete", "timestamp": "2026-10-02T12:00:00Z",
-                "version": "1.0.0", "data": {"value_props": ["A", "B"], "draft_only": True, "uncertainties": [], "evidence": ["test"]},
+                "version": "1.0.0", "data": {"value_props": ["A", "B"], "draft_only": True, "operational_readiness": "held", "uncertainties": [], "evidence": ["test"]},
             }
             resp = {
                 "id": "chatcmpl-nomodel",
@@ -799,6 +803,180 @@ class TestOmniRouteExecutor(unittest.TestCase):
                 config_path=config_path, waves="5-2", api_key="mock-key"
             )
 
+
+
+    # ------------------------------------------------------------------
+    # operational_readiness='held' enforcement
+    # ------------------------------------------------------------------
+
+    def test_operational_readiness_required(self):
+        """Validate that missing operational_readiness='held' is rejected."""
+        obj = {
+            "skill": "buyer-persona",
+            "cluster": "foundation",
+            "wave": 1,
+            "status": "complete",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "personas": [{"id": "user1"}],
+                "draft_only": True,
+                "operational_readiness": "held",
+                "uncertainties": [],
+                "evidence": ["test"],
+            },
+        }
+        ok, errors = executor_mod.validate_output_details(obj, {"name": "TestBrand"})
+        self.assertTrue(ok, f"Unexpected errors: {errors}")
+
+    def test_operational_readiness_missing_rejected(self):
+        """Validate that missing operational_readiness is caught."""
+        obj = {
+            "skill": "buyer-persona",
+            "cluster": "foundation",
+            "wave": 1,
+            "status": "complete",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "personas": [{"id": "user1"}],
+                "draft_only": True,
+                "uncertainties": [],
+                "evidence": ["test"],
+            },
+        }
+        ok, errors = executor_mod.validate_output_details(obj, {"name": "TestBrand"})
+        self.assertFalse(ok)
+        self.assertTrue(any("operational_readiness" in e for e in errors))
+
+    def test_operational_readiness_wrong_value_rejected(self):
+        """Validate that operational_readiness != 'held' is caught."""
+        obj = {
+            "skill": "buyer-persona",
+            "cluster": "foundation",
+            "wave": 1,
+            "status": "complete",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "personas": [{"id": "user1"}],
+                "draft_only": True,
+                "operational_readiness": "approved",
+                "uncertainties": [],
+                "evidence": ["test"],
+            },
+        }
+        ok, errors = executor_mod.validate_output_details(obj, {"name": "TestBrand"})
+        self.assertFalse(ok)
+        self.assertTrue(any("operational_readiness" in e for e in errors))
+
+    # ------------------------------------------------------------------
+    # Draft vs launch distinction — status=complete is internal draft only
+    # ------------------------------------------------------------------
+
+    def test_status_complete_is_draft_not_launch(self):
+        """status=complete with operational_readiness='held' passes — it means draft, not launch."""
+        obj = {
+            "skill": "product-positioning",
+            "cluster": "strategy",
+            "wave": 2,
+            "status": "complete",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "cbbe": {"salience": {"product_category": "test"}},
+                "positioning_summary": "A summary",
+                "draft_only": True,
+                "operational_readiness": "held",
+                "uncertainties": ["Pricing not confirmed"],
+                "evidence": ["dossier-ref"],
+            },
+        }
+        ok, errors = executor_mod.validate_output_details(obj, {"name": "TestBrand"})
+        self.assertTrue(ok, f"Draft complete should pass: {errors}")
+
+    def test_missing_identity_yields_partial_not_complete(self):
+        """When brand identity is missing, status must be partial, not complete."""
+        obj = {
+            "skill": "brand-foundation",
+            "cluster": "foundation",
+            "wave": 1,
+            "status": "partial",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "blockers": ["Domain unreachable; product identity unknown"],
+                "uncertainties": ["Brand identity could not be verified"],
+                "draft_only": True,
+                "operational_readiness": "held",
+            },
+        }
+        ok, errors = executor_mod.validate_output_details(obj, {"name": "TestBrand"})
+        self.assertTrue(ok, f"Partial with blockers should pass: {errors}")
+
+    def test_partial_with_blockers_passes_envelope(self):
+        """Partial status with blockers and operational_readiness='held' is valid."""
+        obj = {
+            "skill": "brand-foundation",
+            "cluster": "foundation",
+            "wave": 1,
+            "status": "partial",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "blockers": ["Domain unreachable"],
+                "uncertainties": ["Identity unknown"],
+                "draft_only": True,
+                "operational_readiness": "held",
+            },
+        }
+        env_ok, env_errors = executor_mod.validate_output_envelope(
+            obj, expected_spoke="brand-foundation", expected_cluster="foundation", expected_wave=1
+        )
+        self.assertTrue(env_ok, f"Envelope should pass: {env_errors}")
+        det_ok, det_errors = executor_mod.validate_output_details(obj, {"name": "TestBrand"})
+        self.assertTrue(det_ok, f"Details should pass: {det_errors}")
+
+    # ------------------------------------------------------------------
+    # Completion prompt content — verifies draft/launch instructions
+    # ------------------------------------------------------------------
+
+    def test_completion_prompt_contains_status_complete_clarification(self):
+        """build_prompt_messages system instructions clarify status=complete semantics."""
+        messages = executor_mod.build_prompt_messages(
+            "# Test prompt\n", {"name": "TestBrand"}, ""
+        )
+        system_msg = messages[0]["content"]
+        self.assertIn("status='complete' means", system_msg)
+        self.assertIn("NEVER means founder approval", system_msg)
+        self.assertIn("operational_readiness", system_msg)
+
+    def test_completion_prompt_contains_timestamp_instruction(self):
+        """build_prompt_messages user content includes request timestamp."""
+        messages = executor_mod.build_prompt_messages(
+            "# Test prompt\n", {"name": "TestBrand"}, "",
+            request_timestamp="2026-10-02T15:30:00Z"
+        )
+        user_msg = messages[1]["content"]
+        self.assertIn("2026-10-02T15:30:00Z", user_msg)
+        self.assertIn("request timestamp", user_msg)
+
+    def test_completion_prompt_uses_executor_timestamp_when_empty(self):
+        """When request_timestamp is empty, executor provides its own timestamp."""
+        messages = executor_mod.build_prompt_messages(
+            "# Test prompt\n", {"name": "TestBrand"}, ""
+        )
+        user_msg = messages[1]["content"]
+        # Should contain a valid ISO timestamp from the executor
+        self.assertRegex(user_msg, r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z")
+
+    def test_completion_prompt_no_current_utc_instruction(self):
+        """Completion prompt no longer says 'Use current UTC time'."""
+        messages = executor_mod.build_prompt_messages(
+            "# Test prompt\n", {"name": "TestBrand"}, ""
+        )
+        user_msg = messages[1]["content"]
+        self.assertNotIn("Use current UTC time", user_msg)
 
 
 if __name__ == "__main__":

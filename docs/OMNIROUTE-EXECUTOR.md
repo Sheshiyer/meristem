@@ -26,7 +26,8 @@ To prevent over-claiming, ensure safety, and maintain auditability, Meristem exp
 │ 3. Independently Validated Research Drafts             │
 │    - Envelope schema checks (version, ISO timestamp).  │
 │    - Dossier grounding (competitor URLs from dossier). │
-│    - Quality gates (draft_only: true, uncertainties).  │
+│    - Quality gates (draft_only, operational_held,     │
+│      uncertainties, evidence).                       │
 │    - Missing/unreachable domains produce honest partial│
 └───────────────────────────┬────────────────────────────┘
                             │ (STOPS HERE — No Live Actions)
@@ -41,7 +42,7 @@ To prevent over-claiming, ensure safety, and maintain auditability, Meristem exp
 
 > **Source Validation vs Authored Drafts vs Live Systems**:
 > 1. **Source Evidence**: Grounded truth files (such as `research/DOSSIER.md` or `EVIDENCE-LEDGER.md`) provide boundary constraints and source URLs.
-> 2. **Authored Drafts**: Model-generated outputs in `.brandmint/outputs/*.json` are research drafts marked with `draft_only: true`. They are proposals, not verified corporate facts or active campaigns.
+> 2. **Authored Drafts**: Model-generated outputs in `.brandmint/outputs/*.json` are research drafts marked with `draft_only: true` and `data.operational_readiness: "held"`. `status: "complete"` means the requested internal draft artifact is substantively delivered and grounded in source material — it does NOT mean founder approval, accepted pricing/sender, available stock, operational integration, or launch readiness. Unknown commercial facts remain explicit uncertainties and operational holds.
 > 3. **Integration Receipts**: Execution receipts in `.brandmint/cache/*-receipt.json` certify only that the local loopback gateway answered the completion request and recorded byte/token metrics. They do not certify remote provider infrastructure or external system execution.
 > 4. **Future ERP Integration**: Custom ERP via Model Context Protocol (MCP) on the local host is the canonical future connection architecture. Legacy ERPNext/Zoho connectors are unselected historical exploratory code.
 
@@ -248,3 +249,16 @@ To prevent prompt bloat exceeding the 128 KiB guard (`MAX_PROMPT_BYTES = 128 * 1
 3. **Shared Context for Content & Social-Growth**: For spokes in `content` and `social-growth` clusters, shared core dependencies (`voice-and-tone`, `messaging-framework`, `buyer-persona`, `product-positioning`) are automatically included if not already declared.
 4. **Explicit Missing Dependency Notices**: If a declared upstream output file is not present in `.brandmint/outputs/`, an explicit missing notice is emitted (`Dependency output missing: required upstream source outputs/<dep>.json not available`) rather than hallucinating content or failing silently.
 5. **No Compression or Truncation**: Declared dependencies, core cluster instructions, brand configuration, and output contracts are retained in full without truncating claims or raising the 128 KiB bound.
+
+### Completion Prompt Semantics
+
+The system prompt sent with each spoke request includes these rules:
+
+- **`status: "complete"`** means the requested internal draft artifact is substantively delivered, grounded in the included source material, with all essential dependencies satisfied. It does **NOT** mean founder approval, available stock, accepted prices/sender, operational integration, or launch readiness.
+- **`data.operational_readiness: "held"`** is required on every output (complete or partial). Generated internal drafts are held for human review before any operational step.
+- **Unknown commercial facts** must remain explicit uncertainties and operational holds, not invented claims.
+- Missing essential identity, missing required upstream artifact, or missing requested substantive deliverable yields `status: "partial"` and stops the coordinator.
+
+### Timestamp Handling
+
+The executor supplies the current timestamp as `request_timestamp` in the completion prompt. The model is instructed to use this exact value for the output `timestamp` field rather than generating its own UTC time, ensuring deterministic receipt alignment. If `request_timestamp` is empty, the executor falls back to `time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())`.
