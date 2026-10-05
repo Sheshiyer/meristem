@@ -94,7 +94,7 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [x] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
 - [ ] AX-ISC-8: No Explee start, send, budget increase, public social publish, secret/provider migration or unapproved live-data write occurs.
 - [x] AX-ISC-9: Current Snow Gloves Claude intake and source ownership are reconciled before further portfolio research, ingestion or adapter work; duplicate-work risks and reuse paths are recorded.
-- [ ] AX-ISC-10: One source-linked planning register covers all existing tenant questions plus cross-brand operating decisions, distinguishes settled answers from human decisions and technical verification, and records the user's per-brand/umbrella and deterministic-catalog direction before further mapping.
+- [x] AX-ISC-10: One source-linked planning register covers all existing tenant questions plus cross-brand operating decisions, distinguishes settled answers from human decisions and technical verification, and records the user's per-brand/umbrella and deterministic-catalog direction before further mapping.
 
 ### Current verification — 2 October 2026
 
@@ -157,3 +157,5 @@ AX-ISC-6: Two fresh bounded5October ERPSELECTs revalidated active ECOLED3,Wave4,
 - Partial answer: this direction settles plan structure and the catalog principle; it does not yet choose the commercial outcome, first sellable offer or call to action for each brand.
 - Pending clarification: the exact system/schema/repository/MCP reference meant by "JEV models integration". A clarification is already pending; do not invent or substitute a named integration.
 - Existing HeyZack Lite structured variant/SKU, snapshot-validation and quantity-rule code is a source reuse candidate, not a group catalog authority or live integration acceptance.
+- AX-ISC-10: Local, Git-ignored planning register covers 148 exact source questions across 11 tenant lists, with 36 decision records and 12 brand-exception rows. Settled facts, 18 owner decision areas, 6 verification areas, 3 technical defect areas and 2 deferred areas remain distinct. Inventory completion does not close the unanswered business decisions or grant integration/delivery acceptance.
+- Current source correction: Claude landed the public-platform/private-operations split during this review. Intake/question source files moved into the existing private checkout and all 13 reviewed intake/proposal/question files preserve their prior bytes. Detailed question records remain local and ignored; neither source-owner checkout was changed by this review. Historical reconciliation paths refer to the prior source location.
