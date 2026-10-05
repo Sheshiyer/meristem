@@ -979,5 +979,478 @@ class TestOmniRouteExecutor(unittest.TestCase):
         self.assertNotIn("Use current UTC time", user_msg)
 
 
+    # ------------------------------------------------------------------
+    # Upstream Run Import / Checkpoint Continuation Tests (Wave 6)
+    # ------------------------------------------------------------------
+
+    def _create_valid_upstream_fixture(self, brand_name="SynthetixBrand", domain="https://synthetix.example"):
+        """Helper to create a fully valid upstream W1+W2 brand run fixture."""
+        src_dir = os.path.join(self.test_dir, f"upstream_{brand_name.lower()}")
+        os.makedirs(os.path.join(src_dir, ".brandmint", "outputs"), exist_ok=True)
+        os.makedirs(os.path.join(src_dir, ".brandmint", "cache"), exist_ok=True)
+        os.makedirs(os.path.join(src_dir, "research"), exist_ok=True)
+
+        dossier_text = "Dossier content with competitor: https://comp-a.com/overview and https://comp-b.com/profile"
+        with open(os.path.join(src_dir, "research", "DOSSIER.md"), "w", encoding="utf-8") as f:
+            f.write(dossier_text)
+        dossier_sha = executor_mod.compute_str_sha256(f"### Research File (research/DOSSIER.md):\n{dossier_text}")
+
+        cfg_content = f"name: {brand_name}\ndomain: {domain}\nindustry: AI Tech\ngates:\n  research_complete: true\n"
+        with open(os.path.join(src_dir, "brand-config.yaml"), "w", encoding="utf-8") as f:
+            f.write(cfg_content)
+        cfg_sha = executor_mod.compute_str_sha256(cfg_content)
+
+        state_data = {
+            "version": "2.0.0",
+            "current_wave": 2,
+            "completed_waves": [1, 2],
+            "completed_skills": list(executor_mod.UPSTREAM_W1_W2_SKILLS.keys()),
+            "failed_skills": [],
+            "status": "complete",
+        }
+        with open(os.path.join(src_dir, ".brandmint", "state.json"), "w", encoding="utf-8") as f:
+            json.dump(state_data, f, indent=2)
+
+        # Generate 8 valid outputs and receipts
+        for skill, (cluster, wave) in executor_mod.UPSTREAM_W1_W2_SKILLS.items():
+            if skill == "brand-foundation":
+                data = {
+                    "mission": "Deliver deterministic brand architecture",
+                    "vision": "Autonomous precision branding systems",
+                    "essence": "Pure Determinism",
+                    "values": ["rigor", "clarity", "verifiability"],
+                    "draft_only": True,
+                    "operational_readiness": "held",
+                    "uncertainties": ["Long-term market expansion"],
+                    "evidence": ["dossier-ref"],
+                }
+            elif skill == "competitor-analysis":
+                data = {
+                    "competitors": [
+                        {"name": "Comp Alpha", "source_url": "https://comp-a.com/overview"},
+                        {"name": "Comp Beta", "source_url": "https://comp-b.com/profile"},
+                    ],
+                    "draft_only": True,
+                    "operational_readiness": "held",
+                    "uncertainties": ["Pricing tiers unverified"],
+                    "evidence": ["dossier-ref"],
+                }
+            elif skill == "buyer-persona":
+                data = {
+                    "personas": [{"name": "Lead Architect", "id": "arch-1"}],
+                    "draft_only": True,
+                    "operational_readiness": "held",
+                    "uncertainties": ["Enterprise budget cycles"],
+                    "evidence": ["dossier-ref"],
+                }
+            else:
+                data = {
+                    "summary": f"Artifact for {skill}",
+                    "draft_only": True,
+                    "operational_readiness": "held",
+                    "uncertainties": ["Refinements pending review"],
+                    "evidence": ["dossier-ref"],
+                }
+
+            out_obj = {
+                "skill": skill,
+                "cluster": cluster,
+                "wave": wave,
+                "status": "complete",
+                "timestamp": "2026-10-02T12:00:00Z",
+                "version": "1.0.0",
+                "data": data,
+            }
+            out_raw = json.dumps(out_obj, indent=2)
+            out_sha = executor_mod.compute_str_sha256(out_raw)
+            out_file = os.path.join(src_dir, ".brandmint", "outputs", f"{skill}.json")
+            with open(out_file, "w", encoding="utf-8") as f:
+                f.write(out_raw)
+
+            rec_obj = {
+                "spoke": skill,
+                "cluster": cluster,
+                "wave": wave,
+                "prompt_sha256": "fake_prompt_sha",
+                "config_sha256": cfg_sha,
+                "dossier_sha256": dossier_sha,
+                "output_sha256": out_sha,
+                "requested_model": "noesis-research",
+                "response_model": "deepseek/deepseek-v4-pro",
+                "response_id": f"chatcmpl-{skill}",
+                "http_status": 200,
+                "network_call": True,
+                "gate_rejected": False,
+                "status": "complete",
+                "usage": {"prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150},
+                "timing_ms": 1200,
+                "timestamp": "2026-10-02T12:00:00Z",
+                "validation_result": {"valid": True, "errors": []},
+                "provider_uncertainty": "Provider backend identity inferred from gateway response metadata; physical model routing unverified.",
+            }
+            rec_file = os.path.join(src_dir, ".brandmint", "cache", f"{skill}-receipt.json")
+            with open(rec_file, "w", encoding="utf-8") as f:
+                json.dump(rec_obj, f, indent=2)
+
+        return src_dir
+
+    def _create_target_brand(self, brand_name="SynthetixBrand", domain="https://synthetix.example"):
+        """Helper to create a fresh target brand directory."""
+        tgt_dir = os.path.join(self.test_dir, f"target_{brand_name.lower()}")
+        os.makedirs(os.path.join(tgt_dir, "research"), exist_ok=True)
+
+        dossier_text = "Dossier content with competitor: https://comp-a.com/overview and https://comp-b.com/profile"
+        with open(os.path.join(tgt_dir, "research", "DOSSIER.md"), "w", encoding="utf-8") as f:
+            f.write(dossier_text)
+
+        cfg_content = f"name: {brand_name}\ndomain: {domain}\nindustry: AI Tech\ngates:\n  research_complete: true\n"
+        cfg_path = os.path.join(tgt_dir, "brand-config.yaml")
+        with open(cfg_path, "w", encoding="utf-8") as f:
+            f.write(cfg_content)
+
+        return tgt_dir, cfg_path
+
+    def test_upstream_run_valid_continuation(self):
+        """Valid upstream W1+W2 outputs and receipts are imported cleanly under target lock."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        executor.acquire_lock()
+        try:
+            executor.check_clean_state()
+            executor.validate_and_import_upstream()
+        finally:
+            executor.release_lock()
+
+        # Check that all 8 outputs were imported into target
+        for skill in executor_mod.UPSTREAM_W1_W2_SKILLS:
+            imported_out = os.path.join(tgt_dir, ".brandmint", "outputs", f"{skill}.json")
+            self.assertTrue(os.path.exists(imported_out), f"Imported output missing: {skill}")
+
+        # Check that upstream-import manifest was written
+        manifest_path = os.path.join(tgt_dir, ".brandmint", "cache", "upstream-import.json")
+        self.assertTrue(os.path.exists(manifest_path))
+        with open(manifest_path, "r", encoding="utf-8") as f:
+            manifest = json.load(f)
+        self.assertEqual(manifest["imported_count"], 8)
+        self.assertEqual(manifest["brand_name"], "SynthetixBrand")
+        self.assertIn("brand-foundation", manifest["imported_skills"])
+
+        # Verify target state.json is untouched / not faked
+        tgt_state = os.path.join(tgt_dir, ".brandmint", "state.json")
+        self.assertFalse(os.path.exists(tgt_state))
+
+    def test_upstream_run_changed_source_output_fails(self):
+        """If source output file was altered after receipt was written, validation fails."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Tamper with buyer-persona.json with valid structure but changed content (hash mismatch)
+        bp_path = os.path.join(src_dir, ".brandmint", "outputs", "buyer-persona.json")
+        with open(bp_path, "r", encoding="utf-8") as f:
+            bp_obj = json.load(f)
+        bp_obj["data"]["personas"][0]["name"] = "Tampered Persona Name"
+        with open(bp_path, "w", encoding="utf-8") as f:
+            json.dump(bp_obj, f, indent=2)
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("Upstream output SHA256 mismatch in receipt", str(ctx.exception))
+
+    def test_upstream_run_changed_source_config_fails(self):
+        """If source brand-config was altered after receipt, config hash mismatch rejects continuation."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Tamper with upstream brand config
+        with open(os.path.join(src_dir, "brand-config.yaml"), "a", encoding="utf-8") as f:
+            f.write("tampered_extra_field: true\n")
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("config SHA256 mismatch", str(ctx.exception))
+
+    def test_upstream_run_changed_source_dossier_fails(self):
+        """If target dossier does not match upstream dossier hash, continuation fails."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Change target dossier content
+        with open(os.path.join(tgt_dir, "research", "DOSSIER.md"), "w", encoding="utf-8") as f:
+            f.write("Completely different dossier content")
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("research dossier SHA256", str(ctx.exception))
+
+    def test_upstream_run_crossbrand_fails(self):
+        """If upstream brand name differs from target brand name, continuation is rejected."""
+        src_dir = self._create_valid_upstream_fixture(brand_name="OriginalBrand")
+        tgt_dir, tgt_cfg = self._create_target_brand(brand_name="DifferentBrand")
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("Cross-brand upstream continuation rejected", str(ctx.exception))
+
+    def test_upstream_run_partial_status_fails(self):
+        """If any upstream output has status != complete, continuation fails."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Overwrite value-proposition with partial status output and matching receipt
+        vp_out = os.path.join(src_dir, ".brandmint", "outputs", "value-proposition.json")
+        vp_obj = {
+            "skill": "value-proposition",
+            "cluster": "foundation",
+            "wave": 1,
+            "status": "partial",
+            "timestamp": "2026-10-02T12:00:00Z",
+            "version": "1.0.0",
+            "data": {
+                "blockers": ["Missing input"],
+                "draft_only": True,
+                "operational_readiness": "held",
+            },
+        }
+        raw_vp = json.dumps(vp_obj, indent=2)
+        with open(vp_out, "w", encoding="utf-8") as f:
+            f.write(raw_vp)
+
+        rec_file = os.path.join(src_dir, ".brandmint", "cache", "value-proposition-receipt.json")
+        with open(rec_file, "r", encoding="utf-8") as f:
+            rec_obj = json.load(f)
+        rec_obj["output_sha256"] = executor_mod.compute_str_sha256(raw_vp)
+        rec_obj["status"] = "partial"
+        with open(rec_file, "w", encoding="utf-8") as f:
+            json.dump(rec_obj, f, indent=2)
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("expected 'complete'", str(ctx.exception))
+
+    def test_upstream_run_missing_wave_in_state_fails(self):
+        """If upstream state.json is missing wave 2 in completed_waves, continuation is rejected."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        state_file = os.path.join(src_dir, ".brandmint", "state.json")
+        with open(state_file, "r", encoding="utf-8") as f:
+            state_data = json.load(f)
+        state_data["completed_waves"] = [1]  # missing wave 2
+        with open(state_file, "w", encoding="utf-8") as f:
+            json.dump(state_data, f, indent=2)
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("missing completed waves 1 and 2", str(ctx.exception))
+
+    def test_upstream_run_preexisting_target_fails(self):
+        """If target has pre-existing outputs, check_clean_state rejects execution before import."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Pre-create output in target
+        tgt_outputs = os.path.join(tgt_dir, ".brandmint", "outputs")
+        os.makedirs(tgt_outputs, exist_ok=True)
+        with open(os.path.join(tgt_outputs, "existing.json"), "w", encoding="utf-8") as f:
+            f.write("{}")
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(RuntimeError) as ctx:
+            executor.check_clean_state()
+        self.assertIn("Fresh execution requires a clean output state", str(ctx.exception))
+
+    def test_upstream_run_unsupported_waves_fails(self):
+        """Continuation with --upstream-run is rejected if waves != 6."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        with self.assertRaises(ValueError) as ctx:
+            executor_mod.MeristemExternalExecutor(
+                config_path=tgt_cfg,
+                waves="1-7",
+                upstream_run=src_dir,
+                api_key="test-key",
+            )
+        self.assertIn("--upstream-run is only supported for waves=6", str(ctx.exception))
+
+    def test_upstream_run_missing_receipt_fails(self):
+        """If any upstream receipt is missing, continuation fails."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Delete brand-story receipt
+        os.remove(os.path.join(src_dir, ".brandmint", "cache", "brand-story-receipt.json"))
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(FileNotFoundError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("Missing upstream receipt file", str(ctx.exception))
+
+    def test_upstream_run_same_path_fails(self):
+        """Upstream run path cannot be the same as target brand dir."""
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=tgt_dir,
+            api_key="test-key",
+        )
+        with self.assertRaises(ValueError) as ctx:
+            executor.validate_and_import_upstream()
+        self.assertIn("cannot be the same as target brand directory", str(ctx.exception))
+
+    def test_upstream_run_source_w6_failure_allowed_if_w1_w2_valid(self):
+        """A source that experienced a W6 failure is accepted if W1+W2 are complete and valid."""
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+
+        # Add failed W6 spoke to source state and outputs
+        state_file = os.path.join(src_dir, ".brandmint", "state.json")
+        with open(state_file, "r", encoding="utf-8") as f:
+            state_data = json.load(f)
+        state_data["failed_skills"] = ["product-description"]
+        with open(state_file, "w", encoding="utf-8") as f:
+            json.dump(state_data, f, indent=2)
+
+        # Write partial W6 output to source
+        with open(os.path.join(src_dir, ".brandmint", "outputs", "product-description.json"), "w", encoding="utf-8") as f:
+            f.write('{"skill": "product-description", "status": "partial"}')
+
+        executor = executor_mod.MeristemExternalExecutor(
+            config_path=tgt_cfg,
+            waves="6",
+            upstream_run=src_dir,
+            api_key="test-key",
+        )
+        executor.validate_and_import_upstream()
+
+        # Verify only 8 W1/W2 outputs were imported (no product-description imported)
+        self.assertFalse(os.path.exists(os.path.join(tgt_dir, ".brandmint", "outputs", "product-description.json")))
+        for skill in executor_mod.UPSTREAM_W1_W2_SKILLS:
+            self.assertTrue(os.path.exists(os.path.join(tgt_dir, ".brandmint", "outputs", f"{skill}.json")))
+
+    def test_competitor_analysis_source_url_prompt_clarification(self):
+        """Prompt instructions explicitly mention source_url for competitor-analysis."""
+        messages = executor_mod.build_prompt_messages(
+            "# Spoke prompt\n", {"name": "TestBrand"}, ""
+        )
+        system_msg = messages[0]["content"]
+        user_msg = messages[1]["content"]
+        self.assertIn("source_url", system_msg)
+        self.assertIn("at least 2 distinct", system_msg)
+        self.assertIn("source_url", user_msg)
+
+
+    def test_research_json_compaction_preserves_value_and_markdown(self):
+        source = {"label": "Étude française", "text": "line one\nline two  with spaces", "list": [1, 2, {"quoted": 'a "quote"'}]}
+        prefix = "### Research Dossier (DOSSIER.md):\nSource  prose stays.\n\n"
+        header = "### Research Sources (evidence.json):\n"
+        original = prefix + header + json.dumps(source, indent=4) + "\n\n"
+        result = executor_mod.compact_research_json_for_prompt(original)
+        self.assertTrue(result.startswith(prefix + header))
+        self.assertEqual(json.loads(result.split(header)[1]), source)
+        self.assertLess(len(result.encode()), len(original.encode()))
+        self.assertEqual(executor_mod.compact_research_json_for_prompt(prefix), prefix)
+        with self.assertRaisesRegex(ValueError, "Malformed JSON research"):
+            executor_mod.compact_research_json_for_prompt(header + "{invalid}")
+
+    def test_continuation_checks_nested_company_website(self):
+        src_dir = self._create_valid_upstream_fixture()
+        tgt_dir, tgt_cfg = self._create_target_brand()
+        with open(tgt_cfg, "a", encoding="utf-8") as handle:
+            handle.write("company:\n  website: https://different-brand.example\n")
+        ex = executor_mod.MeristemExternalExecutor(tgt_cfg, waves="6", upstream_run=src_dir, api_key="fixture")
+        with self.assertRaisesRegex(ValueError, "company.website"):
+            ex.validate_and_import_upstream()
+        self.assertFalse(os.path.exists(ex.outputs_dir))
+
+    def test_continuation_rejects_running_or_failed_upstream_skill(self):
+        src_dir = self._create_valid_upstream_fixture()
+        _tgt_dir, tgt_cfg = self._create_target_brand()
+        path = os.path.join(src_dir, ".brandmint", "state.json")
+        with open(path, encoding="utf-8") as handle:
+            original = json.load(handle)
+        for mutation in [{"status": "running"}, {"failed_skills": ["voice-and-tone"]}]:
+            with self.subTest(mutation=mutation):
+                with open(path, "w", encoding="utf-8") as handle:
+                    json.dump(dict(original, **mutation), handle)
+                ex = executor_mod.MeristemExternalExecutor(tgt_cfg, waves="6", upstream_run=src_dir, api_key="fixture")
+                with self.assertRaises(ValueError):
+                    ex.validate_and_import_upstream()
+                self.assertFalse(os.path.exists(ex.outputs_dir))
+
+    def test_continuation_detects_late_checkpoint_mutation(self):
+        src_dir = self._create_valid_upstream_fixture()
+        _tgt_dir, tgt_cfg = self._create_target_brand()
+        ex = executor_mod.MeristemExternalExecutor(tgt_cfg, waves="6", upstream_run=src_dir, api_key="fixture")
+        original_validator = executor_mod.validate_output_details
+        calls = []
+        def mutate_after_validation(*args, **kwargs):
+            result = original_validator(*args, **kwargs)
+            calls.append(1)
+            if len(calls) == 8:
+                with open(os.path.join(src_dir, ".brandmint", "state.json"), "a", encoding="utf-8") as handle:
+                    handle.write("\n ")
+            return result
+        with patch.object(executor_mod, "validate_output_details", side_effect=mutate_after_validation):
+            with self.assertRaisesRegex(ValueError, "Concurrent mutation"):
+                ex.validate_and_import_upstream()
+        self.assertFalse(os.path.exists(ex.outputs_dir))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -441,6 +441,20 @@ def validate_output_details(
     return len(errors) == 0, errors
 
 
+def compact_research_json_for_prompt(dossier_text: str) -> str:
+    """Remove JSON formatting only; keep the original dossier hash/source bytes."""
+    chunks = re.split(r"(^### Research(?: Sources| File) \([^\n]+\.json\):\n)", dossier_text, flags=re.MULTILINE)
+    for index in range(1, len(chunks), 2):
+        original = chunks[index + 1]
+        stripped = original.lstrip()
+        try:
+            value, end = json.JSONDecoder().raw_decode(stripped)
+        except (ValueError, json.JSONDecodeError) as exc:
+            raise ValueError("Malformed JSON research source in prompt context") from exc
+        chunks[index + 1] = json.dumps(value, ensure_ascii=False, separators=(",", ":")) + stripped[end:]
+    return "".join(chunks)
+
+
 def build_prompt_messages(
     prompt_text: str,
     brand_config: Dict[str, Any],
@@ -456,7 +470,7 @@ def build_prompt_messages(
         "1. Output valid JSON matching the exact schema requested by the prompt envelope (version, timestamp, wave, skill, cluster, status, data).\n"
         "2. Ground all claims strictly in the provided research dossier. Do not fabricate unverifiable pricing, metrics, or geographic coverage.\n"
         "3. If product identity or domain is missing/unreachable, return status 'partial' with explicit blockers and uncertainties.\n"
-        "4. For competitor-analysis complete outputs, cite at least 2 distinct competitors with real URLs from the dossier.\n"
+        "4. For competitor-analysis complete outputs, provide at least 2 distinct named candidates from the included dossier in data.competitors, each including exact field source_url as a valid cited HTTP URL from the dossier, and ensure any unverified comparisons are explicitly labelled.\n"
         "5. Include evidence pointers, uncertainties (as a list), and enforce data.draft_only=true.\n"
         "6. Do not include or trigger any live external actions (no publishing, no video generation, no live CRM mutations).\n"
         "7. Output ONLY the raw JSON object. Do not output conversational markdown prose outside the JSON.\n"
@@ -470,11 +484,14 @@ def build_prompt_messages(
         "9. Every complete or partial output MUST include data.operational_readiness='held'.\n"
         "10. Return concise, valid JSON within the model's token budget. Do not truncate mid-field, "
         "forcibly rewrite a partial result into status='complete', or omit required top-level keys.\n"
+        "11. Prospect copy describes the brand's evidenced offer and the buyer's needs in natural French vous. "
+        "Keep internal audits, source caveats, ERP/API state, draft/approval labels and unsupported comparisons "
+        "in operator metadata only. Prior authored taglines/values are proposals, not approved identity.\n"
     )
 
     user_content = prompt_text
     if dossier_text:
-        user_content += "\n\n## Grounded Research Dossier & Sources\n" + dossier_text
+        user_content += "\n\n## Grounded Research Dossier & Sources\n" + compact_research_json_for_prompt(dossier_text)
     req_ts = request_timestamp if request_timestamp else time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     user_content += (
         "\n\n## Completion transport override\n"
@@ -485,6 +502,8 @@ def build_prompt_messages(
         "Use the following request timestamp for the output timestamp field: " + req_ts + ". "
         "Include data.draft_only=true, data.evidence, data.uncertainties, "
         "and data.operational_readiness='held'. "
+        "For competitor-analysis, include at least 2 distinct named candidates in data.competitors "
+        "with exact field source_url citing the dossier URL, with unverified comparisons labelled. "
         "Unknown claims remain explicit uncertainties and operational holds, not invented claims."
     )
 
@@ -674,6 +693,18 @@ def parse_wave_range_py(range_str: str) -> Set[int]:
     return result
 
 
+UPSTREAM_W1_W2_SKILLS: Dict[str, Tuple[str, int]] = {
+    "brand-foundation": ("foundation", 1),
+    "buyer-persona": ("foundation", 1),
+    "competitor-analysis": ("foundation", 1),
+    "value-proposition": ("foundation", 1),
+    "brand-story": ("strategy", 2),
+    "messaging-framework": ("strategy", 2),
+    "product-positioning": ("strategy", 2),
+    "voice-and-tone": ("strategy", 2),
+}
+
+
 class MeristemExternalExecutor:
     """Coordinator that launches runner and executes spoke prompts via OmniRoute."""
 
@@ -687,6 +718,7 @@ class MeristemExternalExecutor:
         gateway: Optional[str] = None,
         api_key: Optional[str] = None,
         resume: bool = False,
+        upstream_run: Optional[str] = None,
     ):
         if resume:
             raise RuntimeError(
@@ -697,6 +729,13 @@ class MeristemExternalExecutor:
         self.brand_dir = os.path.dirname(self.config_path)
         self.waves = waves
         self.requested_waves = parse_wave_range_py(waves)
+        self.upstream_run = os.path.abspath(upstream_run) if upstream_run else None
+
+        if self.upstream_run:
+            if self.requested_waves != {6}:
+                raise ValueError(
+                    f"--upstream-run is only supported for waves=6 (received waves: '{self.waves}')"
+                )
         self.model = model
         self.timeout = timeout
         self.max_output_tokens = max_output_tokens
@@ -719,6 +758,269 @@ class MeristemExternalExecutor:
         self._lock_fd: Optional[int] = None
         self.runner_proc: Optional[subprocess.Popen] = None
         self.processed_spokes: Set[str] = set()
+
+    def validate_and_import_upstream(self) -> None:
+        """Validate and import 8 W1/W2 completed outputs from upstream run under target lock."""
+        if not self.upstream_run:
+            return
+
+        src_dir = self.upstream_run
+        if os.path.basename(src_dir) == ".brandmint":
+            src_brand_dir = os.path.dirname(src_dir)
+        else:
+            src_brand_dir = src_dir
+
+        if not os.path.isdir(src_brand_dir):
+            raise FileNotFoundError(f"Upstream run directory not found: {src_brand_dir}")
+
+        if os.path.realpath(src_brand_dir) == os.path.realpath(self.brand_dir):
+            raise ValueError(
+                f"Upstream run path cannot be the same as target brand directory: {src_brand_dir}"
+            )
+
+        # Verify source state.json exists
+        src_state_path = os.path.join(src_brand_dir, ".brandmint", "state.json")
+        if not os.path.exists(src_state_path):
+            raise FileNotFoundError(f"Upstream state.json not found: {src_state_path}")
+
+        try:
+            with open(src_state_path, "r", encoding="utf-8") as f:
+                src_state_raw = f.read()
+                src_state = json.loads(src_state_raw)
+        except Exception as exc:
+            raise ValueError(f"Malformed upstream state.json at {src_state_path}: {exc}") from exc
+
+        # Check completed waves in source state (must contain waves 1 and 2)
+        completed_waves = src_state.get("completed_waves", [])
+        if not isinstance(completed_waves, list) or not (1 in completed_waves and 2 in completed_waves):
+            raise ValueError(
+                f"Upstream state.json missing completed waves 1 and 2 (completed_waves: {completed_waves})"
+            )
+
+        # Check completed skills in source state (must contain all 8 W1/W2 skills)
+        completed_skills = set(src_state.get("completed_skills", []))
+        missing_state_skills = [s for s in UPSTREAM_W1_W2_SKILLS if s not in completed_skills]
+        if missing_state_skills:
+            raise ValueError(
+                f"Upstream state.json missing required completed W1/W2 skills: {missing_state_skills}"
+            )
+        if src_state.get("status") == "running":
+            raise ValueError("Upstream run is still running; wait for a terminal checkpoint")
+        if set(src_state.get("failed_skills", [])) & set(UPSTREAM_W1_W2_SKILLS):
+            raise ValueError("Upstream state reports a failed required W1/W2 skill")
+
+        # Locate and load upstream brand config
+        src_cfg_candidates = [
+            os.path.join(src_brand_dir, "brand-config.yaml"),
+            os.path.join(src_brand_dir, "brand-config.yml"),
+            os.path.join(src_brand_dir, "brand-config.json"),
+        ]
+        src_cfg_path = None
+        for cand in src_cfg_candidates:
+            if os.path.exists(cand):
+                src_cfg_path = cand
+                break
+
+        if not src_cfg_path:
+            raise FileNotFoundError(f"Upstream brand-config file not found in {src_brand_dir}")
+
+        src_cfg, src_raw_cfg = load_brand_config(src_cfg_path)
+        src_cfg_sha256 = compute_str_sha256(src_raw_cfg)
+
+        # Check brand config identity / crossbrand prevention
+        target_name = self.brand_config.get("name")
+        src_name = src_cfg.get("name")
+        if not target_name or not src_name or target_name != src_name:
+            raise ValueError(
+                f"Cross-brand upstream continuation rejected: source brand name '{src_name}' != target brand name '{target_name}'"
+            )
+
+        # Check domain / website / url match
+        for field in ["domain", "website", "url"]:
+            if src_cfg.get(field) != self.brand_config.get(field):
+                raise ValueError(
+                    f"Upstream brand config '{field}' ({src_cfg.get(field)}) does not match target ({self.brand_config.get(field)})"
+                )
+        for section, fields in [("company", ["website"]), ("brand", ["name", "slug"])]:
+            for field in fields:
+                if src_cfg.get(section, {}).get(field) != self.brand_config.get(section, {}).get(field):
+                    raise ValueError(f"Upstream brand identity '{section}.{field}' does not match target")
+
+        # Check gates match
+        if src_cfg.get("gates") != self.brand_config.get("gates"):
+            raise ValueError("Upstream brand config gates do not match target gates")
+
+        # Read source dossier context and verify SHA256 matches target dossier
+        src_dossier_text, src_dossier_sha256, src_allowed_urls = read_dossier_context(
+            src_brand_dir, src_cfg
+        )
+        if src_dossier_sha256 != self.dossier_sha256:
+            raise ValueError(
+                f"Upstream research dossier SHA256 ({src_dossier_sha256}) does not match target dossier SHA256 ({self.dossier_sha256})"
+            )
+
+        # Validate all 8 source outputs and receipts before copying anything
+        staged_outputs: Dict[str, Tuple[str, Dict[str, Any], Dict[str, Any], str]] = {}
+        source_snapshots = {src_state_path: compute_str_sha256(src_state_raw), src_cfg_path: src_cfg_sha256}
+
+        for skill, (cluster, wave) in UPSTREAM_W1_W2_SKILLS.items():
+            src_out_file = os.path.join(src_brand_dir, ".brandmint", "outputs", f"{skill}.json")
+            src_rec_file = os.path.join(src_brand_dir, ".brandmint", "cache", f"{skill}-receipt.json")
+
+            if not os.path.exists(src_out_file):
+                raise FileNotFoundError(f"Missing upstream output file: {src_out_file}")
+            if not os.path.exists(src_rec_file):
+                raise FileNotFoundError(f"Missing upstream receipt file: {src_rec_file}")
+
+            # Read source output (with snapshot re-read check for race conditions)
+            with open(src_out_file, "r", encoding="utf-8") as f:
+                out_raw1 = f.read()
+            out_sha1 = compute_str_sha256(out_raw1)
+
+            # Read receipt
+            with open(src_rec_file, "r", encoding="utf-8") as f:
+                rec_raw1 = f.read()
+
+            # Re-read output to ensure file stability
+            with open(src_out_file, "r", encoding="utf-8") as f:
+                out_raw2 = f.read()
+            if compute_str_sha256(out_raw2) != out_sha1:
+                raise ValueError(f"Concurrent mutation detected in upstream output: {src_out_file}")
+
+            try:
+                out_obj = json.loads(out_raw1)
+            except Exception as exc:
+                raise ValueError(f"Malformed JSON in upstream output {src_out_file}: {exc}") from exc
+
+            try:
+                rec_obj = json.loads(rec_raw1)
+            except Exception as exc:
+                raise ValueError(f"Malformed JSON in upstream receipt {src_rec_file}: {exc}") from exc
+
+            # Strict validation on output JSON
+            if out_obj.get("status") != "complete":
+                raise ValueError(
+                    f"Upstream output for '{skill}' has status '{out_obj.get('status')}', expected 'complete'"
+                )
+
+            data_sec = out_obj.get("data", {})
+            if not isinstance(data_sec, dict):
+                raise ValueError(f"Upstream output for '{skill}' data section is not an object")
+
+            if data_sec.get("draft_only") is not True:
+                raise ValueError(f"Upstream output for '{skill}' missing data.draft_only=true")
+
+            if data_sec.get("operational_readiness") != "held":
+                raise ValueError(
+                    f"Upstream output for '{skill}' missing data.operational_readiness='held'"
+                )
+
+            env_ok, env_errors = validate_output_envelope(
+                out_obj, expected_spoke=skill, expected_cluster=cluster, expected_wave=wave
+            )
+            if not env_ok:
+                raise ValueError(
+                    f"Upstream output envelope invalid for '{skill}': {', '.join(env_errors)}"
+                )
+
+            det_ok, det_errors = validate_output_details(out_obj, src_cfg, src_allowed_urls)
+            if not det_ok:
+                raise ValueError(
+                    f"Upstream output semantic details invalid for '{skill}': {', '.join(det_errors)}"
+                )
+
+            # Strict validation on receipt
+            if rec_obj.get("spoke") != skill:
+                raise ValueError(
+                    f"Upstream receipt spoke mismatch for '{skill}': {rec_obj.get('spoke')}"
+                )
+            if rec_obj.get("cluster") != cluster:
+                raise ValueError(
+                    f"Upstream receipt cluster mismatch for '{skill}': {rec_obj.get('cluster')}"
+                )
+            if rec_obj.get("wave") != wave:
+                raise ValueError(
+                    f"Upstream receipt wave mismatch for '{skill}': {rec_obj.get('wave')}"
+                )
+            if rec_obj.get("status") != "complete":
+                raise ValueError(
+                    f"Upstream receipt status for '{skill}' is '{rec_obj.get('status')}', expected 'complete'"
+                )
+            if rec_obj.get("network_call") is not True:
+                raise ValueError(
+                    f"Upstream receipt network_call for '{skill}' is not True (was {rec_obj.get('network_call')})"
+                )
+            if rec_obj.get("gate_rejected") is True:
+                raise ValueError(f"Upstream receipt for '{skill}' was gate_rejected")
+
+            val_res = rec_obj.get("validation_result", {})
+            if val_res.get("valid") is not True or len(val_res.get("errors", [])) > 0:
+                raise ValueError(
+                    f"Upstream receipt validation_result for '{skill}' indicates invalid: {val_res}"
+                )
+
+            # Hash checks
+            if rec_obj.get("output_sha256") != out_sha1:
+                raise ValueError(
+                    f"Upstream output SHA256 mismatch in receipt for '{skill}': receipt={rec_obj.get('output_sha256')}, actual={out_sha1}"
+                )
+            if rec_obj.get("config_sha256") != src_cfg_sha256:
+                raise ValueError(
+                    f"Upstream config SHA256 mismatch in receipt for '{skill}': receipt={rec_obj.get('config_sha256')}, actual={src_cfg_sha256}"
+                )
+            if rec_obj.get("dossier_sha256") != src_dossier_sha256:
+                raise ValueError(
+                    f"Upstream dossier SHA256 mismatch in receipt for '{skill}': receipt={rec_obj.get('dossier_sha256')}, actual={src_dossier_sha256}"
+                )
+
+            staged_outputs[skill] = (out_raw1, out_obj, rec_obj, src_out_file)
+            source_snapshots[src_out_file] = out_sha1
+            source_snapshots[src_rec_file] = compute_str_sha256(rec_raw1)
+
+        # Validate the whole source snapshot again before the first target write.
+        for source_path, expected_hash in source_snapshots.items():
+            with open(source_path, "r", encoding="utf-8") as source_handle:
+                if compute_str_sha256(source_handle.read()) != expected_hash:
+                    raise ValueError(f"Concurrent mutation detected in upstream checkpoint: {source_path}")
+        if read_dossier_context(src_brand_dir, src_cfg)[1] != src_dossier_sha256:
+            raise ValueError("Concurrent mutation detected in upstream research dossier")
+
+        # All 8 verified cleanly! Atomically write outputs to target outputs dir
+        os.makedirs(self.outputs_dir, exist_ok=True)
+        os.makedirs(self.cache_dir, exist_ok=True)
+
+        imported_records = {}
+        for skill, (out_raw, out_obj, rec_obj, src_out_path) in staged_outputs.items():
+            dst_out_path = os.path.join(self.outputs_dir, f"{skill}.json")
+            write_atomic_file(dst_out_path, out_raw)
+            imported_records[skill] = {
+                "source_path": src_out_path,
+                "source_receipt_path": os.path.join(src_brand_dir, ".brandmint", "cache", f"{skill}-receipt.json"),
+                "source_receipt_sha256": source_snapshots[os.path.join(src_brand_dir, ".brandmint", "cache", f"{skill}-receipt.json")],
+                "output_sha256": compute_str_sha256(out_raw),
+                "cluster": UPSTREAM_W1_W2_SKILLS[skill][0],
+                "wave": UPSTREAM_W1_W2_SKILLS[skill][1],
+                "status": "complete",
+                "validation_result": {"valid": True, "errors": []},
+            }
+
+        # Write cache/upstream-import.json manifest
+        import_manifest = {
+            "upstream_run_path": src_brand_dir,
+            "import_timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "brand_name": target_name,
+            "source_config_sha256": src_cfg_sha256,
+            "source_config_path": src_cfg_path,
+            "source_state_path": src_state_path,
+            "source_state_sha256": source_snapshots[src_state_path],
+            "target_config_sha256": self.config_sha256,
+            "source_dossier_sha256": src_dossier_sha256,
+            "imported_skills": imported_records,
+            "imported_count": len(imported_records),
+        }
+        manifest_path = os.path.join(self.cache_dir, "upstream-import.json")
+        write_atomic_file(manifest_path, json.dumps(import_manifest, indent=2))
+        print(f"[EXECUTOR] Successfully validated and imported 8 W1/W2 upstream outputs into {self.outputs_dir}")
 
     def check_clean_state(self) -> None:
         """Reject pre-existing output JSON or prompts before launching runner."""
@@ -1076,8 +1378,10 @@ class MeristemExternalExecutor:
 
     def run(self) -> int:
         """Run the end-to-end execution loop."""
-        self.check_clean_state()
         self.acquire_lock()
+        self.check_clean_state()
+        if self.upstream_run:
+            self.validate_and_import_upstream()
         repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         bm_script = os.path.join(repo_root, "runner", "bm.sh")
 
@@ -1200,6 +1504,11 @@ def main() -> None:
     )
     parser.add_argument("--gateway", default=None, help="OmniRoute gateway URL override")
     parser.add_argument("--resume", action="store_true", help="Resume flag (unsupported)")
+    parser.add_argument(
+        "--upstream-run",
+        default=None,
+        help="Path to completed upstream W1+W2 run for Wave 6 continuation",
+    )
 
     args = parser.parse_args()
 
@@ -1211,6 +1520,7 @@ def main() -> None:
         max_output_tokens=args.max_output_tokens,
         gateway=args.gateway,
         resume=args.resume,
+        upstream_run=args.upstream_run,
     )
 
     def signal_handler(signum, frame):

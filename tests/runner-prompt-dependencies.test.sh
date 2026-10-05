@@ -236,5 +236,73 @@ if generate_spoke_prompt "foundation" "bad-chars" "$brand7/brand-config.yaml" "$
     fail "Test 7e: dependency name with spaces should fail prompt generation"
 fi
 
+# -----------------------------------------------------------------------------
+# Test 8: Lossless compact JSON reparse matches original exactly (non-ASCII, escaped, long fields)
+# -----------------------------------------------------------------------------
+brand8=$(new_test_brand "brand8")
+create_spoke_md "foundation" "buyer-persona" $'---\nname: buyer-persona\ndependencies:\n  - complex-output\n---\n# Buyer Persona\nInstructions.'
+
+complex_json=$(python3 -c '
+import json
+data = {
+    "skill": "complex-output",
+    "cluster": "foundation",
+    "status": "complete",
+    "timestamp": "2026-10-02T10:00:00Z",
+    "data": {
+        "unicode_french": "Stratégie de marque & déploiement international €250/m² à l'\''œuvre",
+        "unicode_japanese": "革新的なブランド体験と自動化システム",
+        "escaped_newlines": "Line 1\nLine 2 with \"quotes\" and \ttabs\nLine 3",
+        "nested_structure": {
+            "sub_array": [1, 2.5, True, False, None, {"key": "val"}],
+            "long_narrative": "A" * 5000
+        }
+    }
+}
+print(json.dumps(data, indent=2, ensure_ascii=False))
+')
+write_json_output "$brand8" "complex-output" "$complex_json"
+
+prompt8=$(generate_spoke_prompt "foundation" "buyer-persona" "$brand8/brand-config.yaml" "$brand8")
+
+reparsed_ok=$(python3 -c '
+import sys, json, re
+
+prompt_text = sys.argv[1]
+original_text = sys.argv[2]
+orig_data = json.loads(original_text)
+
+match = re.search(r"### complex-output\s+```json\s+(.*?)\s+```", prompt_text, re.DOTALL)
+if not match:
+    print("FAILED: embedded JSON block not found in prompt")
+    sys.exit(1)
+
+extracted_json = match.group(1).strip()
+reparsed_data = json.loads(extracted_json)
+
+if reparsed_data != orig_data:
+    print("FAILED: reparsed JSON does not match original data structure")
+    sys.exit(1)
+
+if "\n" in extracted_json:
+    print("FAILED: compacted JSON contains unexpected newlines outside string literals")
+    sys.exit(1)
+
+print("OK")
+' "$prompt8" "$complex_json")
+
+assert_equal "$reparsed_ok" "OK" "Test 8: Compact JSON reparse must equal original data structure exactly"
+
+# -----------------------------------------------------------------------------
+# Test 9: Malformed upstream output JSON fails prompt generation explicitly
+# -----------------------------------------------------------------------------
+brand9=$(new_test_brand "brand9")
+create_spoke_md "foundation" "buyer-persona" $'---\nname: buyer-persona\ndependencies:\n  - bad-json-output\n---\n# Buyer Persona\nInstructions.'
+write_json_output "$brand9" "bad-json-output" '{"skill": "bad-json-output", "broken_json": [ unclosed array'
+
+if generate_spoke_prompt "foundation" "buyer-persona" "$brand9/brand-config.yaml" "$brand9" >/dev/null 2>/dev/null; then
+    fail "Test 9: malformed upstream output JSON should fail prompt generation"
+fi
+
 chmod +x "$repo_root/tests/runner-prompt-dependencies.test.sh"
-printf 'runner prompt dependencies tests passed (all 7 scenarios verified)\n'
+printf 'runner prompt dependencies tests passed (all 9 scenarios verified)\n'

@@ -476,7 +476,17 @@ EOF
     echo "## Brand Context"
     echo ""
     echo '```yaml'
-    if ! cat "$brand_config"; then
+    if ! python3 -c '
+import sys, json
+with open(sys.argv[1], encoding="utf-8") as handle:
+    raw = handle.read()
+try:
+    value = json.loads(raw)
+except json.JSONDecodeError:
+    sys.stdout.write(raw)  # Retain ordinary YAML exactly, including comments.
+else:
+    print(json.dumps(value, ensure_ascii=False, separators=(",", ":")))
+' "$brand_config"; then
         log_error "Unable to read brand config: $brand_config"
         return 1
     fi
@@ -495,7 +505,22 @@ EOF
             echo "### $dep"
             if [[ -f "$output_path" ]]; then
                 echo '```json'
-                if ! cat "$output_path"; then
+                if ! python3 -c '
+import sys, json
+path = sys.argv[1]
+try:
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception as e:
+    sys.stderr.write(f"Unable to parse upstream output JSON {path}: {e}\n")
+    sys.exit(1)
+try:
+    compacted = json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+    sys.stdout.write(compacted + "\n")
+except Exception as e:
+    sys.stderr.write(f"Unable to serialize upstream output JSON {path}: {e}\n")
+    sys.exit(1)
+' "$output_path"; then
                     log_error "Unable to read upstream output: $output_path"
                     return 1
                 fi

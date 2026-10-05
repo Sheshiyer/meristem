@@ -28,9 +28,9 @@ The actual 5 October public-registry sample has five company records, preserved 
 | Surface | Evidence | Current state |
 | --- | --- | --- |
 | Research | 2 October explicit Exa/Firecrawl receipts and six dossiers; 5 October Perplexity/Symphonics rechecks | Exa/Firecrawl supplied usable evidence for five brands. Perplexity returned semantic sign-up text despite HTTP200 and remains excluded |
-| Meristem | Canonical shell runner, private attempts and output/HTTP/validation receipts | Six first attempts and five v3 attempts preserved failed/partial. Strategy/dependency and draft-scope repair in progress; no complete five-brand content package claimed |
+| Meristem | Canonical shell runner, private attempts and output/HTTP/validation receipts | Earlier attempts remain failed/partial. Four v4 runs completed research/strategy, then stopped at the128KiB content guard; Kartezzi stopped at cited competitor URL validation. Repaired v5 content continuations and a fresh Kartezzi run are underway; editorial acceptance pending |
 | Campaign CLI | 107 local tests, strict typecheck, independent 12-probe final audit, actual registry sample | Classification/dedup/export and held brand-plan gates verified locally; establishment preservation repair pending |
-| Custom ERP MCP | 2 October scoped schema/reference/aggregate audit; 5 October `SELECT 1` revalidation | Reference connection works, read-only. Writes, suppression/consent, ownership, idempotency and event acknowledgement remain unaccepted |
+| Custom ERP MCP | 2 October scoped schema/reference/aggregate audit; 5 October connection and business-unit/brand reference revalidation | Reference connection works, read-only. Writes, suppression/consent, ownership, idempotency and event acknowledgement remain unaccepted |
 | Explee | Actual 5 October authenticated GET snapshot | One project: HeyZack `43522`, daily budget USD0, no current campaigns, zero sends/replies/hot leads/spend. Autopilot and auto-reply settings are enabled. No setting was changed |
 | Vapi | Current and historical source audit | Callback/brochure success stubs and incomplete terminal writeback are recorded; no live call test or current binding accepted |
 | Social | Source-linked draft requirements | Destination accounts, publisher adapter and ERP attribution unbound; no publication |
@@ -63,8 +63,10 @@ The reviewed Explee public API has inbox reads and no documented webhook endpoin
 
 ## Remaining execution
 
-1. Finish and independently verify the Meristem strategy order/dependency and internal-draft status repair, preserving honest partial/failure handling.
-2. Run fresh scoped waves1,2,6 for the five evidenced brands through the canonical coordinator; preserve Symphonics' explicit identity hold.
+1. Strategy order, draft/launch separation and verified continuation source repairs pass60Python checks and6shell suites; preserve these gates and the earlier failures.
+2. Finish actual v5 wave6 continuations from four verified wave1/2 checkpoints and the fresh scoped Kartezzi run. Imported upstreams do not become target wave completions. Preserve Symphonics' explicit identity hold.
 3. Inspect substantive strategy/email/social output, evidence references, French locale, relevant trade fit and regional wording; curate reviewed drafts with hashes/provenance rather than committing raw prompt traces.
 4. Finish establishment-preservation acceptance, then repeat the meaningful local record/plan/export path.
 5. Resolve actual external contracts and receive the corresponding operational evidence before campaign activation or publication. Current read-only authority remains unchanged.
+
+Editorial review: [AXTECH-EDITORIAL-REVIEW-20261005.md](AXTECH-EDITORIAL-REVIEW-20261005.md) inspected34completed upstream drafts. Required corrections keep internal audit/ERP caveats outside prospect copy, remove unsupported competitor claims, preserve existing identity, label personas illustrative and separate registered source IDs from hashed upstream references. Current generation is not owner acceptance.

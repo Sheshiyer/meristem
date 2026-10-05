@@ -248,7 +248,7 @@ To prevent prompt bloat exceeding the 128 KiB guard (`MAX_PROMPT_BYTES = 128 * 1
 2. **Deterministic Deduplication**: Dependency names are validated with strict identifier syntax (`^[a-zA-Z0-9_-]+$`) and deduplicated while preserving declaration order. Malformed frontmatter or syntax is rejected with a non-zero exit status.
 3. **Shared Context for Content & Social-Growth**: For spokes in `content` and `social-growth` clusters, shared core dependencies (`voice-and-tone`, `messaging-framework`, `buyer-persona`, `product-positioning`) are automatically included if not already declared.
 4. **Explicit Missing Dependency Notices**: If a declared upstream output file is not present in `.brandmint/outputs/`, an explicit missing notice is emitted (`Dependency output missing: required upstream source outputs/<dep>.json not available`) rather than hallucinating content or failing silently.
-5. **No Compression or Truncation**: Declared dependencies, core cluster instructions, brand configuration, and output contracts are retained in full without truncating claims or raising the 128 KiB bound.
+5. **Lossless JSON Compaction**: Declared upstream outputs embedded in `## Upstream Outputs` are compacted losslessly (`separators=(',', ':')`, `ensure_ascii=False`), retaining all keys, values, non-ASCII Unicode characters, escaped quotes, and newlines without whitespace overhead. This reduces formatting overhead in multi-dependency prompts while strictly preserving full source semantics. The unchanged128KiB guard can still reject a substantively large request. JSON brand configurations and research-source JSON are also compacted for transport; ordinary YAML/Markdown and the original receipt hash basis are preserved. Unreadable or malformed upstream JSON fails prompt generation explicitly with non-zero exit codes.
 
 ### Completion Prompt Semantics
 
@@ -262,3 +262,52 @@ The system prompt sent with each spoke request includes these rules:
 ### Timestamp Handling
 
 The executor supplies the current timestamp as `request_timestamp` in the completion prompt. The model is instructed to use this exact value for the output `timestamp` field rather than generating its own UTC time, ensuring deterministic receipt alignment. If `request_timestamp` is empty, the executor falls back to `time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())`.
+
+---
+
+## Wave 6 Checkpoint Continuation (`--upstream-run`)
+
+To allow deterministic continuation into Wave 6 after verified completion of Waves 1 and 2 without re-running upstream spokes or burning duplicate tokens, the executor supports an opt-in `--upstream-run <PATH>` flag.
+
+### Execution Model: Fresh vs Imported Continuation
+
+| Dimension | Fresh Pipeline Run (`--waves 1-7` / `1-2`) | Imported Continuation (`--waves 6 --upstream-run <PATH>`) |
+|---|---|---|
+| **Waves Executed** | All selected waves executed sequentially from scratch | Only Wave 6 executed by runner and executor |
+| **Upstream Artifacts** | Authored fresh during execution | 8 W1/W2 outputs verified and imported under target lock |
+| **Target State (`state.json`)** | Truthfully records waves 1..N | Truthfully records **Wave 6 only** (`completed_waves: [6]`) |
+| **Provenance Record** | Direct spoke execution receipts | `.brandmint/cache/upstream-import.json` + W6 receipts |
+| **Source Run Protection** | N/A | Source files/state are immutable and read-only |
+
+### Strict Preflight Verification Rules
+
+Before launching the runner or making any network calls, `--upstream-run` performs extensive preflight validation under the target directory lock:
+
+1. **Wave Constraint**: `--upstream-run` is strictly restricted to `waves=6` (`--waves 6`). Any other wave selection is rejected with a descriptive error.
+2. **Fresh Target Guard**: The target directory must have a clean state (no pre-existing outputs or prompts in `.brandmint/`).
+3. **Source State Verification**: The upstream run must contain `.brandmint/state.json` recording completed waves 1 and 2, plus all 8 W1/W2 skills in `completed_skills`. A failed upstream Wave 6 is tolerated only because Waves 1 and 2 completed and verified.
+4. **Target & Source Compatibility**:
+   - Upstream brand name, root domain/website/url, nested company.website and brand name/slug, and gates must match the target `brand-config.yaml` exactly (cross-brand continuation is strictly prohibited).
+   - Upstream research dossier SHA256 must match the target research dossier SHA256.
+5. **Output & Receipt Cryptographic Verification**:
+   - Exactly eight W1/W2 outputs are verified: `brand-foundation`, `buyer-persona`, `competitor-analysis`, `value-proposition` (Wave 1) and `brand-story`, `messaging-framework`, `product-positioning`, `voice-and-tone` (Wave 2).
+   - Each output must have `status: "complete"`, `data.draft_only: true`, `data.operational_readiness: "held"`, and pass envelope and semantic schema validations.
+   - Each receipt must have `status: "complete"`, `network_call: true`, `gate_rejected: false`, valid result, and recomputed SHA256 hashes matching the output, source config, and source dossier.
+   - Whole-checkpoint snapshot re-reads detect changed output, receipt, config, state or dossier before any target copy; still-running sources and failed required upstream skills are rejected.
+6. **Atomic Import & Manifest**:
+   - Only the 8 validated outputs are copied into the target `.brandmint/outputs/`. No source content failures or extra outputs are imported.
+   - The executor writes `.brandmint/cache/upstream-import.json` recording exact source paths, SHA256 digests, validation receipts, and import timestamp with zero credential leakage.
+   - Target `state.json` is never manually modified or populated with fake completion markers; it truthfully reflects Wave 6 execution.
+
+---
+
+## Competitor Analysis Output Contract
+
+Competitor analysis (`competitor-analysis`) output validation enforces grounded market research:
+
+1. **Named Candidates**: `data.competitors` must contain at least 2 distinct named competitor objects.
+2. **Cited Source URLs**: Each competitor object must specify a valid cited HTTP URL in `source_url` (or `url`, `source`, `link`) matching source URLs grounded in the research dossier.
+3. **Unverified Comparison Labelling**: Any unverified market positioning or comparisons must be explicitly flagged in `data.uncertainties`.
+4. **Draft and Hold Gates**: Outputs must maintain `data.draft_only: true` and `data.operational_readiness: "held"`.
+
+Parent review5October: strict nested identity and terminal-source checks, late-checkpoint mutation guard and full source-state/receipt hash provenance added. Prospect-facing wording excludes internal audit and integration details. The34 prior upstream drafts remain strategy proposals requiring the editorial corrections in `.planning/AXTECH-EDITORIAL-REVIEW-20261005.md`; import validation is technical provenance acceptance, not editorial/owner approval.
