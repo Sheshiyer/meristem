@@ -68,6 +68,8 @@ Source reconciliation precedes runner verification. Historical asset packages an
 
 ## Decisions
 
+- 2026-10-05: refined: The user clarified that projects, brands and ecosystem have already been mapped/imported in the Snow Gloves Claude session. Review the actual import and source locations first. Subsequent mapping links offers/data/workflows to those existing records; it must not reconstruct the portfolio or restart a generic brand interview.
+
 Preserve the original brand packages without silently rewriting source claims. Record qualifications in new provenance/readiness documents. Iverif seed material exists; current claim approval, evidence refresh and wiki application packaging remain incomplete.
 
 ## Changelog
@@ -75,6 +77,8 @@ Preserve the original brand packages without silently rewriting source claims. R
 2026-09-27: Source release completed through PR #2 (`05b4853`). The prepared and merged trees match exactly; primary main was clean and synchronized. Earlier worktree-only release holds are closed, while brand/publication/runtime gates remain open.
 
 ## Verification
+
+- AX-ISC-11: Local Git/session/file probes — actual Claude session 3a5d2bc5 lines609/1141 and its continuation identify the private-data import; commit63abb85 contains143 files,139 with identical pre-split Git blobs. Current registry/portfolio/project/graph and explicit data-reader paths resolve. Current capability catalog135cards/7agents/9adapters/8connectors inspected. Local review receipt and revised register readback pass; existing148 questions remain source-linked. Source-owner checkouts were not edited by this review; concurrent Claude gateway changes are preserved.
 
 All three runner suites passed under Bash 5.3 and macOS Bash 3.2. Each runner/test/planning shell file passed syntax checking with both interpreters. All 173 tracked brand JSON files parse; 19 available Cambium/Fitcheck/Iverif asset hashes match. Thoughtseed has 44 existing references, including 24 external host paths without stored hashes; this remains a portability limitation. New runtime, tests and reconciliation documents pass base-to-head whitespace checks. Inherited archival generated-source whitespace is preserved intentionally. Both checkpoint tips are ancestors. See `.local/review-ready.md` for scope, route attribution and release boundaries.
 
@@ -95,6 +99,7 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [ ] AX-ISC-8: No Explee start, send, budget increase, public social publish, secret/provider migration or unapproved live-data write occurs.
 - [x] AX-ISC-9: Current Snow Gloves Claude intake and source ownership are reconciled before further portfolio research, ingestion or adapter work; duplicate-work risks and reuse paths are recorded.
 - [x] AX-ISC-10: One source-linked planning register covers all existing tenant questions plus cross-brand operating decisions, distinguishes settled answers from human decisions and technical verification, and records the user's per-brand/umbrella and deterministic-catalog direction before further mapping.
+- [x] AX-ISC-11: The actual Snow Gloves import and current project/brand/ecosystem source locations are verified and the planning queue explicitly reuses that structural mapping.
 
 ### Current verification — 2 October 2026
 
