@@ -88,6 +88,7 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [x] AX-ISC-3.1: Six actual first-run tracer attempts have runner state and provider/gate receipts; failed and partial runs are not marked complete.
 - [ ] AX-ISC-3.2: Five evidenced brands complete the scoped research, strategy and content draft waves; Symphonics remains an explicit identity hold.
 - [x] AX-ISC-4: B2B MEP segmentation includes sole traders and deduplicates verified mixed activities.
+- [ ] AX-ISC-4.1: One SIREN retains every establishment/location/source observation idempotently; contradictory geography is held and provenance is not mixed.
 - [ ] AX-ISC-5: Per-brand marketing and social draft artifacts cite validated inputs and preserve claim boundaries.
 - [x] AX-ISC-6: ERP, Vapi, Explee and social contracts are mapped; configured, source, synthetic and live evidence are distinguished.
 - [ ] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
@@ -110,3 +111,11 @@ AX-ISC-4: Current CLI107tests and strict typecheck passed. Independent final acc
 AX-ISC-6: Current read-only ERP MCP SELECT1 succeeded again. The2October schema/aggregate audit remains dated; no individual contacts or writes were queried. Source template rationale for Kartezzi now matches furniture/joinery/decorative materials/integrated lighting, independently read back.
 
 Refined: strategy must position before voice. Five v3attempts are terminal failed; missing dependencies, partial drafts and malformed JSON remain preserved. Current source repair is on the Build combo, and a fresh Perplexity probe is pending. No existing failed state is rewritten.
+
+### Source repair and fresh attempts — 5 October 2026
+
+AX-ISC-3/3.2: Source commitf75cb05 corrects positioning-before-voice and positioning's actual brand-foundation prerequisite. Parent repaired the new regression for macOSBash3.2 and checked both Bash interpreters; all6shellsuites and43Python tests pass. Complete andpartialdrafts keep operational_readinessheld, including localidentityfailure outputs. Freshv4fivebrandjobs are launched; no successful wave completion claimed yet. Buildtransport ran via noesis-build; finalphysical/sessionattribution is UNRESOLVED, not a verified vendor identity.
+
+AX-ISC-4.1: RegionalextensionBuild18033 and parent118tests/typecheckpass, but independent15-caseprobe reported7provenance/contradiction failures. The independent report turn hit modelcapacity before delivering a durable report. Current residualBuild66317 addresses these exact defects. The extension remains unaccepted despite green fixture tests.
+
+AX-ISC-6: Actual5OctoberExpleeGETs show project43522/heyzack.ai, dailybudget0, currentcampaigns0 and sends/replies/hotleads/spend0. Autopilot andautoreplysettingsareenabled; unchangedbyagent. Current sixbrandplans are allheld with onlyHeyZackprojectbound. Fresh PerplexityHTTP200stillSignups; fresh SymphonicsDNSfails, FirecrawlemptyHTTP200, exactExaquery0results. No providerconfigurationchange.
