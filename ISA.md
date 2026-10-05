@@ -2,7 +2,7 @@
 schema: thoughtseed.isa.v1
 project: meristem
 effort: E3
-updated_at: 2026-09-27
+updated_at: 2026-10-05
 phase: execute
 ---
 
@@ -12,11 +12,11 @@ Two preserved branches contain overlapping brand packages and shared coordinator
 
 ## Vision
 
-A reviewed source integration that preserves recovery history and makes completion depend on evidence. Fresh generation and public brand release remain separate future actions.
+A source-grounded Axtech portfolio workflow that researches each brand, produces France-specific B2B drafts by relevant trade, and verifies the actual ERP, Explee, Vapi and social contracts before activation. Historical source reconciliation and all failed attempts remain recoverable.
 
 ## Goal
 
-Integrate both checkpoint histories, repair coordinator completion semantics, retain valid bilingual instructions, verify synthetic behavior and brand source integrity, and document actual remaining boundaries before the parent reviews a merge.
+Run a fresh, source-grounded Meristem research and marketing workflow for Axtech, HeyZack, Kartezzi, Ecoled Europe, Wave Concept and Symphonics using configured Perplexity, Exa and Firecrawl through OmniRoute. Preserve each brand's actual offer, qualify France/region targeting and verify ERP/Vapi/Explee/social end-to-end contracts before any activation or publication. The prior source reconciliation is closed historical work; current draft and operational criteria below govern this run.
 
 ## Principles
 
@@ -26,7 +26,15 @@ Integrate both checkpoint histories, repair coordinator completion semantics, re
 - Host configuration, credentials and execution traces stay local.
 - Explicit return checks must remain reliable when Bash functions run in conditional contexts.
 
-## Scope and constraints
+## Out of Scope
+
+No campaign activation/import/send, budget increase, public social publication, ERP write, provider configuration migration, new identity/media generation or live calls are authorized in this preparation run. B2C marketplace and short-stay/ESAC campaigns are separate future lanes; their contract requirements may be mapped, but they do not enter the current B2B MEP target pool.
+
+## Constraints
+
+The connected custom Axtech ERP MCP is authorized for read-only reference use. Legal sender, brand/business-unit ownership, suppression/consent, durable event IDs, idempotency and terminal writeback require actual contracts rather than assumptions. A completed internal draft never implies operational acceptance or owner approval. NAF is a discovery hint; headquarters location does not prove service coverage.
+
+## Historical source scope and constraints
 
 Implementation was isolated from the primary checkout. The parent completed authorized source release through reviewed PR #2; no live generation, NotebookLM publication, delivery, deployment or organ activation is included. Substantial implementation used the Build rail, with provider attribution explicitly unresolved. The earlier August enrollment ISA is superseded for this reconciliation; no claim is made about Superset registration or current host runtime readiness.
 
@@ -43,7 +51,7 @@ Implementation was isolated from the primary checkout. The parent completed auth
 - [x] ISC-9: Shell syntax and changed-file whitespace checks pass; exact tests/risks are recorded for review.
 - [x] ISC-10: Remote source release uses a reviewed, pinned-head PR; provider generation, publication, campaign and deployment remain outside this task.
 
-## Test strategy
+## Test Strategy
 
 | Criterion | Verification |
 |---|---|
@@ -54,7 +62,7 @@ Implementation was isolated from the primary checkout. The parent completed auth
 | ISC-9 | `bash -n`, `git diff --check`, local review receipt |
 | ISC-10 | Scoped operation record; no runtime acceptance inferred |
 
-## Features and dependencies
+## Features
 
 Source reconciliation precedes runner verification. Historical asset packages and bilingual instruction refinements are independently reviewable; neither grants execution authority. Release follows parent review rather than automatic next-wave dispatch.
 
@@ -79,7 +87,7 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [ ] AX-ISC-3: Per-brand Meristem prompts and outputs are advanced through the actual runner with honest tracer and completeness states.
 - [x] AX-ISC-3.1: Six actual first-run tracer attempts have runner state and provider/gate receipts; failed and partial runs are not marked complete.
 - [ ] AX-ISC-3.2: Five evidenced brands complete the scoped research, strategy and content draft waves; Symphonics remains an explicit identity hold.
-- [ ] AX-ISC-4: B2B MEP segmentation includes sole traders and deduplicates verified mixed activities.
+- [x] AX-ISC-4: B2B MEP segmentation includes sole traders and deduplicates verified mixed activities.
 - [ ] AX-ISC-5: Per-brand marketing and social draft artifacts cite validated inputs and preserve claim boundaries.
 - [x] AX-ISC-6: ERP, Vapi, Explee and social contracts are mapped; configured, source, synthetic and live evidence are distinguished.
 - [ ] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
@@ -94,3 +102,11 @@ AX-ISC-6: User connected the custom Axtech ERP MCP for read-only references. Fif
 AX-ISC-4/7: Local CLI107tests and strict typecheck pass after residual corrections. Independent stable review passed72/73focusedstdout checks; the remaining uppercase-HTTP-scheme P2 is corrected with a regression test, final readback pending. Fresh official Annuaire shape confirmed nested headquarters geography and total_results; mapper/tests corrected. Meristem33Python tests and6shell suites pass, including dependency filtering. Actual v3 generation now exposed incorrect voice/positioning ordering and draft-versus-launch status ambiguity.
 
 Decision: Operator communication is English; prospect copy remains French vous. The research providers remain explicitly Exa/Firecrawl via OmniRoute, with Perplexity's semantic sign-in failure recorded. Structured draft authoring uses configured noesis-write after noesis-research returned conversational announcements. Gateway response metadata reports composer-2.5; physical provider resolution is unverified. Advisor was attempted through Inference.ts and timed out after30s; no successful advisor verdict is claimed.
+
+### Verified continuation — 5 October 2026
+
+AX-ISC-4: Current CLI107tests and strict typecheck passed. Independent final acceptance12/12offlineprobes passed for uppercase/mixed HTTP export, real contact tuple preservation, official-shaped Annuaire headquarters/pagination mapping, NAF-only export hold, original archival receipt rejection and six brand-held plans. Earlier72/73matrix defects are resolved. A fresh official registry5company sample traversed discover→classify→export:5heldresearchcandidates,0import leads; department and region retained. No all-France coverage is claimed. See standalone agent docs/STEWARD-ACCEPTANCE.md and receipts/annuaire-electricity-20261005*.
+
+AX-ISC-6: Current read-only ERP MCP SELECT1 succeeded again. The2October schema/aggregate audit remains dated; no individual contacts or writes were queried. Source template rationale for Kartezzi now matches furniture/joinery/decorative materials/integrated lighting, independently read back.
+
+Refined: strategy must position before voice. Five v3attempts are terminal failed; missing dependencies, partial drafts and malformed JSON remain preserved. Current source repair is on the Build combo, and a fresh Perplexity probe is pending. No existing failed state is rewritten.
