@@ -94,6 +94,7 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [x] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
 - [ ] AX-ISC-8: No Explee start, send, budget increase, public social publish, secret/provider migration or unapproved live-data write occurs.
 - [x] AX-ISC-9: Current Snow Gloves Claude intake and source ownership are reconciled before further portfolio research, ingestion or adapter work; duplicate-work risks and reuse paths are recorded.
+- [ ] AX-ISC-10: One source-linked planning register covers all existing tenant questions plus cross-brand operating decisions, distinguishes settled answers from human decisions and technical verification, and records the user's per-brand/umbrella and deterministic-catalog direction before further mapping.
 
 ### Current verification — 2 October 2026
 
@@ -148,3 +149,11 @@ AX-ISC-6: Two fresh bounded5October ERPSELECTs revalidated active ECOLED3,Wave4,
   refuted by: Current Snow Gloves founder intake006ec915 records nine direct operating branches plus AXIO and three projects, with source/indexing gaps and proposed sharing contracts.
   learned: Reuse the current operating map and existing research independently; data ingestion, interpretation, draft execution and delivery have different evidence requirements.
   criterion now: AX-ISC-9 verifies current Snow Gloves intake reuse before further portfolio research or ingestion.
+
+### Planning interview — 5 October 2026
+
+- User requested a review of all unanswered planning questions before further mapping. The current queue starts with AX-ISC-10; regional correction and editorial acceptance remain open and are deferred during this intake review.
+- Confirmed by user: prepare a separate plan for each brand and an Axtech umbrella plan; reuse existing marketing skills, graphs and flows. Product catalog facts should come from deterministic, structured data rather than chat-generated data.
+- Partial answer: this direction settles plan structure and the catalog principle; it does not yet choose the commercial outcome, first sellable offer or call to action for each brand.
+- Pending clarification: the exact system/schema/repository/MCP reference meant by "JEV models integration". A clarification is already pending; do not invent or substitute a named integration.
+- Existing HeyZack Lite structured variant/SKU, snapshot-validation and quantity-rule code is a source reuse candidate, not a group catalog authority or live integration acceptance.
