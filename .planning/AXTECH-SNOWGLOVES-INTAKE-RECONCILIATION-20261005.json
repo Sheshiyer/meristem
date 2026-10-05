@@ -1,0 +1,297 @@
+{
+  "schema": "axtech.snowgloves-intake-reconciliation.v1",
+  "observed_at": "2026-10-05T09:14:36.518067+00:00",
+  "evidence_class": "read_only_local_source_and_session_review",
+  "snowgloves_head": "006ec915aeadaa6ba80aca6c6b7e85f40fdbf1e7",
+  "snowgloves_status_before_receipt": "",
+  "source_manifest": [
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/founder-intake-2026-10-05.md",
+      "sha256": "bc0048c5337f2ed65584faba7b5318fdfea9b1bcff1d3b35833de4be9d46a532",
+      "bytes": 4308
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/portfolio-map-proposal.json",
+      "sha256": "b9c967ec70ffb98976a224b86d9e345b072059c4c92db3dc48e4ac0228254bd8",
+      "bytes": 6847
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/organization.json",
+      "sha256": "63a94cb6a6801b9bce769bb9e343e72bce69892b17944259e93c43e3500dd92a",
+      "bytes": 1507
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/readiness.json",
+      "sha256": "a9a7b6f9ab88a3fee676fada7cc5ccc14583de02416af8b8e9c24db7c3ec7468",
+      "bytes": 346
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/spec.md",
+      "sha256": "561ed58e7acd7271e75f00d1a1dd8853bc99ba7f248f16ed6ff7a676aeeb1ad5",
+      "bytes": 2538
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/plan.md",
+      "sha256": "c1d29a77ae4a4632f56427c13808fa9ff167f50e7dc83a9903e925b15daaabe2",
+      "bytes": 1185
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/specs/006-editorial-steward-integration/tasks.md",
+      "sha256": "3982dcc96b3e72f264af41427403d3868df7036571808a9c9f1be850da9189f5",
+      "bytes": 643
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/docs/PORTFOLIO-ORG-MAP.md",
+      "sha256": "2ca86e54beb2c1ff50c2366ac547946ec0cb1ca237328fffe8ccf78e7b68602d",
+      "bytes": 2031
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/docs/architecture/knowledge-ingest.md",
+      "sha256": "ddb07b84e7f8dbf932d1d29b3c4b8c0e654af6328264f0b37bc15829cc0ea55a",
+      "bytes": 2337
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/docs/onboarding.md",
+      "sha256": "5a5981887b9c42e4442ee403934db8ef63e7c2b3ca0bb1ed1d0869f62a6bc1b0",
+      "bytes": 7810
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/docs/AXTECH-REMOTE-WORKSPACE-DRAFT.md",
+      "sha256": "130d880ee88c5607afd810ee71e7d9ae857f075dcd35f7eb5d7df17bc13fd3c8",
+      "bytes": 7035
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/.planning/EDITORIAL-INTEGRATION-HANDOFF.json",
+      "sha256": "96269f5e382aa310bb26a5d4943fcf3a0ca4be5c3afad841dbad04797661f4e2",
+      "bytes": 713
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/docs/fleet/HANDOFF-2026-10-05.md",
+      "sha256": "c0b05b55900540e6fbcefd6f6f3bf60e7b4a74e2be70084ceaf52e87d1ee5a95",
+      "bytes": 14697
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/scripts/onboard.py",
+      "sha256": "808bf2c0d22b969b0b65ce44545ac4eded3c2e64f210f692f08ce75d03310cf8",
+      "bytes": 31898
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/scripts/ingest.py",
+      "sha256": "5f67a631464755d8f60d0dc08e4a4c2973127b02cf042660fb8495e6d2d203af",
+      "bytes": 1991
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/scripts/lib/gtm.py",
+      "sha256": "d045fce51a7756153e962ef759c052d73f4f2da701f54c29d447039959063035",
+      "bytes": 4880
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/workflows/skill-hooks.yaml",
+      "sha256": "399a6bf2fd00b4c2787716dfec211b27a1a037e9399b93e0caa458539cdb3056",
+      "bytes": 4406
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/tenants/heyzack/sources.yaml",
+      "sha256": "0eee07d5326924be9a12065bfce956ff530f9f9742cab015e4c8a7cdd95068b0",
+      "bytes": 335
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/tenants/heyzack/enabled.yaml",
+      "sha256": "2acbe38c4e0b79255cf6772ef082e3cf41793e46e8c9a4b823379473b056bbba",
+      "bytes": 6130
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/snow-gloves-os/tenants/axio/context/open-questions.md",
+      "sha256": "a546b6bdd7cc1ab7034e08e160fddd00928ebca2bb29dde603e144c2297d91de",
+      "bytes": 1237
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/DOSSIER.md",
+      "sha256": "90877d3d62eea1771b9cf96547e3bfcddf698bfd13ed24376e6f6cede6bacd96",
+      "bytes": 11117
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+      "sha256": "18bc61d9395fe0d599b152951c7414e3544cedbd0f069bc4e7d4697cc4a681c8",
+      "bytes": 34103
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/DOSSIER.md",
+      "sha256": "8a1cefe8f3301e7c5c2c949d933ae7ce75bb54b254476a81361533fe37b6132b",
+      "bytes": 9944
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+      "sha256": "6180b55f1f500360a8168ae6babfd76b177c953aca1c5b4ebc10c3688f9f875a",
+      "bytes": 26200
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/DOSSIER.md",
+      "sha256": "6bff9fc84a55e400406b8355e2a1f52d9876eb46195c41f294095cb35e3019ec",
+      "bytes": 8452
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+      "sha256": "d4b86fc9bfb3fa1d68955e187ba35f2d874f2f6e269a020a44155481ef762323",
+      "bytes": 21260
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/DOSSIER.md",
+      "sha256": "70b4c9e16a236c8904bed4e0ec69d3a2eb9da4741b7488ce48a3b5ebcc6965ed",
+      "bytes": 9661
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/evidence.json",
+      "sha256": "e62403cd2c266c3c5d790f7ea5d4e47eb092d994880f1eca04f842f4d06c4047",
+      "bytes": 22111
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/wave-concept/research/DOSSIER.md",
+      "sha256": "1a9a2a0e87b394247011aeb684a21d998ab980e3ec7b8dbfb02e76ba71c1b99f",
+      "bytes": 10894
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/wave-concept/research/evidence.json",
+      "sha256": "23a1d86551c298dcf137f0dafe4a8c461fba5b41db70b37cfa8e6ea301938def",
+      "bytes": 34170
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/symphonics/research/DOSSIER.md",
+      "sha256": "6eb9bdafdbf90ae0441d85112dffee468552fff58a8d3b59b29e7c8f9d980057",
+      "bytes": 7009
+    },
+    {
+      "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/symphonics/research/evidence.json",
+      "sha256": "65ed5c6ebe8bcec6fb46152434e9437da56e50a18e88156b5f0fb361b03ff63c",
+      "bytes": 18777
+    }
+  ],
+  "claude_session_references": [
+    {
+      "session_id": "3a5d2bc5-cf7d-4371-8bca-cb09d4963ee2",
+      "path": "/Users/sheshnarayaniyer/.claude/projects/-Volumes-madara-2026-Projects-thoughtseed-snow-gloves-os/3a5d2bc5-cf7d-4371-8bca-cb09d4963ee2.jsonl",
+      "snapshot_sha256": "37479ee4a8fa90402bbac55f0d82e2af96a640ddea7d4cd2d66427c16dba0ada",
+      "snapshot_bytes": 7276428,
+      "note": "Local source reference only; active transcript may append. No raw messages copied."
+    },
+    {
+      "session_id": "6e174725-9c4a-4316-a7e7-f5d73eb6bb5c",
+      "path": "/Users/sheshnarayaniyer/.claude/projects/-Volumes-madara-2026-Projects-thoughtseed-snow-gloves-os/6e174725-9c4a-4316-a7e7-f5d73eb6bb5c.jsonl",
+      "snapshot_sha256": "27c8b9da76738a7a8a944048b4894f0b4b9e8f0907c703737e0d3bd4eb883738",
+      "snapshot_bytes": 5032986,
+      "note": "Local source reference only; active transcript may append. No raw messages copied."
+    }
+  ],
+  "tenant_artifact_matrix": [
+    {
+      "tenant": "axtech",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "heyzack",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": true
+    },
+    {
+      "tenant": "ecoled",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "kartezzi",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "wave-concept",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "sunfeed",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "cee-management",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "china-sourcing",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "metagration",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    },
+    {
+      "tenant": "axio",
+      "context_file_count": 7,
+      "context_files_with_FILL": 7,
+      "ingest_plan_present": false,
+      "vector_index_present": false,
+      "enabled_record_present": false
+    }
+  ],
+  "crosswalk": {
+    "ecoled-europe": "ecoled",
+    "wave-concept": "wave-concept",
+    "symphonics": null
+  },
+  "branch_count": {
+    "direct_under_axtech": 9,
+    "under_metagration": 1,
+    "root_excluded": true
+  },
+  "private_ops_local_checkout_present": false,
+  "independent_source_audit": "completed_read_only; findings reconciled; its wave alias wording corrected to actual package slug wave-concept",
+  "advisor": "failed_timeout_30000ms; no acceptance",
+  "review_actions": {
+    "snowgloves_writes": 0,
+    "ingest_runs": 0,
+    "embedding_runs": 0,
+    "new_research_runs": 0,
+    "erp_calls": 0,
+    "explee_mutations": 0,
+    "vapi_calls": 0,
+    "publications": 0,
+    "external_thread_messages": 0
+  },
+  "preexisting_authoring": "Previously launched inference left intact; not attributed to this read-only review.",
+  "local_contract_probe_revalidated": {
+    "checks_passed": 9,
+    "actual_erp_roundtrip": false,
+    "all_stored_artifact_hashes_match": true
+  }
+}

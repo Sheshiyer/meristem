@@ -1,0 +1,625 @@
+{
+  "schema": "axtech.editorial-campaign-drafts.v1",
+  "brand": "Ecoled Europe",
+  "slug": "ecoled-europe",
+  "created_at_utc": "2026-10-05T08:58:50.419854+00:00",
+  "artifact_type": "editorial_derivative",
+  "runner_output": false,
+  "claimed_runner_waves": [],
+  "status": "internally_authored_source_reviewed_draft",
+  "owner_approval": "pending",
+  "independent_editorial_acceptance": "pending",
+  "operational_readiness": "held",
+  "languages": {
+    "operator_metadata": "en",
+    "prospect_copy": "fr-FR",
+    "address": "vous"
+  },
+  "scope": {
+    "current_mep_lane": true,
+    "wave_mobile_retail_separate_future_lane": false,
+    "send": false,
+    "publish": false,
+    "explee_import": false,
+    "vapi_call": false,
+    "erp_write": false,
+    "marketplace_listing": false,
+    "professional_portfolio_draft": true,
+    "interior_agencement_lane": false
+  },
+  "provenance": {
+    "method": "Editorial derivative authored through marketing:content-creation after reading the canonical dossiers/ledgers and the completed upstream context listed here. Offer facts are attributed; strategic audience/intake choices remain hypotheses. This does not alter raw runner outputs or state.",
+    "inputs": [
+      {
+        "kind": "research_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/DOSSIER.md",
+        "sha256": "6bff9fc84a55e400406b8355e2a1f52d9876eb46195c41f294095cb35e3019ec"
+      },
+      {
+        "kind": "canonical_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "sha256": "d4b86fc9bfb3fa1d68955e187ba35f2d874f2f6e269a020a44155481ef762323"
+      },
+      {
+        "kind": "editorial_rejection_report",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.planning/AXTECH-EDITORIAL-REVIEW-20261005.md",
+        "sha256": "d93ea322ea26a3b47a5e888174d2f484fd1aab657cf94aa745a00cf00c34590d"
+      },
+      {
+        "kind": "marketing_skill_method",
+        "path": "/Users/sheshnarayaniyer/.codex/plugins/cache/claude-cowork/marketing/1.1.0/skills/content-creation/SKILL.md",
+        "sha256": "e0145f84827b8529df1a028e5b7c0ec7a5c3bda3516228f8a013537a13227900"
+      }
+    ],
+    "upstream_artifact_refs": [
+      {
+        "kind": "completed_runner_draft_context",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/authoring-v5-20261005/ecoled-europe/.brandmint/outputs/product-description.json",
+        "sha256": "2a31087e015d16ca002b1c4509f1a4f34c0e3026cd477592c0963f89449db1a7",
+        "json_pointer": "/data/core_info",
+        "use": "Offer-context comparison only. Actual copy is newly authored from the canonical first-party offer ledger. Internal audit language, unsupported comparisons and any implied approval are rejected.",
+        "approval_transferred": false,
+        "runner_completion_claim": "Only this existing artifact reports complete; no wave completion inferred."
+      }
+    ],
+    "rejected_patterns": [
+      "Internal source/audit/ERP/hold caveats in prospect bodies",
+      "Unsupported competitor generalizations",
+      "New brand identities/taglines",
+      "Counted launch, scarcity and assumed opt-in/signup prose",
+      "Invented people, testimonials, prices, savings, stock, certification, deadlines or guaranteed coverage"
+    ]
+  },
+  "source_freshness": {
+    "research_snapshot_date": "2026-10-02",
+    "derivative_review_date": "2026-10-05",
+    "new_network_research_in_this_editorial_task": false,
+    "read_only_erp_connection_is_not_public_offer_evidence": true,
+    "upstream_legacy_connection_text_not_reused": true
+  },
+  "operator_holds": [
+    "Owner approval of wording and source-supported offer claims is pending.",
+    "Brand/legal sender, sending domain, reply mailbox and signature are unbound.",
+    "Actual relevant contact, professional role and suppression/customer/opportunity checks must precede any outreach.",
+    "No Explee import is authorized: an imported campaign may send automatically.",
+    "ERP is connected for read-only references; operational writes, consent/suppression events and terminal writeback are not accepted.",
+    "Vapi calling and durable terminal event/writeback are not accepted; no call is scheduled.",
+    "Social account binding, owner approval and publication are pending.",
+    "No geographic service coverage is proven by these sources; any project feasibility must be confirmed.",
+    "Any prospect tokens must resolve to verified current data or the optional clause must be omitted."
+  ],
+  "sender_and_signature": {
+    "sender_name": null,
+    "sender_role": null,
+    "brand_legal_entity_binding": null,
+    "from_email": null,
+    "reply_to": null,
+    "signature_text": null,
+    "implementation_hold": "Bind a real authorized sender and monitored mailbox; never synthesize personal identity, address, phone or signature."
+  },
+  "regionalization": {
+    "base": "National-neutral French wording; no service-area promise.",
+    "optional_opening": "Votre établissement est situé dans le département {{department}}.",
+    "allowed_if": "Actual establishment department is verified from the correct current SIRET record; do not use legal-headquarters geography as an installation coverage claim.",
+    "token_substitution": "department must be a verified readable French department name/code. Omit the whole sentence if absent, ambiguous or stale; never send a literal token.",
+    "approval_status": "pending",
+    "word_count_policy": "If the optional sentence is added, recheck total body length against the channel range; it must not add a second CTA.",
+    "fictional_persona_locale_used": false
+  },
+  "footer_policy": {
+    "id": "proposed_reply_opt_out",
+    "text": "Si vous préférez ne plus recevoir nos messages, dites-le-nous simplement en réponse.",
+    "status": "proposed_not_implemented",
+    "unsubscribe_url": null,
+    "implementation_gate": "Before use, verify the monitored reply inbox, identify opt-out replies, persist suppression across relevant brand campaigns, stop pending follow-ups and verify suppression before every send. This package implements no opt-out handling.",
+    "append_to_email_body": false
+  },
+  "email_variants": [
+    {
+      "id": "el-electricians",
+      "label": "Electricians",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Electrician",
+          "Electrical installation company"
+        ],
+        "required_need": "A professional lighting design, purchase or installation project.",
+        "exclude": [
+          "Plumbing-only",
+          "HVAC-only without lighting responsibility",
+          "Structural-only design"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-O1",
+          "EL-O2"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-O1": "first_party_claim",
+          "EL-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-H1"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Votre prochain lot éclairage LED",
+          "body": "Bonjour,\n\nVous préparez un lot éclairage pour des locaux professionnels ? Ecoled Europe propose des solutions LED et des études d’éclairage, avec conception optique, études photométriques et ingénierie de projet. L’offre concerne notamment les espaces architecturaux, industriels et commerciaux. Pour ouvrir l’échange, le besoin peut se décrire à partir de l’usage des locaux, des plans disponibles et des contraintes de pose.\n\nPouvez-vous nous décrire un projet d’éclairage sur lequel vous souhaitez échanger ?",
+          "body_word_count": 73,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire un projet d’éclairage sur lequel vous souhaitez échanger ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Les besoins de votre lot éclairage",
+          "body": "Bonjour,\n\nJe reviens vers vous au sujet de votre activité éclairage. Le type de local, les usages et les hauteurs disponibles sont des éléments utiles pour discuter d’une solution LED et du besoin d’étude photométrique.\n\nPouvez-vous nous indiquer les caractéristiques d’un projet que vous souhaitez examiner ?",
+          "body_word_count": 47,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous indiquer les caractéristiques d’un projet que vous souhaitez examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un échange sur un projet LED",
+          "body": "Bonjour,\n\nEcoled Europe propose de l’éclairage LED professionnel et des études d’éclairage pour des projets architecturaux, industriels et commerciaux. Si vous avez un lot à préparer, un premier échange peut porter sur les usages des locaux et les contraintes de l’installation.\n\nPouvez-vous nous transmettre un court descriptif du projet concerné ?",
+          "body_word_count": 51,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre un court descriptif du projet concerné ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    },
+    {
+      "id": "el-architects-lighting",
+      "label": "Architects and lighting specifiers",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Architect",
+          "Interior architect",
+          "Lighting specifier"
+        ],
+        "required_need": "Verified responsibility for a lighting concept or specification.",
+        "exclude": [
+          "Design responsibility unrelated to lighting"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-O1",
+          "EL-O2"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-O1": "first_party_claim",
+          "EL-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-H1"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "L’éclairage dans votre projet architectural",
+          "body": "Bonjour,\n\nL’éclairage participe à l’usage et à la lecture des espaces que vous concevez. Ecoled Europe propose des solutions LED professionnelles, de la conception optique et des études photométriques pour des projets architecturaux, industriels et commerciaux. Nous vous proposons un premier échange à partir de votre intention lumière, de l’usage des locaux et des plans disponibles, en tenant compte des contraintes du projet.\n\nPouvez-vous nous décrire un espace pour lequel vous souhaitez examiner le besoin d’éclairage ?",
+          "body_word_count": 77,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire un espace pour lequel vous souhaitez examiner le besoin d’éclairage ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Votre intention lumière",
+          "body": "Bonjour,\n\nJe reviens vers vous au sujet de l’éclairage dans vos projets. Une intention d’ambiance, l’usage d’un espace et ses dimensions constituent un point de départ pour discuter de solutions LED et du besoin d’étude photométrique.\n\nPouvez-vous nous préciser l’espace et l’intention lumière que vous souhaitez examiner ?",
+          "body_word_count": 48,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous préciser l’espace et l’intention lumière que vous souhaitez examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un espace à étudier en éclairage",
+          "body": "Bonjour,\n\nSi un de vos projets comporte un lot éclairage à préciser, Ecoled Europe propose des solutions LED professionnelles et des études d’éclairage. Le premier échange peut porter sur un espace précis et sur les usages que vous souhaitez accompagner.\n\nPouvez-vous nous transmettre quelques lignes sur le besoin concerné ?",
+          "body_word_count": 50,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre quelques lignes sur le besoin concerné ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    },
+    {
+      "id": "el-bet-lighting-electrical",
+      "label": "Engineering offices with lighting/electrical remit",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Electrical engineering office",
+          "Lighting engineering office",
+          "Fluid engineering office with documented lighting/electrical remit"
+        ],
+        "required_need": "Actual lighting/electrical study or evidenced lighting coordination responsibility.",
+        "exclude": [
+          "Fluid-only without electrical/lighting scope",
+          "Structural-only",
+          "Generic building-sector membership"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-O1",
+          "EL-O2"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-O1": "first_party_claim",
+          "EL-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-H1"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Étude photométrique et lot éclairage",
+          "body": "Bonjour,\n\nDans une étude d’éclairage, l’usage des locaux, leur géométrie et les contraintes d’implantation permettent de préciser le besoin. Ecoled Europe propose des solutions LED professionnelles, des études photométriques et de l’ingénierie de projet pour les espaces architecturaux, industriels et commerciaux. Nous vous proposons un premier échange sur le périmètre lumière de votre mission, à partir des informations déjà disponibles dans votre dossier.\n\nPouvez-vous nous décrire le lot éclairage que vous souhaitez examiner ?",
+          "body_word_count": 74,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire le lot éclairage que vous souhaitez examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Le périmètre de votre étude lumière",
+          "body": "Bonjour,\n\nJe reviens vers vous sur le besoin d’éclairage dans vos études. Les plans, les usages des locaux et les contraintes d’implantation peuvent servir de base à un échange sur les solutions LED et la photométrie.\n\nPouvez-vous nous préciser le périmètre lumière d’une affaire à examiner ?",
+          "body_word_count": 47,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous préciser le périmètre lumière d’une affaire à examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un besoin photométrique à discuter",
+          "body": "Bonjour,\n\nEcoled Europe propose des études d’éclairage et des solutions LED professionnelles. Si votre mission comprend un lot éclairage, nous vous proposons un premier échange sur les usages, les contraintes et le périmètre de l’étude à envisager.\n\nPouvez-vous nous transmettre un bref descriptif de votre besoin photométrique ?",
+          "body_word_count": 48,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre un bref descriptif de votre besoin photométrique ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    }
+  ],
+  "linkedin_posts": [
+    {
+      "id": "el-linkedin-1",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Lighting project question",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Quel usage doit accompagner l’éclairage de vos locaux ?\n\nEcoled Europe propose des solutions LED professionnelles, des études photométriques et de la conception optique. L’usage, les plans et les contraintes du projet permettent de préciser le besoin lumière.\n\nDécrivez-nous un espace dont vous souhaitez examiner l’éclairage.",
+      "word_count": 46,
+      "primary_cta": "Décrivez-nous un espace dont vous souhaitez examiner l’éclairage.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-O1",
+          "EL-O2"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-O1": "first_party_claim",
+          "EL-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "el-linkedin-2",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Real lighting-study offer",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Votre projet nécessite-t-il une étude d’éclairage ?\n\nL’offre Ecoled Europe associe solutions LED, conception optique et études photométriques pour les espaces architecturaux, industriels et commerciaux. Le premier échange peut porter sur le périmètre lumière de votre projet.\n\nPrécisez-nous le besoin d’étude que vous souhaitez discuter.",
+      "word_count": 45,
+      "primary_cta": "Précisez-nous le besoin d’étude que vous souhaitez discuter.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-O1",
+          "EL-O2"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-O1": "first_party_claim",
+          "EL-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "el-linkedin-3",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Electrical engineering brief",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Quelles contraintes encadrent votre lot éclairage ?\n\nUsage des locaux, géométrie, implantation et intentions lumière sont des éléments à discuter avec les prescripteurs et installateurs. Ecoled Europe propose des solutions LED professionnelles et des études d’éclairage.\n\nTransmettez-nous un court descriptif du lot à examiner.",
+      "word_count": 44,
+      "primary_cta": "Transmettez-nous un court descriptif du lot à examiner.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "claim_ids": [
+          "EL-O1",
+          "EL-O2"
+        ],
+        "source_ids": [
+          "ecoled-europe:firecrawl"
+        ],
+        "claim_classifications": {
+          "EL-O1": "first_party_claim",
+          "EL-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    }
+  ],
+  "suggested_calendar": {
+    "span_days": 14,
+    "start_date": null,
+    "calendar_is_schedule": false,
+    "entries": [
+      {
+        "day": 1,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Review sender, evidence and audience relevance",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 2,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 3,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "el-linkedin-1",
+        "scheduled": false
+      },
+      {
+        "day": 4,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 5,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 6,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 7,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 8,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "el-linkedin-2",
+        "scheduled": false
+      },
+      {
+        "day": 9,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 10,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 11,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 12,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 13,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "el-linkedin-3",
+        "scheduled": false
+      },
+      {
+        "day": 14,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      }
+    ]
+  },
+  "identity_hold": null,
+  "validation": {
+    "checked_at_utc": "2026-10-05T09:01:44.421239+00:00",
+    "json_serializable": true,
+    "email_word_ranges_pass": true,
+    "subjects_under_50_characters": true,
+    "canonical_references_resolve": true,
+    "provenance_hashes_recomputed": true,
+    "counts": {
+      "email_variants": 3,
+      "initial_emails": 3,
+      "followups": 6,
+      "email_messages": 9,
+      "linkedin_text_posts": 3,
+      "calendar_days": 14
+    },
+    "limits": "Validation confirms structural/reference/hash checks and self-review; it is not owner approval, operational acceptance, publication authority or automatic proof of every prose claim.",
+    "claim_source_correspondence_pass": true,
+    "upstream_json_pointers_exist": true,
+    "prospect_operational_comparison_launch_subscription_phrase_screen": "pass; regex screen plus source-based editorial self-review, not a substitute for independent approval",
+    "calendar_day_and_post_id_checks_pass": true,
+    "all_action_flags_false": true,
+    "raw_meristem_state_modified": false
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "axtech.editorial-campaign-drafts.v1",
+  "brand": "Symphonics",
+  "slug": "symphonics",
+  "created_at_utc": "2026-10-05T08:58:50.419854+00:00",
+  "artifact_type": "editorial_derivative",
+  "runner_output": false,
+  "claimed_runner_waves": [],
+  "status": "essential_identity_hold",
+  "owner_approval": "pending",
+  "independent_editorial_acceptance": "pending",
+  "operational_readiness": "held",
+  "languages": {
+    "operator_metadata": "en",
+    "prospect_copy": "fr-FR",
+    "address": "vous"
+  },
+  "scope": {
+    "current_mep_lane": false,
+    "wave_mobile_retail_separate_future_lane": false,
+    "send": false,
+    "publish": false,
+    "explee_import": false,
+    "vapi_call": false,
+    "erp_write": false,
+    "marketplace_listing": false,
+    "professional_portfolio_draft": false,
+    "interior_agencement_lane": false
+  },
+  "provenance": {
+    "method": "Editorial derivative authored through marketing:content-creation after reading the canonical dossiers/ledgers and the completed upstream context listed here. Offer facts are attributed; strategic audience/intake choices remain hypotheses. This does not alter raw runner outputs or state.",
+    "inputs": [
+      {
+        "kind": "research_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/symphonics/research/DOSSIER.md",
+        "sha256": "6eb9bdafdbf90ae0441d85112dffee468552fff58a8d3b59b29e7c8f9d980057"
+      },
+      {
+        "kind": "canonical_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/symphonics/research/evidence.json",
+        "sha256": "65ed5c6ebe8bcec6fb46152434e9437da56e50a18e88156b5f0fb361b03ff63c"
+      },
+      {
+        "kind": "editorial_rejection_report",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.planning/AXTECH-EDITORIAL-REVIEW-20261005.md",
+        "sha256": "d93ea322ea26a3b47a5e888174d2f484fd1aab657cf94aa745a00cf00c34590d"
+      },
+      {
+        "kind": "marketing_skill_method",
+        "path": "/Users/sheshnarayaniyer/.codex/plugins/cache/claude-cowork/marketing/1.1.0/skills/content-creation/SKILL.md",
+        "sha256": "e0145f84827b8529df1a028e5b7c0ec7a5c3bda3516228f8a013537a13227900"
+      }
+    ],
+    "upstream_artifact_refs": [],
+    "rejected_patterns": [
+      "Internal source/audit/ERP/hold caveats in prospect bodies",
+      "Unsupported competitor generalizations",
+      "New brand identities/taglines",
+      "Counted launch, scarcity and assumed opt-in/signup prose",
+      "Invented people, testimonials, prices, savings, stock, certification, deadlines or guaranteed coverage"
+    ]
+  },
+  "source_freshness": {
+    "research_snapshot_date": "2026-10-02",
+    "derivative_review_date": "2026-10-05",
+    "new_network_research_in_this_editorial_task": false,
+    "read_only_erp_connection_is_not_public_offer_evidence": true,
+    "upstream_legacy_connection_text_not_reused": true
+  },
+  "operator_holds": [
+    "Owner approval of wording and source-supported offer claims is pending.",
+    "Brand/legal sender, sending domain, reply mailbox and signature are unbound.",
+    "Actual relevant contact, professional role and suppression/customer/opportunity checks must precede any outreach.",
+    "No Explee import is authorized: an imported campaign may send automatically.",
+    "ERP is connected for read-only references; operational writes, consent/suppression events and terminal writeback are not accepted.",
+    "Vapi calling and durable terminal event/writeback are not accepted; no call is scheduled.",
+    "Social account binding, owner approval and publication are pending.",
+    "No geographic service coverage is proven by these sources; any project feasibility must be confirmed.",
+    "Any prospect tokens must resolve to verified current data or the optional clause must be omitted.",
+    "Essential brand identity, supplied-domain content and actual offer are missing; obtain owner-linked source before authoring."
+  ],
+  "sender_and_signature": {
+    "sender_name": null,
+    "sender_role": null,
+    "brand_legal_entity_binding": null,
+    "from_email": null,
+    "reply_to": null,
+    "signature_text": null,
+    "implementation_hold": "Bind a real authorized sender and monitored mailbox; never synthesize personal identity, address, phone or signature."
+  },
+  "regionalization": {
+    "base": "National-neutral French wording; no service-area promise.",
+    "optional_opening": "Votre établissement est situé dans le département {{department}}.",
+    "allowed_if": "Actual establishment department is verified from the correct current SIRET record; do not use legal-headquarters geography as an installation coverage claim.",
+    "token_substitution": "department must be a verified readable French department name/code. Omit the whole sentence if absent, ambiguous or stale; never send a literal token.",
+    "approval_status": "pending",
+    "word_count_policy": "If the optional sentence is added, recheck total body length against the channel range; it must not add a second CTA.",
+    "fictional_persona_locale_used": false
+  },
+  "footer_policy": {
+    "id": "proposed_reply_opt_out",
+    "text": "Si vous préférez ne plus recevoir nos messages, dites-le-nous simplement en réponse.",
+    "status": "proposed_not_implemented",
+    "unsubscribe_url": null,
+    "implementation_gate": "Before use, verify the monitored reply inbox, identify opt-out replies, persist suppression across relevant brand campaigns, stop pending follow-ups and verify suppression before every send. This package implements no opt-out handling.",
+    "append_to_email_body": false
+  },
+  "email_variants": [],
+  "linkedin_posts": [],
+  "suggested_calendar": {
+    "span_days": 0,
+    "start_date": null,
+    "calendar_is_schedule": false,
+    "entries": []
+  },
+  "identity_hold": {
+    "status": "essential_identity_and_offer_missing",
+    "requested_domain": "http://symphonics.heyzack.ai/",
+    "claim_ids": [
+      "SY-E1",
+      "SY-E2"
+    ],
+    "source_ids": [
+      "symphonics:firecrawl",
+      "symphonics:exa-results",
+      "symphonics:exa:6"
+    ],
+    "name_collision": "symphonics.ai is unrelated/unconfirmed and must not supply offer or copy.",
+    "required_inputs": [
+      "Owner-confirmed brand identity and affiliation",
+      "Usable official supplied-domain page or owner product brief",
+      "Actual offer and relevant professional audience"
+    ],
+    "copy_generated": false
+  },
+  "validation": {
+    "checked_at_utc": "2026-10-05T09:01:45.723576+00:00",
+    "json_serializable": true,
+    "email_word_ranges_pass": true,
+    "subjects_under_50_characters": true,
+    "canonical_references_resolve": true,
+    "provenance_hashes_recomputed": true,
+    "counts": {
+      "email_variants": 0,
+      "initial_emails": 0,
+      "followups": 0,
+      "email_messages": 0,
+      "linkedin_text_posts": 0,
+      "calendar_days": 0
+    },
+    "limits": "Validation confirms structural/reference/hash checks and self-review; it is not owner approval, operational acceptance, publication authority or automatic proof of every prose claim.",
+    "claim_source_correspondence_pass": true,
+    "upstream_json_pointers_exist": true,
+    "prospect_operational_comparison_launch_subscription_phrase_screen": "pass; regex screen plus source-based editorial self-review, not a substitute for independent approval",
+    "calendar_day_and_post_id_checks_pass": true,
+    "all_action_flags_false": true,
+    "raw_meristem_state_modified": false
+  }
+}

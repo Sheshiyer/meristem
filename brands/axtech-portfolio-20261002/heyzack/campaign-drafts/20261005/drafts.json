@@ -1,0 +1,701 @@
+{
+  "schema": "axtech.editorial-campaign-drafts.v1",
+  "brand": "HeyZack",
+  "slug": "heyzack",
+  "created_at_utc": "2026-10-05T08:58:50.419854+00:00",
+  "artifact_type": "editorial_derivative",
+  "runner_output": false,
+  "claimed_runner_waves": [],
+  "status": "internally_authored_source_reviewed_draft",
+  "owner_approval": "pending",
+  "independent_editorial_acceptance": "pending",
+  "operational_readiness": "held",
+  "languages": {
+    "operator_metadata": "en",
+    "prospect_copy": "fr-FR",
+    "address": "vous"
+  },
+  "scope": {
+    "current_mep_lane": true,
+    "wave_mobile_retail_separate_future_lane": false,
+    "send": false,
+    "publish": false,
+    "explee_import": false,
+    "vapi_call": false,
+    "erp_write": false,
+    "marketplace_listing": false,
+    "professional_portfolio_draft": true,
+    "interior_agencement_lane": false
+  },
+  "provenance": {
+    "method": "Editorial derivative authored through marketing:content-creation after reading the canonical dossiers/ledgers and the completed upstream context listed here. Offer facts are attributed; strategic audience/intake choices remain hypotheses. This does not alter raw runner outputs or state.",
+    "inputs": [
+      {
+        "kind": "research_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/DOSSIER.md",
+        "sha256": "8a1cefe8f3301e7c5c2c949d933ae7ce75bb54b254476a81361533fe37b6132b"
+      },
+      {
+        "kind": "canonical_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "sha256": "6180b55f1f500360a8168ae6babfd76b177c953aca1c5b4ebc10c3688f9f875a"
+      },
+      {
+        "kind": "editorial_rejection_report",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.planning/AXTECH-EDITORIAL-REVIEW-20261005.md",
+        "sha256": "d93ea322ea26a3b47a5e888174d2f484fd1aab657cf94aa745a00cf00c34590d"
+      },
+      {
+        "kind": "marketing_skill_method",
+        "path": "/Users/sheshnarayaniyer/.codex/plugins/cache/claude-cowork/marketing/1.1.0/skills/content-creation/SKILL.md",
+        "sha256": "e0145f84827b8529df1a028e5b7c0ec7a5c3bda3516228f8a013537a13227900"
+      }
+    ],
+    "upstream_artifact_refs": [
+      {
+        "kind": "completed_runner_draft_context",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/authoring-v5-20261005/heyzack/.brandmint/outputs/product-description.json",
+        "sha256": "0c2ff3121013d53e2c9ec35fd0bd0c5c898baa44d99ec8c32bead9dbb79a0488",
+        "json_pointer": "/data/core_info",
+        "use": "Offer-context comparison only. Actual copy is newly authored from the canonical first-party offer ledger. Internal audit language, unsupported comparisons and any implied approval are rejected.",
+        "approval_transferred": false,
+        "runner_completion_claim": "Only this existing artifact reports complete; no wave completion inferred."
+      }
+    ],
+    "rejected_patterns": [
+      "Internal source/audit/ERP/hold caveats in prospect bodies",
+      "Unsupported competitor generalizations",
+      "New brand identities/taglines",
+      "Counted launch, scarcity and assumed opt-in/signup prose",
+      "Invented people, testimonials, prices, savings, stock, certification, deadlines or guaranteed coverage"
+    ]
+  },
+  "source_freshness": {
+    "research_snapshot_date": "2026-10-02",
+    "derivative_review_date": "2026-10-05",
+    "new_network_research_in_this_editorial_task": false,
+    "read_only_erp_connection_is_not_public_offer_evidence": true,
+    "upstream_legacy_connection_text_not_reused": true
+  },
+  "operator_holds": [
+    "Owner approval of wording and source-supported offer claims is pending.",
+    "Brand/legal sender, sending domain, reply mailbox and signature are unbound.",
+    "Actual relevant contact, professional role and suppression/customer/opportunity checks must precede any outreach.",
+    "No Explee import is authorized: an imported campaign may send automatically.",
+    "ERP is connected for read-only references; operational writes, consent/suppression events and terminal writeback are not accepted.",
+    "Vapi calling and durable terminal event/writeback are not accepted; no call is scheduled.",
+    "Social account binding, owner approval and publication are pending.",
+    "No geographic service coverage is proven by these sources; any project feasibility must be confirmed.",
+    "Any prospect tokens must resolve to verified current data or the optional clause must be omitted."
+  ],
+  "sender_and_signature": {
+    "sender_name": null,
+    "sender_role": null,
+    "brand_legal_entity_binding": null,
+    "from_email": null,
+    "reply_to": null,
+    "signature_text": null,
+    "implementation_hold": "Bind a real authorized sender and monitored mailbox; never synthesize personal identity, address, phone or signature."
+  },
+  "regionalization": {
+    "base": "National-neutral French wording; no service-area promise.",
+    "optional_opening": "Votre établissement est situé dans le département {{department}}.",
+    "allowed_if": "Actual establishment department is verified from the correct current SIRET record; do not use legal-headquarters geography as an installation coverage claim.",
+    "token_substitution": "department must be a verified readable French department name/code. Omit the whole sentence if absent, ambiguous or stale; never send a literal token.",
+    "approval_status": "pending",
+    "word_count_policy": "If the optional sentence is added, recheck total body length against the channel range; it must not add a second CTA.",
+    "fictional_persona_locale_used": false
+  },
+  "footer_policy": {
+    "id": "proposed_reply_opt_out",
+    "text": "Si vous préférez ne plus recevoir nos messages, dites-le-nous simplement en réponse.",
+    "status": "proposed_not_implemented",
+    "unsubscribe_url": null,
+    "implementation_gate": "Before use, verify the monitored reply inbox, identify opt-out replies, persist suppression across relevant brand campaigns, stop pending follow-ups and verify suppression before every send. This package implements no opt-out handling.",
+    "append_to_email_body": false
+  },
+  "email_variants": [
+    {
+      "id": "hz-electricians",
+      "label": "Electricians and electrical installers",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Electrician",
+          "Electrical installer"
+        ],
+        "required_need": "A residential or commercial project with a relevant lighting, climate, energy or access-control need.",
+        "exclude": [
+          "Plumbing-only without a relevant documented control need",
+          "Structural-only design without relevant project coordination"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-H1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Pilotage sur vos chantiers électriques",
+          "body": "Bonjour,\n\nLorsque vous préparez une installation électrique, les besoins de pilotage peuvent concerner l’éclairage, le chauffage ou les accès, avec des contraintes propres au bâtiment. HeyZack propose des solutions d’automatisation pour les bâtiments résidentiels et commerciaux, autour de l’éclairage, du climat, de l’énergie et des accès. Pour votre activité, le point de départ peut être un chantier précis et les équipements déjà prévus.\n\nPouvez-vous nous décrire un projet sur lequel vous souhaitez examiner ces fonctions de pilotage ?",
+          "body_word_count": 78,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire un projet sur lequel vous souhaitez examiner ces fonctions de pilotage ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Quels équipements souhaitez-vous piloter ?",
+          "body": "Bonjour,\n\nJe reviens vers vous au sujet du pilotage sur vos chantiers électriques. Un éclairage par zone, une commande de chauffage ou la gestion des accès peuvent appeler des échanges différents selon les équipements prévus et le bâtiment.\n\nPouvez-vous nous indiquer la fonction que vous souhaitez examiner sur un prochain projet ?",
+          "body_word_count": 52,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous indiquer la fonction que vous souhaitez examiner sur un prochain projet ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un besoin de pilotage à examiner",
+          "body": "Bonjour,\n\nPour un projet électrique, le besoin peut se préciser à partir des usages attendus et de l’installation existante. HeyZack s’intéresse au pilotage de l’éclairage, du climat, de l’énergie et des accès dans les bâtiments résidentiels et commerciaux.\n\nSi le sujet concerne votre activité, pouvez-vous nous transmettre un bref descriptif du chantier ?",
+          "body_word_count": 53,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Si le sujet concerne votre activité, pouvez-vous nous transmettre un bref descriptif du chantier ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    },
+    {
+      "id": "hz-hvac",
+      "label": "HVAC installers",
+      "trade_eligibility": {
+        "primary_roles": [
+          "HVAC installer",
+          "Heating or air-conditioning installer"
+        ],
+        "required_need": "A documented climate-control need; compatibility and installation scope must be examined individually.",
+        "exclude": [
+          "Sanitary plumbing without a relevant control need",
+          "Assumed universal equipment compatibility"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-H1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Pilotage du chauffage et du climat",
+          "body": "Bonjour,\n\nSur un projet de chauffage ou de climatisation, la commande des équipements doit tenir compte de leur fonctionnement et de l’usage des locaux. HeyZack propose l’automatisation de bâtiments résidentiels et commerciaux, notamment autour du climat et de l’énergie. Nous vous proposons un premier échange sur les fonctions de pilotage recherchées, à partir des équipements présents ou prévus dans le projet.\n\nPouvez-vous nous indiquer un besoin de commande que vous souhaitez examiner pour votre prochain chantier ?",
+          "body_word_count": 77,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous indiquer un besoin de commande que vous souhaitez examiner pour votre prochain chantier ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Votre besoin de commande CVC",
+          "body": "Bonjour,\n\nJe reviens vers vous concernant le pilotage du chauffage ou de la climatisation. Les informations utiles pour ouvrir l’échange sont le type d’équipement, son mode de commande et l’usage du bâtiment. Elles permettent de préciser le sujet à discuter.\n\nPouvez-vous nous décrire les équipements concernés sur un projet ?",
+          "body_word_count": 50,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire les équipements concernés sur un projet ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un projet chauffage ou climatisation",
+          "body": "Bonjour,\n\nSi vous travaillez sur une installation avec un besoin de pilotage du climat, HeyZack peut être un sujet à examiner dans votre projet. Le premier échange porterait sur les usages attendus et les équipements concernés, qu’il s’agisse d’un bâtiment résidentiel ou commercial.\n\nPouvez-vous nous préciser la fonction de pilotage recherchée ?",
+          "body_word_count": 52,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous préciser la fonction de pilotage recherchée ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    },
+    {
+      "id": "hz-architects",
+      "label": "Architects",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Architect",
+          "Interior architect"
+        ],
+        "required_need": "Building-control or relevant coordination responsibility in a residential or commercial project.",
+        "exclude": [
+          "Unrelated structural-only remit"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-H1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Pilotage et usages dans votre projet",
+          "body": "Bonjour,\n\nDans un projet architectural, les usages de l’éclairage, du climat et des accès peuvent nécessiter une réflexion commune avec les installateurs. HeyZack propose des solutions d’automatisation pour les bâtiments résidentiels et commerciaux, sur ces fonctions et sur l’énergie. Nous vous proposons d’aborder le sujet à partir des espaces, des usages souhaités et des lots concernés dans votre projet.\n\nPouvez-vous nous décrire un projet pour lequel vous souhaitez examiner le pilotage du bâtiment ?",
+          "body_word_count": 74,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire un projet pour lequel vous souhaitez examiner le pilotage du bâtiment ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Les usages de votre projet architectural",
+          "body": "Bonjour,\n\nJe reviens vers vous au sujet du pilotage dans vos projets. Une description des espaces et des usages attendus peut aider à préciser les fonctions d’éclairage, de climat ou d’accès à discuter avec les métiers concernés.\n\nPouvez-vous nous indiquer le besoin de pilotage que vous souhaitez explorer ?",
+          "body_word_count": 49,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous indiquer le besoin de pilotage que vous souhaitez explorer ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un échange sur le pilotage du bâtiment",
+          "body": "Bonjour,\n\nSi le pilotage du bâtiment figure dans un de vos projets, nous vous proposons un premier échange autour de l’éclairage, du climat, de l’énergie ou des accès. Le sujet peut se limiter à une fonction ou à un espace précis.\n\nPouvez-vous nous transmettre quelques lignes sur le projet concerné ?",
+          "body_word_count": 51,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre quelques lignes sur le projet concerné ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    },
+    {
+      "id": "hz-bet-fluid-electrical",
+      "label": "Fluid or electrical engineering offices",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Electrical engineering office",
+          "Fluid engineering office with relevant controls remit"
+        ],
+        "required_need": "Verified responsibility for lighting, climate, energy or access-control design or coordination.",
+        "exclude": [
+          "Fluid remit unrelated to controls",
+          "Structural-only design without relevant coordination"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-H1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Pilotage et interfaces entre lots",
+          "body": "Bonjour,\n\nLorsque votre bureau d’études traite le pilotage de l’éclairage ou du climat, les usages attendus et les interfaces entre équipements méritent un cadrage précis. HeyZack propose l’automatisation de bâtiments résidentiels et commerciaux autour de l’éclairage, du climat, de l’énergie et des accès. Nous vous proposons un premier échange à partir du périmètre de votre étude et des équipements concernés.\n\nPouvez-vous nous décrire une fonction de pilotage à examiner sur une affaire ?",
+          "body_word_count": 73,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire une fonction de pilotage à examiner sur une affaire ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Quel périmètre de pilotage étudiez-vous ?",
+          "body": "Bonjour,\n\nJe reviens vers vous sur les fonctions de pilotage dans vos études. Le périmètre peut concerner un lot éclairage, un équipement climatique ou une coordination entre systèmes, selon votre mission et les usages du bâtiment.\n\nPouvez-vous nous préciser le lot et la fonction de commande à examiner ?",
+          "body_word_count": 49,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous préciser le lot et la fonction de commande à examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un sujet de pilotage dans votre étude",
+          "body": "Bonjour,\n\nSi une de vos études comporte un besoin de pilotage du bâtiment, HeyZack peut être un sujet à examiner avec votre équipe. Nous vous proposons de partir des usages attendus et du périmètre technique de votre mission.\n\nPouvez-vous nous transmettre un bref descriptif de la fonction concernée ?",
+          "body_word_count": 49,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre un bref descriptif de la fonction concernée ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    }
+  ],
+  "linkedin_posts": [
+    {
+      "id": "hz-linkedin-1",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Building-control project question",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Quels usages souhaitez-vous piloter dans votre prochain projet de bâtiment ?\n\nHeyZack propose l’automatisation de bâtiments résidentiels et commerciaux autour de l’éclairage, du climat, de l’énergie et des accès. Les usages attendus et les équipements existants constituent un point de départ pour l’échange.\n\nDécrivez-nous une fonction de pilotage que vous souhaitez examiner.",
+      "word_count": 52,
+      "primary_cta": "Décrivez-nous une fonction de pilotage que vous souhaitez examiner.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "hz-linkedin-2",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Electrical and climate coordination",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Votre projet associe éclairage et commande du climat ?\n\nLe périmètre HeyZack couvre ces fonctions de pilotage dans les bâtiments résidentiels et commerciaux. Pour discuter du besoin, il est utile de distinguer les usages, les équipements et les métiers concernés.\n\nPrécisez-nous la fonction de commande prévue dans votre projet.",
+      "word_count": 49,
+      "primary_cta": "Précisez-nous la fonction de commande prévue dans votre projet.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "hz-linkedin-3",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Architect and engineering brief",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Le pilotage figure-t-il dans votre étude ou votre projet architectural ?\n\nÉclairage, climat, énergie et accès font partie des fonctions abordées par HeyZack. Un premier échange peut partir d’un espace et d’un usage précis, avec le périmètre de chaque métier.\n\nTransmettez-nous quelques lignes sur le sujet à examiner.",
+      "word_count": 48,
+      "primary_cta": "Transmettez-nous quelques lignes sur le sujet à examiner.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "claim_ids": [
+          "HZ-O1"
+        ],
+        "source_ids": [
+          "heyzack:firecrawl"
+        ],
+        "claim_classifications": {
+          "HZ-O1": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    }
+  ],
+  "suggested_calendar": {
+    "span_days": 14,
+    "start_date": null,
+    "calendar_is_schedule": false,
+    "entries": [
+      {
+        "day": 1,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Review sender, evidence and audience relevance",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 2,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 3,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "hz-linkedin-1",
+        "scheduled": false
+      },
+      {
+        "day": 4,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 5,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 6,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 7,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 8,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "hz-linkedin-2",
+        "scheduled": false
+      },
+      {
+        "day": 9,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 10,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 11,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 12,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 13,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "hz-linkedin-3",
+        "scheduled": false
+      },
+      {
+        "day": 14,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      }
+    ]
+  },
+  "identity_hold": null,
+  "validation": {
+    "checked_at_utc": "2026-10-05T09:01:43.238861+00:00",
+    "json_serializable": true,
+    "email_word_ranges_pass": true,
+    "subjects_under_50_characters": true,
+    "canonical_references_resolve": true,
+    "provenance_hashes_recomputed": true,
+    "counts": {
+      "email_variants": 4,
+      "initial_emails": 4,
+      "followups": 8,
+      "email_messages": 12,
+      "linkedin_text_posts": 3,
+      "calendar_days": 14
+    },
+    "limits": "Validation confirms structural/reference/hash checks and self-review; it is not owner approval, operational acceptance, publication authority or automatic proof of every prose claim.",
+    "claim_source_correspondence_pass": true,
+    "upstream_json_pointers_exist": true,
+    "prospect_operational_comparison_launch_subscription_phrase_screen": "pass; regex screen plus source-based editorial self-review, not a substitute for independent approval",
+    "calendar_day_and_post_id_checks_pass": true,
+    "all_action_flags_false": true,
+    "raw_meristem_state_modified": false
+  }
+}

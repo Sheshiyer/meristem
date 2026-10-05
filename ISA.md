@@ -91,8 +91,9 @@ The user now authorizes fresh research and Meristem flow per supplied brand, wit
 - [ ] AX-ISC-4.1: One SIREN retains every establishment/location/source observation idempotently; contradictory geography is held and provenance is not mixed.
 - [ ] AX-ISC-5: Per-brand marketing and social draft artifacts cite validated inputs and preserve claim boundaries.
 - [x] AX-ISC-6: ERP, Vapi, Explee and social contracts are mapped; configured, source, synthetic and live evidence are distinguished.
-- [ ] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
+- [x] AX-ISC-7: Meaningful local end-to-end contract probes pass, or exact external blockers are recorded.
 - [ ] AX-ISC-8: No Explee start, send, budget increase, public social publish, secret/provider migration or unapproved live-data write occurs.
+- [x] AX-ISC-9: Current Snow Gloves Claude intake and source ownership are reconciled before further portfolio research, ingestion or adapter work; duplicate-work risks and reuse paths are recorded.
 
 ### Current verification — 2 October 2026
 
@@ -133,3 +134,17 @@ AX-ISC-3/3.2: All four v4 evidenced-brand upstream runs completed waves1,2 then 
 AX-ISC-5: Independent editorial review examined34completed upstream drafts and found audit-policy language in customer pitches, unsupported competitor contrasts, unapproved identity proposals and113noncanonical source-pointer occurrences. `.planning/AXTECH-EDITORIAL-REVIEW-20261005.md` records exact pointers and required edits. V5 content direction/system prompt separates natural French customer offer/CTA from English review metadata; no editorial acceptance or finished content package is claimed yet.
 
 AX-ISC-6: Two fresh bounded5October ERPSELECTs revalidated active ECOLED3,Wave4,Hey5,Kartezzi7 and separate test-only brand table; no private contacts or writes. Receipt in standalone campaign agent. Older2October schema/aggregates remain dated.
+
+### Snow Gloves intake reconciliation — 5 October 2026
+
+- 2026-10-05 09:14: refined: Snow Gloves owns the current founder operating map and tenant intake. The six Meristem domain slots remain scoped research packages, not another portfolio registry. Reuse existing dossiers and the Snow Gloves approved-brief/GTM path; no duplicate tenant interview, domain crawl, coordinator or infrastructure bootstrap. Preserve the explicit ecoled-europe to ecoled alias; Symphonics remains unresolved.
+- AX-ISC-9: Read-only source/session review — two Snow Gloves Claude sessions and clean source006ec915 inspected; nine direct branches plus AXIO, three proposed projects/flows, current intake gaps, stale harvest overwrite and source-containment drift recorded in .planning/AXTECH-SNOWGLOVES-INTAKE-RECONCILIATION-20261005.md/.json. Independent read-only source audit concurs; advisor timed out, not accepted. Snow Gloves source untouched.
+- AX-ISC-7: Actual local CLI receipt read/hash verification — all9synthetic discover-independent classify/dedup/export contract assertions and stored artifact hashes pass. Exact external ERP/Vapi/Explee/social contracts remain held; no live ERP roundtrip is claimed.
+- AX-ISC-3/3.2: Current v5runs are terminalfailed; v6Wave failedbuyer-persona. Previously launched v6Axtech finished with runnerexit0, waves1,2,6 and20skills; its generated content remains unreviewed against the broader founder map. No failed/partial state rewritten and no new generation launched during intake review.
+- AX-ISC-4.1: Independent current39-case regional audit passes38; one structured is_headquarters:false provenance mutation remains. Hold persists pending correction and readback.
+- AX-ISC-5: Six editorial derivative folders now exist, with11variants/33emails/15posts; parent verified11variants/33emails/15posts and35input hashes; independent editorial acceptance and owner approval remain pending. Broader5October founder map requires group-draft scope reconciliation before acceptance.
+
+- 2026-10-05 | conjectured: The six researched domain slots were sufficient intake context for continuing group campaign preparation.
+  refuted by: Current Snow Gloves founder intake006ec915 records nine direct operating branches plus AXIO and three projects, with source/indexing gaps and proposed sharing contracts.
+  learned: Reuse the current operating map and existing research independently; data ingestion, interpretation, draft execution and delivery have different evidence requirements.
+  criterion now: AX-ISC-9 verifies current Snow Gloves intake reuse before further portfolio research or ingestion.

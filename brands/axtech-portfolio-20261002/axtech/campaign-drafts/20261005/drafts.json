@@ -1,0 +1,703 @@
+{
+  "schema": "axtech.editorial-campaign-drafts.v1",
+  "brand": "Axtech",
+  "slug": "axtech",
+  "created_at_utc": "2026-10-05T08:58:50.419854+00:00",
+  "artifact_type": "editorial_derivative",
+  "runner_output": false,
+  "claimed_runner_waves": [],
+  "status": "internally_authored_source_reviewed_draft",
+  "owner_approval": "pending",
+  "independent_editorial_acceptance": "pending",
+  "operational_readiness": "held",
+  "languages": {
+    "operator_metadata": "en",
+    "prospect_copy": "fr-FR",
+    "address": "vous"
+  },
+  "scope": {
+    "current_mep_lane": true,
+    "wave_mobile_retail_separate_future_lane": false,
+    "send": false,
+    "publish": false,
+    "explee_import": false,
+    "vapi_call": false,
+    "erp_write": false,
+    "marketplace_listing": false,
+    "professional_portfolio_draft": true,
+    "interior_agencement_lane": true
+  },
+  "provenance": {
+    "method": "Editorial derivative authored through marketing:content-creation after reading the canonical dossiers/ledgers and the completed upstream context listed here. Offer facts are attributed; strategic audience/intake choices remain hypotheses. This does not alter raw runner outputs or state.",
+    "inputs": [
+      {
+        "kind": "research_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/DOSSIER.md",
+        "sha256": "90877d3d62eea1771b9cf96547e3bfcddf698bfd13ed24376e6f6cede6bacd96"
+      },
+      {
+        "kind": "canonical_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "sha256": "18bc61d9395fe0d599b152951c7414e3544cedbd0f069bc4e7d4697cc4a681c8"
+      },
+      {
+        "kind": "editorial_rejection_report",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.planning/AXTECH-EDITORIAL-REVIEW-20261005.md",
+        "sha256": "d93ea322ea26a3b47a5e888174d2f484fd1aab657cf94aa745a00cf00c34590d"
+      },
+      {
+        "kind": "marketing_skill_method",
+        "path": "/Users/sheshnarayaniyer/.codex/plugins/cache/claude-cowork/marketing/1.1.0/skills/content-creation/SKILL.md",
+        "sha256": "e0145f84827b8529df1a028e5b7c0ec7a5c3bda3516228f8a013537a13227900"
+      },
+      {
+        "kind": "supporting_brand_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/DOSSIER.md",
+        "sha256": "8a1cefe8f3301e7c5c2c949d933ae7ce75bb54b254476a81361533fe37b6132b"
+      },
+      {
+        "kind": "supporting_brand_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+        "sha256": "6180b55f1f500360a8168ae6babfd76b177c953aca1c5b4ebc10c3688f9f875a"
+      },
+      {
+        "kind": "supporting_brand_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/DOSSIER.md",
+        "sha256": "6bff9fc84a55e400406b8355e2a1f52d9876eb46195c41f294095cb35e3019ec"
+      },
+      {
+        "kind": "supporting_brand_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+        "sha256": "d4b86fc9bfb3fa1d68955e187ba35f2d874f2f6e269a020a44155481ef762323"
+      },
+      {
+        "kind": "supporting_brand_dossier",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/DOSSIER.md",
+        "sha256": "70b4c9e16a236c8904bed4e0ec69d3a2eb9da4741b7488ce48a3b5ebcc6965ed"
+      },
+      {
+        "kind": "supporting_brand_evidence_ledger",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/evidence.json",
+        "sha256": "e62403cd2c266c3c5d790f7ea5d4e47eb092d994880f1eca04f842f4d06c4047"
+      }
+    ],
+    "upstream_artifact_refs": [
+      {
+        "kind": "completed_runner_draft_context",
+        "path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/.local/axtech-portfolio-20261002/authoring-v5-20261005/axtech/.brandmint/outputs/product-description.json",
+        "sha256": "8601ee6784d10569be4c1f9628dfb941fc2ee9e30d1a50039bea4ffda6732c9d",
+        "json_pointer": "/data/core_info",
+        "use": "Offer-context comparison only. Actual copy is newly authored from the canonical first-party offer ledger. Internal audit language, unsupported comparisons and any implied approval are rejected.",
+        "approval_transferred": false,
+        "runner_completion_claim": "Only this existing artifact reports complete; no wave completion inferred."
+      }
+    ],
+    "rejected_patterns": [
+      "Internal source/audit/ERP/hold caveats in prospect bodies",
+      "Unsupported competitor generalizations",
+      "New brand identities/taglines",
+      "Counted launch, scarcity and assumed opt-in/signup prose",
+      "Invented people, testimonials, prices, savings, stock, certification, deadlines or guaranteed coverage"
+    ]
+  },
+  "source_freshness": {
+    "research_snapshot_date": "2026-10-02",
+    "derivative_review_date": "2026-10-05",
+    "new_network_research_in_this_editorial_task": false,
+    "read_only_erp_connection_is_not_public_offer_evidence": true,
+    "upstream_legacy_connection_text_not_reused": true
+  },
+  "operator_holds": [
+    "Owner approval of wording and source-supported offer claims is pending.",
+    "Brand/legal sender, sending domain, reply mailbox and signature are unbound.",
+    "Actual relevant contact, professional role and suppression/customer/opportunity checks must precede any outreach.",
+    "No Explee import is authorized: an imported campaign may send automatically.",
+    "ERP is connected for read-only references; operational writes, consent/suppression events and terminal writeback are not accepted.",
+    "Vapi calling and durable terminal event/writeback are not accepted; no call is scheduled.",
+    "Social account binding, owner approval and publication are pending.",
+    "No geographic service coverage is proven by these sources; any project feasibility must be confirmed.",
+    "Any prospect tokens must resolve to verified current data or the optional clause must be omitted."
+  ],
+  "sender_and_signature": {
+    "sender_name": null,
+    "sender_role": null,
+    "brand_legal_entity_binding": null,
+    "from_email": null,
+    "reply_to": null,
+    "signature_text": null,
+    "implementation_hold": "Bind a real authorized sender and monitored mailbox; never synthesize personal identity, address, phone or signature."
+  },
+  "regionalization": {
+    "base": "National-neutral French wording; no service-area promise.",
+    "optional_opening": "Votre établissement est situé dans le département {{department}}.",
+    "allowed_if": "Actual establishment department is verified from the correct current SIRET record; do not use legal-headquarters geography as an installation coverage claim.",
+    "token_substitution": "department must be a verified readable French department name/code. Omit the whole sentence if absent, ambiguous or stale; never send a literal token.",
+    "approval_status": "pending",
+    "word_count_policy": "If the optional sentence is added, recheck total body length against the channel range; it must not add a second CTA.",
+    "fictional_persona_locale_used": false
+  },
+  "footer_policy": {
+    "id": "proposed_reply_opt_out",
+    "text": "Si vous préférez ne plus recevoir nos messages, dites-le-nous simplement en réponse.",
+    "status": "proposed_not_implemented",
+    "unsubscribe_url": null,
+    "implementation_gate": "Before use, verify the monitored reply inbox, identify opt-out replies, persist suppression across relevant brand campaigns, stop pending follow-ups and verify suppression before every send. This package implements no opt-out handling.",
+    "append_to_email_body": false
+  },
+  "email_variants": [
+    {
+      "id": "ax-mep-intake",
+      "label": "MEP intake for lighting or relevant building controls",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Electrician",
+          "HVAC installer with a relevant control need",
+          "Architect with lighting/control remit",
+          "Fluid/electrical engineering office with relevant remit"
+        ],
+        "required_need": "Professional LED lighting or relevant residential/commercial building-control requirement.",
+        "exclude": [
+          "Wave mobile retail",
+          "Plumbing-only without relevant control need",
+          "Structural-only without relevant coordination",
+          "Sanitary/plumbing equipment offer"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-O1",
+          "AX-O2"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-O1": "first_party_claim",
+          "AX-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-H1"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+          "claim_ids": [
+            "HZ-O1"
+          ],
+          "source_ids": [
+            "heyzack:firecrawl"
+          ],
+          "claim_classifications": {
+            "HZ-O1": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        },
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+          "claim_ids": [
+            "EL-O1",
+            "EL-O2"
+          ],
+          "source_ids": [
+            "ecoled-europe:firecrawl"
+          ],
+          "claim_classifications": {
+            "EL-O1": "first_party_claim",
+            "EL-O2": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        }
+      ],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Éclairage ou pilotage : votre besoin",
+          "body": "Bonjour,\n\nVotre activité vous amène à préparer un lot éclairage ou une fonction de pilotage du bâtiment ? Le groupe Axtech réunit notamment Ecoled Europe pour l’éclairage LED professionnel et HeyZack pour l’automatisation des bâtiments résidentiels et commerciaux. Nous vous proposons un premier échange pour situer le besoin de votre projet, le métier concerné et les équipements à examiner avec la marque pertinente.\n\nPouvez-vous nous préciser si votre besoin porte sur l’éclairage ou le pilotage ?",
+          "body_word_count": 76,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous préciser si votre besoin porte sur l’éclairage ou le pilotage ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Quel sujet pour votre prochain chantier ?",
+          "body": "Bonjour,\n\nJe reviens vers vous concernant les marques Axtech. Un besoin d’éclairage LED peut concerner Ecoled Europe ; un sujet de pilotage de l’éclairage ou du climat peut concerner HeyZack, selon le projet et les équipements prévus.\n\nPouvez-vous nous indiquer le sujet que vous souhaitez examiner sur un chantier ?",
+          "body_word_count": 50,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous indiquer le sujet que vous souhaitez examiner sur un chantier ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Un premier échange sur votre besoin",
+          "body": "Bonjour,\n\nSi vous préparez un projet d’éclairage ou de pilotage du bâtiment, nous vous proposons un premier échange au sujet d’Ecoled Europe ou de HeyZack. Quelques informations sur votre métier et l’usage attendu permettent de préciser le sujet.\n\nPouvez-vous nous transmettre un bref descriptif du besoin concerné ?",
+          "body_word_count": 48,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre un bref descriptif du besoin concerné ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    },
+    {
+      "id": "ax-interior-intake",
+      "label": "Interior and fitout intake for Kartezzi",
+      "trade_eligibility": {
+        "primary_roles": [
+          "Architect",
+          "Interior architect",
+          "Decorator",
+          "Joinery or fitout specifier"
+        ],
+        "required_need": "Decorative materials or custom joinery/interior fitout.",
+        "exclude": [
+          "Wave mobile retail",
+          "General plumbing or HVAC offer",
+          "Assumed full MEP installation package"
+        ]
+      },
+      "all_company_sizes": true,
+      "contact_role_requirement": "Use a verified relevant professional role; do not infer an individual identity or role from a company label.",
+      "regionalization_ref": "verified_establishment_department_only",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-O1",
+          "AX-O2"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-O1": "first_party_claim",
+          "AX-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "strategy_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-H1"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-H1": "strategic_hypothesis"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "hypothesis_notice": "Audience selection and proposed intake questions are editorial strategy, not evidence of a deployed service process.",
+      "supporting_brand_references": [
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/evidence.json",
+          "claim_ids": [
+            "KZ-O1",
+            "KZ-O2",
+            "KZ-O3"
+          ],
+          "source_ids": [
+            "kartezzi:firecrawl"
+          ],
+          "claim_classifications": {
+            "KZ-O1": "first_party_claim",
+            "KZ-O2": "first_party_claim",
+            "KZ-O3": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        }
+      ],
+      "emails": [
+        {
+          "kind": "initial",
+          "subject": "Un projet d’intérieur avec Kartezzi",
+          "body": "Bonjour,\n\nVotre projet d’intérieur comporte des matières décoratives ou un agencement à concevoir sur mesure ? Kartezzi, marque du groupe Axtech, propose notamment des panneaux et finitions, de la menuiserie, du mobilier, des cuisines et des portes. L’échange peut partir des plans, des dimensions et des usages souhaités, avec une réflexion sur l’éclairage intégré aux éléments d’agencement lorsque le projet le prévoit.\n\nPouvez-vous nous décrire le lot d’intérieur que vous souhaitez examiner ?",
+          "body_word_count": 73,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous décrire le lot d’intérieur que vous souhaitez examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_1",
+          "subject": "Quel lot d’intérieur préparez-vous ?",
+          "body": "Bonjour,\n\nJe reviens vers vous au sujet de Kartezzi au sein du groupe Axtech. Pour un projet d’intérieur, le besoin peut concerner les matières, le mobilier, les portes ou une cuisine sur mesure, selon les plans et les usages prévus.\n\nPouvez-vous nous indiquer l’élément d’agencement que vous souhaitez examiner ?",
+          "body_word_count": 50,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous indiquer l’élément d’agencement que vous souhaitez examiner ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        },
+        {
+          "kind": "followup_2",
+          "subject": "Vos besoins de matières et d’agencement",
+          "body": "Bonjour,\n\nSi un de vos projets associe choix des matières et agencement sur mesure, nous vous proposons un premier échange au sujet de Kartezzi. Le projet peut se préciser à partir des dimensions, des usages de l’espace et des finitions recherchées.\n\nPouvez-vous nous transmettre un bref descriptif du besoin concerné ?",
+          "body_word_count": 51,
+          "word_count_method": "Whitespace-separated words; subject, optional regional opening, footer and signature excluded.",
+          "primary_cta": "Pouvez-vous nous transmettre un bref descriptif du besoin concerné ?",
+          "footer_policy_ref": "proposed_reply_opt_out",
+          "signature_policy_ref": "sender_signature_pending"
+        }
+      ],
+      "timing_recommendation": {
+        "scheduled": false,
+        "basis": "Relative business days after an authorized initial send; recommendation only.",
+        "initial_day": 0,
+        "followup_1_day": 5,
+        "followup_2_day": 10,
+        "stop_conditions": [
+          "Any reply pending human handling",
+          "Opt-out or suppression",
+          "Active client or opportunity conflict",
+          "Bounce or invalid contact",
+          "Sender/brand relevance no longer verified"
+        ]
+      }
+    }
+  ],
+  "linkedin_posts": [
+    {
+      "id": "ax-linkedin-1",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "MEP intake question",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Votre projet porte-t-il sur l’éclairage ou sur le pilotage du bâtiment ?\n\nLe groupe Axtech réunit notamment Ecoled Europe pour l’éclairage LED et HeyZack pour l’automatisation des bâtiments résidentiels et commerciaux. Le besoin et le métier concerné permettent d’ouvrir un premier échange.\n\nDécrivez-nous le sujet que vous souhaitez examiner.",
+      "word_count": 49,
+      "primary_cta": "Décrivez-nous le sujet que vous souhaitez examiner.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-O1",
+          "AX-O2"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-O1": "first_party_claim",
+          "AX-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+          "claim_ids": [
+            "HZ-O1"
+          ],
+          "source_ids": [
+            "heyzack:firecrawl"
+          ],
+          "claim_classifications": {
+            "HZ-O1": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        },
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+          "claim_ids": [
+            "EL-O1",
+            "EL-O2"
+          ],
+          "source_ids": [
+            "ecoled-europe:firecrawl"
+          ],
+          "claim_classifications": {
+            "EL-O1": "first_party_claim",
+            "EL-O2": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        }
+      ],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "ax-linkedin-2",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Separate interior-fitout offer",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Votre projet d’intérieur associe-t-il matières et agencement ?\n\nKartezzi fait partie des marques Axtech et propose des matériaux décoratifs et de la menuiserie sur mesure, notamment du mobilier, des cuisines et des portes. Les plans et les usages de l’espace constituent un point de départ.\n\nPrécisez-nous le lot d’intérieur à examiner.",
+      "word_count": 51,
+      "primary_cta": "Précisez-nous le lot d’intérieur à examiner.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-O1",
+          "AX-O2"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-O1": "first_party_claim",
+          "AX-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/evidence.json",
+          "claim_ids": [
+            "KZ-O1",
+            "KZ-O2",
+            "KZ-O3"
+          ],
+          "source_ids": [
+            "kartezzi:firecrawl"
+          ],
+          "claim_classifications": {
+            "KZ-O1": "first_party_claim",
+            "KZ-O2": "first_party_claim",
+            "KZ-O3": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        }
+      ],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    },
+    {
+      "id": "ax-linkedin-3",
+      "platform": "LinkedIn",
+      "format": "text_only",
+      "label": "Professional requirement routing",
+      "locale": "fr-FR",
+      "address": "vous",
+      "text": "Quel besoin professionnel souhaitez-vous présenter au groupe Axtech ?\n\nÉclairage LED avec Ecoled Europe, pilotage du bâtiment avec HeyZack, ou matières et agencement avec Kartezzi : chaque sujet appelle un échange adapté au projet et au métier concerné.\n\nTransmettez-nous un bref descriptif de votre besoin.",
+      "word_count": 45,
+      "primary_cta": "Transmettez-nous un bref descriptif de votre besoin.",
+      "fact_references": {
+        "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/axtech/research/evidence.json",
+        "claim_ids": [
+          "AX-O1",
+          "AX-O2"
+        ],
+        "source_ids": [
+          "group:firecrawl:axtech"
+        ],
+        "claim_classifications": {
+          "AX-O1": "first_party_claim",
+          "AX-O2": "first_party_claim"
+        },
+        "public_claim_approval": "pending_owner_review"
+      },
+      "supporting_brand_references": [
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/heyzack/research/evidence.json",
+          "claim_ids": [
+            "HZ-O1"
+          ],
+          "source_ids": [
+            "heyzack:firecrawl"
+          ],
+          "claim_classifications": {
+            "HZ-O1": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        },
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/ecoled-europe/research/evidence.json",
+          "claim_ids": [
+            "EL-O1",
+            "EL-O2"
+          ],
+          "source_ids": [
+            "ecoled-europe:firecrawl"
+          ],
+          "claim_classifications": {
+            "EL-O1": "first_party_claim",
+            "EL-O2": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        },
+        {
+          "evidence_path": "/Volumes/madara/2026/Projects/thoughtseed/meristem/brands/axtech-portfolio-20261002/kartezzi/research/evidence.json",
+          "claim_ids": [
+            "KZ-O1",
+            "KZ-O2"
+          ],
+          "source_ids": [
+            "kartezzi:firecrawl"
+          ],
+          "claim_classifications": {
+            "KZ-O1": "first_party_claim",
+            "KZ-O2": "first_party_claim"
+          },
+          "public_claim_approval": "pending_owner_review"
+        }
+      ],
+      "strategy_hypothesis_notice": "Topic framing and calls to reply are editorial proposals; no operational process or customer result is implied.",
+      "image_generation": false,
+      "publication_authorized": false
+    }
+  ],
+  "suggested_calendar": {
+    "span_days": 14,
+    "start_date": null,
+    "calendar_is_schedule": false,
+    "entries": [
+      {
+        "day": 1,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Review sender, evidence and audience relevance",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 2,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 3,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "ax-linkedin-1",
+        "scheduled": false
+      },
+      {
+        "day": 4,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 5,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 6,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 7,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 8,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "ax-linkedin-2",
+        "scheduled": false
+      },
+      {
+        "day": 9,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 10,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 11,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 12,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      },
+      {
+        "day": 13,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "Proposed LinkedIn text post after owner/account approval",
+        "post_id": "ax-linkedin-3",
+        "scheduled": false
+      },
+      {
+        "day": 14,
+        "relative_to": "A future owner-approved content cycle; no actual start date",
+        "action": "No post suggested; review only if there is actionable feedback",
+        "post_id": null,
+        "scheduled": false
+      }
+    ]
+  },
+  "identity_hold": null,
+  "validation": {
+    "checked_at_utc": "2026-10-05T09:01:18.492142+00:00",
+    "json_serializable": true,
+    "email_word_ranges_pass": true,
+    "subjects_under_50_characters": true,
+    "canonical_references_resolve": true,
+    "provenance_hashes_recomputed": true,
+    "counts": {
+      "email_variants": 2,
+      "initial_emails": 2,
+      "followups": 4,
+      "email_messages": 6,
+      "linkedin_text_posts": 3,
+      "calendar_days": 14
+    },
+    "limits": "Validation confirms structural/reference/hash checks and self-review; it is not owner approval, operational acceptance, publication authority or automatic proof of every prose claim.",
+    "claim_source_correspondence_pass": true,
+    "upstream_json_pointers_exist": true,
+    "prospect_operational_comparison_launch_subscription_phrase_screen": "pass; regex screen plus source-based editorial self-review, not a substitute for independent approval",
+    "calendar_day_and_post_id_checks_pass": true,
+    "all_action_flags_false": true,
+    "raw_meristem_state_modified": false
+  }
+}
