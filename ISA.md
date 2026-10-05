@@ -119,3 +119,9 @@ AX-ISC-3/3.2: Source commitf75cb05 corrects positioning-before-voice and positio
 AX-ISC-4.1: RegionalextensionBuild18033 and parent118tests/typecheckpass, but independent15-caseprobe reported7provenance/contradiction failures. The independent report turn hit modelcapacity before delivering a durable report. Current residualBuild66317 addresses these exact defects. The extension remains unaccepted despite green fixture tests.
 
 AX-ISC-6: Actual5OctoberExpleeGETs show project43522/heyzack.ai, dailybudget0, currentcampaigns0 and sends/replies/hotleads/spend0. Autopilot andautoreplysettingsareenabled; unchangedbyagent. Current sixbrandplans are allheld with onlyHeyZackprojectbound. Fresh PerplexityHTTP200stillSignups; fresh SymphonicsDNSfails, FirecrawlemptyHTTP200, exactExaquery0results. No providerconfigurationchange.
+
+### Draft continuation checkpoint — 5 October 2026
+
+AX-ISC-3/3.2: Actual v4 HeyZack state completed waves1,2 (eight validated upstream artifacts), then stopped before HTTP at content product-description:137166bytes exceeds128KiB. Kartezzi v4 stopped at competitor-analysis because each candidate lacked the required cited URL field. These failures remain intact. Axtech/Ecoled/Wave v4 are still running at the latest poll; no content completion is inferred. A scoped Build repair is implementing lossless JSON whitespace compaction and a separately attributed waves6 continuation from verified upstream outputs; the size guard, strict source validation and fresh-target guard remain mandatory.
+
+AX-ISC-4.1: Residual regional Build66317 is still running. Earlier118fixture tests do not close the seven independent provenance/contradiction failures.
