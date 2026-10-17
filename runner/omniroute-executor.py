@@ -267,6 +267,38 @@ def strip_json_fence(raw_content: str) -> str:
     return text
 
 
+def extract_json_text(raw_content: str) -> str:
+    """Return the JSON envelope text from a reply that may wrap it in prose or a fence.
+
+    Agent-style models sometimes add a sentence before or after the artifact.
+    Prefer the whole reply, then a fenced block, then the first embedded object
+    carrying a "skill" key. A reply with no such object is returned unchanged,
+    so json.loads still fails and the spoke is recorded as failed.
+    """
+    text = strip_json_fence(raw_content)
+    try:
+        json.loads(text)
+        return text
+    except ValueError:
+        pass
+    for block in re.findall(r"```(?:json)?\s*\n([\s\S]*?)\n```", text, re.IGNORECASE):
+        candidate = block.strip()
+        try:
+            if isinstance(json.loads(candidate), dict):
+                return candidate
+        except ValueError:
+            continue
+    decoder = json.JSONDecoder()
+    for match in re.finditer(r"\{", text):
+        try:
+            obj, end = decoder.raw_decode(text, match.start())
+        except ValueError:
+            continue
+        if isinstance(obj, dict) and "skill" in obj:
+            return text[match.start():end]
+    return text
+
+
 def validate_output_envelope(
     output_obj: Any,
     expected_spoke: str,
@@ -1247,7 +1279,7 @@ class MeristemExternalExecutor:
         reply_text = ""
         try:
             reply_text = extract_model_reply_text(resp_json)
-            cleaned_json_text = strip_json_fence(reply_text)
+            cleaned_json_text = extract_json_text(reply_text)
             output_obj = json.loads(cleaned_json_text)
         except Exception as exc:
             print(f"[EXECUTOR ERROR] Response processing failed for {spoke}: {exc}", file=sys.stderr)

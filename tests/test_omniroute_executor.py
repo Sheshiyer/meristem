@@ -94,6 +94,25 @@ class TestOmniRouteExecutor(unittest.TestCase):
         raw_no_fence = '{"skill": "buyer-persona", "status": "complete"}'
         self.assertEqual(executor_mod.strip_json_fence(raw_no_fence), raw_no_fence)
 
+    def test_extract_json_text_recovers_envelope_wrapped_in_prose(self):
+        envelope = {"skill": "brand-foundation", "status": "partial", "data": {"draft_only": True}}
+        bare = json.dumps(envelope)
+        cases = [
+            bare,
+            "```json\n" + bare + "\n```",
+            "Here is the artifact:\n```json\n" + bare + "\n```\nLet me know if you need changes.",
+            "Example shape {\"a\": 1} then the output: " + bare + " done.",
+        ]
+        for raw in cases:
+            with self.subTest(raw=raw[:40]):
+                self.assertEqual(json.loads(executor_mod.extract_json_text(raw)), envelope)
+
+    def test_extract_json_text_leaves_prose_only_reply_unparseable(self):
+        # The 2026-10-02 brand-foundation failures: the model announced work instead of returning JSON.
+        raw = "I'll generate the brand-foundation JSON and write it to the output path now."
+        with self.assertRaises(json.JSONDecodeError):
+            json.loads(executor_mod.extract_json_text(raw))
+
     def test_validate_output_envelope_valid(self):
         valid_obj = {
             "skill": "buyer-persona",
