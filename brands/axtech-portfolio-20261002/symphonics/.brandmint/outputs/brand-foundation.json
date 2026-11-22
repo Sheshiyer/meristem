@@ -1,0 +1,17 @@
+{
+  "skill": "brand-foundation",
+  "cluster": "foundation",
+  "wave": 1,
+  "status": "partial",
+  "timestamp": "2026-10-02T14:45:03Z",
+  "version": "1.0.0",
+  "data": {
+    "blockers": [
+      "Missing product/source identity: domain unresolvable, offering unknown"
+    ],
+    "uncertainties": [
+      "Domain http://symphonics.heyzack.ai/ did not resolve; no product facts available"
+    ],
+    "draft_only": true
+  }
+}

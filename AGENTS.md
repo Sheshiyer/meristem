@@ -332,3 +332,7 @@ Manifest: `.temperance/project.json` (schema temperance.project.v1)
 - `brands/iverif/inputs/v1/` is historical imported input. Current-root config, brief, draft research, wave receipts and bilingual wiki content are also present; use their claim boundaries and do not infer current founder approval or launch readiness. Missing/unreviewed evidence or channel planning blocks readiness.
 - `brands/cambium-infinite-game/PROVENANCE.md` qualifies the earlier generated exploration. Existing Cambium organ and interface identity stays governed by current product sources.
 - Keep host-private `.superset/`, `.temperance/`, execution logs and generated prompt traces local. A source merge grants no provider, publication, deployment or sending authority.
+
+## Connected working context
+
+For cross-folder memory reconciliation, read [CONTEXT.md](CONTEXT.md) and follow its source pointers; repository acceptance and operating rules remain authoritative.

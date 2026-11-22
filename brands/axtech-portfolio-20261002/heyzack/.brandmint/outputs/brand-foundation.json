@@ -1,0 +1,17 @@
+{
+  "skill": "brand-foundation",
+  "cluster": "foundation",
+  "wave": 1,
+  "status": "partial",
+  "timestamp": "2026-10-02T14:46:59Z",
+  "version": "1.0.0",
+  "data": {
+    "blockers": [
+      "Response processing error: Expecting value: line 1 column 1 (char 0)"
+    ],
+    "uncertainties": [
+      "Model response could not be extracted or parsed as JSON"
+    ],
+    "draft_only": true
+  }
+}
